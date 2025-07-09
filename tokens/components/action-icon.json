@@ -1,0 +1,306 @@
+{
+  "action-icon": {
+    "size": {
+      "4xs": {
+        "value": "{size.icon.4xs}",
+        "type": "sizing",
+        "description": "Container size for 4xs action icon"
+      },
+      "3xs": {
+        "value": "{size.icon.3xs}",
+        "type": "sizing", 
+        "description": "Container size for 3xs action icon"
+      },
+      "2xs": {
+        "value": "{size.icon.2xs}",
+        "type": "sizing",
+        "description": "Container size for 2xs action icon"
+      },
+      "xs": {
+        "value": "{size.icon.xs}",
+        "type": "sizing",
+        "description": "Container size for xs action icon"
+      },
+      "sm": {
+        "value": "{size.icon.sm}",
+        "type": "sizing",
+        "description": "Container size for sm action icon"
+      },
+      "md": {
+        "value": "{size.icon.md}",
+        "type": "sizing",
+        "description": "Container size for md action icon"
+      },
+      "lg": {
+        "value": "{size.icon.lg}",
+        "type": "sizing",
+        "description": "Container size for lg action icon"
+      },
+      "xl": {
+        "value": "{size.icon.xl}",
+        "type": "sizing",
+        "description": "Container size for xl action icon"
+      },
+      "2xl": {
+        "value": "{size.icon.2xl}",
+        "type": "sizing",
+        "description": "Container size for 2xl action icon"
+      },
+      "3xl": {
+        "value": "{size.icon.3xl}",
+        "type": "sizing",
+        "description": "Container size for 3xl action icon"
+      },
+      "4xl": {
+        "value": "{size.icon.4xl}",
+        "type": "sizing",
+        "description": "Container size for 4xl action icon"
+      }
+    },
+    "border-radius": {
+      "4xs": {
+        "value": "{border.radius.xs}",
+        "type": "borderRadius",
+        "description": "Border radius for 4xs action icon"
+      },
+      "3xs": {
+        "value": "{border.radius.xs}",
+        "type": "borderRadius",
+        "description": "Border radius for 3xs action icon"
+      },
+      "2xs": {
+        "value": "{border.radius.sm}",
+        "type": "borderRadius",
+        "description": "Border radius for 2xs action icon"
+      },
+      "xs": {
+        "value": "{border.radius.sm}",
+        "type": "borderRadius",
+        "description": "Border radius for xs action icon"
+      },
+      "sm": {
+        "value": "{border.radius.sm}",
+        "type": "borderRadius",
+        "description": "Border radius for sm action icon"
+      },
+      "md": {
+        "value": "{border.radius.sm}",
+        "type": "borderRadius",
+        "description": "Border radius for md action icon"
+      },
+      "lg": {
+        "value": "{border.radius.sm}",
+        "type": "borderRadius",
+        "description": "Border radius for lg action icon"
+      },
+      "xl": {
+        "value": "{border.radius.md}",
+        "type": "borderRadius",
+        "description": "Border radius for xl action icon"
+      },
+      "2xl": {
+        "value": "{border.radius.md}",
+        "type": "borderRadius",
+        "description": "Border radius for 2xl action icon"
+      },
+      "3xl": {
+        "value": "{border.radius.lg}",
+        "type": "borderRadius",
+        "description": "Border radius for 3xl action icon"
+      },
+      "4xl": {
+        "value": "{border.radius.lg}",
+        "type": "borderRadius",
+        "description": "Border radius for 4xl action icon"
+      }
+    },
+    "color": {
+      "icon": {
+        "neutral": {
+          "default": {
+            "value": "{color.neutral.gray.600}",
+            "type": "color",
+            "description": "Icon color for neutral action icon in default state"
+          },
+          "disabled": {
+            "value": "{color.neutral.gray.400}",
+            "type": "color",
+            "description": "Icon color for neutral action icon in disabled state"
+          }
+        },
+        "primary": {
+          "default": {
+            "value": "{color.primary.blue.700}",
+            "type": "color",
+            "description": "Icon color for primary action icon in default state"
+          },
+          "disabled": {
+            "value": "{color.primary.blue.300}",
+            "type": "color",
+            "description": "Icon color for primary action icon in disabled state"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "{color.secondary.success.700}",
+            "type": "color",
+            "description": "Icon color for success action icon in default state"
+          },
+          "disabled": {
+            "value": "{color.secondary.success.300}",
+            "type": "color",
+            "description": "Icon color for success action icon in disabled state"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "{color.secondary.error.700}",
+            "type": "color",
+            "description": "Icon color for error action icon in default state"
+          },
+          "disabled": {
+            "value": "{color.secondary.error.300}",
+            "type": "color",
+            "description": "Icon color for error action icon in disabled state"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{color.secondary.warning.700}",
+            "type": "color",
+            "description": "Icon color for warning action icon in default state"
+          },
+          "disabled": {
+            "value": "{color.secondary.warning.300}",
+            "type": "color",
+            "description": "Icon color for warning action icon in disabled state"
+          }
+        }
+      },
+      "background": {
+        "neutral": {
+          "default": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Background color for neutral action icon in default state"
+          },
+          "hover": {
+            "value": "{color.neutral.gray.100}",
+            "type": "color",
+            "description": "Background color for neutral action icon in hover state"
+          },
+          "clicked": {
+            "value": "{color.neutral.gray.200}",
+            "type": "color",
+            "description": "Background color for neutral action icon in clicked state"
+          },
+          "disabled": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Background color for neutral action icon in disabled state"
+          }
+        },
+        "primary": {
+          "default": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Background color for primary action icon in default state"
+          },
+          "hover": {
+            "value": "{color.primary.blue.50}",
+            "type": "color",
+            "description": "Background color for primary action icon in hover state"
+          },
+          "clicked": {
+            "value": "{color.primary.blue.100}",
+            "type": "color",
+            "description": "Background color for primary action icon in clicked state"
+          },
+          "disabled": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Background color for primary action icon in disabled state"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Background color for success action icon in default state"
+          },
+          "hover": {
+            "value": "{color.secondary.success.50}",
+            "type": "color",
+            "description": "Background color for success action icon in hover state"
+          },
+          "clicked": {
+            "value": "{color.secondary.success.100}",
+            "type": "color",
+            "description": "Background color for success action icon in clicked state"
+          },
+          "disabled": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Background color for success action icon in disabled state"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Background color for error action icon in default state"
+          },
+          "hover": {
+            "value": "{color.secondary.error.50}",
+            "type": "color",
+            "description": "Background color for error action icon in hover state"
+          },
+          "clicked": {
+            "value": "{color.secondary.error.100}",
+            "type": "color",
+            "description": "Background color for error action icon in clicked state"
+          },
+          "disabled": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Background color for error action icon in disabled state"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Background color for warning action icon in default state"
+          },
+          "hover": {
+            "value": "{color.secondary.warning.50}",
+            "type": "color",
+            "description": "Background color for warning action icon in hover state"
+          },
+          "clicked": {
+            "value": "{color.secondary.warning.100}",
+            "type": "color",
+            "description": "Background color for warning action icon in clicked state"
+          },
+          "disabled": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Background color for warning action icon in disabled state"
+          }
+        }
+      }
+    },
+    "opacity": {
+      "disabled": {
+        "value": "0.3",
+        "type": "opacity",
+        "description": "Opacity for disabled action icon state (success, error, warning scenarios)"
+      }
+    },
+    "padding": {
+      "value": "{padding.0}",
+      "type": "spacing",
+      "description": "Internal padding for action icon container"
+    }
+  }
+} 

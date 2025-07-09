@@ -1,0 +1,407 @@
+{
+  "icon": {
+    "size": {
+      "4xs": {
+        "value": "{size.icon.4xs}",
+        "type": "dimension",
+        "description": "Extra extra extra small icon - 10px"
+      },
+      "3xs": {
+        "value": "{size.icon.3xs}",
+        "type": "dimension",
+        "description": "Extra extra small icon - 12px"
+      },
+      "2xs": {
+        "value": "{size.icon.2xs}",
+        "type": "dimension",
+        "description": "Extra small icon - 14px"
+      },
+      "xs": {
+        "value": "{size.icon.xs}",
+        "type": "dimension",
+        "description": "Small icon - 16px"
+      },
+      "sm": {
+        "value": "{size.icon.sm}",
+        "type": "dimension",
+        "description": "Small medium icon - 18px"
+      },
+      "md": {
+        "value": "{size.icon.md}",
+        "type": "dimension",
+        "description": "Medium icon - 20px"
+      },
+      "lg": {
+        "value": "{size.icon.lg}",
+        "type": "dimension",
+        "description": "Large icon - 24px"
+      },
+      "xl": {
+        "value": "{size.icon.xl}",
+        "type": "dimension",
+        "description": "Extra large icon - 28px"
+      },
+      "2xl": {
+        "value": "{size.icon.2xl}",
+        "type": "dimension",
+        "description": "Extra extra large icon - 32px"
+      },
+      "3xl": {
+        "value": "{size.icon.3xl}",
+        "type": "dimension",
+        "description": "Extra extra extra large icon - 36px"
+      },
+      "4xl": {
+        "value": "{size.icon.4xl}",
+        "type": "dimension",
+        "description": "Maximum icon size - 40px"
+      }
+    },
+    "color": {
+      "icon": {
+        "default": {
+          "value": "{color.neutral.gray.600}",
+          "type": "color",
+          "description": "Default icon color - gray-600"
+        },
+        "white": {
+          "value": "{color.neutral.gray.0}",
+          "type": "color",
+          "description": "White icon color for dark backgrounds"
+        },
+        "disabled": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "Disabled icon color - gray-300"
+        },
+        "primary": {
+          "value": "{color.primary.blue.600}",
+          "type": "color",
+          "description": "Primary brand icon color"
+        },
+        "primary-disabled": {
+          "value": "{color.primary.blue.200}",
+          "type": "color",
+          "description": "Disabled primary icon color"
+        },
+        "error": {
+          "value": "{color.secondary.error.600}",
+          "type": "color",
+          "description": "Error state icon color"
+        },
+        "error-disabled": {
+          "value": "{color.secondary.error.200}",
+          "type": "color",
+          "description": "Disabled error icon color"
+        },
+        "warning": {
+          "value": "{color.secondary.warning.500}",
+          "type": "color",
+          "description": "Warning state icon color"
+        },
+        "success": {
+          "value": "{color.secondary.success.600}",
+          "type": "color",
+          "description": "Success state icon color"
+        },
+        "info": {
+          "value": "{color.primary.blue.600}",
+          "type": "color",
+          "description": "Info state icon color"
+        }
+      },
+      "featured": {
+        "background": {
+          "default": {
+            "value": "{color.neutral.gray.50}",
+            "type": "color",
+            "description": "Default featured icon background"
+          },
+          "info": {
+            "value": "{color.primary.blue.50}",
+            "type": "color",
+            "description": "Info featured icon background"
+          },
+          "error": {
+            "value": "{color.secondary.error.50}",
+            "type": "color",
+            "description": "Error featured icon background"
+          },
+          "warning": {
+            "value": "{color.secondary.warning.50}",
+            "type": "color",
+            "description": "Warning featured icon background"
+          },
+          "success": {
+            "value": "{color.secondary.success.50}",
+            "type": "color",
+            "description": "Success featured icon background"
+          }
+        },
+        "icon": {
+          "default": {
+            "value": "{color.neutral.gray.600}",
+            "type": "color",
+            "description": "Featured default icon color"
+          },
+          "info": {
+            "value": "{color.primary.blue.600}",
+            "type": "color",
+            "description": "Featured info icon color"
+          },
+          "error": {
+            "value": "{color.secondary.error.700}",
+            "type": "color",
+            "description": "Featured error icon color"
+          },
+          "warning": {
+            "value": "{color.secondary.warning.700}",
+            "type": "color",
+            "description": "Featured warning icon color"
+          },
+          "success": {
+            "value": "{color.secondary.success.700}",
+            "type": "color",
+            "description": "Featured success icon color"
+          }
+        }
+      }
+    },
+    "border-radius": {
+      "featured": {
+        "square": {
+          "4xs": {
+            "value": "{border.radius.1}",
+            "type": "dimension",
+            "description": "Square featured background radius for 4xs"
+          },
+          "3xs": {
+            "value": "{border.radius.1}",
+            "type": "dimension",
+            "description": "Square featured background radius for 3xs"
+          },
+          "2xs": {
+            "value": "{border.radius.1}",
+            "type": "dimension",
+            "description": "Square featured background radius for 2xs"
+          },
+          "xs": {
+            "value": "{border.radius.1[5]}",
+            "type": "dimension",
+            "description": "Square featured background radius for xs"
+          },
+          "sm": {
+            "value": "{border.radius.1[5]}",
+            "type": "dimension",
+            "description": "Square featured background radius for sm"
+          },
+          "md": {
+            "value": "{border.radius.2}",
+            "type": "dimension",
+            "description": "Square featured background radius for md"
+          },
+          "lg": {
+            "value": "{border.radius.2}",
+            "type": "dimension",
+            "description": "Square featured background radius for lg"
+          },
+          "xl": {
+            "value": "{border.radius.2}",
+            "type": "dimension",
+            "description": "Square featured background radius for xl"
+          },
+          "2xl": {
+            "value": "{border.radius.2}",
+            "type": "dimension",
+            "description": "Square featured background radius for 2xl"
+          },
+          "3xl": {
+            "value": "{border.radius.2}",
+            "type": "dimension",
+            "description": "Square featured background radius for 3xl"
+          },
+          "4xl": {
+            "value": "{border.radius.2}",
+            "type": "dimension",
+            "description": "Square featured background radius for 4xl"
+          }
+        },
+        "circular": {
+          "4xs": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Circular featured background radius for 4xs - 16px"
+          },
+          "3xs": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Circular featured background radius for 3xs - 16px"
+          },
+          "2xs": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Circular featured background radius for 2xs - 16px"
+          },
+          "xs": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Circular featured background radius for xs - 16px"
+          },
+          "sm": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Circular featured background radius for sm - 16px"
+          },
+          "md": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Circular featured background radius for md - 18px"
+          },
+          "lg": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Circular featured background radius for lg - 20px"
+          },
+          "xl": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Circular featured background radius for xl - 22px"
+          },
+          "2xl": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Circular featured background radius for 2xl - 24px"
+          },
+          "3xl": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Circular featured background radius for 3xl - 28px"
+          },
+          "4xl": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Circular featured background radius for 4xl - 32px"
+          }
+        }
+      }
+    },
+    "container": {
+      "featured": {
+        "padding": {
+          "4xs": {
+            "value": "{padding.0[75]}",
+            "type": "dimension",
+            "description": "Featured container padding for 4xs - 3px"
+          },
+          "3xs": {
+            "value": "{padding.1}",
+            "type": "dimension",
+            "description": "Featured container padding for 3xs - 4px"
+          },
+          "2xs": {
+            "value": "{padding.1[25]}",
+            "type": "dimension",
+            "description": "Featured container padding for 2xs - 5px"
+          },
+          "xs": {
+            "value": "{padding.1[5]}",
+            "type": "dimension",
+            "description": "Featured container padding for xs - 6px"
+          },
+          "sm": {
+            "value": "{padding.1[75]}",
+            "type": "dimension",
+            "description": "Featured container padding for sm - 7px"
+          },
+          "md": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Featured container padding for md - 8px"
+          },
+          "lg": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Featured container padding for lg - 8px"
+          },
+          "xl": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Featured container padding for xl - 8px"
+          },
+          "2xl": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Featured container padding for 2xl - 8px"
+          },
+          "3xl": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Featured container padding for 3xl - 10px"
+          },
+          "4xl": {
+            "value": "{padding.3}",
+            "type": "dimension",
+            "description": "Featured container padding for 4xl - 12px"
+          }
+        },
+        "dimensions": {
+          "4xs": {
+            "value": "{size.4}",
+            "type": "dimension",
+            "description": "Featured container size for 4xs - 16px"
+          },
+          "3xs": {
+            "value": "{size.5}",
+            "type": "dimension",
+            "description": "Featured container size for 3xs - 20px"
+          },
+          "2xs": {
+            "value": "{size.6}",
+            "type": "dimension",
+            "description": "Featured container size for 2xs - 24px"
+          },
+          "xs": {
+            "value": "{size.7}",
+            "type": "dimension",
+            "description": "Featured container size for xs - 28px"
+          },
+          "sm": {
+            "value": "{size.8}",
+            "type": "dimension",
+            "description": "Featured container size for sm - 32px"
+          },
+          "md": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Featured container size for md - 36px"
+          },
+          "lg": {
+            "value": "{size.10}",
+            "type": "dimension",
+            "description": "Featured container size for lg - 40px"
+          },
+          "xl": {
+            "value": "{size.11}",
+            "type": "dimension",
+            "description": "Featured container size for xl - 44px"
+          },
+          "2xl": {
+            "value": "{size.12}",
+            "type": "dimension",
+            "description": "Featured container size for 2xl - 48px"
+          },
+          "3xl": {
+            "value": "{size.14}",
+            "type": "dimension",
+            "description": "Featured container size for 3xl - 56px"
+          },
+          "4xl": {
+            "value": "{size.16}",
+            "type": "dimension",
+            "description": "Featured container size for 4xl - 64px"
+          }
+        }
+      }
+    }
+  }
+} 

@@ -1,0 +1,812 @@
+{
+  "tag": {
+    "container": {
+      "background": {
+        "primary": {
+          "default": {
+            "value": "{color.neutral.gray.100}",
+            "type": "color",
+            "description": "Tag background for primary variant in default state"
+          },
+          "hover": {
+            "value": "{color.neutral.gray.200}",
+            "type": "color",
+            "description": "Tag background for primary variant in hover state"
+          },
+          "active": {
+            "value": "{color.neutral.gray.200}",
+            "type": "color",
+            "description": "Tag background for primary variant in active state"
+          },
+          "focused": {
+            "value": "{color.neutral.gray.200}",
+            "type": "color",
+            "description": "Tag background for primary variant in focused state"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{color.neutral.gray.100}",
+            "type": "color",
+            "description": "Tag background for secondary variant in default state"
+          },
+          "hover": {
+            "value": "{color.neutral.gray.200}",
+            "type": "color",
+            "description": "Tag background for secondary variant in hover state"
+          },
+          "active": {
+            "value": "{color.neutral.gray.200}",
+            "type": "color",
+            "description": "Tag background for secondary variant in active state"
+          },
+          "focused": {
+            "value": "{color.neutral.gray.200}",
+            "type": "color",
+            "description": "Tag background for secondary variant in focused state"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "{color.secondary.error.500}",
+            "type": "color",
+            "description": "Tag background for error variant in default state"
+          },
+          "hover": {
+            "value": "{color.secondary.error.600}",
+            "type": "color",
+            "description": "Tag background for error variant in hover state"
+          },
+          "active": {
+            "value": "{color.secondary.error.600}",
+            "type": "color",
+            "description": "Tag background for error variant in active state"
+          },
+          "focused": {
+            "value": "{color.secondary.error.600}",
+            "type": "color",
+            "description": "Tag background for error variant in focused state"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{color.secondary.warning.500}",
+            "type": "color",
+            "description": "Tag background for warning variant in default state"
+          },
+          "hover": {
+            "value": "{color.secondary.warning.600}",
+            "type": "color",
+            "description": "Tag background for warning variant in hover state"
+          },
+          "active": {
+            "value": "{color.secondary.warning.600}",
+            "type": "color",
+            "description": "Tag background for warning variant in active state"
+          },
+          "focused": {
+            "value": "{color.secondary.warning.600}",
+            "type": "color",
+            "description": "Tag background for warning variant in focused state"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "{color.secondary.success.500}",
+            "type": "color",
+            "description": "Tag background for success variant in default state"
+          },
+          "hover": {
+            "value": "{color.secondary.success.600}",
+            "type": "color",
+            "description": "Tag background for success variant in hover state"
+          },
+          "active": {
+            "value": "{color.secondary.success.600}",
+            "type": "color",
+            "description": "Tag background for success variant in active state"
+          },
+          "focused": {
+            "value": "{color.secondary.success.600}",
+            "type": "color",
+            "description": "Tag background for success variant in focused state"
+          }
+        },
+        "info": {
+          "default": {
+            "value": "{color.neutral.gray.100}",
+            "type": "color",
+            "description": "Tag background for info variant in default state"
+          },
+          "hover": {
+            "value": "{color.neutral.gray.200}",
+            "type": "color",
+            "description": "Tag background for info variant in hover state"
+          },
+          "active": {
+            "value": "{color.neutral.gray.200}",
+            "type": "color",
+            "description": "Tag background for info variant in active state"
+          },
+          "focused": {
+            "value": "{color.neutral.gray.200}",
+            "type": "color",
+            "description": "Tag background for info variant in focused state"
+          }
+        }
+      },
+      "border": {
+        "primary": {
+          "default": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for primary variant in default state"
+          },
+          "hover": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for primary variant in hover state"
+          },
+          "active": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for primary variant in active state"
+          },
+          "focused": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for primary variant in focused state"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for secondary variant in default state"
+          },
+          "hover": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for secondary variant in hover state"
+          },
+          "active": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for secondary variant in active state"
+          },
+          "focused": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for secondary variant in focused state"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for error variant in default state"
+          },
+          "hover": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for error variant in hover state"
+          },
+          "active": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for error variant in active state"
+          },
+          "focused": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for error variant in focused state"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for warning variant in default state"
+          },
+          "hover": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for warning variant in hover state"
+          },
+          "active": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for warning variant in active state"
+          },
+          "focused": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for warning variant in focused state"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for success variant in default state"
+          },
+          "hover": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for success variant in hover state"
+          },
+          "active": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for success variant in active state"
+          },
+          "focused": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for success variant in focused state"
+          }
+        },
+        "info": {
+          "default": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for info variant in default state"
+          },
+          "hover": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for info variant in hover state"
+          },
+          "active": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for info variant in active state"
+          },
+          "focused": {
+            "value": "transparent",
+            "type": "color",
+            "description": "Tag border for info variant in focused state"
+          }
+        }
+      },
+      "padding": {
+        "primary": {
+          "default": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for primary variant in default state"
+          },
+          "hover": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for primary variant in hover state"
+          },
+          "active": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for primary variant in active state"
+          },
+          "focused": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for primary variant in focused state"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for secondary variant in default state"
+          },
+          "hover": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for secondary variant in hover state"
+          },
+          "active": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for secondary variant in active state"
+          },
+          "focused": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for secondary variant in focused state"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for error variant in default state"
+          },
+          "hover": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for error variant in hover state"
+          },
+          "active": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for error variant in active state"
+          },
+          "focused": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for error variant in focused state"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for warning variant in default state"
+          },
+          "hover": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for warning variant in hover state"
+          },
+          "active": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for warning variant in active state"
+          },
+          "focused": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for warning variant in focused state"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for success variant in default state"
+          },
+          "hover": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for success variant in hover state"
+          },
+          "active": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for success variant in active state"
+          },
+          "focused": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for success variant in focused state"
+          }
+        },
+        "info": {
+          "default": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for info variant in default state"
+          },
+          "hover": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for info variant in hover state"
+          },
+          "active": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for info variant in active state"
+          },
+          "focused": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Tag padding for info variant in focused state"
+          }
+        }
+      },
+      "size": {
+        "primary": {
+          "default": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for primary variant in default state"
+          },
+          "hover": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for primary variant in hover state"
+          },
+          "active": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for primary variant in active state"
+          },
+          "focused": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for primary variant in focused state"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for secondary variant in default state"
+          },
+          "hover": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for secondary variant in hover state"
+          },
+          "active": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for secondary variant in active state"
+          },
+          "focused": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for secondary variant in focused state"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for error variant in default state"
+          },
+          "hover": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for error variant in hover state"
+          },
+          "active": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for error variant in active state"
+          },
+          "focused": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for error variant in focused state"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for warning variant in default state"
+          },
+          "hover": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for warning variant in hover state"
+          },
+          "active": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for warning variant in active state"
+          },
+          "focused": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for warning variant in focused state"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for success variant in default state"
+          },
+          "hover": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for success variant in hover state"
+          },
+          "active": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for success variant in active state"
+          },
+          "focused": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for success variant in focused state"
+          }
+        },
+        "info": {
+          "default": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for info variant in default state"
+          },
+          "hover": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for info variant in hover state"
+          },
+          "active": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for info variant in active state"
+          },
+          "focused": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Tag size for info variant in focused state"
+          }
+        }
+      }
+    },
+    "text": {
+      "color": {
+        "primary": {
+          "default": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for primary variant in default state"
+          },
+          "hover": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for primary variant in hover state"
+          },
+          "active": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for primary variant in active state"
+          },
+          "focused": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for primary variant in focused state"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for secondary variant in default state"
+          },
+          "hover": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for secondary variant in hover state"
+          },
+          "active": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for secondary variant in active state"
+          },
+          "focused": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for secondary variant in focused state"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for error variant in default state"
+          },
+          "hover": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for error variant in hover state"
+          },
+          "active": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for error variant in active state"
+          },
+          "focused": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for error variant in focused state"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for warning variant in default state"
+          },
+          "hover": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for warning variant in hover state"
+          },
+          "active": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for warning variant in active state"
+          },
+          "focused": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for warning variant in focused state"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for success variant in default state"
+          },
+          "hover": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for success variant in hover state"
+          },
+          "active": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for success variant in active state"
+          },
+          "focused": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for success variant in focused state"
+          }
+        },
+        "info": {
+          "default": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for info variant in default state"
+          },
+          "hover": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for info variant in hover state"
+          },
+          "active": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for info variant in active state"
+          },
+          "focused": {
+            "value": "{color.neutral.gray.0}",
+            "type": "color",
+            "description": "Tag text color for info variant in focused state"
+          }
+        }
+      },
+      "typography": {
+        "primary": {
+          "default": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for primary variant in default state"
+          },
+          "hover": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for primary variant in hover state"
+          },
+          "active": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for primary variant in active state"
+          },
+          "focused": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for primary variant in focused state"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for secondary variant in default state"
+          },
+          "hover": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for secondary variant in hover state"
+          },
+          "active": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for secondary variant in active state"
+          },
+          "focused": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for secondary variant in focused state"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for error variant in default state"
+          },
+          "hover": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for error variant in hover state"
+          },
+          "active": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for error variant in active state"
+          },
+          "focused": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for error variant in focused state"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for warning variant in default state"
+          },
+          "hover": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for warning variant in hover state"
+          },
+          "active": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for warning variant in active state"
+          },
+          "focused": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for warning variant in focused state"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for success variant in default state"
+          },
+          "hover": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for success variant in hover state"
+          },
+          "active": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for success variant in active state"
+          },
+          "focused": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for success variant in focused state"
+          }
+        },
+        "info": {
+          "default": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for info variant in default state"
+          },
+          "hover": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for info variant in hover state"
+          },
+          "active": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for info variant in active state"
+          },
+          "focused": {
+            "value": "{typography.text.md}",
+            "type": "typography",
+            "description": "Tag typography for info variant in focused state"
+          }
+        }
+      }
+    }
+  }
+}
