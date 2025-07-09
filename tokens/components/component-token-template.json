@@ -1,0 +1,129 @@
+{
+  "$schema": "https://schemas.jsonresume.org/v1.0.0/schema.json",
+  "$description": "Template for HighRise component-specific design tokens",
+  "component": {
+    "name": "ComponentName",
+    "version": "1.0.0",
+    "description": "Description of the component and its token structure",
+    "theme": {
+      "light": {
+        "element": {
+          "category": {
+            "sub-category": {
+              "concept": {
+                "property": {
+                  "variant": {
+                    "state": {
+                      "scale": {
+                        "value": "{semantic.token.reference}",
+                        "type": "color|dimension|typography|shadow|border",
+                        "description": "Token description"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "dark": {
+        "element": {
+          "category": {
+            "sub-category": {
+              "concept": {
+                "property": {
+                  "variant": {
+                    "state": {
+                      "scale": {
+                        "value": "{semantic.token.reference}",
+                        "type": "color|dimension|typography|shadow|border",
+                        "description": "Token description"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "responsive": {
+      "mobile": {
+        "element": {
+          "category": {
+            "sub-category": {
+              "concept": {
+                "property": {
+                  "variant": {
+                    "state": {
+                      "value": "{semantic.token.reference}",
+                      "type": "dimension|typography",
+                      "description": "Mobile-specific token"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "tablet": {
+        "element": {
+          "category": {
+            "sub-category": {
+              "concept": {
+                "property": {
+                  "variant": {
+                    "state": {
+                      "value": "{semantic.token.reference}",
+                      "type": "dimension|typography",
+                      "description": "Tablet-specific token"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "large": {
+        "element": {
+          "category": {
+            "sub-category": {
+              "concept": {
+                "property": {
+                  "variant": {
+                    "state": {
+                      "value": "{semantic.token.reference}",
+                      "type": "dimension|typography",
+                      "description": "Large screen token"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "states": {
+      "default": "Base state",
+      "hover": "Mouse hover state",
+      "active": "Active/pressed state",
+      "focused": "Keyboard focus state",
+      "disabled": "Disabled state",
+      "loading": "Loading state"
+    },
+    "variants": {
+      "primary": "Primary variant",
+      "secondary": "Secondary variant",
+      "tertiary": "Tertiary variant",
+      "error": "Error state variant",
+      "warning": "Warning state variant",
+      "success": "Success state variant",
+      "info": "Info state variant"
+    }
+  }
+} 
