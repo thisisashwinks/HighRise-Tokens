@@ -1,0 +1,372 @@
+{
+  "dropdown-list-item": {
+    "container": {
+      "padding": {
+        "value": "{padding.1} {padding.2}",
+        "type": "dimension",
+        "description": "Container padding for menu items"
+      },
+      "gap": {
+        "value": "{gap.2}",
+        "type": "dimension", 
+        "description": "Gap between checkbox and content"
+      },
+      "border-radius": {
+        "value": "{border.radius.sm}",
+        "type": "dimension",
+        "description": "Container border radius"
+      }
+    },
+    "content": {
+      "gap": {
+        "primary": {
+          "value": "{gap.1}",
+          "type": "dimension",
+          "description": "Gap between icon and text content"
+        },
+        "secondary": {
+          "value": "{gap.0[5]}",
+          "type": "dimension",
+          "description": "Gap between label and description"
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "primary": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Size for main action icons"
+        },
+        "description": {
+          "value": "{size.2[5]}",
+          "type": "dimension", 
+          "description": "Size for description icons"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.icon.neutral.moderate.1}",
+          "type": "color",
+          "description": "Default icon color"
+        },
+        "disabled": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Disabled icon color"
+        }
+      }
+    },
+    "avatar": {
+      "size": {
+        "value": "{size.xs}",
+        "type": "dimension",
+        "description": "Avatar size for list items"
+      }
+    },
+    "checkbox": {
+      "size": {
+        "value": "{checkbox.container.size.xs}",
+        "type": "dimension",
+        "description": "Checkbox size for multi-select items"
+      },
+      "border-radius": {
+        "value": "{checkbox.container.border-radius.xs}",
+        "type": "dimension",
+        "description": "Checkbox border radius"
+      },
+      "background": {
+        "unchecked": {
+          "default": {
+            "value": "{checkbox.background.unchecked.default}",
+            "type": "color",
+            "description": "Default unchecked checkbox background"
+          },
+          "hover": {
+            "value": "{checkbox.background.unchecked.hover}",
+            "type": "color",
+            "description": "Hover unchecked checkbox background"
+          },
+          "disabled": {
+            "value": "{checkbox.background.unchecked.disabled}",
+            "type": "color",
+            "description": "Disabled unchecked checkbox background"
+          }
+        },
+        "checked": {
+          "default": {
+            "value": "{checkbox.background.checked.default}",
+            "type": "color",
+            "description": "Default checked checkbox background"
+          },
+          "hover": {
+            "value": "{checkbox.background.checked.hover}",
+            "type": "color",
+            "description": "Hover checked checkbox background"
+          },
+          "disabled": {
+            "value": "{checkbox.background.checked.disabled}",
+            "type": "color",
+            "description": "Disabled checked checkbox background"
+          }
+        }
+      },
+      "border": {
+        "unchecked": {
+          "default": {
+            "value": "{checkbox.border.unchecked.default}",
+            "type": "color",
+            "description": "Default unchecked checkbox border"
+          },
+          "hover": {
+            "value": "{checkbox.border.unchecked.hover}",
+            "type": "color",
+            "description": "Hover unchecked checkbox border"
+          },
+          "disabled": {
+            "value": "{checkbox.border.unchecked.disabled}",
+            "type": "color",
+            "description": "Disabled unchecked checkbox border"
+          }
+        },
+        "checked": {
+          "default": {
+            "value": "{checkbox.border.checked.default}",
+            "type": "color",
+            "description": "Default checked checkbox border"
+          },
+          "hover": {
+            "value": "{checkbox.border.checked.hover}",
+            "type": "color",
+            "description": "Hover checked checkbox border"
+          },
+          "disabled": {
+            "value": "{checkbox.border.checked.disabled}",
+            "type": "color",
+            "description": "Disabled checked checkbox border"
+          }
+        }
+      }
+    },
+    "text": {
+      "label": {
+        "font": {
+          "value": "{font.body.regular.sm}",
+          "type": "string",
+          "description": "Primary label text style"
+        },
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Default label text color"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color", 
+            "description": "Disabled label text color"
+          }
+        }
+      },
+      "description": {
+        "font": {
+          "value": "{font.body.regular.xs}",
+          "type": "string",
+          "description": "Supporting text style"
+        },
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.moderate.1}",
+            "type": "color",
+            "description": "Default description text color"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "Disabled description text color"
+          }
+        }
+      },
+      "supporting": {
+        "font": {
+          "value": "{font.body.regular.xs}",
+          "type": "string",
+          "description": "Supporting information text style"
+        },
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.body.2}",
+            "type": "color",
+            "description": "Supporting text color"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "Disabled supporting text color"
+          }
+        }
+      }
+    },
+    "background": {
+      "default": {
+        "value": "{color.background.neutral.base}",
+        "type": "color",
+        "description": "Default background color"
+      },
+      "hover": {
+        "value": "{color.background.neutral.subtle.2}",
+        "type": "color",
+        "description": "Hover state background"
+      },
+      "selected": {
+        "value": "{color.background.brand.subtle.1}",
+        "type": "color",
+        "description": "Selected state background"
+      },
+      "disabled": {
+        "value": "{color.background.neutral.inactive}",
+        "type": "color",
+        "description": "Disabled state background"
+      }
+    },
+    "group-title": {
+      "padding": {
+        "value": "{padding.2} {padding.2[5]} {padding.1} {padding.2}",
+        "type": "dimension",
+        "description": "Group title container padding"
+      },
+      "text": {
+        "font": {
+          "value": "{font.body.medium.xs}",
+          "type": "string",
+          "description": "Group title text style"
+        },
+        "color": {
+          "value": "{color.text.neutral.subtitle.1}",
+          "type": "color",
+          "description": "Group title text color"
+        }
+      }
+    },
+    "search": {
+      "padding": {
+        "value": "{padding.2}",
+        "type": "dimension",
+        "description": "Search container padding"
+      },
+      "input": {
+        "padding": {
+          "value": "{padding.0} {padding.2}",
+          "type": "dimension",
+          "description": "Search input padding"
+        },
+        "border": {
+          "color": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Search input border color"
+          },
+          "width": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Search input border width"
+          }
+        },
+        "border-radius": {
+          "value": "{border.radius.sm}",
+          "type": "dimension",
+          "description": "Search input border radius"
+        },
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Search input background"
+        },
+        "gap": {
+          "value": "{gap.1}",
+          "type": "dimension",
+          "description": "Gap between search icon and text"
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{size.3}",
+          "type": "dimension",
+          "description": "Search icon size"
+        },
+        "color": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Search icon color"
+        }
+      },
+      "placeholder": {
+        "font": {
+          "value": "{font.body.regular.md}",
+          "type": "string",
+          "description": "Search placeholder text style"
+        },
+        "color": {
+          "value": "{color.text.neutral.subtitle.2}",
+          "type": "color",
+          "description": "Search placeholder text color"
+        }
+      }
+    },
+    "divider": {
+      "height": {
+        "value": "{size.0[25]}",
+        "type": "dimension",
+        "description": "Divider height"
+      },
+      "color": {
+        "value": "{color.border.neutral.default}",
+        "type": "color",
+        "description": "Divider color"
+      }
+    },
+    "custom": {
+      "padding": {
+        "value": "{padding.2} {padding.0}",
+        "type": "dimension",
+        "description": "Custom content padding"
+      },
+      "border-radius": {
+        "value": "{border.radius.sm}",
+        "type": "dimension",
+        "description": "Custom content border radius"
+      },
+      "background": {
+        "value": "{color.background.neutral.subtle.2}",
+        "type": "color",
+        "description": "Custom content background"
+      }
+    },
+    "check-indicator": {
+      "size": {
+        "value": "{size.4}",
+        "type": "dimension",
+        "description": "Check indicator container size"
+      },
+      "color": {
+        "value": "{color.border.brand.default}",
+        "type": "color",
+        "description": "Check indicator color"
+      }
+    },
+    "tag": {
+      "gap": {
+        "value": "{gap.1}",
+        "type": "dimension",
+        "description": "Gap between tags in badge container"
+      }
+    },
+    "right-info": {
+      "gap": {
+        "value": "{gap.1}",
+        "type": "dimension",
+        "description": "Gap between right info elements"
+      }
+    }
+  }
+} 

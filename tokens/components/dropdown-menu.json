@@ -1,0 +1,181 @@
+{
+  "dropdown-menu": {
+    "container": {
+      "width": {
+        "fixed": {
+          "value": "{size.width.182}",
+          "type": "dimension",
+          "description": "Fixed width for dropdown menu container"
+        },
+        "min": {
+          "value": "{size.width.160}",
+          "type": "dimension",
+          "description": "Minimum width for dropdown menu container"
+        },
+        "max": {
+          "value": "{size.width.360}",
+          "type": "dimension",
+          "description": "Maximum width for dropdown menu container"
+        }
+      },
+      "background": {
+        "value": "{color.background.neutral.base}",
+        "type": "color",
+        "description": "Dropdown menu background color"
+      },
+      "border": {
+        "color": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "description": "Dropdown menu border color"
+        },
+        "width": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Dropdown menu border width"
+        },
+        "radius": {
+          "value": "{border.radius.sm}",
+          "type": "dimension",
+          "description": "Dropdown menu border radius"
+        }
+      },
+      "shadow": {
+        "value": "0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.1)",
+        "type": "string",
+        "description": "Dropdown menu box shadow"
+      },
+      "padding": {
+        "value": "{padding.0}",
+        "type": "dimension",
+        "description": "Container padding around items"
+      }
+    },
+    "layout": {
+      "direction": {
+        "value": "column",
+        "type": "string",
+        "description": "Layout direction for menu items"
+      },
+      "gap": {
+        "value": "{gap.0}",
+        "type": "dimension",
+        "description": "Gap between menu items"
+      },
+      "alignment": {
+        "items": {
+          "value": "stretch",
+          "type": "string",
+          "description": "Item alignment within container"
+        },
+        "content": {
+          "value": "flex-start",
+          "type": "string",
+          "description": "Content alignment within container"
+        }
+      }
+    },
+    "scrollable": {
+      "max-height": {
+        "sm": {
+          "value": "{size.height.192}",
+          "type": "dimension",
+          "description": "Max height for small scrollable dropdown (6 items)"
+        },
+        "md": {
+          "value": "{size.height.256}",
+          "type": "dimension",
+          "description": "Max height for medium scrollable dropdown (8 items)"
+        },
+        "lg": {
+          "value": "{size.height.360}",
+          "type": "dimension",
+          "description": "Max height for large scrollable dropdown (12+ items)"
+        }
+      },
+      "scrollbar": {
+        "width": {
+          "value": "{size.1}",
+          "type": "dimension",
+          "description": "Scrollbar width for scrollable dropdown"
+        },
+        "color": {
+          "thumb": {
+            "value": "{color.background.neutral.moderate.1}",
+            "type": "color",
+            "description": "Scrollbar thumb color"
+          },
+          "track": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Scrollbar track color"
+          }
+        }
+      }
+    },
+    "positioning": {
+      "z-index": {
+        "value": "{z-index.xl}",
+        "type": "dimension",
+        "description": "Z-index for dropdown menu overlay"
+      },
+      "offset": {
+        "top": {
+          "value": "{gap.0[5]}",
+          "type": "dimension",
+          "description": "Offset from trigger element"
+        }
+      }
+    },
+    "animation": {
+      "duration": {
+        "open": {
+          "value": "200ms",
+          "type": "string",
+          "description": "Animation duration for opening dropdown"
+        },
+        "close": {
+          "value": "150ms",
+          "type": "string",
+          "description": "Animation duration for closing dropdown"
+        }
+      },
+      "easing": {
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "type": "string",
+        "description": "Animation easing function"
+      }
+    },
+    "empty-state": {
+      "padding": {
+        "value": "{padding.6} {padding.4}",
+        "type": "dimension",
+        "description": "Empty state container padding"
+      },
+      "text": {
+        "font": {
+          "value": "{font.body.regular.sm}",
+          "type": "string",
+          "description": "Empty state text font"
+        },
+        "color": {
+          "value": "{color.text.neutral.subtitle.1}",
+          "type": "color",
+          "description": "Empty state text color"
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{size.icon.lg}",
+          "type": "dimension",
+          "description": "Empty state icon size"
+        },
+        "color": {
+          "value": "{color.icon.neutral.moderate.0}",
+          "type": "color",
+          "description": "Empty state icon color"
+        }
+      }
+    }
+  }
+} 

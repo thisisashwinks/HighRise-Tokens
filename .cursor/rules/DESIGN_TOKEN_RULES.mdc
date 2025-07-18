@@ -1,0 +1,775 @@
+# HighRise Design Token Rules
+
+## Token Structure Cleanup Guidelines
+
+### Schema and Metadata Removal
+- **Remove all schema/metadata**: $schema, $description, name, version, description
+- **Use actual component name as root key** (e.g., "input", "button", "tag-count") not "component"
+- **Remove documentation sections**: responsive, states, variants, types
+- **Keep only core token definitions**: size, color, border-radius, container
+
+### Token Hierarchy Workflow
+**CRITICAL**: Always follow this hierarchy:
+1. **Check primitive tokens first** - if value doesn't exist, add to primitive tokens
+2. **Add to semantic tokens** - create semantic reference to primitive
+3. **Reference in component tokens** - use semantic token reference
+4. **Never create arbitrary values** - all values must flow through primitive → semantic → component
+
+### Token Reference Patterns (NO "semantic." PREFIX)
+
+#### Colors (use actual primitive structure)
+- Primary colors: `{color.primary.blue.600}` (not color.brand.primary)
+- Status colors: `{color.secondary.error}`, `{color.secondary.warning}`, `{color.secondary.success}` (not color.status.*)
+- Neutral colors: `{color.neutral.gray.100}`, `{color.neutral.gray.700}`
+- Background: `{color.background.neutral.subtle.1}`
+- Text: `{color.text.neutral.body.1}`
+- Border: `{color.border.neutral.default}`
+
+#### Transparent Values - ALWAYS Use Semantic Tokens
+- **NEVER use raw "transparent"** - always use semantic token reference
+- Background transparent: `{color.background.transparent}`
+- Border transparent: `{color.border.transparent}`
+- Text transparent: `{color.text.transparent}`
+- Icon transparent: `{color.icon.transparent}`
+
+#### Border Radius (use actual primitive structure)
+- Border radius: `{border.radius.0[5]}`, `{border.radius.1}`, `{border.radius.2}` (not size.width.*)
+- Circular borders: `{border.radius.full}` (not specific values)
+
+#### Spacing References (NO "tokens." PREFIX)
+**Default approach**: Use direct semantic tokens without unnecessary prefixes
+- **Padding tokens**: `{padding.0[75]}`, `{padding.1}`, `{padding.1[25]}`, `{padding.1[5]}`, `{padding.1[75]}`, `{padding.2}`, `{padding.2[5]}`, `{padding.3}`, etc.
+- **Size tokens**: `{size.4}`, `{size.5}`, `{size.6}`, `{size.7}`, `{size.8}`, `{size.9}`, `{size.10}`, `{size.11}`, `{size.12}`, `{size.14}`, `{size.16}`, etc.
+- **Use directional tokens only when needed**: `{padding.x.xs}`, `{padding.y.sm}`, `{gap.x.md}`, etc. for components requiring specific directional spacing
+- **NEVER use "tokens.padding.x" or "tokens.gap.x"** - always use direct references
+- **Format fractional values as 0[5] not 0.5** - they are at the same level
+
+#### Size Optimization
+- **When width and height are same, use single size token**: `{size.1}`, `{size.xs}`, `{size.sm}`, `{size.md}`, `{size.lg}`, `{size.xl}`, `{size.2xl}`
+- **For icon sizes, use semantic**: `{size.icon.4xs}`, `{size.icon.3xs}`, `{size.icon.2xs}`, `{size.icon.xs}`, `{size.icon.sm}`, `{size.icon.md}`, `{size.icon.lg}`, `{size.icon.xl}`, `{size.icon.2xl}`, `{size.icon.3xl}`, `{size.icon.4xl}`
+- **Use numeric**: `{size.1}`, `{size.2}`, `{size.3}`, etc. for basic dimensions
+
+#### Semantic Token Precision
+- **Be precise with semantic levels**: Use exact level numbers (0, 1, 2) based on actual design intent
+- **Subtle levels**: `subtle.0` (lightest), `subtle.1` (light), `subtle.2` (medium light)
+- **Moderate levels**: `moderate.0`, `moderate.1`, `moderate.2`, `moderate.3`
+- **Intense levels**: `intense.0`, `intense.1`, `intense.2`
+- **Don't default to level 2** - choose the appropriate level for the specific use case
+
+#### Spacing References (available when directional specificity needed)
+**PADDING:**
+- General: `{padding.0}`, `{padding.1}`, `{padding.2}`, etc.
+- Horizontal: `{padding.x.0}`, `{padding.x.1}`, `{padding.x.xs}`, `{padding.x.sm}`, `{padding.x.md}`, `{padding.x.lg}`, `{padding.x.xl}`, `{padding.x.2xl}`
+- Vertical: `{padding.y.0}`, `{padding.y.1}`, `{padding.y.xs}`, `{padding.y.sm}`, `{padding.y.md}`, `{padding.y.lg}`, `{padding.y.xl}`, `{padding.y.2xl}`
+
+**MARGIN:**
+- General: `{margin.0}`, `{margin.1}`, `{margin.2}`, etc.
+- Horizontal: `{margin.x.0}`, `{margin.x.1}`, `{margin.x.xs}`, `{margin.x.sm}`, `{margin.x.md}`, `{margin.x.lg}`, `{margin.x.xl}`, `{margin.x.2xl}`
+- Vertical: `{margin.y.0}`, `{margin.y.1}`, `{margin.y.xs}`, `{margin.y.sm}`, `{margin.y.md}`, `{margin.y.lg}`, `{margin.y.xl}`, `{margin.y.2xl}`
+- Directional: `{margin.top.*}`, `{margin.right.*}`, `{margin.bottom.*}`, `{margin.left.*}`
+
+**GAP:**
+- General: `{gap.0}`, `{gap.1}`, `{gap.2}`, etc.
+- Horizontal: `{gap.x.0}`, `{gap.x.1}`, `{gap.x.xs}`, `{gap.x.sm}`, `{gap.x.md}`, `{gap.x.lg}`, `{gap.x.xl}`, `{gap.x.2xl}`
+- Vertical: `{gap.y.0}`, `{gap.y.1}`, `{gap.y.xs}`, `{gap.y.sm}`, `{gap.y.md}`, `{gap.y.lg}`, `{gap.y.xl}`, `{gap.y.2xl}`
+- Semantic: `{gap.x.3xs}`, `{gap.x.2xs}`, `{gap.x.xs}`, `{gap.x.sm}`, `{gap.x.md}`, `{gap.x.lg}`, `{gap.x.xl}`, `{gap.x.2xl}`
+- Between: `{gap.x.between.3xs}`, `{gap.x.between.2xs}`, `{gap.x.between.xs}`, etc.
+- Negative values: `{gap.-1}`, `{gap.-2}`, `{gap.x.-1}`, `{gap.y.-1}`
+
+**POSITION:**
+- General: `{position.0}`, `{position.1}`, `{position.2}`, `{position.0[5]}`, `{position.1[5]}`, etc.
+- Horizontal: `{position.x.0}`, `{position.x.1}`, `{position.x.0[5]}`, `{position.x.0[25]}`, `{position.x.0[75]}`, etc.
+- Vertical: `{position.y.0}`, `{position.y.1}`, `{position.y.0[5]}`, `{position.y.0[25]}`, `{position.y.0[75]}`, etc.
+- Negative values: `{position.-1}`, `{position.-0[5]}`, `{position.x.-1}`, `{position.y.-1}`, etc.
+
+#### Typography References
+- **Font tokens**: `{font.body.medium.2xs}`, `{font.body.medium.xs}`, `{font.body.medium.sm}`, `{font.body.medium.md}`
+- **Use complete typography tokens**: Include size, weight, and line-height
+- **Component typography pattern**:
+  ```json
+  "text": {
+    "typography": {
+      "xs": {"value": "{font.body.medium.xs}", "type": "string"},
+      "sm": {"value": "{font.body.medium.sm}", "type": "string"},
+      "md": {"value": "{font.body.medium.md}", "type": "string"},
+      "lg": {"value": "{font.body.medium.md}", "type": "string"}
+    }
+  }
+  ```
+- **Separate from color variants**: Typography is usually consistent across color variants
+
+### Fractional Value Format
+- **Use bracket notation for fractions**: `0[5]` for 0.5, `1[25]` for 1.25, `1[5]` for 1.5, `1[75]` for 1.75, etc.
+- **Fractional tokens are at same level as whole numbers**: `{padding.0[5]}`, `{padding.1}`, `{padding.1[25]}` are all direct siblings
+
+### Component Context Clarity
+- **Each component has its own spacing context and purpose**
+- **Use direct tokens as default, directional tokens only when component requires specific axis control**
+- **Component token descriptions should reflect the actual usage context**
+
+## Component Structural Patterns
+
+### Pattern 1: Shared/Variants Structure (PREFERRED)
+**Best for**: Form components, interactive elements with consistent structure across color variants
+**Examples**: input, button, tag, textarea
+
+```json
+{
+  "component-name": {
+    "shared": {
+      "border": {
+        "radius": {
+          "value": "{border.radius.sm}",
+          "type": "dimension"
+        },
+        "width": {
+          "value": "{border.width.default}",
+          "type": "dimension"
+        }
+      },
+      "padding": {
+        "x": {
+          "value": "{padding.xs}",
+          "type": "dimension"
+        },
+        "y": {
+          "value": "{padding.2xs}",
+          "type": "dimension"
+        }
+      },
+      "height": {
+        "xs": {
+          "value": "{size.height.xs}",
+          "type": "dimension"
+        },
+        "sm": {
+          "value": "{size.height.sm}",
+          "type": "dimension"
+        },
+        "md": {
+          "value": "{size.height.md}",
+          "type": "dimension"
+        },
+        "lg": {
+          "value": "{size.height.lg}",
+          "type": "dimension"
+        }
+      },
+      "min-width": {
+        "value": "{size.width.64}",
+        "type": "dimension"
+      }
+    },
+    "text": {
+      "typography": {
+        "xs": {"value": "{font.body.regular.xs}", "type": "string"},
+        "sm": {"value": "{font.body.regular.sm}", "type": "string"},
+        "md": {"value": "{font.body.regular.md}", "type": "string"},
+        "lg": {"value": "{font.body.regular.base}", "type": "string"}
+      }
+    },
+    "icon": {
+      "size": {
+        "xs": {"value": "{size.icon.xs}", "type": "dimension"},
+        "sm": {"value": "{size.icon.xs}", "type": "dimension"},
+        "md": {"value": "{size.icon.sm}", "type": "dimension"},
+        "lg": {"value": "{size.icon.md}", "type": "dimension"}
+      }
+    },
+    "variants": {
+      "neutral": {
+        "default": {
+          "background": {
+            "default": {"value": "{color.background.neutral.base}", "type": "color"},
+            "hover": {"value": "{color.background.neutral.base}", "type": "color"},
+            "active": {"value": "{color.background.neutral.base}", "type": "color"},
+            "focused": {"value": "{color.background.neutral.base}", "type": "color"},
+            "disabled": {"value": "{color.background.neutral.subtle.0}", "type": "color"}
+          },
+          "border": {
+            "default": {"value": "{color.border.neutral.default}", "type": "color"},
+            "hover": {"value": "{color.border.primary.default}", "type": "color"},
+            "active": {"value": "{color.border.primary.default}", "type": "color"},
+            "focused": {"value": "{color.border.primary.default}", "type": "color"},
+            "disabled": {"value": "{color.border.neutral.default}", "type": "color"}
+          },
+          "text": {
+            "default": {"value": "{color.text.neutral.subtitle.1}", "type": "color"},
+            "hover": {"value": "{color.text.neutral.subtitle.1}", "type": "color"},
+            "active": {"value": "{color.text.neutral.title.1}", "type": "color"},
+            "focused": {"value": "{color.text.neutral.title.1}", "type": "color"},
+            "disabled": {"value": "{color.text.neutral.subtitle.2}", "type": "color"},
+            "placeholder": {"value": "{color.text.neutral.subtitle.1}", "type": "color"}
+          },
+          "icon": {
+            "default": {"value": "{color.icon.neutral.info}", "type": "color"},
+            "hover": {"value": "{color.icon.neutral.info}", "type": "color"},
+            "active": {"value": "{color.icon.neutral.info}", "type": "color"},
+            "focused": {"value": "{color.icon.neutral.info}", "type": "color"},
+            "disabled": {"value": "{color.icon.neutral.subtle.2}", "type": "color"}
+          },
+          "focus": {
+            "ring": {"value": "{color.border.primary.subtle.2}", "type": "color"},
+            "shadow": {"value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)", "type": "boxShadow"}
+          }
+        }
+      },
+      "primary": {
+        "default": {
+          // Same structure as neutral
+        }
+      },
+      "error": {
+        "default": {
+          // Same structure as neutral
+        }
+      }
+    }
+  }
+}
+```
+
+### Pattern 2: Container-Based Structure
+**Best for**: Simple components without complex color variants, utility components
+**Examples**: checkbox, select, avatar (when color variation is minimal)
+
+```json
+{
+  "component-name": {
+    "container": {
+      "size": {
+        "xs": {"value": "{size.3}", "type": "dimension"},
+        "sm": {"value": "{size.4}", "type": "dimension"},
+        "md": {"value": "{size.5}", "type": "dimension"},
+        "lg": {"value": "{size.6}", "type": "dimension"}
+      },
+      "border": {
+        "radius": {
+          "xs": {"value": "{border.radius.1}", "type": "dimension"},
+          "sm": {"value": "{border.radius.1}", "type": "dimension"},
+          "md": {"value": "{border.radius.1[5]}", "type": "dimension"},
+          "lg": {"value": "{border.radius.2}", "type": "dimension"}
+        },
+        "width": {"value": "{border.width.default}", "type": "dimension"}
+      },
+      "background": {
+        "default": {"value": "{color.background.neutral.base}", "type": "color"},
+        "hover": {"value": "{color.background.primary.subtle.1}", "type": "color"},
+        "focused": {"value": "{color.background.neutral.base}", "type": "color"},
+        "disabled": {"value": "{color.background.neutral.subtle.1}", "type": "color"}
+      },
+      "border-color": {
+        "default": {"value": "{color.border.neutral.default}", "type": "color"},
+        "hover": {"value": "{color.border.primary.default}", "type": "color"},
+        "focused": {"value": "{color.border.primary.default}", "type": "color"},
+        "disabled": {"value": "{color.border.neutral.subtle.1}", "type": "color"}
+      }
+    }
+  }
+}
+```
+
+### Pattern 3: Simplified Variants Structure
+**Best for**: Components with simple color variations, informational components
+**Examples**: alert, toast, badge (no complex interaction states)
+
+```json
+{
+  "component-name": {
+    "shared": {
+      "border": {
+        "radius": {"value": "{border.radius.lg}", "type": "dimension"}
+      },
+      "padding": {"value": "{padding.sm}", "type": "dimension"},
+      "gap": {"value": "{gap.xs}", "type": "dimension"}
+    },
+    "text": {
+      "typography": {
+        "title": {"value": "{font.body.semibold.base}", "type": "string"},
+        "body": {"value": "{font.body.regular.md}", "type": "string"}
+      }
+    },
+    "icon": {
+      "size": {"value": "{size.icon.md}", "type": "dimension"}
+    },
+    "variants": {
+      "neutral": {
+        "background": {"value": "{color.background.neutral.base}", "type": "color"},
+        "border": {"value": "{color.border.neutral.default}", "type": "color"},
+        "icon": {"value": "{color.icon.neutral.default}", "type": "color"},
+        "text": {
+          "title": {"value": "{color.text.neutral.title.1}", "type": "color"},
+          "body": {"value": "{color.text.neutral.body.1}", "type": "color"}
+        }
+      },
+      "primary": {
+        "background": {"value": "{color.background.primary.subtle.1}", "type": "color"},
+        "border": {"value": "{color.border.primary.subtle.2}", "type": "color"},
+        "icon": {"value": "{color.icon.primary.moderate.1}", "type": "color"},
+        "text": {
+          "title": {"value": "{color.text.primary.title.1}", "type": "color"},
+          "body": {"value": "{color.text.primary.body.1}", "type": "color"}
+        }
+      }
+    }
+  }
+}
+```
+
+## Size Naming Standards (CRITICAL)
+
+### Preferred Size Scale (STANDARDIZE ON THIS)
+**Use consistently across ALL components**:
+- `xs` (extra small)
+- `sm` (small) 
+- `md` (medium)
+- `lg` (large)
+- `xl` (extra large)
+- `2xl` (2x extra large)
+
+### Legacy Size Scale (MIGRATE AWAY FROM)
+**Avoid these naming patterns**:
+- `3xs`, `2xs` (overly granular, harder to remember)
+- Mixed naming within same component
+
+### Size Mapping Guide
+When converting legacy sizes to standard sizes:
+- `3xs` → `xs`
+- `2xs` → `sm` 
+- `xs` → `md`
+- `sm` → `lg`
+- `md` → `xl`
+- `lg` → `2xl`
+
+### Height Token Patterns
+**Option 1 - Semantic height tokens** (PREFERRED):
+```json
+"height": {
+  "xs": {"value": "{size.height.xs}", "type": "dimension"},
+  "sm": {"value": "{size.height.sm}", "type": "dimension"},
+  "md": {"value": "{size.height.md}", "type": "dimension"},
+  "lg": {"value": "{size.height.lg}", "type": "dimension"}
+}
+```
+
+**Option 2 - Direct size tokens** (when height tokens unavailable):
+```json
+"height": {
+  "xs": {"value": "{size.20}", "type": "dimension"},
+  "sm": {"value": "{size.24}", "type": "dimension"}, 
+  "md": {"value": "{size.28}", "type": "dimension"},
+  "lg": {"value": "{size.32}", "type": "dimension"}
+}
+```
+
+## State Naming Standards
+
+### Standard Interactive States (REQUIRED)
+**Use consistently across ALL interactive components**:
+- `default` - Initial/rest state
+- `hover` - Mouse hover state  
+- `active` - Clicked/pressed state
+- `focused` - Keyboard focus state
+- `disabled` - Non-interactive state
+
+### Component-Specific States (when needed)
+**For specialized components only**:
+- `checked`/`unchecked` - For checkboxes, radios
+- `open`/`closed` - For dropdowns, accordions
+- `filled` - For inputs with content
+- `placeholder` - For placeholder text
+- `indeterminate` - For checkboxes in partial state
+
+### State Consistency Rules
+1. **All color properties** (background, border, text, icon) **must have identical state structure**
+2. **Never mix state naming** within same component (don't use both "active" and "filled")
+3. **Include placeholder state** for all text properties in form components
+4. **Focus states must include** both ring color and shadow tokens
+
+## Complex Component Patterns
+
+### Multi-Style Components (Button-like)
+**For components with multiple style variants within color variants**:
+
+```json
+"variants": {
+  "primary": {
+    "filled": {
+      "background": { /* all states */ },
+      "border": { /* all states */ },
+      "text": { /* all states */ },
+      "icon": { /* all states */ }
+    },
+    "outline": {
+      "background": { /* all states */ },
+      "border": { /* all states */ },
+      "text": { /* all states */ },
+      "icon": { /* all states */ }
+    },
+    "ghost": {
+      "background": { /* all states */ },
+      "border": { /* all states */ },
+      "text": { /* all states */ },
+      "icon": { /* all states */ }
+    }
+  }
+}
+```
+
+### Multi-Variant Components (Tag-like)
+**For components with shape/type variants**:
+
+```json
+"shared": {
+  "border": {
+    "radius": {
+      "square": {
+        "xs": {"value": "{border.radius.xs}", "type": "dimension"},
+        "sm": {"value": "{border.radius.xs}", "type": "dimension"},
+        "md": {"value": "{border.radius.xs}", "type": "dimension"},
+        "lg": {"value": "{border.radius.xs}", "type": "dimension"}
+      },
+      "rounded": {
+        "xs": {"value": "{border.radius.full}", "type": "dimension"},
+        "sm": {"value": "{border.radius.full}", "type": "dimension"},
+        "md": {"value": "{border.radius.full}", "type": "dimension"},
+        "lg": {"value": "{border.radius.full}", "type": "dimension"}
+      }
+    }
+  }
+}
+```
+
+### Multi-Position Components (Input-like)
+**For components with multiple icon positions or content areas**:
+
+```json
+"icon": {
+  "size": {
+    "leading": {
+      "xs": {"value": "{size.icon.xs}", "type": "dimension"},
+      "sm": {"value": "{size.icon.xs}", "type": "dimension"},
+      "md": {"value": "{size.icon.sm}", "type": "dimension"},
+      "lg": {"value": "{size.icon.md}", "type": "dimension"}
+    },
+    "trailing": {
+      "xs": {"value": "{size.icon.xs}", "type": "dimension"},
+      "sm": {"value": "{size.icon.xs}", "type": "dimension"},
+      "md": {"value": "{size.icon.sm}", "type": "dimension"},
+      "lg": {"value": "{size.icon.md}", "type": "dimension"}
+    },
+    "help": {
+      "xs": {"value": "{size.icon.3xs}", "type": "dimension"},
+      "sm": {"value": "{size.icon.3xs}", "type": "dimension"},
+      "md": {"value": "{size.icon.xs}", "type": "dimension"},
+      "lg": {"value": "{size.icon.sm}", "type": "dimension"}
+    }
+  }
+}
+```
+
+## Form Component Requirements
+
+### Required Sections for ALL Form Components
+```json
+"label": {
+  "typography": {
+    "xs": {"value": "{font.body.medium.xs}", "type": "string"},
+    "sm": {"value": "{font.body.medium.sm}", "type": "string"},
+    "md": {"value": "{font.body.medium.md}", "type": "string"},
+    "lg": {"value": "{font.body.medium.base}", "type": "string"}
+  },
+  "color": {
+    "default": {"value": "{color.text.neutral.title.1}", "type": "color"},
+    "disabled": {"value": "{color.text.neutral.subtitle.2}", "type": "color"},
+    "error": {"value": "{color.text.error.body.1}", "type": "color"}
+  },
+  "margin": {
+    "bottom": {"value": "{margin.1}", "type": "dimension"}
+  }
+},
+"helper-text": {
+  "typography": {
+    "xs": {"value": "{font.body.regular.2xs}", "type": "string"},
+    "sm": {"value": "{font.body.regular.xs}", "type": "string"},
+    "md": {"value": "{font.body.regular.sm}", "type": "string"},
+    "lg": {"value": "{font.body.regular.md}", "type": "string"}
+  },
+  "color": {
+    "default": {"value": "{color.text.neutral.subtitle.1}", "type": "color"},
+    "error": {"value": "{color.text.error.body.1}", "type": "color"},
+    "success": {"value": "{color.text.success.body.1}", "type": "color"}
+  },
+  "margin": {
+    "top": {"value": "{margin.1}", "type": "dimension"}
+  }
+}
+```
+
+### Form Component Organization Order
+```json
+{
+  "component-name": {
+    "shared": { /* common properties */ },
+    "text": { /* input typography */ },
+    "icon": { /* icon sizes */ },
+    "label": { /* label properties */ },
+    "helper-text": { /* helper text properties */ },
+    "variants": { /* color variants */ },
+    "addon": { /* specialized sections as needed */ },
+    "prefix": { /* specialized sections as needed */ },
+    "suffix": { /* specialized sections as needed */ },
+    "dropdown": { /* specialized sections as needed */ },
+    "character-count": { /* specialized sections as needed */ },
+    "button": { /* specialized sections as needed */ },
+    "payment": { /* specialized sections as needed */ },
+    "phone": { /* specialized sections as needed */ },
+    "password": { /* specialized sections as needed */ }
+  }
+}
+```
+
+## Specialized Component Sections
+
+### For Complex Input Components
+```json
+"addon": {
+  "leading": {
+    "background": {"value": "{color.background.neutral.base}", "type": "color"},
+    "padding": {
+      "x": {"value": "{padding.xs}", "type": "dimension"}
+    },
+    "text": {
+      "color": {"value": "{color.text.neutral.body.2}", "type": "color"}
+    }
+  }
+},
+"prefix": {
+  "text": {
+    "color": {
+      "default": {"value": "{color.text.neutral.subtitle.1}", "type": "color"},
+      "disabled": {"value": "{color.text.neutral.subtitle.2}", "type": "color"}
+    }
+  }
+},
+"suffix": {
+  "text": {
+    "color": {
+      "default": {"value": "{color.text.neutral.subtitle.1}", "type": "color"},
+      "disabled": {"value": "{color.text.neutral.subtitle.2}", "type": "color"}
+    }
+  }
+},
+"dropdown": {
+  "gap": {"value": "{gap.2xs}", "type": "dimension"},
+  "text": {
+    "color": {"value": "{color.text.neutral.subtitle.1}", "type": "color"}
+  },
+  "chevron": {
+    "size": {"value": "{size.icon.3xs}", "type": "dimension"},
+    "color": {"value": "{color.icon.neutral.moderate.0}", "type": "color"}
+  }
+},
+"character-count": {
+  "typography": {"value": "{font.body.regular.2xs}", "type": "string"},
+  "color": {
+    "default": {"value": "{color.text.neutral.subtitle.1}", "type": "color"},
+    "warning": {"value": "{color.text.warning.body.1}", "type": "color"},
+    "error": {"value": "{color.text.error.body.1}", "type": "color"}
+  },
+  "gap": {"value": "{gap.2xs}", "type": "dimension"}
+},
+"password": {
+  "icon": {
+    "size": {"value": "{size.icon.sm}", "type": "dimension"},
+    "color": {
+      "default": {"value": "{color.icon.neutral.moderate.0}", "type": "color"},
+      "hover": {"value": "{color.icon.neutral.default}", "type": "color"}
+    }
+  }
+}
+```
+
+## Component Organization Patterns
+
+### Shared vs Variants Structure (REQUIRED FOR MOST COMPONENTS)
+- **Use "shared" section for common properties**: Properties that are the same across all color variants (border radius, padding, height, focus ring dimensions, min-width)
+- **Use "variants" section for color-specific properties**: Background, border, text, and icon colors that change per variant
+- **Variants structure**: `variants.{color-name}.{style-type}.{property}.{state}`
+  - Examples: `variants.primary.outline.background.hover`, `variants.error.default.text.active`
+
+### Nested Component Elements
+- **Typography section**: Place shared typography outside variants since font size/weight is usually consistent across colors
+- **Icon sizes section**: Place icon sizes outside variants since size is consistent across colors
+- **Icon colors**: Embed within each variant since colors change per variant
+- **Specialized content**: Group related functionality (addon, prefix, suffix, dropdown, etc.)
+
+### Size-Dependent Properties (CRITICAL REQUIREMENTS)
+- **Component height**: Include height tokens for each size variant in shared section
+- **Min-width requirement**: All components must include min-width property in shared section
+- **Size-responsive properties**: Properties that change based on component size (padding, typography, icons)
+- **Consistent scaling**: All size-dependent properties should scale appropriately together
+
+### Multi-Style Support
+- **Style variants within color variants**: Support multiple styles (outline, filled, ghost) within each color
+- **Consistent state structure**: All styles should support the same states (default, hover, active, focused, disabled)
+- **Focus ring integration**: Include focus ring colors and shadows within each variant for proper visual hierarchy
+
+### Color Variant Patterns (STANDARDIZED)
+- **Standard color variants**: `primary`, `neutral`, `success`, `error`, `warning`
+- **Style types**: `outline`, `filled`, `ghost`, `default` (component-specific)
+- **Property structure within variants**:
+  ```json
+  "variants": {
+    "{color}": {
+      "{style}": {
+        "background": { /* all states */ },
+        "border": { /* all states */ },
+        "text": { /* all states including placeholder */ },
+        "icon": { /* all states */ },
+        "focus": {
+          "ring": { "value": "{color.border.{color}.subtle.2}", "type": "color" },
+          "shadow": { "value": "/* specific shadow for variant */", "type": "boxShadow" }
+        }
+      }
+    }
+  }
+  ```
+
+## Icon Token Guidelines (UPDATED)
+- **Icon colors**: Embed within color variants (not shared section) since colors change per variant
+- **Icon sizes**: Define separately in dedicated icon section (consistent across color variants)
+- **Icon states**: Include all interaction states (default, hover, active, focused, disabled) for icon colors
+- **Multiple icon types**: For components with leading/trailing/help icons, organize by position and size
+- **Do NOT duplicate icon properties**: If icon color changes by variant, put in variants; if size changes by component size, put in dedicated section
+
+## Typography Organization (STANDARDIZED)
+
+### Simple Typography Pattern
+**For components with consistent typography across variants**:
+```json
+"text": {
+  "typography": {
+    "xs": {"value": "{font.body.regular.xs}", "type": "string"},
+    "sm": {"value": "{font.body.regular.sm}", "type": "string"},
+    "md": {"value": "{font.body.regular.md}", "type": "string"},
+    "lg": {"value": "{font.body.regular.base}", "type": "string"}
+  }
+}
+```
+
+### Complex Typography Pattern
+**For components with multiple typography contexts**:
+```json
+"text": {
+  "typography": {
+    "title": {
+      "xs": {"value": "{font.body.semibold.xs}", "type": "string"},
+      "sm": {"value": "{font.body.semibold.sm}", "type": "string"},
+      "md": {"value": "{font.body.semibold.md}", "type": "string"},
+      "lg": {"value": "{font.body.semibold.base}", "type": "string"}
+    },
+    "body": {
+      "xs": {"value": "{font.body.regular.xs}", "type": "string"},
+      "sm": {"value": "{font.body.regular.sm}", "type": "string"},
+      "md": {"value": "{font.body.regular.md}", "type": "string"},
+      "lg": {"value": "{font.body.regular.base}", "type": "string"}
+    },
+    "caption": {
+      "xs": {"value": "{font.body.regular.2xs}", "type": "string"},
+      "sm": {"value": "{font.body.regular.xs}", "type": "string"},
+      "md": {"value": "{font.body.regular.sm}", "type": "string"},
+      "lg": {"value": "{font.body.regular.md}", "type": "string"}
+    }
+  }
+}
+```
+
+## Component Selection Guidelines
+
+### When to Use Shared/Variants Pattern
+- **Interactive components** with multiple color states (buttons, inputs, tags)
+- **Form elements** requiring consistent structure across variants
+- **Components with hover/focus/active states**
+- **Multi-style components** (outline, filled, ghost)
+
+### When to Use Container Pattern  
+- **Simple utility components** with minimal color variation
+- **Binary state components** (checkbox, radio, toggle)
+- **Components where structure varies significantly** between variants
+- **Single-purpose components** without complex interactions
+
+### When to Use Simplified Variants Pattern
+- **Informational components** (alerts, badges, toasts)
+- **Display components** without complex interaction states
+- **Components with simple color theming** only
+- **Read-only components** (avatars, indicators)
+
+## Critical Rules for All Component Token Generation
+
+1. **STRUCTURE CLEANUP:**
+   - Remove all schema/metadata: $schema, $description, name, version, description
+   - Use actual component name as root key (e.g., "input", "button") not "component"
+   - Remove documentation sections: responsive, states, variants, types
+   - Keep only core token definitions: size, color, border-radius, container
+
+2. **SIZE NAMING STANDARDIZATION (CRITICAL):**
+   - **Use standard scale**: xs, sm, md, lg, xl, 2xl
+   - **Avoid legacy naming**: 3xs, 2xs should be migrated to standard scale
+   - **Consistent sizing**: All size-dependent properties use same scale within component
+
+3. **TOKEN HIERARCHY WORKFLOW:**
+   - Check primitive tokens first - if value doesn't exist, add to primitive tokens
+   - Add to semantic tokens - create semantic reference to primitive
+   - Reference in component tokens - use semantic token reference
+   - Never create arbitrary values - all values must flow through primitive → semantic → component
+
+4. **STATE NAMING CONSISTENCY (CRITICAL):**
+   - **Standard states**: default, hover, active, focused, disabled
+   - **Component-specific states**: checked/unchecked, open/closed, filled, placeholder
+   - **All color properties must have identical state structure**
+   - **Include placeholder state for all text properties in form components**
+
+5. **STRUCTURAL PATTERN SELECTION:**
+   - **Shared/Variants**: For interactive components with consistent structure
+   - **Container**: For simple components with minimal variation
+   - **Simplified Variants**: For informational components
+
+6. **REQUIRED ELEMENTS:**
+   - **Min-width**: All components must include min-width property in shared/container section
+   - **Form labels**: All form components must include label section
+   - **Helper text**: All form components must include helper-text section
+   - **Focus states**: Interactive components must include focus ring and shadow
+
+7. **ORGANIZATION ORDER:**
+   - shared/container → text → icon → label → helper-text → variants → specialized sections
+
+8. **SEMANTIC TOKEN REFERENCES:**
+   - Use direct semantic tokens without "tokens." prefix
+   - Prioritize semantic tokens over primitive when available
+   - Format fractional values as 0[5] not 0.5
+
+9. **TRANSPARENT VALUES:**
+   - **NEVER use raw "transparent"** - always use semantic token reference
+   - Background: `{color.background.transparent}`
+   - Border: `{color.border.transparent}`
+
+10. **ICON ORGANIZATION:**
+    - **Icon colors**: Within color variants (changes per variant)
+    - **Icon sizes**: Separate dedicated section (consistent across variants)
+    - **Multiple positions**: Organize by position (leading, trailing, help)
+
+11. **HEIGHT TOKEN HANDLING:**
+    - **Preferred**: Use semantic height tokens `{size.height.xs}`
+    - **Fallback**: Use direct size tokens `{size.20}` when semantic unavailable
+    - **Size scaling**: Height should scale appropriately with component size
+
+12. **SPECIALIZED SECTIONS:**
+    - **Place after variants**: addon, prefix, suffix, dropdown, etc.
+    - **Context-specific**: Create tokens for specialized functionality
+    - **Maintain consistency**: Use same color and spacing patterns as main component
+
+13. **FIGMA OPTIMIZATION:**
+    - Clean JSON structure without metadata
+    - Direct token mapping from Figma component properties
+    - Reference existing primitive/semantic tokens properly 

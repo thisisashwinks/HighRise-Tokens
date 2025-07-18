@@ -1,0 +1,102 @@
+{
+  "avatar-company-icon": {
+    "container": {
+      "background": {
+        "color": {
+          "value": "{color.background.transparent}",
+          "type": "color"
+        }
+      },
+      "border": {
+        "color": {
+          "value": "{color.border.neutral.base}",
+          "type": "color"
+        },
+        "width": {
+          "xs": {
+            "value": "{border.width.0[375]}",
+            "type": "dimension"
+          },
+          "sm": {
+            "value": "{border.width.0[375]}",
+            "type": "dimension"
+          },
+          "md": {
+            "value": "{border.width.0[375]}",
+            "type": "dimension"
+          },
+          "lg": {
+            "value": "{border.width.0[375]}",
+            "type": "dimension"
+          },
+          "xl": {
+            "value": "{border.width.0[375]}",
+            "type": "dimension"
+          },
+          "2xl": {
+            "value": "{border.width.0[375]}",
+            "type": "dimension"
+          }
+        },
+        "radius": {
+          "xs": {
+            "value": "{border.radius.3}",
+            "type": "dimension"
+          },
+          "sm": {
+            "value": "{border.radius.3}",
+            "type": "dimension"
+          },
+          "md": {
+            "value": "{border.radius.3}",
+            "type": "dimension"
+          },
+          "lg": {
+            "value": "{border.radius.3}",
+            "type": "dimension"
+          },
+          "xl": {
+            "value": "{border.radius.3}",
+            "type": "dimension"
+          },
+          "2xl": {
+            "value": "{border.radius.3}",
+            "type": "dimension"
+          }
+        }
+      },
+      "size": {
+        "xs": {
+          "value": "{size.2[5]}",
+          "type": "dimension"
+        },
+        "sm": {
+          "value": "{size.3}",
+          "type": "dimension"
+        },
+        "md": {
+          "value": "{size.3[5]}",
+          "type": "dimension"
+        },
+        "lg": {
+          "value": "{size.4}",
+          "type": "dimension"
+        },
+        "xl": {
+          "value": "{size.4[5]}",
+          "type": "dimension"
+        },
+        "2xl": {
+          "value": "{size.5}",
+          "type": "dimension"
+        }
+      }
+    },
+    "image": {
+      "fit": {
+        "value": "fill",
+        "type": "string"
+      }
+    }
+  }
+} 

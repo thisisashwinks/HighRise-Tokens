@@ -1,5 +1,9 @@
 {
   "color": {
+    "transparent": {
+      "value": "#FFFFFF00",
+      "type": "color"
+    },
     "neutral": {
       "gray": {
         "0": {
@@ -1815,7 +1819,7 @@
         "value": 10,
         "type": "number"
       },
-      "full": {
+      "250": {
         "value": 1000,
         "type": "number"
       }
@@ -1839,6 +1843,10 @@
       },
       "0[25]": {
         "value": 1,
+        "type": "number"
+      },
+      "0[375]": {
+        "value": 1.5,
         "type": "number"
       },
       "0[5]": {

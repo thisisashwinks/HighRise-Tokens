@@ -4,7 +4,7 @@
       "background": {
         "color": {
           "default": {
-            "value": "{semantic.color.background.secondary}",
+            "value": "{color.background.neutral.subtle.1}",
             "type": "color"
           }
         }
@@ -12,19 +12,19 @@
       "border": {
         "radius": {
           "xs": {
-            "value": "{semantic.border.radius.sm}",
+            "value": "{border.radius.0[5]}",
             "type": "dimension"
           },
           "sm": {
-            "value": "{semantic.border.radius.sm}",
+            "value": "{border.radius.0[5]}",
             "type": "dimension"
           },
           "md": {
-            "value": "{semantic.border.radius.sm}",
+            "value": "{border.radius.0[5]}",
             "type": "dimension"
           },
           "lg": {
-            "value": "{semantic.border.radius.md}",
+            "value": "{border.radius.1}",
             "type": "dimension"
           }
         }
@@ -32,37 +32,37 @@
       "padding": {
         "horizontal": {
           "xs": {
-            "value": "{semantic.spacing.padding.xs}",
+            "value": "{padding.0[5]}",
             "type": "dimension"
           },
           "sm": {
-            "value": "{semantic.spacing.padding.xs}",
+            "value": "{padding.1}",
             "type": "dimension"
           },
           "md": {
-            "value": "{semantic.spacing.padding.sm}",
+            "value": "{padding.1[25]}",
             "type": "dimension"
           },
           "lg": {
-            "value": "{semantic.spacing.padding.sm}",
+            "value": "{padding.1[5]}",
             "type": "dimension"
           }
         },
         "vertical": {
           "xs": {
-            "value": "{semantic.spacing.padding.none}",
+            "value": "{padding.0}",
             "type": "dimension"
           },
           "sm": {
-            "value": "{semantic.spacing.padding.none}",
+            "value": "{padding.0}",
             "type": "dimension"
           },
           "md": {
-            "value": "{semantic.spacing.padding.none}",
+            "value": "{padding.0}",
             "type": "dimension"
           },
           "lg": {
-            "value": "{semantic.spacing.padding.none}",
+            "value": "{padding.0}",
             "type": "dimension"
           }
         }
@@ -70,37 +70,37 @@
       "size": {
         "width": {
           "xs": {
-            "value": "{semantic.size.width.xs}",
+            "value": "{size.width.3}",
             "type": "dimension"
           },
           "sm": {
-            "value": "{semantic.size.width.xs}",
+            "value": "{size.width.4}",
             "type": "dimension"
           },
           "md": {
-            "value": "{semantic.size.width.sm}",
+            "value": "{size.width.4[5]}",
             "type": "dimension"
           },
           "lg": {
-            "value": "{semantic.size.width.auto}",
+            "value": "{size.width.4[5]}",
             "type": "dimension"
           }
         },
         "height": {
           "xs": {
-            "value": "{semantic.size.height.xs}",
+            "value": "{size.height.3}",
             "type": "dimension"
           },
           "sm": {
-            "value": "{semantic.size.height.xs}",
+            "value": "{size.height.4}",
             "type": "dimension"
           },
           "md": {
-            "value": "{semantic.size.height.sm}",
+            "value": "{size.height.4[5]}",
             "type": "dimension"
           },
           "lg": {
-            "value": "{semantic.size.height.sm}",
+            "value": "{size.height.4[5]}",
             "type": "dimension"
           }
         }
@@ -110,25 +110,25 @@
       "text": {
         "color": {
           "default": {
-            "value": "{semantic.color.text.primary}",
+            "value": "{color.text.neutral.body.1}",
             "type": "color"
           }
         },
         "typography": {
           "xs": {
-            "value": "{semantic.typography.text.2xs.medium}",
+            "value": "{font.body.medium.2xs}",
             "type": "typography"
           },
           "sm": {
-            "value": "{semantic.typography.text.xs.medium}",
+            "value": "{font.body.medium.xs}",
             "type": "typography"
           },
           "md": {
-            "value": "{semantic.typography.text.sm.medium}",
+            "value": "{font.body.medium.sm}",
             "type": "typography"
           },
           "lg": {
-            "value": "{semantic.typography.text.md.medium}",
+            "value": "{font.body.medium.md}",
             "type": "typography"
           }
         }
