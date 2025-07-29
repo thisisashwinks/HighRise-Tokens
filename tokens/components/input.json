@@ -1,127 +1,125 @@
 {
   "input": {
-    "shared": {
-      "border": {
-        "radius": {
-          "3xs": {
-            "value": "{border.radius.3xs}",
-            "type": "dimension",
-            "description": "Input border radius for 3xs size"
-          },
-          "2xs": {
-            "value": "{border.radius.2xs}",
-            "type": "dimension",
-            "description": "Input border radius for 2xs size"
-          },
-          "xs": {
-            "value": "{border.radius.xs}",
-            "type": "dimension",
-            "description": "Input border radius for xs size"
-          },
-          "sm": {
-            "value": "{border.radius.sm}",
-            "type": "dimension",
-            "description": "Input border radius for sm size"
-          },
-          "md": {
-            "value": "{border.radius.md}",
-            "type": "dimension",
-            "description": "Input border radius for md size"
-          },
-          "lg": {
-            "value": "{border.radius.lg}",
-            "type": "dimension",
-            "description": "Input border radius for lg size"
-          }
-        },
-        "width": {
-          "value": "{border.width.default}",
-          "type": "dimension",
-          "description": "Input border width"
-        }
-      },
-      "padding": {
-        "x": {
-          "3xs": {
-            "value": "{padding.2xs}",
-            "type": "dimension",
-            "description": "Input horizontal padding for 3xs size"
-          },
-          "2xs": {
-            "value": "{padding.2xs}",
-            "type": "dimension",
-            "description": "Input horizontal padding for 2xs size"
-          },
-          "xs": {
-            "value": "{padding.xs}",
-            "type": "dimension",
-            "description": "Input horizontal padding for xs size"
-          },
-          "sm": {
-            "value": "{padding.xs}",
-            "type": "dimension",
-            "description": "Input horizontal padding for sm size"
-          },
-          "md": {
-            "value": "{padding.sm}",
-            "type": "dimension",
-            "description": "Input horizontal padding for md size"
-          },
-          "lg": {
-            "value": "{padding.md}",
-            "type": "dimension",
-            "description": "Input horizontal padding for lg size"
-          }
-        },
-        "y": {
-          "value": "{padding.0}",
-          "type": "dimension",
-          "description": "Input vertical padding"
-        }
-      },
-      "height": {
+    "border": {
+      "radius": {
         "3xs": {
-          "value": "{size.height.3xs}",
+          "value": "{border.radius.3xs}",
           "type": "dimension",
-          "description": "Input height for 3xs size"
+          "description": "Input border radius for 3xs size"
         },
         "2xs": {
-          "value": "{size.height.2xs}",
+          "value": "{border.radius.2xs}",
           "type": "dimension",
-          "description": "Input height for 2xs size"
+          "description": "Input border radius for 2xs size"
         },
         "xs": {
-          "value": "{size.height.xs}",
+          "value": "{border.radius.xs}",
           "type": "dimension",
-          "description": "Input height for xs size"
+          "description": "Input border radius for xs size"
         },
         "sm": {
-          "value": "{size.height.sm}",
+          "value": "{border.radius.sm}",
           "type": "dimension",
-          "description": "Input height for sm size"
+          "description": "Input border radius for sm size"
         },
         "md": {
-          "value": "{size.height.md}",
+          "value": "{border.radius.md}",
           "type": "dimension",
-          "description": "Input height for md size"
+          "description": "Input border radius for md size"
         },
         "lg": {
-          "value": "{size.height.lg}",
+          "value": "{border.radius.lg}",
           "type": "dimension",
-          "description": "Input height for lg size"
+          "description": "Input border radius for lg size"
         }
       },
-      "gap": {
-        "value": "{gap.xs}",
+      "width": {
+        "value": "{border.width.default}",
         "type": "dimension",
-        "description": "Gap between input elements"
-      },
-      "shadow": {
-        "default": {
-          "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
-          "type": "boxShadow",
-          "description": "Input default shadow"
+        "description": "Input border width"
+      }
+    },
+    "padding": {
+      "x": {
+        "3xs": {
+          "value": "{padding.2xs}",
+          "type": "dimension",
+          "description": "Input horizontal padding for 3xs size"
+        },
+        "2xs": {
+          "value": "{padding.2xs}",
+          "type": "dimension",
+          "description": "Input horizontal padding for 2xs size"
+        },
+        "xs": {
+          "value": "{padding.xs}",
+          "type": "dimension",
+          "description": "Input horizontal padding for xs size"
+        },
+        "sm": {
+          "value": "{padding.xs}",
+          "type": "dimension",
+          "description": "Input horizontal padding for sm size"
+        },
+        "md": {
+          "value": "{padding.sm}",
+          "type": "dimension",
+          "description": "Input horizontal padding for md size"
+        },
+        "lg": {
+          "value": "{padding.md}",
+          "type": "dimension",
+          "description": "Input horizontal padding for lg size"
         }
+      },
+      "y": {
+        "value": "{padding.0}",
+        "type": "dimension",
+        "description": "Input vertical padding"
+      }
+    },
+    "height": {
+      "3xs": {
+        "value": "{size.height.3xs}",
+        "type": "dimension",
+        "description": "Input height for 3xs size"
+      },
+      "2xs": {
+        "value": "{size.height.2xs}",
+        "type": "dimension",
+        "description": "Input height for 2xs size"
+      },
+      "xs": {
+        "value": "{size.height.xs}",
+        "type": "dimension",
+        "description": "Input height for xs size"
+      },
+      "sm": {
+        "value": "{size.height.sm}",
+        "type": "dimension",
+        "description": "Input height for sm size"
+      },
+      "md": {
+        "value": "{size.height.md}",
+        "type": "dimension",
+        "description": "Input height for md size"
+      },
+      "lg": {
+        "value": "{size.height.lg}",
+        "type": "dimension",
+        "description": "Input height for lg size"
+      }
+    },
+    "gap": {
+      "value": "{gap.xs}",
+      "type": "dimension",
+      "description": "Gap between input elements"
+    },
+    "shadow": {
+      "default": {
+        "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+        "type": "boxShadow",
+        "description": "Input default shadow"
       }
     },
     "text": {
@@ -192,7 +190,7 @@
         }
       }
     },
-    "variants": {
+    "color": {
       "default": {
         "background": {
           "default": {

@@ -1,96 +1,94 @@
 {
   "tab-item": {
-    "shared": {
-      "border": {
-        "radius": {
-          "value": "{border.radius.xs}",
-          "type": "dimension"
-        },
-        "width": {
-          "bottom": {
-            "value": "{border.width.thick}",
-            "type": "dimension"
-          },
-          "default": {
-            "value": "{border.width.default}",
-            "type": "dimension"
-          }
-        }
-      },
-      "padding": {
-        "x": {
-          "xs": {
-            "value": "{padding.x.xs}",
-            "type": "dimension"
-          },
-          "sm": {
-            "value": "{padding.x.sm}",
-            "type": "dimension"
-          },
-          "md": {
-            "value": "{padding.x.md}",
-            "type": "dimension"
-          },
-          "lg": {
-            "value": "{padding.x.lg}",
-            "type": "dimension"
-          }
-        },
-        "y": {
-          "xs": {
-            "value": "{padding.y.xs}",
-            "type": "dimension"
-          },
-          "sm": {
-            "value": "{padding.y.sm}",
-            "type": "dimension"
-          },
-          "md": {
-            "value": "{padding.y.sm}",
-            "type": "dimension"
-          },
-          "lg": {
-            "value": "{padding.y.md}",
-            "type": "dimension"
-          }
-        }
-      },
-      "height": {
-        "xs": {
-          "value": "{size.8}",
-          "type": "dimension"
-        },
-        "sm": {
-          "value": "{size.9}",
-          "type": "dimension"
-        },
-        "md": {
-          "value": "{size.10}",
-          "type": "dimension"
-        },
-        "lg": {
-          "value": "{size.11}",
-          "type": "dimension"
-        }
-      },
-      "min-width": {
-        "value": "{size.16}",
+    "border": {
+      "radius": {
+        "value": "{border.radius.xs}",
         "type": "dimension"
       },
-      "focus": {
-        "ring": {
-          "width": {
-            "value": "{border.width.thick}",
-            "type": "dimension"
-          },
-          "offset": {
-            "value": "{size.1}",
-            "type": "dimension"
-          }
+      "width": {
+        "bottom": {
+          "value": "{border.width.thick}",
+          "type": "dimension"
+        },
+        "default": {
+          "value": "{border.width.default}",
+          "type": "dimension"
         }
       }
     },
-    "variants": {
+    "padding": {
+      "x": {
+        "xs": {
+          "value": "{padding.x.xs}",
+          "type": "dimension"
+        },
+        "sm": {
+          "value": "{padding.x.sm}",
+          "type": "dimension"
+        },
+        "md": {
+          "value": "{padding.x.md}",
+          "type": "dimension"
+        },
+        "lg": {
+          "value": "{padding.x.lg}",
+          "type": "dimension"
+        }
+      },
+      "y": {
+        "xs": {
+          "value": "{padding.y.xs}",
+          "type": "dimension"
+        },
+        "sm": {
+          "value": "{padding.y.sm}",
+          "type": "dimension"
+        },
+        "md": {
+          "value": "{padding.y.sm}",
+          "type": "dimension"
+        },
+        "lg": {
+          "value": "{padding.y.md}",
+          "type": "dimension"
+        }
+      }
+    },
+    "height": {
+      "xs": {
+        "value": "{size.8}",
+        "type": "dimension"
+      },
+      "sm": {
+        "value": "{size.9}",
+        "type": "dimension"
+      },
+      "md": {
+        "value": "{size.10}",
+        "type": "dimension"
+      },
+      "lg": {
+        "value": "{size.11}",
+        "type": "dimension"
+      }
+    },
+    "min-width": {
+      "value": "{size.16}",
+      "type": "dimension"
+    },
+    "focus": {
+      "ring": {
+        "width": {
+          "value": "{border.width.thick}",
+          "type": "dimension"
+        },
+        "offset": {
+          "value": "{size.1}",
+          "type": "dimension"
+        }
+      }
+    },
+    "color": {
       "primary": {
         "background": {
           "default": {

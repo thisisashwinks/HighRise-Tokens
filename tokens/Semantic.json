@@ -363,6 +363,10 @@
         "value": "{size.40}",
         "type": "dimension"
       },
+      "45": {
+        "value": "{size.45}",
+        "type": "dimension"
+      },
       "56": {
         "value": "{size.56}",
         "type": "dimension"

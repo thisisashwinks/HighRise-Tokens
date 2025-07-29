@@ -2386,6 +2386,10 @@
       "value": 160,
       "type": "number"
     },
+    "45": {
+      "value": 180,
+      "type": "number"
+    },
     "56": {
       "value": 224,
       "type": "number"
