@@ -3,7 +3,7 @@
     "container": {
       "background": {
         "color": {
-          "text": {
+          "text-type": {
             "value": "{color.background.neutral.subtle.1}",
             "type": "color"
           },
