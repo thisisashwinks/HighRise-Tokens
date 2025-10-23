@@ -68,24 +68,6 @@
         }
       },
       "size": {
-        "width": {
-          "xs": {
-            "value": "{size.width.3}",
-            "type": "dimension"
-          },
-          "sm": {
-            "value": "{size.width.4}",
-            "type": "dimension"
-          },
-          "md": {
-            "value": "{size.width.4[5]}",
-            "type": "dimension"
-          },
-          "lg": {
-            "value": "{size.width.4[5]}",
-            "type": "dimension"
-          }
-        },
         "height": {
           "xs": {
             "value": "{size.height.3}",

@@ -1,7 +1,7 @@
 {
   "button": {
     "color": {
-      "primary":{
+      "primary": {
         "primary": {
           "background": {
             "default": {
@@ -115,49 +115,49 @@
         "secondary": {
           "background": {
             "default": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.neutral.base}",
               "type": "color",
               "description": "Secondary button default background"
             },
             "hover": {
-              "value": "{color.background.primary.subtle.1}",
+              "value": "{color.background.neutral.subtle.0}",
               "type": "color",
               "description": "Secondary button hover background"
             },
             "active": {
-              "value": "{color.background.primary.subtle.2}",
+              "value": "{color.background.primary.subtle.1}",
               "type": "color",
               "description": "Secondary button active background"
             },
             "focused": {
-              "value": "{color.background.primary.subtle.1}",
+              "value": "{color.background.primary.subtle.0}",
               "type": "color",
               "description": "Secondary button focused background"
             },
             "disabled": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.neutral.base}",
               "type": "color",
               "description": "Secondary button disabled background"
             }
           },
           "border": {
             "default": {
-              "value": "{color.border.primary.default}",
+              "value": "{color.border.primary.subtle.2}",
               "type": "color",
               "description": "Secondary button default border"
             },
             "hover": {
-              "value": "{color.border.primary.intense.0}",
+              "value": "{color.border.primary.subtle.2}",
               "type": "color",
               "description": "Secondary button hover border"
             },
             "active": {
-              "value": "{color.border.primary.default}",
+              "value": "{color.border.primary.subtle.2}",
               "type": "color",
               "description": "Secondary button active border"
             },
             "focused": {
-              "value": "{color.border.primary.default}",
+              "value": "{color.border.primary.subtle.2}",
               "type": "color",
               "description": "Secondary button focused border"
             },
@@ -169,27 +169,27 @@
           },
           "text": {
             "default": {
-              "value": "{color.text.primary.body.2}",
+              "value": "{color.text.primary.body.1}",
               "type": "color",
               "description": "Secondary button default text color"
             },
             "hover": {
-              "value": "{color.text.primary.body.1}",
+              "value": "{color.text.primary.title.2}",
               "type": "color",
               "description": "Secondary button hover text color"
             },
             "active": {
-              "value": "{color.text.primary.body.1}",
+              "value": "{color.text.primary.title.1}",
               "type": "color",
               "description": "Secondary button active text color"
             },
             "focused": {
-              "value": "{color.text.primary.body.1}",
+              "value": "{color.text.primary.title.2}",
               "type": "color",
               "description": "Secondary button focused text color"
             },
             "disabled": {
-              "value": "{color.text.primary.inactive.1}",
+              "value": "{color.text.primary.inactive.2}",
               "type": "color",
               "description": "Secondary button disabled text color"
             }
@@ -225,7 +225,7 @@
         "tertiary": {
           "background": {
             "default": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.primary.subtle.0}",
               "type": "color",
               "description": "Tertiary button default background"
             },
@@ -245,56 +245,56 @@
               "description": "Tertiary button focused background"
             },
             "disabled": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.primary.inactive}",
               "type": "color",
               "description": "Tertiary button disabled background"
             }
           },
           "border": {
             "default": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.primary.subtle.0}",
               "type": "color",
               "description": "Tertiary button default border"
             },
             "hover": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.primary.subtle.1}",
               "type": "color",
               "description": "Tertiary button hover border"
             },
             "active": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.primary.subtle.2}",
               "type": "color",
               "description": "Tertiary button active border"
             },
             "focused": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.primary.subtle.1}",
               "type": "color",
               "description": "Tertiary button focused border"
             },
             "disabled": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.primary.inactive}",
               "type": "color",
               "description": "Tertiary button disabled border"
             }
           },
           "text": {
             "default": {
-              "value": "{color.text.primary.body.2}",
+              "value": "{color.text.primary.body.1}",
               "type": "color",
               "description": "Tertiary button default text color"
             },
             "hover": {
-              "value": "{color.text.primary.body.1}",
+              "value": "{color.text.primary.title.2}",
               "type": "color",
               "description": "Tertiary button hover text color"
             },
             "active": {
-              "value": "{color.text.primary.body.1}",
+              "value": "{color.text.primary.title.1}",
               "type": "color",
               "description": "Tertiary button active text color"
             },
             "focused": {
-              "value": "{color.text.primary.body.1}",
+              "value": "{color.text.primary.title.2}",
               "type": "color",
               "description": "Tertiary button focused text color"
             },
@@ -442,7 +442,7 @@
             }
           }
         }
-    },
+      },
       "error": {
         "primary": {
           "background": {
@@ -736,7 +736,7 @@
               "description": "Error tertiary button active text color"
             },
             "focused": {
-              "value": "{color.text.error.title.2}",
+              "value": "{color.text.error.title.1}",
               "type": "color",
               "description": "Error tertiary button focused text color"
             },
@@ -787,12 +787,12 @@
               "description": "Error ghost button hover background"
             },
             "active": {
-              "value": "{color.background.error.subtle.2}",
+              "value": "{color.background.error.subtle.1}",
               "type": "color",
               "description": "Error ghost button active background"
             },
             "focused": {
-              "value": "{color.background.error.subtle.1}",
+              "value": "{color.background.error.subtle.0}",
               "type": "color",
               "description": "Error ghost button focused background"
             },
@@ -836,7 +836,7 @@
               "description": "Error ghost button default text color"
             },
             "hover": {
-              "value": "{color.text.error.title.1}",
+              "value": "{color.text.error.title.2}",
               "type": "color",
               "description": "Error ghost button hover text color"
             },
@@ -846,34 +846,34 @@
               "description": "Error ghost button active text color"
             },
             "focused": {
-              "value": "{color.text.error.title.1}",
+              "value": "{color.text.error.title.2}",
               "type": "color",
               "description": "Error ghost button focused text color"
             },
             "disabled": {
-              "value": "{color.text.error.inactive.1}",
+              "value": "{color.text.error.inactive.2}",
               "type": "color",
               "description": "Error ghost button disabled text color"
             }
           },
           "icon": {
             "default": {
-              "value": "{color.icon.error.default}",
+              "value": "{color.icon.error.moderate}",
               "type": "color",
               "description": "Error ghost button default icon color"
             },
             "hover": {
-              "value": "{color.icon.error.intense.1}",
+              "value": "{color.icon.error.moderate}",
               "type": "color",
               "description": "Error ghost button hover icon color"
             },
             "active": {
-              "value": "{color.icon.error.intense.1}",
+              "value": "{color.icon.error.moderate}",
               "type": "color",
               "description": "Error ghost button active icon color"
             },
             "focused": {
-              "value": "{color.icon.error.intense.1}",
+              "value": "{color.icon.error.moderate}",
               "type": "color",
               "description": "Error ghost button focused icon color"
             },
@@ -889,22 +889,22 @@
         "primary": {
           "background": {
             "default": {
-              "value": "{color.background.neutral.moderate.0}",
+              "value": "{color.background.neutral.moderate.3}",
               "type": "color",
               "description": "Neutral primary button default background"
             },
             "hover": {
-              "value": "{color.background.neutral.moderate.1}",
+              "value": "{color.background.neutral.intense.0}",
               "type": "color",
               "description": "Neutral primary button hover background"
             },
             "active": {
-              "value": "{color.background.neutral.moderate.2}",
+              "value": "{color.background.neutral.intense.2}",
               "type": "color",
               "description": "Neutral primary button active background"
             },
             "focused": {
-              "value": "{color.background.neutral.moderate.1}",
+              "value": "{color.background.neutral.intense.0}",
               "type": "color",
               "description": "Neutral primary button focused background"
             },
@@ -916,27 +916,27 @@
           },
           "border": {
             "default": {
-              "value": "{color.border.neutral.moderate.0}",
+              "value": "{color.border.neutral.default}",
               "type": "color",
               "description": "Neutral primary button default border"
             },
             "hover": {
-              "value": "{color.border.neutral.moderate.1}",
+              "value": "{color.border.neutral.intense.0}",
               "type": "color",
               "description": "Neutral primary button hover border"
             },
             "active": {
-              "value": "{color.border.neutral.moderate.2}",
+              "value": "{color.border.neutral.intense.1}",
               "type": "color",
               "description": "Neutral primary button active border"
             },
             "focused": {
-              "value": "{color.border.neutral.moderate.1}",
+              "value": "{color.border.neutral.intense.0}",
               "type": "color",
               "description": "Neutral primary button focused border"
             },
             "disabled": {
-              "value": "{color.border.neutral.subtle.1}",
+              "value": "{color.border.neutral.subtle.2}",
               "type": "color",
               "description": "Neutral primary button disabled border"
             }
@@ -999,66 +999,66 @@
         "secondary": {
           "background": {
             "default": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.neutral.base}",
               "type": "color",
               "description": "Neutral secondary button default background"
             },
             "hover": {
-              "value": "{color.background.neutral.subtle.1}",
+              "value": "{color.background.neutral.subtle.0}",
               "type": "color",
               "description": "Neutral secondary button hover background"
             },
             "active": {
-              "value": "{color.background.neutral.subtle.2}",
+              "value": "{color.background.neutral.subtle.1}",
               "type": "color",
               "description": "Neutral secondary button active background"
             },
             "focused": {
-              "value": "{color.background.neutral.subtle.1}",
+              "value": "{color.background.neutral.subtle.0}",
               "type": "color",
               "description": "Neutral secondary button focused background"
             },
             "disabled": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.neutral.base}",
               "type": "color",
               "description": "Neutral secondary button disabled background"
             }
           },
           "border": {
             "default": {
-              "value": "{color.border.neutral.moderate.0}",
+              "value": "{color.border.neutral.default}",
               "type": "color",
               "description": "Neutral secondary button default border"
             },
             "hover": {
-              "value": "{color.border.neutral.moderate.1}",
+              "value": "{color.border.neutral.default}",
               "type": "color",
               "description": "Neutral secondary button hover border"
             },
             "active": {
-              "value": "{color.border.neutral.moderate.2}",
+              "value": "{color.border.neutral.default}",
               "type": "color",
               "description": "Neutral secondary button active border"
             },
             "focused": {
-              "value": "{color.border.neutral.moderate.1}",
+              "value": "{color.border.neutral.default}",
               "type": "color",
               "description": "Neutral secondary button focused border"
             },
             "disabled": {
-              "value": "{color.border.neutral.subtle.1}",
+              "value": "{color.border.neutral.subtle.2}",
               "type": "color",
               "description": "Neutral secondary button disabled border"
             }
           },
           "text": {
             "default": {
-              "value": "{color.text.neutral.body.1}",
+              "value": "{color.text.neutral.body.2}",
               "type": "color",
               "description": "Neutral secondary button default text color"
             },
             "hover": {
-              "value": "{color.text.neutral.title.1}",
+              "value": "{color.text.neutral.title.2}",
               "type": "color",
               "description": "Neutral secondary button hover text color"
             },
@@ -1068,7 +1068,7 @@
               "description": "Neutral secondary button active text color"
             },
             "focused": {
-              "value": "{color.text.neutral.title.1}",
+              "value": "{color.text.neutral.title.2}",
               "type": "color",
               "description": "Neutral secondary button focused text color"
             },
@@ -1080,22 +1080,22 @@
           },
           "icon": {
             "default": {
-              "value": "{color.icon.neutral.default}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral secondary button default icon color"
             },
             "hover": {
-              "value": "{color.icon.neutral.intense.1}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral secondary button hover icon color"
             },
             "active": {
-              "value": "{color.icon.neutral.intense.1}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral secondary button active icon color"
             },
             "focused": {
-              "value": "{color.icon.neutral.intense.1}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral secondary button focused icon color"
             },
@@ -1109,7 +1109,7 @@
         "tertiary": {
           "background": {
             "default": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.neutral.subtle.0}",
               "type": "color",
               "description": "Neutral tertiary button default background"
             },
@@ -1129,46 +1129,46 @@
               "description": "Neutral tertiary button focused background"
             },
             "disabled": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.neutral.inactive}",
               "type": "color",
               "description": "Neutral tertiary button disabled background"
             }
           },
           "border": {
             "default": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.neutral.subtle.0}",
               "type": "color",
               "description": "Neutral tertiary button default border"
             },
             "hover": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.neutral.subtle.2}",
               "type": "color",
               "description": "Neutral tertiary button hover border"
             },
             "active": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.neutral.default}",
               "type": "color",
               "description": "Neutral tertiary button active border"
             },
             "focused": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.neutral.subtle.2}",
               "type": "color",
               "description": "Neutral tertiary button focused border"
             },
             "disabled": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.neutral.inactive}",
               "type": "color",
               "description": "Neutral tertiary button disabled border"
             }
           },
           "text": {
             "default": {
-              "value": "{color.text.neutral.body.1}",
+              "value": "{color.text.neutral.body.2}",
               "type": "color",
               "description": "Neutral tertiary button default text color"
             },
             "hover": {
-              "value": "{color.text.neutral.title.1}",
+              "value": "{color.text.neutral.title.2}",
               "type": "color",
               "description": "Neutral tertiary button hover text color"
             },
@@ -1178,7 +1178,7 @@
               "description": "Neutral tertiary button active text color"
             },
             "focused": {
-              "value": "{color.text.neutral.title.1}",
+              "value": "{color.text.neutral.title.2}",
               "type": "color",
               "description": "Neutral tertiary button focused text color"
             },
@@ -1190,27 +1190,27 @@
           },
           "icon": {
             "default": {
-              "value": "{color.icon.neutral.default}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral tertiary button default icon color"
             },
             "hover": {
-              "value": "{color.icon.neutral.intense.1}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral tertiary button hover icon color"
             },
             "active": {
-              "value": "{color.icon.neutral.intense.1}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral tertiary button active icon color"
             },
             "focused": {
-              "value": "{color.icon.neutral.intense.1}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral tertiary button focused icon color"
             },
             "disabled": {
-              "value": "{color.icon.neutral.subtle.2}",
+              "value": "{color.icon.neutral.subtle.1}",
               "type": "color",
               "description": "Neutral tertiary button disabled icon color"
             }
@@ -1224,17 +1224,17 @@
               "description": "Neutral ghost button default background"
             },
             "hover": {
-              "value": "{color.background.neutral.subtle.1}",
+              "value": "{color.background.neutral.subtle.0}",
               "type": "color",
               "description": "Neutral ghost button hover background"
             },
             "active": {
-              "value": "{color.background.neutral.subtle.2}",
+              "value": "{color.background.neutral.subtle.1}",
               "type": "color",
               "description": "Neutral ghost button active background"
             },
             "focused": {
-              "value": "{color.background.neutral.subtle.1}",
+              "value": "{color.background.neutral.subtle.0}",
               "type": "color",
               "description": "Neutral ghost button focused background"
             },
@@ -1273,12 +1273,12 @@
           },
           "text": {
             "default": {
-              "value": "{color.text.neutral.body.1}",
+              "value": "{color.text.neutral.body.2}",
               "type": "color",
               "description": "Neutral ghost button default text color"
             },
             "hover": {
-              "value": "{color.text.neutral.title.1}",
+              "value": "{color.text.neutral.title.2}",
               "type": "color",
               "description": "Neutral ghost button hover text color"
             },
@@ -1288,7 +1288,7 @@
               "description": "Neutral ghost button active text color"
             },
             "focused": {
-              "value": "{color.text.neutral.title.1}",
+              "value": "{color.text.neutral.title.2}",
               "type": "color",
               "description": "Neutral ghost button focused text color"
             },
@@ -1300,22 +1300,22 @@
           },
           "icon": {
             "default": {
-              "value": "{color.icon.neutral.default}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral ghost button default icon color"
             },
             "hover": {
-              "value": "{color.icon.neutral.intense.1}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral ghost button hover icon color"
             },
             "active": {
-              "value": "{color.icon.neutral.intense.1}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral ghost button active icon color"
             },
             "focused": {
-              "value": "{color.icon.neutral.intense.1}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Neutral ghost button focused icon color"
             },
@@ -1551,7 +1551,7 @@
         "tertiary": {
           "background": {
             "default": {
-              "value": "{color.background.success.subtle.0}",
+              "value": "{color.background.warning.subtle.0}",
               "type": "color",
               "description": "Warning tertiary button default background"
             },
@@ -1578,27 +1578,27 @@
           },
           "border": {
             "default": {
-              "value": "{color.border.success.subtle.0}",
+              "value": "{color.border.warning.subtle.0}",
               "type": "color",
               "description": "Warning tertiary button default border"
             },
             "hover": {
-              "value": "{color.border.success.subtle.1}",
+              "value": "{color.border.warning.subtle.1}",
               "type": "color",
               "description": "Warning tertiary button hover border"
             },
             "active": {
-              "value": "{color.border.success.subtle.0}",
+              "value": "{color.border.warning.subtle.0}",
               "type": "color",
               "description": "Warning tertiary button active border"
             },
             "focused": {
-              "value": "{color.border.success.subtle.1}",
+              "value": "{color.border.warning.subtle.1}",
               "type": "color",
               "description": "Warning tertiary button focused border"
             },
             "disabled": {
-              "value": "{color.border.success.inactive}",
+              "value": "{color.border.warning.inactive}",
               "type": "color",
               "description": "Warning tertiary button disabled border"
             }
@@ -2067,7 +2067,7 @@
               "description": "Success tertiary button focused text"
             },
             "disabled": {
-              "value": "{color.text.success.inactive.1}",
+              "value": "{color.text.success.inactive.2}",
               "type": "color",
               "description": "Success tertiary button disabled text"
             }
@@ -2214,42 +2214,42 @@
     },
     "typography": {
       "3xs": {
-        "value": "{font.body.semibold.3xs}",
+        "value": "{font.body.semibold.xs}",
         "type": "typography",
         "description": "11px semibold font for 3xs buttons"
       },
       "2xs": {
-        "value": "{font.body.semibold.2xs}",
+        "value": "{font.body.semibold.sm}",
         "type": "typography",
         "description": "12px semibold font for 2xs buttons"
       },
       "xs": {
-        "value": "{font.body.semibold.xs}",
+        "value": "{font.body.semibold.md}",
         "type": "typography",
         "description": "13px semibold font for xs buttons"
       },
       "sm": {
-        "value": "{font.body.semibold.sm}",
+        "value": "{font.body.semibold.lg}",
         "type": "typography",
         "description": "14px semibold font for sm buttons"
       },
       "md": {
-        "value": "{font.body.semibold.sm}",
+        "value": "{font.body.semibold.lg}",
         "type": "typography",
         "description": "14px semibold font for md buttons"
       },
       "lg": {
-        "value": "{font.body.semibold.md}",
+        "value": "{font.body.semibold.2xl}",
         "type": "typography",
         "description": "16px semibold font for lg buttons"
       },
       "xl": {
-        "value": "{font.body.semibold.md}",
+        "value": "{font.body.semibold.2xl}",
         "type": "typography",
         "description": "16px semibold font for xl buttons"
       },
       "2xl": {
-        "value": "{font.subheading.semibold.sm}",
+        "value": "{font.body.semibold.3xl}",
         "type": "typography",
         "description": "18px semibold font for 2xl buttons"
       }
@@ -2331,7 +2331,7 @@
           },
           "2xs": {
             "value": "{size.height.2xs}",
-            "type": "dimension", 
+            "type": "dimension",
             "description": "28px button height for 2xs"
           },
           "xs": {
@@ -2368,17 +2368,17 @@
         "padding": {
           "x": {
             "3xs": {
-              "value": "{padding.x.3xs}",
+              "value": "{padding.x.4xs}",
               "type": "dimension",
               "description": "6px horizontal padding for 3xs"
             },
             "2xs": {
-              "value": "{padding.x.2xs}",
+              "value": "{padding.x.3xs}",
               "type": "dimension",
               "description": "8px horizontal padding for 2xs"
             },
             "xs": {
-              "value": "{padding.x.xs}",
+              "value": "{padding.x.2xs}",
               "type": "dimension",
               "description": "10px horizontal padding for xs"
             },
@@ -2410,19 +2410,19 @@
           },
           "y": {
             "3xs": {
-              "value": "{padding.y.xs}",
+              "value": "{padding.y.3xs}",
               "type": "dimension",
-              "description": "6px vertical padding for 3xs"
+              "description": "8px vertical padding for 3xs"
             },
             "2xs": {
-              "value": "{padding.y.xs}",
+              "value": "{padding.y.2xs}",
               "type": "dimension",
-              "description": "6px vertical padding for 2xs"
+              "description": "8px vertical padding for 2xs"
             },
             "xs": {
               "value": "{padding.y.xs}",
               "type": "dimension",
-              "description": "6px vertical padding for xs"
+              "description": "8px vertical padding for xs"
             },
             "sm": {
               "value": "{padding.y.sm}",
@@ -2459,14 +2459,14 @@
           "description": "4px gap between text and icon for 3xs"
         },
         "2xs": {
-          "value": "{gap.1}",
-          "type": "dimension",
-          "description": "4px gap between text and icon for 2xs"
-        },
-        "xs": {
           "value": "{gap.1[5]}",
           "type": "dimension",
-          "description": "6px gap between text and icon for xs"
+          "description": "6px gap between text and icon for 2xs"
+        },
+        "xs": {
+          "value": "{gap.2}",
+          "type": "dimension",
+          "description": "8px gap between text and icon for xs"
         },
         "sm": {
           "value": "{gap.2}",
@@ -2489,9 +2489,9 @@
           "description": "8px gap between text and icon for xl"
         },
         "2xl": {
-          "value": "{gap.2[5]}",
+          "value": "{gap.3}",
           "type": "dimension",
-          "description": "10px gap between text and icon for 2xl"
+          "description": "12px gap between text and icon for 2xl"
         }
       },
       "icon": {
@@ -2503,8 +2503,8 @@
           },
           "2xs": {
             "value": "{size.icon.xs}",
-            "type": "dimension", 
-            "description": "14px icon size for 2xs buttons"
+            "type": "dimension",
+            "description": "16px icon size for 2xs buttons"
           },
           "xs": {
             "value": "{size.icon.xs}",
@@ -2592,7 +2592,7 @@
           "2xs": {
             "value": "{padding.1[5]}",
             "type": "dimension",
-            "description": "6px padding for 2xs icon button"
+            "description": "4px padding for 2xs icon button"
           },
           "xs": {
             "value": "{padding.2}",
@@ -2672,4 +2672,4 @@
       }
     }
   }
-} 
+}

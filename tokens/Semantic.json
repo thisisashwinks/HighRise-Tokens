@@ -455,6 +455,10 @@
         "value": "{size.3[5]}",
         "type": "dimension"
       },
+      "4[25]": {
+        "value": "{size.4[25]}",
+        "type": "dimension"
+      },
       "4[5]": {
         "value": "{size.4[5]}",
         "type": "dimension"
@@ -1170,7 +1174,7 @@
         "type": "dimension"
       },
       "xs": {
-        "value": "{padding.1[5]}",
+        "value": "{padding.2}",
         "type": "dimension"
       },
       "sm": {
@@ -2758,7 +2762,7 @@
       "value": "{spacing.-0[25]}",
       "type": "dimension"
     },
-    "-[5]": {
+    "-0[5]": {
       "value": "{spacing.-0[5]}",
       "type": "dimension"
     },
@@ -2947,7 +2951,7 @@
         "value": "{gap.-0[25]}",
         "type": "dimension"
       },
-      "-[5]": {
+      "-0[5]": {
         "value": "{gap.-0[5]}",
         "type": "dimension"
       },
@@ -3665,6 +3669,10 @@
   },
   "border": {
     "radius": {
+      "none": {
+        "value": "{border.radius.0}",
+        "type": "dimension"
+      },
       "3xs": {
         "value": "{border.radius.1}",
         "type": "dimension"
@@ -3694,11 +3702,11 @@
         "type": "dimension"
       },
       "2xl": {
-        "value": "{border.radius.3}",
+        "value": "{border.radius.2}",
         "type": "dimension"
       },
       "full": {
-        "value": "{border.radius.full}",
+        "value": "{border.radius.250}",
         "type": "dimension"
       }
     },
