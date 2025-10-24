@@ -1,0 +1,239 @@
+{
+  "avatar-profile-photo": {
+    "container": {
+      "background": {
+        "color": {
+          "text-type": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Background color for text/initials placeholder"
+          },
+          "image": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Background color when displaying image"
+          },
+          "placeholder": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Background color for user icon placeholder"
+          }
+        }
+      },
+      "border": {
+        "radius": {
+          "sm": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Border radius for small avatar profile photo (90px)"
+          },
+          "md": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Border radius for medium avatar profile photo (144px)"
+          },
+          "lg": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Border radius for large avatar profile photo (346px)"
+          }
+        },
+        "width": {
+          "sm": {
+            "value": "{border.width.3}",
+            "type": "dimension",
+            "description": "Border width for small avatar profile photo"
+          },
+          "md": {
+            "value": "{border.width.4}",
+            "type": "dimension",
+            "description": "Border width for medium avatar profile photo"
+          },
+          "lg": {
+            "value": "{border.width.4}",
+            "type": "dimension",
+            "description": "Border width for large avatar profile photo"
+          }
+        },
+        "color": {
+          "value": "{color.border.neutral.pure}",
+          "type": "color",
+          "description": "White border color around avatar profile photo"
+        }
+      },
+      "size": {
+        "sm": {
+          "value": "{size.90}",
+          "type": "dimension",
+          "description": "Size for small avatar profile photo (90px)"
+        },
+        "md": {
+          "value": "{size.144}",
+          "type": "dimension",
+          "description": "Size for medium avatar profile photo (144px)"
+        },
+        "lg": {
+          "value": "{size.346}",
+          "type": "dimension",
+          "description": "Size for large avatar profile photo (346px)"
+        }
+      }
+    },
+    "text": {
+      "color": {
+        "value": "{color.text.neutral.body.2}",
+        "type": "color",
+        "description": "Text color for initials"
+      },
+      "typography": {
+        "sm": {
+          "value": "{font.display.medium.sm}",
+          "type": "typography",
+          "description": "Typography for small size initials (30px)"
+        },
+        "md": {
+          "value": "{font.display.medium.md}",
+          "type": "typography",
+          "description": "Typography for medium size initials (36px)"
+        },
+        "lg": {
+          "value": "{font.display.medium.xl}",
+          "type": "typography",
+          "description": "Typography for large size initials (60px)"
+        }
+      }
+    },
+    "placeholder-icon": {
+      "color": {
+        "value": "{color.icon.neutral.moderate.2}",
+        "type": "color",
+        "description": "Color for user placeholder icon"
+      },
+      "size": {
+        "sm": {
+          "value": "{size.icon.54}",
+          "type": "dimension",
+          "description": "Icon size for small avatar profile photo"
+        },
+        "md": {
+          "value": "{size.icon.96}",
+          "type": "dimension",
+          "description": "Icon size for medium avatar profile photo"
+        },
+        "lg": {
+          "value": "{size.icon.266}",
+          "type": "dimension",
+          "description": "Icon size for large avatar profile photo"
+        }
+      },
+      "position": {
+        "sm": {
+          "x": {
+            "value": "{position.x.18}",
+            "type": "dimension",
+            "description": "X position for placeholder icon in small size"
+          },
+          "y": {
+            "value": "{position.y.18}",
+            "type": "dimension",
+            "description": "Y position for placeholder icon in small size"
+          }
+        },
+        "md": {
+          "x": {
+            "value": "{position.x.24}",
+            "type": "dimension",
+            "description": "X position for placeholder icon in medium size"
+          },
+          "y": {
+            "value": "{position.y.24}",
+            "type": "dimension",
+            "description": "Y position for placeholder icon in medium size"
+          }
+        },
+        "lg": {
+          "x": {
+            "value": "{position.x.40}",
+            "type": "dimension",
+            "description": "X position for placeholder icon in large size"
+          },
+          "y": {
+            "value": "{position.y.40}",
+            "type": "dimension",
+            "description": "Y position for placeholder icon in large size"
+          }
+        }
+      }
+    },
+    "verified-tick": {
+      "size": {
+        "sm": {
+          "value": "{size.20}",
+          "type": "dimension",
+          "description": "Size of verified tick badge for small avatar"
+        },
+        "md": {
+          "value": "{size.24}",
+          "type": "dimension",
+          "description": "Size of verified tick badge for medium avatar"
+        },
+        "lg": {
+          "value": "{size.32}",
+          "type": "dimension",
+          "description": "Size of verified tick badge for large avatar"
+        }
+      },
+      "position": {
+        "sm": {
+          "bottom": {
+            "value": "{position.y.0}",
+            "type": "dimension",
+            "description": "Bottom position for verified tick in small size"
+          },
+          "right": {
+            "value": "{position.x.0}",
+            "type": "dimension",
+            "description": "Right position for verified tick in small size"
+          }
+        },
+        "md": {
+          "bottom": {
+            "value": "{position.y.2}",
+            "type": "dimension",
+            "description": "Bottom position for verified tick in medium size"
+          },
+          "right": {
+            "value": "{position.x.2}",
+            "type": "dimension",
+            "description": "Right position for verified tick in medium size"
+          }
+        },
+        "lg": {
+          "bottom": {
+            "value": "{position.y.4}",
+            "type": "dimension",
+            "description": "Bottom position for verified tick in large size"
+          },
+          "right": {
+            "value": "{position.x.4}",
+            "type": "dimension",
+            "description": "Right position for verified tick in large size"
+          }
+        }
+      }
+    },
+    "image": {
+      "fit": {
+        "value": "cover",
+        "type": "string",
+        "description": "Object fit for profile photo image"
+      },
+      "position": {
+        "value": "center",
+        "type": "string",
+        "description": "Object position for profile photo image"
+      }
+    }
+  }
+}
+

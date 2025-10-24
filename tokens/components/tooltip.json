@@ -1,6 +1,5 @@
 {
   "tooltip": {
-    "shared": {
       "border": {
         "radius": {
           "value": "{border.radius.1}",
@@ -23,8 +22,7 @@
         "text": {
           "value": "{gap.3xs}",
           "type": "spacing"
-        }
-      }
+        }  
     },
     "variants": {
       "light": {
@@ -41,11 +39,11 @@
           }
         },
         "text": {
-          "primary": {
+          "title": {
             "value": "{color.text.neutral.body.1}",
             "type": "color"
           },
-          "secondary": {
+          "description": {
             "value": "{color.text.neutral.subtitle.1}",
             "type": "color"
           }
@@ -77,11 +75,11 @@
           }
         },
         "text": {
-          "primary": {
+          "title": {
             "value": "{color.text.neutral.base}",
             "type": "color"
           },
-          "secondary": {
+          "description": {
             "value": "{color.text.neutral.base}",
             "type": "color"
           }
@@ -113,11 +111,11 @@
           }
         },
         "text": {
-          "primary": {
+          "title": {
             "value": "{color.text.neutral.body.1}",
             "type": "color"
           },
-          "secondary": {
+          "description": {
             "value": "{color.text.neutral.body.2}",
             "type": "color"
           }
@@ -153,11 +151,11 @@
           }
         },
         "text": {
-          "primary": {
+          "title": {
             "value": "{color.text.primary.body.1}",
             "type": "color"
           },
-          "secondary": {
+          "description": {
             "value": "{color.text.primary.body.2}",
             "type": "color"
           }
@@ -193,11 +191,11 @@
           }
         },
         "text": {
-          "primary": {
+          "title": {
             "value": "{color.text.success.body.1}",
             "type": "color"
           },
-          "secondary": {
+          "description": {
             "value": "{color.text.success.body.2}",
             "type": "color"
           }
@@ -233,11 +231,11 @@
           }
         },
         "text": {
-          "primary": {
+          "title": {
             "value": "{color.text.warning.body.1}",
             "type": "color"
           },
-          "secondary": {
+          "description": {
             "value": "{color.text.warning.body.2}",
             "type": "color"
           }
@@ -273,11 +271,11 @@
           }
         },
         "text": {
-          "primary": {
+          "title": {
             "value": "{color.text.error.body.1}",
             "type": "color"
           },
-          "secondary": {
+          "description": {
             "value": "{color.text.error.body.2}",
             "type": "color"
           }

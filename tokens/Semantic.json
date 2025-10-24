@@ -549,6 +549,14 @@
       "type": "dimension"
     },
     "icon": {
+      "6xs": {
+        "value": "{size.1[5]}",
+        "type": "dimension"
+      },
+      "5xs": {
+        "value": "{size.2}",
+        "type": "dimension"
+      },
       "4xs": {
         "value": "{size.2[5]}",
         "type": "dimension"
