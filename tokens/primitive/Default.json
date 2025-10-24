@@ -1732,8 +1732,16 @@
       "value": -4,
       "type": "number"
     },
+    "-1[5]": {
+      "value": -6,
+      "type": "number"
+    },
     "-2": {
       "value": -8,
+      "type": "number"
+    },
+    "-2[5]": {
+      "value": -10,
       "type": "number"
     }
   },
@@ -1839,6 +1847,10 @@
       },
       "3": {
         "value": 12,
+        "type": "number"
+      },
+      "4": {
+        "value": 16,
         "type": "number"
       },
       "0[25]": {
@@ -2983,6 +2995,57 @@
     "4[5]": {
       "value": 18,
       "type": "number"
+    }
+  },
+  "motion": {
+    "duration": {
+      "instant": {
+        "value": 0,
+        "type": "number",
+        "description": "Instant transition (0ms)"
+      },
+      "fast": {
+        "value": 150,
+        "type": "number",
+        "description": "Fast transition (150ms)"
+      },
+      "normal": {
+        "value": 250,
+        "type": "number",
+        "description": "Normal transition (250ms)"
+      },
+      "slow": {
+        "value": 350,
+        "type": "number",
+        "description": "Slow transition (350ms)"
+      },
+      "slower": {
+        "value": 500,
+        "type": "number",
+        "description": "Slower transition (500ms)"
+      }
+    },
+    "ease": {
+      "linear": {
+        "value": "linear",
+        "type": "string",
+        "description": "Linear easing"
+      },
+      "in": {
+        "value": "ease-in",
+        "type": "string",
+        "description": "Ease in"
+      },
+      "out": {
+        "value": "ease-out",
+        "type": "string",
+        "description": "Ease out"
+      },
+      "in-out": {
+        "value": "ease-in-out",
+        "type": "string",
+        "description": "Ease in and out"
+      }
     }
   }
 }

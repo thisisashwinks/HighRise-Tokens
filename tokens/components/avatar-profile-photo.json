@@ -1,4 +1,13 @@
 {
+  "$comment": "Avatar Profile Photo Component Tokens",
+  "$description": "Component tokens for the Avatar Profile Photo component, which displays large circular profile pictures with optional verified badges, placeholder icons, or text initials. Figma Reference: Node ID 26683-72284",
+  "$variants": {
+    "sizes": ["Small (sm): 90px", "Medium (md): 144px", "Large (lg): 346px"],
+    "states": ["Image: Displays actual profile photo", "Placeholder Icon: Shows user icon placeholder", "Text/Initials: Displays text initials (e.g., 'OR')"],
+    "features": ["Verified Badge: Optional blue checkmark badge", "White Border: Consistent border around the avatar (12px for sm, 16px for md/lg)", "Circular Shape: Full border radius for perfect circles"]
+  },
+  "$usage": "These tokens ensure consistency across user profile pages, account settings, large format avatar displays, verification badge positioning, and placeholder states.",
+  "$related": ["avatar.json: Standard avatar component (smaller sizes, different use cases)", "avatar-online-indicator.json: Online status indicator", "avatar-company-icon.json: Company badge overlay"],
   "avatar-profile-photo": {
     "container": {
       "background": {
@@ -40,23 +49,23 @@
         },
         "width": {
           "sm": {
-            "value": "{border.width.3}",
+            "value": "{border.width.4xl}",
             "type": "dimension",
-            "description": "Border width for small avatar profile photo"
+            "description": "Border width for small avatar profile photo (12px)"
           },
           "md": {
-            "value": "{border.width.4}",
+            "value": "{border.width.5xl}",
             "type": "dimension",
-            "description": "Border width for medium avatar profile photo"
+            "description": "Border width for medium avatar profile photo (16px)"
           },
           "lg": {
-            "value": "{border.width.4}",
+            "value": "{border.width.5xl}",
             "type": "dimension",
-            "description": "Border width for large avatar profile photo"
+            "description": "Border width for large avatar profile photo (16px)"
           }
         },
         "color": {
-          "value": "{color.border.neutral.pure}",
+          "value": "{color.border.neutral.base}",
           "type": "color",
           "description": "White border color around avatar profile photo"
         }
@@ -80,30 +89,32 @@
       }
     },
     "text": {
+      "$comment": "Typography for text/initials display mode (e.g., 'OR')",
       "color": {
         "value": "{color.text.neutral.body.2}",
         "type": "color",
-        "description": "Text color for initials"
+        "description": "Text color for initials (gray-600)"
       },
       "typography": {
         "sm": {
-          "value": "{font.display.medium.sm}",
+          "value": "{font.heading.medium.h4}",
           "type": "typography",
-          "description": "Typography for small size initials (30px)"
+          "description": "Typography for small size initials (30px Display Medium)"
         },
         "md": {
-          "value": "{font.display.medium.md}",
+          "value": "{font.heading.medium.h3}",
           "type": "typography",
-          "description": "Typography for medium size initials (36px)"
+          "description": "Typography for medium size initials (36px Display Medium)"
         },
         "lg": {
-          "value": "{font.display.medium.xl}",
+          "value": "{font.heading.medium.h1}",
           "type": "typography",
-          "description": "Typography for large size initials (60px)"
+          "description": "Typography for large size initials (60px Display Medium)"
         }
       }
     },
     "placeholder-icon": {
+      "$comment": "User icon placeholder when no photo is available",
       "color": {
         "value": "{color.icon.neutral.moderate.2}",
         "type": "color",
@@ -113,20 +124,21 @@
         "sm": {
           "value": "{size.icon.54}",
           "type": "dimension",
-          "description": "Icon size for small avatar profile photo"
+          "description": "Icon size for small avatar profile photo (54px)"
         },
         "md": {
           "value": "{size.icon.96}",
           "type": "dimension",
-          "description": "Icon size for medium avatar profile photo"
+          "description": "Icon size for medium avatar profile photo (96px)"
         },
         "lg": {
           "value": "{size.icon.266}",
           "type": "dimension",
-          "description": "Icon size for large avatar profile photo"
+          "description": "Icon size for large avatar profile photo (266px)"
         }
       },
       "position": {
+        "$comment": "Positioning offsets to center placeholder icon within container",
         "sm": {
           "x": {
             "value": "{position.x.18}",
@@ -166,21 +178,22 @@
       }
     },
     "verified-tick": {
+      "$comment": "Optional blue checkmark badge positioned at bottom-right corner",
       "size": {
         "sm": {
           "value": "{size.20}",
           "type": "dimension",
-          "description": "Size of verified tick badge for small avatar"
+          "description": "Size of verified tick badge for small avatar (20px)"
         },
         "md": {
           "value": "{size.24}",
           "type": "dimension",
-          "description": "Size of verified tick badge for medium avatar"
+          "description": "Size of verified tick badge for medium avatar (24px)"
         },
         "lg": {
           "value": "{size.32}",
           "type": "dimension",
-          "description": "Size of verified tick badge for large avatar"
+          "description": "Size of verified tick badge for large avatar (32px)"
         }
       },
       "position": {
@@ -188,45 +201,46 @@
           "bottom": {
             "value": "{position.y.0}",
             "type": "dimension",
-            "description": "Bottom position for verified tick in small size"
+            "description": "Bottom position for verified tick in small size (0px from edge)"
           },
           "right": {
             "value": "{position.x.0}",
             "type": "dimension",
-            "description": "Right position for verified tick in small size"
+            "description": "Right position for verified tick in small size (0px from edge)"
           }
         },
         "md": {
           "bottom": {
             "value": "{position.y.2}",
             "type": "dimension",
-            "description": "Bottom position for verified tick in medium size"
+            "description": "Bottom position for verified tick in medium size (2px from edge)"
           },
           "right": {
             "value": "{position.x.2}",
             "type": "dimension",
-            "description": "Right position for verified tick in medium size"
+            "description": "Right position for verified tick in medium size (2px from edge)"
           }
         },
         "lg": {
           "bottom": {
             "value": "{position.y.4}",
             "type": "dimension",
-            "description": "Bottom position for verified tick in large size"
+            "description": "Bottom position for verified tick in large size (4px from edge)"
           },
           "right": {
             "value": "{position.x.4}",
             "type": "dimension",
-            "description": "Right position for verified tick in large size"
+            "description": "Right position for verified tick in large size (4px from edge)"
           }
         }
       }
     },
     "image": {
+      "$comment": "CSS properties for profile photo image display",
       "fit": {
         "value": "cover",
         "type": "string",
-        "description": "Object fit for profile photo image"
+        "description": "Object fit for profile photo image (fills container while maintaining aspect ratio)"
       },
       "position": {
         "value": "center",
@@ -236,4 +250,3 @@
     }
   }
 }
-

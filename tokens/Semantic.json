@@ -109,6 +109,10 @@
         "value": "{size.40}",
         "type": "dimension"
       },
+      "54": {
+        "value": "{size.54}",
+        "type": "dimension"
+      },
       "56": {
         "value": "{size.56}",
         "type": "dimension"
@@ -165,12 +169,20 @@
         "value": "{size.256}",
         "type": "dimension"
       },
+      "266": {
+        "value": "{size.266}",
+        "type": "dimension"
+      },
       "282": {
         "value": "{size.282}",
         "type": "dimension"
       },
       "290": {
         "value": "{size.290}",
+        "type": "dimension"
+      },
+      "346": {
+        "value": "{size.346}",
         "type": "dimension"
       },
       "360": {
@@ -423,12 +435,20 @@
         "value": "{size.256}",
         "type": "dimension"
       },
+      "266": {
+        "value": "{size.266}",
+        "type": "dimension"
+      },
       "282": {
         "value": "{size.282}",
         "type": "dimension"
       },
       "290": {
         "value": "{size.290}",
+        "type": "dimension"
+      },
+      "346": {
+        "value": "{size.346}",
         "type": "dimension"
       },
       "360": {
@@ -599,6 +619,18 @@
       },
       "4xl": {
         "value": "{size.10}",
+        "type": "dimension"
+      },
+      "54": {
+        "value": "{size.54}",
+        "type": "dimension"
+      },
+      "96": {
+        "value": "{size.96}",
+        "type": "dimension"
+      },
+      "266": {
+        "value": "{size.266}",
         "type": "dimension"
       }
     }
@@ -2778,8 +2810,16 @@
       "value": "{spacing.-1}",
       "type": "dimension"
     },
+    "-1[5]": {
+      "value": "{spacing.-1[5]}",
+      "type": "dimension"
+    },
     "-2": {
       "value": "{spacing.-2}",
+      "type": "dimension"
+    },
+    "-2[5]": {
+      "value": "{spacing.-2[5]}",
       "type": "dimension"
     },
     "4xs": {
@@ -3391,6 +3431,14 @@
         "value": "{position.20}",
         "type": "dimension"
       },
+      "24": {
+        "value": "{position.24}",
+        "type": "dimension"
+      },
+      "40": {
+        "value": "{position.40}",
+        "type": "dimension"
+      },
       "-20": {
         "value": "{position.-20}",
         "type": "dimension"
@@ -3581,6 +3629,14 @@
         "value": "{position.20}",
         "type": "dimension"
       },
+      "24": {
+        "value": "{position.24}",
+        "type": "dimension"
+      },
+      "40": {
+        "value": "{position.40}",
+        "type": "dimension"
+      },
       "-20": {
         "value": "{position.-20}",
         "type": "dimension"
@@ -3749,6 +3805,10 @@
       },
       "4xl": {
         "value": "{border.width.3}",
+        "type": "dimension"
+      },
+      "5xl": {
+        "value": "{border.width.4}",
         "type": "dimension"
       }
     }
@@ -4900,6 +4960,48 @@
           "value": "{color.secondary.warning.300}",
           "type": "color"
         }
+      }
+    }
+  },
+  "motion": {
+    "duration": {
+      "instant": {
+        "value": "{motion.duration.instant}",
+        "type": "number"
+      },
+      "fast": {
+        "value": "{motion.duration.fast}",
+        "type": "number"
+      },
+      "normal": {
+        "value": "{motion.duration.normal}",
+        "type": "number"
+      },
+      "slow": {
+        "value": "{motion.duration.slow}",
+        "type": "number"
+      },
+      "slower": {
+        "value": "{motion.duration.slower}",
+        "type": "number"
+      }
+    },
+    "ease": {
+      "linear": {
+        "value": "{motion.ease.linear}",
+        "type": "string"
+      },
+      "in": {
+        "value": "{motion.ease.in}",
+        "type": "string"
+      },
+      "out": {
+        "value": "{motion.ease.out}",
+        "type": "string"
+      },
+      "in-out": {
+        "value": "{motion.ease.in-out}",
+        "type": "string"
       }
     }
   },

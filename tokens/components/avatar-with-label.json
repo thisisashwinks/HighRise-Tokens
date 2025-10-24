@@ -1,0 +1,379 @@
+{
+  "$schema": "https://schemas.jsonresume.org/v1.0.0/schema.json",
+  "$description": "Avatar with Label - Combines an avatar with primary text (name) and optional secondary text (description)",
+  "$figma": {
+    "file": "HighRise 1.1 WIP",
+    "nodeId": "26683:71563",
+    "url": "https://www.figma.com/design/emjjdhZIMlqbszmzP9PdS6/1.-HighRise-1.1--WIP-?node-id=26683-71563"
+  },
+  "$component": {
+    "name": "Avatar with Label",
+    "description": "A composite component that displays an avatar alongside text labels (name and optional email/description). Commonly used in user lists, dropdowns, and profile displays.",
+    "structure": "Horizontal layout: Avatar (left) + Text container (right) with name and optional description stacked vertically",
+    "sizes": {
+      "sm": "32px avatar, 14px name text, 12px description - Compact size for lists and dropdowns",
+      "md": "40px avatar, 14px name text, 14px description - Standard size for most use cases",
+      "lg": "48px avatar, 16px name text, 16px description - Larger for emphasis or headers",
+      "xl": "56px avatar, 18px name text, 16px description - Extra large for prominent displays"
+    },
+    "variants": {
+      "with-description": "Shows both name and secondary text (email, role, etc.)",
+      "name-only": "Shows only the primary name text without description"
+    },
+    "usage": {
+      "contexts": "User selection menus, profile cards, comment headers, team member lists, activity feeds",
+      "spacing": "Avatar and text are separated by consistent gap based on size"
+    }
+  },
+  "avatar-with-label": {
+    "container": {
+      "$note": "Main wrapper container - horizontal flex layout",
+      "layout": {
+        "direction": {
+          "value": "horizontal",
+          "type": "string",
+          "description": "Avatar with label uses horizontal layout (avatar left, text right)"
+        },
+        "align-items": {
+          "value": "center",
+          "type": "string",
+          "description": "Vertical alignment of avatar and text container"
+        }
+      },
+      "gap": {
+        "sm": {
+          "value": "{spacing.2}",
+          "type": "dimension",
+          "description": "Gap between avatar and text for sm size - 8px"
+        },
+        "md": {
+          "value": "{spacing.3}",
+          "type": "dimension",
+          "description": "Gap between avatar and text for md size - 12px"
+        },
+        "lg": {
+          "value": "{spacing.3}",
+          "type": "dimension",
+          "description": "Gap between avatar and text for lg size - 12px"
+        },
+        "xl": {
+          "value": "{spacing.4}",
+          "type": "dimension",
+          "description": "Gap between avatar and text for xl size - 16px"
+        }
+      }
+    },
+    "avatar": {
+      "$note": "References the base avatar component - size matches the avatar-with-label size",
+      "size": {
+        "sm": {
+          "value": "{avatar.container.size.sm}",
+          "type": "dimension",
+          "description": "Avatar size for sm variant - 32px"
+        },
+        "md": {
+          "value": "{avatar.container.size.md}",
+          "type": "dimension",
+          "description": "Avatar size for md variant - 40px"
+        },
+        "lg": {
+          "value": "{avatar.container.size.lg}",
+          "type": "dimension",
+          "description": "Avatar size for lg variant - 48px"
+        },
+        "xl": {
+          "value": "{avatar.container.size.xl}",
+          "type": "dimension",
+          "description": "Avatar size for xl variant - 56px"
+        }
+      },
+      "border-radius": {
+        "sm": {
+          "value": "{avatar.container.border.radius.rounded.sm}",
+          "type": "dimension",
+          "description": "Avatar border radius for sm - full circle"
+        },
+        "md": {
+          "value": "{avatar.container.border.radius.rounded.md}",
+          "type": "dimension",
+          "description": "Avatar border radius for md - full circle"
+        },
+        "lg": {
+          "value": "{avatar.container.border.radius.rounded.lg}",
+          "type": "dimension",
+          "description": "Avatar border radius for lg - full circle"
+        },
+        "xl": {
+          "value": "{avatar.container.border.radius.rounded.xl}",
+          "type": "dimension",
+          "description": "Avatar border radius for xl - full circle"
+        }
+      }
+    },
+    "text-container": {
+      "$note": "Wrapper for name and description text - vertical flex layout",
+      "layout": {
+        "direction": {
+          "value": "vertical",
+          "type": "string",
+          "description": "Text container uses vertical layout (name on top, description below)"
+        },
+        "align-items": {
+          "value": "start",
+          "type": "string",
+          "description": "Horizontal alignment of text items"
+        },
+        "justify-content": {
+          "value": "center",
+          "type": "string",
+          "description": "Vertical justification of text content"
+        }
+      },
+      "gap": {
+        "sm": {
+          "value": "{spacing.0}",
+          "type": "dimension",
+          "description": "Gap between name and description for sm size - 0px (tight spacing)"
+        },
+        "md": {
+          "value": "{spacing.0}",
+          "type": "dimension",
+          "description": "Gap between name and description for md size - 0px"
+        },
+        "lg": {
+          "value": "{spacing.0}",
+          "type": "dimension",
+          "description": "Gap between name and description for lg size - 0px"
+        },
+        "xl": {
+          "value": "{spacing.0}",
+          "type": "dimension",
+          "description": "Gap between name and description for xl size - 0px"
+        }
+      }
+    },
+    "name": {
+      "$note": "Primary text - user name or main label",
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Name text color - gray-700"
+        },
+        "hover": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Name text color on hover (if interactive)"
+        }
+      },
+      "typography": {
+        "sm": {
+          "value": "{font.body.semibold.lg}",
+          "type": "typography",
+          "description": "Name typography for sm size - 14px semibold"
+        },
+        "md": {
+          "value": "{font.body.semibold.lg}",
+          "type": "typography",
+          "description": "Name typography for md size - 14px semibold"
+        },
+        "lg": {
+          "value": "{font.body.semibold.2xl}",
+          "type": "typography",
+          "description": "Name typography for lg size - 16px semibold"
+        },
+        "xl": {
+          "value": "{font.body.semibold.3xl}",
+          "type": "typography",
+          "description": "Name typography for xl size - 18px semibold"
+        }
+      },
+      "line-height": {
+        "sm": {
+          "value": "{font.line-height.lg}",
+          "type": "dimension",
+          "description": "Name line height for sm size - 20px"
+        },
+        "md": {
+          "value": "{font.line-height.lg}",
+          "type": "dimension",
+          "description": "Name line height for md size - 20px"
+        },
+        "lg": {
+          "value": "{font.line-height.2xl}",
+          "type": "dimension",
+          "description": "Name line height for lg size - 24px"
+        },
+        "xl": {
+          "value": "{font.line-height.3xl}",
+          "type": "dimension",
+          "description": "Name line height for xl size - 28px"
+        }
+      }
+    },
+    "description": {
+      "$note": "Secondary text - email, role, or additional information (optional)",
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.moderate.1}",
+          "type": "color",
+          "description": "Description text color - gray-600"
+        }
+      },
+      "typography": {
+        "sm": {
+          "value": "{font.body.regular.sm}",
+          "type": "typography",
+          "description": "Description typography for sm size - 12px regular"
+        },
+        "md": {
+          "value": "{font.body.regular.lg}",
+          "type": "typography",
+          "description": "Description typography for md size - 14px regular"
+        },
+        "lg": {
+          "value": "{font.body.regular.2xl}",
+          "type": "typography",
+          "description": "Description typography for lg size - 16px regular"
+        },
+        "xl": {
+          "value": "{font.body.regular.2xl}",
+          "type": "typography",
+          "description": "Description typography for xl size - 16px regular"
+        }
+      },
+      "line-height": {
+        "sm": {
+          "value": "{font.line-height.sm}",
+          "type": "dimension",
+          "description": "Description line height for sm size - 17px"
+        },
+        "md": {
+          "value": "{font.line-height.lg}",
+          "type": "dimension",
+          "description": "Description line height for md size - 20px"
+        },
+        "lg": {
+          "value": "{font.line-height.2xl}",
+          "type": "dimension",
+          "description": "Description line height for lg size - 24px"
+        },
+        "xl": {
+          "value": "{font.line-height.2xl}",
+          "type": "dimension",
+          "description": "Description line height for xl size - 24px"
+        }
+      }
+    },
+    "interaction": {
+      "$note": "Interaction tokens for when the component is clickable/interactive",
+      "cursor": {
+        "default": {
+          "value": "default",
+          "type": "string",
+          "description": "Default cursor for non-interactive avatar with label"
+        },
+        "interactive": {
+          "value": "pointer",
+          "type": "string",
+          "description": "Cursor when avatar with label is clickable"
+        }
+      },
+      "hover": {
+        "background": {
+          "value": "{color.background.neutral.subtle.0}",
+          "type": "color",
+          "description": "Background color on hover (if interactive)"
+        },
+        "border-radius": {
+          "value": "{border.radius.2}",
+          "type": "dimension",
+          "description": "Border radius for hover background - 8px"
+        }
+      },
+      "transition": {
+        "duration": {
+          "value": "{motion.duration.fast}",
+          "type": "duration",
+          "description": "Transition duration for interactive states"
+        },
+        "timing": {
+          "value": "{motion.ease.in-out}",
+          "type": "string",
+          "description": "Transition timing function"
+        }
+      }
+    },
+    "spacing": {
+      "$note": "Optional padding when used as interactive element (button/link)",
+      "padding": {
+        "x": {
+          "sm": {
+            "value": "{spacing.2}",
+            "type": "dimension",
+            "description": "Horizontal padding for sm size - 8px"
+          },
+          "md": {
+            "value": "{spacing.3}",
+            "type": "dimension",
+            "description": "Horizontal padding for md size - 12px"
+          },
+          "lg": {
+            "value": "{spacing.3}",
+            "type": "dimension",
+            "description": "Horizontal padding for lg size - 12px"
+          },
+          "xl": {
+            "value": "{spacing.4}",
+            "type": "dimension",
+            "description": "Horizontal padding for xl size - 16px"
+          }
+        },
+        "y": {
+          "sm": {
+            "value": "{spacing.2}",
+            "type": "dimension",
+            "description": "Vertical padding for sm size - 8px"
+          },
+          "md": {
+            "value": "{spacing.2}",
+            "type": "dimension",
+            "description": "Vertical padding for md size - 8px"
+          },
+          "lg": {
+            "value": "{spacing.3}",
+            "type": "dimension",
+            "description": "Vertical padding for lg size - 12px"
+          },
+          "xl": {
+            "value": "{spacing.3}",
+            "type": "dimension",
+            "description": "Vertical padding for xl size - 12px"
+          }
+        }
+      }
+    },
+    "accessibility": {
+      "role": {
+        "static": {
+          "value": "presentation",
+          "type": "string",
+          "description": "ARIA role for non-interactive avatar with label"
+        },
+        "interactive": {
+          "value": "button",
+          "type": "string",
+          "description": "ARIA role when avatar with label is clickable"
+        }
+      },
+      "label": {
+        "format": {
+          "value": "{name} - {description}",
+          "type": "string",
+          "description": "Format for ARIA label combining name and description"
+        }
+      }
+    }
+  }
+}
+
