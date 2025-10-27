@@ -42,24 +42,24 @@
       },
       "gap": {
         "sm": {
-          "value": "{spacing.2}",
+          "value": "{gap.3xs}",
           "type": "dimension",
-          "description": "Gap between avatar and text for sm size - 8px"
+          "description": "Gap between avatar and text for sm size - 4px"
         },
         "md": {
-          "value": "{spacing.3}",
+          "value": "{gap.2xs}",
           "type": "dimension",
-          "description": "Gap between avatar and text for md size - 12px"
+          "description": "Gap between avatar and text for md size - 6px"
         },
         "lg": {
-          "value": "{spacing.3}",
+          "value": "{gap.xs}",
           "type": "dimension",
-          "description": "Gap between avatar and text for lg size - 12px"
+          "description": "Gap between avatar and text for lg size - 8px"
         },
         "xl": {
-          "value": "{spacing.4}",
+          "value": "{gap.sm}",
           "type": "dimension",
-          "description": "Gap between avatar and text for xl size - 16px"
+          "description": "Gap between avatar and text for xl size - 8px"
         }
       }
     },
@@ -67,44 +67,44 @@
       "$note": "References the base avatar component - size matches the avatar-with-label size",
       "size": {
         "sm": {
-          "value": "{avatar.container.size.sm}",
+          "value": "{size.icon.2xl}",
           "type": "dimension",
           "description": "Avatar size for sm variant - 32px"
         },
         "md": {
-          "value": "{avatar.container.size.md}",
+          "value": "{size.icon.4xl}",
           "type": "dimension",
           "description": "Avatar size for md variant - 40px"
         },
         "lg": {
-          "value": "{avatar.container.size.lg}",
+          "value": "{size.icon.12}",
           "type": "dimension",
           "description": "Avatar size for lg variant - 48px"
         },
         "xl": {
-          "value": "{avatar.container.size.xl}",
+          "value": "{size.icon.14}",
           "type": "dimension",
           "description": "Avatar size for xl variant - 56px"
         }
       },
       "border-radius": {
         "sm": {
-          "value": "{avatar.container.border.radius.rounded.sm}",
+          "value": "{border.radius.full}",
           "type": "dimension",
           "description": "Avatar border radius for sm - full circle"
         },
         "md": {
-          "value": "{avatar.container.border.radius.rounded.md}",
+          "value": "{border.radius.full}",
           "type": "dimension",
           "description": "Avatar border radius for md - full circle"
         },
         "lg": {
-          "value": "{avatar.container.border.radius.rounded.lg}",
+          "value": "{border.radius.full}",
           "type": "dimension",
           "description": "Avatar border radius for lg - full circle"
         },
         "xl": {
-          "value": "{avatar.container.border.radius.rounded.xl}",
+          "value": "{border.radius.full}",
           "type": "dimension",
           "description": "Avatar border radius for xl - full circle"
         }
@@ -131,22 +131,22 @@
       },
       "gap": {
         "sm": {
-          "value": "{spacing.0}",
+          "value": "{gap.none}",
           "type": "dimension",
-          "description": "Gap between name and description for sm size - 0px (tight spacing)"
+          "description": "Gap between name and description for sm size - 0px"
         },
         "md": {
-          "value": "{spacing.0}",
+          "value": "{gap.none}",
           "type": "dimension",
           "description": "Gap between name and description for md size - 0px"
         },
         "lg": {
-          "value": "{spacing.0}",
+          "value": "{gap.none}",
           "type": "dimension",
           "description": "Gap between name and description for lg size - 0px"
         },
         "xl": {
-          "value": "{spacing.0}",
+          "value": "{gap.none}",
           "type": "dimension",
           "description": "Gap between name and description for xl size - 0px"
         }
@@ -156,14 +156,9 @@
       "$note": "Primary text - user name or main label",
       "color": {
         "default": {
-          "value": "{color.text.neutral.body.2}",
+          "value": "{color.text.neutral.body.1}",
           "type": "color",
           "description": "Name text color - gray-700"
-        },
-        "hover": {
-          "value": "{color.text.neutral.body.2}",
-          "type": "color",
-          "description": "Name text color on hover (if interactive)"
         }
       },
       "typography": {
@@ -215,7 +210,7 @@
       "$note": "Secondary text - email, role, or additional information (optional)",
       "color": {
         "default": {
-          "value": "{color.text.neutral.moderate.1}",
+          "value": "{color.text.neutral.body.2}",
           "type": "color",
           "description": "Description text color - gray-600"
         }
@@ -262,94 +257,6 @@
           "value": "{font.line-height.2xl}",
           "type": "dimension",
           "description": "Description line height for xl size - 24px"
-        }
-      }
-    },
-    "interaction": {
-      "$note": "Interaction tokens for when the component is clickable/interactive",
-      "cursor": {
-        "default": {
-          "value": "default",
-          "type": "string",
-          "description": "Default cursor for non-interactive avatar with label"
-        },
-        "interactive": {
-          "value": "pointer",
-          "type": "string",
-          "description": "Cursor when avatar with label is clickable"
-        }
-      },
-      "hover": {
-        "background": {
-          "value": "{color.background.neutral.subtle.0}",
-          "type": "color",
-          "description": "Background color on hover (if interactive)"
-        },
-        "border-radius": {
-          "value": "{border.radius.2}",
-          "type": "dimension",
-          "description": "Border radius for hover background - 8px"
-        }
-      },
-      "transition": {
-        "duration": {
-          "value": "{motion.duration.fast}",
-          "type": "duration",
-          "description": "Transition duration for interactive states"
-        },
-        "timing": {
-          "value": "{motion.ease.in-out}",
-          "type": "string",
-          "description": "Transition timing function"
-        }
-      }
-    },
-    "spacing": {
-      "$note": "Optional padding when used as interactive element (button/link)",
-      "padding": {
-        "x": {
-          "sm": {
-            "value": "{spacing.2}",
-            "type": "dimension",
-            "description": "Horizontal padding for sm size - 8px"
-          },
-          "md": {
-            "value": "{spacing.3}",
-            "type": "dimension",
-            "description": "Horizontal padding for md size - 12px"
-          },
-          "lg": {
-            "value": "{spacing.3}",
-            "type": "dimension",
-            "description": "Horizontal padding for lg size - 12px"
-          },
-          "xl": {
-            "value": "{spacing.4}",
-            "type": "dimension",
-            "description": "Horizontal padding for xl size - 16px"
-          }
-        },
-        "y": {
-          "sm": {
-            "value": "{spacing.2}",
-            "type": "dimension",
-            "description": "Vertical padding for sm size - 8px"
-          },
-          "md": {
-            "value": "{spacing.2}",
-            "type": "dimension",
-            "description": "Vertical padding for md size - 8px"
-          },
-          "lg": {
-            "value": "{spacing.3}",
-            "type": "dimension",
-            "description": "Vertical padding for lg size - 12px"
-          },
-          "xl": {
-            "value": "{spacing.3}",
-            "type": "dimension",
-            "description": "Vertical padding for xl size - 12px"
-          }
         }
       }
     },

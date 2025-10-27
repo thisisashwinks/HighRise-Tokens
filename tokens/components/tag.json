@@ -1,6 +1,5 @@
 {
   "tag": {
-    "shared": {
       "border": {
         "radius": {
           "square": {
@@ -121,19 +120,6 @@
           "type": "dimension"
         }
       },
-      "focus": {
-        "ring": {
-          "width": {
-            "value": "{border.width.thick}",
-            "type": "dimension"
-          },
-          "offset": {
-            "value": "{size.1}",
-            "type": "dimension"
-          }
-        }
-      }
-    },
     "variants": {
       "primary": {
         "outline": {
@@ -169,7 +155,7 @@
               "type": "color"
             },
             "focused": {
-              "value": "{color.border.primary.subtle.0}",
+              "value": "{color.border.primary.subtle.2}",
               "type": "color"
             }
           },
@@ -218,7 +204,25 @@
           "tag-count": {
             "background": {
               "default": {
-                "value": "{color.background.primary.subtle.1}",
+                "value": "{color.background.primary.inactive}",
+                "type": "color"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.primary.body.1}",
+                "type": "color"
+              },
+              "hover": {
+                "value": "{color.text.primary.title.2}",
+                "type": "color"
+              },
+              "active": {
+                "value": "{color.text.primary.title.1}",
+                "type": "color"
+              },
+              "focused": {
+                "value": "{color.text.primary.title.2}",
                 "type": "color"
               }
             }
@@ -257,7 +261,7 @@
               "type": "color"
             },
             "focused": {
-              "value": "{color.border.primary.subtle.0}",
+              "value": "{color.border.primary.subtle.2}",
               "type": "color"
             }
           },
@@ -306,13 +310,25 @@
           "tag-count": {
             "background": {
               "default": {
-                "value": "{color.background.primary.intense.0}",
+                "value": "{color.background.primary.inactive}",
                 "type": "color"
               }
             },
             "text": {
               "default": {
-                "value": "{color.text.primary.contrast}",
+                "value": "{color.text.primary.body.1}",
+                "type": "color"
+              },
+              "hover": {
+                "value": "{color.text.primary.title.2}",
+                "type": "color"
+              },
+              "active": {
+                "value": "{color.text.primary.title.1}",
+                "type": "color"
+              },
+              "focused": {
+                "value": "{color.text.primary.title.2}",
                 "type": "color"
               }
             }

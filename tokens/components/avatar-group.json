@@ -36,123 +36,119 @@
           "description": "Vertical alignment of avatars"
         }
       },
-      "spacing": {
+      "gap": {
         "$comment": "Negative margin creates overlap effect - smaller values = more overlap",
         "overlap": {
+          "3xs": {
+            "value": "{gap.-1}",
+            "type": "dimension",
+            "description": "Overlap amount for 3xs avatars - negative margin for overlap effect"
+          },
+          "2xs": {
+            "value": "{gap.-1}",
+            "type": "dimension",
+            "description": "Overlap amount for 2xs avatars - negative margin for overlap effect"
+          },
           "xs": {
-            "value": "{spacing.-1}",
+            "value": "{gap.-1}",
             "type": "dimension",
             "description": "Overlap amount for xs avatars - negative margin for overlap effect"
           },
           "sm": {
-            "value": "{spacing.-1[5]}",
+            "value": "{gap.-2}",
             "type": "dimension",
             "description": "Overlap amount for sm avatars - negative margin for overlap effect"
           },
           "md": {
-            "value": "{spacing.-2}",
+            "value": "{gap.-3}",
             "type": "dimension",
             "description": "Overlap amount for md avatars - negative margin for overlap effect"
-          },
-          "lg": {
-            "value": "{spacing.-2[5]}",
-            "type": "dimension",
-            "description": "Overlap amount for lg avatars - negative margin for overlap effect"
           }
-        }
-      },
-      "max-visible": {
-        "default": {
-          "value": 4,
-          "type": "number",
-          "description": "Default maximum number of avatars to show before using count indicator"
-        },
-        "compact": {
-          "value": 3,
-          "type": "number",
-          "description": "Maximum avatars in compact mode"
         }
       }
     },
     "avatar": {
       "$comment": "Individual avatar styling within the group",
       "size": {
+        "3xs": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "Avatar size for 3xs group - 10px"
+        },
+        "2xs": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Avatar size for 2xs group - 16px"
+        },
         "xs": {
-          "value": "{avatar.container.size.xs}",
+          "value": "{size.icon.lg}",
           "type": "dimension",
           "description": "Avatar size for xs group - 24px"
         },
         "sm": {
-          "value": "{avatar.container.size.sm}",
+          "value": "{size.icon.2xl}",
           "type": "dimension",
           "description": "Avatar size for sm group - 32px"
         },
         "md": {
-          "value": "{avatar.container.size.md}",
+          "value": "{size.icon.4xl}",
           "type": "dimension",
           "description": "Avatar size for md group - 40px"
-        },
-        "lg": {
-          "value": "{avatar.container.size.lg}",
-          "type": "dimension",
-          "description": "Avatar size for lg group - 48px"
         }
       },
       "border": {
         "width": {
-          "xs": {
-            "value": "{border.width.md}",
+          "3xs": {
+            "value": "{border.width.default}",
             "type": "dimension",
-            "description": "Border width for xs avatars - 2px (creates separation between overlapping avatars)"
+            "description": "Border width for 3xs avatars - 1px"
+          },
+          "2xs": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Border width for 2xs avatars - 1px"
+          },
+          "xs": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Border width for xs avatars - 1px"
           },
           "sm": {
-            "value": "{border.width.md}",
+            "value": "{border.width.default}",
             "type": "dimension",
-            "description": "Border width for sm avatars - 2px"
+            "description": "Border width for sm avatars - 1px"
           },
           "md": {
-            "value": "{border.width.md}",
+            "value": "{border.width.default}",
             "type": "dimension",
-            "description": "Border width for md avatars - 2px"
-          },
-          "lg": {
-            "value": "{border.width.lg}",
-            "type": "dimension",
-            "description": "Border width for lg avatars - 4px"
-          }
-        },
-        "color": {
-          "light": {
-            "value": "{color.border.neutral.base}",
-            "type": "color",
-            "description": "White border for avatars on light backgrounds"
-          },
-          "dark": {
-            "value": "{color.border.neutral.intense.1}",
-            "type": "color",
-            "description": "Dark border for avatars on dark backgrounds"
+            "description": "Border width for md avatars - 1px"
           }
         },
         "radius": {
+          "3xs": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Border radius for 3xs avatars - full circle"
+          },
+          "2xs": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Border radius for 2xs avatars - full circle"
+          },
           "xs": {
-            "value": "{avatar.container.border.radius.rounded.xs}",
+            "value": "{border.radius.full}",
             "type": "dimension",
             "description": "Border radius for xs avatars - full circle"
           },
           "sm": {
-            "value": "{avatar.container.border.radius.rounded.sm}",
+            "value": "{border.radius.full}",
             "type": "dimension",
             "description": "Border radius for sm avatars - full circle"
           },
           "md": {
-            "value": "{avatar.container.border.radius.rounded.md}",
+            "value": "{border.radius.full}",
             "type": "dimension",
             "description": "Border radius for md avatars - full circle"
-          },
-          "lg": {
-            "value": "{avatar.container.border.radius.rounded.lg}",
-            "type": "dimension",
-            "description": "Border radius for lg avatars - full circle"
           }
         }
       },
@@ -167,197 +163,6 @@
           "value": 1,
           "type": "number",
           "description": "Amount to decrease z-index for each subsequent avatar"
-        }
-      }
-    },
-    "count-badge": {
-      "$comment": "Count indicator showing number of additional members (+N)",
-      "background": {
-        "color": {
-          "default": {
-            "value": "{color.background.neutral.subtle.1}",
-            "type": "color",
-            "description": "Background color for count badge"
-          },
-          "hover": {
-            "value": "{color.background.neutral.subtle.2}",
-            "type": "color",
-            "description": "Background color for count badge on hover"
-          }
-        }
-      },
-      "border": {
-        "width": {
-          "xs": {
-            "value": "{border.width.md}",
-            "type": "dimension",
-            "description": "Border width for xs count badge - 2px"
-          },
-          "sm": {
-            "value": "{border.width.md}",
-            "type": "dimension",
-            "description": "Border width for sm count badge - 2px"
-          },
-          "md": {
-            "value": "{border.width.md}",
-            "type": "dimension",
-            "description": "Border width for md count badge - 2px"
-          },
-          "lg": {
-            "value": "{border.width.lg}",
-            "type": "dimension",
-            "description": "Border width for lg count badge - 4px"
-          }
-        },
-        "color": {
-          "light": {
-            "value": "{color.border.neutral.base}",
-            "type": "color",
-            "description": "White border for count badge on light backgrounds"
-          },
-          "dark": {
-            "value": "{color.border.neutral.intense.1}",
-            "type": "color",
-            "description": "Dark border for count badge on dark backgrounds"
-          }
-        },
-        "radius": {
-          "xs": {
-            "value": "{border.radius.full}",
-            "type": "dimension",
-            "description": "Full circle border radius for xs count badge"
-          },
-          "sm": {
-            "value": "{border.radius.full}",
-            "type": "dimension",
-            "description": "Full circle border radius for sm count badge"
-          },
-          "md": {
-            "value": "{border.radius.full}",
-            "type": "dimension",
-            "description": "Full circle border radius for md count badge"
-          },
-          "lg": {
-            "value": "{border.radius.full}",
-            "type": "dimension",
-            "description": "Full circle border radius for lg count badge"
-          }
-        }
-      },
-      "size": {
-        "xs": {
-          "value": "{size.6}",
-          "type": "dimension",
-          "description": "Size for xs count badge - 24px (matches xs avatar)"
-        },
-        "sm": {
-          "value": "{size.8}",
-          "type": "dimension",
-          "description": "Size for sm count badge - 32px (matches sm avatar)"
-        },
-        "md": {
-          "value": "{size.10}",
-          "type": "dimension",
-          "description": "Size for md count badge - 40px (matches md avatar)"
-        },
-        "lg": {
-          "value": "{size.12}",
-          "type": "dimension",
-          "description": "Size for lg count badge - 48px (matches lg avatar)"
-        }
-      },
-      "text": {
-        "color": {
-          "default": {
-            "value": "{color.text.neutral.body.1}",
-            "type": "color",
-            "description": "Text color for count badge - gray-700"
-          },
-          "hover": {
-            "value": "{color.text.neutral.body.1}",
-            "type": "color",
-            "description": "Text color for count badge on hover"
-          }
-        },
-        "typography": {
-          "xs": {
-            "value": "{font.body.semibold.4xs}",
-            "type": "typography",
-            "description": "Typography for xs count badge - 8px semibold"
-          },
-          "sm": {
-            "value": "{font.body.semibold.xs}",
-            "type": "typography",
-            "description": "Typography for sm count badge - 11px semibold"
-          },
-          "md": {
-            "value": "{font.body.semibold.lg}",
-            "type": "typography",
-            "description": "Typography for md count badge - 14px semibold"
-          },
-          "lg": {
-            "value": "{font.body.semibold.2xl}",
-            "type": "typography",
-            "description": "Typography for lg count badge - 16px semibold"
-          }
-        },
-        "format": {
-          "value": "+{count}",
-          "type": "string",
-          "description": "Format string for count badge text (e.g., +5)"
-        }
-      },
-      "z-index": {
-        "value": 1,
-        "type": "number",
-        "description": "Z-index for count badge (lower than avatars so it appears at the back)"
-      }
-    },
-    "interaction": {
-      "$comment": "Interaction states when avatar group or individual avatars are clickable",
-      "hover": {
-        "avatar": {
-          "transform": {
-            "value": "scale(1.05)",
-            "type": "string",
-            "description": "Slight scale up on avatar hover"
-          },
-          "z-index-boost": {
-            "value": 20,
-            "type": "number",
-            "description": "Z-index boost for hovered avatar to bring it to front"
-          }
-        },
-        "count-badge": {
-          "transform": {
-            "value": "scale(1.05)",
-            "type": "string",
-            "description": "Slight scale up on count badge hover"
-          }
-        }
-      },
-      "cursor": {
-        "default": {
-          "value": "default",
-          "type": "string",
-          "description": "Default cursor for non-interactive avatar group"
-        },
-        "interactive": {
-          "value": "pointer",
-          "type": "string",
-          "description": "Cursor when avatars are clickable"
-        }
-      },
-      "transition": {
-        "duration": {
-          "value": "{motion.duration.fast}",
-          "type": "duration",
-          "description": "Transition duration for hover effects"
-        },
-        "timing": {
-          "value": "{motion.ease.out}",
-          "type": "string",
-          "description": "Transition timing function"
         }
       }
     },
