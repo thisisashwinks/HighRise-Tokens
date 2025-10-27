@@ -2402,6 +2402,10 @@
       "value": 180,
       "type": "number"
     },
+    "54": {
+      "value": 216,
+      "type": "number"
+    },
     "56": {
       "value": 224,
       "type": "number"
@@ -2458,12 +2462,20 @@
       "value": 1024,
       "type": "number"
     },
+    "266": {
+      "value": 1064,
+      "type": "number"
+    },
     "282": {
       "value": 1128,
       "type": "number"
     },
     "290": {
       "value": 1160,
+      "type": "number"
+    },
+    "346": {
+      "value": 1384,
       "type": "number"
     },
     "360": {
@@ -2586,6 +2598,14 @@
       },
       "20": {
         "value": 80,
+        "type": "number"
+      },
+      "24": {
+        "value": 96,
+        "type": "number"
+      },
+      "40": {
+        "value": 160,
         "type": "number"
       },
       "-20": {

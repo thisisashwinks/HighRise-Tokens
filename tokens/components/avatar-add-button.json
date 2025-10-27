@@ -37,7 +37,7 @@
             "description": "Avatar add button default background color"
           },
           "hover": {
-            "value": "{color.background.neutral.subtle.1}",
+            "value": "{color.background.neutral.subtle.0}",
             "type": "color",
             "description": "Avatar add button hover background color"
           },
@@ -47,7 +47,7 @@
             "description": "Avatar add button focus background color"
           },
           "disabled": {
-            "value": "{color.background.neutral.base}",
+            "value": "{color.background.neutral.subtle.0}",
             "type": "color",
             "description": "Avatar add button disabled background color"
           }
@@ -56,37 +56,30 @@
       "border": {
         "color": {
           "default": {
-            "value": "{color.border.neutral.subtle.1}",
+            "value": "{color.border.neutral.default}",
             "type": "color",
             "description": "Avatar add button default border color"
           },
           "hover": {
-            "value": "{color.border.neutral.moderate.1}",
+            "value": "{color.border.neutral.default}",
             "type": "color",
             "description": "Avatar add button hover border color"
           },
           "focus": {
-            "value": "{color.border.primary.default}",
+            "value": "{color.border.neutral.default}",
             "type": "color",
             "description": "Avatar add button focus border color"
           },
           "disabled": {
-            "value": "{color.border.neutral.subtle.0}",
+            "value": "{color.border.neutral.subtle.2}",
             "type": "color",
             "description": "Avatar add button disabled border color"
           }
         },
         "width": {
-          "default": {
-            "value": "{border.width.1}",
+            "value": "{border.width.default}",
             "type": "dimension",
             "description": "Avatar add button default border width"
-          },
-          "focus": {
-            "value": "{border.width.2}",
-            "type": "dimension",
-            "description": "Avatar add button focus border width (for focus ring)"
-          }
         },
         "radius": {
           "xs": {
@@ -141,72 +134,26 @@
         }
       }
     },
-    "content": {
-      "$note": "Inner background area with rounded square that shows hover feedback",
-      "background": {
-        "color": {
-          "default": {
-            "value": "{color.background.transparent}",
-            "type": "color",
-            "description": "Avatar add button content default background"
-          },
-          "hover": {
-            "value": "{color.background.neutral.subtle.0}",
-            "type": "color",
-            "description": "Avatar add button content hover background"
-          },
-          "focus": {
-            "value": "{color.background.transparent}",
-            "type": "color",
-            "description": "Avatar add button content focus background"
-          },
-          "disabled": {
-            "value": "{color.background.transparent}",
-            "type": "color",
-            "description": "Avatar add button content disabled background"
-          }
-        }
-      },
-      "border": {
-        "radius": {
-          "xs": {
-            "value": "{border.radius.3}",
-            "type": "dimension",
-            "description": "Avatar add button xs content border radius - 12px"
-          },
-          "sm": {
-            "value": "{border.radius.3}",
-            "type": "dimension",
-            "description": "Avatar add button sm content border radius - 12px"
-          },
-          "md": {
-            "value": "{border.radius.3}",
-            "type": "dimension",
-            "description": "Avatar add button md content border radius - 12px"
-          }
-        }
-      }
-    },
     "icon": {
       "$note": "Plus icon centered within the content area",
       "color": {
         "default": {
-          "value": "{color.icon.neutral.moderate.1}",
+          "value": "{color.icon.neutral.moderate.2}",
           "type": "color",
           "description": "Avatar add button default icon color"
         },
         "hover": {
-          "value": "{color.icon.neutral.body.2}",
+          "value": "{color.icon.neutral.moderate.2}",
           "type": "color",
           "description": "Avatar add button hover icon color"
         },
         "focus": {
-          "value": "{color.icon.neutral.moderate.1}",
+          "value": "{color.icon.neutral.moderate.2}",
           "type": "color",
           "description": "Avatar add button focus icon color"
         },
         "disabled": {
-          "value": "{color.icon.neutral.subtle.1}",
+          "value": "{color.icon.neutral.moderate.2}",
           "type": "color",
           "description": "Avatar add button disabled icon color"
         }
@@ -227,34 +174,6 @@
           "type": "dimension",
           "description": "Avatar add button md icon size - 20px"
         }
-      },
-      "name": {
-        "value": "plus",
-        "type": "string",
-        "description": "Icon name for avatar add button"
-      }
-    },
-    "focus-ring": {
-      "$note": "Focus indicator for keyboard navigation - appears outside button boundary",
-      "color": {
-        "value": "{color.border.primary.default}",
-        "type": "color",
-        "description": "Avatar add button focus ring color"
-      },
-      "width": {
-        "value": "{border.width.2}",
-        "type": "dimension",
-        "description": "Avatar add button focus ring width"
-      },
-      "offset": {
-        "value": "{spacing.0[5]}",
-        "type": "dimension",
-        "description": "Avatar add button focus ring offset - 2px"
-      },
-      "style": {
-        "value": "solid",
-        "type": "string",
-        "description": "Avatar add button focus ring style"
       }
     },
     "interaction": {
@@ -325,7 +244,7 @@
         "description": "Avatar add button tooltip typography"
       },
       "shadow": {
-        "value": "{shadow.md}",
+        "value": "{shadow.lg}",
         "type": "shadow",
         "description": "Avatar add button tooltip shadow"
       },

@@ -49,19 +49,19 @@
         },
         "width": {
           "sm": {
-            "value": "{border.width.4xl}",
+            "value": "{border.width.0[75]}",
             "type": "dimension",
-            "description": "Border width for small avatar profile photo (12px)"
+            "description": "Border width for small avatar profile photo"
           },
           "md": {
-            "value": "{border.width.5xl}",
+            "value": "{border.width.lg}",
             "type": "dimension",
-            "description": "Border width for medium avatar profile photo (16px)"
+            "description": "Border width for medium avatar profile photo"
           },
           "lg": {
-            "value": "{border.width.5xl}",
+            "value": "{border.width.lg}",
             "type": "dimension",
-            "description": "Border width for large avatar profile photo (16px)"
+            "description": "Border width for large avatar profile photo"
           }
         },
         "color": {
@@ -72,19 +72,19 @@
       },
       "size": {
         "sm": {
-          "value": "{size.90}",
+          "value": "{size.18}",
           "type": "dimension",
-          "description": "Size for small avatar profile photo (90px)"
+          "description": "Size for small avatar profile photo (72px)"
         },
         "md": {
-          "value": "{size.144}",
+          "value": "{size.24}",
           "type": "dimension",
-          "description": "Size for medium avatar profile photo (144px)"
+          "description": "Size for medium avatar profile photo (96px)"
         },
         "lg": {
-          "value": "{size.346}",
+          "value": "{size.40}",
           "type": "dimension",
-          "description": "Size for large avatar profile photo (346px)"
+          "description": "Size for large avatar profile photo (160px)"
         }
       }
     },
@@ -122,58 +122,19 @@
       },
       "size": {
         "sm": {
-          "value": "{size.icon.54}",
+          "value": "{size.icon.3xl}",
           "type": "dimension",
-          "description": "Icon size for small avatar profile photo (54px)"
+          "description": "Icon size for small avatar profile photo (36px)"
         },
         "md": {
-          "value": "{size.icon.96}",
+          "value": "{size.icon.12}",
           "type": "dimension",
-          "description": "Icon size for medium avatar profile photo (96px)"
+          "description": "Icon size for medium avatar profile photo (48px)"
         },
         "lg": {
-          "value": "{size.icon.266}",
+          "value": "{size.icon.20}",
           "type": "dimension",
-          "description": "Icon size for large avatar profile photo (266px)"
-        }
-      },
-      "position": {
-        "$comment": "Positioning offsets to center placeholder icon within container",
-        "sm": {
-          "x": {
-            "value": "{position.x.18}",
-            "type": "dimension",
-            "description": "X position for placeholder icon in small size"
-          },
-          "y": {
-            "value": "{position.y.18}",
-            "type": "dimension",
-            "description": "Y position for placeholder icon in small size"
-          }
-        },
-        "md": {
-          "x": {
-            "value": "{position.x.24}",
-            "type": "dimension",
-            "description": "X position for placeholder icon in medium size"
-          },
-          "y": {
-            "value": "{position.y.24}",
-            "type": "dimension",
-            "description": "Y position for placeholder icon in medium size"
-          }
-        },
-        "lg": {
-          "x": {
-            "value": "{position.x.40}",
-            "type": "dimension",
-            "description": "X position for placeholder icon in large size"
-          },
-          "y": {
-            "value": "{position.y.40}",
-            "type": "dimension",
-            "description": "Y position for placeholder icon in large size"
-          }
+          "description": "Icon size for large avatar profile photo (80px)"
         }
       }
     },
@@ -181,17 +142,17 @@
       "$comment": "Optional blue checkmark badge positioned at bottom-right corner",
       "size": {
         "sm": {
-          "value": "{size.20}",
+          "value": "{size.icon.md}",
           "type": "dimension",
           "description": "Size of verified tick badge for small avatar (20px)"
         },
         "md": {
-          "value": "{size.24}",
+          "value": "{size.icon.lg}",
           "type": "dimension",
           "description": "Size of verified tick badge for medium avatar (24px)"
         },
         "lg": {
-          "value": "{size.32}",
+          "value": "{size.icon.2xl}",
           "type": "dimension",
           "description": "Size of verified tick badge for large avatar (32px)"
         }
@@ -211,24 +172,24 @@
         },
         "md": {
           "bottom": {
-            "value": "{position.y.2}",
+            "value": "{position.y.0[5]}",
             "type": "dimension",
             "description": "Bottom position for verified tick in medium size (2px from edge)"
           },
           "right": {
-            "value": "{position.x.2}",
+            "value": "{position.x.0[5]}",
             "type": "dimension",
             "description": "Right position for verified tick in medium size (2px from edge)"
           }
         },
         "lg": {
           "bottom": {
-            "value": "{position.y.4}",
+            "value": "{position.y.1}",
             "type": "dimension",
             "description": "Bottom position for verified tick in large size (4px from edge)"
           },
           "right": {
-            "value": "{position.x.4}",
+            "value": "{position.x.1}",
             "type": "dimension",
             "description": "Right position for verified tick in large size (4px from edge)"
           }
