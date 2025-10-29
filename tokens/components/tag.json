@@ -2671,100 +2671,100 @@
               "type": "color"
             },
             "hover": {
-              "value": "{color.accent.orange.dark.100}",
+              "value": "{color.accent.orange-dark.100}",
               "type": "color"
             },
             "active": {
-              "value": "{color.accent.orange.dark.200}",
+              "value": "{color.accent.orange-dark.200}",
               "type": "color"
             },
             "focused": {
-              "value": "{color.accent.orange.dark.100}",
+              "value": "{color.accent.orange-dark.100}",
               "type": "color"
             }
           },
           "border": {
             "default": {
-              "value": "{color.accent.orange.dark.600}",
+              "value": "{color.accent.orange-dark.600}",
               "type": "color"
             },
             "hover": {
-              "value": "{color.accent.orange.dark.700}",
+              "value": "{color.accent.orange-dark.700}",
               "type": "color"
             },
             "active": {
-              "value": "{color.accent.orange.dark.800}",
+              "value": "{color.accent.orange-dark.800}",
               "type": "color"
             },
             "focused": {
-              "value": "{color.accent.orange.dark.300}",
+              "value": "{color.accent.orange-dark.300}",
               "type": "color"
             }
           },
           "text": {
             "default": {
-              "value": "{color.accent.orange.dark.700}",
+              "value": "{color.accent.orange-dark.700}",
               "type": "color"
             },
             "hover": {
-              "value": "{color.accent.orange.dark.800}",
+              "value": "{color.accent.orange-dark.800}",
               "type": "color"
             },
             "active": {
-              "value": "{color.accent.orange.dark.900}",
+              "value": "{color.accent.orange-dark.900}",
               "type": "color"
             },
             "focused": {
-              "value": "{color.accent.orange.dark.800}",
+              "value": "{color.accent.orange-dark.800}",
               "type": "color"
             }
           },
           "focus": {
             "ring": {
-              "value": "{color.accent.orange.dark.300}",
+              "value": "{color.accent.orange-dark.300}",
               "type": "color"
             }
           },
           "icon": {
             "default": {
-              "value": "{color.accent.orange.dark.700}",
+              "value": "{color.accent.orange-dark.700}",
               "type": "color"
             },
             "hover": {
-              "value": "{color.accent.orange.dark.800}",
+              "value": "{color.accent.orange-dark.800}",
               "type": "color"
             },
             "active": {
-              "value": "{color.accent.orange.dark.900}",
+              "value": "{color.accent.orange-dark.900}",
               "type": "color"
             },
             "focused": {
-              "value": "{color.accent.orange.dark.800}",
+              "value": "{color.accent.orange-dark.800}",
               "type": "color"
             }
           },
           "tag-count": {
             "background": {
               "default": {
-                "value": "{color.accent.orange.dark.25}",
+                "value": "{color.accent.orange-dark.25}",
                 "type": "color"
               }
             },
             "text": {
               "default": {
-                "value": "{color.accent.orange.dark.700}",
+                "value": "{color.accent.orange-dark.700}",
                 "type": "color"
               },
               "hover": {
-                "value": "{color.accent.orange.dark.800}",
+                "value": "{color.accent.orange-dark.800}",
                 "type": "color"
               },
               "active": {
-                "value": "{color.accent.orange.dark.900}",
+                "value": "{color.accent.orange-dark.900}",
                 "type": "color"
               },
               "focused": {
-                "value": "{color.accent.orange.dark.800}",
+                "value": "{color.accent.orange-dark.800}",
                 "type": "color"
               }
             }
@@ -2773,19 +2773,19 @@
         "filled": {
           "background": {
             "default": {
-              "value": "{color.accent.orange.dark.50}",
+              "value": "{color.accent.orange-dark.50}",
               "type": "color"
             },
             "hover": {
-              "value": "{color.accent.orange.dark.100}",
+              "value": "{color.accent.orange-dark.100}",
               "type": "color"
             },
             "active": {
-              "value": "{color.accent.orange.dark.200}",
+              "value": "{color.accent.orange-dark.200}",
               "type": "color"
             },
             "focused": {
-              "value": "{color.accent.orange.dark.100}",
+              "value": "{color.accent.orange-dark.100}",
               "type": "color"
             }
           },
@@ -2799,78 +2799,78 @@
               "type": "color"
             },
             "active": {
-              "value": "{color.accent.orange.dark.800}",
+              "value": "{color.accent.orange-dark.800}",
               "type": "color"
             },
             "focused": {
-              "value": "{color.accent.orange.dark.300}",
+              "value": "{color.accent.orange-dark.300}",
               "type": "color"
             }
           },
           "text": {
             "default": {
-              "value": "{color.accent.orange.dark.700}",
+              "value": "{color.accent.orange-dark.700}",
               "type": "color"
             },
             "hover": {
-              "value": "{color.accent.orange.dark.800}",
+              "value": "{color.accent.orange-dark.800}",
               "type": "color"
             },
             "active": {
-              "value": "{color.accent.orange.dark.900}",
+              "value": "{color.accent.orange-dark.900}",
               "type": "color"
             },
             "focused": {
-              "value": "{color.accent.orange.dark.800}",
+              "value": "{color.accent.orange-dark.800}",
               "type": "color"
             }
           },
           "focus": {
             "ring": {
-              "value": "{color.accent.orange.dark.300}",
+              "value": "{color.accent.orange-dark.300}",
               "type": "color"
             }
           },
           "icon": {
             "default": {
-              "value": "{color.accent.orange.dark.700}",
+              "value": "{color.accent.orange-dark.700}",
               "type": "color"
             },
             "hover": {
-              "value": "{color.accent.orange.dark.800}",
+              "value": "{color.accent.orange-dark.800}",
               "type": "color"
             },
             "active": {
-              "value": "{color.accent.orange.dark.900}",
+              "value": "{color.accent.orange-dark.900}",
               "type": "color"
             },
             "focused": {
-              "value": "{color.accent.orange.dark.800}",
+              "value": "{color.accent.orange-dark.800}",
               "type": "color"
             }
           },
           "tag-count": {
             "background": {
               "default": {
-                "value": "{color.accent.orange.dark.25}",
+                "value": "{color.accent.orange-dark.25}",
                 "type": "color"
               }
             },
             "text": {
               "default": {
-                "value": "{color.accent.orange.dark.700}",
+                "value": "{color.accent.orange-dark.700}",
                 "type": "color"
               },
               "hover": {
-                "value": "{color.accent.orange.dark.800}",
+                "value": "{color.accent.orange-dark.800}",
                 "type": "color"
               },
               "active": {
-                "value": "{color.accent.orange.dark.900}",
+                "value": "{color.accent.orange-dark.900}",
                 "type": "color"
               },
               "focused": {
-                "value": "{color.accent.orange.dark.800}",
+                "value": "{color.accent.orange-dark.800}",
                 "type": "color"
               }
           }
@@ -2917,5 +2917,6 @@
         }
       }
     }
+  } 
   }
-} 
+}
