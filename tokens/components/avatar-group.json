@@ -1,68 +1,129 @@
 {
   "$comment": "Avatar Group Component Tokens",
-  "$description": "Component tokens for the Avatar Group component, which displays multiple avatars in an overlapping horizontal stack with an optional count indicator showing additional members. Figma Reference: Node ID 26683-72318",
+  "$description": "Component tokens for the Avatar Group component, which displays multiple avatars in a horizontal layout with two variants: stacked (overlapping) or non-stacked (with gaps). Includes an optional 'Add More' CTA button. Figma Reference: Node ID 26683-72318",
   "$component": {
     "name": "Avatar Group",
-    "description": "A composite component that displays multiple user avatars in a horizontal overlapping stack. Commonly used to show team members, collaborators, or participants in a compact space.",
-    "structure": "Horizontal layout with avatars overlapping from left to right, with optional '+N' count badge at the end",
+    "description": "A composite component that displays multiple user avatars in a horizontal layout. Commonly used to show team members, collaborators, or participants in a compact space.",
+    "structure": "Horizontal layout with avatars, either overlapping (stacked) or separated with gaps (non-stacked), with optional '+' button at the end",
     "sizes": {
-      "xs": "24px avatars - Minimal size for dense layouts",
+      "3xs": "10px avatars - Extra minimal size",
+      "2xs": "16px avatars - Minimal size",
+      "xs": "24px avatars - Small size for dense layouts",
       "sm": "32px avatars - Compact size for lists and cards",
-      "md": "40px avatars - Standard size for most use cases",
-      "lg": "48px avatars - Larger for emphasis or section headers"
+      "md": "40px avatars - Standard size for most use cases"
     },
     "variants": {
-      "with-count": "Shows a count badge (+N) for additional members not displayed",
-      "without-count": "Shows only the visible avatars without count indicator"
+      "stacked": "Avatars overlap each other with negative margins, creating a compact visual stack",
+      "non-stacked": "Avatars are separated with gaps between them for better individual visibility"
     },
     "usage": {
       "contexts": "Project collaborators, team members, document viewers, meeting participants, shared access lists",
-      "maxVisible": "Typically shows 3-5 avatars before using count indicator",
-      "overlap": "Avatars overlap by a percentage of their width for compact display"
+      "maxVisible": "Typically shows multiple avatars (up to 10 in the component)",
+      "addMoreButton": "Optional CTA button with '+' icon to indicate additional members or add new members"
     }
   },
   "avatar-group": {
     "container": {
-      "$comment": "Main wrapper container - horizontal flex layout with overlapping avatars",
+      "$comment": "Main wrapper container - horizontal flex layout for the avatar group",
       "layout": {
         "direction": {
           "value": "horizontal",
           "type": "string",
-          "description": "Avatar group uses horizontal layout with left-to-right stacking"
+          "description": "Avatar group uses horizontal layout with left-to-right arrangement"
         },
         "align-items": {
-          "value": "center",
+          "value": "flex-start",
           "type": "string",
-          "description": "Vertical alignment of avatars"
+          "description": "Vertical alignment of avatars and CTA button"
         }
       },
-      "gap": {
-        "$comment": "Negative margin creates overlap effect - smaller values = more overlap",
-        "overlap": {
-          "3xs": {
-            "value": "{gap.-1}",
-            "type": "dimension",
-            "description": "Overlap amount for 3xs avatars - negative margin for overlap effect"
+      "spacing": {
+        "$comment": "Spacing configurations for both stacked and non-stacked variants",
+        "stacked": {
+          "$comment": "For stacked variant: negative margin on avatars creates overlap, padding-right on container compensates",
+          "overlap": {
+            "3xs": {
+              "value": "{gap.-1}",
+              "type": "dimension",
+              "description": "Negative margin-right for 3xs avatars: -4px"
+            },
+            "2xs": {
+              "value": "{gap.-1}",
+              "type": "dimension",
+              "description": "Negative margin-right for 2xs avatars: -4px"
+            },
+            "xs": {
+              "value": "{gap.-1}",
+              "type": "dimension",
+              "description": "Negative margin-right for xs avatars: -4px"
+            },
+            "sm": {
+              "value": "{gap.-2}",
+              "type": "dimension",
+              "description": "Negative margin-right for sm avatars: -8px"
+            },
+            "md": {
+              "value": "{gap.-3}",
+              "type": "dimension",
+              "description": "Negative margin-right for md avatars: -12px"
+            }
           },
-          "2xs": {
-            "value": "{gap.-1}",
-            "type": "dimension",
-            "description": "Overlap amount for 2xs avatars - negative margin for overlap effect"
-          },
-          "xs": {
-            "value": "{gap.-1}",
-            "type": "dimension",
-            "description": "Overlap amount for xs avatars - negative margin for overlap effect"
-          },
-          "sm": {
-            "value": "{gap.-2}",
-            "type": "dimension",
-            "description": "Overlap amount for sm avatars - negative margin for overlap effect"
-          },
-          "md": {
-            "value": "{gap.-3}",
-            "type": "dimension",
-            "description": "Overlap amount for md avatars - negative margin for overlap effect"
+          "overall-gap": {
+            "3xs": {
+              "value": "{gap.4xs}",
+              "type": "dimension",
+              "description": "Padding-right on avatars container for 3xs: 2px"
+            },
+            "2xs": {
+              "value": "{gap.3xs}",
+              "type": "dimension",
+              "description": "Padding-right on avatars container for 2xs: 4px"
+            },
+            "xs": {
+              "value": "{gap.3xs}",
+              "type": "dimension",
+              "description": "Padding-right on avatars container for xs: 4px"
+            },
+            "sm": {
+              "value": "{gap.xs}",
+              "type": "dimension",
+              "description": "Padding-right on avatars container for sm: 8px"
+            },
+            "md": {
+              "value": "{gap.2xl}",
+              "type": "dimension",
+              "description": "Padding-right on avatars container for md: 12px"
+            }
+          }
+        },
+        "non-stacked": {
+          "$comment": "For non-stacked variant: positive gap between avatars",
+          "gap": {
+            "3xs": {
+              "value": "{gap.4xs}",
+              "type": "dimension",
+              "description": "Gap between 3xs avatars: 2px"
+            },
+            "2xs": {
+              "value": "{gap.3xs}",
+              "type": "dimension",
+              "description": "Gap between 2xs avatars: 4px"
+            },
+            "xs": {
+              "value": "{gap.3xs}",
+              "type": "dimension",
+              "description": "Gap between xs avatars: 4px"
+            },
+            "sm": {
+              "value": "{gap.xs}",
+              "type": "dimension",
+              "description": "Gap between sm avatars: 8px"
+            },
+            "md": {
+              "value": "{gap.2xl}",
+              "type": "dimension",
+              "description": "Gap between md avatars: 12px"
+            }
           }
         }
       }
@@ -73,83 +134,44 @@
         "3xs": {
           "value": "{size.icon.4xs}",
           "type": "dimension",
-          "description": "Avatar size for 3xs group - 10px"
+          "description": "Avatar size for 3xs group: 10px"
         },
         "2xs": {
           "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Avatar size for 2xs group - 16px"
+          "description": "Avatar size for 2xs group: 16px"
         },
         "xs": {
           "value": "{size.icon.lg}",
           "type": "dimension",
-          "description": "Avatar size for xs group - 24px"
+          "description": "Avatar size for xs group: 24px"
         },
         "sm": {
           "value": "{size.icon.2xl}",
           "type": "dimension",
-          "description": "Avatar size for sm group - 32px"
+          "description": "Avatar size for sm group: 32px"
         },
         "md": {
           "value": "{size.icon.4xl}",
           "type": "dimension",
-          "description": "Avatar size for md group - 40px"
+          "description": "Avatar size for md group: 40px"
         }
       },
       "border": {
         "width": {
-          "3xs": {
-            "value": "{border.width.default}",
-            "type": "dimension",
-            "description": "Border width for 3xs avatars - 1px"
-          },
-          "2xs": {
-            "value": "{border.width.default}",
-            "type": "dimension",
-            "description": "Border width for 2xs avatars - 1px"
-          },
-          "xs": {
-            "value": "{border.width.default}",
-            "type": "dimension",
-            "description": "Border width for xs avatars - 1px"
-          },
-          "sm": {
-            "value": "{border.width.default}",
-            "type": "dimension",
-            "description": "Border width for sm avatars - 1px"
-          },
-          "md": {
-            "value": "{border.width.default}",
-            "type": "dimension",
-            "description": "Border width for md avatars - 1px"
-          }
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Border width for all avatars: 1px"
+        },
+        "color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "Border color for all avatars: white (#FFFFFF)"
         },
         "radius": {
-          "3xs": {
-            "value": "{border.radius.full}",
-            "type": "dimension",
-            "description": "Border radius for 3xs avatars - full circle"
-          },
-          "2xs": {
-            "value": "{border.radius.full}",
-            "type": "dimension",
-            "description": "Border radius for 2xs avatars - full circle"
-          },
-          "xs": {
-            "value": "{border.radius.full}",
-            "type": "dimension",
-            "description": "Border radius for xs avatars - full circle"
-          },
-          "sm": {
-            "value": "{border.radius.full}",
-            "type": "dimension",
-            "description": "Border radius for sm avatars - full circle"
-          },
-          "md": {
-            "value": "{border.radius.full}",
-            "type": "dimension",
-            "description": "Border radius for md avatars - full circle"
-          }
+          "value": "{border.radius.full}",
+          "type": "dimension",
+          "description": "Border radius for all avatars: full circle (200px)"
         }
       },
       "z-index": {
@@ -162,28 +184,87 @@
         "decrement": {
           "value": 1,
           "type": "number",
-          "description": "Amount to decrease z-index for each subsequent avatar"
+          "description": "Amount to decrease z-index for each subsequent avatar (10, 9, 8, 7...)"
         }
       }
     },
-    "tooltip": {
-      "$comment": "Tooltip configuration for showing member names on hover",
-      "enabled": {
-        "value": true,
-        "type": "boolean",
-        "description": "Whether to show tooltips on avatar hover"
-      },
-      "delay": {
-        "value": "{motion.duration.normal}",
-        "type": "duration",
-        "description": "Delay before showing tooltip"
-      },
-      "content": {
-        "format": {
-          "value": "{userName}",
-          "type": "string",
-          "description": "Format for tooltip content (user name)"
+    "cta": {
+      "$comment": "Add More button (CTA) - optional button with '+' icon at the end of avatar group",
+      "size": {
+        "3xs": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "CTA button size for 3xs group: 10px (matches avatar size)"
+        },
+        "2xs": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "CTA button size for 2xs group: 16px (matches avatar size)"
+        },
+        "xs": {
+          "value": "{size.icon.lg}",
+          "type": "dimension",
+          "description": "CTA button size for xs group: 24px (matches avatar size)"
+        },
+        "sm": {
+          "value": "{size.icon.2xl}",
+          "type": "dimension",
+          "description": "CTA button size for sm group: 32px (matches avatar size)"
+        },
+        "md": {
+          "value": "{size.icon.4xl}",
+          "type": "dimension",
+          "description": "CTA button size for md group: 40px (matches avatar size)"
         }
+      },
+      "background": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "Background color of CTA button: white (#FFFFFF)"
+      },
+      "border": {
+        "width": {
+          "3xs": {
+            "value": "{border.width.xs}",
+            "type": "dimension",
+            "description": "Border width for CTA button: 0.5px"
+          },
+          "2xs": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Border width for CTA button: 1px"
+          },
+          "xs": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Border width for CTA button: 1px"
+          },
+          "sm": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Border width for CTA button: 1px"
+          },
+          "md": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Border width for CTA button: 1px"
+          }
+        },
+        "color": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "description": "Border color for CTA button: #D0D5DD (neutral-200)"
+        },
+        "radius": {
+          "value": "{border.radius.full}",
+          "type": "dimension",
+          "description": "Border radius for CTA button: full circle"
+        }
+      },
+      "icon": {
+        "value": "plus",
+        "type": "string",
+        "description": "Icon displayed in CTA button: plus/add icon"
       }
     },
     "accessibility": {
@@ -197,18 +278,23 @@
           "value": "img",
           "type": "string",
           "description": "ARIA role for individual avatars"
+        },
+        "cta": {
+          "value": "button",
+          "type": "string",
+          "description": "ARIA role for Add More CTA button"
         }
       },
       "label": {
-        "format": {
-          "value": "{count} members: {names}",
+        "container": {
+          "value": "Avatar group showing {count} members",
           "type": "string",
           "description": "Format for ARIA label describing the group"
         },
-        "count-only": {
-          "value": "{count} members",
+        "cta": {
+          "value": "Add more members",
           "type": "string",
-          "description": "Format when only showing count"
+          "description": "ARIA label for Add More CTA button"
         }
       }
     }

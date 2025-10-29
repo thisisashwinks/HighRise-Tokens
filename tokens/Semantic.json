@@ -4724,6 +4724,11 @@
         "type": "dimension",
         "description": "Border (width): 0px"
       },
+      "xs": {
+        "value": "{border.width.0[125]}",
+        "type": "dimension",
+        "description": "Border (width): 0.5px"
+      },
       "default": {
         "value": "{border.width.0[25]}",
         "type": "dimension",
