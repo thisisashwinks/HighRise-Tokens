@@ -1,276 +1,537 @@
 {
+  "$comment": "Select Component Tokens",
+  "$description": "Component tokens for Select dropdown fields with default and destructive (error) states across 6 sizes. Figma Reference: Select Component",
+  "$component": {
+    "name": "Select",
+    "description": "A dropdown selection component for choosing from predefined options. Includes chevron indicator, validation states, and focus indicators.",
+    "structure": "Container with border, selected value display, chevron icon for dropdown indication, with focus states and validation feedback",
+    "sizes": {
+      "3xs": "24px height - Minimal size for very compact layouts",
+      "2xs": "28px height - Extra small for dense forms",
+      "xs": "32px height - Small size for compact interfaces",
+      "sm": "36px height - Standard small size for most forms",
+      "md": "40px height - Medium size (commonly used default)",
+      "lg": "44px height - Large size for prominent selects"
+    },
+    "variants": {
+      "default": "Standard select with neutral colors for normal selection",
+      "destructive": "Error state with red/error colors for validation feedback"
+    },
+    "usage": {
+      "contexts": "Forms, filters, settings panels, data entry interfaces, navigation, configuration screens",
+      "features": "Chevron indicator, validation states, focus indicators, disabled state, icon support"
+    }
+  },
   "select": {
-    "container": {
-      "background": {
-        "default": {
-          "value": "{color.background.neutral.base}",
-          "type": "color",
-          "description": "Select container background in default state"
+    "border": {
+      "radius": {
+        "3xs": {
+          "value": "{border.radius.3xs}",
+          "type": "dimension",
+          "description": "Select border radius for 3xs size"
         },
-        "disabled": {
-          "value": "{color.background.neutral.inactive}",
-          "type": "color",
-          "description": "Select container background in disabled state"
+        "2xs": {
+          "value": "{border.radius.2xs}",
+          "type": "dimension",
+          "description": "Select border radius for 2xs size"
         },
-        "placeholder": {
-          "value": "{color.background.neutral.base}",
-          "type": "color",
-          "description": "Select container background in placeholder state"
+        "xs": {
+          "value": "{border.radius.xs}",
+          "type": "dimension",
+          "description": "Select border radius for xs size"
         },
-        "open": {
-          "value": "{color.background.neutral.base}",
-          "type": "color",
-          "description": "Select container background in open/focused state"
+        "sm": {
+          "value": "{border.radius.sm}",
+          "type": "dimension",
+          "description": "Select border radius for sm size"
+        },
+        "md": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "Select border radius for md size"
+        },
+        "lg": {
+          "value": "{border.radius.lg}",
+          "type": "dimension",
+          "description": "Select border radius for lg size"
         }
       },
-      "border": {
-        "default": {
-          "value": "{color.border.neutral.default}",
-          "type": "color",
-          "description": "Select container border in default state"
-        },
-        "disabled": {
-          "value": "{color.border.neutral.default}",
-          "type": "color",
-          "description": "Select container border in disabled state"
-        },
-        "placeholder": {
-          "value": "{color.border.neutral.default}",
-          "type": "color",
-          "description": "Select container border in placeholder state"
-        },
-        "open": {
-          "value": "{color.border.brand.default}",
-          "type": "color",
-          "description": "Select container border in open/focused state"
-        }
-      },
-      "border-radius": {
-        "value": "{border.radius.sm}",
-        "type": "dimension",
-        "description": "Select container border radius"
-      },
-      "border-width": {
+      "width": {
         "value": "{border.width.default}",
         "type": "dimension",
-        "description": "Select container border width"
-      },
-      "padding": {
-        "x": {
-          "value": "{padding.2}",
+        "description": "Select border width"
+      }
+    },
+    "padding": {
+      "$comment": "Internal spacing for select content - horizontal (x) and vertical (y) padding",
+      "x": {
+        "3xs": {
+          "value": "{padding.2xs}",
           "type": "dimension",
-          "description": "Select container horizontal padding"
+          "description": "Select horizontal padding for 3xs size"
         },
-        "y": {
-          "value": "{padding.1[5]}",
+        "2xs": {
+          "value": "{padding.2xs}",
           "type": "dimension",
-          "description": "Select container vertical padding"
+          "description": "Select horizontal padding for 2xs size"
+        },
+        "xs": {
+          "value": "{padding.xs}",
+          "type": "dimension",
+          "description": "Select horizontal padding for xs size"
+        },
+        "sm": {
+          "value": "{padding.xs}",
+          "type": "dimension",
+          "description": "Select horizontal padding for sm size"
+        },
+        "md": {
+          "value": "{padding.sm}",
+          "type": "dimension",
+          "description": "Select horizontal padding for md size"
+        },
+        "lg": {
+          "value": "{padding.md}",
+          "type": "dimension",
+          "description": "Select horizontal padding for lg size"
         }
       },
-      "gap": {
-        "value": "{gap.2}",
+      "y": {
+        "value": "{padding.0}",
         "type": "dimension",
-        "description": "Gap between content and chevron icon"
+        "description": "Select vertical padding"
+      }
+    },
+    "height": {
+      "$comment": "Select field heights for each size variant",
+      "3xs": {
+        "value": "{size.height.3xs}",
+        "type": "dimension",
+        "description": "Select height for 3xs size"
       },
-      "shadow": {
-        "default": {
-          "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
-          "type": "boxShadow",
-          "description": "Select container shadow in default state"
-        },
-        "open": {
-          "value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
-          "type": "boxShadow",
-          "description": "Select container shadow in open/focused state"
-        }
+      "2xs": {
+        "value": "{size.height.2xs}",
+        "type": "dimension",
+        "description": "Select height for 2xs size"
+      },
+      "xs": {
+        "value": "{size.height.xs}",
+        "type": "dimension",
+        "description": "Select height for xs size"
+      },
+      "sm": {
+        "value": "{size.height.sm}",
+        "type": "dimension",
+        "description": "Select height for sm size"
+      },
+      "md": {
+        "value": "{size.height.md}",
+        "type": "dimension",
+        "description": "Select height for md size"
+      },
+      "lg": {
+        "value": "{size.height.lg}",
+        "type": "dimension",
+        "description": "Select height for lg size"
+      }
+    },
+    "gap": {
+      "$comment": "Spacing between select elements (text, icons, and chevron)",
+      "value": "{gap.xs}",
+      "type": "dimension",
+      "description": "Gap between select elements"
+    },
+    "shadow": {
+      "$comment": "Subtle elevation shadow for select fields",
+      "default": {
+        "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+        "type": "boxShadow",
+        "description": "Select default shadow"
       }
     },
     "text": {
-      "color": {
-        "default": {
-          "value": "{color.text.neutral.title.1}",
-          "type": "color",
-          "description": "Select text color in default state"
-        },
-        "disabled": {
-          "value": "{color.text.neutral.inactive}",
-          "type": "color",
-          "description": "Select text color in disabled state"
-        },
-        "placeholder": {
-          "value": "{color.text.neutral.subtitle.1}",
-          "type": "color",
-          "description": "Select text color in placeholder state"
-        },
-        "open": {
-          "value": "{color.text.neutral.title.1}",
-          "type": "color",
-          "description": "Select text color in open/focused state"
-        }
-      },
+      "$comment": "Typography tokens for select text content across all sizes",
       "typography": {
-        "value": "{font.body.regular.xs}",
-        "type": "string",
-        "description": "Select text typography"
+        "3xs": {
+          "value": "{font.body.regular.xs}",
+          "type": "string",
+          "description": "Select text typography for 3xs size"
+        },
+        "2xs": {
+          "value": "{font.body.regular.sm}",
+          "type": "string",
+          "description": "Select text typography for 2xs size"
+        },
+        "xs": {
+          "value": "{font.body.regular.md}",
+          "type": "string",
+          "description": "Select text typography for xs size"
+        },
+        "sm": {
+          "value": "{font.body.regular.base}",
+          "type": "string",
+          "description": "Select text typography for sm size"
+        },
+        "md": {
+          "value": "{font.body.regular.2xl}",
+          "type": "string",
+          "description": "Select text typography for md size"
+        },
+        "lg": {
+          "value": "{font.body.regular.2xl}",
+          "type": "string",
+          "description": "Select text typography for lg size"
+        }
       }
     },
     "icon": {
-      "chevron": {
-        "size": {
-          "value": "{size.3}",
-          "type": "dimension",
-          "description": "Chevron icon size"
-        },
-        "color": {
-          "default": {
-            "value": "{color.icon.neutral.moderate.1}",
-            "type": "color",
-            "description": "Chevron icon color in default state"
-          },
-          "disabled": {
-            "value": "{color.icon.neutral.subtle.2}",
-            "type": "color",
-            "description": "Chevron icon color in disabled state"
-          },
-          "placeholder": {
-            "value": "{color.icon.neutral.moderate.1}",
-            "type": "color",
-            "description": "Chevron icon color in placeholder state"
-          },
-          "open": {
-            "value": "{color.icon.neutral.moderate.1}",
-            "type": "color",
-            "description": "Chevron icon color in open/focused state"
-          }
-        }
-      },
-      "leading": {
-        "size": {
-          "value": "{size.3}",
-          "type": "dimension",
-          "description": "Leading icon size"
-        },
-        "color": {
-          "default": {
-            "value": "{color.icon.neutral.moderate.1}",
-            "type": "color",
-            "description": "Leading icon color in default state"
-          },
-          "disabled": {
-            "value": "{color.icon.neutral.subtle.2}",
-            "type": "color",
-            "description": "Leading icon color in disabled state"
-          },
-          "placeholder": {
-            "value": "{color.icon.neutral.moderate.1}",
-            "type": "color",
-            "description": "Leading icon color in placeholder state"
-          },
-          "open": {
-            "value": "{color.icon.neutral.moderate.1}",
-            "type": "color",
-            "description": "Leading icon color in open/focused state"
-          }
-        }
-      }
-    },
-    "avatar": {
+      "$comment": "Icon sizes for decorative icons inside select fields",
       "size": {
-        "value": "{size.3}",
-        "type": "dimension",
-        "description": "Avatar size when used as leading element"
+        "3xs": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Select icon size for 3xs"
+        },
+        "2xs": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Select icon size for 2xs"
+        },
+        "xs": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Select icon size for xs"
+        },
+        "sm": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Select icon size for sm"
+        },
+        "md": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Select icon size for md"
+        },
+        "lg": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Select icon size for lg"
+        }
       }
     },
-    "content": {
-      "gap": {
-        "value": "{gap.2}",
-        "type": "dimension",
-        "description": "Gap between leading element and text"
+    "color": {
+      "$comment": "Color tokens for select states - includes default (neutral) and destructive (error/validation) variants with interaction states",
+      "default": {
+        "$comment": "Default select colors with neutral palette for standard selection",
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Default select background in default state"
+          },
+          "hover": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Default select background in hover state"
+          },
+          "filled": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Default select background in filled state"
+          },
+          "focused": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Default select background in focused state"
+          },
+          "hover-filled": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Default select background in hover-filled state"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Default select background in disabled state"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Default select border in default state"
+          },
+          "hover": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Default select border in hover state"
+          },
+          "filled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Default select border in filled state"
+          },
+          "focused": {
+            "value": "{color.border.primary.subtle.2}",
+            "type": "color",
+            "description": "Default select border in focused state"
+          },
+          "hover-filled": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Default select border in hover-filled state"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Default select border in disabled state"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Default select text color in default state"
+          },
+          "hover": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Default select text color in hover state"
+          },
+          "filled": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Default select text color in filled state"
+          },
+          "focused": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Default select text color in focused state"
+          },
+          "hover-filled": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Default select text color in hover-filled state"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "Default select text color in disabled state"
+          }
+        },
+        "icon": {
+          "default": {
+            "value": "{color.icon.neutral.info}",
+            "type": "color",
+            "description": "Default select icon color in default state"
+          },
+          "hover": {
+            "value": "{color.icon.neutral.info}",
+            "type": "color",
+            "description": "Default select icon color in hover state"
+          },
+          "filled": {
+            "value": "{color.icon.neutral.info}",
+            "type": "color",
+            "description": "Default select icon color in filled state"
+          },
+          "focused": {
+            "value": "{color.icon.neutral.info}",
+            "type": "color",
+            "description": "Default select icon color in focused state"
+          },
+          "hover-filled": {
+            "value": "{color.icon.neutral.info}",
+            "type": "color",
+            "description": "Default select icon color in hover-filled state"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Default select icon color in disabled state"
+          }
+        },
+        "focus": {
+          "ring": {
+            "value": "{color.border.primary.subtle.2}",
+            "type": "color",
+            "description": "Default select focus ring color"
+          },
+          "shadow": {
+            "value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+            "type": "boxShadow",
+            "description": "Default select focus shadow"
+          }
+        }
+      },
+      "destructive": {
+        "$comment": "Destructive/error state select colors with red/error palette for validation feedback",
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Destructive select background in default state"
+          },
+          "hover": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Destructive select background in hover state"
+          },
+          "filled": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Destructive select background in filled state"
+          },
+          "focused": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Destructive select background in focused state"
+          },
+          "hover-filled": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Destructive select background in hover-filled state"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.error.moderate.0}",
+            "type": "color",
+            "description": "Destructive select border in default state"
+          },
+          "hover": {
+            "value": "{color.border.error.default}",
+            "type": "color",
+            "description": "Destructive select border in hover state"
+          },
+          "filled": {
+            "value": "{color.border.error.moderate.0}",
+            "type": "color",
+            "description": "Destructive select border in filled state"
+          },
+          "focused": {
+            "value": "{color.border.error.default}",
+            "type": "color",
+            "description": "Destructive select border in focused state"
+          },
+          "hover-filled": {
+            "value": "{color.border.error.default}",
+            "type": "color",
+            "description": "Destructive select border in hover-filled state"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Destructive select text color in default state"
+          },
+          "hover": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Destructive select text color in hover state"
+          },
+          "filled": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Destructive select text color in filled state"
+          },
+          "focused": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Destructive select text color in focused state"
+          },
+          "hover-filled": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Destructive select text color in hover-filled state"
+          }
+        },
+        "icon": {
+          "default": {
+            "value": "{color.icon.error.moderate}",
+            "type": "color",
+            "description": "Destructive select icon color in default state"
+          },
+          "hover": {
+            "value": "{color.icon.error.moderate}",
+            "type": "color",
+            "description": "Destructive select icon color in hover state"
+          },
+          "filled": {
+            "value": "{color.icon.error.moderate}",
+            "type": "color",
+            "description": "Destructive select icon color in filled state"
+          },
+          "focused": {
+            "value": "{color.icon.error.moderate}",
+            "type": "color",
+            "description": "Destructive select icon color in focused state"
+          },
+          "hover-filled": {
+            "value": "{color.icon.error.moderate}",
+            "type": "color",
+            "description": "Destructive select icon color in hover-filled state"
+          }
+        },
+        "focus": {
+          "ring": {
+            "value": "{color.border.error.subtle.2}",
+            "type": "color",
+            "description": "Destructive select focus ring color"
+          },
+          "shadow": {
+            "value": "0px 0px 0px 4px rgba(254, 228, 226, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+            "type": "boxShadow",
+            "description": "Destructive select focus shadow"
+          }
+        }
       }
     },
-    "size": {
-      "3xs": {
-        "height": {
-          "value": "{size.6}",
+    "chevron": {
+      "$comment": "Chevron icon element - indicator for dropdown functionality",
+      "size": {
+        "3xs": {
+          "value": "{size.icon.3xs}",
           "type": "dimension",
-          "description": "Select height for 3xs size"
+          "description": "Select chevron size for 3xs size"
         },
-        "min-width": {
-          "value": "{size.80}",
+        "2xs": {
+          "value": "{size.icon.2xs}",
           "type": "dimension",
-          "description": "Select minimum width for 3xs size"
+          "description": "Select chevron size for 2xs size"
+        },
+        "xs": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Select chevron size for xs size"
+        },
+        "sm": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Select chevron size for sm size"
+        },
+        "md": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Select chevron size for md size"
+        },
+        "lg": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Select chevron size for lg size"
         }
       },
-      "2xs": {
-        "height": {
-          "value": "{size.7}",
-          "type": "dimension",
-          "description": "Select height for 2xs size"
+      "color": {
+        "default": {
+          "value": "{color.icon.neutral.moderate.0}",
+          "type": "color",
+          "description": "Select chevron color in default state"
         },
-        "min-width": {
-          "value": "{size.90}",
-          "type": "dimension",
-          "description": "Select minimum width for 2xs size"
-        }
-      },
-      "xs": {
-        "height": {
-          "value": "{size.8}",
-          "type": "dimension",
-          "description": "Select height for xs size"
-        },
-        "min-width": {
-          "value": "{size.96}",
-          "type": "dimension",
-          "description": "Select minimum width for xs size"
-        }
-      },
-      "sm": {
-        "height": {
-          "value": "{size.9}",
-          "type": "dimension",
-          "description": "Select height for sm size"
-        },
-        "min-width": {
-          "value": "{size.112}",
-          "type": "dimension",
-          "description": "Select minimum width for sm size"
-        }
-      },
-      "md": {
-        "height": {
-          "value": "{size.10}",
-          "type": "dimension",
-          "description": "Select height for md size"
-        },
-        "min-width": {
-          "value": "{size.128}",
-          "type": "dimension",
-          "description": "Select minimum width for md size"
-        }
-      },
-      "lg": {
-        "height": {
-          "value": "{size.11}",
-          "type": "dimension",
-          "description": "Select height for lg size"
-        },
-        "min-width": {
-          "value": "{size.144}",
-          "type": "dimension",
-          "description": "Select minimum width for lg size"
-        }
-      },
-      "xl": {
-        "height": {
-          "value": "{size.12}",
-          "type": "dimension",
-          "description": "Select height for xl size"
-        },
-        "min-width": {
-          "value": "{size.160}",
-          "type": "dimension",
-          "description": "Select minimum width for xl size"
+        "disabled": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Select chevron color in disabled state"
         }
       }
     }

@@ -1,4 +1,28 @@
 {
+  "$comment": "Input Component Tokens",
+  "$description": "Component tokens for Input fields with multiple variants including text input, password, dropdown/select, date/time pickers, phone input, and tag input. Supports default and destructive (error) states across 6 sizes. Figma Reference: Node ID 26683-37578",
+  "$component": {
+    "name": "Input",
+    "description": "A foundational form component for user text input, with support for various input types and states. Includes features like leading/trailing addons, prefix/suffix text, icons, validation states, and character counting.",
+    "structure": "Container with border, optional leading addon/icon, input text field, optional trailing icon/suffix, with focus states and validation feedback",
+    "sizes": {
+      "3xs": "24px height - Minimal size for very compact layouts",
+      "2xs": "28px height - Extra small for dense forms",
+      "xs": "32px height - Small size for compact interfaces",
+      "sm": "36px height - Standard small size for most forms",
+      "md": "40px height - Medium size (commonly used default)",
+      "lg": "44px height - Large size for prominent inputs"
+    },
+    "variants": {
+      "default": "Standard input with neutral colors for normal data entry",
+      "destructive": "Error state with red/error colors for validation feedback",
+      "types": "text, password (with toggle), dropdown/select, date picker, time picker, phone input, tag input, leading text, trailing button/dropdown"
+    },
+    "usage": {
+      "contexts": "Forms, search bars, filters, login screens, settings panels, data entry interfaces",
+      "features": "Leading addon (labels like 'https://'), Prefix (symbols like '$'), Suffix (units like 'kg'), Dropdown chevron, Character counter, Password toggle icon"
+    }
+  },
   "input": {
     "border": {
       "radius": {
@@ -18,7 +42,7 @@
           "description": "Input border radius for xs size"
         },
         "sm": {
-          "value": "{border.radius.sm}",
+          "value": "{border.radius.1[5]}",
           "type": "dimension",
           "description": "Input border radius for sm size"
         },
@@ -40,45 +64,47 @@
       }
     },
     "padding": {
+      "$comment": "Internal spacing for input content - horizontal (x) and vertical (y) padding",
       "x": {
         "3xs": {
-          "value": "{padding.2xs}",
+          "value": "{padding.x.4xs}",
           "type": "dimension",
           "description": "Input horizontal padding for 3xs size"
         },
         "2xs": {
-          "value": "{padding.2xs}",
+          "value": "{padding.x.4xs}",
           "type": "dimension",
           "description": "Input horizontal padding for 2xs size"
         },
         "xs": {
-          "value": "{padding.xs}",
+          "value": "{padding.x.3xs}",
           "type": "dimension",
           "description": "Input horizontal padding for xs size"
         },
         "sm": {
-          "value": "{padding.xs}",
+          "value": "{padding.x.3xs}",
           "type": "dimension",
           "description": "Input horizontal padding for sm size"
         },
         "md": {
-          "value": "{padding.sm}",
+          "value": "{padding.x.xs}",
           "type": "dimension",
           "description": "Input horizontal padding for md size"
         },
         "lg": {
-          "value": "{padding.md}",
+          "value": "{padding.x.sm}",
           "type": "dimension",
           "description": "Input horizontal padding for lg size"
         }
       },
       "y": {
-        "value": "{padding.0}",
+        "value": "{padding.y.none}",
         "type": "dimension",
         "description": "Input vertical padding"
       }
     },
     "height": {
+      "$comment": "Input field heights for each size variant",
       "3xs": {
         "value": "{size.height.3xs}",
         "type": "dimension",
@@ -111,11 +137,13 @@
       }
     },
     "gap": {
+      "$comment": "Spacing between input elements (icons, text, and other internal elements)",
       "value": "{gap.xs}",
       "type": "dimension",
       "description": "Gap between input elements"
     },
     "shadow": {
+      "$comment": "Subtle elevation shadow for input fields",
       "default": {
         "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
         "type": "boxShadow",
@@ -123,24 +151,25 @@
       }
     },
     "text": {
+      "$comment": "Typography tokens for input text content across all sizes",
       "typography": {
         "3xs": {
-          "value": "{font.body.regular.xs}",
+          "value": "{font.body.regular.base}",
           "type": "string",
           "description": "Input text typography for 3xs size"
         },
         "2xs": {
-          "value": "{font.body.regular.sm}",
+          "value": "{font.body.regular.base}",
           "type": "string",
           "description": "Input text typography for 2xs size"
         },
         "xs": {
-          "value": "{font.body.regular.md}",
+          "value": "{font.body.regular.base}",
           "type": "string",
           "description": "Input text typography for xs size"
         },
         "sm": {
-          "value": "{font.body.regular.base}",
+          "value": "{font.body.regular.md}",
           "type": "string",
           "description": "Input text typography for sm size"
         },
@@ -157,6 +186,7 @@
       }
     },
     "icon": {
+      "$comment": "Icon sizes for help icons, validation icons, and other decorative icons inside inputs",
       "size": {
         "3xs": {
           "value": "{size.icon.3xs}",
@@ -191,7 +221,9 @@
       }
     },
     "color": {
+      "$comment": "Color tokens for input states - includes default (neutral) and destructive (error/validation) variants with interaction states",
       "default": {
+        "$comment": "Default input colors with neutral palette for standard data entry",
         "background": {
           "default": {
             "value": "{color.background.neutral.base}",
@@ -204,7 +236,7 @@
             "description": "Default input background in hover state"
           },
           "filled": {
-            "value": "{color.background.neutral.subtle.0}",
+            "value": "{color.background.neutral.base}",
             "type": "color",
             "description": "Default input background in filled state"
           },
@@ -334,6 +366,7 @@
         }
       },
       "destructive": {
+        "$comment": "Destructive/error state input colors with red/error palette for validation feedback",
         "background": {
           "default": {
             "value": "{color.background.neutral.base}",
@@ -457,6 +490,7 @@
       }
     },
     "addon": {
+      "$comment": "Leading addon element - non-editable label at the start of input (e.g., 'https://', domain prefixes)",
       "background": {
         "value": "{color.background.neutral.transparent}",
         "type": "color",
@@ -477,71 +511,72 @@
       "padding": {
         "x": {
           "3xs": {
-            "value": "{padding.4xs}",
+            "value": "{padding.x.4xs}",
             "type": "dimension",
             "description": "Leading addon horizontal padding for 3xs size"
           },
           "2xs": {
-            "value": "{padding.4xs}",
+            "value": "{padding.x.4xs}",
             "type": "dimension",
             "description": "Leading addon horizontal padding for xs size"
           },
           "xs": {
-            "value": "{padding.3xs}",
+            "value": "{padding.x.3xs}",
             "type": "dimension",
             "description": "Leading addon horizontal padding for xs size"
           },
           "sm": {
-            "value": "{padding.3xs}",
+            "value": "{padding.x.3xs}",
             "type": "dimension",
             "description": "Leading addon horizontal padding for sm size"
           },
           "md": {
-            "value": "{padding.xs}",
+            "value": "{padding.x.xs}",
             "type": "dimension",
             "description": "Leading addon horizontal padding for md size"
           },
           "lg": {
-            "value": "{padding.sm}",
+            "value": "{padding.x.sm}",
             "type": "dimension",
             "description": "Leading addon horizontal padding for lg size"
           }
-        }
-      }, 
-      "height": {
-        "3xs": {
-          "value": "{size.height.3xs}",
-          "type": "dimension",
-          "description": "Leading addon height for 3xs size"
         },
-        "2xs": {
-          "value": "{size.height.2xs}",
-          "type": "dimension",
-          "description": "Leading addon height for 2xs size"
-        },
-        "xs": {
-          "value": "{size.height.xs}",
-          "type": "dimension",
-          "description": "Leading addon height for xs size"
-        },
-        "sm": {
-          "value": "{size.height.sm}",
-          "type": "dimension",
-          "description": "Leading addon height for sm size"
-        },
-        "md": {
-          "value": "{size.height.md}",
-          "type": "dimension",
-          "description": "Leading addon height for md size"
-        },
-        "lg": {
-          "value": "{size.height.lg}",
-          "type": "dimension",
-          "description": "Leading addon height for lg size"
+        "y": {
+          "3xs": {
+            "value": "{padding.y.3xs}",
+            "type": "dimension",
+            "description": "Leading addon vertical padding for 3xs size"
+          },
+          "2xs": {
+            "value": "{padding.y.2xs}",
+            "type": "dimension",
+            "description": "Leading addon vertical padding for 2xs size"
+          },
+          "xs": {
+            "value": "{padding.y.xs}",
+            "type": "dimension",
+            "description": "Leading addon vertical padding for xs size"
+          },
+          "sm": {
+            "value": "{padding.y.sm}",
+            "type": "dimension",
+            "description": "Leading addon vertical padding for sm size"
+          },
+          "md": {
+            "value": "{padding.y.sm}",
+            "type": "dimension",
+            "description": "Leading addon vertical padding for md size"
+          },
+          "lg": {
+            "value": "{padding.y.md}",
+            "type": "dimension",
+            "description": "Leading addon vertical padding for lg size"
+          }
         }
       }
     },
     "prefix": {
+      "$comment": "Prefix text inside input field - appears before user text (e.g., '$', '@', '#')",
       "text": {
         "color": {
           "default": {
@@ -558,6 +593,7 @@
       }
     },
     "suffix": {
+      "$comment": "Suffix text inside input field - appears after user text (e.g., '.com', 'kg', 'USD')",
       "text": {
         "color": {
           "default": {
@@ -574,8 +610,9 @@
       }
     },
     "dropdown": {
+      "$comment": "Dropdown/select input variant - includes chevron icon and specific colors (e.g., date picker, time picker, country selector)",
       "gap": {
-        "value": "{gap.4xs}",
+        "value": "{gap.3xs}",
         "type": "dimension",
         "description": "Gap between dropdown elements"
       },
@@ -645,53 +682,8 @@
         }
       }
     },
-    "character-count": {
-      "typography": {
-        "3xs": {
-          "value": "{font.body.regular.2xs}",
-          "type": "string",
-          "description": "Character count typography for 3xs size"
-        },
-        "2xs": {
-          "value": "{font.body.regular.xs}",
-          "type": "string",
-          "description": "Character count typography for 2xs size"
-        },
-        "xs": {
-          "value": "{font.body.regular.sm}",
-          "type": "string",
-          "description": "Character count typography for xs size"
-        },
-        "sm": {
-          "value": "{font.body.regular.md}",
-          "type": "string",
-          "description": "Character count typography for sm size"
-        },
-        "md": {
-          "value": "{font.body.regular.base}",
-          "type": "string",
-          "description": "Character count typography for md size"
-        },
-        "lg": {
-          "value": "{font.body.regular.base}",
-          "type": "string",
-          "description": "Character count typography for lg size"
-        }
-      },
-      "color": {
-        "default": {
-          "value": "{color.text.neutral.subtitle.2}",
-          "type": "color",
-          "description": "Character count color in default state"
-        },
-        "error": {
-          "value": "{color.text.error.body.2}",
-          "type": "color",
-          "description": "Character count color when over limit"
-        }
-      }
-    },
     "password": {
+      "$comment": "Password input variant - includes eye icon toggle for showing/hiding password text",
       "toggle": {
         "icon": {
           "size": {
@@ -733,13 +725,311 @@
               "description": "Password toggle icon color in default state"
             },
             "disabled": {
-              "value": "{color.icon.neutral.subtle.2}",
+              "value": "{color.icon.neutral.moderate.0}",
               "type": "color",
               "description": "Password toggle icon color in disabled state"
             }
           }
         }
       }
+    },
+    "leading-icon": {
+      "$comment": "Leading icon element - icon at the start of input field (e.g., search icon, lock icon)",
+      "size": {
+        "3xs": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Leading icon size for 3xs size"
+        },
+        "2xs": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Leading icon size for 2xs size"
+        },
+        "xs": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Leading icon size for xs size"
+        },
+        "sm": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Leading icon size for sm size"
+        },
+        "md": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Leading icon size for md size"
+        },
+        "lg": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Leading icon size for lg size"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.icon.neutral.moderate.0}",
+          "type": "color",
+          "description": "Leading icon color in default state"
+        },
+        "disabled": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Leading icon color in disabled state"
+        }
+      }
+    },
+    "tags": {
+      "$comment": "Tags input variant - includes tags with removable/editable labels",
+      "tags": {
+        "size": {
+          "3xs": {
+            "value": "{size.height.4[5]}",
+            "type": "dimension",
+            "description": "Tags size for 3xs size - tag size: xs; tag height: 18px"
+          },
+          "2xs": {
+            "value": "{size.height.4[5]}",
+            "type": "dimension",
+            "description": "Tags size for 2xs size - tag size: xs; tag height: 18px"
+          },
+          "xs": {
+            "value": "{size.height.5[5]}",
+            "type": "dimension",
+            "description": "Tags size for xs size - tag size: sm; tag height: 22px"
+          },
+          "sm": {
+            "value": "{size.height.3xs}",
+            "type": "dimension",
+            "description": "Tags size for sm size - tag size: md; tag height: 24px"
+          },
+          "md": {
+            "value": "{size.height.2xs}",
+            "type": "dimension",
+            "description": "Tags size for md size - tag size: lg; tag height: 28px"
+          },
+          "lg": {
+            "value": "{size.height.2xs}",
+            "type": "dimension",
+            "description": "Tags size for lg size - tag size: lg; tag height: 28px"
+          }
+        },
+        "gap-between-tags": {
+          "value": "{gap.x.2xs}",
+          "type": "dimension",
+          "description": "Gap between tags - horizontal"
+        },
+        "gap-between-tags-and-input": {
+          "value": "{gap.x.3xs}",
+          "type": "dimension",
+          "description": "Gap between tags and input - horizontal"
+        }
+      }
+    },
+    "clear-button": {
+      "$comment": "Clear button element - button to clear the input value",
+      "icon": {
+        "size": {
+          "3xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Clear button icon size for 3xs size"
+          },
+          "2xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Clear button icon size for 2xs size"
+          },
+          "xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Clear button icon size for xs size"
+          },
+          "sm": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Clear button icon size for sm size"
+          },
+          "md": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Clear button icon size for md size"
+          },
+          "lg": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Clear button icon size for lg size"
+          }
+        },
+        "color": {
+          "filled": {
+            "value": "{color.icon.neutral.moderate.0}",
+            "type": "color",
+            "description": "Clear button icon color in filled state"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Clear button icon color in disabled state"
+          }
+        }
+      }
+    },
+    "loading-indicator": {
+      "$comment": "Loading indicator element - indicator to show that the input is loading",
+      "size": {
+        "3xs": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Loading indicator size for 3xs size"
+        },
+        "2xs": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Loading indicator size for 2xs size"
+        },
+        "xs": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Loading indicator size for xs size"
+        },
+        "sm": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Loading indicator size for sm size"
+        },
+        "md": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Loading indicator size for md size"
+        },
+        "lg": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Loading indicator size for lg size"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.icon.primary.moderate.0}",
+          "type": "color",
+          "description": "Loading indicator color in default state"
+        }
+      }
+    },
+    "character-limit-counter": {
+      "$comment": "Character limit counter element - counter to show the number of characters in the input",
+      "size": {
+        "3xs": {
+          "value": "{font.body.regular.3xs}",
+          "type": "string",
+          "description": "Character limit counter size for 3xs size"
+        },
+        "2xs": {
+          "value": "{font.body.regular.2xs}",
+          "type": "string",
+          "description": "Character limit counter size for 2xs size"
+        },
+        "xs": {
+          "value": "{font.body.regular.base}",
+          "type": "string",
+          "description": "Character limit counter size for xs size"
+        },
+        "sm": {
+          "value": "{font.body.regular.base}",
+          "type": "string",
+          "description": "Character limit counter size for sm size"
+        },
+        "md": {
+          "value": "{font.body.regular.2xl}",
+          "type": "string",
+          "description": "Character limit counter size for md size"
+        },
+        "lg": {
+          "value": "{font.body.regular.2xl}",
+          "type": "string",
+          "description": "Character limit counter size for lg size"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Character limit counter color in default state"
+        }
+      }
+    },
+    "payment-input": {
+      "$comment": "Payment input variant - includes card icon",
+      "card-icon": {
+        "size": {
+          "width": {
+              "3xs": {  
+                "value": "{size.width.3xs}",
+                "type": "dimension",
+                "description": "Payment input card icon width for 3xs size"
+              },
+              "2xs": {
+                "value": "{size.width.2xs}",
+                "type": "dimension",
+                "description": "Payment input card icon width for xs size"
+              },
+              "xs": {
+                "value": "{size.width.8[5]}",
+                "type": "dimension",
+                "description": "Payment input card icon width for xs size"
+              },
+              "sm": {
+                "value": "{size.width.8[5]}",
+                "type": "dimension",
+                "description": "Payment input card icon size for sm size"
+              },
+              "md": {
+                "value": "{size.width.8[5]}",
+                "type": "dimension",
+                "description": "Payment input card icon size for md size"
+              },
+              "lg": {
+                "value": "{size.width.8[5]}",
+                "type": "dimension",
+                "description": "Payment input card icon size for lg size"
+              }
+          },
+          "height": {
+            "3xs": {
+              "value": "{size.height.4}",
+              "type": "dimension",
+              "description": "Payment input card icon height for 3xs size"
+            },
+            "2xs": {
+              "value": "{size.height.4}",
+              "type": "dimension",
+              "description": "Payment input card icon height for 2xs size"
+            },
+            "xs": {
+              "value": "{size.height.3xs}",
+              "type": "dimension",
+              "description": "Payment input card icon height for xs size"
+            },
+            "sm": {
+              "value": "{size.height.3xs}",
+              "type": "dimension",
+              "description": "Payment input card icon height for sm size"
+            },
+            "md": {
+              "value": "{size.height.3xs}",
+              "type": "dimension",
+              "description": "Payment input card icon height for md size"
+            },
+            "lg": {
+              "value": "{size.height.3xs}",
+              "type": "dimension",
+              "description": "Payment input card icon height for lg size"
+            }
+          }
+      }
     }
   }
-} 
+}
+}
