@@ -2,439 +2,544 @@
   "color": {
     "transparent": {
       "value": "#FFFFFF00",
-      "type": "color"
+      "type": "color",
+      "description": "Transparent color"
     },
     "neutral": {
       "gray": {
         "0": {
           "value": "{gray-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Lightest"
         },
         "25": {
           "value": "{gray-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Step 25"
         },
         "50": {
           "value": "{gray-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Step 50"
         },
         "100": {
           "value": "{gray-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Step 100"
         },
         "200": {
           "value": "{gray-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Step 200"
         },
         "300": {
           "value": "{gray-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Step 300"
         },
         "400": {
           "value": "{gray-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Step 400"
         },
         "500": {
           "value": "{gray-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Step 500"
         },
         "600": {
           "value": "{gray-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Step 600"
         },
         "700": {
           "value": "{gray-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Step 700"
         },
         "800": {
           "value": "{gray-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Step 800"
         },
         "900": {
           "value": "{gray-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Step 900"
         },
         "1000": {
           "value": "{gray-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray color - Darkest"
         }
       },
       "gray-blue": {
         "0": {
           "value": "{grayBlue-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Lightest"
         },
         "25": {
           "value": "{grayBlue-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Step 25"
         },
         "50": {
           "value": "{grayBlue-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Step 50"
         },
         "100": {
           "value": "{grayBlue-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Step 100"
         },
         "200": {
           "value": "{grayBlue-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Step 200"
         },
         "300": {
           "value": "{grayBlue-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Step 300"
         },
         "400": {
           "value": "{grayBlue-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Step 400"
         },
         "500": {
           "value": "{grayBlue-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Step 500"
         },
         "600": {
           "value": "{grayBlue-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Step 600"
         },
         "700": {
           "value": "{grayBlue-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Step 700"
         },
         "800": {
           "value": "{grayBlue-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Step 800"
         },
         "900": {
           "value": "{grayBlue-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Step 900"
         },
         "1000": {
           "value": "{grayBlue-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-blue color - Darkest"
         }
       },
       "gray-cool": {
         "0": {
           "value": "{grayCool-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Lightest"
         },
         "25": {
           "value": "{grayCool-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Step 25"
         },
         "50": {
           "value": "{grayCool-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Step 50"
         },
         "100": {
           "value": "{grayCool-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Step 100"
         },
         "200": {
           "value": "{grayCool-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Step 200"
         },
         "300": {
           "value": "{grayCool-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Step 300"
         },
         "400": {
           "value": "{grayCool-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Step 400"
         },
         "500": {
           "value": "{grayCool-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Step 500"
         },
         "600": {
           "value": "{grayCool-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Step 600"
         },
         "700": {
           "value": "{grayCool-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Step 700"
         },
         "800": {
           "value": "{grayCool-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Step 800"
         },
         "900": {
           "value": "{grayCool-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Step 900"
         },
         "1000": {
           "value": "{grayCool-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-cool color - Darkest"
         }
       },
       "gray-modern": {
         "0": {
           "value": "{grayModern-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Lightest"
         },
         "25": {
           "value": "{grayModern-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Step 25"
         },
         "50": {
           "value": "{grayModern-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Step 50"
         },
         "100": {
           "value": "{grayModern-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Step 100"
         },
         "200": {
           "value": "{grayModern-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Step 200"
         },
         "300": {
           "value": "{grayModern-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Step 300"
         },
         "400": {
           "value": "{grayModern-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Step 400"
         },
         "500": {
           "value": "{grayModern-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Step 500"
         },
         "600": {
           "value": "{grayModern-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Step 600"
         },
         "700": {
           "value": "{grayModern-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Step 700"
         },
         "800": {
           "value": "{grayModern-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Step 800"
         },
         "900": {
           "value": "{grayModern-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Step 900"
         },
         "1000": {
           "value": "{grayModern-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-modern color - Darkest"
         }
       },
       "gray-neutral": {
         "0": {
           "value": "{grayNeutral-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Lightest"
         },
         "25": {
           "value": "{grayNeutral-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Step 25"
         },
         "50": {
           "value": "{grayNeutral-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Step 50"
         },
         "100": {
           "value": "{grayNeutral-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Step 100"
         },
         "200": {
           "value": "{grayNeutral-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Step 200"
         },
         "300": {
           "value": "{grayNeutral-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Step 300"
         },
         "400": {
           "value": "{grayNeutral-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Step 400"
         },
         "500": {
           "value": "{grayNeutral-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Step 500"
         },
         "600": {
           "value": "{grayNeutral-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Step 600"
         },
         "700": {
           "value": "{grayNeutral-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Step 700"
         },
         "800": {
           "value": "{grayNeutral-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Step 800"
         },
         "900": {
           "value": "{grayNeutral-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Step 900"
         },
         "1000": {
           "value": "{grayNeutral-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-neutral color - Darkest"
         }
       },
       "gray-iron": {
         "0": {
           "value": "{grayIron-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Lightest"
         },
         "25": {
           "value": "{grayIron-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Step 25"
         },
         "50": {
           "value": "{grayIron-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Step 50"
         },
         "100": {
           "value": "{grayIron-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Step 100"
         },
         "200": {
           "value": "{grayIron-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Step 200"
         },
         "300": {
           "value": "{grayIron-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Step 300"
         },
         "400": {
           "value": "{grayIron-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Step 400"
         },
         "500": {
           "value": "{grayIron-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Step 500"
         },
         "600": {
           "value": "{grayIron-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Step 600"
         },
         "700": {
           "value": "{grayIron-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Step 700"
         },
         "800": {
           "value": "{grayIron-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Step 800"
         },
         "900": {
           "value": "{grayIron-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Step 900"
         },
         "1000": {
           "value": "{grayIron-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-iron color - Darkest"
         }
       },
       "gray-true": {
         "0": {
           "value": "{grayTrue-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Lightest"
         },
         "25": {
           "value": "{grayTrue-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Step 25"
         },
         "50": {
           "value": "{grayTrue-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Step 50"
         },
         "100": {
           "value": "{grayTrue-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Step 100"
         },
         "200": {
           "value": "{grayTrue-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Step 200"
         },
         "300": {
           "value": "{grayTrue-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Step 300"
         },
         "400": {
           "value": "{grayTrue-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Step 400"
         },
         "500": {
           "value": "{grayTrue-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Step 500"
         },
         "600": {
           "value": "{grayTrue-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Step 600"
         },
         "700": {
           "value": "{grayTrue-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Step 700"
         },
         "800": {
           "value": "{grayTrue-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Step 800"
         },
         "900": {
           "value": "{grayTrue-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Step 900"
         },
         "1000": {
           "value": "{grayTrue-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-true color - Darkest"
         }
       },
       "gray-warm": {
         "0": {
           "value": "{grayWarm-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Lightest"
         },
         "25": {
           "value": "{grayWarm-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Step 25"
         },
         "50": {
           "value": "{grayWarm-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Step 50"
         },
         "100": {
           "value": "{grayWarm-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Step 100"
         },
         "200": {
           "value": "{grayWarm-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Step 200"
         },
         "300": {
           "value": "{grayWarm-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Step 300"
         },
         "400": {
           "value": "{grayWarm-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Step 400"
         },
         "500": {
           "value": "{grayWarm-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Step 500"
         },
         "600": {
           "value": "{grayWarm-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Step 600"
         },
         "700": {
           "value": "{grayWarm-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Step 700"
         },
         "800": {
           "value": "{grayWarm-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Step 800"
         },
         "900": {
           "value": "{grayWarm-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Step 900"
         },
         "1000": {
           "value": "{grayWarm-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Neutral gray-warm color - Darkest"
         }
       }
     },
@@ -442,55 +547,68 @@
       "blue": {
         "0": {
           "value": "{primary-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Lightest"
         },
         "25": {
           "value": "{primary-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Step 25"
         },
         "50": {
           "value": "{primary-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Step 50"
         },
         "100": {
           "value": "{primary-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Step 100"
         },
         "200": {
           "value": "{primary-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Step 200"
         },
         "300": {
           "value": "{primary-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Step 300"
         },
         "400": {
           "value": "{primary-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Step 400"
         },
         "500": {
           "value": "{primary-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Step 500"
         },
         "600": {
           "value": "{primary-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Step 600"
         },
         "700": {
           "value": "{primary-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Step 700"
         },
         "800": {
           "value": "{primary-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Step 800"
         },
         "900": {
           "value": "{primary-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Step 900"
         },
         "1000": {
           "value": "{primary-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Primary blue color - Darkest"
         }
       }
     },
@@ -498,919 +616,1140 @@
       "yellow": {
         "0": {
           "value": "{yellow-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Lightest"
         },
         "25": {
           "value": "{yellow-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Step 25"
         },
         "50": {
           "value": "{yellow-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Step 50"
         },
         "100": {
           "value": "{yellow-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Step 100"
         },
         "200": {
           "value": "{yellow-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Step 200"
         },
         "300": {
           "value": "{yellow-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Step 300"
         },
         "400": {
           "value": "{yellow-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Step 400"
         },
         "500": {
           "value": "{yellow-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Step 500"
         },
         "600": {
           "value": "{yellow-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Step 600"
         },
         "700": {
           "value": "{yellow-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Step 700"
         },
         "800": {
           "value": "{yellow-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Step 800"
         },
         "900": {
           "value": "{yellow-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Step 900"
         },
         "1000": {
           "value": "{yellow-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent yellow color - Darkest"
         }
       },
       "green-light": {
         "0": {
           "value": "{greenLight-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Lightest"
         },
         "25": {
           "value": "{greenLight-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Step 25"
         },
         "50": {
           "value": "{greenLight-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Step 50"
         },
         "100": {
           "value": "{greenLight-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Step 100"
         },
         "200": {
           "value": "{greenLight-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Step 200"
         },
         "300": {
           "value": "{greenLight-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Step 300"
         },
         "400": {
           "value": "{greenLight-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Step 400"
         },
         "500": {
           "value": "{greenLight-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Step 500"
         },
         "600": {
           "value": "{greenLight-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Step 600"
         },
         "700": {
           "value": "{greenLight-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Step 700"
         },
         "800": {
           "value": "{greenLight-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Step 800"
         },
         "900": {
           "value": "{greenLight-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Step 900"
         },
         "1000": {
           "value": "{greenLight-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green-light color - Darkest"
         }
       },
       "moss": {
         "0": {
           "value": "{moss-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Lightest"
         },
         "25": {
           "value": "{moss-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Step 25"
         },
         "50": {
           "value": "{moss-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Step 50"
         },
         "100": {
           "value": "{moss-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Step 100"
         },
         "200": {
           "value": "{moss-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Step 200"
         },
         "300": {
           "value": "{moss-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Step 300"
         },
         "400": {
           "value": "{moss-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Step 400"
         },
         "500": {
           "value": "{moss-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Step 500"
         },
         "600": {
           "value": "{moss-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Step 600"
         },
         "700": {
           "value": "{moss-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Step 700"
         },
         "800": {
           "value": "{moss-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Step 800"
         },
         "900": {
           "value": "{moss-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Step 900"
         },
         "1000": {
           "value": "{moss-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent moss color - Darkest"
         }
       },
       "green": {
         "0": {
           "value": "{green-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Lightest"
         },
         "25": {
           "value": "{green-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Step 25"
         },
         "50": {
           "value": "{green-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Step 50"
         },
         "100": {
           "value": "{green-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Step 100"
         },
         "200": {
           "value": "{green-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Step 200"
         },
         "300": {
           "value": "{green-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Step 300"
         },
         "400": {
           "value": "{green-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Step 400"
         },
         "500": {
           "value": "{green-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Step 500"
         },
         "600": {
           "value": "{green-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Step 600"
         },
         "700": {
           "value": "{green-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Step 700"
         },
         "800": {
           "value": "{green-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Step 800"
         },
         "900": {
           "value": "{green-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Step 900"
         },
         "1000": {
           "value": "{green-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent green color - Darkest"
         }
       },
       "teal": {
         "0": {
           "value": "{teal-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Lightest"
         },
         "25": {
           "value": "{teal-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Step 25"
         },
         "50": {
           "value": "{teal-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Step 50"
         },
         "100": {
           "value": "{teal-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Step 100"
         },
         "200": {
           "value": "{teal-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Step 200"
         },
         "300": {
           "value": "{teal-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Step 300"
         },
         "400": {
           "value": "{teal-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Step 400"
         },
         "500": {
           "value": "{teal-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Step 500"
         },
         "600": {
           "value": "{teal-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Step 600"
         },
         "700": {
           "value": "{teal-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Step 700"
         },
         "800": {
           "value": "{teal-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Step 800"
         },
         "900": {
           "value": "{teal-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Step 900"
         },
         "1000": {
           "value": "{teal-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent teal color - Darkest"
         }
       },
       "cyan": {
         "0": {
           "value": "{cyan-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Lightest"
         },
         "25": {
           "value": "{cyan-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Step 25"
         },
         "50": {
           "value": "{cyan-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Step 50"
         },
         "100": {
           "value": "{cyan-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Step 100"
         },
         "200": {
           "value": "{cyan-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Step 200"
         },
         "300": {
           "value": "{cyan-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Step 300"
         },
         "400": {
           "value": "{cyan-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Step 400"
         },
         "500": {
           "value": "{cyan-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Step 500"
         },
         "600": {
           "value": "{cyan-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Step 600"
         },
         "700": {
           "value": "{cyan-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Step 700"
         },
         "800": {
           "value": "{cyan-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Step 800"
         },
         "900": {
           "value": "{cyan-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Step 900"
         },
         "1000": {
           "value": "{cyan-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent cyan color - Darkest"
         }
       },
       "blue-light": {
         "0": {
           "value": "{blueLight-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Lightest"
         },
         "25": {
           "value": "{blueLight-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Step 25"
         },
         "50": {
           "value": "{blueLight-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Step 50"
         },
         "100": {
           "value": "{blueLight-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Step 100"
         },
         "200": {
           "value": "{blueLight-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Step 200"
         },
         "300": {
           "value": "{blueLight-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Step 300"
         },
         "400": {
           "value": "{blueLight-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Step 400"
         },
         "500": {
           "value": "{blueLight-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Step 500"
         },
         "600": {
           "value": "{blueLight-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Step 600"
         },
         "700": {
           "value": "{blueLight-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Step 700"
         },
         "800": {
           "value": "{blueLight-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Step 800"
         },
         "900": {
           "value": "{blueLight-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Step 900"
         },
         "1000": {
           "value": "{blueLight-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-light color - Darkest"
         }
       },
       "blue": {
         "0": {
           "value": "{blue-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Lightest"
         },
         "25": {
           "value": "{blue-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Step 25"
         },
         "50": {
           "value": "{blue-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Step 50"
         },
         "100": {
           "value": "{blue-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Step 100"
         },
         "200": {
           "value": "{blue-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Step 200"
         },
         "300": {
           "value": "{blue-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Step 300"
         },
         "400": {
           "value": "{blue-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Step 400"
         },
         "500": {
           "value": "{blue-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Step 500"
         },
         "600": {
           "value": "{blue-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Step 600"
         },
         "700": {
           "value": "{blue-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Step 700"
         },
         "800": {
           "value": "{blue-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Step 800"
         },
         "900": {
           "value": "{blue-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Step 900"
         },
         "1000": {
           "value": "{blue-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue color - Darkest"
         }
       },
       "blue-dark": {
         "0": {
           "value": "{blueDark-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Lightest"
         },
         "25": {
           "value": "{blueDark-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Step 25"
         },
         "50": {
           "value": "{blueDark-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Step 50"
         },
         "100": {
           "value": "{blueDark-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Step 100"
         },
         "200": {
           "value": "{blueDark-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Step 200"
         },
         "300": {
           "value": "{blueDark-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Step 300"
         },
         "400": {
           "value": "{blueDark-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Step 400"
         },
         "500": {
           "value": "{blueDark-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Step 500"
         },
         "600": {
           "value": "{blueDark-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Step 600"
         },
         "700": {
           "value": "{blueDark-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Step 700"
         },
         "800": {
           "value": "{blueDark-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Step 800"
         },
         "900": {
           "value": "{blueDark-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Step 900"
         },
         "1000": {
           "value": "{blueDark-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent blue-dark color - Darkest"
         }
       },
       "indigo": {
         "0": {
           "value": "{indigo-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Lightest"
         },
         "25": {
           "value": "{indigo-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Step 25"
         },
         "50": {
           "value": "{indigo-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Step 50"
         },
         "100": {
           "value": "{indigo-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Step 100"
         },
         "200": {
           "value": "{indigo-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Step 200"
         },
         "300": {
           "value": "{indigo-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Step 300"
         },
         "400": {
           "value": "{indigo-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Step 400"
         },
         "500": {
           "value": "{indigo-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Step 500"
         },
         "600": {
           "value": "{indigo-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Step 600"
         },
         "700": {
           "value": "{indigo-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Step 700"
         },
         "800": {
           "value": "{indigo-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Step 800"
         },
         "900": {
           "value": "{indigo-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Step 900"
         },
         "1000": {
           "value": "{indigo-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent indigo color - Darkest"
         }
       },
       "violet": {
         "0": {
           "value": "{violet-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Lightest"
         },
         "25": {
           "value": "{violet-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Step 25"
         },
         "50": {
           "value": "{violet-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Step 50"
         },
         "100": {
           "value": "{violet-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Step 100"
         },
         "200": {
           "value": "{violet-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Step 200"
         },
         "300": {
           "value": "{violet-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Step 300"
         },
         "400": {
           "value": "{violet-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Step 400"
         },
         "500": {
           "value": "{violet-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Step 500"
         },
         "600": {
           "value": "{violet-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Step 600"
         },
         "700": {
           "value": "{violet-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Step 700"
         },
         "800": {
           "value": "{violet-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Step 800"
         },
         "900": {
           "value": "{violet-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Step 900"
         },
         "1000": {
           "value": "{violet-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent violet color - Darkest"
         }
       },
       "purple": {
         "0": {
           "value": "{purple-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Lightest"
         },
         "25": {
           "value": "{purple-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Step 25"
         },
         "50": {
           "value": "{purple-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Step 50"
         },
         "100": {
           "value": "{purple-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Step 100"
         },
         "200": {
           "value": "{purple-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Step 200"
         },
         "300": {
           "value": "{purple-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Step 300"
         },
         "400": {
           "value": "{purple-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Step 400"
         },
         "500": {
           "value": "{purple-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Step 500"
         },
         "600": {
           "value": "{purple-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Step 600"
         },
         "700": {
           "value": "{purple-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Step 700"
         },
         "800": {
           "value": "{purple-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Step 800"
         },
         "900": {
           "value": "{purple-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Step 900"
         },
         "1000": {
           "value": "{purple-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent purple color - Darkest"
         }
       },
       "fuchsia": {
         "0": {
           "value": "{fuchsia-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Lightest"
         },
         "25": {
           "value": "{fuchsia-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Step 25"
         },
         "50": {
           "value": "{fuchsia-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Step 50"
         },
         "100": {
           "value": "{fuchsia-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Step 100"
         },
         "200": {
           "value": "{fuchsia-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Step 200"
         },
         "300": {
           "value": "{fuchsia-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Step 300"
         },
         "400": {
           "value": "{fuchsia-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Step 400"
         },
         "500": {
           "value": "{fuchsia-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Step 500"
         },
         "600": {
           "value": "{fuchsia-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Step 600"
         },
         "700": {
           "value": "{fuchsia-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Step 700"
         },
         "800": {
           "value": "{fuchsia-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Step 800"
         },
         "900": {
           "value": "{fuchsia-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Step 900"
         },
         "1000": {
           "value": "{fuchsia-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent fuchsia color - Darkest"
         }
       },
       "pink": {
         "0": {
           "value": "{pink-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Lightest"
         },
         "25": {
           "value": "{pink-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Step 25"
         },
         "50": {
           "value": "{pink-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Step 50"
         },
         "100": {
           "value": "{pink-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Step 100"
         },
         "200": {
           "value": "{pink-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Step 200"
         },
         "300": {
           "value": "{pink-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Step 300"
         },
         "400": {
           "value": "{pink-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Step 400"
         },
         "500": {
           "value": "{pink-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Step 500"
         },
         "600": {
           "value": "{pink-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Step 600"
         },
         "700": {
           "value": "{pink-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Step 700"
         },
         "800": {
           "value": "{pink-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Step 800"
         },
         "900": {
           "value": "{pink-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Step 900"
         },
         "1000": {
           "value": "{pink-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent pink color - Darkest"
         }
       },
       "rose": {
         "0": {
           "value": "{rose-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Lightest"
         },
         "25": {
           "value": "{rose-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Step 25"
         },
         "50": {
           "value": "{rose-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Step 50"
         },
         "100": {
           "value": "{rose-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Step 100"
         },
         "200": {
           "value": "{rose-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Step 200"
         },
         "300": {
           "value": "{rose-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Step 300"
         },
         "400": {
           "value": "{rose-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Step 400"
         },
         "500": {
           "value": "{rose-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Step 500"
         },
         "600": {
           "value": "{rose-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Step 600"
         },
         "700": {
           "value": "{rose-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Step 700"
         },
         "800": {
           "value": "{rose-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Step 800"
         },
         "900": {
           "value": "{rose-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Step 900"
         },
         "1000": {
           "value": "{rose-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent rose color - Darkest"
         }
       },
       "orange-dark": {
         "0": {
           "value": "{orangeDark-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Lightest"
         },
         "25": {
           "value": "{orangeDark-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Step 25"
         },
         "50": {
           "value": "{orangeDark-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Step 50"
         },
         "100": {
           "value": "{orangeDark-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Step 100"
         },
         "200": {
           "value": "{orangeDark-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Step 200"
         },
         "300": {
           "value": "{orangeDark-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Step 300"
         },
         "400": {
           "value": "{orangeDark-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Step 400"
         },
         "500": {
           "value": "{orangeDark-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Step 500"
         },
         "600": {
           "value": "{orangeDark-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Step 600"
         },
         "700": {
           "value": "{orangeDark-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Step 700"
         },
         "800": {
           "value": "{orangeDark-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Step 800"
         },
         "900": {
           "value": "{orangeDark-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Step 900"
         },
         "1000": {
           "value": "{orangeDark-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange-dark color - Darkest"
         }
       },
       "orange": {
         "0": {
           "value": "{orange-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Lightest"
         },
         "25": {
           "value": "{orange-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Step 25"
         },
         "50": {
           "value": "{orange-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Step 50"
         },
         "100": {
           "value": "{orange-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Step 100"
         },
         "200": {
           "value": "{orange-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Step 200"
         },
         "300": {
           "value": "{orange-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Step 300"
         },
         "400": {
           "value": "{orange-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Step 400"
         },
         "500": {
           "value": "{orange-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Step 500"
         },
         "600": {
           "value": "{orange-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Step 600"
         },
         "700": {
           "value": "{orange-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Step 700"
         },
         "800": {
           "value": "{orange-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Step 800"
         },
         "900": {
           "value": "{orange-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Step 900"
         },
         "1000": {
           "value": "{orange-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Accent orange color - Darkest"
         }
       }
     },
@@ -1418,163 +1757,202 @@
       "error": {
         "0": {
           "value": "{error-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Lightest"
         },
         "25": {
           "value": "{error-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Step 25"
         },
         "50": {
           "value": "{error-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Step 50"
         },
         "100": {
           "value": "{error-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Step 100"
         },
         "200": {
           "value": "{error-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Step 200"
         },
         "300": {
           "value": "{error-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Step 300"
         },
         "400": {
           "value": "{error-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Step 400"
         },
         "500": {
           "value": "{error-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Step 500"
         },
         "600": {
           "value": "{error-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Step 600"
         },
         "700": {
           "value": "{error-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Step 700"
         },
         "800": {
           "value": "{error-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Step 800"
         },
         "900": {
           "value": "{error-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Step 900"
         },
         "1000": {
           "value": "{error-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary error color - Darkest"
         }
       },
       "warning": {
         "0": {
           "value": "{warning-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Lightest"
         },
         "25": {
           "value": "{warning-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Step 25"
         },
         "50": {
           "value": "{warning-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Step 50"
         },
         "100": {
           "value": "{warning-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Step 100"
         },
         "200": {
           "value": "{warning-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Step 200"
         },
         "300": {
           "value": "{warning-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Step 300"
         },
         "400": {
           "value": "{warning-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Step 400"
         },
         "500": {
           "value": "{warning-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Step 500"
         },
         "600": {
           "value": "{warning-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Step 600"
         },
         "700": {
           "value": "{warning-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Step 700"
         },
         "800": {
           "value": "{warning-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Step 800"
         },
         "900": {
           "value": "{warning-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Step 900"
         },
         "1000": {
           "value": "{warning-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary warning color - Darkest"
         }
       },
       "success": {
         "0": {
           "value": "{success-0}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Lightest"
         },
         "25": {
           "value": "{success-25}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Step 25"
         },
         "50": {
           "value": "{success-50}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Step 50"
         },
         "100": {
           "value": "{success-100}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Step 100"
         },
         "200": {
           "value": "{success-200}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Step 200"
         },
         "300": {
           "value": "{success-300}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Step 300"
         },
         "400": {
           "value": "{success-400}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Step 400"
         },
         "500": {
           "value": "{success-500}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Step 500"
         },
         "600": {
           "value": "{success-600}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Step 600"
         },
         "700": {
           "value": "{success-700}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Step 700"
         },
         "800": {
           "value": "{success-800}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Step 800"
         },
         "900": {
           "value": "{success-900}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Step 900"
         },
         "1000": {
           "value": "{success-1000}",
-          "type": "color"
+          "type": "color",
+          "description": "Secondary success color - Darkest"
         }
       }
     }
@@ -1582,300 +1960,373 @@
   "spacing": {
     "0": {
       "value": 0,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 0px"
     },
     "1": {
       "value": 4,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 4px"
     },
     "2": {
       "value": 8,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 8px"
     },
     "3": {
       "value": 12,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 12px"
     },
     "4": {
       "value": 16,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 16px"
     },
     "5": {
       "value": 20,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 20px"
     },
     "6": {
       "value": 24,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 24px"
     },
     "7": {
       "value": 28,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 28px"
     },
     "8": {
       "value": 32,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 32px"
     },
     "9": {
       "value": 36,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 36px"
     },
     "10": {
       "value": 40,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 40px"
     },
     "11": {
       "value": 44,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 44px"
     },
     "12": {
       "value": 48,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 48px"
     },
     "14": {
       "value": 56,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 56px"
     },
     "16": {
       "value": 64,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 64px"
     },
     "18": {
       "value": 72,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 72px"
     },
     "20": {
       "value": 80,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 80px"
     },
     "22": {
       "value": 88,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 88px"
     },
     "24": {
       "value": 96,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 96px"
     },
     "28": {
       "value": 112,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 112px"
     },
     "32": {
       "value": 128,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 128px"
     },
     "40": {
       "value": 160,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 160px"
     },
     "0[25]": {
       "value": 1,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 1px"
     },
     "0[5]": {
       "value": 2,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 2px"
     },
     "0[75]": {
       "value": 3,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 3px"
     },
     "1[25]": {
       "value": 5,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 5px"
     },
     "1[5]": {
       "value": 6,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 6px"
     },
     "1[75]": {
       "value": 7,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 7px"
     },
     "2[5]": {
       "value": 10,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 10px"
     },
     "3[5]": {
       "value": 14,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 14px"
     },
     "4[5]": {
       "value": 18,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 18px"
     },
     "5[5]": {
       "value": 22,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 22px"
     },
     "6[5]": {
       "value": 26,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 26px"
     },
     "7[5]": {
       "value": 30,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 30px"
     },
     "8[5]": {
       "value": 34,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: 34px"
     },
     "-0[25]": {
       "value": -1,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: -1px"
     },
     "-0[5]": {
       "value": -2,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: -2px"
     },
     "-1": {
       "value": -4,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: -4px"
     },
     "-1[5]": {
       "value": -6,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: -6px"
     },
     "-2": {
       "value": -8,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: -8px"
     },
     "-2[5]": {
       "value": -10,
-      "type": "number"
+      "type": "number",
+      "description": "Spacing: -10px"
     }
   },
   "border": {
     "radius": {
       "0": {
         "value": 0,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 0px"
       },
       "1": {
         "value": 4,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 4px"
       },
       "2": {
         "value": 8,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 8px"
       },
       "3": {
         "value": 12,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 12px"
       },
       "4": {
         "value": 16,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 16px"
       },
       "4[5]": {
         "value": 18,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 18px"
       },
       "5": {
         "value": 20,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 20px"
       },
       "5[5]": {
         "value": 22,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 22px"
       },
       "6": {
         "value": 24,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 24px"
       },
       "7": {
         "value": 28,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 28px"
       },
       "8": {
         "value": 32,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 32px"
       },
       "9": {
         "value": 36,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 36px"
       },
       "10": {
         "value": 40,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 40px"
       },
       "12": {
         "value": 48,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 48px"
       },
       "14": {
         "value": 56,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 56px"
       },
       "16": {
         "value": 64,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 64px"
       },
       "24": {
         "value": 96,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 96px"
       },
       "0[5]": {
         "value": 2,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 2px"
       },
       "1[5]": {
         "value": 6,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 6px"
       },
       "2[5]": {
         "value": 10,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 10px"
       },
       "250": {
         "value": 1000,
-        "type": "number"
+        "type": "number",
+        "description": "Border radius: 1000px"
       }
     },
     "width": {
       "0": {
         "value": 0,
-        "type": "number"
+        "type": "number",
+        "description": "Border width: 0px"
       },
       "1": {
         "value": 4,
-        "type": "number"
+        "type": "number",
+        "description": "Border width: 4px"
       },
       "2": {
         "value": 8,
-        "type": "number"
+        "type": "number",
+        "description": "Border width: 8px"
       },
       "3": {
         "value": 12,
-        "type": "number"
+        "type": "number",
+        "description": "Border width: 12px"
       },
       "4": {
         "value": 16,
-        "type": "number"
+        "type": "number",
+        "description": "Border width: 16px"
       },
       "0[125]": {
         "value": 0.5,
-        "type": "number"
+        "type": "number",
+        "description": "Border width: 0.5px"
       },
       "0[25]": {
         "value": 1,
-        "type": "number"
+        "type": "number",
+        "description": "Border width: 1px"
       },
       "0[375]": {
         "value": 1.5,
-        "type": "number"
+        "type": "number",
+        "description": "Border width: 1.5px"
       },
       "0[5]": {
         "value": 2,
-        "type": "number"
+        "type": "number",
+        "description": "Border width: 2px"
       },
       "1[5]": {
         "value": 6,
-        "type": "number"
+        "type": "number",
+        "description": "Border width: 6px"
       },
       "2[5]": {
         "value": 10,
-        "type": "number"
+        "type": "number",
+        "description": "Border width: 10px"
       }
     }
   },
@@ -1883,1142 +2334,1421 @@
     "size": {
       "4xs": {
         "value": 8,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 8px"
       },
       "3xs": {
         "value": 9,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 9px"
       },
       "2xs": {
         "value": 10,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 10px"
       },
       "xs": {
         "value": 11,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 11px"
       },
       "sm": {
         "value": 12,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 12px"
       },
       "md": {
         "value": 13,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 13px"
       },
       "lg": {
         "value": 14,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 14px"
       },
       "xl": {
         "value": 15,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 15px"
       },
       "2xl": {
         "value": 16,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 16px"
       },
       "3xl": {
         "value": 18,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 18px"
       },
       "4xl": {
         "value": 20,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 20px"
       },
       "5xl": {
         "value": 24,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 24px"
       },
       "6xl": {
         "value": 30,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 30px"
       },
       "7xl": {
         "value": 36,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 36px"
       },
       "8xl": {
         "value": 48,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 48px"
       },
       "9xl": {
         "value": 60,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 60px"
       },
       "10xl": {
         "value": 72,
-        "type": "number"
+        "type": "number",
+        "description": "Font size: 72px"
       }
     },
     "weight": {
       "thin": {
         "value": 100,
-        "type": "number"
+        "type": "number",
+        "description": "Font weight: 100 (Thin)"
       },
       "extra-light": {
         "value": 200,
-        "type": "number"
+        "type": "number",
+        "description": "Font weight: 200 (Extra Light)"
       },
       "light": {
         "value": 300,
-        "type": "number"
+        "type": "number",
+        "description": "Font weight: 300 (Light)"
       },
       "regular": {
         "value": 400,
-        "type": "number"
+        "type": "number",
+        "description": "Font weight: 400 (Regular)"
       },
       "medium": {
         "value": 500,
-        "type": "number"
+        "type": "number",
+        "description": "Font weight: 500 (Medium)"
       },
       "semibold": {
         "value": 600,
-        "type": "number"
+        "type": "number",
+        "description": "Font weight: 600 (Semibold)"
       },
       "bold": {
         "value": 700,
-        "type": "number"
+        "type": "number",
+        "description": "Font weight: 700 (Bold)"
       },
       "extra-bold": {
         "value": 800,
-        "type": "number"
+        "type": "number",
+        "description": "Font weight: 800 (Extra Bold)"
       },
       "black": {
         "value": 900,
-        "type": "number"
+        "type": "number",
+        "description": "Font weight: 900 (Black)"
       }
     },
     "letter-spacing": {
       "normal": {
         "value": 0,
-        "type": "number"
+        "type": "number",
+        "description": "Letter spacing: 0px (Normal)"
       },
       "wide": {
         "value": 0.5,
-        "type": "number"
+        "type": "number",
+        "description": "Letter spacing: 0.5px (Wide)"
       },
       "wider": {
         "value": 1,
-        "type": "number"
+        "type": "number",
+        "description": "Letter spacing: 1px (Wider)"
       },
       "widest": {
         "value": 2,
-        "type": "number"
+        "type": "number",
+        "description": "Letter spacing: 2px (Widest)"
       },
       "close": {
         "value": -0.5,
-        "type": "number"
+        "type": "number",
+        "description": "Letter spacing: -0.5px (Close)"
       },
       "closer": {
         "value": -1,
-        "type": "number"
+        "type": "number",
+        "description": "Letter spacing: -1px (Closer)"
       },
       "closest": {
         "value": -2,
-        "type": "number"
+        "type": "number",
+        "description": "Letter spacing: -2px (Closest)"
       }
     },
     "paragraph-spacing": {
       "xs": {
         "value": 12,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 12px"
       },
       "sm": {
         "value": 16,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 16px"
       },
       "md": {
         "value": 20,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 20px"
       },
       "lg": {
         "value": 24,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 24px"
       },
       "xl": {
         "value": 36,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 36px"
       },
       "2xl": {
         "value": 48,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 48px"
       },
       "3xl": {
         "value": 56,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 56px"
       },
       "4xl": {
         "value": 72,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 72px"
       },
       "5xl": {
         "value": 96,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 96px"
       },
       "6xl": {
         "value": 112,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 112px"
       },
       "7xl": {
         "value": 128,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 128px"
       },
       "8xl": {
         "value": 144,
-        "type": "number"
+        "type": "number",
+        "description": "Paragraph spacing: 144px"
       }
     },
     "line-height": {
       "4xs": {
         "value": 12,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 12px"
       },
       "3xs": {
         "value": 14,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 14px"
       },
       "2xs": {
         "value": 15,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 15px"
       },
       "xs": {
         "value": 16,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 16px"
       },
       "sm": {
         "value": 17,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 17px"
       },
       "md": {
         "value": 18,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 18px"
       },
       "lg": {
         "value": 20,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 20px"
       },
       "xl": {
         "value": 20,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 20px"
       },
       "2xl": {
         "value": 24,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 24px"
       },
       "3xl": {
         "value": 28,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 28px"
       },
       "4xl": {
         "value": 30,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 30px"
       },
       "5xl": {
         "value": 32,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 32px"
       },
       "6xl": {
         "value": 38,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 38px"
       },
       "7xl": {
         "value": 44,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 44px"
       },
       "8xl": {
         "value": 60,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 60px"
       },
       "9xl": {
         "value": 72,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 72px"
       },
       "10xl": {
         "value": 90,
-        "type": "number"
+        "type": "number",
+        "description": "Line height: 90px"
       }
     }
   },
   "z-index": {
     "0": {
       "value": 0,
-      "type": "number"
+      "type": "number",
+      "description": "Z-index: 0"
     },
     "1": {
       "value": 100,
-      "type": "number"
+      "type": "number",
+      "description": "Z-index: 100"
     },
     "2": {
       "value": 200,
-      "type": "number"
+      "type": "number",
+      "description": "Z-index: 200"
     },
     "3": {
       "value": 300,
-      "type": "number"
+      "type": "number",
+      "description": "Z-index: 300"
     },
     "4": {
       "value": 400,
-      "type": "number"
+      "type": "number",
+      "description": "Z-index: 400"
     },
     "5": {
       "value": 500,
-      "type": "number"
+      "type": "number",
+      "description": "Z-index: 500"
     },
     "6": {
       "value": 600,
-      "type": "number"
+      "type": "number",
+      "description": "Z-index: 600"
     },
     "7": {
       "value": 700,
-      "type": "number"
+      "type": "number",
+      "description": "Z-index: 700"
     },
     "8": {
       "value": 800,
-      "type": "number"
+      "type": "number",
+      "description": "Z-index: 800"
     },
     "9": {
       "value": 900,
-      "type": "number"
+      "type": "number",
+      "description": "Z-index: 900"
     },
     "10": {
       "value": 1000,
-      "type": "number"
+      "type": "number",
+      "description": "Z-index: 1000"
     }
   },
   "breakpoint": {
     "xs": {
       "value": 0,
-      "type": "number"
+      "type": "number",
+      "description": "Breakpoint: 0px (Extra Small)"
     },
     "sm": {
       "value": 376,
-      "type": "number"
+      "type": "number",
+      "description": "Breakpoint: 376px (Small)"
     },
     "md": {
       "value": 769,
-      "type": "number"
+      "type": "number",
+      "description": "Breakpoint: 769px (Medium)"
     },
     "lg": {
       "value": 1025,
-      "type": "number"
+      "type": "number",
+      "description": "Breakpoint: 1025px (Large)"
     },
     "xl": {
       "value": 1440,
-      "type": "number"
+      "type": "number",
+      "description": "Breakpoint: 1440px (Extra Large)"
     }
   },
   "opacity": {
     "0": {
       "value": 0,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 0%"
     },
     "1": {
       "value": 100,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 100%"
     },
     "0[05]": {
       "value": 5,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 5%"
     },
     "0[1]": {
       "value": 10,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 10%"
     },
     "0[15]": {
       "value": 15,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 15%"
     },
     "0[2]": {
       "value": 20,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 20%"
     },
     "0[25]": {
       "value": 25,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 25%"
     },
     "0[3]": {
       "value": 30,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 30%"
     },
     "0[35]": {
       "value": 35,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 35%"
     },
     "0[4]": {
       "value": 40,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 40%"
     },
     "0[45]": {
       "value": 45,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 45%"
     },
     "0[5]": {
       "value": 50,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 50%"
     },
     "0[55]": {
       "value": 55,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 55%"
     },
     "0[6]": {
       "value": 60,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 60%"
     },
     "0[65]": {
       "value": 65,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 65%"
     },
     "0[7]": {
       "value": 70,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 70%"
     },
     "0[75]": {
       "value": 75,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 75%"
     },
     "0[8]": {
       "value": 80,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 80%"
     },
     "0[85]": {
       "value": 85,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 85%"
     },
     "0[9]": {
       "value": 90,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 90%"
     },
     "0[95]": {
       "value": 95,
-      "type": "number"
+      "type": "number",
+      "description": "Opacity: 95%"
     }
   },
   "size": {
     "0": {
       "value": 0.001,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 0.001px"
     },
     "1": {
       "value": 4,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 4px"
     },
     "2": {
       "value": 8,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 8px"
     },
     "3": {
       "value": 12,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 12px"
     },
     "4": {
       "value": 16,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 16px"
     },
     "5": {
       "value": 20,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 20px"
     },
     "6": {
       "value": 24,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 24px"
     },
     "7": {
       "value": 28,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 28px"
     },
     "8": {
       "value": 32,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 32px"
     },
     "9": {
       "value": 36,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 36px"
     },
     "10": {
       "value": 40,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 40px"
     },
     "11": {
       "value": 44,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 44px"
     },
     "12": {
       "value": 48,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 48px"
     },
     "13": {
       "value": 52,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 52px"
     },
     "14": {
       "value": 56,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 56px"
     },
     "15": {
       "value": 60,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 60px"
     },
     "16": {
       "value": 64,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 64px"
     },
     "17": {
       "value": 68,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 68px"
     },
     "18": {
       "value": 72,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 72px"
     },
     "19": {
       "value": 76,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 76px"
     },
     "20": {
       "value": 80,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 80px"
     },
     "22": {
       "value": 88,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 88px"
     },
     "24": {
       "value": 96,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 96px"
     },
     "28": {
       "value": 112,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 112px"
     },
     "32": {
       "value": 128,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 128px"
     },
     "36": {
       "value": 144,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 144px"
     },
     "40": {
       "value": 160,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 160px"
     },
     "45": {
       "value": 180,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 180px"
     },
     "54": {
       "value": 216,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 216px"
     },
     "56": {
       "value": 224,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 224px"
     },
     "60": {
       "value": 240,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 240px"
     },
     "64": {
       "value": 256,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 256px"
     },
     "70": {
       "value": 280,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 280px"
     },
     "80": {
       "value": 320,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 320px"
     },
     "90": {
       "value": 360,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 360px"
     },
     "96": {
       "value": 384,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 384px"
     },
     "112": {
       "value": 448,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 448px"
     },
     "128": {
       "value": 512,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 512px"
     },
     "144": {
       "value": 576,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 576px"
     },
     "160": {
       "value": 640,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 640px"
     },
     "192": {
       "value": 768,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 768px"
     },
     "240": {
       "value": 960,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 960px"
     },
     "256": {
       "value": 1024,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 1024px"
     },
     "266": {
       "value": 1064,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 1064px"
     },
     "282": {
       "value": 1128,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 1128px"
     },
     "290": {
       "value": 1160,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 1160px"
     },
     "346": {
       "value": 1384,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 1384px"
     },
     "360": {
       "value": 1440,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 1440px"
     },
     "0[25]": {
       "value": 1,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 1px"
     },
     "0[5]": {
       "value": 2,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 2px"
     },
     "1[5]": {
       "value": 6,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 6px"
     },
     "2[5]": {
       "value": 10,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 10px"
     },
     "3[5]": {
       "value": 14,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 14px"
     },
     "4[25]": {
       "value": 17,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 17px"
     },
     "4[5]": {
       "value": 18,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 18px"
     },
     "5[5]": {
       "value": 22,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 22px"
     },
     "6[5]": {
       "value": 26,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 26px"
     },
     "7[5]": {
       "value": 30,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 30px"
     },
     "8[5]": {
       "value": 34,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 34px"
     },
     "9[5]": {
       "value": 38,
-      "type": "number"
+      "type": "number",
+      "description": "Size: 38px"
     }
   },
   "position": {
       "0": {
         "value": 0,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 0px"
       },
       "1": {
         "value": 4,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 4px"
       },
       "2": {
         "value": 8,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 8px"
       },
       "3": {
         "value": 12,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 12px"
       },
       "4": {
         "value": 16,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 16px"
       },
       "5": {
         "value": 20,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 20px"
       },
       "6": {
         "value": 24,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 24px"
       },
       "7": {
         "value": 28,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 28px"
       },
       "8": {
         "value": 32,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 32px"
       },
       "9": {
         "value": 36,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 36px"
       },
       "10": {
         "value": 40,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 40px"
       },
       "11": {
         "value": 44,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 44px"
       },
       "12": {
         "value": 48,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 48px"
       },
       "14": {
         "value": 56,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 56px"
       },
       "16": {
         "value": 64,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 64px"
       },
       "18": {
         "value": 72,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 72px"
       },
       "20": {
         "value": 80,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 80px"
       },
       "24": {
         "value": 96,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 96px"
       },
       "40": {
         "value": 160,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 160px"
       },
       "-20": {
         "value": -80,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -80px"
       },
       "-18": {
         "value": -72,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -72px"
       },
       "-16": {
         "value": -64,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -64px"
       },
       "-14": {
         "value": -56,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -56px"
       },
       "-12": {
         "value": -48,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -48px"
       },
       "-11": {
         "value": -44,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -44px"
       },
       "-10": {
         "value": -40,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -40px"
       },
       "-9": {
         "value": -36,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -36px"
       },
       "-8": {
         "value": -32,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -32px"
       },
       "-7": {
         "value": -28,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -28px"
       },
       "-6": {
         "value": -24,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -24px"
       },
       "-5": {
         "value": -20,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -20px"
       },
       "-4[5]": {
         "value": -18,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -18px"
       },
       "-4": {
         "value": -16,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -16px"
       },
       "-3[5]": {
         "value": -14,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -14px"
       },
       "-3": {
         "value": -12,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -12px"
       },
       "-2[5]": {
         "value": -10,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -10px"
       },
       "-2": {
         "value": -8,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -8px"
       },
       "-1[5]": {
         "value": -6,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -6px"
       },
       "-1": {
         "value": -4,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -4px"
       },
       "-0[75]": {
         "value": -3,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -3px"
       },
       "-0[5]": {
         "value": -2,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -2px"
       },
       "-0[25]": {
         "value": -1,
-        "type": "number"
+        "type": "number",
+        "description": "Position: -1px"
       },
       "0[25]": {
         "value": 1,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 1px"
       },
       "0[5]": {
         "value": 2,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 2px"
       },
       "0[75]": {
         "value": 3,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 3px"
       },
       "1[5]": {
         "value": 6,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 6px"
       },
       "2[5]": {
         "value": 10,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 10px"
       },
       "3[5]": {
         "value": 14,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 14px"
       },
       "4[5]": {
         "value": 18,
-        "type": "number"
+        "type": "number",
+        "description": "Position: 18px"
       } 
   },
   "blur": {
     "0": {
       "value": 0,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 0px"
     },
     "1": {
       "value": 4,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 4px"
     },
     "2": {
       "value": 8,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 8px"
     },
     "3": {
       "value": 12,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 12px"
     },
     "4": {
       "value": 16,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 16px"
     },
     "5": {
       "value": 20,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 20px"
     },
     "6": {
       "value": 24,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 24px"
     },
     "7": {
       "value": 28,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 28px"
     },
     "8": {
       "value": 32,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 32px"
     },
     "9": {
       "value": 36,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 36px"
     },
     "10": {
       "value": 40,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 40px"
     },
     "11": {
       "value": 44,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 44px"
     },
     "12": {
       "value": 48,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 48px"
     },
     "14": {
       "value": 56,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 56px"
     },
     "16": {
       "value": 64,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 64px"
     },
     "18": {
       "value": 72,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 72px"
     },
     "20": {
       "value": 80,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 80px"
     },
     "0[25]": {
       "value": 1,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 1px"
     },
     "0[5]": {
       "value": 2,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 2px"
     },
     "0[75]": {
       "value": 3,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 3px"
     },
     "1[5]": {
       "value": 6,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 6px"
     },
     "2[5]": {
       "value": 10,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 10px"
     },
     "3[5]": {
       "value": 14,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 14px"
     },
     "4[5]": {
       "value": 18,
-      "type": "number"
+      "type": "number",
+      "description": "Blur: 18px"
     }
   },
   "spread": {
     "0": {
       "value": 0,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 0px"
     },
     "1": {
       "value": 4,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 4px"
     },
     "2": {
       "value": 8,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 8px"
     },
     "3": {
       "value": 12,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 12px"
     },
     "4": {
       "value": 16,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 16px"
     },
     "5": {
       "value": 20,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 20px"
     },
     "6": {
       "value": 24,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 24px"
     },
     "7": {
       "value": 28,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 28px"
     },
     "8": {
       "value": 32,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 32px"
     },
     "9": {
       "value": 36,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 36px"
     },
     "10": {
       "value": 40,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 40px"
     },
     "11": {
       "value": 44,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 44px"
     },
     "12": {
       "value": 48,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 48px"
     },
     "14": {
       "value": 56,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 56px"
     },
     "16": {
       "value": 64,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 64px"
     },
     "18": {
       "value": 72,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 72px"
     },
     "20": {
       "value": 80,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 80px"
     },
     "-20": {
       "value": -80,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -80px"
     },
     "-18": {
       "value": -72,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -72px"
     },
     "-16": {
       "value": -64,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -64px"
     },
     "-14": {
       "value": -56,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -56px"
     },
     "-12": {
       "value": -48,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -48px"
     },
     "-11": {
       "value": -44,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -44px"
     },
     "-10": {
       "value": -40,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -40px"
     },
     "-9": {
       "value": -36,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -36px"
     },
     "-8": {
       "value": -32,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -32px"
     },
     "-7": {
       "value": -28,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -28px"
     },
     "-6": {
       "value": -24,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -24px"
     },
     "-5": {
       "value": -20,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -20px"
     },
     "-4[5]": {
       "value": -18,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -18px"
     },
     "-4": {
       "value": -16,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -16px"
     },
     "-3[5]": {
       "value": -14,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -14px"
     },
     "-3": {
       "value": -12,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -12px"
     },
     "-2[5]": {
       "value": -10,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -10px"
     },
     "-2": {
       "value": -8,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -8px"
     },
     "-1[5]": {
       "value": -6,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -6px"
     },
     "-1": {
       "value": -4,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -4px"
     },
     "-0[75]": {
       "value": -3,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -3px"
     },
     "-0[5]": {
       "value": -2,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -2px"
     },
     "-0[25]": {
       "value": -1,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: -1px"
     },
     "0[25]": {
       "value": 1,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 1px"
     },
     "0[5]": {
       "value": 2,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 2px"
     },
     "0[75]": {
       "value": 3,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 3px"
     },
     "1[5]": {
       "value": 6,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 6px"
     },
     "2[5]": {
       "value": 10,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 10px"
     },
     "3[5]": {
       "value": 14,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 14px"
     },
     "4[5]": {
       "value": 18,
-      "type": "number"
+      "type": "number",
+      "description": "Spread: 18px"
     }
   },
   "motion": {

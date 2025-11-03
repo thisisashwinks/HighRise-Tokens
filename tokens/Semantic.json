@@ -1296,6 +1296,11 @@
         "type": "dimension",
         "description": "Padding (horizontal): 34px"
       },
+      "none": {
+        "value": "{padding.0}",
+        "type": "dimension",
+        "description": "Padding (horizontal): 0px"
+      },
       "4xs": {
         "value": "{padding.1[5]}",
         "type": "dimension",
@@ -4738,6 +4743,11 @@
         "value": "{border.width.0[25]}",
         "type": "dimension",
         "description": "Border width: 1px"
+      },
+      "sm": {
+        "value": "{border.width.0[375]}",
+        "type": "dimension",
+        "description": "Border width: 1.5px"
       },
       "md": {
         "value": "{border.width.0[5]}",
