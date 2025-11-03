@@ -4,115 +4,141 @@
       "radius": {
         "lg": {
           "value": "{border.radius.lg}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Border radius for large input form container - 8px"
         },
         "md": {
           "value": "{border.radius.lg}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Border radius for medium input form container - 8px"
         },
         "sm": {
           "value": "{border.radius.sm}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Border radius for small input form container - 6px"
         },
         "xs": {
           "value": "{border.radius.xs}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Border radius for extra small input form container - 4px"
         },
         "2xs": {
           "value": "{border.radius.xs}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Border radius for 2xs input form container - 4px"
         },
         "3xs": {
           "value": "{border.radius.xs}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Border radius for 3xs input form container - 4px (smallest size)"
         }
       },
       "width": {
         "value": "{border.width.default}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Default border width for input form container - typically 1px"
       }
     },
     "height": {
       "lg": {
         "value": "{size.44}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Height of large input form container - 44px"
       },
       "md": {
         "value": "{size.40}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Height of medium input form container - 40px"
       },
       "sm": {
         "value": "{size.36}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Height of small input form container - 36px"
       },
       "xs": {
         "value": "{size.32}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Height of extra small input form container - 32px"
       },
       "2xs": {
         "value": "{size.28}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Height of 2xs input form container - 28px"
       },
       "3xs": {
         "value": "{size.24}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Height of 3xs input form container - 24px (smallest size)"
       }
     },
     "min-width": {
       "value": "{size.80}",
-      "type": "dimension"
+      "type": "dimension",
+      "$description": "Minimum width for input form to ensure usability - 80px"
     },
     "gap": {
       "lg": {
         "value": "{gap.xs}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Gap between label, input, and hint text for large size - 4px"
       },
       "md": {
         "value": "{gap.xs}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Gap between label, input, and hint text for medium size - 4px"
       },
       "sm": {
         "value": "{gap.xs}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Gap between label, input, and hint text for small size - 4px"
       },
       "xs": {
         "value": "{gap.xs}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Gap between label, input, and hint text for xs size - 4px"
       },
       "2xs": {
         "value": "{gap.xs}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Gap between label, input, and hint text for 2xs size - 4px"
       },
       "3xs": {
         "value": "{gap.xs}",
-        "type": "dimension"
+        "type": "dimension",
+        "$description": "Gap between label, input, and hint text for 3xs size - 4px"
       }
     },
     "text": {
       "typography": {
         "lg": {
           "value": "{font.body.regular.base}",
-          "type": "typography"
+          "type": "typography",
+          "$description": "Typography for input text in large form - Regular 16px"
         },
         "md": {
           "value": "{font.body.regular.base}",
-          "type": "typography"
+          "type": "typography",
+          "$description": "Typography for input text in medium form - Regular 16px"
         },
         "sm": {
           "value": "{font.body.regular.md}",
-          "type": "typography"
+          "type": "typography",
+          "$description": "Typography for input text in small form - Regular 14px"
         },
         "xs": {
           "value": "{font.body.regular.xs}",
-          "type": "typography"
+          "type": "typography",
+          "$description": "Typography for input text in xs form - Regular 13px"
         },
         "2xs": {
           "value": "{font.body.regular.2xs}",
-          "type": "typography"
+          "type": "typography",
+          "$description": "Typography for input text in 2xs form - Regular 12px"
         },
         "3xs": {
           "value": "{font.body.regular.3xs}",
-          "type": "typography"
+          "type": "typography",
+          "$description": "Typography for input text in 3xs form - Regular 11px (smallest)"
         }
       }
     },
@@ -122,49 +148,59 @@
           "background": {
             "default": {
               "value": "{color.background.neutral.base}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default neutral background color for input form"
             },
             "disabled": {
               "value": "{color.background.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background color when input form is disabled"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.neutral.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default border color for neutral state"
             },
             "hover": {
               "value": "{color.border.neutral.moderate.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border color on hover for neutral state"
             },
             "focused": {
               "value": "{color.border.primary.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border color when input is focused (primary color)"
             },
             "disabled": {
               "value": "{color.border.neutral.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border color when input is disabled"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default text color for input value"
             },
             "placeholder": {
               "value": "{color.text.neutral.subtitle.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Placeholder text color (lighter than default text)"
             },
             "disabled": {
               "value": "{color.text.neutral.subtitle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when input is disabled"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.primary.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for neutral state (primary accent)"
             }
           }
         }
@@ -174,49 +210,59 @@
           "background": {
             "default": {
               "value": "{color.background.neutral.base}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background color for success state (keeps neutral base)"
             },
             "disabled": {
               "value": "{color.background.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background color when success input is disabled"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.success.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Success state border color (green)"
             },
             "hover": {
               "value": "{color.border.success.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Success border color on hover (darker green)"
             },
             "focused": {
               "value": "{color.border.success.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Success border color when focused"
             },
             "disabled": {
               "value": "{color.border.success.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Success border color when disabled"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color in success state (neutral text)"
             },
             "placeholder": {
               "value": "{color.text.neutral.subtitle.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Placeholder text in success state"
             },
             "disabled": {
               "value": "{color.text.neutral.subtitle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when success input is disabled"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.success.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for success state (light green)"
             }
           }
         }
@@ -226,49 +272,59 @@
           "background": {
             "default": {
               "value": "{color.background.neutral.base}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background color for error state (keeps neutral base)"
             },
             "disabled": {
               "value": "{color.background.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background color when error input is disabled"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.error.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Error state border color (red)"
             },
             "hover": {
               "value": "{color.border.error.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Error border color on hover (darker red)"
             },
             "focused": {
               "value": "{color.border.error.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Error border color when focused"
             },
             "disabled": {
               "value": "{color.border.error.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Error border color when disabled"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color in error state (neutral text)"
             },
             "placeholder": {
               "value": "{color.text.neutral.subtitle.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Placeholder text in error state"
             },
             "disabled": {
               "value": "{color.text.neutral.subtitle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when error input is disabled"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.error.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for error state (light red)"
             }
           }
         }
@@ -278,49 +334,59 @@
           "background": {
             "default": {
               "value": "{color.background.neutral.base}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background color for warning state (keeps neutral base)"
             },
             "disabled": {
               "value": "{color.background.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background color when warning input is disabled"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.warning.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Warning state border color (orange/yellow)"
             },
             "hover": {
               "value": "{color.border.warning.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Warning border color on hover (darker orange)"
             },
             "focused": {
               "value": "{color.border.warning.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Warning border color when focused"
             },
             "disabled": {
               "value": "{color.border.warning.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Warning border color when disabled"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color in warning state (neutral text)"
             },
             "placeholder": {
               "value": "{color.text.neutral.subtitle.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Placeholder text in warning state"
             },
             "disabled": {
               "value": "{color.text.neutral.subtitle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when warning input is disabled"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.warning.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for warning state (light orange)"
             }
           }
         }
@@ -331,44 +397,53 @@
         "typography": {
           "lg": {
             "value": "{font.body.medium.base}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Label typography for large form - Medium 16px/20px (as per Figma: Inter Medium 14px)"
           },
           "md": {
             "value": "{font.body.medium.base}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Label typography for medium form - Medium 16px/20px (as per Figma: Inter Medium 14px)"
           },
           "sm": {
             "value": "{font.body.medium.md}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Label typography for small form - Medium 14px/20px (as per Figma: Inter Medium 14px)"
           },
           "xs": {
             "value": "{font.body.medium.xs}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Label typography for xs form - Medium 13px (as per Figma: Inter Medium 14px)"
           },
           "2xs": {
             "value": "{font.body.medium.2xs}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Label typography for 2xs form - Medium 12px (as per Figma: Inter Medium 14px)"
           },
           "3xs": {
             "value": "{font.body.medium.3xs}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Label typography for 3xs form - Medium 11px (smallest, as per Figma: Inter Medium 14px)"
           }
         },
         "color": {
           "default": {
             "value": "{color.text.neutral.body.2}",
-            "type": "color"
+            "type": "color",
+            "$description": "Default label text color - #101828 (gray.900)"
           },
           "disabled": {
             "value": "{color.text.neutral.subtitle.2}",
-            "type": "color"
+            "type": "color",
+            "$description": "Label text color when form is disabled"
           }
         }
       },
       "spacing": {
         "bottom": {
           "value": "{gap.3xs}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Space between label and input field - 4px"
         }
       }
     },
@@ -377,56 +452,68 @@
         "typography": {
           "lg": {
             "value": "{font.body.regular.md}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Helper text typography for large form - Regular 14px/18px (as per Figma: 13px/18px)"
           },
           "md": {
             "value": "{font.body.regular.md}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Helper text typography for medium form - Regular 14px/18px (as per Figma: 13px/18px)"
           },
           "sm": {
             "value": "{font.body.regular.xs}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Helper text typography for small form - Regular 13px/18px (as per Figma: 13px/18px)"
           },
           "xs": {
             "value": "{font.body.regular.2xs}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Helper text typography for xs form - Regular 12px (as per Figma: 13px/18px)"
           },
           "2xs": {
             "value": "{font.body.regular.3xs}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Helper text typography for 2xs form - Regular 11px (as per Figma: 13px/18px)"
           },
           "3xs": {
             "value": "{font.body.regular.4xs}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Helper text typography for 3xs form - Regular 10px (smallest, as per Figma: 13px/18px)"
           }
         },
         "color": {
           "neutral": {
             "value": "{color.text.neutral.subtitle.1}",
-            "type": "color"
+            "type": "color",
+            "$description": "Helper text color for neutral state - #475467 (gray.600)"
           },
           "success": {
             "value": "{color.text.success.body.2}",
-            "type": "color"
+            "type": "color",
+            "$description": "Helper text color for success state (green)"
           },
           "error": {
             "value": "{color.text.error.body.2}",
-            "type": "color"
+            "type": "color",
+            "$description": "Helper text color for error state (red)"
           },
           "warning": {
             "value": "{color.text.warning.body.2}",
-            "type": "color"
+            "type": "color",
+            "$description": "Helper text color for warning state (orange)"
           },
           "disabled": {
             "value": "{color.text.neutral.subtitle.2}",
-            "type": "color"
+            "type": "color",
+            "$description": "Helper text color when form is disabled"
           }
         }
       },
       "spacing": {
         "top": {
           "value": "{gap.3xs}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Space between input field and helper text below - 4px"
         }
       }
     },
@@ -435,46 +522,55 @@
         "typography": {
           "lg": {
             "value": "{font.body.semibold.base}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Action button typography for large form - Semibold 16px (as per Figma: Semibold 16px/24px)"
           },
           "md": {
             "value": "{font.body.semibold.md}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Action button typography for medium form - Semibold 14px (as per Figma: Semibold 14px/20px)"
           },
           "sm": {
             "value": "{font.body.semibold.md}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Action button typography for small form - Semibold 14px (as per Figma: Semibold 14px/20px)"
           },
           "xs": {
             "value": "{font.body.semibold.xs}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Action button typography for xs form - Semibold 13px (as per Figma: Semibold 14px/20px)"
           },
           "2xs": {
             "value": "{font.body.semibold.2xs}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Action button typography for 2xs form - Semibold 12px (as per Figma: Semibold 14px/20px)"
           },
           "3xs": {
             "value": "{font.body.semibold.3xs}",
-            "type": "typography"
+            "type": "typography",
+            "$description": "Action button typography for 3xs form - Semibold 11px (smallest, as per Figma: Semibold 14px/20px)"
           }
         },
         "color": {
           "primary": {
             "value": "{color.text.primary.body.2}",
-            "type": "color"
+            "type": "color",
+            "$description": "Action button text color - Primary blue #004EEB"
           },
           "neutral": {
             "value": "{color.text.neutral.body.1}",
-            "type": "color"
+            "type": "color",
+            "$description": "Action button text color for neutral variant"
           }
         }
       },
       "spacing": {
         "left": {
           "value": "{gap.xs}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Space on the left side of action button when in label row - 4px to 8px based on size"
         }
       }
     }
   }
-} 
+}

@@ -1,0 +1,448 @@
+{
+  "content-switcher": {
+    "shared": {
+      "container": {
+        "border": {
+          "radius": {
+            "value": "{border.radius.xs}",
+            "type": "dimension",
+            "description": "Border radius for the content switcher container"
+          },
+          "width": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Border width for the content switcher container"
+          }
+        }
+      },
+      "item": {
+        "border": {
+          "width": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Border width for content switcher items"
+          }
+        },
+        "padding": {
+          "3xs": {
+            "value": "{padding.1[5]}",
+            "type": "dimension",
+            "description": "Padding for 3xs content switcher items"
+          },
+          "2xs": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Padding for 2xs content switcher items"
+          },
+          "xs": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Padding for xs content switcher items"
+          },
+          "sm": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Padding for sm content switcher items"
+          },
+          "md": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Padding for md content switcher items"
+          },
+          "lg": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Padding for lg content switcher items"
+          }
+        },
+        "gap": {
+          "3xs": {
+            "value": "{gap.1}",
+            "type": "dimension",
+            "description": "Gap between icon and text for 3xs items"
+          },
+          "2xs": {
+            "value": "{gap.1[5]}",
+            "type": "dimension",
+            "description": "Gap between icon and text for 2xs items"
+          },
+          "xs": {
+            "value": "{gap.2}",
+            "type": "dimension",
+            "description": "Gap between icon and text for xs items"
+          },
+          "sm": {
+            "value": "{gap.2}",
+            "type": "dimension",
+            "description": "Gap between icon and text for sm items"
+          },
+          "md": {
+            "value": "{gap.2}",
+            "type": "dimension",
+            "description": "Gap between icon and text for md items"
+          },
+          "lg": {
+            "value": "{gap.2}",
+            "type": "dimension",
+            "description": "Gap between icon and text for lg items"
+          }
+        },
+        "height": {
+          "3xs": {
+            "value": "{size.height.3xs}",
+            "type": "dimension",
+            "description": "Height for 3xs content switcher items"
+          },
+          "2xs": {
+            "value": "{size.height.2xs}",
+            "type": "dimension",
+            "description": "Height for 2xs content switcher items"
+          },
+          "xs": {
+            "value": "{size.height.xs}",
+            "type": "dimension",
+            "description": "Height for xs content switcher items"
+          },
+          "sm": {
+            "value": "{size.height.sm}",
+            "type": "dimension",
+            "description": "Height for sm content switcher items"
+          },
+          "md": {
+            "value": "{size.height.md}",
+            "type": "dimension",
+            "description": "Height for md content switcher items"
+          },
+          "lg": {
+            "value": "{size.height.lg}",
+            "type": "dimension",
+            "description": "Height for lg content switcher items"
+          }
+        }
+      },
+      "text": {
+        "typography": {
+          "3xs": {
+            "value": "{font.body.semibold.xs}",
+            "type": "typography",
+            "description": "Typography for 3xs content switcher text"
+          },
+          "2xs": {
+            "value": "{font.body.semibold.sm}",
+            "type": "typography",
+            "description": "Typography for 2xs content switcher text"
+          },
+          "xs": {
+            "value": "{font.body.semibold.md}",
+            "type": "typography",
+            "description": "Typography for xs content switcher text"
+          },
+          "sm": {
+            "value": "{font.body.semibold.lg}",
+            "type": "typography",
+            "description": "Typography for sm content switcher text"
+          },
+          "md": {
+            "value": "{font.body.semibold.lg}",
+            "type": "typography",
+            "description": "Typography for md content switcher text"
+          },
+          "lg": {
+            "value": "{font.body.semibold.2xl}",
+            "type": "typography",
+            "description": "Typography for lg content switcher text"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "3xs": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Icon size for 3xs content switcher items"
+          },
+          "2xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Icon size for 2xs content switcher items"
+          },
+          "xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Icon size for xs content switcher items"
+          },
+          "sm": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Icon size for sm content switcher items"
+          },
+          "md": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Icon size for md content switcher items"
+          },
+          "lg": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Icon size for lg content switcher items"
+          }
+        }
+      }
+    },
+    "variants": {
+      "primary": {
+        "container": {
+          "border": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Primary variant container border color"
+          }
+        },
+        "item": {
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Primary variant default item background"
+            },
+            "hover": {
+              "value": "{color.background.primary.subtle.0}",
+              "type": "color",
+              "description": "Primary variant hover item background"
+            },
+            "active": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "description": "Primary variant active/selected item background"
+            },
+            "focused": {
+              "value": "{color.background.primary.subtle.0}",
+              "type": "color",
+              "description": "Primary variant focused item background"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Primary variant disabled item background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Primary variant default item border"
+            },
+            "hover": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Primary variant hover item border"
+            },
+            "active": {
+              "value": "{color.border.primary.subtle.1}",
+              "type": "color",
+              "description": "Primary variant active/selected item border"
+            },
+            "focused": {
+              "value": "{color.border.primary.subtle.2}",
+              "type": "color",
+              "description": "Primary variant focused item border"
+            },
+            "disabled": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Primary variant disabled item border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.1}",
+              "type": "color",
+              "description": "Primary variant default text color"
+            },
+            "hover": {
+              "value": "{color.text.primary.body.1}",
+              "type": "color",
+              "description": "Primary variant hover text color"
+            },
+            "active": {
+              "value": "{color.text.primary.body.2}",
+              "type": "color",
+              "description": "Primary variant active/selected text color"
+            },
+            "focused": {
+              "value": "{color.text.primary.body.1}",
+              "type": "color",
+              "description": "Primary variant focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.inactive}",
+              "type": "color",
+              "description": "Primary variant disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.1}",
+              "type": "color",
+              "description": "Primary variant default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Primary variant hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.primary.moderate.1}",
+              "type": "color",
+              "description": "Primary variant active/selected icon color"
+            },
+            "focused": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Primary variant focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "description": "Primary variant disabled icon color"
+            }
+          },
+          "focus": {
+            "ring": {
+              "value": "{color.border.primary.subtle.2}",
+              "type": "color",
+              "description": "Primary variant focus ring color"
+            }
+          }
+        }
+      },
+      "secondary": {
+        "container": {
+          "border": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Secondary variant container border color"
+          }
+        },
+        "item": {
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Secondary variant default item background"
+            },
+            "hover": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "description": "Secondary variant hover item background"
+            },
+            "active": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Secondary variant active/selected item background"
+            },
+            "focused": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "description": "Secondary variant focused item background"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Secondary variant disabled item background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Secondary variant default item border"
+            },
+            "hover": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Secondary variant hover item border"
+            },
+            "active": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Secondary variant active/selected item border"
+            },
+            "focused": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Secondary variant focused item border"
+            },
+            "disabled": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Secondary variant disabled item border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "description": "Secondary variant default text color"
+            },
+            "hover": {
+              "value": "{color.text.neutral.body.1}",
+              "type": "color",
+              "description": "Secondary variant hover text color"
+            },
+            "active": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "description": "Secondary variant active/selected text color"
+            },
+            "focused": {
+              "value": "{color.text.neutral.body.1}",
+              "type": "color",
+              "description": "Secondary variant focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.inactive}",
+              "type": "color",
+              "description": "Secondary variant disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.1}",
+              "type": "color",
+              "description": "Secondary variant default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.default}",
+              "type": "color",
+              "description": "Secondary variant hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.neutral.intense.0}",
+              "type": "color",
+              "description": "Secondary variant active/selected icon color"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.default}",
+              "type": "color",
+              "description": "Secondary variant focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "description": "Secondary variant disabled icon color"
+            }
+          },
+          "focus": {
+            "ring": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Secondary variant focus ring color"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

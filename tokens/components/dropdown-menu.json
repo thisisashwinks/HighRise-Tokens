@@ -5,73 +5,80 @@
         "fixed": {
           "value": "{size.width.182}",
           "type": "dimension",
-          "description": "Fixed width for dropdown menu container"
+          "$description": "Fixed width for dropdown menu container - 182px (as per Figma design)"
         },
         "min": {
           "value": "{size.width.160}",
           "type": "dimension",
-          "description": "Minimum width for dropdown menu container"
+          "$description": "Minimum width for dropdown menu container - 160px (for responsive/flexible layouts)"
         },
         "max": {
           "value": "{size.width.360}",
           "type": "dimension",
-          "description": "Maximum width for dropdown menu container"
+          "$description": "Maximum width for dropdown menu container - 360px (for larger content)"
         }
       },
       "background": {
         "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "Dropdown menu background color"
+        "$description": "Dropdown menu background color - White (#ffffff) for clean, elevated surface"
       },
       "border": {
         "color": {
           "value": "{color.border.neutral.default}",
           "type": "color",
-          "description": "Dropdown menu border color"
+          "$description": "Dropdown menu border color - Gray.300 (#d0d5dd) for subtle definition"
         },
         "width": {
           "value": "{border.width.default}",
           "type": "dimension",
-          "description": "Dropdown menu border width"
+          "$description": "Dropdown menu border width - 1px for consistent border appearance"
         },
         "radius": {
-          "value": "{border.radius.sm}",
+          "value": "{border.radius.xs}",
           "type": "dimension",
-          "description": "Dropdown menu border radius"
+          "$description": "Dropdown menu border radius - 4px (as per Figma: rounded corners for modern feel)"
         }
       },
       "shadow": {
         "value": "0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.1)",
         "type": "string",
-        "description": "Dropdown menu box shadow"
+        "$description": "Dropdown menu box shadow - Layered shadow (2px + 4px) for elevated dropdown appearance with subtle depth"
       },
       "padding": {
-        "value": "{padding.0}",
-        "type": "dimension",
-        "description": "Container padding around items"
+        "vertical": {
+          "value": "{padding.1}",
+          "type": "dimension",
+          "$description": "Vertical padding (top and bottom) for dropdown container - 4px (as per Figma: spacing between container edge and items)"
+        },
+        "horizontal": {
+          "value": "{padding.0}",
+          "type": "dimension",
+          "$description": "Horizontal padding (left and right) for dropdown container - 0px (items extend to edges)"
+        }
       }
     },
     "layout": {
       "direction": {
         "value": "column",
         "type": "string",
-        "description": "Layout direction for menu items"
+        "$description": "Layout direction for menu items - Vertical stacking of dropdown list items"
       },
       "gap": {
-        "value": "{gap.0}",
+        "value": "{gap.2xs}",
         "type": "dimension",
-        "description": "Gap between menu items"
+        "$description": "Gap between menu items - 2px (as per Figma: tight spacing between items for cohesive menu appearance)"
       },
       "alignment": {
         "items": {
           "value": "stretch",
           "type": "string",
-          "description": "Item alignment within container"
+          "$description": "Item alignment within container - Items stretch to full width for consistent appearance"
         },
         "content": {
           "value": "flex-start",
           "type": "string",
-          "description": "Content alignment within container"
+          "$description": "Content alignment within container - Items aligned to top of container"
         }
       }
     },
@@ -80,35 +87,35 @@
         "sm": {
           "value": "{size.height.192}",
           "type": "dimension",
-          "description": "Max height for small scrollable dropdown (6 items)"
+          "$description": "Max height for small scrollable dropdown - 192px (approx. 6 items visible, ideal for compact menus)"
         },
         "md": {
           "value": "{size.height.256}",
           "type": "dimension",
-          "description": "Max height for medium scrollable dropdown (8 items)"
+          "$description": "Max height for medium scrollable dropdown - 256px (approx. 8 items visible, standard dropdown size)"
         },
         "lg": {
           "value": "{size.height.360}",
           "type": "dimension",
-          "description": "Max height for large scrollable dropdown (12+ items)"
+          "$description": "Max height for large scrollable dropdown - 360px (approx. 12+ items visible, for extensive menus)"
         }
       },
       "scrollbar": {
         "width": {
           "value": "{size.1}",
           "type": "dimension",
-          "description": "Scrollbar width for scrollable dropdown"
+          "$description": "Scrollbar width for scrollable dropdown - 4px (subtle, minimal scrollbar for clean appearance)"
         },
         "color": {
           "thumb": {
             "value": "{color.background.neutral.moderate.1}",
             "type": "color",
-            "description": "Scrollbar thumb color"
+            "$description": "Scrollbar thumb color - Medium gray for visible but not distracting scrollbar handle"
           },
           "track": {
             "value": "{color.background.neutral.subtle.1}",
             "type": "color",
-            "description": "Scrollbar track color"
+            "$description": "Scrollbar track color - Light gray for subtle scrollbar background"
           }
         }
       }
@@ -117,13 +124,13 @@
       "z-index": {
         "value": "{z-index.xl}",
         "type": "dimension",
-        "description": "Z-index for dropdown menu overlay"
+        "$description": "Z-index for dropdown menu overlay - Extra large z-index (typically 1000+) to ensure dropdown appears above other content"
       },
       "offset": {
         "top": {
           "value": "{gap.0[5]}",
           "type": "dimension",
-          "description": "Offset from trigger element"
+          "$description": "Offset from trigger element - 2px gap between trigger button/field and dropdown for visual separation"
         }
       }
     },
@@ -132,48 +139,48 @@
         "open": {
           "value": "200ms",
           "type": "string",
-          "description": "Animation duration for opening dropdown"
+          "$description": "Animation duration for opening dropdown - 200ms for smooth, noticeable entrance animation"
         },
         "close": {
           "value": "150ms",
           "type": "string",
-          "description": "Animation duration for closing dropdown"
+          "$description": "Animation duration for closing dropdown - 150ms for quick exit (faster than open for snappy feel)"
         }
       },
       "easing": {
         "value": "cubic-bezier(0.4, 0, 0.2, 1)",
         "type": "string",
-        "description": "Animation easing function"
+        "$description": "Animation easing function - 'ease-out' curve for natural, smooth motion (fast start, slow end)"
       }
     },
     "empty-state": {
       "padding": {
         "value": "{padding.6} {padding.4}",
         "type": "dimension",
-        "description": "Empty state container padding"
+        "$description": "Empty state container padding - 24px vertical, 16px horizontal for comfortable empty state message display"
       },
       "text": {
         "font": {
           "value": "{font.body.regular.sm}",
           "type": "string",
-          "description": "Empty state text font"
+          "$description": "Empty state text font - Small regular body text (13px) for subtle empty state messaging"
         },
         "color": {
           "value": "{color.text.neutral.subtitle.1}",
           "type": "color",
-          "description": "Empty state text color"
+          "$description": "Empty state text color - Subtitle gray for de-emphasized empty state text"
         }
       },
       "icon": {
         "size": {
           "value": "{size.icon.lg}",
           "type": "dimension",
-          "description": "Empty state icon size"
+          "$description": "Empty state icon size - Large icon (20px) for prominent empty state visual indicator"
         },
         "color": {
           "value": "{color.icon.neutral.moderate.0}",
           "type": "color",
-          "description": "Empty state icon color"
+          "$description": "Empty state icon color - Moderate neutral gray for subtle but visible empty state icon"
         }
       }
     }

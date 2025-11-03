@@ -1,0 +1,469 @@
+{
+  "content-switcher-item": {
+    "comment": "Content Switcher Item component - Used for switching between different content views or sections. Supports Primary and Secondary variants with selected/unselected states",
+    "border": {
+      "comment": "Border properties for content switcher item",
+      "radius": {
+        "value": "{border.radius.none}",
+        "type": "dimension",
+        "comment": "Border radius - square corners for content switcher items"
+      },
+      "width": {
+        "comment": "Border width variants for different positions",
+        "default": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "comment": "Standard border width for all borders"
+        },
+        "right": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "comment": "Right border width for unselected items (creates visual separation)"
+        }
+      }
+    },
+    "padding": {
+      "comment": "Padding values for different content switcher item sizes",
+      "x": {
+        "comment": "Horizontal padding for text and icon content",
+        "3xs": {
+          "value": "{padding.x.2xs}",
+          "type": "dimension",
+          "comment": "Horizontal padding for 3xs size (6px)"
+        },
+        "2xs": {
+          "value": "{padding.x.sm}",
+          "type": "dimension",
+          "comment": "Horizontal padding for 2xs size (8px)"
+        },
+        "xs": {
+          "value": "{padding.x.md}",
+          "type": "dimension",
+          "comment": "Horizontal padding for xs size (10px)"
+        },
+        "sm": {
+          "value": "{padding.x.lg}",
+          "type": "dimension",
+          "comment": "Horizontal padding for sm size (14px)"
+        },
+        "md": {
+          "value": "{padding.x.xl}",
+          "type": "dimension",
+          "comment": "Horizontal padding for md size (16px)"
+        },
+        "lg": {
+          "value": "{padding.x.2xl}",
+          "type": "dimension",
+          "comment": "Horizontal padding for lg size (18px)"
+        }
+      },
+      "y": {
+        "comment": "Vertical padding for text and icon content",
+        "3xs": {
+          "value": "{padding.y.sm}",
+          "type": "dimension",
+          "comment": "Vertical padding for 3xs size (8px)"
+        },
+        "2xs": {
+          "value": "{padding.y.sm}",
+          "type": "dimension",
+          "comment": "Vertical padding for 2xs size (8px)"
+        },
+        "xs": {
+          "value": "{padding.y.sm}",
+          "type": "dimension",
+          "comment": "Vertical padding for xs size (8px)"
+        },
+        "sm": {
+          "value": "{padding.y.sm}",
+          "type": "dimension",
+          "comment": "Vertical padding for sm size (8px)"
+        },
+        "md": {
+          "value": "{padding.y.md}",
+          "type": "dimension",
+          "comment": "Vertical padding for md size (10px)"
+        },
+        "lg": {
+          "value": "{padding.y.md}",
+          "type": "dimension",
+          "comment": "Vertical padding for lg size (10px)"
+        }
+      }
+    },
+    "gap": {
+      "comment": "Gap between icon and text for different sizes",
+      "3xs": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "comment": "Gap for 3xs size - 4px between icon and text"
+      },
+      "2xs": {
+        "value": "{size.1_5}",
+        "type": "dimension",
+        "comment": "Gap for 2xs size - 6px between icon and text"
+      },
+      "xs": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "comment": "Gap for xs size - 8px between icon and text"
+      },
+      "sm": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "comment": "Gap for sm size - 8px between icon and text"
+      },
+      "md": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "comment": "Gap for md size - 8px between icon and text"
+      },
+      "lg": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "comment": "Gap for lg size - 8px between icon and text"
+      }
+    },
+    "height": {
+      "comment": "Fixed heights for different content switcher item sizes",
+      "3xs": {
+        "value": "{size.6}",
+        "type": "dimension",
+        "comment": "Height for 3xs size - 24px"
+      },
+      "2xs": {
+        "value": "{size.7}",
+        "type": "dimension",
+        "comment": "Height for 2xs size - 28px"
+      },
+      "xs": {
+        "value": "{size.8}",
+        "type": "dimension",
+        "comment": "Height for xs size - 32px"
+      },
+      "sm": {
+        "value": "{size.9}",
+        "type": "dimension",
+        "comment": "Height for sm size - 36px"
+      },
+      "md": {
+        "value": "{size.10}",
+        "type": "dimension",
+        "comment": "Height for md size - 40px"
+      },
+      "lg": {
+        "value": "{size.11}",
+        "type": "dimension",
+        "comment": "Height for lg size - 44px"
+      }
+    },
+    "color": {
+      "comment": "Color tokens for Primary and Secondary variants with selected and unselected states",
+      "primary": {
+        "comment": "Primary variant colors - uses blue color scheme",
+        "selected": {
+          "comment": "Selected state colors for primary variant",
+          "background": {
+            "comment": "Background colors for selected primary items",
+            "default": {
+              "value": "{color.background.primary.subtle.0}",
+              "type": "color",
+              "comment": "Light blue background for selected item - blue-50"
+            },
+            "hover": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "comment": "Slightly darker blue on hover - blue-100"
+            }
+          },
+          "border": {
+            "comment": "Border colors for selected primary items",
+            "default": {
+              "value": "{color.border.primary.subtle.0}",
+              "type": "color",
+              "comment": "Border matches background for selected state - blue-50"
+            },
+            "hover": {
+              "value": "{color.border.primary.subtle.1}",
+              "type": "color",
+              "comment": "Border darkens on hover - blue-200"
+            }
+          },
+          "text": {
+            "comment": "Text colors for selected primary items",
+            "default": {
+              "value": "{color.text.primary.title.1}",
+              "type": "color",
+              "comment": "Strong blue text for selected state - blue-700"
+            },
+            "hover": {
+              "value": "{color.text.primary.title.1}",
+              "type": "color",
+              "comment": "Text color remains consistent on hover - blue-700"
+            }
+          },
+          "icon": {
+            "comment": "Icon colors for selected primary items",
+            "default": {
+              "value": "{color.icon.primary.intense.1}",
+              "type": "color",
+              "comment": "Strong blue icon for selected state - blue-700"
+            },
+            "hover": {
+              "value": "{color.icon.primary.intense.1}",
+              "type": "color",
+              "comment": "Icon color remains consistent on hover - blue-700"
+            }
+          }
+        },
+        "unselected": {
+          "comment": "Unselected state colors for primary variant",
+          "background": {
+            "comment": "Background colors for unselected primary items",
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "comment": "White background for unselected state"
+            },
+            "hover": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "comment": "Light gray background on hover - gray-50"
+            }
+          },
+          "border": {
+            "comment": "Border colors for unselected primary items",
+            "right": {
+              "comment": "Right border only for visual separation",
+              "default": {
+                "value": "{color.border.neutral.subtle.1}",
+                "type": "color",
+                "comment": "Gray right border for separation - gray-300"
+              },
+              "hover": {
+                "value": "{color.border.neutral.subtle.1}",
+                "type": "color",
+                "comment": "Border remains consistent on hover - gray-300"
+              }
+            }
+          },
+          "text": {
+            "comment": "Text colors for unselected primary items",
+            "default": {
+              "value": "{color.text.neutral.body.1}",
+              "type": "color",
+              "comment": "Medium gray text for unselected state - gray-600"
+            },
+            "hover": {
+              "value": "{color.text.neutral.body.1}",
+              "type": "color",
+              "comment": "Text color remains consistent on hover - gray-600"
+            }
+          },
+          "icon": {
+            "comment": "Icon colors for unselected primary items",
+            "default": {
+              "value": "{color.icon.neutral.default}",
+              "type": "color",
+              "comment": "Medium gray icon for unselected state - gray-600"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.default}",
+              "type": "color",
+              "comment": "Icon color remains consistent on hover - gray-600"
+            }
+          }
+        }
+      },
+      "secondary": {
+        "comment": "Secondary variant colors - uses neutral gray color scheme",
+        "selected": {
+          "comment": "Selected state colors for secondary variant",
+          "background": {
+            "comment": "Background colors for selected secondary items",
+            "default": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "comment": "Light gray background for selected item - gray-200"
+            },
+            "hover": {
+              "value": "{color.background.neutral.moderate.0}",
+              "type": "color",
+              "comment": "Medium gray on hover - gray-300"
+            }
+          },
+          "border": {
+            "comment": "Border colors for selected secondary items",
+            "default": {
+              "value": "{color.border.neutral.subtle.1}",
+              "type": "color",
+              "comment": "Border matches background for selected state - gray-200"
+            },
+            "hover": {
+              "value": "{color.border.neutral.moderate.1}",
+              "type": "color",
+              "comment": "Border darkens on hover - gray-400"
+            }
+          },
+          "text": {
+            "comment": "Text colors for selected secondary items",
+            "default": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "comment": "Dark gray text for selected state - gray-900"
+            },
+            "hover": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "comment": "Text color remains consistent on hover - gray-900"
+            }
+          },
+          "icon": {
+            "comment": "Icon colors for selected secondary items",
+            "default": {
+              "value": "{color.icon.neutral.intense.1}",
+              "type": "color",
+              "comment": "Dark gray icon for selected state - gray-900"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.intense.1}",
+              "type": "color",
+              "comment": "Icon color remains consistent on hover - gray-900"
+            }
+          }
+        },
+        "unselected": {
+          "comment": "Unselected state colors for secondary variant - identical to primary unselected",
+          "background": {
+            "comment": "Background colors for unselected secondary items",
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "comment": "White background for unselected state"
+            },
+            "hover": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "comment": "Light gray background on hover - gray-50"
+            }
+          },
+          "border": {
+            "comment": "Border colors for unselected secondary items",
+            "right": {
+              "comment": "Right border only for visual separation",
+              "default": {
+                "value": "{color.border.neutral.subtle.1}",
+                "type": "color",
+                "comment": "Gray right border for separation - gray-300"
+              },
+              "hover": {
+                "value": "{color.border.neutral.subtle.1}",
+                "type": "color",
+                "comment": "Border remains consistent on hover - gray-300"
+              }
+            }
+          },
+          "text": {
+            "comment": "Text colors for unselected secondary items",
+            "default": {
+              "value": "{color.text.neutral.body.1}",
+              "type": "color",
+              "comment": "Medium gray text for unselected state - gray-600"
+            },
+            "hover": {
+              "value": "{color.text.neutral.body.1}",
+              "type": "color",
+              "comment": "Text color remains consistent on hover - gray-600"
+            }
+          },
+          "icon": {
+            "comment": "Icon colors for unselected secondary items",
+            "default": {
+              "value": "{color.icon.neutral.default}",
+              "type": "color",
+              "comment": "Medium gray icon for unselected state - gray-600"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.default}",
+              "type": "color",
+              "comment": "Icon color remains consistent on hover - gray-600"
+            }
+          }
+        }
+      }
+    },
+    "text": {
+      "comment": "Typography tokens for different content switcher item sizes",
+      "typography": {
+        "comment": "Font styles mapped to sizes - using semibold weight for emphasis",
+        "3xs": {
+          "value": "{font.body.semibold.xs}",
+          "type": "typography",
+          "comment": "Typography for 3xs size - 11px semibold"
+        },
+        "2xs": {
+          "value": "{font.body.semibold.sm}",
+          "type": "typography",
+          "comment": "Typography for 2xs size - 12px semibold"
+        },
+        "xs": {
+          "value": "{font.body.semibold.md}",
+          "type": "typography",
+          "comment": "Typography for xs size - 13px semibold"
+        },
+        "sm": {
+          "value": "{font.body.semibold.lg}",
+          "type": "typography",
+          "comment": "Typography for sm size - 14px semibold"
+        },
+        "md": {
+          "value": "{font.body.semibold.lg}",
+          "type": "typography",
+          "comment": "Typography for md size - 14px semibold"
+        },
+        "lg": {
+          "value": "{font.body.semibold.2xl}",
+          "type": "typography",
+          "comment": "Typography for lg size - 16px semibold"
+        }
+      }
+    },
+    "icon": {
+      "comment": "Icon size tokens for different content switcher item sizes",
+      "size": {
+        "comment": "Icon dimensions for each size variant",
+        "3xs": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "comment": "Icon size for 3xs - 14px"
+        },
+        "2xs": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "comment": "Icon size for 2xs - 16px"
+        },
+        "xs": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "comment": "Icon size for xs - 16px"
+        },
+        "sm": {
+          "value": "{size.icon.sm}",
+          "type": "dimension",
+          "comment": "Icon size for sm - 20px"
+        },
+        "md": {
+          "value": "{size.icon.sm}",
+          "type": "dimension",
+          "comment": "Icon size for md - 20px"
+        },
+        "lg": {
+          "value": "{size.icon.sm}",
+          "type": "dimension",
+          "comment": "Icon size for lg - 20px"
+        }
+      }
+    }
+  }
+}
+

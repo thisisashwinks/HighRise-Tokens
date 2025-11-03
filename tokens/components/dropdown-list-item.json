@@ -2,19 +2,38 @@
   "dropdown-list-item": {
     "container": {
       "padding": {
-        "value": "{padding.1} {padding.2}",
-        "type": "dimension",
-        "description": "Container padding for menu items"
+        "vertical": {
+          "value": "{padding.1}",
+          "type": "dimension",
+          "description": "Vertical padding for menu item container (top and bottom)"
+        },
+        "horizontal": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Horizontal padding for menu item container (left and right)"
+        }
       },
       "gap": {
-        "value": "{gap.2}",
-        "type": "dimension", 
-        "description": "Gap between checkbox and content"
+        "primary": {
+          "value": "{gap.2}",
+          "type": "dimension",
+          "description": "Primary gap between checkbox/check indicator and content area"
+        },
+        "content": {
+          "value": "{gap.1}",
+          "type": "dimension",
+          "description": "Gap between icon and text content within content area"
+        }
       },
       "border-radius": {
         "value": "{border.radius.sm}",
         "type": "dimension",
-        "description": "Container border radius"
+        "description": "Border radius for menu item container"
+      },
+      "min-height": {
+        "value": "{size.11}",
+        "type": "dimension",
+        "description": "Minimum height for menu item container (44px)"
       }
     },
     "content": {
@@ -22,12 +41,12 @@
         "primary": {
           "value": "{gap.1}",
           "type": "dimension",
-          "description": "Gap between icon and text content"
+          "description": "Gap between leading icon and text/description stack"
         },
         "secondary": {
           "value": "{gap.0[5]}",
           "type": "dimension",
-          "description": "Gap between label and description"
+          "description": "Gap between label and description text (2px)"
         }
       }
     },
@@ -36,24 +55,29 @@
         "primary": {
           "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Size for main action icons"
+          "description": "Size for main action/leading icons (14px)"
         },
         "description": {
           "value": "{size.2[5]}",
-          "type": "dimension", 
-          "description": "Size for description icons"
+          "type": "dimension",
+          "description": "Size for description/supporting icons (10px)"
+        },
+        "group": {
+          "value": "{size.3}",
+          "type": "dimension",
+          "description": "Size for group title icons (12px)"
         }
       },
       "color": {
         "default": {
           "value": "{color.icon.neutral.moderate.1}",
           "type": "color",
-          "description": "Default icon color"
+          "description": "Default icon color for enabled state"
         },
         "disabled": {
           "value": "{color.icon.neutral.subtle.2}",
           "type": "color",
-          "description": "Disabled icon color"
+          "description": "Icon color for disabled state"
         }
       }
     },
@@ -61,53 +85,53 @@
       "size": {
         "value": "{size.xs}",
         "type": "dimension",
-        "description": "Avatar size for list items"
+        "description": "Avatar size for list items with avatar variant"
       }
     },
     "checkbox": {
       "size": {
         "value": "{checkbox.container.size.xs}",
         "type": "dimension",
-        "description": "Checkbox size for multi-select items"
+        "description": "Checkbox size for multi-select menu items"
       },
       "border-radius": {
         "value": "{checkbox.container.border-radius.xs}",
         "type": "dimension",
-        "description": "Checkbox border radius"
+        "description": "Checkbox border radius for multi-select items"
       },
       "background": {
         "unchecked": {
           "default": {
             "value": "{checkbox.background.unchecked.default}",
             "type": "color",
-            "description": "Default unchecked checkbox background"
+            "description": "Background color for unchecked checkbox in default state"
           },
           "hover": {
             "value": "{checkbox.background.unchecked.hover}",
             "type": "color",
-            "description": "Hover unchecked checkbox background"
+            "description": "Background color for unchecked checkbox on hover"
           },
           "disabled": {
             "value": "{checkbox.background.unchecked.disabled}",
             "type": "color",
-            "description": "Disabled unchecked checkbox background"
+            "description": "Background color for unchecked checkbox when disabled"
           }
         },
         "checked": {
           "default": {
             "value": "{checkbox.background.checked.default}",
             "type": "color",
-            "description": "Default checked checkbox background"
+            "description": "Background color for checked checkbox in default state"
           },
           "hover": {
             "value": "{checkbox.background.checked.hover}",
             "type": "color",
-            "description": "Hover checked checkbox background"
+            "description": "Background color for checked checkbox on hover"
           },
           "disabled": {
             "value": "{checkbox.background.checked.disabled}",
             "type": "color",
-            "description": "Disabled checked checkbox background"
+            "description": "Background color for checked checkbox when disabled"
           }
         }
       },
@@ -116,93 +140,93 @@
           "default": {
             "value": "{checkbox.border.unchecked.default}",
             "type": "color",
-            "description": "Default unchecked checkbox border"
+            "description": "Border color for unchecked checkbox in default state"
           },
           "hover": {
             "value": "{checkbox.border.unchecked.hover}",
             "type": "color",
-            "description": "Hover unchecked checkbox border"
+            "description": "Border color for unchecked checkbox on hover"
           },
           "disabled": {
             "value": "{checkbox.border.unchecked.disabled}",
             "type": "color",
-            "description": "Disabled unchecked checkbox border"
+            "description": "Border color for unchecked checkbox when disabled"
           }
         },
         "checked": {
           "default": {
             "value": "{checkbox.border.checked.default}",
             "type": "color",
-            "description": "Default checked checkbox border"
+            "description": "Border color for checked checkbox in default state"
           },
           "hover": {
             "value": "{checkbox.border.checked.hover}",
             "type": "color",
-            "description": "Hover checked checkbox border"
+            "description": "Border color for checked checkbox on hover"
           },
           "disabled": {
             "value": "{checkbox.border.checked.disabled}",
             "type": "color",
-            "description": "Disabled checked checkbox border"
+            "description": "Border color for checked checkbox when disabled"
           }
         }
       }
     },
     "text": {
       "label": {
-        "font": {
-          "value": "{font.body.regular.sm}",
-          "type": "string",
-          "description": "Primary label text style"
+        "typography": {
+          "value": "{font.body.regular.md}",
+          "type": "typography",
+          "description": "Primary label text style (13px, Regular, 18px line-height)"
         },
         "color": {
           "default": {
             "value": "{color.text.neutral.title.1}",
             "type": "color",
-            "description": "Default label text color"
+            "description": "Label text color in default/enabled state"
           },
           "disabled": {
             "value": "{color.text.neutral.subtitle.2}",
-            "type": "color", 
-            "description": "Disabled label text color"
+            "type": "color",
+            "description": "Label text color in disabled state"
           }
         }
       },
       "description": {
-        "font": {
+        "typography": {
           "value": "{font.body.regular.xs}",
-          "type": "string",
-          "description": "Supporting text style"
+          "type": "typography",
+          "description": "Supporting description text style (11px, Regular, 16px line-height)"
         },
         "color": {
           "default": {
             "value": "{color.text.neutral.moderate.1}",
             "type": "color",
-            "description": "Default description text color"
+            "description": "Description text color in default/enabled state"
           },
           "disabled": {
             "value": "{color.text.neutral.subtitle.2}",
             "type": "color",
-            "description": "Disabled description text color"
+            "description": "Description text color in disabled state"
           }
         }
       },
       "supporting": {
-        "font": {
+        "typography": {
           "value": "{font.body.regular.xs}",
-          "type": "string",
-          "description": "Supporting information text style"
+          "type": "typography",
+          "description": "Supporting information text style (11px, Regular, 16px line-height)"
         },
         "color": {
           "default": {
             "value": "{color.text.neutral.body.2}",
             "type": "color",
-            "description": "Supporting text color"
+            "description": "Supporting text color in default state"
           },
           "disabled": {
             "value": "{color.text.neutral.subtitle.2}",
             "type": "color",
-            "description": "Disabled supporting text color"
+            "description": "Supporting text color in disabled state"
           }
         }
       }
@@ -211,105 +235,170 @@
       "default": {
         "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "Default background color"
+        "description": "Background color for menu item in default/rest state"
       },
       "hover": {
         "value": "{color.background.neutral.subtle.2}",
         "type": "color",
-        "description": "Hover state background"
+        "description": "Background color for menu item on hover (Gray 100)"
       },
       "selected": {
         "value": "{color.background.brand.subtle.1}",
         "type": "color",
-        "description": "Selected state background"
+        "description": "Background color for selected menu item (Blue 50)"
       },
       "disabled": {
         "value": "{color.background.neutral.inactive}",
         "type": "color",
-        "description": "Disabled state background"
+        "description": "Background color for disabled menu item (Gray 50)"
       }
     },
     "group-title": {
       "padding": {
-        "value": "{padding.2} {padding.2[5]} {padding.1} {padding.2}",
+        "top": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Top padding for group title container (8px)"
+        },
+        "right": {
+          "value": "{padding.2[5]}",
+          "type": "dimension",
+          "description": "Right padding for group title container (10px)"
+        },
+        "bottom": {
+          "value": "{padding.1}",
+          "type": "dimension",
+          "description": "Bottom padding for group title container (4px)"
+        },
+        "left": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Left padding for group title container (8px)"
+        }
+      },
+      "gap": {
+        "value": "{gap.1}",
         "type": "dimension",
-        "description": "Group title container padding"
+        "description": "Gap between icon and title text (4px)"
       },
       "text": {
-        "font": {
+        "typography": {
           "value": "{font.body.medium.xs}",
-          "type": "string",
-          "description": "Group title text style"
+          "type": "typography",
+          "description": "Group title text style (11px, Medium, 16px line-height)"
         },
         "color": {
           "value": "{color.text.neutral.subtitle.1}",
           "type": "color",
-          "description": "Group title text color"
+          "description": "Group title text color (Gray 400)"
         }
+      },
+      "background": {
+        "value": "{color.background.neutral.subtle.1}",
+        "type": "color",
+        "description": "Group title background color (Gray 50)"
       }
     },
     "search": {
-      "padding": {
-        "value": "{padding.2}",
-        "type": "dimension",
-        "description": "Search container padding"
+      "container": {
+        "padding": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Container padding around search input (8px)"
+        },
+        "gap": {
+          "value": "{gap.1[5]}",
+          "type": "dimension",
+          "description": "Gap within search container (6px)"
+        }
       },
       "input": {
-        "padding": {
-          "value": "{padding.0} {padding.2}",
+        "height": {
+          "value": "{size.7}",
           "type": "dimension",
-          "description": "Search input padding"
+          "description": "Search input height (28px)"
+        },
+        "padding": {
+          "vertical": {
+            "value": "{padding.1[5]}",
+            "type": "dimension",
+            "description": "Vertical padding for search input (6px)"
+          },
+          "horizontal": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Horizontal padding for search input (8px)"
+          }
         },
         "border": {
           "color": {
-            "value": "{color.border.neutral.default}",
-            "type": "color",
-            "description": "Search input border color"
+            "default": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Search input border color in default state (Gray 300)"
+            },
+            "focus": {
+              "value": "{color.border.primary.default}",
+              "type": "color",
+              "description": "Search input border color on focus"
+            }
           },
           "width": {
             "value": "{border.width.default}",
             "type": "dimension",
-            "description": "Search input border width"
+            "description": "Search input border width (1px)"
           }
         },
         "border-radius": {
           "value": "{border.radius.sm}",
           "type": "dimension",
-          "description": "Search input border radius"
+          "description": "Search input border radius (4px)"
         },
         "background": {
           "value": "{color.background.neutral.base}",
           "type": "color",
-          "description": "Search input background"
+          "description": "Search input background color (White)"
         },
         "gap": {
-          "value": "{gap.1}",
+          "value": "{gap.2}",
           "type": "dimension",
-          "description": "Gap between search icon and text"
+          "description": "Gap between search icon and placeholder text (8px)"
         }
       },
       "icon": {
         "size": {
-          "value": "{size.3}",
+          "value": "{size.4}",
           "type": "dimension",
-          "description": "Search icon size"
+          "description": "Search icon size (16px)"
         },
         "color": {
           "value": "{color.icon.neutral.moderate.2}",
           "type": "color",
-          "description": "Search icon color"
+          "description": "Search icon color (Gray 500)"
         }
       },
       "placeholder": {
-        "font": {
-          "value": "{font.body.regular.md}",
-          "type": "string",
-          "description": "Search placeholder text style"
+        "typography": {
+          "value": "{font.body.regular.base}",
+          "type": "typography",
+          "description": "Search placeholder text style (14px, Regular, 20px line-height)"
         },
         "color": {
           "value": "{color.text.neutral.subtitle.2}",
           "type": "color",
-          "description": "Search placeholder text color"
+          "description": "Search placeholder text color (Gray 500)"
+        }
+      },
+      "filter-icon": {
+        "size": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Filter icon size within search (14px)"
+        },
+        "gap": {
+          "value": "{gap.1}",
+          "type": "dimension",
+          "description": "Gap between filter icons (4px)"
         }
       }
     },
@@ -317,56 +406,106 @@
       "height": {
         "value": "{size.0[25]}",
         "type": "dimension",
-        "description": "Divider height"
+        "description": "Divider height (1px)"
       },
       "color": {
         "value": "{color.border.neutral.default}",
         "type": "color",
-        "description": "Divider color"
+        "description": "Divider color (Gray 300)"
+      },
+      "margin": {
+        "vertical": {
+          "value": "{padding.0}",
+          "type": "dimension",
+          "description": "Vertical margin for divider (0px)"
+        }
       }
     },
     "custom": {
       "padding": {
-        "value": "{padding.2} {padding.0}",
-        "type": "dimension",
-        "description": "Custom content padding"
+        "vertical": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Vertical padding for custom content (8px)"
+        },
+        "horizontal": {
+          "value": "{padding.0}",
+          "type": "dimension",
+          "description": "Horizontal padding for custom content (0px)"
+        }
       },
       "border-radius": {
         "value": "{border.radius.sm}",
         "type": "dimension",
-        "description": "Custom content border radius"
+        "description": "Border radius for custom content container"
       },
       "background": {
         "value": "{color.background.neutral.subtle.2}",
         "type": "color",
-        "description": "Custom content background"
+        "description": "Background color for custom content area (Gray 100)"
       }
     },
     "check-indicator": {
       "size": {
         "value": "{size.4}",
         "type": "dimension",
-        "description": "Check indicator container size"
+        "description": "Check indicator icon size for selected single-select items (16px)"
       },
       "color": {
-        "value": "{color.border.brand.default}",
-        "type": "color",
-        "description": "Check indicator color"
+        "default": {
+          "value": "{color.border.brand.default}",
+          "type": "color",
+          "description": "Check indicator color for selected items (Brand Blue)"
+        }
       }
     },
     "tag": {
       "gap": {
         "value": "{gap.1}",
         "type": "dimension",
-        "description": "Gap between tags in badge container"
+        "description": "Gap between multiple tags in badge container (4px)"
       }
     },
     "right-info": {
       "gap": {
         "value": "{gap.1}",
         "type": "dimension",
-        "description": "Gap between right info elements"
+        "description": "Gap between right-aligned info elements like badges and icons (4px)"
+      }
+    },
+    "keyboard-shortcut": {
+      "typography": {
+        "value": "{font.body.regular.xs}",
+        "type": "typography",
+        "description": "Typography for keyboard shortcuts display"
+      },
+      "color": {
+        "value": "{color.text.neutral.subtitle.1}",
+        "type": "color",
+        "description": "Text color for keyboard shortcuts"
+      },
+      "background": {
+        "value": "{color.background.neutral.subtle.1}",
+        "type": "color",
+        "description": "Background color for keyboard shortcut badge"
+      },
+      "padding": {
+        "vertical": {
+          "value": "{padding.0[5]}",
+          "type": "dimension",
+          "description": "Vertical padding for keyboard shortcut badge"
+        },
+        "horizontal": {
+          "value": "{padding.1}",
+          "type": "dimension",
+          "description": "Horizontal padding for keyboard shortcut badge"
+        }
+      },
+      "border-radius": {
+        "value": "{border.radius.xs}",
+        "type": "dimension",
+        "description": "Border radius for keyboard shortcut badge"
       }
     }
   }
-} 
+}

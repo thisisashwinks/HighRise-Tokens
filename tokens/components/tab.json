@@ -5,104 +5,126 @@
         "radius": {
           "default": {
             "value": "{border.radius.sm}",
-            "type": "dimension"
+            "type": "dimension",
+            "$description": "Default border radius for tab items - 6px, applied to top corners for line tabs"
           },
           "segment": {
             "value": "{border.radius.sm}",
-            "type": "dimension"
+            "type": "dimension",
+            "$description": "Border radius for segment tabs - 6px, applied to all corners"
           },
           "left": {
             "value": "{border.radius.sm} 0px 0px {border.radius.sm}",
-            "type": "dimension"
+            "type": "dimension",
+            "$description": "Border radius for tabs positioned on the left side - rounded left corners only"
           },
           "right": {
             "value": "0px {border.radius.sm} {border.radius.sm} 0px",
-            "type": "dimension"
+            "type": "dimension",
+            "$description": "Border radius for tabs positioned on the right side - rounded right corners only"
           },
           "bottom": {
             "value": "0px 0px {border.radius.sm} {border.radius.sm}",
-            "type": "dimension"
+            "type": "dimension",
+            "$description": "Border radius for tabs positioned at the bottom - rounded bottom corners only"
           }
         },
         "width": {
           "line": {
             "default": {
               "value": "0px 0px {border.width.md}",
-              "type": "dimension"
+              "type": "dimension",
+              "$description": "Border width for default line tabs - 2px bottom border (active state)"
             },
             "bottom": {
               "value": "{border.width.md} 0px 0px",
-              "type": "dimension"
+              "type": "dimension",
+              "$description": "Border width for bottom-positioned line tabs - 2px top border (active state)"
             },
             "left": {
               "value": "0px {border.width.md} 0px 0px",
-              "type": "dimension"
+              "type": "dimension",
+              "$description": "Border width for left-positioned line tabs - 2px right border (active state)"
             },
             "right": {
               "value": "0px 0px 0px {border.width.md}",
-              "type": "dimension"
+              "type": "dimension",
+              "$description": "Border width for right-positioned line tabs - 2px left border (active state)"
             }
           },
           "segment": {
             "value": "{border.width.none}",
-            "type": "dimension"
+            "type": "dimension",
+            "$description": "Border width for segment tabs - none (no border, uses background and shadow instead)"
           }
         }
       },
       "padding": {
         "sm": {
           "value": "{padding.1} {padding.2}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Padding for small tab - 4px vertical, 8px horizontal"
         },
         "md": {
           "value": "{padding.1} {padding.2}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Padding for medium tab - 4px vertical, 8px horizontal"
         },
         "lg": {
           "value": "{padding.1} {padding.2}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Padding for large tab - 4px vertical, 8px horizontal"
         }
       },
       "gap": {
         "sm": {
           "value": "{gap.1}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Gap between icon and text in small tab - 4px"
         },
         "md": {
           "value": "{gap.1}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Gap between icon and text in medium tab - 4px"
         },
         "lg": {
           "value": "{gap.1}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Gap between icon and text in large tab - 4px"
         }
       },
       "height": {
         "sm": {
           "value": "{size.6}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Height of small tab - 24px"
         },
         "md": {
           "value": "{size.8}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Height of medium tab - 32px"
         },
         "lg": {
           "value": "{size.10}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Height of large tab - 40px"
         }
       },
       "min-width": {
         "sm": {
           "value": "{size.16}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Minimum width for small tab to ensure adequate clickable area - 64px"
         },
         "md": {
           "value": "{size.20}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Minimum width for medium tab to ensure adequate clickable area - 80px"
         },
         "lg": {
           "value": "{size.24}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Minimum width for large tab to ensure adequate clickable area - 96px"
         }
       }
     },
@@ -110,15 +132,18 @@
       "typography": {
         "sm": {
           "value": "{font.body.medium.xs}",
-          "type": "typography"
+          "type": "typography",
+          "$description": "Typography for small tab text - Medium weight, 13px/18px (Semibold when active)"
         },
         "md": {
           "value": "{font.body.medium.sm}",
-          "type": "typography"
+          "type": "typography",
+          "$description": "Typography for medium tab text - Medium weight, 14px/20px (Semibold when active)"
         },
         "lg": {
           "value": "{font.body.medium.base}",
-          "type": "typography"
+          "type": "typography",
+          "$description": "Typography for large tab text - Medium weight, 16px/20px (Semibold when active)"
         }
       }
     },
@@ -126,15 +151,18 @@
       "size": {
         "sm": {
           "value": "{size.icon.3xs}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Icon size for small tab - 12px"
         },
         "md": {
           "value": "{size.icon.xs}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Icon size for medium tab - 16px"
         },
         "lg": {
           "value": "{size.icon.sm}",
-          "type": "dimension"
+          "type": "dimension",
+          "$description": "Icon size for large tab - 20px"
         }
       }
     },
@@ -144,95 +172,116 @@
           "background": {
             "default": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default background for primary line tab - transparent"
             },
             "hover": {
               "value": "{color.background.primary.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background on hover for primary line tab - subtle blue tint"
             },
             "active": {
               "value": "{color.background.primary.subtle.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for active primary line tab - light blue tint"
             },
             "focused": {
               "value": "{color.background.primary.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background when primary line tab is focused - subtle blue tint"
             },
             "disabled": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for disabled primary line tab - transparent"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default border for primary line tab - transparent (no border)"
             },
             "hover": {
               "value": "{color.border.primary.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border on hover for primary line tab - light primary blue"
             },
             "active": {
               "value": "{color.border.primary.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for active primary line tab - primary blue (#004EEB) 2px"
             },
             "focused": {
               "value": "{color.border.primary.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border when primary line tab is focused - light primary blue"
             },
             "disabled": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for disabled primary line tab - transparent"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default text color for primary line tab - gray.900 (#101828)"
             },
             "hover": {
               "value": "{color.text.primary.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color on hover for primary line tab - medium blue"
             },
             "active": {
               "value": "{color.text.primary.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for active primary line tab - primary blue (#004EEB), weight changes to Semibold"
             },
             "focused": {
               "value": "{color.text.primary.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when primary line tab is focused - medium blue"
             },
             "disabled": {
               "value": "{color.text.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for disabled primary line tab - inactive gray"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.neutral.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default icon color for primary line tab - moderate gray"
             },
             "hover": {
               "value": "{color.icon.primary.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color on hover for primary line tab - primary blue"
             },
             "active": {
               "value": "{color.icon.primary.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for active primary line tab - moderate primary blue"
             },
             "focused": {
               "value": "{color.icon.primary.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color when primary line tab is focused - primary blue"
             },
             "disabled": {
               "value": "{color.icon.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for disabled primary line tab - subtle gray"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.primary.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for primary line tab - light primary blue"
             }
           }
         },
@@ -240,95 +289,116 @@
           "background": {
             "default": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default background for primary segment tab - transparent (container has gray.50 bg)"
             },
             "hover": {
               "value": "{color.background.primary.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background on hover for primary segment tab - subtle blue tint"
             },
             "active": {
               "value": "{color.background.neutral.base}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for active primary segment tab - white with shadow"
             },
             "focused": {
               "value": "{color.background.primary.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background when primary segment tab is focused - subtle blue tint"
             },
             "disabled": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for disabled primary segment tab - transparent"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default border for primary segment tab - transparent (uses shadow instead)"
             },
             "hover": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border on hover for primary segment tab - transparent"
             },
             "active": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for active primary segment tab - transparent (uses shadow)"
             },
             "focused": {
               "value": "{color.border.primary.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border when primary segment tab is focused - light primary blue"
             },
             "disabled": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for disabled primary segment tab - transparent"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default text color for primary segment tab - gray.900"
             },
             "hover": {
               "value": "{color.text.primary.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color on hover for primary segment tab - medium blue"
             },
             "active": {
               "value": "{color.text.primary.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for active primary segment tab - primary blue, weight changes to Semibold"
             },
             "focused": {
               "value": "{color.text.primary.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when primary segment tab is focused - medium blue"
             },
             "disabled": {
               "value": "{color.text.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for disabled primary segment tab - inactive gray"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.neutral.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default icon color for primary segment tab - moderate gray"
             },
             "hover": {
               "value": "{color.icon.primary.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color on hover for primary segment tab - primary blue"
             },
             "active": {
               "value": "{color.icon.primary.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for active primary segment tab - moderate primary blue"
             },
             "focused": {
               "value": "{color.icon.primary.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color when primary segment tab is focused - primary blue"
             },
             "disabled": {
               "value": "{color.icon.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for disabled primary segment tab - subtle gray"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.primary.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for primary segment tab - light primary blue"
             }
           }
         }
@@ -338,95 +408,116 @@
           "background": {
             "default": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default background for neutral line tab - transparent"
             },
             "hover": {
               "value": "{color.background.neutral.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background on hover for neutral line tab - subtle gray tint"
             },
             "active": {
               "value": "{color.background.neutral.subtle.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for active neutral line tab - light gray tint"
             },
             "focused": {
               "value": "{color.background.neutral.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background when neutral line tab is focused - subtle gray tint"
             },
             "disabled": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for disabled neutral line tab - transparent"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default border for neutral line tab - transparent (no border)"
             },
             "hover": {
               "value": "{color.border.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border on hover for neutral line tab - subtle gray"
             },
             "active": {
               "value": "{color.border.neutral.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for active neutral line tab - default gray 2px"
             },
             "focused": {
               "value": "{color.border.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border when neutral line tab is focused - subtle gray"
             },
             "disabled": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for disabled neutral line tab - transparent"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default text color for neutral line tab - gray.900"
             },
             "hover": {
               "value": "{color.text.neutral.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color on hover for neutral line tab - gray.600"
             },
             "active": {
               "value": "{color.text.neutral.title.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for active neutral line tab - darker gray, weight changes to Semibold"
             },
             "focused": {
               "value": "{color.text.neutral.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when neutral line tab is focused - gray.600"
             },
             "disabled": {
               "value": "{color.text.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for disabled neutral line tab - inactive gray"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.neutral.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default icon color for neutral line tab - moderate gray"
             },
             "hover": {
               "value": "{color.icon.neutral.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color on hover for neutral line tab - neutral default"
             },
             "active": {
               "value": "{color.icon.neutral.intense.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for active neutral line tab - intense gray"
             },
             "focused": {
               "value": "{color.icon.neutral.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color when neutral line tab is focused - neutral default"
             },
             "disabled": {
               "value": "{color.icon.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for disabled neutral line tab - subtle gray"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for neutral line tab - subtle gray"
             }
           }
         },
@@ -434,95 +525,116 @@
           "background": {
             "default": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default background for neutral segment tab - transparent (container has gray.50 bg)"
             },
             "hover": {
               "value": "{color.background.neutral.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background on hover for neutral segment tab - subtle gray tint"
             },
             "active": {
               "value": "{color.background.neutral.base}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for active neutral segment tab - white with shadow"
             },
             "focused": {
               "value": "{color.background.neutral.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background when neutral segment tab is focused - subtle gray tint"
             },
             "disabled": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for disabled neutral segment tab - transparent"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default border for neutral segment tab - transparent (uses shadow instead)"
             },
             "hover": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border on hover for neutral segment tab - transparent"
             },
             "active": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for active neutral segment tab - transparent (uses shadow)"
             },
             "focused": {
               "value": "{color.border.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border when neutral segment tab is focused - subtle gray"
             },
             "disabled": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for disabled neutral segment tab - transparent"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default text color for neutral segment tab - gray.900"
             },
             "hover": {
               "value": "{color.text.neutral.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color on hover for neutral segment tab - gray.600"
             },
             "active": {
               "value": "{color.text.neutral.title.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for active neutral segment tab - darker gray, weight changes to Semibold"
             },
             "focused": {
               "value": "{color.text.neutral.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when neutral segment tab is focused - gray.600"
             },
             "disabled": {
               "value": "{color.text.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for disabled neutral segment tab - inactive gray"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.neutral.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default icon color for neutral segment tab - moderate gray"
             },
             "hover": {
               "value": "{color.icon.neutral.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color on hover for neutral segment tab - neutral default"
             },
             "active": {
               "value": "{color.icon.neutral.intense.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for active neutral segment tab - intense gray"
             },
             "focused": {
               "value": "{color.icon.neutral.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color when neutral segment tab is focused - neutral default"
             },
             "disabled": {
               "value": "{color.icon.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for disabled neutral segment tab - subtle gray"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for neutral segment tab - subtle gray"
             }
           }
         }
@@ -532,95 +644,116 @@
           "background": {
             "default": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default background for success line tab - transparent"
             },
             "hover": {
               "value": "{color.background.success.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background on hover for success line tab - subtle green tint"
             },
             "active": {
               "value": "{color.background.success.subtle.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for active success line tab - light green tint"
             },
             "focused": {
               "value": "{color.background.success.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background when success line tab is focused - subtle green tint"
             },
             "disabled": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for disabled success line tab - transparent"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default border for success line tab - transparent (no border)"
             },
             "hover": {
               "value": "{color.border.success.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border on hover for success line tab - subtle green"
             },
             "active": {
               "value": "{color.border.success.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for active success line tab - success green 2px"
             },
             "focused": {
               "value": "{color.border.success.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border when success line tab is focused - subtle green"
             },
             "disabled": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for disabled success line tab - transparent"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default text color for success line tab - gray.900"
             },
             "hover": {
               "value": "{color.text.success.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color on hover for success line tab - green.600"
             },
             "active": {
               "value": "{color.text.success.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for active success line tab - success green, weight changes to Semibold"
             },
             "focused": {
               "value": "{color.text.success.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when success line tab is focused - green.600"
             },
             "disabled": {
               "value": "{color.text.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for disabled success line tab - inactive gray"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.neutral.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default icon color for success line tab - moderate gray"
             },
             "hover": {
               "value": "{color.icon.success.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color on hover for success line tab - success green"
             },
             "active": {
               "value": "{color.icon.success.moderate}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for active success line tab - moderate green"
             },
             "focused": {
               "value": "{color.icon.success.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color when success line tab is focused - success green"
             },
             "disabled": {
               "value": "{color.icon.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for disabled success line tab - subtle gray"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.success.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for success line tab - subtle green"
             }
           }
         },
@@ -628,95 +761,116 @@
           "background": {
             "default": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default background for success segment tab - transparent (container has gray.50 bg)"
             },
             "hover": {
               "value": "{color.background.success.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background on hover for success segment tab - subtle green tint"
             },
             "active": {
               "value": "{color.background.neutral.base}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for active success segment tab - white with shadow"
             },
             "focused": {
               "value": "{color.background.success.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background when success segment tab is focused - subtle green tint"
             },
             "disabled": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for disabled success segment tab - transparent"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default border for success segment tab - transparent (uses shadow instead)"
             },
             "hover": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border on hover for success segment tab - transparent"
             },
             "active": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for active success segment tab - transparent (uses shadow)"
             },
             "focused": {
               "value": "{color.border.success.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border when success segment tab is focused - subtle green"
             },
             "disabled": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for disabled success segment tab - transparent"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default text color for success segment tab - gray.900"
             },
             "hover": {
               "value": "{color.text.success.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color on hover for success segment tab - green.600"
             },
             "active": {
               "value": "{color.text.success.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for active success segment tab - success green, weight changes to Semibold"
             },
             "focused": {
               "value": "{color.text.success.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when success segment tab is focused - green.600"
             },
             "disabled": {
               "value": "{color.text.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for disabled success segment tab - inactive gray"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.neutral.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default icon color for success segment tab - moderate gray"
             },
             "hover": {
               "value": "{color.icon.success.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color on hover for success segment tab - success green"
             },
             "active": {
               "value": "{color.icon.success.moderate}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for active success segment tab - moderate green"
             },
             "focused": {
               "value": "{color.icon.success.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color when success segment tab is focused - success green"
             },
             "disabled": {
               "value": "{color.icon.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for disabled success segment tab - subtle gray"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.success.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for success segment tab - subtle green"
             }
           }
         }
@@ -726,95 +880,116 @@
           "background": {
             "default": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default background for error line tab - transparent"
             },
             "hover": {
               "value": "{color.background.error.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background on hover for error line tab - subtle red tint"
             },
             "active": {
               "value": "{color.background.error.subtle.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for active error line tab - light red tint"
             },
             "focused": {
               "value": "{color.background.error.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background when error line tab is focused - subtle red tint"
             },
             "disabled": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for disabled error line tab - transparent"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default border for error line tab - transparent (no border)"
             },
             "hover": {
               "value": "{color.border.error.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border on hover for error line tab - subtle red"
             },
             "active": {
               "value": "{color.border.error.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for active error line tab - error red 2px"
             },
             "focused": {
               "value": "{color.border.error.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border when error line tab is focused - subtle red"
             },
             "disabled": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for disabled error line tab - transparent"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default text color for error line tab - gray.900"
             },
             "hover": {
               "value": "{color.text.error.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color on hover for error line tab - red.600"
             },
             "active": {
               "value": "{color.text.error.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for active error line tab - error red, weight changes to Semibold"
             },
             "focused": {
               "value": "{color.text.error.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when error line tab is focused - red.600"
             },
             "disabled": {
               "value": "{color.text.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for disabled error line tab - inactive gray"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.neutral.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default icon color for error line tab - moderate gray"
             },
             "hover": {
               "value": "{color.icon.error.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color on hover for error line tab - error red"
             },
             "active": {
               "value": "{color.icon.error.moderate}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for active error line tab - moderate red"
             },
             "focused": {
               "value": "{color.icon.error.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color when error line tab is focused - error red"
             },
             "disabled": {
               "value": "{color.icon.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for disabled error line tab - subtle gray"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.error.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for error line tab - subtle red"
             }
           }
         },
@@ -822,95 +997,116 @@
           "background": {
             "default": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default background for error segment tab - transparent (container has gray.50 bg)"
             },
             "hover": {
               "value": "{color.background.error.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background on hover for error segment tab - subtle red tint"
             },
             "active": {
               "value": "{color.background.neutral.base}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for active error segment tab - white with shadow"
             },
             "focused": {
               "value": "{color.background.error.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background when error segment tab is focused - subtle red tint"
             },
             "disabled": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for disabled error segment tab - transparent"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default border for error segment tab - transparent (uses shadow instead)"
             },
             "hover": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border on hover for error segment tab - transparent"
             },
             "active": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for active error segment tab - transparent (uses shadow)"
             },
             "focused": {
               "value": "{color.border.error.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border when error segment tab is focused - subtle red"
             },
             "disabled": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for disabled error segment tab - transparent"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default text color for error segment tab - gray.900"
             },
             "hover": {
               "value": "{color.text.error.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color on hover for error segment tab - red.600"
             },
             "active": {
               "value": "{color.text.error.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for active error segment tab - error red, weight changes to Semibold"
             },
             "focused": {
               "value": "{color.text.error.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when error segment tab is focused - red.600"
             },
             "disabled": {
               "value": "{color.text.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for disabled error segment tab - inactive gray"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.neutral.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default icon color for error segment tab - moderate gray"
             },
             "hover": {
               "value": "{color.icon.error.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color on hover for error segment tab - error red"
             },
             "active": {
               "value": "{color.icon.error.moderate}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for active error segment tab - moderate red"
             },
             "focused": {
               "value": "{color.icon.error.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color when error segment tab is focused - error red"
             },
             "disabled": {
               "value": "{color.icon.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for disabled error segment tab - subtle gray"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.error.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for error segment tab - subtle red"
             }
           }
         }
@@ -920,95 +1116,116 @@
           "background": {
             "default": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default background for warning line tab - transparent"
             },
             "hover": {
               "value": "{color.background.warning.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background on hover for warning line tab - subtle orange tint"
             },
             "active": {
               "value": "{color.background.warning.subtle.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for active warning line tab - light orange tint"
             },
             "focused": {
               "value": "{color.background.warning.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background when warning line tab is focused - subtle orange tint"
             },
             "disabled": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for disabled warning line tab - transparent"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default border for warning line tab - transparent (no border)"
             },
             "hover": {
               "value": "{color.border.warning.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border on hover for warning line tab - subtle orange"
             },
             "active": {
               "value": "{color.border.warning.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for active warning line tab - warning orange 2px"
             },
             "focused": {
               "value": "{color.border.warning.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border when warning line tab is focused - subtle orange"
             },
             "disabled": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for disabled warning line tab - transparent"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default text color for warning line tab - gray.900"
             },
             "hover": {
               "value": "{color.text.warning.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color on hover for warning line tab - orange.600"
             },
             "active": {
               "value": "{color.text.warning.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for active warning line tab - warning orange, weight changes to Semibold"
             },
             "focused": {
               "value": "{color.text.warning.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when warning line tab is focused - orange.600"
             },
             "disabled": {
               "value": "{color.text.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for disabled warning line tab - inactive gray"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.neutral.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default icon color for warning line tab - moderate gray"
             },
             "hover": {
               "value": "{color.icon.warning.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color on hover for warning line tab - warning orange"
             },
             "active": {
               "value": "{color.icon.warning.moderate}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for active warning line tab - moderate orange"
             },
             "focused": {
               "value": "{color.icon.warning.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color when warning line tab is focused - warning orange"
             },
             "disabled": {
               "value": "{color.icon.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for disabled warning line tab - subtle gray"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.warning.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for warning line tab - subtle orange"
             }
           }
         },
@@ -1016,95 +1233,116 @@
           "background": {
             "default": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default background for warning segment tab - transparent (container has gray.50 bg)"
             },
             "hover": {
               "value": "{color.background.warning.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background on hover for warning segment tab - subtle orange tint"
             },
             "active": {
               "value": "{color.background.neutral.base}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for active warning segment tab - white with shadow"
             },
             "focused": {
               "value": "{color.background.warning.subtle.0}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background when warning segment tab is focused - subtle orange tint"
             },
             "disabled": {
               "value": "{color.background.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Background for disabled warning segment tab - transparent"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default border for warning segment tab - transparent (uses shadow instead)"
             },
             "hover": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border on hover for warning segment tab - transparent"
             },
             "active": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for active warning segment tab - transparent (uses shadow)"
             },
             "focused": {
               "value": "{color.border.warning.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border when warning segment tab is focused - subtle orange"
             },
             "disabled": {
               "value": "{color.border.transparent}",
-              "type": "color"
+              "type": "color",
+              "$description": "Border for disabled warning segment tab - transparent"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default text color for warning segment tab - gray.900"
             },
             "hover": {
               "value": "{color.text.warning.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color on hover for warning segment tab - orange.600"
             },
             "active": {
               "value": "{color.text.warning.body.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for active warning segment tab - warning orange, weight changes to Semibold"
             },
             "focused": {
               "value": "{color.text.warning.body.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color when warning segment tab is focused - orange.600"
             },
             "disabled": {
               "value": "{color.text.neutral.inactive}",
-              "type": "color"
+              "type": "color",
+              "$description": "Text color for disabled warning segment tab - inactive gray"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.neutral.moderate.1}",
-              "type": "color"
+              "type": "color",
+              "$description": "Default icon color for warning segment tab - moderate gray"
             },
             "hover": {
               "value": "{color.icon.warning.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color on hover for warning segment tab - warning orange"
             },
             "active": {
               "value": "{color.icon.warning.moderate}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for active warning segment tab - moderate orange"
             },
             "focused": {
               "value": "{color.icon.warning.default}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color when warning segment tab is focused - warning orange"
             },
             "disabled": {
               "value": "{color.icon.neutral.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Icon color for disabled warning segment tab - subtle gray"
             }
           },
           "focus": {
             "ring": {
               "value": "{color.border.warning.subtle.2}",
-              "type": "color"
+              "type": "color",
+              "$description": "Focus ring color for warning segment tab - subtle orange"
             }
           }
         }

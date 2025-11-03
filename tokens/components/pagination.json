@@ -1,0 +1,421 @@
+{
+  "pagination": {
+    "color": {
+      "rows-per-page": {
+        "label": {
+          "default": {
+            "value": "{color.text.primary.body.1}",
+            "type": "color",
+            "description": "Pagination 'Rows per page' label text color - standard body text for good readability"
+          }
+        },
+        "dropdown": {
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Rows per page dropdown default background - white for clear contrast"
+            },
+            "hover": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "description": "Rows per page dropdown hover background - light gray for feedback"
+            },
+            "focused": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Rows per page dropdown focused background - white"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "description": "Rows per page dropdown disabled background - light gray"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Rows per page dropdown default border - standard neutral border"
+            },
+            "hover": {
+              "value": "{color.border.neutral.moderate.2}",
+              "type": "color",
+              "description": "Rows per page dropdown hover border - darker gray for emphasis"
+            },
+            "focused": {
+              "value": "{color.border.primary.default}",
+              "type": "color",
+              "description": "Rows per page dropdown focused border - primary blue for focus indication"
+            },
+            "disabled": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Rows per page dropdown disabled border - light gray"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "description": "Rows per page dropdown default text - dark for readability"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.inactive}",
+              "type": "color",
+              "description": "Rows per page dropdown disabled text - muted gray"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Rows per page dropdown chevron icon - medium gray"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Rows per page dropdown hover chevron icon - medium gray"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Rows per page dropdown focused chevron icon - medium gray"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "description": "Rows per page dropdown disabled chevron icon - light gray"
+            }
+          }
+        }
+      },
+      "item-range": {
+        "text": {
+          "default": {
+            "value": "{color.text.primary.body.1}",
+            "type": "color",
+            "description": "Item range text color (e.g., '1-20 of 212') - standard body text for clarity"
+          }
+        }
+      },
+      "container": {
+        "background": {
+          "default": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Pagination container background - transparent to inherit from parent context"
+          }
+        }
+      }
+    },
+    "typography": {
+      "rows-per-page": {
+        "label": {
+          "md": {
+            "value": "{font.body.medium.md}",
+            "type": "typography",
+            "description": "13px medium weight font for medium 'Rows per page' label"
+          },
+          "sm": {
+            "value": "{font.body.medium.xs}",
+            "type": "typography",
+            "description": "11px medium weight font for small 'Rows per page' label"
+          }
+        },
+        "dropdown": {
+          "md": {
+            "value": "{font.body.regular.lg}",
+            "type": "typography",
+            "description": "14px regular weight font for medium rows per page dropdown value"
+          },
+          "sm": {
+            "value": "{font.body.regular.lg}",
+            "type": "typography",
+            "description": "14px regular weight font for small rows per page dropdown value"
+          }
+        }
+      },
+      "item-range": {
+        "md": {
+          "value": "{font.body.medium.md}",
+          "type": "typography",
+          "description": "13px medium weight font for medium item range text (e.g., '1-20 of 212')"
+        },
+        "sm": {
+          "value": "{font.body.medium.xs}",
+          "type": "typography",
+          "description": "11px medium weight font for small item range text"
+        }
+      }
+    },
+    "border": {
+      "radius": {
+        "dropdown": {
+          "value": "{border.radius.3xs}",
+          "type": "dimension",
+          "description": "4px border radius for rows per page dropdown"
+        }
+      },
+      "width": {
+        "default": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "1px border width for pagination elements"
+        }
+      }
+    },
+    "spacing": {
+      "gap": {
+        "main": {
+          "md": {
+            "value": "{gap.4}",
+            "type": "dimension",
+            "description": "16px gap between rows-per-page section and pagination controls (medium size)"
+          },
+          "sm": {
+            "value": "{gap.4}",
+            "type": "dimension",
+            "description": "16px gap between rows-per-page section and pagination controls (small size)"
+          }
+        },
+        "rows-per-page": {
+          "md": {
+            "value": "{gap.1}",
+            "type": "dimension",
+            "description": "4px gap between elements within rows-per-page section (medium size)"
+          },
+          "sm": {
+            "value": "{gap.1}",
+            "type": "dimension",
+            "description": "4px gap between elements within rows-per-page section (small size)"
+          }
+        }
+      },
+      "padding": {
+        "container": {
+          "x": {
+            "md": {
+              "value": "0px",
+              "type": "dimension",
+              "description": "No horizontal padding for medium pagination container - relies on parent spacing"
+            },
+            "sm": {
+              "value": "0px",
+              "type": "dimension",
+              "description": "No horizontal padding for small pagination container - relies on parent spacing"
+            }
+          },
+          "y": {
+            "md": {
+              "value": "0px",
+              "type": "dimension",
+              "description": "No vertical padding for medium pagination container - relies on parent spacing"
+            },
+            "sm": {
+              "value": "0px",
+              "type": "dimension",
+              "description": "No vertical padding for small pagination container - relies on parent spacing"
+            }
+          }
+        }
+      }
+    },
+    "container": {
+      "rows-per-page": {
+        "dropdown": {
+          "width": {
+            "md": {
+              "value": "64px",
+              "type": "dimension",
+              "description": "64px width for medium rows per page dropdown (accommodates typical values like '10', '20', '50')"
+            },
+            "sm": {
+              "value": "56px",
+              "type": "dimension",
+              "description": "56px width for small rows per page dropdown"
+            }
+          },
+          "height": {
+            "md": {
+              "value": "{size.height.xs}",
+              "type": "dimension",
+              "description": "32px height for medium rows per page dropdown"
+            },
+            "sm": {
+              "value": "{size.height.3xs}",
+              "type": "dimension",
+              "description": "24px height for small rows per page dropdown"
+            }
+          },
+          "padding": {
+            "x": {
+              "md": {
+                "value": "{padding.x.3xs}",
+                "type": "dimension",
+                "description": "8px horizontal padding for medium rows per page dropdown"
+              },
+              "sm": {
+                "value": "{padding.x.3xs}",
+                "type": "dimension",
+                "description": "8px horizontal padding for small rows per page dropdown"
+              }
+            },
+            "y": {
+              "md": {
+                "value": "{padding.y.4xs}",
+                "type": "dimension",
+                "description": "6px vertical padding for medium rows per page dropdown"
+              },
+              "sm": {
+                "value": "{padding.y.4xs}",
+                "type": "dimension",
+                "description": "6px vertical padding for small rows per page dropdown"
+              }
+            }
+          }
+        }
+      },
+      "height": {
+        "md": {
+          "value": "{size.height.xs}",
+          "type": "dimension",
+          "description": "32px minimum height for medium pagination container (aligns with button heights)"
+        },
+        "sm": {
+          "value": "{size.height.3xs}",
+          "type": "dimension",
+          "description": "24px minimum height for small pagination container (aligns with button heights)"
+        }
+      }
+    },
+    "icon": {
+      "dropdown": {
+        "size": {
+          "md": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "16px chevron icon size for medium rows per page dropdown"
+          },
+          "sm": {
+            "value": "{size.icon.3xs}",
+            "type": "dimension",
+            "description": "12px chevron icon size for small rows per page dropdown"
+          }
+        }
+      }
+    },
+    "layout": {
+      "structure": {
+        "description": "Complete pagination component consists of three main sections arranged horizontally",
+        "sections": {
+          "rows-per-page": {
+            "description": "Left section with 'Rows per page' label, dropdown selector, and optional item range text (e.g., '1-20 of 212')",
+            "elements": ["Label", "Dropdown", "Item Range (optional)"],
+            "use-case": "Controls how many items are displayed per page in tables or lists"
+          },
+          "pagination-controls": {
+            "description": "Right section with pagination navigation (Previous, page numbers, Next)",
+            "elements": ["Pagination Item component"],
+            "use-case": "Provides page-to-page navigation controls"
+          }
+        }
+      },
+      "variants": {
+        "full": {
+          "description": "Complete pagination with all elements: rows-per-page selector, item range, and page controls",
+          "use-case": "Use for data tables where users need control over rows displayed and page navigation"
+        },
+        "controls-only": {
+          "description": "Only pagination controls without rows-per-page section",
+          "use-case": "Use when row count is fixed or controlled elsewhere"
+        },
+        "with-range": {
+          "description": "Includes item range text (e.g., '1-20 of 212') to show current position in dataset",
+          "use-case": "Use when users need context about their position in a large dataset"
+        },
+        "minimal": {
+          "description": "Minimal pagination with just controls, no rows-per-page or range text",
+          "use-case": "Use for simple list pagination where dataset size is small or context is clear"
+        }
+      },
+      "responsive": {
+        "description": "Pagination adapts to container width by adjusting spacing and potentially collapsing controls",
+        "breakpoints": {
+          "desktop": "Full layout with all elements visible",
+          "tablet": "May collapse to show fewer page numbers",
+          "mobile": "Consider using collapsed or simple pagination variant"
+        }
+      }
+    },
+    "behavior": {
+      "rows-per-page": {
+        "dropdown": {
+          "description": "Dropdown selector for number of rows to display per page",
+          "common-values": ["10", "20", "25", "50", "100"],
+          "interaction": "Clicking dropdown shows menu with available options. Selecting a value refreshes the table/list with new row count.",
+          "persistence": "Selected value should persist across page navigations within the same session"
+        },
+        "item-range": {
+          "description": "Read-only text showing current item range and total count (e.g., '1-20 of 212')",
+          "calculation": "Start = (currentPage - 1) * rowsPerPage + 1; End = min(currentPage * rowsPerPage, totalItems)",
+          "updates": "Automatically updates when page changes or rows-per-page changes"
+        }
+      },
+      "accessibility": {
+        "keyboard-navigation": "All interactive elements (dropdown, buttons) must be keyboard accessible (Tab, Enter, Space)",
+        "screen-readers": "Provide ARIA labels for page buttons, announce page changes, and describe current page position",
+        "focus-management": "Clear focus indicators on all interactive elements",
+        "announcements": "Announce page changes and item range updates to screen readers"
+      },
+      "loading-states": {
+        "description": "When data is loading, disable all controls and show loading indicator",
+        "controls": "Disable Previous/Next buttons and page numbers during data fetch",
+        "feedback": "Consider showing skeleton state or loading spinner near pagination controls"
+      }
+    },
+    "effects": {
+      "dropdown": {
+        "focus": {
+          "ring": {
+            "value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+            "type": "boxShadow",
+            "description": "Focus ring for rows per page dropdown - primary blue glow"
+          }
+        },
+        "shadow": {
+          "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+          "type": "boxShadow",
+          "description": "Subtle shadow for rows per page dropdown"
+        }
+      }
+    },
+    "best-practices": {
+      "placement": {
+        "description": "Pagination is typically placed at the bottom of tables or lists",
+        "alignment": "Usually center-aligned or right-aligned within container",
+        "spacing": "Provide adequate spacing (16-24px) from content above"
+      },
+      "data-loading": {
+        "description": "Handle loading states gracefully",
+        "tips": [
+          "Disable controls during data fetch to prevent multiple requests",
+          "Show loading indicator near pagination",
+          "Maintain user's selected rows-per-page value",
+          "Preserve page number when possible after data refresh"
+        ]
+      },
+      "empty-states": {
+        "description": "Handle scenarios with no data",
+        "behavior": "Hide or disable pagination when there are no items or only one page of items",
+        "minimum-threshold": "Consider showing pagination only when totalItems > rowsPerPage"
+      },
+      "url-sync": {
+        "description": "Sync pagination state with URL for shareable links",
+        "parameters": "Include page number and rows-per-page in URL query params (e.g., ?page=2&rows=20)",
+        "benefits": "Allows users to bookmark or share specific pages, improves SEO for indexed content"
+      }
+    }
+  }
+}
+

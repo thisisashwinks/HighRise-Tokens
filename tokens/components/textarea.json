@@ -608,6 +608,50 @@
           "description": "Loading indicator color in default state"
         }
       }
+    },
+    "tags": {
+      "size": {
+        "3xs": {
+          "value": "{size.height.4[5]}",
+          "type": "dimension",
+          "description": "Tags size for 3xs size - tag size: xs; tag height: 18px"
+        },
+        "2xs": {
+          "value": "{size.height.4[5]}",
+          "type": "dimension",
+          "description": "Tags size for 2xs size - tag size: xs; tag height: 18px"
+        },
+        "xs": {
+          "value": "{size.height.5[5]}",
+          "type": "dimension",
+          "description": "Tags size for xs size - tag size: sm; tag height: 22px"
+        },
+        "sm": {
+          "value": "{size.height.3xs}",
+          "type": "dimension",
+          "description": "Tags size for sm size - tag size: md; tag height: 24px"
+        },
+        "md": {
+          "value": "{size.height.2xs}",
+          "type": "dimension",
+          "description": "Tags size for md size - tag size: lg; tag height: 28px"
+        },
+        "lg": {
+          "value": "{size.height.2xs}",
+          "type": "dimension",
+          "description": "Tags size for lg size - tag size: lg; tag height: 28px"
+        }
+      },
+      "gap-between-tags": {
+        "value": "{gap.x.2xs}",
+        "type": "dimension",
+        "description": "Gap between tags - horizontal"
+      },
+      "gap-between-tags-and-input": {
+        "value": "{gap.x.3xs}",
+        "type": "dimension",
+        "description": "Gap between tags and input - horizontal"
+      }
     }
   }
 }

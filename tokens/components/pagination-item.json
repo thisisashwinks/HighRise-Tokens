@@ -1,0 +1,475 @@
+{
+  "pagination-item": {
+    "color": {
+      "page-info": {
+        "text": {
+          "default": {
+            "value": "{color.text.primary.body.1}",
+            "type": "color",
+            "description": "Pagination page info text color (e.g., 'Page 1 of 10') - standard body text"
+          },
+          "subtle": {
+            "value": "{color.text.primary.body.2}",
+            "type": "color",
+            "description": "Pagination page info subtle text color (e.g., '1 of 356') - lighter body text for minimal design"
+          }
+        }
+      },
+      "input-field": {
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Pagination input field default background - white for clear contrast"
+          },
+          "hover": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Pagination input field hover background - remains white"
+          },
+          "focused": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Pagination input field focused background - white"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Pagination input field disabled background - light gray"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Pagination input field default border - standard neutral border"
+          },
+          "hover": {
+            "value": "{color.border.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination input field hover border - darker gray for feedback"
+          },
+          "focused": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Pagination input field focused border - primary blue for focus indication"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.subtle.2}",
+            "type": "color",
+            "description": "Pagination input field disabled border - light gray"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Pagination input field default text - dark for readability"
+          },
+          "placeholder": {
+            "value": "{color.text.neutral.body.2}",
+            "type": "color",
+            "description": "Pagination input field placeholder text (e.g., '...') - medium gray"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.inactive}",
+            "type": "color",
+            "description": "Pagination input field disabled text - muted gray"
+          }
+        }
+      },
+      "dropdown": {
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Pagination dropdown default background - white"
+          },
+          "hover": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Pagination dropdown hover background - light gray"
+          },
+          "focused": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Pagination dropdown focused background - white"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Pagination dropdown disabled background - light gray"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Pagination dropdown default border - standard neutral border"
+          },
+          "hover": {
+            "value": "{color.border.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination dropdown hover border - darker gray"
+          },
+          "focused": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Pagination dropdown focused border - primary blue"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.subtle.2}",
+            "type": "color",
+            "description": "Pagination dropdown disabled border - light gray"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Pagination dropdown default text - dark for readability"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.inactive}",
+            "type": "color",
+            "description": "Pagination dropdown disabled text - muted gray"
+          }
+        },
+        "icon": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination dropdown default icon (chevron) - medium gray"
+          },
+          "hover": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination dropdown hover icon - medium gray"
+          },
+          "focused": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination dropdown focused icon - medium gray"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Pagination dropdown disabled icon - light gray"
+          }
+        }
+      },
+      "button-group": {
+        "border": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "description": "Border color for connected button groups (collapsed view) - standard neutral border"
+        }
+      }
+    },
+    "typography": {
+      "page-info": {
+        "md": {
+          "value": "{font.body.medium.md}",
+          "type": "typography",
+          "description": "13px medium weight font for medium size page info text (e.g., 'Page 1 of 10')"
+        },
+        "sm": {
+          "value": "{font.body.medium.xs}",
+          "type": "typography",
+          "description": "11px medium weight font for small size page info text"
+        }
+      },
+      "page-info-subtle": {
+        "md": {
+          "value": "{font.body.regular.md}",
+          "type": "typography",
+          "description": "13px regular weight font for medium size subtle page info (e.g., '1 of 356')"
+        },
+        "sm": {
+          "value": "{font.body.regular.sm}",
+          "type": "typography",
+          "description": "12px regular weight font for small size subtle page info"
+        }
+      },
+      "input-field": {
+        "md": {
+          "value": "{font.body.regular.lg}",
+          "type": "typography",
+          "description": "14px regular weight font for medium size input fields"
+        },
+        "sm": {
+          "value": "{font.body.regular.lg}",
+          "type": "typography",
+          "description": "14px regular weight font for small size input fields"
+        }
+      },
+      "dropdown": {
+        "md": {
+          "value": "{font.body.regular.lg}",
+          "type": "typography",
+          "description": "14px regular weight font for medium size dropdown"
+        },
+        "sm": {
+          "value": "{font.body.regular.lg}",
+          "type": "typography",
+          "description": "14px regular weight font for small size dropdown"
+        }
+      }
+    },
+    "border": {
+      "radius": {
+        "input": {
+          "value": "{border.radius.3xs}",
+          "type": "dimension",
+          "description": "4px border radius for pagination input fields and dropdowns"
+        },
+        "button-group": {
+          "left": {
+            "value": "{border.radius.3xs}",
+            "type": "dimension",
+            "description": "4px border radius for left side of collapsed button group (left arrow)"
+          },
+          "right": {
+            "value": "{border.radius.3xs}",
+            "type": "dimension",
+            "description": "4px border radius for right side of collapsed button group (right arrow)"
+          }
+        }
+      },
+      "width": {
+        "default": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "1px border width for pagination elements"
+        }
+      }
+    },
+    "spacing": {
+      "gap": {
+        "expanded": {
+          "md": {
+            "value": "{gap.1}",
+            "type": "dimension",
+            "description": "4px gap between pagination buttons in expanded view (medium size)"
+          },
+          "sm": {
+            "value": "{gap.1}",
+            "type": "dimension",
+            "description": "4px gap between pagination buttons in expanded view (small size)"
+          }
+        },
+        "collapsed": {
+          "md": {
+            "value": "{gap.2}",
+            "type": "dimension",
+            "description": "8px gap between button group and page info text in collapsed view (medium size)"
+          },
+          "sm": {
+            "value": "{gap.2}",
+            "type": "dimension",
+            "description": "8px gap between button group and page info text in collapsed view (small size)"
+          }
+        },
+        "simple": {
+          "md": {
+            "value": "{gap.1}",
+            "type": "dimension",
+            "description": "4px gap between elements in simple pagination (medium size)"
+          },
+          "sm": {
+            "value": "{gap.1}",
+            "type": "dimension",
+            "description": "4px gap between elements in simple pagination (small size)"
+          }
+        }
+      }
+    },
+    "container": {
+      "input-field": {
+        "width": {
+          "md": {
+            "value": "{size.xs}",
+            "type": "dimension",
+            "description": "32px width for medium size pagination input field"
+          },
+          "sm": {
+            "value": "{size.3xs}",
+            "type": "dimension",
+            "description": "24px width for small size pagination input field"
+          }
+        },
+        "height": {
+          "md": {
+            "value": "{size.height.xs}",
+            "type": "dimension",
+            "description": "32px height for medium size pagination input field"
+          },
+          "sm": {
+            "value": "{size.height.3xs}",
+            "type": "dimension",
+            "description": "24px height for small size pagination input field"
+          }
+        },
+        "padding": {
+          "x": {
+            "md": {
+              "value": "{padding.x.3xs}",
+              "type": "dimension",
+              "description": "8px horizontal padding for medium size pagination input field"
+            },
+            "sm": {
+              "value": "{padding.x.4xs}",
+              "type": "dimension",
+              "description": "6px horizontal padding for small size pagination input field"
+            }
+          },
+          "y": {
+            "md": {
+              "value": "0px",
+              "type": "dimension",
+              "description": "No vertical padding for medium size pagination input field - height is controlled by container"
+            },
+            "sm": {
+              "value": "0px",
+              "type": "dimension",
+              "description": "No vertical padding for small size pagination input field - height is controlled by container"
+            }
+          }
+        }
+      },
+      "dropdown": {
+        "width": {
+          "md": {
+            "value": "56px",
+            "type": "dimension",
+            "description": "56px width for medium size pagination dropdown (accommodates number + chevron)"
+          },
+          "sm": {
+            "value": "48px",
+            "type": "dimension",
+            "description": "48px width for small size pagination dropdown"
+          }
+        },
+        "height": {
+          "md": {
+            "value": "{size.height.xs}",
+            "type": "dimension",
+            "description": "32px height for medium size pagination dropdown"
+          },
+          "sm": {
+            "value": "{size.height.3xs}",
+            "type": "dimension",
+            "description": "24px height for small size pagination dropdown"
+          }
+        },
+        "padding": {
+          "x": {
+            "md": {
+              "value": "{padding.x.3xs}",
+              "type": "dimension",
+              "description": "8px horizontal padding for medium size pagination dropdown"
+            },
+            "sm": {
+              "value": "{padding.x.3xs}",
+              "type": "dimension",
+              "description": "8px horizontal padding for small size pagination dropdown"
+            }
+          },
+          "y": {
+            "md": {
+              "value": "{padding.y.4xs}",
+              "type": "dimension",
+              "description": "6px vertical padding for medium size pagination dropdown"
+            },
+            "sm": {
+              "value": "{padding.y.4xs}",
+              "type": "dimension",
+              "description": "6px vertical padding for small size pagination dropdown"
+            }
+          }
+        }
+      },
+      "button-group-collapsed": {
+        "width": {
+          "md": {
+            "value": "96px",
+            "type": "dimension",
+            "description": "96px total width for medium size collapsed button group (left arrow + input + right arrow)"
+          },
+          "sm": {
+            "value": "72px",
+            "type": "dimension",
+            "description": "72px total width for small size collapsed button group"
+          }
+        },
+        "height": {
+          "md": {
+            "value": "{size.height.xs}",
+            "type": "dimension",
+            "description": "32px height for medium size collapsed button group"
+          },
+          "sm": {
+            "value": "{size.height.3xs}",
+            "type": "dimension",
+            "description": "24px height for small size collapsed button group"
+          }
+        }
+      }
+    },
+    "icon": {
+      "dropdown": {
+        "size": {
+          "md": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "16px chevron icon size for medium pagination dropdown"
+          },
+          "sm": {
+            "value": "{size.icon.3xs}",
+            "type": "dimension",
+            "description": "12px chevron icon size for small pagination dropdown"
+          }
+        }
+      }
+    },
+    "layout": {
+      "type": {
+        "expanded": {
+          "description": "Full pagination with individual page number buttons, Previous/Next buttons, and optional ellipsis input",
+          "use-case": "Use when you want users to see and directly access multiple page numbers at once"
+        },
+        "collapsed-field": {
+          "description": "Compact pagination with left/right arrows and an input field for direct page entry, displays 'Page X of Y' text",
+          "use-case": "Use when space is limited but you still want to allow direct page number entry"
+        },
+        "collapsed-dropdown": {
+          "description": "Compact pagination with left/right arrows and a dropdown selector for page selection, displays 'Page X of Y' text",
+          "use-case": "Use when you want guided page selection with a dropdown menu instead of free-form input"
+        },
+        "simple": {
+          "description": "Minimal pagination with just page count text (e.g., '1 of 356') and simple arrow navigation",
+          "use-case": "Use for extremely space-constrained layouts or when minimal visual weight is desired"
+        }
+      }
+    },
+    "effects": {
+      "input-field": {
+        "focus": {
+          "ring": {
+            "value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+            "type": "boxShadow",
+            "description": "Focus ring for pagination input fields - primary blue glow"
+          }
+        }
+      },
+      "dropdown": {
+        "shadow": {
+          "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+          "type": "boxShadow",
+          "description": "Subtle shadow for pagination dropdown"
+        }
+      }
+    }
+  }
+}
+

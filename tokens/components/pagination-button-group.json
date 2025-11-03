@@ -1,0 +1,453 @@
+{
+  "pagination-button-group": {
+    "color": {
+      "number": {
+        "background": {
+          "default": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Pagination number button default background - transparent for minimal visual weight"
+          },
+          "hover": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Pagination number button hover background - subtle gray to indicate interactivity"
+          },
+          "focused": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Pagination number button focused background - white with border to indicate focus state"
+          },
+          "disabled": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Pagination number button disabled background - transparent"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Pagination number button default border - transparent for clean look"
+          },
+          "hover": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Pagination number button hover border - transparent"
+          },
+          "focused": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Pagination number button focused border - primary blue to indicate focus"
+          },
+          "disabled": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Pagination number button disabled border - transparent"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.text.primary.body.1}",
+            "type": "color",
+            "description": "Pagination number button default text - standard body text color"
+          },
+          "hover": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Pagination number button hover text - darker for emphasis"
+          },
+          "focused": {
+            "value": "{color.text.primary.body.1}",
+            "type": "color",
+            "description": "Pagination number button focused text - standard body text color"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.inactive}",
+            "type": "color",
+            "description": "Pagination number button disabled text - muted gray to indicate inactive state"
+          }
+        }
+      },
+      "arrow": {
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Pagination arrow button default background - white for clear containment"
+          },
+          "hover": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Pagination arrow button hover background - light gray for feedback"
+          },
+          "focused": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Pagination arrow button focused background - medium gray for focus state"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Pagination arrow button disabled background - white"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Pagination arrow button default border - standard neutral border"
+          },
+          "hover": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Pagination arrow button hover border - standard neutral border"
+          },
+          "focused": {
+            "value": "{color.border.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination arrow button focused border - darker gray for focus emphasis"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Pagination arrow button disabled border - standard neutral border"
+          }
+        },
+        "icon": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination arrow button default icon - medium gray for neutral appearance"
+          },
+          "hover": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination arrow button hover icon - medium gray"
+          },
+          "focused": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination arrow button focused icon - medium gray"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Pagination arrow button disabled icon - light gray to indicate inactive state"
+          }
+        }
+      },
+      "arrow-without-bg": {
+        "background": {
+          "default": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Pagination arrow without bg default background - transparent for minimal design"
+          },
+          "hover": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Pagination arrow without bg hover background - transparent"
+          },
+          "focused": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Pagination arrow without bg focused background - transparent"
+          },
+          "disabled": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Pagination arrow without bg disabled background - transparent"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Pagination arrow without bg default border - transparent for borderless design"
+          },
+          "hover": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Pagination arrow without bg hover border - transparent"
+          },
+          "focused": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Pagination arrow without bg focused border - transparent"
+          },
+          "disabled": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Pagination arrow without bg disabled border - transparent"
+          }
+        },
+        "icon": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination arrow without bg default icon - medium gray"
+          },
+          "hover": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination arrow without bg hover icon - medium gray"
+          },
+          "focused": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination arrow without bg focused icon - medium gray"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Pagination arrow without bg disabled icon - light gray to indicate inactive state"
+          }
+        }
+      },
+      "text-button": {
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Pagination text button (Previous/Next) default background - white"
+          },
+          "hover": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Pagination text button hover background - light gray"
+          },
+          "focused": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Pagination text button focused background - medium gray"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Pagination text button disabled background - white"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Pagination text button default border - standard neutral border"
+          },
+          "hover": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Pagination text button hover border - standard neutral border"
+          },
+          "focused": {
+            "value": "{color.border.neutral.moderate.2}",
+            "type": "color",
+            "description": "Pagination text button focused border - darker gray for focus emphasis"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Pagination text button disabled border - standard neutral border"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.text.primary.body.1}",
+            "type": "color",
+            "description": "Pagination text button default text - standard body text"
+          },
+          "hover": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Pagination text button hover text - darker for emphasis"
+          },
+          "focused": {
+            "value": "{color.text.primary.body.1}",
+            "type": "color",
+            "description": "Pagination text button focused text - standard body text"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.inactive}",
+            "type": "color",
+            "description": "Pagination text button disabled text - muted gray"
+          }
+        }
+      }
+    },
+    "typography": {
+      "number": {
+        "md": {
+          "value": "{font.body.regular.md}",
+          "type": "typography",
+          "description": "13px regular font for medium pagination number buttons"
+        },
+        "sm": {
+          "value": "{font.body.regular.xs}",
+          "type": "typography",
+          "description": "11px regular font for small pagination number buttons"
+        }
+      },
+      "text-button": {
+        "md": {
+          "value": "{font.body.semibold.md}",
+          "type": "typography",
+          "description": "13px semibold font for medium pagination text buttons (Previous/Next)"
+        },
+        "sm": {
+          "value": "{font.body.semibold.xs}",
+          "type": "typography",
+          "description": "11px semibold font for small pagination text buttons (Previous/Next)"
+        }
+      }
+    },
+    "border": {
+      "radius": {
+        "value": "{border.radius.3xs}",
+        "type": "dimension",
+        "description": "4px border radius for pagination buttons - subtle rounding"
+      },
+      "width": {
+        "default": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "1px border width for pagination buttons"
+        }
+      }
+    },
+    "container": {
+      "number": {
+        "size": {
+          "md": {
+            "value": "{size.xs}",
+            "type": "dimension",
+            "description": "32px square size for medium pagination number buttons"
+          },
+          "sm": {
+            "value": "{size.3xs}",
+            "type": "dimension",
+            "description": "24px square size for small pagination number buttons"
+          }
+        },
+        "padding": {
+          "md": {
+            "value": "{padding.1[5]}",
+            "type": "dimension",
+            "description": "6px padding for medium pagination number buttons"
+          },
+          "sm": {
+            "value": "{padding.1[5]}",
+            "type": "dimension",
+            "description": "6px padding for small pagination number buttons"
+          }
+        }
+      },
+      "arrow": {
+        "size": {
+          "md": {
+            "value": "{size.xs}",
+            "type": "dimension",
+            "description": "32px square size for medium pagination arrow buttons"
+          },
+          "sm": {
+            "value": "{size.3xs}",
+            "type": "dimension",
+            "description": "24px square size for small pagination arrow buttons"
+          }
+        },
+        "padding": {
+          "md": {
+            "value": "{padding.1[5]}",
+            "type": "dimension",
+            "description": "6px padding for medium pagination arrow buttons"
+          },
+          "sm": {
+            "value": "{padding.1[5]}",
+            "type": "dimension",
+            "description": "6px padding for small pagination arrow buttons"
+          }
+        }
+      },
+      "arrow-without-bg": {
+        "size": {
+          "md": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "20px icon size for medium pagination arrow buttons without background"
+          },
+          "sm": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "16px icon size for small pagination arrow buttons without background"
+          }
+        }
+      },
+      "text-button": {
+        "height": {
+          "md": {
+            "value": "{size.height.xs}",
+            "type": "dimension",
+            "description": "32px height for medium pagination text buttons (Previous/Next)"
+          },
+          "sm": {
+            "value": "{size.height.3xs}",
+            "type": "dimension",
+            "description": "24px height for small pagination text buttons (Previous/Next)"
+          }
+        },
+        "padding": {
+          "x": {
+            "md": {
+              "value": "{padding.x.3xs}",
+              "type": "dimension",
+              "description": "8px horizontal padding for medium pagination text buttons"
+            },
+            "sm": {
+              "value": "{padding.x.3xs}",
+              "type": "dimension",
+              "description": "8px horizontal padding for small pagination text buttons"
+            }
+          },
+          "y": {
+            "md": {
+              "value": "{padding.y.3xs}",
+              "type": "dimension",
+              "description": "4px vertical padding for medium pagination text buttons"
+            },
+            "sm": {
+              "value": "{padding.y.3xs}",
+              "type": "dimension",
+              "description": "4px vertical padding for small pagination text buttons"
+            }
+          }
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "md": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "20px icon size for medium pagination buttons"
+        },
+        "sm": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "16px icon size for small pagination buttons"
+        }
+      }
+    },
+    "gap": {
+      "md": {
+        "value": "{gap.2}",
+        "type": "dimension",
+        "description": "8px gap between elements in medium pagination buttons"
+      },
+      "sm": {
+        "value": "{gap.2}",
+        "type": "dimension",
+        "description": "8px gap between elements in small pagination buttons"
+      }
+    }
+  }
+}
+
