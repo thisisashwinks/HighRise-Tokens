@@ -68,7 +68,7 @@
           "value": "{padding.y.none}",
           "type": "dimension",
           "$description": "Vertical padding for icon-only tab item - 0px"
-          }
+        }
       }
     },
     "height": {
@@ -138,7 +138,7 @@
           "value": "{size.width.xs}",
           "type": "dimension",
           "$description": "Width of icon-only tab item - 32px"
-        },  
+        },
         "lg": {
           "value": "{size.width.md}",
           "type": "dimension",
@@ -166,14 +166,14 @@
               "$description": "Default background for primary tab - transparent (no background)"
             },
             "hover": {
-              "value": "{color.background.primary.subtle.1}",
+              "value": "{color.background.primary.subtle.0}",
               "type": "color",
               "$description": "Background when hovering over primary tab - light blue (#EFF4FF)"
             },
             "active": {
-              "value": "{color.background.neutral.base}",
+              "value": "{color.background.neutral.transparent}",
               "type": "color",
-              "$description": "Background for active primary tab - white/neutral base"
+              "$description": "Background for active primary tab - transparent"
             },
             "disabled": {
               "value": "{color.background.transparent}",
@@ -182,120 +182,69 @@
             }
           },
           "border": {
-            "bottom": {
-              "default": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Default bottom border for primary tab - transparent (no border)"
-              },
-              "hover": {
-                "value": "{color.border.primary.subtle.1}",
-                "type": "color",
-                "$description": "Bottom border when hovering over primary tab - light primary"
-              },
-              "active": {
-                "value": "{color.border.primary.default}",
-                "type": "color",
-                "$description": "Bottom border for active primary tab - primary blue (#004EEB) 2px"
-              },
-              "focused": {
-                "value": "{color.border.primary.subtle.1}",
-                "type": "color",
-                "$description": "Bottom border when primary tab is focused - light primary"
-              },
-              "disabled": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Bottom border for disabled primary tab - transparent"
-              }
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Default bottom border for primary tab - transparent (no border)"
             },
-            "side": {
-              "default": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Default side borders for primary tab - transparent (line tabs have no side borders)"
-              },
-              "hover": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Side borders on hover for primary tab - transparent"
-              },
-              "active": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Side borders for active primary tab - transparent"
-              },
-              "focused": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Side borders when primary tab is focused - transparent"
-              },
-              "disabled": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Side borders for disabled primary tab - transparent"
-              }
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Bottom border when hovering over primary tab - transparent"
+            },
+            "active": {
+              "value": "{color.border.primary.intense.0}",
+              "type": "color",
+              "$description": "Bottom border for active primary tab - intense blue (#004EEB)"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Bottom border for disabled primary tab - transparent"
             }
           },
           "text": {
             "default": {
-              "value": "{color.text.primary.body.1}",
+              "value": "{color.text.neutral.body.2}",
               "type": "color",
               "$description": "Default text color for primary tab - gray.600 (#475467)"
             },
             "hover": {
-              "value": "{color.text.primary.title.1}",
+              "value": "{color.text.neutral.title.2}",
               "type": "color",
               "$description": "Text color when hovering over primary tab - darker gray (#1D2939)"
             },
             "active": {
-              "value": "{color.text.primary.title.1}",
+              "value": "{color.text.primary.body.1}",
               "type": "color",
               "$description": "Text color for active primary tab - primary blue (#004EEB), weight changes to Semibold"
             },
-            "focused": {
-              "value": "{color.text.primary.title.1}",
-              "type": "color",
-              "$description": "Text color when primary tab is focused - darker gray (#1D2939)"
-            },
             "disabled": {
-              "value": "{color.text.primary.inactive.1}",
+              "value": "{color.text.neutral.subtitle.2}",
               "type": "color",
-              "$description": "Text color for disabled primary tab - lighter gray (inactive)"
-            }
-          },
-          "focus": {
-            "ring": {
-              "value": "{color.border.primary.subtle.2}",
-              "type": "color",
-              "$description": "Focus ring color for primary tab - light primary blue"
+              "$description": "Text color for disabled primary tab - subtitle gray (#98A2B3)"
             }
           },
           "icon": {
             "default": {
-              "value": "{color.icon.primary.default}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
-              "$description": "Default icon color for primary tab - matches text color"
+              "$description": "Default icon color for primary tab - moderate gray (#475467)"
             },
             "hover": {
-              "value": "{color.icon.primary.intense.0}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
-              "$description": "Icon color when hovering over primary tab - darker shade"
+              "$description": "Icon color when hovering over primary tab - moderate gray (#475467)"
             },
             "active": {
-              "value": "{color.icon.primary.intense.1}",
+              "value": "{color.icon.primary.default}",
               "type": "color",
-              "$description": "Icon color for active primary tab - primary blue (#004EEB)"
-            },
-            "focused": {
-              "value": "{color.icon.primary.intense.0}",
-              "type": "color",
-              "$description": "Icon color when primary tab is focused - darker shade"
+              "$description": "Icon color for active primary tab - default blue (#004EEB)"
             },
             "disabled": {
-              "value": "{color.icon.primary.subtle}",
+              "value": "{color.icon.neutral.subtle.2}",
               "type": "color",
-              "$description": "Icon color for disabled primary tab - subtle/faded"
+              "$description": "Icon color for disabled primary tab - subtle gray (#d0d5dd)"
             }
           }
         },
@@ -307,19 +256,14 @@
               "$description": "Default background for neutral tab - transparent (no background)"
             },
             "hover": {
-              "value": "{color.background.neutral.subtle.1}",
+              "value": "{color.background.neutral.subtle.0}",
               "type": "color",
-              "$description": "Background when hovering over neutral tab - light gray"
+              "$description": "Background when hovering over neutral tab - subtle gray (#f9fafb)"
             },
             "active": {
-              "value": "{color.background.neutral.base}",
+              "value": "{color.background.neutral.transparent}",
               "type": "color",
-              "$description": "Background for active neutral tab - white/neutral base"
-            },
-            "focused": {
-              "value": "{color.background.neutral.subtle.1}",
-              "type": "color",
-              "$description": "Background when neutral tab is focused - light gray"
+              "$description": "Background for active neutral tab - transparent"
             },
             "disabled": {
               "value": "{color.background.transparent}",
@@ -328,120 +272,251 @@
             }
           },
           "border": {
-            "bottom": {
-              "default": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Default bottom border for neutral tab - transparent"
-              },
-              "hover": {
-                "value": "{color.border.neutral.subtle.1}",
-                "type": "color",
-                "$description": "Bottom border when hovering over neutral tab - subtle gray"
-              },
-              "active": {
-                "value": "{color.border.neutral.moderate.0}",
-                "type": "color",
-                "$description": "Bottom border for active neutral tab - moderate gray 2px"
-              },
-              "focused": {
-                "value": "{color.border.neutral.subtle.1}",
-                "type": "color",
-                "$description": "Bottom border when neutral tab is focused - subtle gray"
-              },
-              "disabled": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Bottom border for disabled neutral tab - transparent"
-              }
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Default bottom border for neutral tab - transparent"
             },
-            "side": {
-              "default": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Default side borders for neutral tab - transparent"
-              },
-              "hover": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Side borders on hover for neutral tab - transparent"
-              },
-              "active": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Side borders for active neutral tab - transparent"
-              },
-              "focused": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Side borders when neutral tab is focused - transparent"
-              },
-              "disabled": {
-                "value": "{color.border.transparent}",
-                "type": "color",
-                "$description": "Side borders for disabled neutral tab - transparent"
-              }
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Bottom border when hovering over neutral tab - transparent"
+            },
+            "active": {
+              "value": "{color.border.neutral.intense.1}",
+              "type": "color",
+              "$description": "Bottom border for active neutral tab - intense gray (#101828)"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Bottom border for disabled neutral tab - transparent"
             }
           },
           "text": {
             "default": {
-              "value": "{color.text.neutral.body.1}",
+              "value": "{color.text.neutral.body.2}",
               "type": "color",
-              "$description": "Default text color for neutral tab - gray.600"
+              "$description": "Default text color for neutral tab - body gray (#475467)"
             },
             "hover": {
-              "value": "{color.text.neutral.title.1}",
+              "value": "{color.text.neutral.title.2}",
               "type": "color",
-              "$description": "Text color when hovering over neutral tab - darker gray"
+              "$description": "Text color when hovering over neutral tab - title gray (#1d2939)"
             },
             "active": {
               "value": "{color.text.neutral.title.1}",
               "type": "color",
-              "$description": "Text color for active neutral tab - darker gray, weight changes to Semibold"
-            },
-            "focused": {
-              "value": "{color.text.neutral.title.1}",
-              "type": "color",
-              "$description": "Text color when neutral tab is focused - darker gray"
+              "$description": "Text color for active neutral tab - title gray (#101828)"
             },
             "disabled": {
-              "value": "{color.text.neutral.inactive}",
+              "value": "{color.text.neutral.subtitle.2}",
               "type": "color",
-              "$description": "Text color for disabled neutral tab - inactive gray"
-            }
-          },
-          "focus": {
-            "ring": {
-              "value": "{color.border.neutral.subtle.2}",
-              "type": "color",
-              "$description": "Focus ring color for neutral tab - subtle gray"
+              "$description": "Text color for disabled neutral tab - subtitle gray (#98a2b3)"
             }
           },
           "icon": {
             "default": {
-              "value": "{color.icon.neutral.default}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
-              "$description": "Default icon color for neutral tab - matches text color"
+              "$description": "Default icon color for neutral tab - moderate gray (#475467)"
             },
             "hover": {
-              "value": "{color.icon.neutral.intense.0}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
-              "$description": "Icon color when hovering over neutral tab - darker shade"
+              "$description": "Icon color when hovering over neutral tab - moderate gray (#475467)"
             },
             "active": {
               "value": "{color.icon.neutral.intense.1}",
               "type": "color",
-              "$description": "Icon color for active neutral tab - intense gray"
-            },
-            "focused": {
-              "value": "{color.icon.neutral.intense.0}",
-              "type": "color",
-              "$description": "Icon color when neutral tab is focused - darker shade"
+              "$description": "Icon color for active neutral tab - intense gray (#101828)"
             },
             "disabled": {
               "value": "{color.icon.neutral.subtle.2}",
               "type": "color",
-              "$description": "Icon color for disabled neutral tab - subtle/faded"
+              "$description": "Icon color for disabled neutral tab - subtle gray (#d0d5dd)"
+            }
+          }
+        }
+      },
+      "segment": {
+        "primary": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "$description": "Default background for primary segment tab - transparent"
+            },
+            "hover": {
+              "value": "{color.background.primary.subtle.0}",
+              "type": "color",
+              "$description": "Background when hovering over primary segment tab - subtle blue (#eff4ff)"
+            },
+            "active": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "$description": "Background for active primary segment tab - neutral base (#ffffff)"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "$description": "Background for disabled primary segment tab - transparent"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Default bottom border for primary segment tab - transparent"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Bottom border when hovering over primary segment tab - transparent"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Bottom border for active primary segment tab - transparent"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Bottom border for disabled primary segment tab - transparent"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "$description": "Default text color for primary segment tab - body gray (#475467)"
+            },
+            "hover": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "$description": "Text color when hovering over primary segment tab - title gray (#1d2939)"
+            },
+            "active": {
+              "value": "{color.text.primary.body.1}",
+              "type": "color",
+              "$description": "Text color for active primary segment tab - primary blue (#004EEB), weight changes to Semibold"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.subtitle.2}",
+              "type": "color",
+              "$description": "Text color for disabled primary segment tab - subtitle gray (#98a2b3)"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "$description": "Default icon color for primary segment tab - moderate gray (#475467)"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "$description": "Icon color when hovering over primary segment tab - moderate gray (#475467)"
+            },
+            "active": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "$description": "Icon color for active primary segment tab - default blue (#004EEB)"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "$description": "Icon color for disabled primary segment tab - subtle gray (#d0d5dd)"
+            }
+          }
+        },
+        "neutral": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "$description": "Default background for neutral segment tab - transparent"
+            },
+            "hover": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "$description": "Background when hovering over neutral segment tab - subtle gray (#f9fafb)"
+            },
+            "active": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "$description": "Background for active neutral segment tab - neutral base (#ffffff)"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "$description": "Background for disabled neutral segment tab - transparent"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Default bottom border for neutral segment tab - transparent"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Bottom border when hovering over neutral segment tab - transparent"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Bottom border for active neutral segment tab - transparent"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "$description": "Bottom border for disabled neutral segment tab - transparent"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "$description": "Default text color for neutral segment tab - body gray (#475467)"
+            },
+            "hover": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "$description": "Text color when hovering over neutral segment tab - title gray (#1d2939)"
+            },
+            "active": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "$description": "Text color for active neutral segment tab - title gray (#101828)"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.subtitle.2}",
+              "type": "color",
+              "$description": "Text color for disabled neutral segment tab - subtitle gray (#98a2b3)"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "$description": "Default icon color for neutral segment tab - moderate gray (#475467)"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "$description": "Icon color when hovering over neutral segment tab - moderate gray (#475467)"
+            },
+            "active": {
+              "value": "{color.icon.neutral.intense.1}",
+              "type": "color",
+              "$description": "Icon color for active neutral segment tab - intense gray (#101828)"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "$description": "Icon color for disabled neutral segment tab - subtle gray (#d0d5dd)"
             }
           }
         }
@@ -449,39 +524,68 @@
     },
     "text": {
       "typography": {
-        "xs": {
-          "value": "{font.body.medium.xs}",
-          "type": "typography",
-          "$description": "Typography for XS tab item text - Medium weight, 12px (when not active)"
+        "default": {
+          "sm": {
+            "value": "{font.body.medium.md}",
+            "type": "typography",
+            "$description": "Typography for SM tab item text - Medium weight, 13px (when not active)"
+          },
+          "md": {
+            "value": "{font.body.medium.base}",
+            "type": "typography",
+            "$description": "Typography for MD tab item text - Medium weight, 14px (when not active)"
+          },
+          "lg": {
+            "value": "{font.body.medium.base}",
+            "type": "typography",
+            "$description": "Typography for LG tab item text - Medium weight, 14px (when not active)"
+          },
+          "xl": {
+            "value": "{font.body.medium.xl}",
+            "type": "typography",
+            "$description": "Typography for XL tab item text - Medium weight, 15px (when not active)"
+          },
+          "2xl": {
+            "value": "{font.body.medium.2xl}",
+            "type": "typography",
+            "$description": "Typography for 2XL tab item text - Medium weight, 16px (when not active)"
+          }
         },
-        "sm": {
-          "value": "{font.body.medium.sm}",
-          "type": "typography",
-          "$description": "Typography for SM tab item text - Medium weight, 14px (when not active)"
-        },
-        "md": {
-          "value": "{font.body.medium.md}",
-          "type": "typography",
-          "$description": "Typography for MD tab item text - Medium weight, 16px (when not active)"
-        },
-        "lg": {
-          "value": "{font.body.medium.lg}",
-          "type": "typography",
-          "$description": "Typography for LG tab item text - Medium weight, 18px (when not active)"
+        "active": {
+          "sm": {
+            "value": "{font.body.semibold.md}",
+            "type": "typography",
+            "$description": "Typography for active SM tab item text - Semibold weight, 13px"
+          },
+          "md": {
+            "value": "{font.body.semibold.base}",
+            "type": "typography",
+            "$description": "Typography for active MD tab item text - Semibold weight, 14px"
+          },
+          "lg": {
+            "value": "{font.body.semibold.base}",
+            "type": "typography",
+            "$description": "Typography for active LG tab item text - Semibold weight, 14px"
+          },
+          "xl": {
+            "value": "{font.body.semibold.xl}",
+            "type": "typography",
+            "$description": "Typography for active XL tab item text - Semibold weight, 15px"
+          },
+          "2xl": {
+            "value": "{font.body.semibold.2xl}",
+            "type": "typography",
+            "$description": "Typography for active 2XL tab item text - Semibold weight, 16px"
+          }
         }
       }
     },
     "icon": {
       "size": {
-        "xs": {
-          "value": "{size.icon.xs}",
-          "type": "dimension",
-          "$description": "Icon size for XS tab item - 12px"
-        },
         "sm": {
-          "value": "{size.icon.sm}",
+          "value": "{size.icon.2xs}",
           "type": "dimension",
-          "$description": "Icon size for SM tab item - 16px"
+          "$description": "Icon size for SM tab item - 14px"
         },
         "md": {
           "value": "{size.icon.md}",
@@ -492,8 +596,256 @@
           "value": "{size.icon.lg}",
           "type": "dimension",
           "$description": "Icon size for LG tab item - 24px"
+        },
+        "xl": {
+          "value": "{size.icon.lg}",
+          "type": "dimension",
+          "$description": "Icon size for XL tab item - 24px"
+        },
+        "2xl": {
+          "value": "{size.icon.lg}",
+          "type": "dimension",
+          "$description": "Icon size for 2XL tab item - 24px"
+        }
+      }
+    },
+    "badge": {
+      "size": {
+        "default": {
+          "value": "{size.height.4[5]}",
+          "type": "dimension",
+          "$description": "Badge size for tab item - height: 18px"
+        },
+        "icon-only": {
+          "value": "{size.height.3}",
+          "type": "dimension",
+          "$description": "Badge size for icon-only tab item - height: 12px"
+        }
+      },
+      "position": {
+        "icon-only": {
+          "x": {
+            "default": {
+              "sm": {
+                "value": "{position.x.3[25]}",
+                "type": "position",
+                "$description": "Position for badge - 13px"
+              },
+              "md": {
+                "value": "{position.x.5[25]}",
+                "type": "position",
+                "$description": "Position for badge - 21px"
+              },
+              "lg": {
+                "value": "{position.x.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              },
+              "xl": {
+                "value": "{position.x.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              },
+              "2xl": {
+                "value": "{position.x.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              }
+            },
+            "bottom": {
+              "sm": {
+                "value": "{position.x.3[25]}",
+                "type": "position",
+                "$description": "Position for badge - 13px"
+              },
+              "md": {
+                "value": "{position.x.5[25]}",
+                "type": "position",
+                "$description": "Position for badge - 21px"
+              },
+              "lg": {
+                "value": "{position.x.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              },
+              "xl": {
+                "value": "{position.x.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              },
+              "2xl": {
+                "value": "{position.x.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              }
+            },
+            "left": {
+              "sm": {
+                "value": "{position.x.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "md": {
+                "value": "{position.x.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "lg": {
+                "value": "{position.x.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "xl": {
+                "value": "{position.x.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "2xl": {
+                "value": "{position.x.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              }
+            },
+            "right": {
+              "sm": {
+                "value": "{position.x.3[25]}",
+                "type": "position",
+                "$description": "Position for badge - 13px"
+              },
+              "md": {
+                "value": "{position.x.5[25]}",
+                "type": "position",
+                "$description": "Position for badge - 21px"
+              },
+              "lg": {
+                "value": "{position.x.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              },
+              "xl": {
+                "value": "{position.x.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              },
+              "2xl": {
+                "value": "{position.x.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              }
+            }
+          },
+          "y": {
+            "default": {
+              "sm": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "md": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "lg": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "xl": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "2xl": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              }
+            },
+            "bottom": {
+              "sm": {
+                "value": "{position.y.3[25]}",
+                "type": "position",
+                "$description": "Position for badge - 13px"
+              },
+              "md": {
+                "value": "{position.y.5[25]}",
+                "type": "position",
+                "$description": "Position for badge - 21px"
+              },
+              "lg": {
+                "value": "{position.y.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              },
+              "xl": {
+                "value": "{position.y.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              },
+              "2xl": {
+                "value": "{position.y.7[25]}",
+                "type": "position",
+                "$description": "Position for badge - 29px"
+              }
+            },
+            "left": {
+              "sm": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "md": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "lg": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "xl": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "2xl": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              }
+            },
+            "right": {
+              "sm": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "md": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "lg": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "xl": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              },
+              "2xl": {
+                "value": "{position.y.-0[25]}",
+                "type": "position",
+                "$description": "Position for badge - -1px"
+              }
+            }
+          }
         }
       }
     }
   }
-} 
+}

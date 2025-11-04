@@ -1073,6 +1073,14 @@
     "900": {
       "value": "#491c96",
       "type": "color"
+    },
+    "950": {
+      "value": "#2e125e",
+      "type": "color"
+    },
+    "975": {
+      "value": "#220c47 ",
+      "type": "color"
     }
   },
   "purple": {

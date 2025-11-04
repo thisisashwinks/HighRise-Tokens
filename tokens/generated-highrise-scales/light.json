@@ -79,6 +79,10 @@
     "value": "#002b82",
     "type": "color"
   },
+  "primary-975": {
+    "value": "#002570",
+    "type": "color"
+  },
   "secondary-25": {
     "value": "#fff6f4",
     "type": "color"
@@ -159,6 +163,10 @@
     "value": "#220a00",
     "type": "color"
   },
+  "secondary-975": {
+    "value": "#1d0c4a",
+    "type": "color"
+  },
   "tertiary-25": {
     "value": "#f9f7ff",
     "type": "color"
@@ -237,6 +245,10 @@
   },
   "tertiary-950": {
     "value": "#1c003b",
+    "type": "color"
+  },
+  "tertiary-975": {
+    "value": "#1d0c4a",
     "type": "color"
   },
   "gray-0": {
@@ -323,6 +335,10 @@
     "value": "#0a0d12",
     "type": "color"
   },
+  "gray-975": {
+    "value": "#040508",
+    "type": "color"
+  },
   "gray-1000": {
     "value": "#000000",
     "type": "color"
@@ -407,6 +423,10 @@
     "value": "#0d0f1c",
     "type": "color"
   },
+  "grayBlue-975": {
+    "value": "#070912",
+    "type": "color"
+  },
   "grayCool-25": {
     "value": "#fcfcfd",
     "type": "color"
@@ -485,6 +505,10 @@
   },
   "grayCool-950": {
     "value": "#0e101b",
+    "type": "color"
+  },
+  "grayCool-975": {
+    "value": "#07090f",
     "type": "color"
   },
   "grayModern-25": {
@@ -567,6 +591,10 @@
     "value": "#0d121c",
     "type": "color"
   },
+  "grayModern-975": {
+    "value": "#06080d",
+    "type": "color"
+  },
   "grayNeutral-25": {
     "value": "#fcfcfd",
     "type": "color"
@@ -645,6 +673,10 @@
   },
   "grayNeutral-950": {
     "value": "#0d121c",
+    "type": "color"
+  },
+  "grayNeutral-975": {
+    "value": "#06070a",
     "type": "color"
   },
   "grayIron-25": {
@@ -727,6 +759,10 @@
     "value": "#131316",
     "type": "color"
   },
+  "grayIron-975": {
+    "value": "#08080a",
+    "type": "color"
+  },
   "grayTrue-25": {
     "value": "#fcfcfc",
     "type": "color"
@@ -805,6 +841,10 @@
   },
   "grayTrue-950": {
     "value": "#0f0f0f",
+    "type": "color"
+  },
+  "grayTrue-975": {
+    "value": "#050505",
     "type": "color"
   },
   "grayWarm-25": {
@@ -887,6 +927,10 @@
     "value": "#171412",
     "type": "color"
   },
+  "grayWarm-975": {
+    "value": "#0a0908",
+    "type": "color"
+  },
   "moss-25": {
     "value": "#fafdf7",
     "type": "color"
@@ -965,6 +1009,10 @@
   },
   "moss-950": {
     "value": "#1a280b",
+    "type": "color"
+  },
+  "moss-975": {
+    "value": "#101a06",
     "type": "color"
   },
   "greenLight-25": {
@@ -1047,6 +1095,10 @@
     "value": "#15290a",
     "type": "color"
   },
+  "greenLight-975": {
+    "value": "#0b1705",
+    "type": "color"
+  },
   "green-25": {
     "value": "#f6fef9",
     "type": "color"
@@ -1125,6 +1177,10 @@
   },
   "green-950": {
     "value": "#052e1c",
+    "type": "color"
+  },
+  "green-975": {
+    "value": "#031c11",
     "type": "color"
   },
   "teal-25": {
@@ -1207,6 +1263,10 @@
     "value": "#0a2926",
     "type": "color"
   },
+  "teal-975": {
+    "value": "#061a18",
+    "type": "color"
+  },
   "cyan-25": {
     "value": "#f5feff",
     "type": "color"
@@ -1285,6 +1345,10 @@
   },
   "cyan-950": {
     "value": "#0d2d3a",
+    "type": "color"
+  },
+  "cyan-975": {
+    "value": "#09212b",
     "type": "color"
   },
   "blueLight-25": {
@@ -1367,6 +1431,10 @@
     "value": "#062c41",
     "type": "color"
   },
+  "blueLight-975": {
+    "value": "#031f2e",
+    "type": "color"
+  },
   "blue-25": {
     "value": "#f5faff",
     "type": "color"
@@ -1445,6 +1513,10 @@
   },
   "blue-950": {
     "value": "#102a56",
+    "type": "color"
+  },
+  "blue-975": {
+    "value": "#0c2145",
     "type": "color"
   },
   "blueDark-25": {
@@ -1527,6 +1599,10 @@
     "value": "#002266",
     "type": "color"
   },
+  "blueDark-975": {
+    "value": "#001a4d",
+    "type": "color"
+  },
   "indigo-25": {
     "value": "#f5f8ff",
     "type": "color"
@@ -1605,6 +1681,10 @@
   },
   "indigo-950": {
     "value": "#1f235b",
+    "type": "color"
+  },
+  "indigo-975": {
+    "value": "#171a47",
     "type": "color"
   },
   "violet-25": {
@@ -1687,6 +1767,10 @@
     "value": "#2e125e",
     "type": "color"
   },
+  "violet-975": {
+    "value": "#220c47 ",
+    "type": "color"
+  },
   "purple-25": {
     "value": "#fafaff",
     "type": "color"
@@ -1765,6 +1849,10 @@
   },
   "purple-950": {
     "value": "#27115f",
+    "type": "color"
+  },
+  "purple-975": {
+    "value": "#1d0c4a",
     "type": "color"
   },
   "fuchsia-25": {
@@ -1847,6 +1935,10 @@
     "value": "#47104c",
     "type": "color"
   },
+  "fuchsia-975": {
+    "value": "#3b0c40",
+    "type": "color"
+  },
   "pink-25": {
     "value": "#fef6fb",
     "type": "color"
@@ -1925,6 +2017,10 @@
   },
   "pink-950": {
     "value": "#4e0d30",
+    "type": "color"
+  },
+  "pink-975": {
+    "value": "#3d0925",
     "type": "color"
   },
   "rose-25": {
@@ -2007,6 +2103,10 @@
     "value": "#510b24",
     "type": "color"
   },
+  "rose-975": {
+    "value": "#3b0619",
+    "type": "color"
+  },
   "orangeDark-25": {
     "value": "#fff9f5",
     "type": "color"
@@ -2085,6 +2185,10 @@
   },
   "orangeDark-950": {
     "value": "#57130a",
+    "type": "color"
+  },
+  "orangeDark-975": {
+    "value": "#470e06",
     "type": "color"
   },
   "orange-25": {
@@ -2167,6 +2271,10 @@
     "value": "#511c10",
     "type": "color"
   },
+  "orange-975": {
+    "value": "#45170c",
+    "type": "color"
+  },
   "yellow-25": {
     "value": "#fefdf0",
     "type": "color"
@@ -2245,6 +2353,10 @@
   },
   "yellow-950": {
     "value": "#542c0d",
+    "type": "color"
+  },
+  "yellow-975": {
+    "value": "#452308",
     "type": "color"
   },
   "success-25": {
@@ -2327,6 +2439,10 @@
     "value": "#044028",
     "type": "color"
   },
+  "success-975": {
+    "value": "#02331f",
+    "type": "color"
+  },
   "warning-25": {
     "value": "#fffcf5",
     "type": "color"
@@ -2407,6 +2523,10 @@
     "value": "#4e1d09",
     "type": "color"
   },
+  "warning-975": {
+    "value": "#421807",
+    "type": "color"
+  },
   "error-25": {
     "value": "#fffbfa",
     "type": "color"
@@ -2485,6 +2605,10 @@
   },
   "error-950": {
     "value": "#55160c",
+    "type": "color"
+  },
+  "error-975": {
+    "value": "#471109",
     "type": "color"
   }
 }

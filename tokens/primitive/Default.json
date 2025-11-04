@@ -10,1949 +10,1959 @@
         "0": {
           "value": "{gray-0}",
           "type": "color",
-          "description": "Neutral gray color - Lightest"
+          "description": "Neutral gray color: #ffffff"
         },
         "25": {
           "value": "{gray-25}",
           "type": "color",
-          "description": "Neutral gray color - Step 25"
+          "description": "Neutral gray color: #fcfcfd"
         },
         "50": {
           "value": "{gray-50}",
           "type": "color",
-          "description": "Neutral gray color - Step 50"
+          "description": "Neutral gray color: #f9fafb"
         },
         "100": {
           "value": "{gray-100}",
           "type": "color",
-          "description": "Neutral gray color - Step 100"
+          "description": "Neutral gray color: #f2f4f7"
         },
         "200": {
           "value": "{gray-200}",
           "type": "color",
-          "description": "Neutral gray color - Step 200"
+          "description": "Neutral gray color: #eaecf0"
         },
         "300": {
           "value": "{gray-300}",
           "type": "color",
-          "description": "Neutral gray color - Step 300"
+          "description": "Neutral gray color: #d0d5dd"
         },
         "400": {
           "value": "{gray-400}",
           "type": "color",
-          "description": "Neutral gray color - Step 400"
+          "description": "Neutral gray color: #98a2b3"
         },
         "500": {
           "value": "{gray-500}",
           "type": "color",
-          "description": "Neutral gray color - Step 500"
+          "description": "Neutral gray color: #667085"
         },
         "600": {
           "value": "{gray-600}",
           "type": "color",
-          "description": "Neutral gray color - Step 600"
+          "description": "Neutral gray color: #475467"
         },
         "700": {
           "value": "{gray-700}",
           "type": "color",
-          "description": "Neutral gray color - Step 700"
+          "description": "Neutral gray color: #344054"
         },
         "800": {
           "value": "{gray-800}",
           "type": "color",
-          "description": "Neutral gray color - Step 800"
+          "description": "Neutral gray color: #1d2939"
         },
         "900": {
           "value": "{gray-900}",
           "type": "color",
-          "description": "Neutral gray color - Step 900"
+          "description": "Neutral gray color: #101828"
+        },
+        "950": {
+          "value": "{gray-950}",
+          "type": "color",
+          "description": "Neutral gray color: #0a0d12"
+        },
+        "975": {
+          "value": "{gray-975}",
+          "type": "color",
+          "description": "Neutral gray color: #040508"
         },
         "1000": {
           "value": "{gray-1000}",
           "type": "color",
-          "description": "Neutral gray color - Darkest"
+          "description": "Neutral gray color: #000000"
         }
       },
       "gray-blue": {
-        "0": {
-          "value": "{grayBlue-0}",
-          "type": "color",
-          "description": "Neutral gray-blue color - Lightest"
-        },
         "25": {
           "value": "{grayBlue-25}",
           "type": "color",
-          "description": "Neutral gray-blue color - Step 25"
+          "description": "Neutral gray-blue color: #fcfcfd"
         },
         "50": {
           "value": "{grayBlue-50}",
           "type": "color",
-          "description": "Neutral gray-blue color - Step 50"
+          "description": "Neutral gray-blue color: #f8f9fc"
         },
         "100": {
           "value": "{grayBlue-100}",
           "type": "color",
-          "description": "Neutral gray-blue color - Step 100"
+          "description": "Neutral gray-blue color: #eaecf5"
         },
         "200": {
           "value": "{grayBlue-200}",
           "type": "color",
-          "description": "Neutral gray-blue color - Step 200"
+          "description": "Neutral gray-blue color: #d5d9eb"
         },
         "300": {
           "value": "{grayBlue-300}",
           "type": "color",
-          "description": "Neutral gray-blue color - Step 300"
+          "description": "Neutral gray-blue color: #b3b8db"
         },
         "400": {
           "value": "{grayBlue-400}",
           "type": "color",
-          "description": "Neutral gray-blue color - Step 400"
+          "description": "Neutral gray-blue color: #717bbc"
         },
         "500": {
           "value": "{grayBlue-500}",
           "type": "color",
-          "description": "Neutral gray-blue color - Step 500"
+          "description": "Neutral gray-blue color: #4e5ba6"
         },
         "600": {
           "value": "{grayBlue-600}",
           "type": "color",
-          "description": "Neutral gray-blue color - Step 600"
+          "description": "Neutral gray-blue color: #3e4784"
         },
         "700": {
           "value": "{grayBlue-700}",
           "type": "color",
-          "description": "Neutral gray-blue color - Step 700"
+          "description": "Neutral gray-blue color: #363f72"
         },
         "800": {
           "value": "{grayBlue-800}",
           "type": "color",
-          "description": "Neutral gray-blue color - Step 800"
+          "description": "Neutral gray-blue color: #293056"
         },
         "900": {
           "value": "{grayBlue-900}",
           "type": "color",
-          "description": "Neutral gray-blue color - Step 900"
+          "description": "Neutral gray-blue color: #101323"
         },
-        "1000": {
-          "value": "{grayBlue-1000}",
+        "950": {
+          "value": "{grayBlue-950}",
           "type": "color",
-          "description": "Neutral gray-blue color - Darkest"
+          "description": "Neutral gray-blue color: #0d0f1c"
+        },
+        "975": {
+          "value": "{grayBlue-975}",
+          "type": "color",
+          "description": "Neutral gray-blue color: #070912"
         }
       },
       "gray-cool": {
-        "0": {
-          "value": "{grayCool-0}",
-          "type": "color",
-          "description": "Neutral gray-cool color - Lightest"
-        },
         "25": {
           "value": "{grayCool-25}",
           "type": "color",
-          "description": "Neutral gray-cool color - Step 25"
+          "description": "Neutral gray-cool color: #fcfcfd"
         },
         "50": {
           "value": "{grayCool-50}",
           "type": "color",
-          "description": "Neutral gray-cool color - Step 50"
+          "description": "Neutral gray-cool color: #f9f9fb"
         },
         "100": {
           "value": "{grayCool-100}",
           "type": "color",
-          "description": "Neutral gray-cool color - Step 100"
+          "description": "Neutral gray-cool color: #eff1f5"
         },
         "200": {
           "value": "{grayCool-200}",
           "type": "color",
-          "description": "Neutral gray-cool color - Step 200"
+          "description": "Neutral gray-cool color: #dcdfea"
         },
         "300": {
           "value": "{grayCool-300}",
           "type": "color",
-          "description": "Neutral gray-cool color - Step 300"
+          "description": "Neutral gray-cool color: #b9c0d4"
         },
         "400": {
           "value": "{grayCool-400}",
           "type": "color",
-          "description": "Neutral gray-cool color - Step 400"
+          "description": "Neutral gray-cool color: #7d89b0"
         },
         "500": {
           "value": "{grayCool-500}",
           "type": "color",
-          "description": "Neutral gray-cool color - Step 500"
+          "description": "Neutral gray-cool color: #5d6b98"
         },
         "600": {
           "value": "{grayCool-600}",
           "type": "color",
-          "description": "Neutral gray-cool color - Step 600"
+          "description": "Neutral gray-cool color: #4a5578"
         },
         "700": {
           "value": "{grayCool-700}",
           "type": "color",
-          "description": "Neutral gray-cool color - Step 700"
+          "description": "Neutral gray-cool color: #404968"
         },
         "800": {
           "value": "{grayCool-800}",
           "type": "color",
-          "description": "Neutral gray-cool color - Step 800"
+          "description": "Neutral gray-cool color: #30374f"
         },
         "900": {
           "value": "{grayCool-900}",
           "type": "color",
-          "description": "Neutral gray-cool color - Step 900"
+          "description": "Neutral gray-cool color: #111322"
         },
-        "1000": {
-          "value": "{grayCool-1000}",
+        "950": {
+          "value": "{grayCool-950}",
           "type": "color",
-          "description": "Neutral gray-cool color - Darkest"
+          "description": "Neutral gray-cool color: #0e101b"
+        },
+        "975": {
+          "value": "{grayCool-975}",
+          "type": "color",
+          "description": "Neutral gray-cool color: #07090f"
         }
       },
       "gray-modern": {
-        "0": {
-          "value": "{grayModern-0}",
-          "type": "color",
-          "description": "Neutral gray-modern color - Lightest"
-        },
         "25": {
           "value": "{grayModern-25}",
           "type": "color",
-          "description": "Neutral gray-modern color - Step 25"
+          "description": "Neutral gray-modern color: #fcfcfd"
         },
         "50": {
           "value": "{grayModern-50}",
           "type": "color",
-          "description": "Neutral gray-modern color - Step 50"
+          "description": "Neutral gray-modern color: #f8fafc"
         },
         "100": {
           "value": "{grayModern-100}",
           "type": "color",
-          "description": "Neutral gray-modern color - Step 100"
+          "description": "Neutral gray-modern color: #eef2f6"
         },
         "200": {
           "value": "{grayModern-200}",
           "type": "color",
-          "description": "Neutral gray-modern color - Step 200"
+          "description": "Neutral gray-modern color: #e3e8ef"
         },
         "300": {
           "value": "{grayModern-300}",
           "type": "color",
-          "description": "Neutral gray-modern color - Step 300"
+          "description": "Neutral gray-modern color: #cdd5df"
         },
         "400": {
           "value": "{grayModern-400}",
           "type": "color",
-          "description": "Neutral gray-modern color - Step 400"
+          "description": "Neutral gray-modern color: #9aa4b2"
         },
         "500": {
           "value": "{grayModern-500}",
           "type": "color",
-          "description": "Neutral gray-modern color - Step 500"
+          "description": "Neutral gray-modern color: #697586"
         },
         "600": {
           "value": "{grayModern-600}",
           "type": "color",
-          "description": "Neutral gray-modern color - Step 600"
+          "description": "Neutral gray-modern color: #4b5565"
         },
         "700": {
           "value": "{grayModern-700}",
           "type": "color",
-          "description": "Neutral gray-modern color - Step 700"
+          "description": "Neutral gray-modern color: #364152"
         },
         "800": {
           "value": "{grayModern-800}",
           "type": "color",
-          "description": "Neutral gray-modern color - Step 800"
+          "description": "Neutral gray-modern color: #202939"
         },
         "900": {
           "value": "{grayModern-900}",
           "type": "color",
-          "description": "Neutral gray-modern color - Step 900"
+          "description": "Neutral gray-modern color: #121926"
         },
-        "1000": {
-          "value": "{grayModern-1000}",
+        "950": {
+          "value": "{grayModern-950}",
           "type": "color",
-          "description": "Neutral gray-modern color - Darkest"
+          "description": "Neutral gray-modern color: #0d0f1c"
+        },
+        "975": {
+          "value": "{grayModern-975}",
+          "type": "color",
+          "description": "Neutral gray-modern color: #080b12"
         }
       },
       "gray-neutral": {
-        "0": {
-          "value": "{grayNeutral-0}",
-          "type": "color",
-          "description": "Neutral gray-neutral color - Lightest"
-        },
         "25": {
           "value": "{grayNeutral-25}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Step 25"
+          "description": "Neutral gray-neutral color: #fcfcfd"
         },
         "50": {
           "value": "{grayNeutral-50}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Step 50"
+          "description": "Neutral gray-neutral color: #f9fafb"
         },
         "100": {
           "value": "{grayNeutral-100}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Step 100"
+          "description": "Neutral gray-neutral color: #f3f4f6"
         },
         "200": {
           "value": "{grayNeutral-200}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Step 200"
+          "description": "Neutral gray-neutral color: #e5e7eb"
         },
         "300": {
           "value": "{grayNeutral-300}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Step 300"
+          "description": "Neutral gray-neutral color: #d2d6db"
         },
         "400": {
           "value": "{grayNeutral-400}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Step 400"
+          "description": "Neutral gray-neutral color: #9da4ae"
         },
         "500": {
           "value": "{grayNeutral-500}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Step 500"
+          "description": "Neutral gray-neutral color: #6c737f"
         },
         "600": {
           "value": "{grayNeutral-600}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Step 600"
+          "description": "Neutral gray-neutral color: #4d5761"
         },
         "700": {
           "value": "{grayNeutral-700}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Step 700"
+          "description": "Neutral gray-neutral color: #384250"
         },
         "800": {
           "value": "{grayNeutral-800}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Step 800"
+          "description": "Neutral gray-neutral color: #1f2a37"
         },
         "900": {
           "value": "{grayNeutral-900}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Step 900"
+          "description": "Neutral gray-neutral color: #111927"
         },
-        "1000": {
-          "value": "{grayNeutral-1000}",
+        "950": {
+          "value": "{grayNeutral-950}",
           "type": "color",
-          "description": "Neutral gray-neutral color - Darkest"
+          "description": "Neutral gray-neutral color: #0d121c"
+        },
+        "975": {
+          "value": "{grayNeutral-975}",
+          "type": "color",
+          "description": "Neutral gray-neutral color: #070a0f"
         }
       },
       "gray-iron": {
-        "0": {
-          "value": "{grayIron-0}",
-          "type": "color",
-          "description": "Neutral gray-iron color - Lightest"
-        },
         "25": {
           "value": "{grayIron-25}",
           "type": "color",
-          "description": "Neutral gray-iron color - Step 25"
+          "description": "Neutral gray-iron color: #fcfcfc"
         },
         "50": {
           "value": "{grayIron-50}",
           "type": "color",
-          "description": "Neutral gray-iron color - Step 50"
+          "description": "Neutral gray-iron color: #fafafa"
         },
         "100": {
           "value": "{grayIron-100}",
           "type": "color",
-          "description": "Neutral gray-iron color - Step 100"
+          "description": "Neutral gray-iron color: #f4f4f5"
         },
         "200": {
           "value": "{grayIron-200}",
           "type": "color",
-          "description": "Neutral gray-iron color - Step 200"
+          "description": "Neutral gray-iron color: #e4e4e7"
         },
         "300": {
           "value": "{grayIron-300}",
           "type": "color",
-          "description": "Neutral gray-iron color - Step 300"
+          "description": "Neutral gray-iron color: #d1d1d6"
         },
         "400": {
           "value": "{grayIron-400}",
           "type": "color",
-          "description": "Neutral gray-iron color - Step 400"
+          "description": "Neutral gray-iron color: #a0a0ab"
         },
         "500": {
           "value": "{grayIron-500}",
           "type": "color",
-          "description": "Neutral gray-iron color - Step 500"
+          "description": "Neutral gray-iron color: #70707b"
         },
         "600": {
           "value": "{grayIron-600}",
           "type": "color",
-          "description": "Neutral gray-iron color - Step 600"
+          "description": "Neutral gray-iron color: #51525c"
         },
         "700": {
           "value": "{grayIron-700}",
           "type": "color",
-          "description": "Neutral gray-iron color - Step 700"
+          "description": "Neutral gray-iron color: #3f3f46"
         },
         "800": {
           "value": "{grayIron-800}",
           "type": "color",
-          "description": "Neutral gray-iron color - Step 800"
+          "description": "Neutral gray-iron color: #26272b"
         },
         "900": {
           "value": "{grayIron-900}",
           "type": "color",
-          "description": "Neutral gray-iron color - Step 900"
+          "description": "Neutral gray-iron color: #18181b"
         },
-        "1000": {
-          "value": "{grayIron-1000}",
+        "950": {
+          "value": "{grayIron-950}",
           "type": "color",
-          "description": "Neutral gray-iron color - Darkest"
+          "description": "Neutral gray-iron color: #131316"
+        },
+        "975": {
+          "value": "{grayIron-975}",
+          "type": "color",
+          "description": "Neutral gray-iron color: #08080a"
         }
       },
       "gray-true": {
-        "0": {
-          "value": "{grayTrue-0}",
-          "type": "color",
-          "description": "Neutral gray-true color - Lightest"
-        },
         "25": {
           "value": "{grayTrue-25}",
           "type": "color",
-          "description": "Neutral gray-true color - Step 25"
+          "description": "Neutral gray-true color: #fcfcfc"
         },
         "50": {
           "value": "{grayTrue-50}",
           "type": "color",
-          "description": "Neutral gray-true color - Step 50"
+          "description": "Neutral gray-true color: #fafafa"
         },
         "100": {
           "value": "{grayTrue-100}",
           "type": "color",
-          "description": "Neutral gray-true color - Step 100"
+          "description": "Neutral gray-true color: #f5f5f5"
         },
         "200": {
           "value": "{grayTrue-200}",
           "type": "color",
-          "description": "Neutral gray-true color - Step 200"
+          "description": "Neutral gray-true color: #e5e5e5"
         },
         "300": {
           "value": "{grayTrue-300}",
           "type": "color",
-          "description": "Neutral gray-true color - Step 300"
+          "description": "Neutral gray-true color: #d6d6d6"
         },
         "400": {
           "value": "{grayTrue-400}",
           "type": "color",
-          "description": "Neutral gray-true color - Step 400"
+          "description": "Neutral gray-true color: #a3a3a3"
         },
         "500": {
           "value": "{grayTrue-500}",
           "type": "color",
-          "description": "Neutral gray-true color - Step 500"
+          "description": "Neutral gray-true color: #737373"
         },
         "600": {
           "value": "{grayTrue-600}",
           "type": "color",
-          "description": "Neutral gray-true color - Step 600"
+          "description": "Neutral gray-true color: #525252"
         },
         "700": {
           "value": "{grayTrue-700}",
           "type": "color",
-          "description": "Neutral gray-true color - Step 700"
+          "description": "Neutral gray-true color: #424242"
         },
         "800": {
           "value": "{grayTrue-800}",
           "type": "color",
-          "description": "Neutral gray-true color - Step 800"
+          "description": "Neutral gray-true color: #292929"
         },
         "900": {
           "value": "{grayTrue-900}",
           "type": "color",
-          "description": "Neutral gray-true color - Step 900"
+          "description": "Neutral gray-true color: #141414"
         },
-        "1000": {
-          "value": "{grayTrue-1000}",
+        "950": {
+          "value": "{grayTrue-950}",
           "type": "color",
-          "description": "Neutral gray-true color - Darkest"
+          "description": "Neutral gray-true color: #0f0f0f"
+        },
+        "975": {
+          "value": "{grayTrue-975}",
+          "type": "color",
+          "description": "Neutral gray-true color: #050505"
         }
       },
       "gray-warm": {
-        "0": {
-          "value": "{grayWarm-0}",
-          "type": "color",
-          "description": "Neutral gray-warm color - Lightest"
-        },
         "25": {
           "value": "{grayWarm-25}",
           "type": "color",
-          "description": "Neutral gray-warm color - Step 25"
+          "description": "Neutral gray-warm color: #fdfdfc"
         },
         "50": {
           "value": "{grayWarm-50}",
           "type": "color",
-          "description": "Neutral gray-warm color - Step 50"
+          "description": "Neutral gray-warm color: #fafaf9"
         },
         "100": {
           "value": "{grayWarm-100}",
           "type": "color",
-          "description": "Neutral gray-warm color - Step 100"
+          "description": "Neutral gray-warm color: #f5f5f4"
         },
         "200": {
           "value": "{grayWarm-200}",
           "type": "color",
-          "description": "Neutral gray-warm color - Step 200"
+          "description": "Neutral gray-warm color: #e7e5e4"
         },
         "300": {
           "value": "{grayWarm-300}",
           "type": "color",
-          "description": "Neutral gray-warm color - Step 300"
+          "description": "Neutral gray-warm color: #d7d3d0"
         },
         "400": {
           "value": "{grayWarm-400}",
           "type": "color",
-          "description": "Neutral gray-warm color - Step 400"
+          "description": "Neutral gray-warm color: #a9a29d"
         },
         "500": {
           "value": "{grayWarm-500}",
           "type": "color",
-          "description": "Neutral gray-warm color - Step 500"
+          "description": "Neutral gray-warm color: #79716b"
         },
         "600": {
           "value": "{grayWarm-600}",
           "type": "color",
-          "description": "Neutral gray-warm color - Step 600"
+          "description": "Neutral gray-warm color: #57534e"
         },
         "700": {
           "value": "{grayWarm-700}",
           "type": "color",
-          "description": "Neutral gray-warm color - Step 700"
+          "description": "Neutral gray-warm color: #44403c"
         },
         "800": {
           "value": "{grayWarm-800}",
           "type": "color",
-          "description": "Neutral gray-warm color - Step 800"
+          "description": "Neutral gray-warm color: #292524"
         },
         "900": {
           "value": "{grayWarm-900}",
           "type": "color",
-          "description": "Neutral gray-warm color - Step 900"
+          "description": "Neutral gray-warm color: #1c1917"
         },
-        "1000": {
-          "value": "{grayWarm-1000}",
+        "950": {
+          "value": "{grayWarm-950}",
           "type": "color",
-          "description": "Neutral gray-warm color - Darkest"
+          "description": "Neutral gray-warm color: #171412"
+        },
+        "975": {
+          "value": "{grayWarm-975}",
+          "type": "color",
+          "description": "Neutral gray-warm color: #0a0908"
         }
       }
     },
     "primary": {
       "blue": {
-        "0": {
-          "value": "{primary-0}",
-          "type": "color",
-          "description": "Primary blue color - Lightest"
-        },
         "25": {
           "value": "{primary-25}",
           "type": "color",
-          "description": "Primary blue color - Step 25"
+          "description": "Primary blue color: #f5f8ff"
         },
         "50": {
           "value": "{primary-50}",
           "type": "color",
-          "description": "Primary blue color - Step 50"
+          "description": "Primary blue color: #eff4ff"
         },
         "100": {
           "value": "{primary-100}",
           "type": "color",
-          "description": "Primary blue color - Step 100"
+          "description": "Primary blue color: #d1e0ff"
         },
         "200": {
           "value": "{primary-200}",
           "type": "color",
-          "description": "Primary blue color - Step 200"
+          "description": "Primary blue color: #b2ccff"
         },
         "300": {
           "value": "{primary-300}",
           "type": "color",
-          "description": "Primary blue color - Step 300"
+          "description": "Primary blue color: #84adff"
         },
         "400": {
           "value": "{primary-400}",
           "type": "color",
-          "description": "Primary blue color - Step 400"
+          "description": "Primary blue color: #528bff"
         },
         "500": {
           "value": "{primary-500}",
           "type": "color",
-          "description": "Primary blue color - Step 500"
+          "description": "Primary blue color: #2970ff"
         },
         "600": {
           "value": "{primary-600}",
           "type": "color",
-          "description": "Primary blue color - Step 600"
+          "description": "Primary blue color: #155eef"
         },
         "700": {
           "value": "{primary-700}",
           "type": "color",
-          "description": "Primary blue color - Step 700"
+          "description": "Primary blue color: #004eeb"
         },
         "800": {
           "value": "{primary-800}",
           "type": "color",
-          "description": "Primary blue color - Step 800"
+          "description": "Primary blue color: #0040c1"
         },
         "900": {
           "value": "{primary-900}",
           "type": "color",
-          "description": "Primary blue color - Step 900"
+          "description": "Primary blue color: #00359e"
         },
-        "1000": {
-          "value": "{primary-1000}",
+        "950": {
+          "value": "{primary-950}",
           "type": "color",
-          "description": "Primary blue color - Darkest"
+          "description": "Primary blue color: #002b82"
+        },
+        "975": {
+          "value": "{primary-975}",
+          "type": "color",
+          "description": "Primary blue color: #002570"
         }
       }
     },
     "accent": {
       "yellow": {
-        "0": {
-          "value": "{yellow-0}",
-          "type": "color",
-          "description": "Accent yellow color - Lightest"
-        },
         "25": {
           "value": "{yellow-25}",
           "type": "color",
-          "description": "Accent yellow color - Step 25"
+          "description": "Accent yellow color: #fefdf0"
         },
         "50": {
           "value": "{yellow-50}",
           "type": "color",
-          "description": "Accent yellow color - Step 50"
+          "description": "Accent yellow color: #fefbe8"
         },
         "100": {
           "value": "{yellow-100}",
           "type": "color",
-          "description": "Accent yellow color - Step 100"
+          "description": "Accent yellow color: #fef7c3"
         },
         "200": {
           "value": "{yellow-200}",
           "type": "color",
-          "description": "Accent yellow color - Step 200"
+          "description": "Accent yellow color: #feee95"
         },
         "300": {
           "value": "{yellow-300}",
           "type": "color",
-          "description": "Accent yellow color - Step 300"
+          "description": "Accent yellow color: #fde272"
         },
         "400": {
           "value": "{yellow-400}",
           "type": "color",
-          "description": "Accent yellow color - Step 400"
+          "description": "Accent yellow color: #fac515"
         },
         "500": {
           "value": "{yellow-500}",
           "type": "color",
-          "description": "Accent yellow color - Step 500"
+          "description": "Accent yellow color: #eaaa08"
         },
         "600": {
           "value": "{yellow-600}",
           "type": "color",
-          "description": "Accent yellow color - Step 600"
+          "description": "Accent yellow color: #ca8504"
         },
         "700": {
           "value": "{yellow-700}",
           "type": "color",
-          "description": "Accent yellow color - Step 700"
+          "description": "Accent yellow color: #a15c07"
         },
         "800": {
           "value": "{yellow-800}",
           "type": "color",
-          "description": "Accent yellow color - Step 800"
+          "description": "Accent yellow color: #854a0e"
         },
         "900": {
           "value": "{yellow-900}",
           "type": "color",
-          "description": "Accent yellow color - Step 900"
+          "description": "Accent yellow color: #713b12"
         },
-        "1000": {
-          "value": "{yellow-1000}",
+        "950": {
+          "value": "{yellow-950}",
           "type": "color",
-          "description": "Accent yellow color - Darkest"
+          "description": "Accent yellow color: #542c0d"
+        },
+        "975": {
+          "value": "{yellow-975}",
+          "type": "color",
+          "description": "Accent yellow color: #452308"
         }
       },
       "green-light": {
-        "0": {
-          "value": "{greenLight-0}",
-          "type": "color",
-          "description": "Accent green-light color - Lightest"
-        },
         "25": {
           "value": "{greenLight-25}",
           "type": "color",
-          "description": "Accent green-light color - Step 25"
+          "description": "Accent green-light color: #fafef5"
         },
         "50": {
           "value": "{greenLight-50}",
           "type": "color",
-          "description": "Accent green-light color - Step 50"
+          "description": "Accent green-light color: #f3fee7"
         },
         "100": {
           "value": "{greenLight-100}",
           "type": "color",
-          "description": "Accent green-light color - Step 100"
+          "description": "Accent green-light color: #e4fbcc"
         },
         "200": {
           "value": "{greenLight-200}",
           "type": "color",
-          "description": "Accent green-light color - Step 200"
+          "description": "Accent green-light color: #d0f8ab"
         },
         "300": {
           "value": "{greenLight-300}",
           "type": "color",
-          "description": "Accent green-light color - Step 300"
+          "description": "Accent green-light color: #a6ef67"
         },
         "400": {
           "value": "{greenLight-400}",
           "type": "color",
-          "description": "Accent green-light color - Step 400"
+          "description": "Accent green-light color: #85e13a"
         },
         "500": {
           "value": "{greenLight-500}",
           "type": "color",
-          "description": "Accent green-light color - Step 500"
+          "description": "Accent green-light color: #66c61c"
         },
         "600": {
           "value": "{greenLight-600}",
           "type": "color",
-          "description": "Accent green-light color - Step 600"
+          "description": "Accent green-light color: #4ca30d"
         },
         "700": {
           "value": "{greenLight-700}",
           "type": "color",
-          "description": "Accent green-light color - Step 700"
+          "description": "Accent green-light color: #3b7c0f"
         },
         "800": {
           "value": "{greenLight-800}",
           "type": "color",
-          "description": "Accent green-light color - Step 800"
+          "description": "Accent green-light color: #326212"
         },
         "900": {
           "value": "{greenLight-900}",
           "type": "color",
-          "description": "Accent green-light color - Step 900"
+          "description": "Accent green-light color: #2b5314"
         },
-        "1000": {
-          "value": "{greenLight-1000}",
+        "950": {
+          "value": "{greenLight-950}",
           "type": "color",
-          "description": "Accent green-light color - Darkest"
+          "description": "Accent green-light color: #15290a"
+        },
+        "975": {
+          "value": "{greenLight-975}",
+          "type": "color",
+          "description": "Accent green-light color: #0b1705"
         }
       },
       "moss": {
-        "0": {
-          "value": "{moss-0}",
-          "type": "color",
-          "description": "Accent moss color - Lightest"
-        },
         "25": {
           "value": "{moss-25}",
           "type": "color",
-          "description": "Accent moss color - Step 25"
+          "description": "Accent moss color: #fafdf7"
         },
         "50": {
           "value": "{moss-50}",
           "type": "color",
-          "description": "Accent moss color - Step 50"
+          "description": "Accent moss color: #f5fbee"
         },
         "100": {
           "value": "{moss-100}",
           "type": "color",
-          "description": "Accent moss color - Step 100"
+          "description": "Accent moss color: #e6f4d7"
         },
         "200": {
           "value": "{moss-200}",
           "type": "color",
-          "description": "Accent moss color - Step 200"
+          "description": "Accent moss color: #ceeab0"
         },
         "300": {
           "value": "{moss-300}",
           "type": "color",
-          "description": "Accent moss color - Step 300"
+          "description": "Accent moss color: #acdc79"
         },
         "400": {
           "value": "{moss-400}",
           "type": "color",
-          "description": "Accent moss color - Step 400"
+          "description": "Accent moss color: #86cb3c"
         },
         "500": {
           "value": "{moss-500}",
           "type": "color",
-          "description": "Accent moss color - Step 500"
+          "description": "Accent moss color: #669f2a"
         },
         "600": {
           "value": "{moss-600}",
           "type": "color",
-          "description": "Accent moss color - Step 600"
+          "description": "Accent moss color: #4f7a21"
         },
         "700": {
           "value": "{moss-700}",
           "type": "color",
-          "description": "Accent moss color - Step 700"
+          "description": "Accent moss color: #3f621a"
         },
         "800": {
           "value": "{moss-800}",
           "type": "color",
-          "description": "Accent moss color - Step 800"
+          "description": "Accent moss color: #335015"
         },
         "900": {
           "value": "{moss-900}",
           "type": "color",
-          "description": "Accent moss color - Step 900"
+          "description": "Accent moss color: #2b4212"
         },
-        "1000": {
-          "value": "{moss-1000}",
+        "950": {
+          "value": "{moss-950}",
           "type": "color",
-          "description": "Accent moss color - Darkest"
+          "description": "Accent moss color: #1a280b"
+        },
+        "975": {
+          "value": "{moss-975}",
+          "type": "color",
+          "description": "Accent moss color: #101a06"
         }
       },
       "green": {
-        "0": {
-          "value": "{green-0}",
-          "type": "color",
-          "description": "Accent green color - Lightest"
-        },
         "25": {
           "value": "{green-25}",
           "type": "color",
-          "description": "Accent green color - Step 25"
+          "description": "Accent green color: #f6fef9"
         },
         "50": {
           "value": "{green-50}",
           "type": "color",
-          "description": "Accent green color - Step 50"
+          "description": "Accent green color: #edfcf2"
         },
         "100": {
           "value": "{green-100}",
           "type": "color",
-          "description": "Accent green color - Step 100"
+          "description": "Accent green color: #d3f8df"
         },
         "200": {
           "value": "{green-200}",
           "type": "color",
-          "description": "Accent green color - Step 200"
+          "description": "Accent green color: #aaf0c4"
         },
         "300": {
           "value": "{green-300}",
           "type": "color",
-          "description": "Accent green color - Step 300"
+          "description": "Accent green color: #73e2a3"
         },
         "400": {
           "value": "{green-400}",
           "type": "color",
-          "description": "Accent green color - Step 400"
+          "description": "Accent green color: #3ccb7f"
         },
         "500": {
           "value": "{green-500}",
           "type": "color",
-          "description": "Accent green color - Step 500"
+          "description": "Accent green color: #16b364"
         },
         "600": {
           "value": "{green-600}",
           "type": "color",
-          "description": "Accent green color - Step 600"
+          "description": "Accent green color: #099250"
         },
         "700": {
           "value": "{green-700}",
           "type": "color",
-          "description": "Accent green color - Step 700"
+          "description": "Accent green color: #087443"
         },
         "800": {
           "value": "{green-800}",
           "type": "color",
-          "description": "Accent green color - Step 800"
+          "description": "Accent green color: #095c37"
         },
         "900": {
           "value": "{green-900}",
           "type": "color",
-          "description": "Accent green color - Step 900"
+          "description": "Accent green color: #084c2e"
         },
-        "1000": {
-          "value": "{green-1000}",
+        "950": {
+          "value": "{green-950}",
           "type": "color",
-          "description": "Accent green color - Darkest"
+          "description": "Accent green color: #052e1c"
+        },
+        "975": {
+          "value": "{green-975}",
+          "type": "color",
+          "description": "Accent green color: #031c11"
         }
       },
       "teal": {
-        "0": {
-          "value": "{teal-0}",
-          "type": "color",
-          "description": "Accent teal color - Lightest"
-        },
         "25": {
           "value": "{teal-25}",
           "type": "color",
-          "description": "Accent teal color - Step 25"
+          "description": "Accent teal color: #f6fefc"
         },
         "50": {
           "value": "{teal-50}",
           "type": "color",
-          "description": "Accent teal color - Step 50"
+          "description": "Accent teal color: #f0fdf9"
         },
         "100": {
           "value": "{teal-100}",
           "type": "color",
-          "description": "Accent teal color - Step 100"
+          "description": "Accent teal color: #ccfbef"
         },
         "200": {
           "value": "{teal-200}",
           "type": "color",
-          "description": "Accent teal color - Step 200"
+          "description": "Accent teal color: #99f6e0"
         },
         "300": {
           "value": "{teal-300}",
           "type": "color",
-          "description": "Accent teal color - Step 300"
+          "description": "Accent teal color: #5fe9d0"
         },
         "400": {
           "value": "{teal-400}",
           "type": "color",
-          "description": "Accent teal color - Step 400"
+          "description": "Accent teal color: #2ed3b7"
         },
         "500": {
           "value": "{teal-500}",
           "type": "color",
-          "description": "Accent teal color - Step 500"
+          "description": "Accent teal color: #15b79e"
         },
         "600": {
           "value": "{teal-600}",
           "type": "color",
-          "description": "Accent teal color - Step 600"
+          "description": "Accent teal color: #0e9384"
         },
         "700": {
           "value": "{teal-700}",
           "type": "color",
-          "description": "Accent teal color - Step 700"
+          "description": "Accent teal color: #107569"
         },
         "800": {
           "value": "{teal-800}",
           "type": "color",
-          "description": "Accent teal color - Step 800"
+          "description": "Accent teal color: #125d56"
         },
         "900": {
           "value": "{teal-900}",
           "type": "color",
-          "description": "Accent teal color - Step 900"
+          "description": "Accent teal color: #134e48"
         },
-        "1000": {
-          "value": "{teal-1000}",
+        "950": {
+          "value": "{teal-950}",
           "type": "color",
-          "description": "Accent teal color - Darkest"
+          "description": "Accent teal color: #0a2926"
+        },
+        "975": {
+          "value": "{teal-975}",
+          "type": "color",
+          "description": "Accent teal color: #061a18"
         }
       },
       "cyan": {
-        "0": {
-          "value": "{cyan-0}",
-          "type": "color",
-          "description": "Accent cyan color - Lightest"
-        },
         "25": {
           "value": "{cyan-25}",
           "type": "color",
-          "description": "Accent cyan color - Step 25"
+          "description": "Accent cyan color: #f5feff"
         },
         "50": {
           "value": "{cyan-50}",
           "type": "color",
-          "description": "Accent cyan color - Step 50"
+          "description": "Accent cyan color: #ecfdff"
         },
         "100": {
           "value": "{cyan-100}",
           "type": "color",
-          "description": "Accent cyan color - Step 100"
+          "description": "Accent cyan color: #cff9fe"
         },
         "200": {
           "value": "{cyan-200}",
           "type": "color",
-          "description": "Accent cyan color - Step 200"
+          "description": "Accent cyan color: #a5f0fc"
         },
         "300": {
           "value": "{cyan-300}",
           "type": "color",
-          "description": "Accent cyan color - Step 300"
+          "description": "Accent cyan color: #67e3f9"
         },
         "400": {
           "value": "{cyan-400}",
           "type": "color",
-          "description": "Accent cyan color - Step 400"
+          "description": "Accent cyan color: #22ccee"
         },
         "500": {
           "value": "{cyan-500}",
           "type": "color",
-          "description": "Accent cyan color - Step 500"
+          "description": "Accent cyan color: #06aed4"
         },
         "600": {
           "value": "{cyan-600}",
           "type": "color",
-          "description": "Accent cyan color - Step 600"
+          "description": "Accent cyan color: #088ab2"
         },
         "700": {
           "value": "{cyan-700}",
           "type": "color",
-          "description": "Accent cyan color - Step 700"
+          "description": "Accent cyan color: #0e7090"
         },
         "800": {
           "value": "{cyan-800}",
           "type": "color",
-          "description": "Accent cyan color - Step 800"
+          "description": "Accent cyan color: #155b75"
         },
         "900": {
           "value": "{cyan-900}",
           "type": "color",
-          "description": "Accent cyan color - Step 900"
+          "description": "Accent cyan color: #164c63"
         },
-        "1000": {
-          "value": "{cyan-1000}",
+        "950": {
+          "value": "{cyan-950}",
           "type": "color",
-          "description": "Accent cyan color - Darkest"
+          "description": "Accent cyan color: #0d2d3a"
+        },
+        "975": {
+          "value": "{cyan-975}",
+          "type": "color",
+          "description": "Accent cyan color: #09212b"
         }
       },
       "blue-light": {
-        "0": {
-          "value": "{blueLight-0}",
-          "type": "color",
-          "description": "Accent blue-light color - Lightest"
-        },
         "25": {
           "value": "{blueLight-25}",
           "type": "color",
-          "description": "Accent blue-light color - Step 25"
+          "description": "Accent blue-light color: #f5fbff"
         },
         "50": {
           "value": "{blueLight-50}",
           "type": "color",
-          "description": "Accent blue-light color - Step 50"
+          "description": "Accent blue-light color: #f0f9ff"
         },
         "100": {
           "value": "{blueLight-100}",
           "type": "color",
-          "description": "Accent blue-light color - Step 100"
+          "description": "Accent blue-light color: #e0f2fe"
         },
         "200": {
           "value": "{blueLight-200}",
           "type": "color",
-          "description": "Accent blue-light color - Step 200"
+          "description": "Accent blue-light color: #b9e6fe"
         },
         "300": {
           "value": "{blueLight-300}",
           "type": "color",
-          "description": "Accent blue-light color - Step 300"
+          "description": "Accent blue-light color: #7cd4fd"
         },
         "400": {
           "value": "{blueLight-400}",
           "type": "color",
-          "description": "Accent blue-light color - Step 400"
+          "description": "Accent blue-light color: #36bffa"
         },
         "500": {
           "value": "{blueLight-500}",
           "type": "color",
-          "description": "Accent blue-light color - Step 500"
+          "description": "Accent blue-light color: #0ba5ec"
         },
         "600": {
           "value": "{blueLight-600}",
           "type": "color",
-          "description": "Accent blue-light color - Step 600"
+          "description": "Accent blue-light color: #0086c9"
         },
         "700": {
           "value": "{blueLight-700}",
           "type": "color",
-          "description": "Accent blue-light color - Step 700"
+          "description": "Accent blue-light color: #026aa2"
         },
         "800": {
           "value": "{blueLight-800}",
           "type": "color",
-          "description": "Accent blue-light color - Step 800"
+          "description": "Accent blue-light color: #065986"
         },
         "900": {
           "value": "{blueLight-900}",
           "type": "color",
-          "description": "Accent blue-light color - Step 900"
+          "description": "Accent blue-light color: #0b4a6f"
         },
-        "1000": {
-          "value": "{blueLight-1000}",
+        "950": {
+          "value": "{blueLight-950}",
           "type": "color",
-          "description": "Accent blue-light color - Darkest"
+          "description": "Accent blue-light color: #062c41"
+        },
+        "975": {
+          "value": "{blueLight-975}",
+          "type": "color",
+          "description": "Accent blue-light color: #031f2e"
         }
       },
       "blue": {
-        "0": {
-          "value": "{blue-0}",
-          "type": "color",
-          "description": "Accent blue color - Lightest"
-        },
         "25": {
           "value": "{blue-25}",
           "type": "color",
-          "description": "Accent blue color - Step 25"
+          "description": "Accent blue color: #f5faff"
         },
         "50": {
           "value": "{blue-50}",
           "type": "color",
-          "description": "Accent blue color - Step 50"
+          "description": "Accent blue color: #eff8ff"
         },
         "100": {
           "value": "{blue-100}",
           "type": "color",
-          "description": "Accent blue color - Step 100"
+          "description": "Accent blue color: #d1e9ff"
         },
         "200": {
           "value": "{blue-200}",
           "type": "color",
-          "description": "Accent blue color - Step 200"
+          "description": "Accent blue color: #b2ddff"
         },
         "300": {
           "value": "{blue-300}",
           "type": "color",
-          "description": "Accent blue color - Step 300"
+          "description": "Accent blue color: #84caff"
         },
         "400": {
           "value": "{blue-400}",
           "type": "color",
-          "description": "Accent blue color - Step 400"
+          "description": "Accent blue color: #53b1fd"
         },
         "500": {
           "value": "{blue-500}",
           "type": "color",
-          "description": "Accent blue color - Step 500"
+          "description": "Accent blue color: #2e90fa"
         },
         "600": {
           "value": "{blue-600}",
           "type": "color",
-          "description": "Accent blue color - Step 600"
+          "description": "Accent blue color: #1570ef"
         },
         "700": {
           "value": "{blue-700}",
           "type": "color",
-          "description": "Accent blue color - Step 700"
+          "description": "Accent blue color: #175cd3"
         },
         "800": {
           "value": "{blue-800}",
           "type": "color",
-          "description": "Accent blue color - Step 800"
+          "description": "Accent blue color: #1849a9"
         },
         "900": {
           "value": "{blue-900}",
           "type": "color",
-          "description": "Accent blue color - Step 900"
+          "description": "Accent blue color: #194185"
         },
-        "1000": {
-          "value": "{blue-1000}",
+        "950": {
+          "value": "{blue-950}",
           "type": "color",
-          "description": "Accent blue color - Darkest"
+          "description": "Accent blue color: #102a56"
+        },
+        "975": {
+          "value": "{blue-975}",
+          "type": "color",
+          "description": "Accent blue color: #0c2145"
         }
       },
       "blue-dark": {
-        "0": {
-          "value": "{blueDark-0}",
-          "type": "color",
-          "description": "Accent blue-dark color - Lightest"
-        },
         "25": {
           "value": "{blueDark-25}",
           "type": "color",
-          "description": "Accent blue-dark color - Step 25"
+          "description": "Accent blue-dark color: #f5f8ff"
         },
         "50": {
           "value": "{blueDark-50}",
           "type": "color",
-          "description": "Accent blue-dark color - Step 50"
+          "description": "Accent blue-dark color: #eff4ff"
         },
         "100": {
           "value": "{blueDark-100}",
           "type": "color",
-          "description": "Accent blue-dark color - Step 100"
+          "description": "Accent blue-dark color: #d1e0ff"
         },
         "200": {
           "value": "{blueDark-200}",
           "type": "color",
-          "description": "Accent blue-dark color - Step 200"
+          "description": "Accent blue-dark color: #b2ccff"
         },
         "300": {
           "value": "{blueDark-300}",
           "type": "color",
-          "description": "Accent blue-dark color - Step 300"
+          "description": "Accent blue-dark color: #84adff"
         },
         "400": {
           "value": "{blueDark-400}",
           "type": "color",
-          "description": "Accent blue-dark color - Step 400"
+          "description": "Accent blue-dark color: #528bff"
         },
         "500": {
           "value": "{blueDark-500}",
           "type": "color",
-          "description": "Accent blue-dark color - Step 500"
+          "description": "Accent blue-dark color: #2970ff"
         },
         "600": {
           "value": "{blueDark-600}",
           "type": "color",
-          "description": "Accent blue-dark color - Step 600"
+          "description": "Accent blue-dark color: #155eef"
         },
         "700": {
           "value": "{blueDark-700}",
           "type": "color",
-          "description": "Accent blue-dark color - Step 700"
+          "description": "Accent blue-dark color: #004eeb"
         },
         "800": {
           "value": "{blueDark-800}",
           "type": "color",
-          "description": "Accent blue-dark color - Step 800"
+          "description": "Accent blue-dark color: #0040c1"
         },
         "900": {
           "value": "{blueDark-900}",
           "type": "color",
-          "description": "Accent blue-dark color - Step 900"
+          "description": "Accent blue-dark color: #00359e"
         },
-        "1000": {
-          "value": "{blueDark-1000}",
+        "950": {
+          "value": "{blueDark-950}",
           "type": "color",
-          "description": "Accent blue-dark color - Darkest"
+          "description": "Accent blue-dark color: #001a4d"
+        },
+        "975": {
+          "value": "{blueDark-975}",
+          "type": "color",
+          "description": "Accent blue-dark color: #001a4d"
         }
       },
-      "indigo": {
-        "0": {
-          "value": "{indigo-0}",
-          "type": "color",
-          "description": "Accent indigo color - Lightest"
-        },
+      "indigo": {      
         "25": {
           "value": "{indigo-25}",
           "type": "color",
-          "description": "Accent indigo color - Step 25"
+          "description": "Accent indigo color: #f5f8ff"
         },
         "50": {
           "value": "{indigo-50}",
           "type": "color",
-          "description": "Accent indigo color - Step 50"
+          "description": "Accent indigo color: #eef4ff"
         },
         "100": {
           "value": "{indigo-100}",
           "type": "color",
-          "description": "Accent indigo color - Step 100"
+          "description": "Accent indigo color: #e0eaff"
         },
         "200": {
           "value": "{indigo-200}",
           "type": "color",
-          "description": "Accent indigo color - Step 200"
+          "description": "Accent indigo color: #c7d7fe"
         },
         "300": {
           "value": "{indigo-300}",
           "type": "color",
-          "description": "Accent indigo color - Step 300"
+          "description": "Accent indigo color: #a4bcfd"
         },
         "400": {
           "value": "{indigo-400}",
           "type": "color",
-          "description": "Accent indigo color - Step 400"
+          "description": "Accent indigo color: #8098f9"
         },
         "500": {
           "value": "{indigo-500}",
           "type": "color",
-          "description": "Accent indigo color - Step 500"
+          "description": "Accent indigo color: #6172f3"
         },
         "600": {
           "value": "{indigo-600}",
           "type": "color",
-          "description": "Accent indigo color - Step 600"
+          "description": "Accent indigo color: #444ce7"
         },
         "700": {
           "value": "{indigo-700}",
           "type": "color",
-          "description": "Accent indigo color - Step 700"
+          "description": "Accent indigo color: #3538cd"
         },
         "800": {
           "value": "{indigo-800}",
           "type": "color",
-          "description": "Accent indigo color - Step 800"
+          "description": "Accent indigo color: #2d31a6"
         },
         "900": {
           "value": "{indigo-900}",
           "type": "color",
-          "description": "Accent indigo color - Step 900"
+          "description": "Accent indigo color: #2d3282"
         },
-        "1000": {
-          "value": "{indigo-1000}",
+        "950": {
+          "value": "{indigo-950}",
           "type": "color",
-          "description": "Accent indigo color - Darkest"
+          "description": "Accent indigo color: #1f235b"
+        },
+        "975": {
+          "value": "{indigo-975}",
+          "type": "color",
+          "description": "Accent indigo color: #171a47"
         }
       },
       "violet": {
-        "0": {
-          "value": "{violet-0}",
-          "type": "color",
-          "description": "Accent violet color - Lightest"
-        },
         "25": {
           "value": "{violet-25}",
           "type": "color",
-          "description": "Accent violet color - Step 25"
+          "description": "Accent violet color: #fbfaff"
         },
         "50": {
           "value": "{violet-50}",
           "type": "color",
-          "description": "Accent violet color - Step 50"
+          "description": "Accent violet color: #f5f3ff"
         },
         "100": {
           "value": "{violet-100}",
           "type": "color",
-          "description": "Accent violet color - Step 100"
+          "description": "Accent violet color: #ece9fe"
         },
         "200": {
           "value": "{violet-200}",
           "type": "color",
-          "description": "Accent violet color - Step 200"
+          "description": "Accent violet color: #ddd6fe"
         },
         "300": {
           "value": "{violet-300}",
           "type": "color",
-          "description": "Accent violet color - Step 300"
+          "description": "Accent violet color: #c3b5fd"
         },
         "400": {
           "value": "{violet-400}",
           "type": "color",
-          "description": "Accent violet color - Step 400"
+          "description": "Accent violet color: #a48afb"
         },
         "500": {
           "value": "{violet-500}",
           "type": "color",
-          "description": "Accent violet color - Step 500"
+          "description": "Accent violet color: #875bf7"
         },
         "600": {
           "value": "{violet-600}",
           "type": "color",
-          "description": "Accent violet color - Step 600"
+          "description": "Accent violet color: #7839ee"
         },
         "700": {
           "value": "{violet-700}",
           "type": "color",
-          "description": "Accent violet color - Step 700"
+          "description": "Accent violet color: #6927da"
         },
         "800": {
           "value": "{violet-800}",
           "type": "color",
-          "description": "Accent violet color - Step 800"
+          "description": "Accent violet color: #5720b7"
         },
         "900": {
           "value": "{violet-900}",
           "type": "color",
-          "description": "Accent violet color - Step 900"
+          "description": "Accent violet color: #491c96"
         },
-        "1000": {
-          "value": "{violet-1000}",
+        "950": {
+          "value": "{violet-950}",
           "type": "color",
-          "description": "Accent violet color - Darkest"
+          "description": "Accent violet color: #2e125e"
+        },
+        "975": {
+          "value": "{violet-975}",
+          "type": "color",
+          "description": "Accent violet color: #220c47"
         }
       },
       "purple": {
-        "0": {
-          "value": "{purple-0}",
-          "type": "color",
-          "description": "Accent purple color - Lightest"
-        },
         "25": {
           "value": "{purple-25}",
           "type": "color",
-          "description": "Accent purple color - Step 25"
+          "description": "Accent purple color: #fafaff"
         },
         "50": {
           "value": "{purple-50}",
           "type": "color",
-          "description": "Accent purple color - Step 50"
+          "description": "Accent purple color: #f4f3ff"
         },
         "100": {
           "value": "{purple-100}",
           "type": "color",
-          "description": "Accent purple color - Step 100"
+          "description": "Accent purple color: #ebe9fe"
         },
         "200": {
           "value": "{purple-200}",
           "type": "color",
-          "description": "Accent purple color - Step 200"
+          "description": "Accent purple color: #d9d6fe"
         },
         "300": {
           "value": "{purple-300}",
           "type": "color",
-          "description": "Accent purple color - Step 300"
+          "description": "Accent purple color: #bdb4fe"
         },
         "400": {
           "value": "{purple-400}",
           "type": "color",
-          "description": "Accent purple color - Step 400"
+          "description": "Accent purple color: #9b8afb"
         },
         "500": {
           "value": "{purple-500}",
           "type": "color",
-          "description": "Accent purple color - Step 500"
+          "description": "Accent purple color: #7a5af8"
         },
         "600": {
           "value": "{purple-600}",
           "type": "color",
-          "description": "Accent purple color - Step 600"
+          "description": "Accent purple color: #6938ef"
         },
         "700": {
           "value": "{purple-700}",
           "type": "color",
-          "description": "Accent purple color - Step 700"
+          "description": "Accent purple color: #5925dc"
         },
         "800": {
           "value": "{purple-800}",
           "type": "color",
-          "description": "Accent purple color - Step 800"
+          "description": "Accent purple color: #4a1fb8"
         },
         "900": {
           "value": "{purple-900}",
           "type": "color",
-          "description": "Accent purple color - Step 900"
+          "description": "Accent purple color: #3e1c96"
         },
-        "1000": {
-          "value": "{purple-1000}",
+        "950": {
+          "value": "{purple-950}",
           "type": "color",
-          "description": "Accent purple color - Darkest"
+          "description": "Accent purple color: #27115f"
+        },
+        "975": {
+          "value": "{purple-975}",
+          "type": "color",
+          "description": "Accent purple color: #1d0c4a"
         }
       },
       "fuchsia": {
-        "0": {
-          "value": "{fuchsia-0}",
-          "type": "color",
-          "description": "Accent fuchsia color - Lightest"
-        },
         "25": {
           "value": "{fuchsia-25}",
           "type": "color",
-          "description": "Accent fuchsia color - Step 25"
+          "description": "Accent fuchsia color: #fefaff"
         },
         "50": {
           "value": "{fuchsia-50}",
           "type": "color",
-          "description": "Accent fuchsia color - Step 50"
+          "description": "Accent fuchsia color: #fdf4ff"
         },
         "100": {
           "value": "{fuchsia-100}",
           "type": "color",
-          "description": "Accent fuchsia color - Step 100"
+          "description": "Accent fuchsia color: #fbe8ff"
         },
         "200": {
           "value": "{fuchsia-200}",
           "type": "color",
-          "description": "Accent fuchsia color - Step 200"
+          "description": "Accent fuchsia color: #f6d0fe"
         },
         "300": {
           "value": "{fuchsia-300}",
           "type": "color",
-          "description": "Accent fuchsia color - Step 300"
+          "description": "Accent fuchsia color: #eeaafd"
         },
         "400": {
           "value": "{fuchsia-400}",
           "type": "color",
-          "description": "Accent fuchsia color - Step 400"
+          "description": "Accent fuchsia color: #e478fa"
         },
         "500": {
           "value": "{fuchsia-500}",
           "type": "color",
-          "description": "Accent fuchsia color - Step 500"
+          "description": "Accent fuchsia color: #d444f1"
         },
         "600": {
           "value": "{fuchsia-600}",
           "type": "color",
-          "description": "Accent fuchsia color - Step 600"
+          "description": "Accent fuchsia color: #ba24d5"
         },
         "700": {
           "value": "{fuchsia-700}",
           "type": "color",
-          "description": "Accent fuchsia color - Step 700"
+          "description": "Accent fuchsia color: #9f1ab1"
         },
         "800": {
           "value": "{fuchsia-800}",
           "type": "color",
-          "description": "Accent fuchsia color - Step 800"
+          "description": "Accent fuchsia color: #821890"
         },
         "900": {
           "value": "{fuchsia-900}",
           "type": "color",
-          "description": "Accent fuchsia color - Step 900"
+          "description": "Accent fuchsia color: #6f1877"
         },
-        "1000": {
-          "value": "{fuchsia-1000}",
+        "950": {
+          "value": "{fuchsia-950}",
           "type": "color",
-          "description": "Accent fuchsia color - Darkest"
+          "description": "Accent fuchsia color: #47104c"
+        },
+        "975": {
+          "value": "{fuchsia-975}",
+          "type": "color",
+          "description": "Accent fuchsia color: #3b0c40"
         }
       },
       "pink": {
-        "0": {
-          "value": "{pink-0}",
-          "type": "color",
-          "description": "Accent pink color - Lightest"
-        },
         "25": {
           "value": "{pink-25}",
           "type": "color",
-          "description": "Accent pink color - Step 25"
+          "description": "Accent pink color: #fef6fb"
         },
         "50": {
           "value": "{pink-50}",
           "type": "color",
-          "description": "Accent pink color - Step 50"
+          "description": "Accent pink color: #fdf2fa"
         },
         "100": {
           "value": "{pink-100}",
           "type": "color",
-          "description": "Accent pink color - Step 100"
+          "description": "Accent pink color: #fce7f6"
         },
         "200": {
           "value": "{pink-200}",
           "type": "color",
-          "description": "Accent pink color - Step 200"
+          "description": "Accent pink color: #fcceee"
         },
         "300": {
           "value": "{pink-300}",
           "type": "color",
-          "description": "Accent pink color - Step 300"
+          "description": "Accent pink color: #faa7e0"
         },
         "400": {
           "value": "{pink-400}",
           "type": "color",
-          "description": "Accent pink color - Step 400"
+          "description": "Accent pink color: #f670c7"
         },
         "500": {
           "value": "{pink-500}",
           "type": "color",
-          "description": "Accent pink color - Step 500"
+          "description": "Accent pink color: #ee46bc"
         },
         "600": {
           "value": "{pink-600}",
           "type": "color",
-          "description": "Accent pink color - Step 600"
+          "description": "Accent pink color: #dd2590"
         },
         "700": {
           "value": "{pink-700}",
           "type": "color",
-          "description": "Accent pink color - Step 700"
+          "description": "Accent pink color: #c11574"
         },
         "800": {
           "value": "{pink-800}",
           "type": "color",
-          "description": "Accent pink color - Step 800"
+          "description": "Accent pink color: #9e165f"
         },
         "900": {
           "value": "{pink-900}",
           "type": "color",
-          "description": "Accent pink color - Step 900"
+          "description": "Accent pink color: #851651"
         },
-        "1000": {
-          "value": "{pink-1000}",
+        "950": {
+          "value": "{pink-950}",
           "type": "color",
-          "description": "Accent pink color - Darkest"
+          "description": "Accent pink color: #4e0d30"
+        },
+        "975": {
+          "value": "{pink-975}",
+          "type": "color",
+          "description": "Accent pink color: #3d0925"
         }
       },
       "rose": {
-        "0": {
-          "value": "{rose-0}",
-          "type": "color",
-          "description": "Accent rose color - Lightest"
-        },
         "25": {
           "value": "{rose-25}",
           "type": "color",
-          "description": "Accent rose color - Step 25"
+          "description": "Accent rose color: #fff5f6"
         },
         "50": {
           "value": "{rose-50}",
           "type": "color",
-          "description": "Accent rose color - Step 50"
+          "description": "Accent rose color: #fff1f3"
         },
         "100": {
           "value": "{rose-100}",
           "type": "color",
-          "description": "Accent rose color - Step 100"
+          "description": "Accent rose color: #ffe4e8"
         },
         "200": {
           "value": "{rose-200}",
           "type": "color",
-          "description": "Accent rose color - Step 200"
+          "description": "Accent rose color: #fecdd6"
         },
         "300": {
           "value": "{rose-300}",
           "type": "color",
-          "description": "Accent rose color - Step 300"
+          "description": "Accent rose color: #fea3b4"
         },
         "400": {
           "value": "{rose-400}",
           "type": "color",
-          "description": "Accent rose color - Step 400"
+          "description": "Accent rose color: #fd6f8e"
         },
         "500": {
           "value": "{rose-500}",
           "type": "color",
-          "description": "Accent rose color - Step 500"
+          "description": "Accent rose color: #f63d68"
         },
         "600": {
           "value": "{rose-600}",
           "type": "color",
-          "description": "Accent rose color - Step 600"
+          "description": "Accent rose color: #e31b54"
         },
         "700": {
           "value": "{rose-700}",
           "type": "color",
-          "description": "Accent rose color - Step 700"
+          "description": "Accent rose color: #c01048"
         },
         "800": {
           "value": "{rose-800}",
           "type": "color",
-          "description": "Accent rose color - Step 800"
+          "description": "Accent rose color: #a11043"
         },
         "900": {
           "value": "{rose-900}",
           "type": "color",
-          "description": "Accent rose color - Step 900"
+          "description": "Accent rose color: #89123e"
         },
-        "1000": {
-          "value": "{rose-1000}",
+        "950": {
+          "value": "{rose-950}",
           "type": "color",
-          "description": "Accent rose color - Darkest"
+          "description": "Accent rose color: #510b24"
+        },
+        "975": {
+          "value": "{rose-975}",
+          "type": "color",
+          "description": "Accent rose color: #3b0619"
         }
       },
       "orange-dark": {
-        "0": {
-          "value": "{orangeDark-0}",
-          "type": "color",
-          "description": "Accent orange-dark color - Lightest"
-        },
         "25": {
           "value": "{orangeDark-25}",
           "type": "color",
-          "description": "Accent orange-dark color - Step 25"
+          "description": "Accent orange-dark color: #fff9f5"
         },
         "50": {
           "value": "{orangeDark-50}",
           "type": "color",
-          "description": "Accent orange-dark color - Step 50"
+          "description": "Accent orange-dark color: #fff4ed"
         },
         "100": {
           "value": "{orangeDark-100}",
           "type": "color",
-          "description": "Accent orange-dark color - Step 100"
+          "description": "Accent orange-dark color: #ffe6d5"
         },
         "200": {
           "value": "{orangeDark-200}",
           "type": "color",
-          "description": "Accent orange-dark color - Step 200"
+          "description": "Accent orange-dark color: #ffd6ae"
         },
         "300": {
           "value": "{orangeDark-300}",
           "type": "color",
-          "description": "Accent orange-dark color - Step 300"
+          "description": "Accent orange-dark color: #ff9c66"
         },
         "400": {
           "value": "{orangeDark-400}",
           "type": "color",
-          "description": "Accent orange-dark color - Step 400"
+          "description": "Accent orange-dark color: #ff692e"
         },
         "500": {
           "value": "{orangeDark-500}",
           "type": "color",
-          "description": "Accent orange-dark color - Step 500"
+          "description": "Accent orange-dark color: #ff4405"
         },
         "600": {
           "value": "{orangeDark-600}",
           "type": "color",
-          "description": "Accent orange-dark color - Step 600"
+          "description": "Accent orange-dark color: #e62e05"
         },
         "700": {
           "value": "{orangeDark-700}",
           "type": "color",
-          "description": "Accent orange-dark color - Step 700"
+          "description": "Accent orange-dark color: #bc1b06"
         },
         "800": {
           "value": "{orangeDark-800}",
           "type": "color",
-          "description": "Accent orange-dark color - Step 800"
+          "description": "Accent orange-dark color: #97180c"
         },
         "900": {
           "value": "{orangeDark-900}",
           "type": "color",
-          "description": "Accent orange-dark color - Step 900"
+          "description": "Accent orange-dark color: #771a0d"
         },
-        "1000": {
-          "value": "{orangeDark-1000}",
+        "950": {
+          "value": "{orangeDark-950}",
           "type": "color",
-          "description": "Accent orange-dark color - Darkest"
+          "description": "Accent orange-dark color: #57130a"
+        },
+        "975": {
+          "value": "{orangeDark-975}",
+          "type": "color",
+          "description": "Accent orange-dark color: #470e06"
         }
       },
       "orange": {
-        "0": {
-          "value": "{orange-0}",
-          "type": "color",
-          "description": "Accent orange color - Lightest"
-        },
         "25": {
           "value": "{orange-25}",
           "type": "color",
-          "description": "Accent orange color - Step 25"
+          "description": "Accent orange color: #fefaf5"
         },
         "50": {
           "value": "{orange-50}",
           "type": "color",
-          "description": "Accent orange color - Step 50"
+          "description": "Accent orange color: #fef6ee"
         },
         "100": {
           "value": "{orange-100}",
           "type": "color",
-          "description": "Accent orange color - Step 100"
+          "description": "Accent orange color: #fdead7"
         },
         "200": {
           "value": "{orange-200}",
           "type": "color",
-          "description": "Accent orange color - Step 200"
+          "description": "Accent orange color: #f9dbaf"
         },
         "300": {
           "value": "{orange-300}",
           "type": "color",
-          "description": "Accent orange color - Step 300"
+          "description": "Accent orange color: #f7b27a"
         },
         "400": {
           "value": "{orange-400}",
           "type": "color",
-          "description": "Accent orange color - Step 400"
+          "description": "Accent orange color: #f38744"
         },
         "500": {
           "value": "{orange-500}",
           "type": "color",
-          "description": "Accent orange color - Step 500"
+          "description": "Accent orange color: #ef6820"
         },
         "600": {
           "value": "{orange-600}",
           "type": "color",
-          "description": "Accent orange color - Step 600"
+          "description": "Accent orange color: #e04f16"
         },
         "700": {
           "value": "{orange-700}",
           "type": "color",
-          "description": "Accent orange color - Step 700"
+          "description": "Accent orange color: #b93815"
         },
         "800": {
           "value": "{orange-800}",
           "type": "color",
-          "description": "Accent orange color - Step 800"
+          "description": "Accent orange color: #932f19"
         },
         "900": {
           "value": "{orange-900}",
           "type": "color",
-          "description": "Accent orange color - Step 900"
+          "description": "Accent orange color: #772917"
         },
-        "1000": {
-          "value": "{orange-1000}",
+        "950": {
+          "value": "{orange-950}",
           "type": "color",
-          "description": "Accent orange color - Darkest"
+          "description": "Accent orange color: #511c10"
+        },
+        "975": {
+          "value": "{orange-975}",
+          "type": "color",
+          "description": "Accent orange color: #45170c"
         }
       }
     },
     "secondary": {
       "error": {
-        "0": {
-          "value": "{error-0}",
-          "type": "color",
-          "description": "Secondary error color - Lightest"
-        },
         "25": {
           "value": "{error-25}",
           "type": "color",
-          "description": "Secondary error color - Step 25"
+          "description": "Secondary error color: #fffbfa"
         },
         "50": {
           "value": "{error-50}",
           "type": "color",
-          "description": "Secondary error color - Step 50"
+          "description": "Secondary error color: #fef3f2"
         },
         "100": {
           "value": "{error-100}",
           "type": "color",
-          "description": "Secondary error color - Step 100"
+          "description": "Secondary error color: #fee4e2"
         },
         "200": {
           "value": "{error-200}",
           "type": "color",
-          "description": "Secondary error color - Step 200"
+          "description": "Secondary error color: #fecdca"
         },
         "300": {
           "value": "{error-300}",
           "type": "color",
-          "description": "Secondary error color - Step 300"
+          "description": "Secondary error color: #fda29b"
         },
         "400": {
           "value": "{error-400}",
           "type": "color",
-          "description": "Secondary error color - Step 400"
+          "description": "Secondary error color: #f97066"
         },
         "500": {
           "value": "{error-500}",
           "type": "color",
-          "description": "Secondary error color - Step 500"
+          "description": "Secondary error color: #f04438"
         },
         "600": {
           "value": "{error-600}",
           "type": "color",
-          "description": "Secondary error color - Step 600"
+          "description": "Secondary error color: #d92d20"
         },
         "700": {
           "value": "{error-700}",
           "type": "color",
-          "description": "Secondary error color - Step 700"
+          "description": "Secondary error color: #b42318"
         },
         "800": {
           "value": "{error-800}",
           "type": "color",
-          "description": "Secondary error color - Step 800"
+          "description": "Secondary error color: #912018"
         },
         "900": {
           "value": "{error-900}",
           "type": "color",
-          "description": "Secondary error color - Step 900"
+          "description": "Secondary error color: #7a271a"
         },
-        "1000": {
-          "value": "{error-1000}",
+        "950": {
+          "value": "{error-950}",
           "type": "color",
-          "description": "Secondary error color - Darkest"
+          "description": "Secondary error color: #55160c"
+        },
+        "975": {
+          "value": "{error-975}",
+          "type": "color",
+          "description": "Secondary error color: #471109"
         }
       },
       "warning": {
-        "0": {
-          "value": "{warning-0}",
-          "type": "color",
-          "description": "Secondary warning color - Lightest"
-        },
         "25": {
           "value": "{warning-25}",
           "type": "color",
-          "description": "Secondary warning color - Step 25"
+          "description": "Secondary warning color: #fffcf5"
         },
         "50": {
           "value": "{warning-50}",
           "type": "color",
-          "description": "Secondary warning color - Step 50"
+          "description": "Secondary warning color: #fffaeb"
         },
         "100": {
           "value": "{warning-100}",
           "type": "color",
-          "description": "Secondary warning color - Step 100"
+          "description": "Secondary warning color: #fef0c7"
         },
         "200": {
           "value": "{warning-200}",
           "type": "color",
-          "description": "Secondary warning color - Step 200"
+          "description": "Secondary warning color: #fedf89"
         },
         "300": {
           "value": "{warning-300}",
           "type": "color",
-          "description": "Secondary warning color - Step 300"
+          "description": "Secondary warning color: #fec84b"
         },
         "400": {
           "value": "{warning-400}",
           "type": "color",
-          "description": "Secondary warning color - Step 400"
+          "description": "Secondary warning color: #fdb022"
         },
         "500": {
           "value": "{warning-500}",
           "type": "color",
-          "description": "Secondary warning color - Step 500"
+          "description": "Secondary warning color: #f79009"
         },
         "600": {
           "value": "{warning-600}",
           "type": "color",
-          "description": "Secondary warning color - Step 600"
+          "description": "Secondary warning color: #dc6803"
         },
         "700": {
           "value": "{warning-700}",
           "type": "color",
-          "description": "Secondary warning color - Step 700"
+          "description": "Secondary warning color: #b54708"
         },
         "800": {
           "value": "{warning-800}",
           "type": "color",
-          "description": "Secondary warning color - Step 800"
+          "description": "Secondary warning color: #93370d"
         },
         "900": {
           "value": "{warning-900}",
           "type": "color",
-          "description": "Secondary warning color - Step 900"
+          "description": "Secondary warning color: #7a2e0e"
         },
-        "1000": {
-          "value": "{warning-1000}",
+        "950": {
+          "value": "{warning-950}",
           "type": "color",
-          "description": "Secondary warning color - Darkest"
+          "description": "Secondary warning color: #4e1d09"
+        },
+        "975": {
+          "value": "{warning-975}",
+          "type": "color",
+          "description": "Secondary warning color: #421807"
         }
       },
       "success": {
-        "0": {
-          "value": "{success-0}",
-          "type": "color",
-          "description": "Secondary success color - Lightest"
-        },
         "25": {
           "value": "{success-25}",
           "type": "color",
-          "description": "Secondary success color - Step 25"
+          "description": "Secondary success color: #f6fef9"
         },
         "50": {
           "value": "{success-50}",
           "type": "color",
-          "description": "Secondary success color - Step 50"
+          "description": "Secondary success color: #ecfdf3"
         },
         "100": {
           "value": "{success-100}",
           "type": "color",
-          "description": "Secondary success color - Step 100"
+          "description": "Secondary success color: #d1fadf"
         },
         "200": {
           "value": "{success-200}",
           "type": "color",
-          "description": "Secondary success color - Step 200"
+          "description": "Secondary success color: #a6f4c5"
         },
         "300": {
           "value": "{success-300}",
           "type": "color",
-          "description": "Secondary success color - Step 300"
+          "description": "Secondary success color: #6ce9a6"
         },
         "400": {
           "value": "{success-400}",
           "type": "color",
-          "description": "Secondary success color - Step 400"
+          "description": "Secondary success color: #32d583"
         },
         "500": {
           "value": "{success-500}",
           "type": "color",
-          "description": "Secondary success color - Step 500"
+          "description": "Secondary success color: #12b76a"
         },
         "600": {
           "value": "{success-600}",
           "type": "color",
-          "description": "Secondary success color - Step 600"
+          "description": "Secondary success color: #039855"
         },
         "700": {
           "value": "{success-700}",
           "type": "color",
-          "description": "Secondary success color - Step 700"
+          "description": "Secondary success color: #027a48"
         },
         "800": {
           "value": "{success-800}",
           "type": "color",
-          "description": "Secondary success color - Step 800"
+          "description": "Secondary success color: #05603a"
         },
         "900": {
           "value": "{success-900}",
           "type": "color",
-          "description": "Secondary success color - Step 900"
+          "description": "Secondary success color: #054f31"
         },
-        "1000": {
-          "value": "{success-1000}",
+        "950": {
+          "value": "{success-950}",
           "type": "color",
-          "description": "Secondary success color - Darkest"
+          "description": "Secondary success color: #044028"
+        },
+        "975": {
+          "value": "{success-975}",
+          "type": "color",
+          "description": "Secondary success color: #02331f"
         }
       }
     }
@@ -3381,6 +3391,11 @@
         "type": "number",
         "description": "Position: 10px"
       },
+      "3[25]": {
+        "value": 13,
+        "type": "number",
+        "description": "Position: 13px"
+      },
       "3[5]": {
         "value": 14,
         "type": "number",
@@ -3390,7 +3405,17 @@
         "value": 18,
         "type": "number",
         "description": "Position: 18px"
-      } 
+      },
+      "5[25]": {
+        "value": 21,
+        "type": "number",
+        "description": "Position: 21px"
+      },
+      "7[25]": {
+        "value": 29,
+        "type": "number",
+        "description": "Position: 29px"
+      }
   },
   "blur": {
     "0": {

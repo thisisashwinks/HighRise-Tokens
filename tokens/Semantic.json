@@ -4306,6 +4306,21 @@
         "type": "dimension",
         "description": "Position (horizontal): 160px"
       },
+      "3[25]": {
+        "value": "{position.3[25]}",
+        "type": "dimension",
+        "description": "Position (horizontal): 13px"
+      },
+      "5[25]": {
+        "value": "{position.5[25]}",
+        "type": "dimension",
+        "description": "Position (horizontal): 21px"
+      },
+      "7[25]": {
+        "value": "{position.7[25]}",
+        "type": "dimension",
+        "description": "Position (horizontal): 29px"
+      },
       "-20": {
         "value": "{position.-20}",
         "type": "dimension",
@@ -4552,6 +4567,21 @@
         "value": "{position.40}",
         "type": "dimension",
         "description": "Position (vertical): 160px"
+      },
+      "3[25]": {
+        "value": "{position.3[25]}",
+        "type": "dimension",
+        "description": "Position (vertical): 13px"
+      },
+      "5[25]": {
+        "value": "{position.5[25]}",
+        "type": "dimension",
+        "description": "Position (vertical): 21px"
+      },
+      "7[25]": {
+        "value": "{position.7[25]}",
+        "type": "dimension",
+        "description": "Position (vertical): 29px"
       },
       "-20": {
         "value": "{position.-20}",
@@ -5215,62 +5245,62 @@
           "0": {
             "value": "{color.neutral.gray.700}",
             "type": "color",
-            "description": "Color (background neutral): #404755"
+            "description": "Color (background neutral): #344054"
           },
           "1": {
             "value": "{color.neutral.gray.800}",
             "type": "color",
-            "description": "Color (background neutral): #2b303b"
+            "description": "Color (background neutral): #1d2939"
           },
           "2": {
             "value": "{color.neutral.gray.900}",
             "type": "color",
-            "description": "Color (background neutral): #181c22"
+            "description": "Color (background neutral): #101828"
           }
         },
         "moderate": {
           "0": {
             "value": "{color.neutral.gray.300}",
             "type": "color",
-            "description": "Color (background neutral): #a2abbf"
+            "description": "Color (background neutral): #d0d5dd"
           },
           "1": {
             "value": "{color.neutral.gray.400}",
             "type": "color",
-            "description": "Color (background neutral): #8591ab"
+            "description": "Color (background neutral): #98a2b3"
           },
           "2": {
             "value": "{color.neutral.gray.500}",
             "type": "color",
-            "description": "Color (background neutral): #6d778d"
+            "description": "Color (background neutral): #667085"
           },
           "3": {
             "value": "{color.neutral.gray.600}",
             "type": "color",
-            "description": "Color (background neutral): #565f71"
+            "description": "Color (background neutral): #475467"
           }
         },
         "subtle": {
           "0": {
             "value": "{color.neutral.gray.50}",
             "type": "color",
-            "description": "Color (background neutral): #eff1f4"
+            "description": "Color (background neutral): #f9fafb"
           },
           "1": {
             "value": "{color.neutral.gray.100}",
             "type": "color",
-            "description": "Color (background neutral): #e0e2e9"
+            "description": "Color (background neutral): #f2f4f7"
           },
           "2": {
             "value": "{color.neutral.gray.200}",
             "type": "color",
-            "description": "Color (background neutral): #c1c7d4"
+            "description": "Color (background neutral): #eaecf0"
           }
         },
         "inactive": {
           "value": "{color.neutral.gray.25}",
           "type": "color",
-          "description": "Color (background neutral): #f7f8f9"
+          "description": "Color (background neutral): #fcfcfd"
         }
       },
       "primary": {
@@ -5278,57 +5308,57 @@
           "0": {
             "value": "{color.primary.blue.700}",
             "type": "color",
-            "description": "Color (background primary): #0040a1"
+            "description": "Color (background primary): #004eeb"
           },
           "1": {
             "value": "{color.primary.blue.800}",
             "type": "color",
-            "description": "Color (background primary): #002b73"
+            "description": "Color (background primary): #0040c1"
           },
           "2": {
             "value": "{color.primary.blue.900}",
             "type": "color",
-            "description": "Color (background primary): #001848"
+            "description": "Color (background primary): #00359e"
           }
         },
         "default": {
           "value": "{color.primary.blue.600}",
           "type": "color",
-          "description": "Color (background primary): #0056d2"
+          "description": "Color (background primary): #155eef"
         },
         "moderate": {
           "1": {
             "value": "{color.primary.blue.500}",
             "type": "color",
-            "description": "Color (background primary): #1c6dff"
+            "description": "Color (background primary): #2970ff"
           },
           "0": {
             "value": "{color.primary.blue.300}",
             "type": "color",
-            "description": "Color (background primary): #91a7ff"
+            "description": "Color (background primary): #84adff"
           }
         },
         "subtle": {
           "0": {
             "value": "{color.primary.blue.50}",
             "type": "color",
-            "description": "Color (background primary): #edf0ff"
+            "description": "Color (background primary): #eff4ff"
           },
           "1": {
             "value": "{color.primary.blue.100}",
             "type": "color",
-            "description": "Color (background primary): #dce1ff"
+            "description": "Color (background primary): #d1e0ff"
           },
           "2": {
             "value": "{color.primary.blue.200}",
             "type": "color",
-            "description": "Color (background primary): #b7c4ff"
+            "description": "Color (background primary): #b2ccff"
           }
         },
         "inactive": {
           "value": "{color.primary.blue.25}",
           "type": "color",
-          "description": "Color (background primary): #f6f7ff"
+          "description": "Color (background primary): #f5f8ff"
         }
       },
       "success": {
@@ -5336,40 +5366,40 @@
           "0": {
             "value": "{color.secondary.success.700}",
             "type": "color",
-            "description": "Color (background success): #04522c"
+            "description": "Color (background success): #027a48"
           },
           "1": {
             "value": "{color.secondary.success.900}",
             "type": "color",
-            "description": "Color (background success): #01210f"
+            "description": "Color (background success): #054f31"
           }
         },
         "default": {
           "value": "{color.secondary.success.600}",
           "type": "color",
-          "description": "Color (background success): #066d3d"
+          "description": "Color (background success): #039855"
         },
         "subtle": {
           "0": {
             "value": "{color.secondary.success.50}",
             "type": "color",
-            "description": "Color (background success): #c2ffd6"
+            "description": "Color (background success): #ecfdf3"
           },
           "1": {
             "value": "{color.secondary.success.100}",
             "type": "color",
-            "description": "Color (background success): #5effa4"
+            "description": "Color (background success): #d1fadf"
           },
           "2": {
             "value": "{color.secondary.success.200}",
             "type": "color",
-            "description": "Color (background success): #19e385"
+            "description": "Color (background success): #a6f4c5"
           }
         },
         "inactive": {
           "value": "{color.secondary.success.25}",
           "type": "color",
-          "description": "Color (background success): #e2ffeb"
+          "description": "Color (background success): #f6fef9"
         }
       },
       "error": {
@@ -5377,47 +5407,47 @@
           "0": {
             "value": "{color.secondary.error.700}",
             "type": "color",
-            "description": "Color (background error): #86211a"
+            "description": "Color (background error): #b42318"
           },
           "1": {
             "value": "{color.secondary.error.900}",
             "type": "color",
-            "description": "Color (background error): #3a0906"
+            "description": "Color (background error): #7a271a"
           }
         },
         "default": {
           "value": "{color.secondary.error.600}",
           "type": "color",
-          "description": "Color (background error): #af2e25"
+          "description": "Color (background error): #d92d20"
         },
         "moderate": {
           "0": {
             "value": "{color.secondary.error.500}",
             "type": "color",
-            "description": "Color (background error): #da3c31"
+            "description": "Color (background error): #f04438"
           }
         },
         "subtle": {
           "0": {
             "value": "{color.secondary.error.50}",
             "type": "color",
-            "description": "Color (background error): #fceded"
+            "description": "Color (background error): #fef3f2"
           },
           "1": {
             "value": "{color.secondary.error.100}",
             "type": "color",
-            "description": "Color (background error): #fadbdb"
+            "description": "Color (background error): #fee4e2"
           },
           "2": {
             "value": "{color.secondary.error.200}",
             "type": "color",
-            "description": "Color (background error): #f6b7b5"
+            "description": "Color (background error): #fecdca"
           }
         },
         "inactive": {
           "value": "{color.secondary.error.25}",
           "type": "color",
-          "description": "Color (background error): #fef6f6"
+          "description": "Color (background error): #fffbfa"
         }
       },
       "warning": {
@@ -5425,40 +5455,40 @@
           "0": {
             "value": "{color.secondary.warning.700}",
             "type": "color",
-            "description": "Color (background warning): #6b3b01"
+            "description": "Color (background warning): #b54708"
           },
           "1": {
             "value": "{color.secondary.warning.900}",
             "type": "color",
-            "description": "Color (background warning): #2d1600"
+            "description": "Color (background warning): #7a2e0e"
           }
         },
         "default": {
           "value": "{color.secondary.warning.600}",
           "type": "color",
-          "description": "Color (background warning): #8c4f03"
+          "description": "Color (background warning): #dc6803"
         },
         "subtle": {
           "0": {
             "value": "{color.secondary.warning.50}",
             "type": "color",
-            "description": "Color (background warning): #ffede5"
+            "description": "Color (background warning): #fffaeb"
           },
           "1": {
             "value": "{color.secondary.warning.100}",
             "type": "color",
-            "description": "Color (background warning): #ffdbca"
+            "description": "Color (background warning): #fef0c7"
           },
           "2": {
             "value": "{color.secondary.warning.200}",
             "type": "color",
-            "description": "Color (background warning): #ffb789"
+            "description": "Color (background warning): #fedf89"
           }
         },
         "inactive": {
           "value": "{color.secondary.warning.25}",
           "type": "color",
-          "description": "Color (background warning): #fff6f2"
+          "description": "Color (background warning): #fffcf5"
         }
       }
     },
@@ -5478,57 +5508,57 @@
           "0": {
             "value": "{color.neutral.gray.700}",
             "type": "color",
-            "description": "Color (border neutral): #404755"
+            "description": "Color (border neutral): #344054"
           },
           "1": {
             "value": "{color.neutral.gray.900}",
             "type": "color",
-            "description": "Color (border neutral): #181c22"
+            "description": "Color (border neutral): #101828"
           }
         },
         "moderate": {
           "0": {
             "value": "{color.neutral.gray.400}",
             "type": "color",
-            "description": "Color (border neutral): #8591ab"
+            "description": "Color (border neutral): #98a2b3"
           },
           "1": {
             "value": "{color.neutral.gray.500}",
             "type": "color",
-            "description": "Color (border neutral): #6d778d"
+            "description": "Color (border neutral): #667085"
           },
           "2": {
             "value": "{color.neutral.gray.600}",
             "type": "color",
-            "description": "Color (border neutral): #565f71"
+            "description": "Color (border neutral): #475467"
           }
         },
         "default": {
           "value": "{color.neutral.gray.300}",
           "type": "color",
-          "description": "Color (border neutral): #a2abbf"
+          "description": "Color (border neutral): #d0d5dd"
         },
         "subtle": {
           "0": {
             "value": "{color.neutral.gray.50}",
             "type": "color",
-            "description": "Color (border neutral): #eff1f4"
+            "description": "Color (border neutral): #f9fafb"
           },
           "1": {
             "value": "{color.neutral.gray.100}",
             "type": "color",
-            "description": "Color (border neutral): #e0e2e9"
+            "description": "Color (border neutral): #f2f4f7"
           },
           "2": {
             "value": "{color.neutral.gray.200}",
             "type": "color",
-            "description": "Color (border neutral): #c1c7d4"
+            "description": "Color (border neutral): #eaecf0"
           }
         },
         "inactive": {
           "value": "{color.neutral.gray.25}",
           "type": "color",
-          "description": "Color (border neutral): #f7f8f9"
+          "description": "Color (border neutral): #fcfcfd"
         }
       },
       "primary": {
@@ -5536,52 +5566,52 @@
           "0": {
             "value": "{color.primary.blue.700}",
             "type": "color",
-            "description": "Color (border primary): #0040a1"
+            "description": "Color (border primary): #004eeb"
           },
           "1": {
             "value": "{color.primary.blue.800}",
             "type": "color",
-            "description": "Color (border primary): #002b73"
+            "description": "Color (border primary): #0040c1"
           }
         },
         "default": {
           "value": "{color.primary.blue.600}",
           "type": "color",
-          "description": "Color (border primary): #0056d2"
+          "description": "Color (border primary): #155eef"
         },
         "moderate": {
           "0": {
             "value": "{color.primary.blue.400}",
             "type": "color",
-            "description": "Color (border primary): #658aff"
+            "description": "Color (border primary): #528bff"
           },
           "1": {
             "value": "{color.primary.blue.500}",
             "type": "color",
-            "description": "Color (border primary): #1c6dff"
+            "description": "Color (border primary): #2970ff"
           }
         },
         "subtle": {
           "0": {
             "value": "{color.primary.blue.50}",
             "type": "color",
-            "description": "Color (border primary): #edf0ff"
+            "description": "Color (border primary): #eff4ff"
           },
           "1": {
             "value": "{color.primary.blue.200}",
             "type": "color",
-            "description": "Color (border primary): #b7c4ff"
+            "description": "Color (border primary): #b2ccff"
           },
           "2": {
             "value": "{color.primary.blue.300}",
             "type": "color",
-            "description": "Color (border primary): #91a7ff"
+            "description": "Color (border primary): #84adff"
           }
         },
         "inactive": {
           "value": "{color.primary.blue.25}",
           "type": "color",
-          "description": "Color (border primary): #f6f7ff"
+          "description": "Color (border primary): #f5f8ff"
         }
       },
       "success": {
@@ -5589,57 +5619,57 @@
           "0": {
             "value": "{color.secondary.success.700}",
             "type": "color",
-            "description": "Color (border success): #04522c"
+            "description": "Color (border success): #027a48"
           },
           "1": {
             "value": "{color.secondary.success.800}",
             "type": "color",
-            "description": "Color (border success): #02391d"
+            "description": "Color (border success): #05603a"
           },
           "2": {
             "value": "{color.secondary.success.900}",
             "type": "color",
-            "description": "Color (border success): #01210f"
+            "description": "Color (border success): #054f31"
           }
         },
         "default": {
           "value": "{color.secondary.success.600}",
           "type": "color",
-          "description": "Color (border success): #066d3d"
+          "description": "Color (border success): #039855"
         },
         "moderate": {
           "0": {
             "value": "{color.secondary.success.300}",
             "type": "color",
-            "description": "Color (border success): #14c472"
+            "description": "Color (border success): #6ce9a6"
           },
           "1": {
             "value": "{color.secondary.success.500}",
             "type": "color",
-            "description": "Color (border success): #0a894e"
+            "description": "Color (border success): #12b76a"
           }
         },
         "subtle": {
           "0": {
             "value": "{color.secondary.success.50}",
             "type": "color",
-            "description": "Color (border success): #c2ffd6"
+            "description": "Color (border success): #ecfdf3"
           },
           "1": {
             "value": "{color.secondary.success.100}",
             "type": "color",
-            "description": "Color (border success): #5effa4"
+            "description": "Color (border success): #d1fadf"
           },
           "2": {
             "value": "{color.secondary.success.200}",
             "type": "color",
-            "description": "Color (border success): #19e385"
+            "description": "Color (border success): #a6f4c5"
           }
         },
         "inactive": {
           "value": "{color.secondary.success.25}",
           "type": "color",
-          "description": "Color (border success): #e2ffeb"
+          "description": "Color (border success): #f6fef9"
         }
       },
       "error": {
@@ -5647,57 +5677,57 @@
           "0": {
             "value": "{color.secondary.error.700}",
             "type": "color",
-            "description": "Color (border error): #86211a"
+            "description": "Color (border error): #b42318"
           },
           "1": {
             "value": "{color.secondary.error.800}",
             "type": "color",
-            "description": "Color (border error): #5f1510"
+            "description": "Color (border error): #912018"
           },
           "2": {
             "value": "{color.secondary.error.900}",
             "type": "color",
-            "description": "Color (border error): #3a0906"
+            "description": "Color (border error): #7a271a"
           }
         },
         "default": {
           "value": "{color.secondary.error.600}",
           "type": "color",
-          "description": "Color (border error): #af2e25"
+          "description": "Color (border error): #d92d20"
         },
         "moderate": {
           "0": {
             "value": "{color.secondary.error.300}",
             "type": "color",
-            "description": "Color (border error): #f3908c"
+            "description": "Color (border error): #fda29b"
           },
           "1": {
             "value": "{color.secondary.error.500}",
             "type": "color",
-            "description": "Color (border error): #da3c31"
+            "description": "Color (border error): #f04438"
           }
         },
         "subtle": {
           "0": {
             "value": "{color.secondary.error.50}",
             "type": "color",
-            "description": "Color (border error): #fceded"
+            "description": "Color (border error): #fef3f2"
           },
           "1": {
             "value": "{color.secondary.error.100}",
             "type": "color",
-            "description": "Color (border error): #fadbdb"
+            "description": "Color (border error): #fee4e2"
           },
           "2": {
             "value": "{color.secondary.error.200}",
             "type": "color",
-            "description": "Color (border error): #f6b7b5"
+            "description": "Color (border error): #fecdca"
           }
         },
         "inactive": {
           "value": "{color.secondary.error.25}",
           "type": "color",
-          "description": "Color (border error): #fef6f6"
+          "description": "Color (border error): #fffbfa"
         }
       },
       "warning": {
@@ -5705,62 +5735,62 @@
           "0": {
             "value": "{color.secondary.warning.700}",
             "type": "color",
-            "description": "Color (border warning): #6b3b01"
+            "description": "Color (border warning): #b54708"
           },
           "1": {
             "value": "{color.secondary.warning.800}",
             "type": "color",
-            "description": "Color (border warning): #4b2801"
+            "description": "Color (border warning): #93370d"
           },
           "2": {
             "value": "{color.secondary.warning.900}",
             "type": "color",
-            "description": "Color (border warning): #2d1600"
+            "description": "Color (border warning): #7a2e0e"
           }
         },
         "default": {
           "value": "{color.secondary.warning.600}",
           "type": "color",
-          "description": "Color (border warning): #8c4f03"
+          "description": "Color (border warning): #dc6803"
         },
         "moderate": {
           "0": {
             "value": "{color.secondary.warning.300}",
             "type": "color",
-            "description": "Color (border warning): #fa9209"
+            "description": "Color (border warning): #fec84b"
           },
           "1": {
             "value": "{color.secondary.warning.400}",
             "type": "color",
-            "description": "Color (border warning): #d47b06"
+            "description": "Color (border warning): #fdb022"
           },
           "2": {
             "value": "{color.secondary.warning.500}",
             "type": "color",
-            "description": "Color (border warning): #af6504"
+            "description": "Color (border warning): #f79009"
           }
         },
         "subtle": {
           "0": {
             "value": "{color.secondary.warning.50}",
             "type": "color",
-            "description": "Color (border warning): #ffede5"
+            "description": "Color (border warning): #fffaeb"
           },
           "1": {
             "value": "{color.secondary.warning.100}",
             "type": "color",
-            "description": "Color (border warning): #ffdbca"
+            "description": "Color (border warning): #fef0c7"
           },
           "2": {
             "value": "{color.secondary.warning.200}",
             "type": "color",
-            "description": "Color (border warning): #ffb789"
+            "description": "Color (border warning): #fedf89"
           }
         },
         "inactive": {
           "value": "{color.secondary.warning.25}",
           "type": "color",
-          "description": "Color (border warning): #fff6f2"
+          "description": "Color (border warning): #fffcf5"
         }
       }
     },
@@ -5785,42 +5815,42 @@
           "1": {
             "value": "{color.neutral.gray.900}",
             "type": "color",
-            "description": "Color (text neutral): #181c22"
+            "description": "Color (text neutral): #101828"
           },
           "2": {
             "value": "{color.neutral.gray.800}",
             "type": "color",
-            "description": "Color (text neutral): #2b303b"
+            "description": "Color (text neutral): #1d2939"
           }
         },
         "body": {
           "1": {
             "value": "{color.neutral.gray.700}",
             "type": "color",
-            "description": "Color (text neutral): #404755"
+            "description": "Color (text neutral): #344054"
           },
           "2": {
             "value": "{color.neutral.gray.600}",
             "type": "color",
-            "description": "Color (text neutral): #565f71"
+            "description": "Color (text neutral): #475467"
           }
         },
         "subtitle": {
           "1": {
             "value": "{color.neutral.gray.500}",
             "type": "color",
-            "description": "Color (text neutral): #6d778d"
+            "description": "Color (text neutral): #667085"
           },
           "2": {
             "value": "{color.neutral.gray.400}",
             "type": "color",
-            "description": "Color (text neutral): #8591ab"
+            "description": "Color (text neutral): #98a2b3"
           }
         },
         "inactive": {
           "value": "{color.neutral.gray.300}",
           "type": "color",
-          "description": "Color (text neutral): #a2abbf"
+          "description": "Color (text neutral): #d0d5dd"
         }
       },
       "primary": {
@@ -5828,36 +5858,36 @@
           "1": {
             "value": "{color.primary.blue.900}",
             "type": "color",
-            "description": "Color (text primary): #001848"
+            "description": "Color (text primary): #00359e"
           },
           "2": {
             "value": "{color.primary.blue.800}",
             "type": "color",
-            "description": "Color (text primary): #002b73"
+            "description": "Color (text primary): #0040c1"
           }
         },
         "body": {
           "1": {
             "value": "{color.primary.blue.700}",
             "type": "color",
-            "description": "Color (text primary): #0040a1"
+            "description": "Color (text primary): #004eeb"
           },
           "2": {
             "value": "{color.primary.blue.600}",
             "type": "color",
-            "description": "Color (text primary): #0056d2"
+            "description": "Color (text primary): #155eef"
           }
         },
         "inactive": {
           "1": {
             "value": "{color.primary.blue.300}",
             "type": "color",
-            "description": "Color (text primary): #91a7ff"
+            "description": "Color (text primary): #84adff"
           },
           "2": {
             "value": "{color.primary.blue.200}",
             "type": "color",
-            "description": "Color (text primary): #b7c4ff"
+            "description": "Color (text primary): #b2ccff"
           }
         }
       },
@@ -5866,36 +5896,36 @@
           "1": {
             "value": "{color.secondary.success.900}",
             "type": "color",
-            "description": "Color (text success): #01210f"
+            "description": "Color (text success): #054f31"
           },
           "2": {
             "value": "{color.secondary.success.800}",
             "type": "color",
-            "description": "Color (text success): #02391d"
+            "description": "Color (text success): #05603a"
           }
         },
         "body": {
           "1": {
             "value": "{color.secondary.success.700}",
             "type": "color",
-            "description": "Color (text success): #04522c"
+            "description": "Color (text success): #027a48"
           },
           "2": {
             "value": "{color.secondary.success.600}",
             "type": "color",
-            "description": "Color (text success): #066d3d"
+            "description": "Color (text success): #039855"
           }
         },
         "inactive": {
           "1": {
             "value": "{color.secondary.success.500}",
             "type": "color",
-            "description": "Color (text success): #0a894e"
+            "description": "Color (text success): #12b76a"
           },
           "2": {
             "value": "{color.secondary.success.300}",
             "type": "color",
-            "description": "Color (text success): #14c472"
+            "description": "Color (text success): #6ce9a6"
           }
         }
       },
@@ -5904,36 +5934,36 @@
           "1": {
             "value": "{color.secondary.error.900}",
             "type": "color",
-            "description": "Color (text error): #3a0906"
+            "description": "Color (text error): #7a271a"
           },
           "2": {
             "value": "{color.secondary.error.800}",
             "type": "color",
-            "description": "Color (text error): #5f1510"
+            "description": "Color (text error): #912018"
           }
         },
         "body": {
           "1": {
             "value": "{color.secondary.error.700}",
             "type": "color",
-            "description": "Color (text error): #86211a"
+            "description": "Color (text error): #b42318"
           },
           "2": {
             "value": "{color.secondary.error.600}",
             "type": "color",
-            "description": "Color (text error): #af2e25"
+            "description": "Color (text error): #d92d20"
           }
         },
         "inactive": {
           "1": {
             "value": "{color.secondary.error.500}",
             "type": "color",
-            "description": "Color (text error): #da3c31"
+            "description": "Color (text error): #f04438"
           },
           "2": {
             "value": "{color.secondary.error.300}",
             "type": "color",
-            "description": "Color (text error): #f3908c"
+            "description": "Color (text error): #fda29b"
           }
         }
       },
@@ -5942,36 +5972,36 @@
           "1": {
             "value": "{color.secondary.warning.900}",
             "type": "color",
-            "description": "Color (text warning): #2d1600"
+            "description": "Color (text warning): #7a2e0e"
           },
           "2": {
             "value": "{color.secondary.warning.800}",
             "type": "color",
-            "description": "Color (text warning): #4b2801"
+            "description": "Color (text warning): #93370d"
           }
         },
         "body": {
           "1": {
             "value": "{color.secondary.warning.700}",
             "type": "color",
-            "description": "Color (text warning): #6b3b01"
+            "description": "Color (text warning): #b54708"
           },
           "2": {
             "value": "{color.secondary.warning.600}",
             "type": "color",
-            "description": "Color (text warning): #8c4f03"
+            "description": "Color (text warning): #dc6803"
           }
         },
         "inactive": {
           "1": {
             "value": "{color.secondary.warning.400}",
             "type": "color",
-            "description": "Color (text warning): #d47b06"
+            "description": "Color (text warning): #fdb022"
           },
           "2": {
             "value": "{color.secondary.warning.300}",
             "type": "color",
-            "description": "Color (text warning): #fa9209"
+            "description": "Color (text warning): #fec84b"
           }
         }
       }
@@ -5997,94 +6027,94 @@
           "0": {
             "value": "{color.neutral.gray.800}",
             "type": "color",
-            "description": "Color (icon neutral): #2b303b"
+            "description": "Color (icon neutral): #1d2939"
           },
           "1": {
             "value": "{color.neutral.gray.900}",
             "type": "color",
-            "description": "Color (icon neutral): #181c22"
+            "description": "Color (icon neutral): #101828"
           }
         },
         "default": {
           "value": "{color.neutral.gray.700}",
           "type": "color",
-          "description": "Color (icon neutral): #404755"
+          "description": "Color (icon neutral): #344054"
         },
         "moderate": {
           "0": {
             "value": "{color.neutral.gray.400}",
             "type": "color",
-            "description": "Color (icon neutral): #8591ab"
+            "description": "Color (icon neutral): #98a2b3"
           },
           "1": {
             "value": "{color.neutral.gray.500}",
             "type": "color",
-            "description": "Color (icon neutral): #6d778d"
+            "description": "Color (icon neutral): #667085"
           },
           "2": {
             "value": "{color.neutral.gray.600}",
             "type": "color",
-            "description": "Color (icon neutral): #565f71"
+            "description": "Color (icon neutral): #475467"
           }
         },
         "subtle": {
           "0": {
             "value": "{color.neutral.gray.100}",
             "type": "color",
-            "description": "Color (icon neutral): #e0e2e9"
+            "description": "Color (icon neutral): #f2f4f7"
           },
           "1": {
             "value": "{color.neutral.gray.200}",
             "type": "color",
-            "description": "Color (icon neutral): #c1c7d4"
+            "description": "Color (icon neutral): #eaecf0"
           },
           "2": {
             "value": "{color.neutral.gray.300}",
             "type": "color",
-            "description": "Color (icon neutral): #a2abbf"
+            "description": "Color (icon neutral): #d0d5dd"
           }
         },
         "info": {
           "value": "{color.neutral.gray.400}",
           "type": "color",
-          "description": "Color (icon neutral): #8591ab"
+          "description": "Color (icon neutral): #98a2b3"
         }
       },
       "primary": {
         "default": {
           "value": "{color.primary.blue.700}",
           "type": "color",
-          "description": "Color (icon primary): #0040a1"
+          "description": "Color (icon primary): #004eeb"
         },
         "intense": {
           "0": {
             "value": "{color.primary.blue.800}",
             "type": "color",
-            "description": "Color (icon primary): #002b73"
+            "description": "Color (icon primary): #0040c1"
           },
           "1": {
             "value": "{color.primary.blue.900}",
             "type": "color",
-            "description": "Color (icon primary): #001848"
+            "description": "Color (icon primary): #00359e"
           }
         },
         "moderate": {
           "0": {
             "value": "{color.primary.blue.500}",
             "type": "color",
-            "description": "Color (icon primary): #1c6dff"
+            "description": "Color (icon primary): #2970ff"
           },
           "1": {
             "value": "{color.primary.blue.600}",
             "type": "color",
-            "description": "Color (icon primary): #0056d2"
+            "description": "Color (icon primary): #155eef"
           }
         },
         "subtle": {
           "0": {
             "value": "{color.primary.blue.200}",
             "type": "color",
-            "description": "Color (icon primary): #b7c4ff"
+            "description": "Color (icon primary): #b2ccff"
           }
         }
       },
@@ -6093,28 +6123,28 @@
           "0": {
             "value": "{color.secondary.success.800}",
             "type": "color",
-            "description": "Color (icon success): #02391d"
+            "description": "Color (icon success): #05603a"
           },
           "1": {
             "value": "{color.secondary.success.900}",
             "type": "color",
-            "description": "Color (icon success): #01210f"
+            "description": "Color (icon success): #054f31"
           }
         },
         "default": {
           "value": "{color.secondary.success.700}",
           "type": "color",
-          "description": "Color (icon success): #04522c"
+          "description": "Color (icon success): #027a48"
         },
         "moderate": {
           "value": "{color.secondary.success.600}",
           "type": "color",
-          "description": "Color (icon success): #066d3d"
+          "description": "Color (icon success): #039855"
         },
         "inactive": {
           "value": "{color.secondary.success.300}",
           "type": "color",
-          "description": "Color (icon success): #14c472"
+          "description": "Color (icon success): #6ce9a6"
         }
       },
       "error": {
@@ -6122,28 +6152,28 @@
           "0": {
             "value": "{color.secondary.error.800}",
             "type": "color",
-            "description": "Color (icon error): #5f1510"
+            "description": "Color (icon error): #912018"
           },
           "1": {
             "value": "{color.secondary.error.900}",
             "type": "color",
-            "description": "Color (icon error): #3a0906"
+            "description": "Color (icon error): #7a271a"
           }
         },
         "default": {
           "value": "{color.secondary.error.700}",
           "type": "color",
-          "description": "Color (icon error): #86211a"
+          "description": "Color (icon error): #b42318"
         },
         "moderate": {
           "value": "{color.secondary.error.600}",
           "type": "color",
-          "description": "Color (icon error): #af2e25"
+          "description": "Color (icon error): #d92d20"
         },
         "inactive": {
           "value": "{color.secondary.error.300}",
           "type": "color",
-          "description": "Color (icon error): #f3908c"
+          "description": "Color (icon error): #fda29b"
         }
       },
       "warning": {
@@ -6151,28 +6181,28 @@
           "0": {
             "value": "{color.secondary.warning.800}",
             "type": "color",
-            "description": "Color (icon warning): #4b2801"
+            "description": "Color (icon warning): #93370d"
           },
           "1": {
             "value": "{color.secondary.warning.900}",
             "type": "color",
-            "description": "Color (icon warning): #2d1600"
+            "description": "Color (icon warning): #7a2e0e"
           }
         },
         "default": {
           "value": "{color.secondary.warning.700}",
           "type": "color",
-          "description": "Color (icon warning): #6b3b01"
+          "description": "Color (icon warning): #b54708"
         },
         "moderate": {
           "value": "{color.secondary.warning.600}",
           "type": "color",
-          "description": "Color (icon warning): #8c4f03"
+          "description": "Color (icon warning): #dc6803"
         },
         "inactive": {
           "value": "{color.secondary.warning.300}",
           "type": "color",
-          "description": "Color (icon warning): #fa9209"
+          "description": "Color (icon warning): #fec84b"
         }
       }
     }
