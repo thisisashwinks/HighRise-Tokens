@@ -1085,6 +1085,16 @@
       "type": "dimension",
       "description": "Padding: 34px"
     },
+    "none": {
+      "value": "{padding.0}",
+      "type": "dimension",
+      "description": "Padding: 0px"
+    },
+    "4xs": {
+      "value": "{padding.1}",
+      "type": "dimension",
+      "description": "Padding: 4px"
+    },
     "3xs": {
       "value": "{padding.1[5]}",
       "type": "dimension",
