@@ -324,6 +324,28 @@
               "type": "color",
               "$description": "Default border for hover state - gray-300 (#d0d5dd)"
             }
+          },
+          "disabled": {
+            "background": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "$description": "Disabled background for default state - white (#ffffff)"
+            },
+            "border": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "$description": "Disabled border for default state - gray-200 (#eaecf0)"
+            },
+            "text": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "$description": "Disabled text for default state - gray-600 (#475467)"
+            },
+            "icon": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "$description": "Disabled icon for default state - gray-600 (#475467)"
+            }
           }
         },
         "text": {
