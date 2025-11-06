@@ -2,468 +2,424 @@
   "content-switcher-item": {
     "comment": "Content Switcher Item component - Used for switching between different content views or sections. Supports Primary and Secondary variants with selected/unselected states",
     "border": {
-      "comment": "Border properties for content switcher item",
       "radius": {
         "value": "{border.radius.none}",
         "type": "dimension",
-        "comment": "Border radius - square corners for content switcher items"
+        "$description": "Border radius - square corners (0px) for content switcher items"
       },
       "width": {
-        "comment": "Border width variants for different positions",
         "default": {
           "value": "{border.width.default}",
           "type": "dimension",
-          "comment": "Standard border width for all borders"
-        },
-        "right": {
-          "value": "{border.width.default}",
-          "type": "dimension",
-          "comment": "Right border width for unselected items (creates visual separation)"
+          "$description": "Standard border width (1px) for all borders"
         }
       }
     },
     "padding": {
       "comment": "Padding values for different content switcher item sizes",
       "x": {
-        "comment": "Horizontal padding for text and icon content",
         "3xs": {
-          "value": "{padding.x.2xs}",
+          "value": "{padding.x.4xs}",
           "type": "dimension",
-          "comment": "Horizontal padding for 3xs size (6px)"
+          "$description": "Horizontal padding for 4xs size (6px)"
         },
         "2xs": {
-          "value": "{padding.x.sm}",
+          "value": "{padding.x.3xs}",
           "type": "dimension",
-          "comment": "Horizontal padding for 2xs size (8px)"
+          "$description": "Horizontal padding for 2xs size (8px)"
         },
         "xs": {
-          "value": "{padding.x.md}",
+          "value": "{padding.x.2xs}",
           "type": "dimension",
-          "comment": "Horizontal padding for xs size (10px)"
+          "$description": "Horizontal padding for xs size (10px)"
         },
         "sm": {
-          "value": "{padding.x.lg}",
+          "value": "{padding.x.sm}",
           "type": "dimension",
-          "comment": "Horizontal padding for sm size (14px)"
+          "$description": "Horizontal padding for sm size (14px)"
         },
         "md": {
-          "value": "{padding.x.xl}",
+          "value": "{padding.x.md}",
           "type": "dimension",
-          "comment": "Horizontal padding for md size (16px)"
+          "$description": "Horizontal padding for md size (16px)"
         },
         "lg": {
-          "value": "{padding.x.2xl}",
+          "value": "{padding.x.lg}",
           "type": "dimension",
-          "comment": "Horizontal padding for lg size (18px)"
+          "$description": "Horizontal padding for lg size (18px)"
         }
       },
       "y": {
-        "comment": "Vertical padding for text and icon content",
         "3xs": {
-          "value": "{padding.y.sm}",
+          "value": "{padding.y.3xs}",
           "type": "dimension",
-          "comment": "Vertical padding for 3xs size (8px)"
+          "$description": "Vertical padding for 3xs size (8px)"
         },
         "2xs": {
-          "value": "{padding.y.sm}",
+          "value": "{padding.y.2xs}",
           "type": "dimension",
-          "comment": "Vertical padding for 2xs size (8px)"
+          "$description": "Vertical padding for 2xs size (8px)"
         },
         "xs": {
-          "value": "{padding.y.sm}",
+          "value": "{padding.y.xs}",
           "type": "dimension",
-          "comment": "Vertical padding for xs size (8px)"
+          "$description": "Vertical padding for xs size (8px)"
         },
         "sm": {
           "value": "{padding.y.sm}",
           "type": "dimension",
-          "comment": "Vertical padding for sm size (8px)"
+          "$description": "Vertical padding for sm size (8px)"
         },
         "md": {
           "value": "{padding.y.md}",
           "type": "dimension",
-          "comment": "Vertical padding for md size (10px)"
+          "$description": "Vertical padding for md size (10px)"
         },
         "lg": {
-          "value": "{padding.y.md}",
+          "value": "{padding.y.lg}",
           "type": "dimension",
-          "comment": "Vertical padding for lg size (10px)"
+          "$description": "Vertical padding for lg size (10px)"
         }
       }
     },
     "gap": {
-      "comment": "Gap between icon and text for different sizes",
       "3xs": {
-        "value": "{size.1}",
+        "value": "{gap.3}",
         "type": "dimension",
-        "comment": "Gap for 3xs size - 4px between icon and text"
+        "$description": "Gap for 3xs size - 4px between icon and text"
       },
       "2xs": {
-        "value": "{size.1_5}",
+        "value": "{gap.2xs}",
         "type": "dimension",
-        "comment": "Gap for 2xs size - 6px between icon and text"
+        "$description": "Gap for 2xs size - 6px between icon and text"
       },
       "xs": {
-        "value": "{size.2}",
+        "value": "{gap.xs}",
         "type": "dimension",
-        "comment": "Gap for xs size - 8px between icon and text"
+        "$description": "Gap for xs size - 8px between icon and text"
       },
       "sm": {
-        "value": "{size.2}",
+        "value": "{gap.sm}",
         "type": "dimension",
-        "comment": "Gap for sm size - 8px between icon and text"
+        "$description": "Gap for sm size - 8px between icon and text"
       },
       "md": {
-        "value": "{size.2}",
+        "value": "{gap.md}",
         "type": "dimension",
-        "comment": "Gap for md size - 8px between icon and text"
+        "$description": "Gap for md size - 8px between icon and text"
       },
       "lg": {
-        "value": "{size.2}",
+        "value": "{gap.lg}",
         "type": "dimension",
-        "comment": "Gap for lg size - 8px between icon and text"
+        "$description": "Gap for lg size - 8px between icon and text"
       }
     },
     "height": {
-      "comment": "Fixed heights for different content switcher item sizes",
       "3xs": {
-        "value": "{size.6}",
+        "value": "{size.height.3xs}",
         "type": "dimension",
-        "comment": "Height for 3xs size - 24px"
+        "$description": "Height for 3xs size - 24px"
       },
       "2xs": {
-        "value": "{size.7}",
+        "value": "{size.height.2xs}",
         "type": "dimension",
-        "comment": "Height for 2xs size - 28px"
+        "$description": "Height for 2xs size - 28px"
       },
       "xs": {
-        "value": "{size.8}",
+        "value": "{size.height.xs}",
         "type": "dimension",
-        "comment": "Height for xs size - 32px"
+        "$description": "Height for xs size - 32px"
       },
       "sm": {
-        "value": "{size.9}",
+        "value": "{size.height.sm}",
         "type": "dimension",
-        "comment": "Height for sm size - 36px"
+        "$description": "Height for sm size - 36px"
       },
       "md": {
-        "value": "{size.10}",
+        "value": "{size.height.md}",
         "type": "dimension",
-        "comment": "Height for md size - 40px"
+        "$description": "Height for md size - 40px"
       },
       "lg": {
-        "value": "{size.11}",
+        "value": "{size.height.lg}",
         "type": "dimension",
-        "comment": "Height for lg size - 44px"
+        "$description": "Height for lg size - 44px"
       }
     },
     "color": {
-      "comment": "Color tokens for Primary and Secondary variants with selected and unselected states",
       "primary": {
-        "comment": "Primary variant colors - uses blue color scheme",
         "selected": {
-          "comment": "Selected state colors for primary variant",
           "background": {
-            "comment": "Background colors for selected primary items",
             "default": {
               "value": "{color.background.primary.subtle.0}",
               "type": "color",
-              "comment": "Light blue background for selected item - blue-50"
+              "$description": "Light blue background for selected item - blue-50 (#eff4ff)"
             },
             "hover": {
               "value": "{color.background.primary.subtle.1}",
               "type": "color",
-              "comment": "Slightly darker blue on hover - blue-100"
+              "$description": "Slightly darker blue on hover - blue-100 (#d1e0ff)"
             }
           },
           "border": {
-            "comment": "Border colors for selected primary items",
             "default": {
               "value": "{color.border.primary.subtle.0}",
               "type": "color",
-              "comment": "Border matches background for selected state - blue-50"
+              "$description": "Border matches background for selected state - blue-50 (#eff4ff)"
             },
             "hover": {
               "value": "{color.border.primary.subtle.1}",
               "type": "color",
-              "comment": "Border darkens on hover - blue-200"
+              "$description": "Border darkens on hover - blue-200 (#b2ccff)"
             }
           },
           "text": {
-            "comment": "Text colors for selected primary items",
             "default": {
-              "value": "{color.text.primary.title.1}",
+              "value": "{color.text.primary.body.1}",
               "type": "color",
-              "comment": "Strong blue text for selected state - blue-700"
+              "$description": "Strong blue text for selected state - blue-700 (#004eeb)"
             },
             "hover": {
-              "value": "{color.text.primary.title.1}",
+              "value": "{color.text.primary.body.1}",
               "type": "color",
-              "comment": "Text color remains consistent on hover - blue-700"
+              "$description": "Text color remains consistent on hover - blue-700 (#004eeb)"
             }
           },
           "icon": {
-            "comment": "Icon colors for selected primary items",
             "default": {
-              "value": "{color.icon.primary.intense.1}",
+              "value": "{color.icon.primary.default}",
               "type": "color",
-              "comment": "Strong blue icon for selected state - blue-700"
+              "$description": "Default blue icon for selected state - blue-700 (#004eeb)"
             },
             "hover": {
-              "value": "{color.icon.primary.intense.1}",
+              "value": "{color.icon.primary.default}",
               "type": "color",
-              "comment": "Icon color remains consistent on hover - blue-700"
+              "$description": "Default blue icon for selected state - blue-700 (#004eeb)"
             }
           }
         },
-        "unselected": {
-          "comment": "Unselected state colors for primary variant",
+        "default": {
           "background": {
-            "comment": "Background colors for unselected primary items",
             "default": {
               "value": "{color.background.neutral.base}",
               "type": "color",
-              "comment": "White background for unselected state"
+              "$description": "White background for default state - white (#ffffff)"
             },
             "hover": {
               "value": "{color.background.neutral.subtle.0}",
               "type": "color",
-              "comment": "Light gray background on hover - gray-50"
+              "$description": "Light gray background on hover - gray-50 (#f9fafb)"
             }
           },
           "border": {
-            "comment": "Border colors for unselected primary items",
-            "right": {
-              "comment": "Right border only for visual separation",
-              "default": {
-                "value": "{color.border.neutral.subtle.1}",
-                "type": "color",
-                "comment": "Gray right border for separation - gray-300"
-              },
-              "hover": {
-                "value": "{color.border.neutral.subtle.1}",
-                "type": "color",
-                "comment": "Border remains consistent on hover - gray-300"
-              }
+            "default": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "$description": "Default border for default state - gray-300 (#d0d5dd)"
+            },
+            "hover": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "$description": "Default border for default state - gray-300 (#d0d5dd)"
             }
           },
           "text": {
-            "comment": "Text colors for unselected primary items",
             "default": {
-              "value": "{color.text.neutral.body.1}",
+              "value": "{color.text.neutral.body.2}",
               "type": "color",
-              "comment": "Medium gray text for unselected state - gray-600"
+              "$description": "Medium gray text for default state - gray-600 (#475467)"
             },
             "hover": {
-              "value": "{color.text.neutral.body.1}",
+              "value": "{color.text.neutral.body.2}",
               "type": "color",
-              "comment": "Text color remains consistent on hover - gray-600"
+              "$description": "Medium gray text for default state - gray-600 (#475467)"
             }
           },
           "icon": {
-            "comment": "Icon colors for unselected primary items",
             "default": {
-              "value": "{color.icon.neutral.default}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
-              "comment": "Medium gray icon for unselected state - gray-600"
+              "$description": "Medium gray icon for default state - gray-600 (#475467)"
             },
             "hover": {
-              "value": "{color.icon.neutral.default}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
-              "comment": "Icon color remains consistent on hover - gray-600"
+              "$description": "Medium gray icon for default state - gray-600 (#475467)"
             }
           }
         }
       },
       "secondary": {
-        "comment": "Secondary variant colors - uses neutral gray color scheme",
         "selected": {
-          "comment": "Selected state colors for secondary variant",
           "background": {
-            "comment": "Background colors for selected secondary items",
             "default": {
-              "value": "{color.background.neutral.subtle.1}",
+              "value": "{color.background.neutral.subtle.2}",
               "type": "color",
-              "comment": "Light gray background for selected item - gray-200"
+              "$description": "Light gray background for selected item - gray-200 (#eaecf0)"
             },
             "hover": {
               "value": "{color.background.neutral.moderate.0}",
               "type": "color",
-              "comment": "Medium gray on hover - gray-300"
+              "$description": "Medium gray on hover - gray-300 (#d0d5dd)"
             }
           },
           "border": {
-            "comment": "Border colors for selected secondary items",
             "default": {
-              "value": "{color.border.neutral.subtle.1}",
+              "value": "{color.border.neutral.subtle.2}",
               "type": "color",
-              "comment": "Border matches background for selected state - gray-200"
+              "$description": "Border matches background for selected state - gray-200 (#eaecf0)"
             },
             "hover": {
-              "value": "{color.border.neutral.moderate.1}",
+              "value": "{color.border.neutral.moderate.0}",
               "type": "color",
-              "comment": "Border darkens on hover - gray-400"
+              "$description": "Border darkens on hover - gray-400 (#98a2b3)"
             }
           },
           "text": {
-            "comment": "Text colors for selected secondary items",
             "default": {
               "value": "{color.text.neutral.title.1}",
               "type": "color",
-              "comment": "Dark gray text for selected state - gray-900"
+              "$description": "Dark gray text for selected state - gray-900 (#101828)"
             },
             "hover": {
               "value": "{color.text.neutral.title.1}",
               "type": "color",
-              "comment": "Text color remains consistent on hover - gray-900"
+              "$description": "Text color remains consistent on hover - gray-900 (#101828)"
             }
           },
           "icon": {
-            "comment": "Icon colors for selected secondary items",
             "default": {
-              "value": "{color.icon.neutral.intense.1}",
+              "value": "{color.icon.neutral.intense.0}",
               "type": "color",
-              "comment": "Dark gray icon for selected state - gray-900"
+              "$description": "Dark gray icon for selected state - gray-900 (#101828)"
             },
             "hover": {
               "value": "{color.icon.neutral.intense.1}",
               "type": "color",
-              "comment": "Icon color remains consistent on hover - gray-900"
+              "$description": "Icon color remains consistent on hover - gray-900 (#101828)"
             }
           }
         },
-        "unselected": {
-          "comment": "Unselected state colors for secondary variant - identical to primary unselected",
+        "default": {
           "background": {
-            "comment": "Background colors for unselected secondary items",
             "default": {
               "value": "{color.background.neutral.base}",
               "type": "color",
-              "comment": "White background for unselected state"
+              "$description": "White background for default state - white (#ffffff)"
             },
             "hover": {
               "value": "{color.background.neutral.subtle.0}",
               "type": "color",
-              "comment": "Light gray background on hover - gray-50"
+              "$description": "Light gray background on hover - gray-50 (#f9fafb)"
             }
           },
           "border": {
-            "comment": "Border colors for unselected secondary items",
-            "right": {
-              "comment": "Right border only for visual separation",
-              "default": {
-                "value": "{color.border.neutral.subtle.1}",
-                "type": "color",
-                "comment": "Gray right border for separation - gray-300"
-              },
-              "hover": {
-                "value": "{color.border.neutral.subtle.1}",
-                "type": "color",
-                "comment": "Border remains consistent on hover - gray-300"
-              }
-            }
-          },
-          "text": {
-            "comment": "Text colors for unselected secondary items",
             "default": {
-              "value": "{color.text.neutral.body.1}",
+              "value": "{color.border.neutral.subtle.1}",
               "type": "color",
-              "comment": "Medium gray text for unselected state - gray-600"
+              "$description": "Default border for default state - gray-300 (#d0d5dd)"
             },
             "hover": {
-              "value": "{color.text.neutral.body.1}",
+              "value": "{color.border.neutral.subtle.1}",
               "type": "color",
-              "comment": "Text color remains consistent on hover - gray-600"
+              "$description": "Default border for hover state - gray-300 (#d0d5dd)"
             }
+          }
+        },
+        "text": {
+          "$description": "Text colors for unselected secondary items",
+          "default": {
+            "value": "{color.text.neutral.body.2}",
+            "type": "color",
+            "$description": "Medium gray text for default state - gray-600 (#475467)"
           },
-          "icon": {
-            "comment": "Icon colors for unselected secondary items",
-            "default": {
-              "value": "{color.icon.neutral.default}",
-              "type": "color",
-              "comment": "Medium gray icon for unselected state - gray-600"
-            },
-            "hover": {
-              "value": "{color.icon.neutral.default}",
-              "type": "color",
-              "comment": "Icon color remains consistent on hover - gray-600"
-            }
+          "hover": {
+            "value": "{color.text.neutral.body.2}",
+            "type": "color",
+            "$description": "Medium gray text for default state - gray-600 (#475467)"
+          }
+        },
+        "icon": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "$description": "Medium gray icon for default state - gray-600 (#475467)"
+          },
+          "hover": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "$description": "Medium gray icon for default state - gray-600 (#475467)"
           }
         }
       }
-    },
-    "text": {
-      "comment": "Typography tokens for different content switcher item sizes",
-      "typography": {
-        "comment": "Font styles mapped to sizes - using semibold weight for emphasis",
-        "3xs": {
-          "value": "{font.body.semibold.xs}",
-          "type": "typography",
-          "comment": "Typography for 3xs size - 11px semibold"
-        },
-        "2xs": {
-          "value": "{font.body.semibold.sm}",
-          "type": "typography",
-          "comment": "Typography for 2xs size - 12px semibold"
-        },
-        "xs": {
-          "value": "{font.body.semibold.md}",
-          "type": "typography",
-          "comment": "Typography for xs size - 13px semibold"
-        },
-        "sm": {
-          "value": "{font.body.semibold.lg}",
-          "type": "typography",
-          "comment": "Typography for sm size - 14px semibold"
-        },
-        "md": {
-          "value": "{font.body.semibold.lg}",
-          "type": "typography",
-          "comment": "Typography for md size - 14px semibold"
-        },
-        "lg": {
-          "value": "{font.body.semibold.2xl}",
-          "type": "typography",
-          "comment": "Typography for lg size - 16px semibold"
-        }
+    }
+  },
+  "text": {
+    "typography": {
+      "3xs": {
+        "value": "{font.body.semibold.xs}",
+        "type": "typography",
+        "$description": "Typography for 3xs size - 11px semibold"
+      },
+      "2xs": {
+        "value": "{font.body.semibold.sm}",
+        "type": "typography",
+        "$description": "Typography for 2xs size - 12px semibold"
+      },
+      "xs": {
+        "value": "{font.body.semibold.md}",
+        "type": "typography",
+        "$description": "Typography for xs size - 13px semibold"
+      },
+      "sm": {
+        "value": "{font.body.semibold.base}",
+        "type": "typography",
+        "$description": "Typography for sm size - 14px semibold"
+      },
+      "md": {
+        "value": "{font.body.semibold.base}",
+        "type": "typography",
+        "$description": "Typography for md size - 14px semibold"
+      },
+      "lg": {
+        "value": "{font.body.semibold.2xl}",
+        "type": "typography",
+        "$description": "Typography for lg size - 16px semibold"
       }
-    },
-    "icon": {
-      "comment": "Icon size tokens for different content switcher item sizes",
-      "size": {
-        "comment": "Icon dimensions for each size variant",
-        "3xs": {
-          "value": "{size.icon.3xs}",
-          "type": "dimension",
-          "comment": "Icon size for 3xs - 14px"
-        },
-        "2xs": {
-          "value": "{size.icon.xs}",
-          "type": "dimension",
-          "comment": "Icon size for 2xs - 16px"
-        },
-        "xs": {
-          "value": "{size.icon.xs}",
-          "type": "dimension",
-          "comment": "Icon size for xs - 16px"
-        },
-        "sm": {
-          "value": "{size.icon.sm}",
-          "type": "dimension",
-          "comment": "Icon size for sm - 20px"
-        },
-        "md": {
-          "value": "{size.icon.sm}",
-          "type": "dimension",
-          "comment": "Icon size for md - 20px"
-        },
-        "lg": {
-          "value": "{size.icon.sm}",
-          "type": "dimension",
-          "comment": "Icon size for lg - 20px"
-        }
+    }
+  },
+  "icon": {
+    "size": {
+      "3xs": {
+        "value": "{size.icon.2xs}",
+        "type": "dimension",
+        "$description": "Icon size for 3xs - 14px"
+      },
+      "2xs": {
+        "value": "{size.icon.xs}",
+        "type": "dimension",
+        "$description": "Icon size for 2xs - 16px"
+      },
+      "xs": {
+        "value": "{size.icon.xs}",
+        "type": "dimension",
+        "$description": "Icon size for xs - 16px"
+      },
+      "sm": {
+        "value": "{size.icon.md}",
+        "type": "dimension",
+        "$description": "Icon size for sm - 20px"
+      },
+      "md": {
+        "value": "{size.icon.md}",
+        "type": "dimension",
+        "$description": "Icon size for md - 20px"
+      },
+      "lg": {
+        "value": "{size.icon.md}",
+        "type": "dimension",
+        "$description": "Icon size for lg - 20px"
       }
     }
   }
 }
-
