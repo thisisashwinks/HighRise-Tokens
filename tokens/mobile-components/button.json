@@ -1,0 +1,2975 @@
+{
+  "button": {
+    "color": {
+      "primary": {
+        "primary": {
+          "background": {
+            "default": {
+              "value": "{color.background.primary.default}",
+              "type": "color",
+              "description": "Mobile primary button default background"
+            },
+            "hover": {
+              "value": "{color.background.primary.intense.1}",
+              "type": "color",
+              "description": "Mobile primary button hover background"
+            },
+            "active": {
+              "value": "{color.background.primary.intense.2}",
+              "type": "color",
+              "description": "Mobile primary button active background"
+            },
+            "focused": {
+              "value": "{color.background.primary.intense.1}",
+              "type": "color",
+              "description": "Mobile primary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile primary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.primary.default}",
+              "type": "color",
+              "description": "Mobile primary button default border"
+            },
+            "hover": {
+              "value": "{color.border.primary.intense.0}",
+              "type": "color",
+              "description": "Mobile primary button hover border"
+            },
+            "active": {
+              "value": "{color.border.primary.default}",
+              "type": "color",
+              "description": "Mobile primary button active border"
+            },
+            "focused": {
+              "value": "{color.border.primary.default}",
+              "type": "color",
+              "description": "Mobile primary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile primary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile primary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile primary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile primary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile primary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile primary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile primary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile primary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile primary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile primary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile primary button disabled icon color"
+            }
+          }
+        },
+        "secondary": {
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile secondary button default background"
+            },
+            "hover": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "description": "Mobile secondary button hover background"
+            },
+            "active": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile secondary button active background"
+            },
+            "focused": {
+              "value": "{color.background.primary.subtle.0}",
+              "type": "color",
+              "description": "Mobile secondary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile secondary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile secondary button default border"
+            },
+            "hover": {
+              "value": "{color.border.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile secondary button hover border"
+            },
+            "active": {
+              "value": "{color.border.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile secondary button active border"
+            },
+            "focused": {
+              "value": "{color.border.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile secondary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile secondary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.primary.body.1}",
+              "type": "color",
+              "description": "Mobile secondary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile secondary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.primary.title.1}",
+              "type": "color",
+              "description": "Mobile secondary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile secondary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.primary.inactive.2}",
+              "type": "color",
+              "description": "Mobile secondary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile secondary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile secondary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile secondary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile secondary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.primary.subtle.0}",
+              "type": "color",
+              "description": "Mobile secondary button disabled icon color"
+            }
+          }
+        },
+        "tertiary": {
+          "background": {
+            "default": {
+              "value": "{color.background.primary.subtle.0}",
+              "type": "color",
+              "description": "Mobile tertiary button default background"
+            },
+            "hover": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile tertiary button hover background"
+            },
+            "active": {
+              "value": "{color.background.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile tertiary button active background"
+            },
+            "focused": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile tertiary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.primary.inactive}",
+              "type": "color",
+              "description": "Mobile tertiary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.primary.subtle.0}",
+              "type": "color",
+              "description": "Mobile tertiary button default border"
+            },
+            "hover": {
+              "value": "{color.border.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile tertiary button hover border"
+            },
+            "active": {
+              "value": "{color.border.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile tertiary button active border"
+            },
+            "focused": {
+              "value": "{color.border.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile tertiary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.primary.inactive}",
+              "type": "color",
+              "description": "Mobile tertiary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.primary.body.1}",
+              "type": "color",
+              "description": "Mobile tertiary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile tertiary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.primary.title.1}",
+              "type": "color",
+              "description": "Mobile tertiary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile tertiary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.primary.inactive.1}",
+              "type": "color",
+              "description": "Mobile tertiary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile tertiary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile tertiary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile tertiary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile tertiary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.primary.subtle.0}",
+              "type": "color",
+              "description": "Mobile tertiary button disabled icon color"
+            }
+          }
+        },
+        "ghost": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile ghost button default background"
+            },
+            "hover": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile ghost button hover background"
+            },
+            "active": {
+              "value": "{color.background.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile ghost button active background"
+            },
+            "focused": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile ghost button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile ghost button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile ghost button default border"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile ghost button hover border"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile ghost button active border"
+            },
+            "focused": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile ghost button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile ghost button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.primary.body.1}",
+              "type": "color",
+              "description": "Mobile ghost button default text color"
+            },
+            "hover": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile ghost button hover text color"
+            },
+            "active": {
+              "value": "{color.text.primary.title.1}",
+              "type": "color",
+              "description": "Mobile ghost button active text color"
+            },
+            "focused": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile ghost button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.primary.inactive.2}",
+              "type": "color",
+              "description": "Mobile ghost button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile ghost button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile ghost button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile ghost button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile ghost button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.primary.subtle.0}",
+              "type": "color",
+              "description": "Mobile ghost button disabled icon color"
+            }
+          }
+        },
+        "link": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile link button default background"
+            },
+            "hover": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile link button hover background"
+            },
+            "active": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile link button active background"
+            },
+            "focused": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile link button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile link button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile link button default border"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile link button hover border"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile link button active border"
+            },
+            "focused": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile link button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile link button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.primary.body.1}",
+              "type": "color",
+              "description": "Mobile link button default text color"
+            },
+            "hover": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile link button hover text color"
+            },
+            "active": {
+              "value": "{color.text.primary.title.1}",
+              "type": "color",
+              "description": "Mobile link button active text color"
+            },
+            "focused": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile link button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.primary.inactive.2}",
+              "type": "color",
+              "description": "Mobile link button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile link button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile link button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile link button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile link button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.primary.subtle.0}",
+              "type": "color",
+              "description": "Mobile link button disabled icon color"
+            }
+          }
+        }
+      },
+      "error": {
+        "primary": {
+          "background": {
+            "default": {
+              "value": "{color.background.error.default}",
+              "type": "color",
+              "description": "Mobile error primary button default background"
+            },
+            "hover": {
+              "value": "{color.background.error.intense.0}",
+              "type": "color",
+              "description": "Mobile error primary button hover background"
+            },
+            "active": {
+              "value": "{color.background.error.intense.1}",
+              "type": "color",
+              "description": "Mobile error primary button active background"
+            },
+            "focused": {
+              "value": "{color.background.error.intense.0}",
+              "type": "color",
+              "description": "Mobile error primary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.error.subtle.2}",
+              "type": "color",
+              "description": "Mobile error primary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.error.default}",
+              "type": "color",
+              "description": "Mobile error primary button default border"
+            },
+            "hover": {
+              "value": "{color.border.error.intense.0}",
+              "type": "color",
+              "description": "Mobile error primary button hover border"
+            },
+            "active": {
+              "value": "{color.border.error.intense.2}",
+              "type": "color",
+              "description": "Mobile error primary button active border"
+            },
+            "focused": {
+              "value": "{color.border.error.intense.0}",
+              "type": "color",
+              "description": "Mobile error primary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.error.subtle.2}",
+              "type": "color",
+              "description": "Mobile error primary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile error primary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile error primary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile error primary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile error primary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile error primary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile error primary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile error primary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile error primary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile error primary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile error primary button disabled icon color"
+            }
+          }
+        },
+        "secondary": {
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile error secondary button default background"
+            },
+            "hover": {
+              "value": "{color.background.error.subtle.0}",
+              "type": "color",
+              "description": "Mobile error secondary button hover background"
+            },
+            "active": {
+              "value": "{color.background.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error secondary button active background"
+            },
+            "focused": {
+              "value": "{color.background.error.subtle.0}",
+              "type": "color",
+              "description": "Mobile error secondary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile error secondary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.error.moderate.0}",
+              "type": "color",
+              "description": "Mobile error secondary button default border"
+            },
+            "hover": {
+              "value": "{color.border.error.moderate.0}",
+              "type": "color",
+              "description": "Mobile error secondary button hover border"
+            },
+            "active": {
+              "value": "{color.border.error.moderate.0}",
+              "type": "color",
+              "description": "Mobile error secondary button active border"
+            },
+            "focused": {
+              "value": "{color.border.error.moderate.0}",
+              "type": "color",
+              "description": "Mobile error secondary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.error.subtle.2}",
+              "type": "color",
+              "description": "Mobile error secondary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.error.body.1}",
+              "type": "color",
+              "description": "Mobile error secondary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.error.title.2}",
+              "type": "color",
+              "description": "Mobile error secondary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.error.title.1}",
+              "type": "color",
+              "description": "Mobile error secondary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.error.title.2}",
+              "type": "color",
+              "description": "Mobile error secondary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.error.inactive.2}",
+              "type": "color",
+              "description": "Mobile error secondary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error secondary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error secondary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error secondary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error secondary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.error.inactive}",
+              "type": "color",
+              "description": "Mobile error secondary button disabled icon color"
+            }
+          }
+        },
+        "tertiary": {
+          "background": {
+            "default": {
+              "value": "{color.background.error.subtle.0}",
+              "type": "color",
+              "description": "Mobile error tertiary button default background"
+            },
+            "hover": {
+              "value": "{color.background.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error tertiary button hover background"
+            },
+            "active": {
+              "value": "{color.background.error.subtle.2}",
+              "type": "color",
+              "description": "Mobile error tertiary button active background"
+            },
+            "focused": {
+              "value": "{color.background.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error tertiary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.error.inactive}",
+              "type": "color",
+              "description": "Mobile error tertiary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.error.subtle.0}",
+              "type": "color",
+              "description": "Mobile error tertiary button default border"
+            },
+            "hover": {
+              "value": "{color.border.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error tertiary button hover border"
+            },
+            "active": {
+              "value": "{color.border.error.subtle.0}",
+              "type": "color",
+              "description": "Mobile error tertiary button active border"
+            },
+            "focused": {
+              "value": "{color.border.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error tertiary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.error.inactive}",
+              "type": "color",
+              "description": "Mobile error tertiary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.error.body.1}",
+              "type": "color",
+              "description": "Mobile error tertiary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.error.title.2}",
+              "type": "color",
+              "description": "Mobile error tertiary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.error.title.1}",
+              "type": "color",
+              "description": "Mobile error tertiary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.error.title.1}",
+              "type": "color",
+              "description": "Mobile error tertiary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.error.inactive.2}",
+              "type": "color",
+              "description": "Mobile error tertiary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error tertiary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error tertiary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error tertiary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error tertiary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.error.inactive}",
+              "type": "color",
+              "description": "Mobile error tertiary button disabled icon color"
+            }
+          }
+        },
+        "ghost": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile error ghost button default background"
+            },
+            "hover": {
+              "value": "{color.background.error.subtle.0}",
+              "type": "color",
+              "description": "Mobile error ghost button hover background"
+            },
+            "active": {
+              "value": "{color.background.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error ghost button active background"
+            },
+            "focused": {
+              "value": "{color.background.error.subtle.0}",
+              "type": "color",
+              "description": "Mobile error ghost button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile error ghost button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error ghost button default border"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error ghost button hover border"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error ghost button active border"
+            },
+            "focused": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error ghost button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error ghost button disabled background"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.error.body.1}",
+              "type": "color",
+              "description": "Mobile error ghost button default text color"
+            },
+            "hover": {
+              "value": "{color.text.error.title.2}",
+              "type": "color",
+              "description": "Mobile error ghost button hover text color"
+            },
+            "active": {
+              "value": "{color.text.error.title.1}",
+              "type": "color",
+              "description": "Mobile error ghost button active text color"
+            },
+            "focused": {
+              "value": "{color.text.error.title.2}",
+              "type": "color",
+              "description": "Mobile error ghost button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.error.inactive.2}",
+              "type": "color",
+              "description": "Mobile error ghost button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error ghost button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error ghost button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error ghost button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error ghost button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.error.inactive}",
+              "type": "color",
+              "description": "Mobile error ghost button disabled icon color"
+            }
+          }
+        },
+        "link": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile error link button default background"
+            },
+            "hover": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile error link button hover background"
+            },
+            "active": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile error link button active background"
+            },
+            "focused": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile error link button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile error link button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error link button default border"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error link button hover border"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error link button active border"
+            },
+            "focused": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error link button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error link button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.error.body.1}",
+              "type": "color",
+              "description": "Mobile error link button default text color"
+            },
+            "hover": {
+              "value": "{color.text.error.title.2}",
+              "type": "color",
+              "description": "Mobile error link button hover text color"
+            },
+            "active": {
+              "value": "{color.text.error.title.1}",
+              "type": "color",
+              "description": "Mobile error link button active text color"
+            },
+            "focused": {
+              "value": "{color.text.error.title.2}",
+              "type": "color",
+              "description": "Mobile error link button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.error.inactive.2}",
+              "type": "color",
+              "description": "Mobile error link button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error link button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error link button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error link button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile error link button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.error.inactive}",
+              "type": "color",
+              "description": "Mobile error link button disabled icon color"
+            }
+          }
+        }
+      },
+      "neutral": {
+        "primary": {
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.moderate.3}",
+              "type": "color",
+              "description": "Mobile neutral primary button default background"
+            },
+            "hover": {
+              "value": "{color.background.neutral.intense.0}",
+              "type": "color",
+              "description": "Mobile neutral primary button hover background"
+            },
+            "active": {
+              "value": "{color.background.neutral.intense.2}",
+              "type": "color",
+              "description": "Mobile neutral primary button active background"
+            },
+            "focused": {
+              "value": "{color.background.neutral.intense.0}",
+              "type": "color",
+              "description": "Mobile neutral primary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral primary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Mobile neutral primary button default border"
+            },
+            "hover": {
+              "value": "{color.border.neutral.intense.0}",
+              "type": "color",
+              "description": "Mobile neutral primary button hover border"
+            },
+            "active": {
+              "value": "{color.border.neutral.intense.1}",
+              "type": "color",
+              "description": "Mobile neutral primary button active border"
+            },
+            "focused": {
+              "value": "{color.border.neutral.intense.0}",
+              "type": "color",
+              "description": "Mobile neutral primary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral primary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral primary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral primary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral primary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral primary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral primary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral primary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral primary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral primary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral primary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral primary button disabled icon color"
+            }
+          }
+        },
+        "secondary": {
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral secondary button default background"
+            },
+            "hover": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "description": "Mobile neutral secondary button hover background"
+            },
+            "active": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral secondary button active background"
+            },
+            "focused": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "description": "Mobile neutral secondary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral secondary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Mobile neutral secondary button default border"
+            },
+            "hover": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Mobile neutral secondary button hover border"
+            },
+            "active": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Mobile neutral secondary button active border"
+            },
+            "focused": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Mobile neutral secondary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral secondary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "description": "Mobile neutral secondary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral secondary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "description": "Mobile neutral secondary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral secondary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.inactive}",
+              "type": "color",
+              "description": "Mobile neutral secondary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral secondary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral secondary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral secondary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral secondary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral secondary button disabled icon color"
+            }
+          }
+        },
+        "tertiary": {
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button default background"
+            },
+            "hover": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button hover background"
+            },
+            "active": {
+              "value": "{color.background.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button active background"
+            },
+            "focused": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.inactive}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.neutral.subtle.0}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button default border"
+            },
+            "hover": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button hover border"
+            },
+            "active": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button active border"
+            },
+            "focused": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.neutral.inactive}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.inactive}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral tertiary button disabled icon color"
+            }
+          }
+        },
+        "ghost": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile neutral ghost button default background"
+            },
+            "hover": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "description": "Mobile neutral ghost button hover background"
+            },
+            "active": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral ghost button active background"
+            },
+            "focused": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "description": "Mobile neutral ghost button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile neutral ghost button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral ghost button default border"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral ghost button hover border"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral ghost button active border"
+            },
+            "focused": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral ghost button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral ghost button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "description": "Mobile neutral ghost button default text color"
+            },
+            "hover": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral ghost button hover text color"
+            },
+            "active": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "description": "Mobile neutral ghost button active text color"
+            },
+            "focused": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral ghost button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.inactive}",
+              "type": "color",
+              "description": "Mobile neutral ghost button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral ghost button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral ghost button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral ghost button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral ghost button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral ghost button disabled icon color"
+            }
+          }
+        },
+        "link": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile neutral link button default background"
+            },
+            "hover": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile neutral link button hover background"
+            },
+            "active": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile neutral link button active background"
+            },
+            "focused": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile neutral link button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile neutral link button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral link button default border"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral link button hover border"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral link button active border"
+            },
+            "focused": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral link button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral link button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "description": "Mobile neutral link button default text color"
+            },
+            "hover": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral link button hover text color"
+            },
+            "active": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "description": "Mobile neutral link button active text color"
+            },
+            "focused": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral link button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.inactive}",
+              "type": "color",
+              "description": "Mobile neutral link button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral link button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral link button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral link button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral link button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral link button disabled icon color"
+            }
+          }
+        }
+      },
+      "warning": {
+        "primary": {
+          "background": {
+            "default": {
+              "value": "{color.background.warning.default}",
+              "type": "color",
+              "description": "Mobile warning primary button default background"
+            },
+            "hover": {
+              "value": "{color.background.warning.intense.0}",
+              "type": "color",
+              "description": "Mobile warning primary button hover background"
+            },
+            "active": {
+              "value": "{color.background.warning.intense.1}",
+              "type": "color",
+              "description": "Mobile warning primary button active background"
+            },
+            "focused": {
+              "value": "{color.background.warning.intense.0}",
+              "type": "color",
+              "description": "Mobile warning primary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.warning.subtle.2}",
+              "type": "color",
+              "description": "Mobile warning primary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.warning.default}",
+              "type": "color",
+              "description": "Mobile warning primary button default border"
+            },
+            "hover": {
+              "value": "{color.border.warning.intense.0}",
+              "type": "color",
+              "description": "Mobile warning primary button hover border"
+            },
+            "active": {
+              "value": "{color.border.warning.intense.2}",
+              "type": "color",
+              "description": "Mobile warning primary button active border"
+            },
+            "focused": {
+              "value": "{color.border.warning.intense.0}",
+              "type": "color",
+              "description": "Mobile warning primary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.warning.subtle.2}",
+              "type": "color",
+              "description": "Mobile warning primary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning primary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning primary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning primary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning primary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning primary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning primary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning primary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning primary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning primary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning primary button disabled icon color"
+            }
+          }
+        },
+        "secondary": {
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning secondary button default background"
+            },
+            "hover": {
+              "value": "{color.background.warning.subtle.0}",
+              "type": "color",
+              "description": "Mobile warning secondary button hover background"
+            },
+            "active": {
+              "value": "{color.background.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning secondary button active background"
+            },
+            "focused": {
+              "value": "{color.background.warning.subtle.0}",
+              "type": "color",
+              "description": "Mobile warning secondary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning secondary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.warning.moderate.0}",
+              "type": "color",
+              "description": "Mobile warning secondary button default border"
+            },
+            "hover": {
+              "value": "{color.border.warning.moderate.0}",
+              "type": "color",
+              "description": "Mobile warning secondary button hover border"
+            },
+            "active": {
+              "value": "{color.border.warning.moderate.0}",
+              "type": "color",
+              "description": "Mobile warning secondary button active border"
+            },
+            "focused": {
+              "value": "{color.border.warning.moderate.0}",
+              "type": "color",
+              "description": "Mobile warning secondary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.warning.subtle.2}",
+              "type": "color",
+              "description": "Mobile warning secondary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.warning.body.1}",
+              "type": "color",
+              "description": "Mobile warning secondary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning secondary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.warning.title.1}",
+              "type": "color",
+              "description": "Mobile warning secondary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning secondary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.warning.inactive.2}",
+              "type": "color",
+              "description": "Mobile warning secondary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning secondary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning secondary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning secondary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning secondary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.warning.inactive}",
+              "type": "color",
+              "description": "Mobile warning secondary button disabled icon color"
+            }
+          }
+        },
+        "tertiary": {
+          "background": {
+            "default": {
+              "value": "{color.background.warning.subtle.0}",
+              "type": "color",
+              "description": "Mobile warning tertiary button default background"
+            },
+            "hover": {
+              "value": "{color.background.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning tertiary button hover background"
+            },
+            "active": {
+              "value": "{color.background.warning.subtle.2}",
+              "type": "color",
+              "description": "Mobile warning tertiary button active background"
+            },
+            "focused": {
+              "value": "{color.background.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning tertiary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.warning.inactive}",
+              "type": "color",
+              "description": "Mobile warning tertiary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.warning.subtle.0}",
+              "type": "color",
+              "description": "Mobile warning tertiary button default border"
+            },
+            "hover": {
+              "value": "{color.border.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning tertiary button hover border"
+            },
+            "active": {
+              "value": "{color.border.warning.subtle.0}",
+              "type": "color",
+              "description": "Mobile warning tertiary button active border"
+            },
+            "focused": {
+              "value": "{color.border.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning tertiary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.warning.inactive}",
+              "type": "color",
+              "description": "Mobile warning tertiary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.warning.body.1}",
+              "type": "color",
+              "description": "Mobile warning tertiary button default text color"
+            },
+            "hover": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning tertiary button hover text color"
+            },
+            "active": {
+              "value": "{color.text.warning.title.1}",
+              "type": "color",
+              "description": "Mobile warning tertiary button active text color"
+            },
+            "focused": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning tertiary button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.warning.inactive.1}",
+              "type": "color",
+              "description": "Mobile warning tertiary button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning tertiary button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning tertiary button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning tertiary button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning tertiary button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.warning.inactive}",
+              "type": "color",
+              "description": "Mobile warning tertiary button disabled icon color"
+            }
+          }
+        },
+        "ghost": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile warning ghost button default background"
+            },
+            "hover": {
+              "value": "{color.background.warning.subtle.0}",
+              "type": "color",
+              "description": "Mobile warning ghost button hover background"
+            },
+            "active": {
+              "value": "{color.background.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning ghost button active background"
+            },
+            "focused": {
+              "value": "{color.background.warning.subtle.0}",
+              "type": "color",
+              "description": "Mobile warning ghost button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile warning ghost button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning ghost button default border"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning ghost button hover border"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning ghost button active border"
+            },
+            "focused": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning ghost button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning ghost button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.warning.body.1}",
+              "type": "color",
+              "description": "Mobile warning ghost button default text color"
+            },
+            "hover": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning ghost button hover text color"
+            },
+            "active": {
+              "value": "{color.text.warning.title.1}",
+              "type": "color",
+              "description": "Mobile warning ghost button active text color"
+            },
+            "focused": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning ghost button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.warning.inactive.2}",
+              "type": "color",
+              "description": "Mobile warning ghost button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning ghost button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning ghost button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning ghost button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning ghost button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.warning.inactive}",
+              "type": "color",
+              "description": "Mobile warning ghost button disabled icon color"
+            }
+          }
+        },
+        "link": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile warning link button default background"
+            },
+            "hover": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile warning link button hover background"
+            },
+            "active": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile warning link button active background"
+            },
+            "focused": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile warning link button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile warning link button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning link button default border"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning link button hover border"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning link button active border"
+            },
+            "focused": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning link button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning link button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.warning.body.1}",
+              "type": "color",
+              "description": "Mobile warning link button default text color"
+            },
+            "hover": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning link button hover text color"
+            },
+            "active": {
+              "value": "{color.text.warning.title.1}",
+              "type": "color",
+              "description": "Mobile warning link button active text color"
+            },
+            "focused": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning link button focused text color"
+            },
+            "disabled": {
+              "value": "{color.text.warning.inactive.2}",
+              "type": "color",
+              "description": "Mobile warning link button disabled text color"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning link button default icon color"
+            },
+            "hover": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning link button hover icon color"
+            },
+            "active": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning link button active icon color"
+            },
+            "focused": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning link button focused icon color"
+            },
+            "disabled": {
+              "value": "{color.icon.warning.inactive}",
+              "type": "color",
+              "description": "Mobile warning link button disabled icon color"
+            }
+          }
+        }
+      },
+      "success": {
+        "primary": {
+          "background": {
+            "default": {
+              "value": "{color.background.success.default}",
+              "type": "color",
+              "description": "Mobile success primary button default background"
+            },
+            "hover": {
+              "value": "{color.background.success.intense.0}",
+              "type": "color",
+              "description": "Mobile success primary button hover background"
+            },
+            "active": {
+              "value": "{color.background.success.intense.1}",
+              "type": "color",
+              "description": "Mobile success primary button active background"
+            },
+            "focused": {
+              "value": "{color.background.success.intense.0}",
+              "type": "color",
+              "description": "Mobile success primary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.success.subtle.2}",
+              "type": "color",
+              "description": "Mobile success primary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.success.default}",
+              "type": "color",
+              "description": "Mobile success primary button default border"
+            },
+            "hover": {
+              "value": "{color.border.success.intense.0}",
+              "type": "color",
+              "description": "Mobile success primary button hover border"
+            },
+            "active": {
+              "value": "{color.border.success.intense.2}",
+              "type": "color",
+              "description": "Mobile success primary button active border"
+            },
+            "focused": {
+              "value": "{color.border.success.intense.0}",
+              "type": "color",
+              "description": "Mobile success primary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.success.subtle.2}",
+              "type": "color",
+              "description": "Mobile success primary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile success primary button default text"
+            },
+            "hover": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile success primary button hover text"
+            },
+            "active": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile success primary button active text"
+            },
+            "focused": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile success primary button focused text"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile success primary button disabled text"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile success primary button default icon"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile success primary button hover icon"
+            },
+            "active": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile success primary button active icon"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile success primary button focused icon"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile success primary button disabled icon"
+            }
+          }
+        },
+        "secondary": {
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile success secondary button default background"
+            },
+            "hover": {
+              "value": "{color.background.success.subtle.0}",
+              "type": "color",
+              "description": "Mobile success secondary button hover background"
+            },
+            "active": {
+              "value": "{color.background.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success secondary button active background"
+            },
+            "focused": {
+              "value": "{color.background.success.subtle.0}",
+              "type": "color",
+              "description": "Mobile success secondary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile success secondary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.success.moderate.0}",
+              "type": "color",
+              "description": "Mobile success secondary button default border"
+            },
+            "hover": {
+              "value": "{color.border.success.moderate.0}",
+              "type": "color",
+              "description": "Mobile success secondary button hover border"
+            },
+            "active": {
+              "value": "{color.border.success.moderate.0}",
+              "type": "color",
+              "description": "Mobile success secondary button active border"
+            },
+            "focused": {
+              "value": "{color.border.success.moderate.0}",
+              "type": "color",
+              "description": "Mobile success secondary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.success.subtle.2}",
+              "type": "color",
+              "description": "Mobile success secondary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.success.body.1}",
+              "type": "color",
+              "description": "Mobile success secondary button default text"
+            },
+            "hover": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success secondary button hover text"
+            },
+            "active": {
+              "value": "{color.text.success.title.1}",
+              "type": "color",
+              "description": "Mobile success secondary button active text"
+            },
+            "focused": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success secondary button focused text"
+            },
+            "disabled": {
+              "value": "{color.text.success.inactive.2}",
+              "type": "color",
+              "description": "Mobile success secondary button disabled text"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success secondary button default icon"
+            },
+            "hover": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success secondary button hover icon"
+            },
+            "active": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success secondary button active icon"
+            },
+            "focused": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success secondary button focused icon"
+            },
+            "disabled": {
+              "value": "{color.icon.success.inactive}",
+              "type": "color",
+              "description": "Mobile success secondary button disabled icon"
+            }
+          }
+        },
+        "tertiary": {
+          "background": {
+            "default": {
+              "value": "{color.background.success.subtle.0}",
+              "type": "color",
+              "description": "Mobile success tertiary button default background"
+            },
+            "hover": {
+              "value": "{color.background.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success tertiary button hover background"
+            },
+            "active": {
+              "value": "{color.background.success.subtle.2}",
+              "type": "color",
+              "description": "Mobile success tertiary button active background"
+            },
+            "focused": {
+              "value": "{color.background.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success tertiary button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.success.inactive}",
+              "type": "color",
+              "description": "Mobile success tertiary button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.success.subtle.0}",
+              "type": "color",
+              "description": "Mobile success tertiary button default border"
+            },
+            "hover": {
+              "value": "{color.border.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success tertiary button hover border"
+            },
+            "active": {
+              "value": "{color.border.success.subtle.0}",
+              "type": "color",
+              "description": "Mobile success tertiary button active border"
+            },
+            "focused": {
+              "value": "{color.border.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success tertiary button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.success.inactive}",
+              "type": "color",
+              "description": "Mobile success tertiary button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.success.body.1}",
+              "type": "color",
+              "description": "Mobile success tertiary button default text"
+            },
+            "hover": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success tertiary button hover text"
+            },
+            "active": {
+              "value": "{color.text.success.title.1}",
+              "type": "color",
+              "description": "Mobile success tertiary button active text"
+            },
+            "focused": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success tertiary button focused text"
+            },
+            "disabled": {
+              "value": "{color.text.success.inactive.2}",
+              "type": "color",
+              "description": "Mobile success tertiary button disabled text"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success tertiary button default icon"
+            },
+            "hover": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success tertiary button hover icon"
+            },
+            "active": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success tertiary button active icon"
+            },
+            "focused": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success tertiary button focused icon"
+            },
+            "disabled": {
+              "value": "{color.icon.success.inactive}",
+              "type": "color",
+              "description": "Mobile success tertiary button disabled icon"
+            }
+          }
+        },
+        "ghost": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile success ghost button default background"
+            },
+            "hover": {
+              "value": "{color.background.success.subtle.0}",
+              "type": "color",
+              "description": "Mobile success ghost button hover background"
+            },
+            "active": {
+              "value": "{color.background.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success ghost button active background"
+            },
+            "focused": {
+              "value": "{color.background.success.subtle.0}",
+              "type": "color",
+              "description": "Mobile success ghost button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile success ghost button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success ghost button default border"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success ghost button hover border"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success ghost button active border"
+            },
+            "focused": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success ghost button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success ghost button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.success.body.1}",
+              "type": "color",
+              "description": "Mobile success ghost button default text"
+            },
+            "hover": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success ghost button hover text"
+            },
+            "active": {
+              "value": "{color.text.success.title.1}",
+              "type": "color",
+              "description": "Mobile success ghost button active text"
+            },
+            "focused": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success ghost button focused text"
+            },
+            "disabled": {
+              "value": "{color.text.success.inactive.2}",
+              "type": "color",
+              "description": "Mobile success ghost button disabled text"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success ghost button default icon"
+            },
+            "hover": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success ghost button hover icon"
+            },
+            "active": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success ghost button active icon"
+            },
+            "focused": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success ghost button focused icon"
+            },
+            "disabled": {
+              "value": "{color.icon.success.inactive}",
+              "type": "color",
+              "description": "Mobile success ghost button disabled icon"
+            }
+          }
+        },
+        "link": {
+          "background": {
+            "default": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile success link button default background"
+            },
+            "hover": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile success link button hover background"
+            },
+            "active": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile success link button active background"
+            },
+            "focused": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile success link button focused background"
+            },
+            "disabled": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile success link button disabled background"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success link button default border"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success link button hover border"
+            },
+            "active": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success link button active border"
+            },
+            "focused": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success link button focused border"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success link button disabled border"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.success.body.1}",
+              "type": "color",
+              "description": "Mobile success link button default text"
+            },
+            "hover": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success link button hover text"
+            },
+            "active": {
+              "value": "{color.text.success.title.1}",
+              "type": "color",
+              "description": "Mobile success link button active text"
+            },
+            "focused": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success link button focused text"
+            },
+            "disabled": {
+              "value": "{color.text.success.inactive.2}",
+              "type": "color",
+              "description": "Mobile success link button disabled text"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success link button default icon"
+            },
+            "hover": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success link button hover icon"
+            },
+            "active": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success link button active icon"
+            },
+            "focused": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success link button focused icon"
+            },
+            "disabled": {
+              "value": "{color.icon.success.inactive}",
+              "type": "color",
+              "description": "Mobile success link button disabled icon"
+            }
+          }
+        }
+      }
+    },
+    "typography": {
+      "sm": {
+        "value": "{font.body.semibold.2xl}",
+        "type": "typography",
+        "description": "16px semibold font for sm mobile buttons"
+      },
+      "md": {
+        "value": "{font.body.semibold.2xl}",
+        "type": "typography",
+        "description": "16px semibold font for md mobile buttons"
+      },
+      "lg": {
+        "value": "{font.body.semibold.3xl}",
+        "type": "typography",
+        "description": "18px semibold font for lg mobile buttons"
+      }
+    },
+    "border": {
+      "radius": {
+        "sm": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "8px border radius for sm mobile buttons"
+        },
+        "md": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "8px border radius for md mobile buttons"
+        },
+        "lg": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "8px border radius for lg mobile buttons"
+        }
+      },
+      "width": {
+        "default": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "1px border width for mobile buttons"
+        }
+      }
+    },
+    "effects": {
+      "shadow": {
+        "default": {
+          "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+          "type": "boxShadow",
+          "description": "Default mobile button shadow"
+        }
+      },
+      "focus": {
+        "ring": {
+          "value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+          "type": "boxShadow",
+          "description": "Focus ring for mobile buttons"
+        }
+      }
+    },
+    "regular": {
+      "container": {
+        "height": {
+          "sm": {
+            "value": "{size.height.xs}",
+            "type": "dimension",
+            "description": "32px button height for sm mobile buttons"
+          },
+          "md": {
+            "value": "{size.height.lg}",
+            "type": "dimension",
+            "description": "48px button height for md mobile buttons"
+          },
+          "lg": {
+            "value": "{size.height.2xl}",
+            "type": "dimension",
+            "description": "56px button height for lg mobile buttons"
+          }
+        },
+        "padding": {
+          "x": {
+            "sm": {
+              "value": "{padding.x.lg}",
+              "type": "dimension",
+              "description": "18px horizontal padding for sm mobile buttons"
+            },
+            "md": {
+              "value": "{padding.x.md}",
+              "type": "dimension",
+              "description": "16px horizontal padding for md mobile buttons"
+            },
+            "lg": {
+              "value": "{padding.x.xl}",
+              "type": "dimension",
+              "description": "20px horizontal padding for lg mobile buttons"
+            }
+          },
+          "y": {
+            "sm": {
+              "value": "{padding.y.md}",
+              "type": "dimension",
+              "description": "10px vertical padding for sm mobile buttons"
+            },
+            "md": {
+              "value": "{padding.y.3xl}",
+              "type": "dimension",
+              "description": "14px vertical padding for md mobile buttons"
+            },
+            "lg": {
+              "value": "{padding.y.4xl}",
+              "type": "dimension",
+              "description": "16px vertical padding for lg mobile buttons"
+            }
+          }
+        }
+      },
+      "gap": {
+        "sm": {
+          "value": "{gap.2}",
+          "type": "dimension",
+          "description": "8px gap between text and icon for sm mobile buttons"
+        },
+        "md": {
+          "value": "{gap.2}",
+          "type": "dimension",
+          "description": "8px gap between text and icon for md mobile buttons"
+        },
+        "lg": {
+          "value": "{gap.2}",
+          "type": "dimension",
+          "description": "8px gap between text and icon for lg mobile buttons"
+        }
+      },
+      "icon": {
+        "size": {
+          "sm": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "20px icon size for sm mobile buttons"
+          },
+          "md": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "20px icon size for md mobile buttons"
+          },
+          "lg": {
+            "value": "{size.icon.lg}",
+            "type": "dimension",
+            "description": "24px icon size for lg mobile buttons"
+          }
+        }
+      }
+    },
+    "icon": {
+      "container": {
+        "size": {
+          "sm": {
+            "value": "{size.xs}",
+            "type": "dimension",
+            "description": "32px square icon button for sm mobile"
+          },
+          "md": {
+            "value": "{size.lg}",
+            "type": "dimension",
+            "description": "48px square icon button for md mobile"
+          },
+          "lg": {
+            "value": "{size.2xl}",
+            "type": "dimension",
+            "description": "56px square icon button for lg mobile"
+          }
+        },
+        "padding": {
+          "sm": {
+            "value": "{padding.1[5]}",
+            "type": "dimension",
+            "description": "6px padding for sm mobile icon button"
+          },
+          "md": {
+            "value": "{padding.3[5]}",
+            "type": "dimension",
+            "description": "14px padding for md mobile icon button"
+          },
+          "lg": {
+            "value": "{padding.4}",
+            "type": "dimension",
+            "description": "16px padding for lg mobile icon button"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "sm": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "20px icon for sm mobile icon button"
+          },
+          "md": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "20px icon for md mobile icon button"
+          },
+          "lg": {
+            "value": "{size.icon.lg}",
+            "type": "dimension",
+            "description": "24px icon for lg mobile icon button"
+          }
+        }
+      }
+    }
+  }
+}

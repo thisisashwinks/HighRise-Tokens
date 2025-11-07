@@ -1,0 +1,745 @@
+{
+  "$comment": "Time Picker Component Tokens",
+  "$description": "Component tokens for Time Picker with multiple size variants (3xs-lg) and optional AM/PM and timezone selectors. Supports default and disabled states. Figma Reference: Node ID 27343-28873",
+  "$component": {
+    "name": "Time Picker",
+    "description": "A specialized input component for time selection with HH:MM:SS format display, featuring optional AM/PM selector and timezone selector. The component consists of three segments: time input field (with clock icon), AM/PM dropdown (optional), and timezone dropdown (optional).",
+    "structure": "Horizontal layout with three connected segments: Time Input Field (left with rounded-left corners), AM/PM Select (center, optional), Time Zone Select (right with rounded-right corners, optional). All segments share borders and maintain consistent height.",
+    "sizes": {
+      "3xs": "24px height - Minimal size for very compact layouts",
+      "2xs": "28px height - Extra small for dense forms",
+      "xs": "32px height - Small size for compact interfaces",
+      "sm": "36px height - Standard small size for most forms",
+      "md": "40px height - Medium size (commonly used default)",
+      "lg": "44px height - Large size for prominent time selection"
+    },
+    "states": {
+      "default": "Standard enabled state with white background for normal interaction",
+      "disabled": "Inactive state with gray-50 background and reduced text/icon contrast"
+    },
+    "features": {
+      "time-format": "HH:MM:SS display with clock icon on the left",
+      "am-pm-selector": "Optional dropdown for 12-hour format (AM/PM selection)",
+      "timezone-selector": "Optional dropdown for timezone selection",
+      "visual-structure": "Three connected segments with shared borders - left segment has left rounded corners, right segment has right rounded corners"
+    },
+    "usage": {
+      "contexts": "Scheduling interfaces, appointment booking, calendar events, time logging, forms requiring precise time input with timezone awareness",
+      "best-practices": "Use AM/PM selector for 12-hour format contexts, include timezone selector for international scheduling, maintain consistent sizing across related form inputs"
+    }
+  },
+  "time-picker": {
+    "time-input-field": {
+      "$comment": "Time input field segment - displays HH:MM:SS with clock icon (left segment of time picker)",
+      "height": {
+        "$comment": "Time input field heights matching input component standards",
+        "3xs": {
+          "value": "{size.height.3xs}",
+          "type": "dimension",
+          "description": "Time input field height for 3xs size (24px)"
+        },
+        "2xs": {
+          "value": "{size.height.2xs}",
+          "type": "dimension",
+          "description": "Time input field height for 2xs size (28px)"
+        },
+        "xs": {
+          "value": "{size.height.xs}",
+          "type": "dimension",
+          "description": "Time input field height for xs size (32px)"
+        },
+        "sm": {
+          "value": "{size.height.sm}",
+          "type": "dimension",
+          "description": "Time input field height for sm size (36px)"
+        },
+        "md": {
+          "value": "{size.height.md}",
+          "type": "dimension",
+          "description": "Time input field height for md size (40px)"
+        },
+        "lg": {
+          "value": "{size.height.lg}",
+          "type": "dimension",
+          "description": "Time input field height for lg size (44px)"
+        }
+      },
+      "border": {
+        "$comment": "Border styling for time input field - only left segment has full border, others have right border only",
+        "radius": {
+            "value": "{border.radius.none}",
+            "type": "dimension",
+            "description": "Time input field border radius (0px)"
+        }
+      },
+      "padding": {
+        "$comment": "Internal spacing for time input field content",
+
+            "value": "{padding.none",
+            "type": "dimension",
+            "description": "Time input field horizontal padding (0px)"
+
+      },
+      "gap": {
+        "$comment": "Gap between elements inside time input field (clock icon, time digits, colons)",
+        "between-elements": {
+          "value": "{gap.xs}",
+          "type": "dimension",
+          "description": "Gap between clock icon and first time digit (8px)"
+        },
+        "between-digits": {
+          "value": "{gap.3xs}",
+          "type": "dimension",
+          "description": "Gap between time digits and colons (4px)"
+        }
+      },
+      "clock-icon": {
+        "$comment": "Clock icon displayed at the start of time input field",
+        "size": {
+          "3xs": {
+            "value": "{size.icon.3xs}",
+            "type": "dimension",
+            "description": "Clock icon size for 3xs (14px)"
+          },
+          "2xs": {
+            "value": "{size.icon.3xs}",
+            "type": "dimension",
+            "description": "Clock icon size for 2xs (14px)"
+          },
+          "xs": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Clock icon size for xs (16px)"
+          },
+          "sm": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Clock icon size for sm (16px)"
+          },
+          "md": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Clock icon size for md (20px)"
+          },
+          "lg": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Clock icon size for lg (20px)"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.0}",
+            "type": "color",
+            "description": "Clock icon color in default state (gray-500)"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Clock icon color in disabled state (gray-300 / #D0D5DD)"
+          }
+        }
+      },
+      "time-text": {
+        "$comment": "Typography for time display (HH:MM:SS format with colons)",
+        "typography": {
+          "3xs": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "Time text typography for 3xs size (14px / 20px line-height)"
+          },
+          "2xs": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "Time text typography for 2xs size (14px / 20px line-height)"
+          },
+          "xs": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "Time text typography for xs size (14px / 20px line-height)"
+          },
+          "sm": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "Time text typography for sm size (14px / 20px line-height)"
+          },
+          "md": {
+            "value": "{font.body.regular.2xl}",
+            "type": "string",
+            "description": "Time text typography for md size (16px / 24px line-height)"
+          },
+          "lg": {
+            "value": "{font.body.regular.2xl}",
+            "type": "string",
+            "description": "Time text typography for lg size (16px / 24px line-height)"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Time text color in default state (gray-500 / #667085)"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "Time text color in disabled state (gray-400 / #98A2B3)"
+          }
+        }
+      },
+      "color": {
+        "$comment": "Background and border colors for time input field segment",
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Time input field background in default state (white)"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Time input field background in disabled state (gray-50 / #F9FAFB)"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Time input field border in default state (gray-300 / #D0D5DD)"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Time input field border in disabled state (gray-300 / #D0D5DD)"
+          }
+        }
+      }
+    },
+    "am-pm-selector": {
+      "$comment": "AM/PM selector segment - optional dropdown for 12-hour format (middle segment when timezone is present, right segment when timezone is absent)",
+      "height": {
+        "$comment": "AM/PM selector heights match the time input field",
+        "3xs": {
+          "value": "{size.height.3xs}",
+          "type": "dimension",
+          "description": "AM/PM selector height for 3xs size (24px)"
+        },
+        "2xs": {
+          "value": "{size.height.2xs}",
+          "type": "dimension",
+          "description": "AM/PM selector height for 2xs size (28px)"
+        },
+        "xs": {
+          "value": "{size.height.xs}",
+          "type": "dimension",
+          "description": "AM/PM selector height for xs size (32px)"
+        },
+        "sm": {
+          "value": "{size.height.sm}",
+          "type": "dimension",
+          "description": "AM/PM selector height for sm size (36px)"
+        },
+        "md": {
+          "value": "{size.height.md}",
+          "type": "dimension",
+          "description": "AM/PM selector height for md size (40px)"
+        },
+        "lg": {
+          "value": "{size.height.lg}",
+          "type": "dimension",
+          "description": "AM/PM selector height for lg size (44px)"
+        }
+      },
+      "border": {
+        "$comment": "Border styling for AM/PM selector - has right, top, and bottom borders (shares left border with time input field)",
+        "width": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "AM/PM selector border width (1px) - applied to right, top, and bottom only"
+        },
+        "style": {
+          "value": "1px 1px 1px 0px",
+          "type": "string",
+          "description": "Border style: right, top, bottom borders only (no left border)"
+        }
+      },
+      "padding": {
+        "$comment": "Internal spacing for AM/PM selector content",
+        "x": {
+          "3xs": {
+            "value": "{padding.x.3xs}",
+            "type": "dimension",
+            "description": "AM/PM selector horizontal padding for 3xs size (8px)"
+          },
+          "2xs": {
+            "value": "{padding.x.3xs}",
+            "type": "dimension",
+            "description": "AM/PM selector horizontal padding for 2xs size (8px)"
+          },
+          "xs": {
+            "value": "{padding.x.3xs}",
+            "type": "dimension",
+            "description": "AM/PM selector horizontal padding for xs size (8px)"
+          },
+          "sm": {
+            "value": "{padding.x.xs}",
+            "type": "dimension",
+            "description": "AM/PM selector horizontal padding for sm size (12px)"
+          },
+          "md": {
+            "value": "{padding.x.sm}",
+            "type": "dimension",
+            "description": "AM/PM selector horizontal padding for md size (14px)"
+          },
+          "lg": {
+            "value": "{padding.x.sm}",
+            "type": "dimension",
+            "description": "AM/PM selector horizontal padding for lg size (14px)"
+          }
+        },
+        "y": {
+          "3xs": {
+            "value": "{padding.y.4xs}",
+            "type": "dimension",
+            "description": "AM/PM selector vertical padding for 3xs size (6px)"
+          },
+          "2xs": {
+            "value": "{padding.y.4xs}",
+            "type": "dimension",
+            "description": "AM/PM selector vertical padding for 2xs size (6px)"
+          },
+          "xs": {
+            "value": "{padding.y.4xs}",
+            "type": "dimension",
+            "description": "AM/PM selector vertical padding for xs size (6px)"
+          },
+          "sm": {
+            "value": "{padding.y.3xs}",
+            "type": "dimension",
+            "description": "AM/PM selector vertical padding for sm size (8px)"
+          },
+          "md": {
+            "value": "{padding.y.3xs}",
+            "type": "dimension",
+            "description": "AM/PM selector vertical padding for md size (8px)"
+          },
+          "lg": {
+            "value": "{padding.y.2xs}",
+            "type": "dimension",
+            "description": "AM/PM selector vertical padding for lg size (10px)"
+          }
+        }
+      },
+      "gap": {
+        "value": "{gap.xs}",
+        "type": "dimension",
+        "description": "Gap between AM/PM text and chevron icon (8px)"
+      },
+      "text": {
+        "$comment": "Typography for AM/PM selector text",
+        "typography": {
+          "3xs": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "AM/PM text typography for 3xs size (14px / 20px line-height)"
+          },
+          "2xs": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "AM/PM text typography for 2xs size (14px / 20px line-height)"
+          },
+          "xs": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "AM/PM text typography for xs size (14px / 20px line-height)"
+          },
+          "sm": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "AM/PM text typography for sm size (14px / 20px line-height)"
+          },
+          "md": {
+            "value": "{font.body.regular.2xl}",
+            "type": "string",
+            "description": "AM/PM text typography for md size (16px / 24px line-height)"
+          },
+          "lg": {
+            "value": "{font.body.regular.2xl}",
+            "type": "string",
+            "description": "AM/PM text typography for lg size (16px / 24px line-height)"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "AM/PM text color in default state (gray-500 / #667085)"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "AM/PM text color in disabled state (gray-400 / #98A2B3)"
+          }
+        }
+      },
+      "chevron": {
+        "$comment": "Chevron dropdown indicator icon",
+        "size": {
+          "3xs": {
+            "value": "{size.icon.4xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for 3xs (12px)"
+          },
+          "2xs": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for 2xs (16px)"
+          },
+          "xs": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for xs (16px)"
+          },
+          "sm": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for sm (16px)"
+          },
+          "md": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for md (20px)"
+          },
+          "lg": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for lg (20px)"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.0}",
+            "type": "color",
+            "description": "Chevron icon color in default state (gray-500)"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Chevron icon color in disabled state (gray-300 / #D0D5DD)"
+          }
+        }
+      },
+      "color": {
+        "$comment": "Background and border colors for AM/PM selector segment",
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "AM/PM selector background in default state (white)"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "AM/PM selector background in disabled state (gray-50 / #F9FAFB)"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "AM/PM selector border in default state (gray-300 / #D0D5DD)"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "AM/PM selector border in disabled state (gray-300 / #D0D5DD)"
+          }
+        }
+      }
+    },
+    "timezone-selector": {
+      "$comment": "Timezone selector segment - optional dropdown for timezone selection (rightmost segment with rounded-right corners)",
+      "height": {
+        "$comment": "Timezone selector heights match the time input field",
+        "3xs": {
+          "value": "{size.height.3xs}",
+          "type": "dimension",
+          "description": "Timezone selector height for 3xs size (24px)"
+        },
+        "2xs": {
+          "value": "{size.height.2xs}",
+          "type": "dimension",
+          "description": "Timezone selector height for 2xs size (28px)"
+        },
+        "xs": {
+          "value": "{size.height.xs}",
+          "type": "dimension",
+          "description": "Timezone selector height for xs size (32px)"
+        },
+        "sm": {
+          "value": "{size.height.sm}",
+          "type": "dimension",
+          "description": "Timezone selector height for sm size (36px)"
+        },
+        "md": {
+          "value": "{size.height.md}",
+          "type": "dimension",
+          "description": "Timezone selector height for md size (40px)"
+        },
+        "lg": {
+          "value": "{size.height.lg}",
+          "type": "dimension",
+          "description": "Timezone selector height for lg size (44px)"
+        }
+      },
+      "border": {
+        "$comment": "Border styling for timezone selector - has right, top, and bottom borders (shares left border with AM/PM selector or time input)",
+        "width": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Timezone selector border width (1px) - applied to right, top, and bottom only"
+        },
+        "style": {
+          "value": "1px 1px 1px 0px",
+          "type": "string",
+          "description": "Border style: right, top, bottom borders only (no left border)"
+        },
+        "radius": {
+          "$comment": "Right-side border radius only (rounded-right corners for last segment)",
+          "3xs": {
+            "value": "{border.radius.3xs}",
+            "type": "dimension",
+            "description": "Timezone selector right border radius for 3xs size (4px)"
+          },
+          "2xs": {
+            "value": "{border.radius.2xs}",
+            "type": "dimension",
+            "description": "Timezone selector right border radius for 2xs size (4px)"
+          },
+          "xs": {
+            "value": "{border.radius.xs}",
+            "type": "dimension",
+            "description": "Timezone selector right border radius for xs size (4px)"
+          },
+          "sm": {
+            "value": "{border.radius.1[5]}",
+            "type": "dimension",
+            "description": "Timezone selector right border radius for sm size (6px)"
+          },
+          "md": {
+            "value": "{border.radius.md}",
+            "type": "dimension",
+            "description": "Timezone selector right border radius for md size (8px)"
+          },
+          "lg": {
+            "value": "{border.radius.lg}",
+            "type": "dimension",
+            "description": "Timezone selector right border radius for lg size (8px)"
+          }
+        }
+      },
+      "padding": {
+        "$comment": "Internal spacing for timezone selector content",
+        "x": {
+          "3xs": {
+            "value": "{padding.x.3xs}",
+            "type": "dimension",
+            "description": "Timezone selector horizontal padding for 3xs size (8px)"
+          },
+          "2xs": {
+            "value": "{padding.x.3xs}",
+            "type": "dimension",
+            "description": "Timezone selector horizontal padding for 2xs size (8px)"
+          },
+          "xs": {
+            "value": "{padding.x.3xs}",
+            "type": "dimension",
+            "description": "Timezone selector horizontal padding for xs size (8px)"
+          },
+          "sm": {
+            "value": "{padding.x.xs}",
+            "type": "dimension",
+            "description": "Timezone selector horizontal padding for sm size (12px)"
+          },
+          "md": {
+            "value": "{padding.x.sm}",
+            "type": "dimension",
+            "description": "Timezone selector horizontal padding for md size (14px)"
+          },
+          "lg": {
+            "value": "{padding.x.sm}",
+            "type": "dimension",
+            "description": "Timezone selector horizontal padding for lg size (14px)"
+          }
+        },
+        "y": {
+          "3xs": {
+            "value": "{padding.y.4xs}",
+            "type": "dimension",
+            "description": "Timezone selector vertical padding for 3xs size (6px)"
+          },
+          "2xs": {
+            "value": "{padding.y.4xs}",
+            "type": "dimension",
+            "description": "Timezone selector vertical padding for 2xs size (6px)"
+          },
+          "xs": {
+            "value": "{padding.y.4xs}",
+            "type": "dimension",
+            "description": "Timezone selector vertical padding for xs size (6px)"
+          },
+          "sm": {
+            "value": "{padding.y.3xs}",
+            "type": "dimension",
+            "description": "Timezone selector vertical padding for sm size (8px)"
+          },
+          "md": {
+            "value": "{padding.y.3xs}",
+            "type": "dimension",
+            "description": "Timezone selector vertical padding for md size (8px)"
+          },
+          "lg": {
+            "value": "{padding.y.2xs}",
+            "type": "dimension",
+            "description": "Timezone selector vertical padding for lg size (10px)"
+          }
+        }
+      },
+      "gap": {
+        "value": "{gap.xs}",
+        "type": "dimension",
+        "description": "Gap between timezone text and chevron icon (8px)"
+      },
+      "text": {
+        "$comment": "Typography for timezone selector text",
+        "typography": {
+          "3xs": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "Timezone text typography for 3xs size (14px / 20px line-height)"
+          },
+          "2xs": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "Timezone text typography for 2xs size (14px / 20px line-height)"
+          },
+          "xs": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "Timezone text typography for xs size (14px / 20px line-height)"
+          },
+          "sm": {
+            "value": "{font.body.regular.base}",
+            "type": "string",
+            "description": "Timezone text typography for sm size (14px / 20px line-height)"
+          },
+          "md": {
+            "value": "{font.body.regular.2xl}",
+            "type": "string",
+            "description": "Timezone text typography for md size (16px / 24px line-height)"
+          },
+          "lg": {
+            "value": "{font.body.regular.2xl}",
+            "type": "string",
+            "description": "Timezone text typography for lg size (16px / 24px line-height)"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Timezone text color in default state (gray-500 / #667085)"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "Timezone text color in disabled state (gray-400 / #98A2B3)"
+          }
+        }
+      },
+      "chevron": {
+        "$comment": "Chevron dropdown indicator icon",
+        "size": {
+          "3xs": {
+            "value": "{size.icon.4xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for 3xs (12px)"
+          },
+          "2xs": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for 2xs (16px)"
+          },
+          "xs": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for xs (16px)"
+          },
+          "sm": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for sm (16px)"
+          },
+          "md": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for md (20px)"
+          },
+          "lg": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Chevron icon size for lg (20px)"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.0}",
+            "type": "color",
+            "description": "Chevron icon color in default state (gray-500)"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Chevron icon color in disabled state (gray-300 / #D0D5DD)"
+          }
+        }
+      },
+      "color": {
+        "$comment": "Background and border colors for timezone selector segment",
+        "background": {
+          "default": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Timezone selector background in default state (white)"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Timezone selector background in disabled state (gray-50 / #F9FAFB)"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Timezone selector border in default state (gray-300 / #D0D5DD)"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Timezone selector border in disabled state (gray-300 / #D0D5DD)"
+          }
+        }
+      }
+    },
+    "shadow": {
+      "$comment": "Subtle elevation shadow for time picker (consistent with input component)",
+      "default": {
+        "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+        "type": "boxShadow",
+        "description": "Time picker default shadow for subtle depth"
+      }
+    }
+  }
+}
+

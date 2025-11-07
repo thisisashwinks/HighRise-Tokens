@@ -1,0 +1,487 @@
+{
+  "badge-group": {
+    "comment": "Badge Group component tokens - A container component that displays informational badges with tags, text, and icons",
+    "border": {
+      "comment": "Border radius tokens for badge group container",
+      "radius": {
+        "md": {
+          "value": "{border.radius.2xl}",
+          "type": "dimension",
+          "comment": "Border radius for medium size badge groups (16px)"
+        },
+        "lg": {
+          "value": "{border.radius.2xl}",
+          "type": "dimension",
+          "comment": "Border radius for large size badge groups (16px)"
+        }
+      },
+      "width": {
+        "default": {
+          "value": "1.5px",
+          "type": "dimension",
+          "comment": "Border width for outline theme badge groups"
+        }
+      }
+    },
+    "padding": {
+      "comment": "Padding tokens for badge group container",
+      "x": {
+        "comment": "Horizontal padding for badge groups",
+        "leading": {
+          "comment": "Padding for badge groups with leading tag (tag on left)",
+          "md": {
+            "left": {
+              "value": "{padding.x.4xs}",
+              "type": "dimension",
+              "comment": "Left padding for medium leading badge groups (4px)"
+            },
+            "right": {
+              "value": "{padding.x.2xs}",
+              "type": "dimension",
+              "comment": "Right padding for medium leading badge groups (10px)"
+            }
+          },
+          "lg": {
+            "left": {
+              "value": "{padding.x.4xs}",
+              "type": "dimension",
+              "comment": "Left padding for large leading badge groups (4px)"
+            },
+            "right": {
+              "value": "{padding.x.sm}",
+              "type": "dimension",
+              "comment": "Right padding for large leading badge groups (14px)"
+            }
+          }
+        },
+        "trailing": {
+          "comment": "Padding for badge groups with trailing tag (tag on right)",
+          "md": {
+            "left": {
+              "value": "{padding.x.2xs}",
+              "type": "dimension",
+              "comment": "Left padding for medium trailing badge groups (10px)"
+            },
+            "right": {
+              "value": "{padding.x.4xs}",
+              "type": "dimension",
+              "comment": "Right padding for medium trailing badge groups (4px)"
+            }
+          },
+          "lg": {
+            "left": {
+              "value": "{padding.x.sm}",
+              "type": "dimension",
+              "comment": "Left padding for large trailing badge groups (14px)"
+            },
+            "right": {
+              "value": "{padding.x.4xs}",
+              "type": "dimension",
+              "comment": "Right padding for large trailing badge groups (4px)"
+            }
+          }
+        }
+      },
+      "y": {
+        "comment": "Vertical padding for badge groups",
+        "md": {
+          "value": "{padding.y.4xs}",
+          "type": "dimension",
+          "comment": "Vertical padding for medium badge groups (4px)"
+        },
+        "lg": {
+          "value": "{padding.y.4xs}",
+          "type": "dimension",
+          "comment": "Vertical padding for large badge groups (4px)"
+        }
+      }
+    },
+    "gap": {
+      "comment": "Gap between tag and content text",
+      "md": {
+        "value": "{gap.2xs}",
+        "type": "dimension",
+        "comment": "Gap for medium badge groups (8px)"
+      },
+      "lg": {
+        "value": "{gap.xs}",
+        "type": "dimension",
+        "comment": "Gap for large badge groups (12px)"
+      }
+    },
+    "content": {
+      "comment": "Content section tokens (text and icon)",
+      "gap": {
+        "md": {
+          "value": "{gap.4xs}",
+          "type": "dimension",
+          "comment": "Gap between text and icon in medium badge groups (4px)"
+        },
+        "lg": {
+          "value": "{gap.4xs}",
+          "type": "dimension",
+          "comment": "Gap between text and icon in large badge groups (4px)"
+        }
+      },
+      "text": {
+        "comment": "Text typography for badge group content",
+        "typography": {
+          "md": {
+            "value": "{font.body.medium.sm}",
+            "type": "typography",
+            "comment": "Typography for medium badge group text (12px Medium)"
+          },
+          "lg": {
+            "value": "{font.body.medium.lg}",
+            "type": "typography",
+            "comment": "Typography for large badge group text (14px Medium)"
+          }
+        }
+      },
+      "icon": {
+        "comment": "Icon sizing for badge group content",
+        "size": {
+          "md": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "comment": "Icon size for medium badge groups (16px)"
+          },
+          "lg": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "comment": "Icon size for large badge groups (16px)"
+          }
+        }
+      }
+    },
+    "variants": {
+      "comment": "Color and theme variants for badge groups - includes primary, error, warning, success, and gray colors with medium and outline themes",
+      "primary": {
+        "comment": "Primary color variant (blue)",
+        "medium": {
+          "comment": "Medium theme - filled background without border",
+          "background": {
+            "default": {
+              "value": "{color.background.primary.subtle.0}",
+              "type": "color",
+              "comment": "Background color for primary medium badge group"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "comment": "Transparent border for medium theme"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.primary.body.1}",
+              "type": "color",
+              "comment": "Text color for primary medium badge group"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "comment": "Icon color for primary medium badge group"
+            }
+          }
+        },
+        "outline": {
+          "comment": "Outline theme - white background with colored border",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "comment": "White background for primary outline badge group"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.primary.default}",
+              "type": "color",
+              "comment": "Border color for primary outline badge group"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.primary.body.1}",
+              "type": "color",
+              "comment": "Text color for primary outline badge group"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "comment": "Icon color for primary outline badge group"
+            }
+          }
+        }
+      },
+      "error": {
+        "comment": "Error color variant (red)",
+        "medium": {
+          "comment": "Medium theme - filled background without border",
+          "background": {
+            "default": {
+              "value": "{color.background.error.subtle.0}",
+              "type": "color",
+              "comment": "Background color for error medium badge group"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "comment": "Transparent border for medium theme"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.error.body.1}",
+              "type": "color",
+              "comment": "Text color for error medium badge group"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.error.default}",
+              "type": "color",
+              "comment": "Icon color for error medium badge group"
+            }
+          }
+        },
+        "outline": {
+          "comment": "Outline theme - white background with colored border",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "comment": "White background for error outline badge group"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.error.default}",
+              "type": "color",
+              "comment": "Border color for error outline badge group"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.error.body.1}",
+              "type": "color",
+              "comment": "Text color for error outline badge group"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.error.default}",
+              "type": "color",
+              "comment": "Icon color for error outline badge group"
+            }
+          }
+        }
+      },
+      "warning": {
+        "comment": "Warning color variant (orange)",
+        "medium": {
+          "comment": "Medium theme - filled background without border",
+          "background": {
+            "default": {
+              "value": "{color.background.warning.subtle.0}",
+              "type": "color",
+              "comment": "Background color for warning medium badge group"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "comment": "Transparent border for medium theme"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.warning.body.1}",
+              "type": "color",
+              "comment": "Text color for warning medium badge group"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "comment": "Icon color for warning medium badge group"
+            }
+          }
+        },
+        "outline": {
+          "comment": "Outline theme - white background with colored border",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "comment": "White background for warning outline badge group"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.warning.default}",
+              "type": "color",
+              "comment": "Border color for warning outline badge group"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.warning.body.1}",
+              "type": "color",
+              "comment": "Text color for warning outline badge group"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "comment": "Icon color for warning outline badge group"
+            }
+          }
+        }
+      },
+      "success": {
+        "comment": "Success color variant (green)",
+        "medium": {
+          "comment": "Medium theme - filled background without border",
+          "background": {
+            "default": {
+              "value": "{color.background.success.subtle.0}",
+              "type": "color",
+              "comment": "Background color for success medium badge group"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "comment": "Transparent border for medium theme"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.success.body.1}",
+              "type": "color",
+              "comment": "Text color for success medium badge group"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "comment": "Icon color for success medium badge group"
+            }
+          }
+        },
+        "outline": {
+          "comment": "Outline theme - white background with colored border",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "comment": "White background for success outline badge group"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.success.default}",
+              "type": "color",
+              "comment": "Border color for success outline badge group"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.success.body.1}",
+              "type": "color",
+              "comment": "Text color for success outline badge group"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "comment": "Icon color for success outline badge group"
+            }
+          }
+        }
+      },
+      "gray": {
+        "comment": "Gray (neutral) color variant",
+        "medium": {
+          "comment": "Medium theme - filled background without border",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "comment": "Background color for gray medium badge group"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "comment": "Transparent border for medium theme"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "comment": "Text color for gray medium badge group"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "comment": "Icon color for gray medium badge group"
+            }
+          }
+        },
+        "outline": {
+          "comment": "Outline theme - white background with colored border",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "comment": "White background for gray outline badge group"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "comment": "Border color for gray outline badge group"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "comment": "Text color for gray outline badge group"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "comment": "Icon color for gray outline badge group"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

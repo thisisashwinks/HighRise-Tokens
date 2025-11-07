@@ -1,0 +1,325 @@
+{
+  "tag-group": {
+    "gap": {
+      "xs": {
+        "value": "{gap.1}",
+        "type": "dimension",
+        "$comment": "Spacing between individual tags in extra small size group"
+      },
+      "sm": {
+        "value": "{gap.1}",
+        "type": "dimension",
+        "$comment": "Spacing between individual tags in small size group"
+      },
+      "md": {
+        "value": "{gap.1}",
+        "type": "dimension",
+        "$comment": "Spacing between individual tags in medium size group"
+      },
+      "lg": {
+        "value": "{gap.1}",
+        "type": "dimension",
+        "$comment": "Spacing between individual tags in large size group"
+      }
+    },
+    "padding": {
+      "x": {
+        "xs": {
+          "value": "{padding.x.none}",
+          "type": "dimension",
+          "$comment": "Horizontal padding for extra small tag group container"
+        },
+        "sm": {
+          "value": "{padding.x.none}",
+          "type": "dimension",
+          "$comment": "Horizontal padding for small tag group container"
+        },
+        "md": {
+          "value": "{padding.x.none}",
+          "type": "dimension",
+          "$comment": "Horizontal padding for medium tag group container"
+        },
+        "lg": {
+          "value": "{padding.x.none}",
+          "type": "dimension",
+          "$comment": "Horizontal padding for large tag group container"
+        }
+      },
+      "y": {
+        "xs": {
+          "value": "{padding.y.none}",
+          "type": "dimension",
+          "$comment": "Vertical padding for extra small tag group container"
+        },
+        "sm": {
+          "value": "{padding.y.none}",
+          "type": "dimension",
+          "$comment": "Vertical padding for small tag group container"
+        },
+        "md": {
+          "value": "{padding.y.none}",
+          "type": "dimension",
+          "$comment": "Vertical padding for medium tag group container"
+        },
+        "lg": {
+          "value": "{padding.y.none}",
+          "type": "dimension",
+          "$comment": "Vertical padding for large tag group container"
+        }
+      }
+    },
+    "add-button": {
+      "$comment": "Add button component that appears at the end of tag groups to allow adding new tags",
+      "size": {
+        "xs": {
+          "value": "{size.4[5]}",
+          "type": "dimension",
+          "$comment": "Size of the add button for extra small tag group (matches tag height)"
+        },
+        "sm": {
+          "value": "{size.5[5]}",
+          "type": "dimension",
+          "$comment": "Size of the add button for small tag group (matches tag height)"
+        },
+        "md": {
+          "value": "{size.6}",
+          "type": "dimension",
+          "$comment": "Size of the add button for medium tag group (matches tag height)"
+        },
+        "lg": {
+          "value": "{size.7}",
+          "type": "dimension",
+          "$comment": "Size of the add button for large tag group (matches tag height)"
+        }
+      },
+      "border": {
+        "radius": {
+          "xs": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "$comment": "Border radius for extra small add button (fully rounded)"
+          },
+          "sm": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "$comment": "Border radius for small add button (fully rounded)"
+          },
+          "md": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "$comment": "Border radius for medium add button (fully rounded)"
+          },
+          "lg": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "$comment": "Border radius for large add button (fully rounded)"
+          }
+        },
+        "width": {
+          "default": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "$comment": "Border width for add button in default state"
+          }
+        }
+      },
+      "padding": {
+        "x": {
+          "xs": {
+            "value": "{padding.x.4xs}",
+            "type": "dimension",
+            "$comment": "Horizontal padding for extra small add button"
+          },
+          "sm": {
+            "value": "{padding.x.3xs}",
+            "type": "dimension",
+            "$comment": "Horizontal padding for small add button"
+          },
+          "md": {
+            "value": "{padding.x.3xs}",
+            "type": "dimension",
+            "$comment": "Horizontal padding for medium add button"
+          },
+          "lg": {
+            "value": "{padding.x.3xs}",
+            "type": "dimension",
+            "$comment": "Horizontal padding for large add button"
+          }
+        },
+        "y": {
+          "xs": {
+            "value": "{padding.y.none}",
+            "type": "dimension",
+            "$comment": "Vertical padding for extra small add button"
+          },
+          "sm": {
+            "value": "{padding.y.none}",
+            "type": "dimension",
+            "$comment": "Vertical padding for small add button"
+          },
+          "md": {
+            "value": "{padding.y.none}",
+            "type": "dimension",
+            "$comment": "Vertical padding for medium add button"
+          },
+          "lg": {
+            "value": "{padding.y.none}",
+            "type": "dimension",
+            "$comment": "Vertical padding for large add button"
+          }
+        }
+      },
+      "background": {
+        "default": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "$comment": "Background color for add button in default state"
+        },
+        "hover": {
+          "value": "{color.background.neutral.subtle.0}",
+          "type": "color",
+          "$comment": "Background color for add button on hover"
+        },
+        "active": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "$comment": "Background color for add button when pressed/active"
+        },
+        "focused": {
+          "value": "{color.background.neutral.subtle.0}",
+          "type": "color",
+          "$comment": "Background color for add button when focused"
+        }
+      },
+      "border-color": {
+        "default": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "$comment": "Border color for add button in default state"
+        },
+        "hover": {
+          "value": "{color.border.neutral.moderate.0}",
+          "type": "color",
+          "$comment": "Border color for add button on hover"
+        },
+        "active": {
+          "value": "{color.border.neutral.moderate.2}",
+          "type": "color",
+          "$comment": "Border color for add button when pressed/active"
+        },
+        "focused": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "$comment": "Border color for add button when focused"
+        }
+      },
+      "icon": {
+        "size": {
+          "xs": {
+            "value": "{size.icon.3xs}",
+            "type": "dimension",
+            "$comment": "Icon size for extra small add button"
+          },
+          "sm": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "$comment": "Icon size for small add button"
+          },
+          "md": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "$comment": "Icon size for medium add button"
+          },
+          "lg": {
+            "value": "{size.icon.sm}",
+            "type": "dimension",
+            "$comment": "Icon size for large add button"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "$comment": "Icon color for add button in default state"
+          },
+          "hover": {
+            "value": "{color.icon.neutral.intense.0}",
+            "type": "color",
+            "$comment": "Icon color for add button on hover"
+          },
+          "active": {
+            "value": "{color.icon.neutral.intense.1}",
+            "type": "color",
+            "$comment": "Icon color for add button when pressed/active"
+          },
+          "focused": {
+            "value": "{color.icon.neutral.intense.0}",
+            "type": "color",
+            "$comment": "Icon color for add button when focused"
+          }
+        }
+      },
+      "focus": {
+        "ring": {
+          "value": "{color.border.neutral.subtle.2}",
+          "type": "color",
+          "$comment": "Focus ring color for add button when keyboard focused"
+        }
+      }
+    },
+    "layout": {
+      "$comment": "Layout properties for the tag group container",
+      "direction": {
+        "value": "row",
+        "type": "string",
+        "$comment": "Flex direction for tag group (horizontal layout)"
+      },
+      "align-items": {
+        "value": "center",
+        "type": "string",
+        "$comment": "Vertical alignment of tags within the group"
+      },
+      "justify-content": {
+        "value": "flex-start",
+        "type": "string",
+        "$comment": "Horizontal alignment of tags within the group"
+      },
+      "flex-wrap": {
+        "value": "wrap",
+        "type": "string",
+        "$comment": "Allow tags to wrap to next line if container width is exceeded"
+      }
+    },
+    "max-width": {
+      "xs": {
+        "value": "100%",
+        "type": "dimension",
+        "$comment": "Maximum width for extra small tag group container"
+      },
+      "sm": {
+        "value": "100%",
+        "type": "dimension",
+        "$comment": "Maximum width for small tag group container"
+      },
+      "md": {
+        "value": "100%",
+        "type": "dimension",
+        "$comment": "Maximum width for medium tag group container"
+      },
+      "lg": {
+        "value": "100%",
+        "type": "dimension",
+        "$comment": "Maximum width for large tag group container"
+      }
+    },
+    "overflow": {
+      "$comment": "Overflow properties for handling tags that exceed container width",
+      "behavior": {
+        "value": "visible",
+        "type": "string",
+        "$comment": "How overflow content is handled - visible allows wrapping"
+      }
+    }
+  }
+}
+

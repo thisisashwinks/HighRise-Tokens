@@ -1,0 +1,655 @@
+{
+  "action-group": {
+    "container": {
+      "gap": {
+        "3xs": {
+          "value": "{gap.1}",
+          "type": "dimension",
+          "description": "4px gap between buttons in action group for 3xs size"
+        },
+        "2xs": {
+          "value": "{gap.1}",
+          "type": "dimension",
+          "description": "4px gap between buttons in action group for 2xs size"
+        },
+        "xs": {
+          "value": "{gap.1}",
+          "type": "dimension",
+          "description": "4px gap between buttons in action group for xs size"
+        },
+        "sm": {
+          "value": "{gap.1}",
+          "type": "dimension",
+          "description": "4px gap between buttons in action group for sm size"
+        },
+        "md": {
+          "value": "{gap.1}",
+          "type": "dimension",
+          "description": "4px gap between buttons in action group for md size"
+        },
+        "lg": {
+          "value": "{gap.1}",
+          "type": "dimension",
+          "description": "4px gap between buttons in action group for lg size"
+        }
+      },
+      "direction": {
+        "horizontal": {
+          "value": "row",
+          "type": "string",
+          "description": "Horizontal layout direction for action group - buttons arranged in a row"
+        },
+        "vertical": {
+          "value": "column",
+          "type": "string",
+          "description": "Vertical layout direction for action group - buttons arranged in a column"
+        }
+      },
+      "alignment": {
+        "horizontal": {
+          "value": "center",
+          "type": "string",
+          "description": "Center alignment for horizontal action groups"
+        },
+        "vertical": {
+          "start": {
+            "value": "flex-start",
+            "type": "string",
+            "description": "Start alignment for vertical action groups"
+          },
+          "stretch": {
+            "value": "stretch",
+            "type": "string",
+            "description": "Stretch alignment for vertical action groups - buttons take full width"
+          }
+        }
+      }
+    },
+    "button": {
+      "color": {
+        "neutral": {
+          "secondary": {
+            "background": {
+              "default": {
+                "value": "{button.color.neutral.secondary.background.default}",
+                "type": "color",
+                "description": "Default background for action group buttons - references neutral secondary button"
+              },
+              "hover": {
+                "value": "{button.color.neutral.secondary.background.hover}",
+                "type": "color",
+                "description": "Hover background for action group buttons"
+              },
+              "active": {
+                "value": "{button.color.neutral.secondary.background.active}",
+                "type": "color",
+                "description": "Active background for action group buttons"
+              },
+              "focused": {
+                "value": "{button.color.neutral.secondary.background.focused}",
+                "type": "color",
+                "description": "Focused background for action group buttons"
+              },
+              "disabled": {
+                "value": "{button.color.neutral.secondary.background.disabled}",
+                "type": "color",
+                "description": "Disabled background for action group buttons"
+              }
+            },
+            "border": {
+              "default": {
+                "value": "{button.color.neutral.secondary.border.default}",
+                "type": "color",
+                "description": "Default border for action group buttons"
+              },
+              "hover": {
+                "value": "{button.color.neutral.secondary.border.hover}",
+                "type": "color",
+                "description": "Hover border for action group buttons"
+              },
+              "active": {
+                "value": "{button.color.neutral.secondary.border.active}",
+                "type": "color",
+                "description": "Active border for action group buttons"
+              },
+              "focused": {
+                "value": "{button.color.neutral.secondary.border.focused}",
+                "type": "color",
+                "description": "Focused border for action group buttons"
+              },
+              "disabled": {
+                "value": "{button.color.neutral.secondary.border.disabled}",
+                "type": "color",
+                "description": "Disabled border for action group buttons"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{button.color.neutral.secondary.text.default}",
+                "type": "color",
+                "description": "Default text color for action group buttons"
+              },
+              "hover": {
+                "value": "{button.color.neutral.secondary.text.hover}",
+                "type": "color",
+                "description": "Hover text color for action group buttons"
+              },
+              "active": {
+                "value": "{button.color.neutral.secondary.text.active}",
+                "type": "color",
+                "description": "Active text color for action group buttons"
+              },
+              "focused": {
+                "value": "{button.color.neutral.secondary.text.focused}",
+                "type": "color",
+                "description": "Focused text color for action group buttons"
+              },
+              "disabled": {
+                "value": "{button.color.neutral.secondary.text.disabled}",
+                "type": "color",
+                "description": "Disabled text color for action group buttons"
+              }
+            },
+            "icon": {
+              "default": {
+                "value": "{button.color.neutral.secondary.icon.default}",
+                "type": "color",
+                "description": "Default icon color for action group buttons"
+              },
+              "hover": {
+                "value": "{button.color.neutral.secondary.icon.hover}",
+                "type": "color",
+                "description": "Hover icon color for action group buttons"
+              },
+              "active": {
+                "value": "{button.color.neutral.secondary.icon.active}",
+                "type": "color",
+                "description": "Active icon color for action group buttons"
+              },
+              "focused": {
+                "value": "{button.color.neutral.secondary.icon.focused}",
+                "type": "color",
+                "description": "Focused icon color for action group buttons"
+              },
+              "disabled": {
+                "value": "{button.color.neutral.secondary.icon.disabled}",
+                "type": "color",
+                "description": "Disabled icon color for action group buttons"
+              }
+            }
+          },
+          "ghost": {
+            "background": {
+              "default": {
+                "value": "{button.color.neutral.ghost.background.default}",
+                "type": "color",
+                "description": "Default background for ghost action group buttons"
+              },
+              "hover": {
+                "value": "{button.color.neutral.ghost.background.hover}",
+                "type": "color",
+                "description": "Hover background for ghost action group buttons"
+              },
+              "active": {
+                "value": "{button.color.neutral.ghost.background.active}",
+                "type": "color",
+                "description": "Active background for ghost action group buttons"
+              },
+              "focused": {
+                "value": "{button.color.neutral.ghost.background.focused}",
+                "type": "color",
+                "description": "Focused background for ghost action group buttons"
+              },
+              "disabled": {
+                "value": "{button.color.neutral.ghost.background.disabled}",
+                "type": "color",
+                "description": "Disabled background for ghost action group buttons"
+              }
+            },
+            "border": {
+              "default": {
+                "value": "{button.color.neutral.ghost.border.default}",
+                "type": "color",
+                "description": "Default border for ghost action group buttons - transparent"
+              },
+              "hover": {
+                "value": "{button.color.neutral.ghost.border.hover}",
+                "type": "color",
+                "description": "Hover border for ghost action group buttons"
+              },
+              "active": {
+                "value": "{button.color.neutral.ghost.border.active}",
+                "type": "color",
+                "description": "Active border for ghost action group buttons"
+              },
+              "focused": {
+                "value": "{button.color.neutral.ghost.border.focused}",
+                "type": "color",
+                "description": "Focused border for ghost action group buttons"
+              },
+              "disabled": {
+                "value": "{button.color.neutral.ghost.border.disabled}",
+                "type": "color",
+                "description": "Disabled border for ghost action group buttons"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{button.color.neutral.ghost.text.default}",
+                "type": "color",
+                "description": "Default text color for ghost action group buttons"
+              },
+              "hover": {
+                "value": "{button.color.neutral.ghost.text.hover}",
+                "type": "color",
+                "description": "Hover text color for ghost action group buttons"
+              },
+              "active": {
+                "value": "{button.color.neutral.ghost.text.active}",
+                "type": "color",
+                "description": "Active text color for ghost action group buttons"
+              },
+              "focused": {
+                "value": "{button.color.neutral.ghost.text.focused}",
+                "type": "color",
+                "description": "Focused text color for ghost action group buttons"
+              },
+              "disabled": {
+                "value": "{button.color.neutral.ghost.text.disabled}",
+                "type": "color",
+                "description": "Disabled text color for ghost action group buttons"
+              }
+            },
+            "icon": {
+              "default": {
+                "value": "{button.color.neutral.ghost.icon.default}",
+                "type": "color",
+                "description": "Default icon color for ghost action group buttons"
+              },
+              "hover": {
+                "value": "{button.color.neutral.ghost.icon.hover}",
+                "type": "color",
+                "description": "Hover icon color for ghost action group buttons"
+              },
+              "active": {
+                "value": "{button.color.neutral.ghost.icon.active}",
+                "type": "color",
+                "description": "Active icon color for ghost action group buttons"
+              },
+              "focused": {
+                "value": "{button.color.neutral.ghost.icon.focused}",
+                "type": "color",
+                "description": "Focused icon color for ghost action group buttons"
+              },
+              "disabled": {
+                "value": "{button.color.neutral.ghost.icon.disabled}",
+                "type": "color",
+                "description": "Disabled icon color for ghost action group buttons"
+              }
+            }
+          }
+        }
+      },
+      "typography": {
+        "3xs": {
+          "value": "{button.typography.3xs}",
+          "type": "typography",
+          "description": "11px semibold font for action group buttons (3xs size)"
+        },
+        "2xs": {
+          "value": "{button.typography.2xs}",
+          "type": "typography",
+          "description": "12px semibold font for action group buttons (2xs size)"
+        },
+        "xs": {
+          "value": "{button.typography.xs}",
+          "type": "typography",
+          "description": "13px semibold font for action group buttons (xs size)"
+        },
+        "sm": {
+          "value": "{button.typography.sm}",
+          "type": "typography",
+          "description": "14px semibold font for action group buttons (sm size)"
+        },
+        "md": {
+          "value": "{button.typography.md}",
+          "type": "typography",
+          "description": "14px semibold font for action group buttons (md size)"
+        },
+        "lg": {
+          "value": "{button.typography.lg}",
+          "type": "typography",
+          "description": "16px semibold font for action group buttons (lg size)"
+        }
+      },
+      "border": {
+        "radius": {
+          "3xs": {
+            "value": "{button.border.radius.3xs}",
+            "type": "dimension",
+            "description": "4px border radius for action group buttons (3xs size)"
+          },
+          "2xs": {
+            "value": "{button.border.radius.2xs}",
+            "type": "dimension",
+            "description": "4px border radius for action group buttons (2xs size)"
+          },
+          "xs": {
+            "value": "{button.border.radius.xs}",
+            "type": "dimension",
+            "description": "4px border radius for action group buttons (xs size)"
+          },
+          "sm": {
+            "value": "{button.border.radius.sm}",
+            "type": "dimension",
+            "description": "8px border radius for action group buttons (sm size)"
+          },
+          "md": {
+            "value": "{button.border.radius.md}",
+            "type": "dimension",
+            "description": "8px border radius for action group buttons (md size)"
+          },
+          "lg": {
+            "value": "{button.border.radius.lg}",
+            "type": "dimension",
+            "description": "8px border radius for action group buttons (lg size)"
+          }
+        },
+        "width": {
+          "default": {
+            "value": "{button.border.width.default}",
+            "type": "dimension",
+            "description": "1px border width for action group buttons"
+          }
+        }
+      },
+      "effects": {
+        "shadow": {
+          "default": {
+            "value": "{button.effects.shadow.default}",
+            "type": "boxShadow",
+            "description": "Default shadow for action group buttons"
+          }
+        },
+        "focus": {
+          "ring": {
+            "value": "{button.effects.focus.ring}",
+            "type": "boxShadow",
+            "description": "Focus ring for action group buttons"
+          }
+        }
+      }
+    },
+    "with-text": {
+      "container": {
+        "height": {
+          "3xs": {
+            "value": "{button.regular.container.height.3xs}",
+            "type": "dimension",
+            "description": "24px button height for action group with text (3xs size)"
+          },
+          "2xs": {
+            "value": "{button.regular.container.height.2xs}",
+            "type": "dimension",
+            "description": "28px button height for action group with text (2xs size)"
+          },
+          "xs": {
+            "value": "{button.regular.container.height.xs}",
+            "type": "dimension",
+            "description": "32px button height for action group with text (xs size)"
+          },
+          "sm": {
+            "value": "{button.regular.container.height.sm}",
+            "type": "dimension",
+            "description": "36px button height for action group with text (sm size)"
+          },
+          "md": {
+            "value": "{button.regular.container.height.md}",
+            "type": "dimension",
+            "description": "40px button height for action group with text (md size)"
+          },
+          "lg": {
+            "value": "{button.regular.container.height.lg}",
+            "type": "dimension",
+            "description": "44px button height for action group with text (lg size)"
+          }
+        },
+        "padding": {
+          "x": {
+            "3xs": {
+              "value": "{button.regular.container.padding.x.3xs}",
+              "type": "dimension",
+              "description": "6px horizontal padding for action group buttons with text (3xs size)"
+            },
+            "2xs": {
+              "value": "{button.regular.container.padding.x.2xs}",
+              "type": "dimension",
+              "description": "8px horizontal padding for action group buttons with text (2xs size)"
+            },
+            "xs": {
+              "value": "{button.regular.container.padding.x.xs}",
+              "type": "dimension",
+              "description": "10px horizontal padding for action group buttons with text (xs size)"
+            },
+            "sm": {
+              "value": "{button.regular.container.padding.x.sm}",
+              "type": "dimension",
+              "description": "14px horizontal padding for action group buttons with text (sm size)"
+            },
+            "md": {
+              "value": "{button.regular.container.padding.x.md}",
+              "type": "dimension",
+              "description": "16px horizontal padding for action group buttons with text (md size)"
+            },
+            "lg": {
+              "value": "{button.regular.container.padding.x.lg}",
+              "type": "dimension",
+              "description": "18px horizontal padding for action group buttons with text (lg size)"
+            }
+          },
+          "y": {
+            "3xs": {
+              "value": "{button.regular.container.padding.y.3xs}",
+              "type": "dimension",
+              "description": "8px vertical padding for action group buttons with text (3xs size)"
+            },
+            "2xs": {
+              "value": "{button.regular.container.padding.y.2xs}",
+              "type": "dimension",
+              "description": "8px vertical padding for action group buttons with text (2xs size)"
+            },
+            "xs": {
+              "value": "{button.regular.container.padding.y.xs}",
+              "type": "dimension",
+              "description": "8px vertical padding for action group buttons with text (xs size)"
+            },
+            "sm": {
+              "value": "{button.regular.container.padding.y.sm}",
+              "type": "dimension",
+              "description": "8px vertical padding for action group buttons with text (sm size)"
+            },
+            "md": {
+              "value": "{button.regular.container.padding.y.md}",
+              "type": "dimension",
+              "description": "10px vertical padding for action group buttons with text (md size)"
+            },
+            "lg": {
+              "value": "{button.regular.container.padding.y.lg}",
+              "type": "dimension",
+              "description": "10px vertical padding for action group buttons with text (lg size)"
+            }
+          }
+        }
+      },
+      "gap": {
+        "3xs": {
+          "value": "{button.regular.gap.3xs}",
+          "type": "dimension",
+          "description": "4px gap between text and icon in action group buttons (3xs size)"
+        },
+        "2xs": {
+          "value": "{button.regular.gap.2xs}",
+          "type": "dimension",
+          "description": "6px gap between text and icon in action group buttons (2xs size)"
+        },
+        "xs": {
+          "value": "{button.regular.gap.xs}",
+          "type": "dimension",
+          "description": "8px gap between text and icon in action group buttons (xs size)"
+        },
+        "sm": {
+          "value": "{button.regular.gap.sm}",
+          "type": "dimension",
+          "description": "8px gap between text and icon in action group buttons (sm size)"
+        },
+        "md": {
+          "value": "{button.regular.gap.md}",
+          "type": "dimension",
+          "description": "8px gap between text and icon in action group buttons (md size)"
+        },
+        "lg": {
+          "value": "{button.regular.gap.lg}",
+          "type": "dimension",
+          "description": "8px gap between text and icon in action group buttons (lg size)"
+        }
+      },
+      "icon": {
+        "size": {
+          "3xs": {
+            "value": "{button.regular.icon.size.3xs}",
+            "type": "dimension",
+            "description": "14px icon size for action group buttons with text (3xs size)"
+          },
+          "2xs": {
+            "value": "{button.regular.icon.size.2xs}",
+            "type": "dimension",
+            "description": "16px icon size for action group buttons with text (2xs size)"
+          },
+          "xs": {
+            "value": "{button.regular.icon.size.xs}",
+            "type": "dimension",
+            "description": "16px icon size for action group buttons with text (xs size)"
+          },
+          "sm": {
+            "value": "{button.regular.icon.size.sm}",
+            "type": "dimension",
+            "description": "20px icon size for action group buttons with text (sm size)"
+          },
+          "md": {
+            "value": "{button.regular.icon.size.md}",
+            "type": "dimension",
+            "description": "20px icon size for action group buttons with text (md size)"
+          },
+          "lg": {
+            "value": "{button.regular.icon.size.lg}",
+            "type": "dimension",
+            "description": "20px icon size for action group buttons with text (lg size)"
+          }
+        }
+      }
+    },
+    "icon-only": {
+      "container": {
+        "size": {
+          "3xs": {
+            "value": "{button.icon.container.size.3xs}",
+            "type": "dimension",
+            "description": "24px square icon button for action group (3xs size)"
+          },
+          "2xs": {
+            "value": "{button.icon.container.size.2xs}",
+            "type": "dimension",
+            "description": "28px square icon button for action group (2xs size)"
+          },
+          "xs": {
+            "value": "{button.icon.container.size.xs}",
+            "type": "dimension",
+            "description": "32px square icon button for action group (xs size)"
+          },
+          "sm": {
+            "value": "{button.icon.container.size.sm}",
+            "type": "dimension",
+            "description": "36px square icon button for action group (sm size)"
+          },
+          "md": {
+            "value": "{button.icon.container.size.md}",
+            "type": "dimension",
+            "description": "40px square icon button for action group (md size)"
+          },
+          "lg": {
+            "value": "{button.icon.container.size.lg}",
+            "type": "dimension",
+            "description": "44px square icon button for action group (lg size)"
+          }
+        },
+        "padding": {
+          "3xs": {
+            "value": "{button.icon.container.padding.3xs}",
+            "type": "dimension",
+            "description": "4px padding for icon-only action group buttons (3xs size) - Note: Uses padding.2 (8px) for ghost variant"
+          },
+          "2xs": {
+            "value": "{button.icon.container.padding.2xs}",
+            "type": "dimension",
+            "description": "4px padding for icon-only action group buttons (2xs size) - Note: Uses padding.2 (8px) for ghost variant"
+          },
+          "xs": {
+            "value": "{button.icon.container.padding.xs}",
+            "type": "dimension",
+            "description": "8px padding for icon-only action group buttons (xs size)"
+          },
+          "sm": {
+            "value": "{button.icon.container.padding.sm}",
+            "type": "dimension",
+            "description": "8px padding for icon-only action group buttons (sm size)"
+          },
+          "md": {
+            "value": "{button.icon.container.padding.md}",
+            "type": "dimension",
+            "description": "10px padding for icon-only action group buttons (md size)"
+          },
+          "lg": {
+            "value": "{button.icon.container.padding.lg}",
+            "type": "dimension",
+            "description": "12px padding for icon-only action group buttons (lg size)"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "3xs": {
+            "value": "{button.icon.icon.size.3xs}",
+            "type": "dimension",
+            "description": "14px icon for icon-only action group buttons (3xs size)"
+          },
+          "2xs": {
+            "value": "{button.icon.icon.size.2xs}",
+            "type": "dimension",
+            "description": "16px icon for icon-only action group buttons (2xs size)"
+          },
+          "xs": {
+            "value": "{button.icon.icon.size.xs}",
+            "type": "dimension",
+            "description": "16px icon for icon-only action group buttons (xs size)"
+          },
+          "sm": {
+            "value": "{button.icon.icon.size.sm}",
+            "type": "dimension",
+            "description": "20px icon for icon-only action group buttons (sm size)"
+          },
+          "md": {
+            "value": "{button.icon.icon.size.md}",
+            "type": "dimension",
+            "description": "20px icon for icon-only action group buttons (md size)"
+          },
+          "lg": {
+            "value": "{button.icon.icon.size.lg}",
+            "type": "dimension",
+            "description": "20px icon for icon-only action group buttons (lg size)"
+          }
+        }
+      }
+    }
+  }
+}
+
