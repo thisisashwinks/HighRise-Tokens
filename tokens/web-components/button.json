@@ -2322,133 +2322,131 @@
       }
     },
     "regular": {
-      "container": {
-        "height": {
+      "height": {
+        "3xs": {
+          "value": "{size.height.3xs}",
+          "type": "dimension",
+          "description": "24px button height for 3xs"
+        },
+        "2xs": {
+          "value": "{size.height.2xs}",
+          "type": "dimension",
+          "description": "28px button height for 2xs"
+        },
+        "xs": {
+          "value": "{size.height.xs}",
+          "type": "dimension",
+          "description": "32px button height for xs"
+        },
+        "sm": {
+          "value": "{size.height.sm}",
+          "type": "dimension",
+          "description": "36px button height for sm"
+        },
+        "md": {
+          "value": "{size.height.md}",
+          "type": "dimension",
+          "description": "40px button height for md"
+        },
+        "lg": {
+          "value": "{size.height.lg}",
+          "type": "dimension",
+          "description": "44px button height for lg"
+        },
+        "xl": {
+          "value": "{size.height.xl}",
+          "type": "dimension",
+          "description": "48px button height for xl"
+        },
+        "2xl": {
+          "value": "{size.height.2xl}",
+          "type": "dimension",
+          "description": "56px button height for 2xl"
+        }
+      },
+      "padding": {
+        "x": {
           "3xs": {
-            "value": "{size.height.3xs}",
+            "value": "{padding.x.4xs}",
             "type": "dimension",
-            "description": "24px button height for 3xs"
+            "description": "6px horizontal padding for 3xs"
           },
           "2xs": {
-            "value": "{size.height.2xs}",
+            "value": "{padding.x.3xs}",
             "type": "dimension",
-            "description": "28px button height for 2xs"
+            "description": "8px horizontal padding for 2xs"
           },
           "xs": {
-            "value": "{size.height.xs}",
+            "value": "{padding.x.2xs}",
             "type": "dimension",
-            "description": "32px button height for xs"
+            "description": "10px horizontal padding for xs"
           },
           "sm": {
-            "value": "{size.height.sm}",
+            "value": "{padding.x.sm}",
             "type": "dimension",
-            "description": "36px button height for sm"
+            "description": "14px horizontal padding for sm"
           },
           "md": {
-            "value": "{size.height.md}",
+            "value": "{padding.x.md}",
             "type": "dimension",
-            "description": "40px button height for md"
+            "description": "16px horizontal padding for md"
           },
           "lg": {
-            "value": "{size.height.lg}",
+            "value": "{padding.x.lg}",
             "type": "dimension",
-            "description": "44px button height for lg"
+            "description": "18px horizontal padding for lg"
           },
           "xl": {
-            "value": "{size.height.xl}",
+            "value": "{padding.x.xl}",
             "type": "dimension",
-            "description": "48px button height for xl"
+            "description": "20px horizontal padding for xl"
           },
           "2xl": {
-            "value": "{size.height.2xl}",
+            "value": "{padding.x.2xl}",
             "type": "dimension",
-            "description": "56px button height for 2xl"
+            "description": "28px horizontal padding for 2xl"
           }
         },
-        "padding": {
-          "x": {
-            "3xs": {
-              "value": "{padding.x.4xs}",
-              "type": "dimension",
-              "description": "6px horizontal padding for 3xs"
-            },
-            "2xs": {
-              "value": "{padding.x.3xs}",
-              "type": "dimension",
-              "description": "8px horizontal padding for 2xs"
-            },
-            "xs": {
-              "value": "{padding.x.2xs}",
-              "type": "dimension",
-              "description": "10px horizontal padding for xs"
-            },
-            "sm": {
-              "value": "{padding.x.sm}",
-              "type": "dimension",
-              "description": "14px horizontal padding for sm"
-            },
-            "md": {
-              "value": "{padding.x.md}",
-              "type": "dimension",
-              "description": "16px horizontal padding for md"
-            },
-            "lg": {
-              "value": "{padding.x.lg}",
-              "type": "dimension",
-              "description": "18px horizontal padding for lg"
-            },
-            "xl": {
-              "value": "{padding.x.xl}",
-              "type": "dimension",
-              "description": "20px horizontal padding for xl"
-            },
-            "2xl": {
-              "value": "{padding.x.2xl}",
-              "type": "dimension",
-              "description": "28px horizontal padding for 2xl"
-            }
+        "y": {
+          "3xs": {
+            "value": "{padding.y.3xs}",
+            "type": "dimension",
+            "description": "8px vertical padding for 3xs"
           },
-          "y": {
-            "3xs": {
-              "value": "{padding.y.3xs}",
-              "type": "dimension",
-              "description": "8px vertical padding for 3xs"
-            },
-            "2xs": {
-              "value": "{padding.y.2xs}",
-              "type": "dimension",
-              "description": "8px vertical padding for 2xs"
-            },
-            "xs": {
-              "value": "{padding.y.xs}",
-              "type": "dimension",
-              "description": "8px vertical padding for xs"
-            },
-            "sm": {
-              "value": "{padding.y.sm}",
-              "type": "dimension",
-              "description": "8px vertical padding for sm"
-            },
-            "md": {
-              "value": "{padding.y.md}",
-              "type": "dimension",
-              "description": "10px vertical padding for md"
-            },
-            "lg": {
-              "value": "{padding.y.lg}",
-              "type": "dimension",
-              "description": "10px vertical padding for lg"
-            },
-            "xl": {
-              "value": "{padding.y.xl}",
-              "type": "dimension",
-              "description": "12px vertical padding for xl"
-            },
-            "2xl": {
-              "value": "{padding.y.2xl}",
-              "type": "dimension",
-              "description": "16px vertical padding for 2xl"
-            }
+          "2xs": {
+            "value": "{padding.y.2xs}",
+            "type": "dimension",
+            "description": "8px vertical padding for 2xs"
+          },
+          "xs": {
+            "value": "{padding.y.xs}",
+            "type": "dimension",
+            "description": "8px vertical padding for xs"
+          },
+          "sm": {
+            "value": "{padding.y.sm}",
+            "type": "dimension",
+            "description": "8px vertical padding for sm"
+          },
+          "md": {
+            "value": "{padding.y.md}",
+            "type": "dimension",
+            "description": "10px vertical padding for md"
+          },
+          "lg": {
+            "value": "{padding.y.lg}",
+            "type": "dimension",
+            "description": "10px vertical padding for lg"
+          },
+          "xl": {
+            "value": "{padding.y.xl}",
+            "type": "dimension",
+            "description": "12px vertical padding for xl"
+          },
+          "2xl": {
+            "value": "{padding.y.2xl}",
+            "type": "dimension",
+            "description": "16px vertical padding for 2xl"
           }
         }
       },
@@ -2540,90 +2538,88 @@
       }
     },
     "icon": {
-      "container": {
-        "size": {
-          "3xs": {
-            "value": "{size.3xs}",
-            "type": "dimension",
-            "description": "24px square icon button"
-          },
-          "2xs": {
-            "value": "{size.2xs}",
-            "type": "dimension",
-            "description": "28px square icon button"
-          },
-          "xs": {
-            "value": "{size.xs}",
-            "type": "dimension",
-            "description": "32px square icon button"
-          },
-          "sm": {
-            "value": "{size.sm}",
-            "type": "dimension",
-            "description": "36px square icon button"
-          },
-          "md": {
-            "value": "{size.md}",
-            "type": "dimension",
-            "description": "40px square icon button"
-          },
-          "lg": {
-            "value": "{size.lg}",
-            "type": "dimension",
-            "description": "44px square icon button"
-          },
-          "xl": {
-            "value": "{size.xl}",
-            "type": "dimension",
-            "description": "48px square icon button"
-          },
-          "2xl": {
-            "value": "{size.2xl}",
-            "type": "dimension",
-            "description": "56px square icon button"
-          }
+      "height": {
+        "3xs": {
+          "value": "{size.3xs}",
+          "type": "dimension",
+          "description": "24px square icon button height for 3xs"
         },
-        "padding": {
-          "3xs": {
-            "value": "{padding.1[5]}",
-            "type": "dimension",
-            "description": "4px padding for 3xs icon button"
-          },
-          "2xs": {
-            "value": "{padding.1[5]}",
-            "type": "dimension",
-            "description": "4px padding for 2xs icon button"
-          },
-          "xs": {
-            "value": "{padding.2}",
-            "type": "dimension",
-            "description": "8px padding for xs icon button"
-          },
-          "sm": {
-            "value": "{padding.2}",
-            "type": "dimension",
-            "description": "8px padding for sm icon button"
-          },
-          "md": {
-            "value": "{padding.2[5]}",
-            "type": "dimension",
-            "description": "10px padding for md icon button"
-          },
-          "lg": {
-            "value": "{padding.3}",
-            "type": "dimension",
-            "description": "12px padding for lg icon button"
-          },
-          "xl": {
-            "value": "{padding.3[5]}",
-            "type": "dimension",
-            "description": "14px padding for xl icon button"
-          },
-          "2xl": {
-            "value": "{padding.4}",
-            "type": "dimension",
-            "description": "16px padding for 2xl icon button"
-          }
+        "2xs": {
+          "value": "{size.2xs}",
+          "type": "dimension",
+          "description": "28px square icon button height for 2xs"
+        },
+        "xs": {
+          "value": "{size.xs}",
+          "type": "dimension",
+          "description": "32px square icon button height for xs"
+        },
+        "sm": {
+          "value": "{size.sm}",
+          "type": "dimension",
+          "description": "36px square icon button height for sm"
+        },
+        "md": {
+          "value": "{size.md}",
+          "type": "dimension",
+          "description": "40px square icon button height for md"
+        },
+        "lg": {
+          "value": "{size.lg}",
+          "type": "dimension",
+          "description": "44px square icon button height for lg"
+        },
+        "xl": {
+          "value": "{size.xl}",
+          "type": "dimension",
+          "description": "48px square icon button height for xl"
+        },
+        "2xl": {
+          "value": "{size.2xl}",
+          "type": "dimension",
+          "description": "56px square icon button heighr for 2xl"
+        }
+      },
+      "padding": {
+        "3xs": {
+          "value": "{padding.1[5]}",
+          "type": "dimension",
+          "description": "6px padding for 3xs icon button"
+        },
+        "2xs": {
+          "value": "{padding.1[5]}",
+          "type": "dimension",
+          "description": "6px padding for 2xs icon button"
+        },
+        "xs": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "8px padding for xs icon button"
+        },
+        "sm": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "8px padding for sm icon button"
+        },
+        "md": {
+          "value": "{padding.2[5]}",
+          "type": "dimension",
+          "description": "10px padding for md icon button"
+        },
+        "lg": {
+          "value": "{padding.3}",
+          "type": "dimension",
+          "description": "12px padding for lg icon button"
+        },
+        "xl": {
+          "value": "{padding.3[5]}",
+          "type": "dimension",
+          "description": "14px padding for xl icon button"
+        },
+        "2xl": {
+          "value": "{padding.4}",
+          "type": "dimension",
+          "description": "16px padding for 2xl icon button"
         }
       },
       "icon": {
