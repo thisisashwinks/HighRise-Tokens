@@ -1,0 +1,64 @@
+{
+  "no-badge": {
+    "color": {
+      "background": {
+        "default": {
+          "value": "{color.background.primary.subtle.1}",
+          "type": "color",
+          "description": "Default background color for no. badge - primary/100 - #d1e0ff"
+        },
+        "disabled": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "description": "Disabled background color for no. badge - neutral/100 - #f2f4f7"
+        }
+      },
+      "text": {
+        "default": {
+          "value": "{color.text.primary.body.1}",
+          "type": "color",
+          "description": "Default text color for no. badge - primary/700 - #004eeb"
+        },
+        "disabled": {
+          "value": "{color.text.neutral.subtitle.2}",
+          "type": "color",
+          "description": "Disabled text color for no. badge - neutral/400 - #98a2b3"
+        }
+      }
+    },
+    "typography": {
+      "value": "{font.body.semibold.4xs}",
+      "type": "typography",
+      "description": "8px semibold font for no. badge"
+    },
+    "padding": {
+      "x": {
+        "value": "{padding.x.4xs}",
+        "type": "dimension",
+        "description": "Mobile no. badge horizontal padding - 6px"
+      },
+      "y": {
+        "value": "{padding.y.none}",
+        "type": "dimension",
+        "description": "Mobile no. badge vertical padding - 0px"
+      },
+      "gap": {
+        "value": "{gap.4xs}",
+        "type": "dimension",
+        "description": "Mobile no. badge internal gap - 2px"
+      }
+    },
+    "border": {
+      "radius": {
+        "value": "{border.radius.2xs}",
+        "type": "dimension",
+        "description": "Mobile no. badge border radius - 8px"
+      }
+    },
+    "sizing": {
+      "value": "{size.5xs}",
+      "type": "dimension",
+      "description": "Mobile no. badge size - 16px"
+    }
+  }
+}

@@ -669,6 +669,16 @@
         "description": "Size (height): 56px"
       }
     },
+    "5xs": {
+      "value": "{size.4}",
+      "type": "dimension",
+      "description": "Size: 16px"
+    },
+    "4xs": {
+      "value": "{size.5}",
+      "type": "dimension",
+      "description": "Size: 20px"
+    },
     "3xs": {
       "value": "{size.6}",
       "type": "dimension",
@@ -3548,6 +3558,11 @@
       "type": "dimension",
       "description": "Gap: -10px"
     },
+    "none": {
+      "value": "{gap.0}",
+      "type": "dimension",
+      "description": "Gap: 0px"
+    },
     "4xs": {
       "value": "{gap.0[5]}",
       "type": "dimension",
@@ -4756,6 +4771,11 @@
         "value": "{border.radius.2}",
         "type": "dimension",
         "description": "Border radius: 8px"
+      },
+      "3xl": {
+        "value": "{border.radius.3}",
+        "type": "dimension",
+        "description": "Border radius: 12px"
       },
       "1[5]": {
         "value": "{border.radius.1[5]}",

@@ -1,0 +1,34 @@
+{
+  "content-switcher": {
+    "color": {
+      "background": {
+        "value": "{color.background.neutral.subtle.1}",
+        "type": "color",
+        "description": "Mobile content switcher container background - neutral/100 - #f2f4f7"
+      },
+      "border": {
+        "value": "{color.border.transparent}",
+        "type": "color",
+        "description": "Mobile content switcher container border - transparent - #FFFFFF00"
+      }
+    },
+      "padding": {
+        "value": "{padding.2xs}",
+        "type": "dimension",
+        "description": "Mobile content switcher container padding - 8px"
+      },
+      "gap": {
+        "value": "{gap.sm}",
+        "type": "dimension",
+        "description": "Mobile content switcher gap between items - 8px"
+      },
+    "border": {
+      "radius": {
+        "value": "{border.radius.3xl}",
+        "type": "dimension",
+        "description": "Mobile content switcher border radius - 12px"
+      }
+    }
+  }
+}
+
