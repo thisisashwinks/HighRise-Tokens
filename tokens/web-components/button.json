@@ -7,108 +7,108 @@
             "default": {
               "value": "{color.background.primary.default}",
               "type": "color",
-              "description": "Primary button default background"
+              "description": "Primary button default background - #0050C8"
             },
             "hover": {
               "value": "{color.background.primary.intense.1}",
               "type": "color",
-              "description": "Primary button hover background"
+              "description": "Primary button hover background - #0042A8"
             },
             "active": {
               "value": "{color.background.primary.intense.2}",
               "type": "color",
-              "description": "Primary button active background"
+              "description": "Primary button active background - #003588"
             },
             "focused": {
               "value": "{color.background.primary.intense.1}",
               "type": "color",
-              "description": "Primary button focused background"
+              "description": "Primary button focused background - #0042A8"
             },
             "disabled": {
               "value": "{color.background.primary.subtle.2}",
               "type": "color",
-              "description": "Primary button disabled background"
+              "description": "Primary button disabled background - #E2E8F0"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.primary.default}",
               "type": "color",
-              "description": "Primary button default border"
+              "description": "Primary button default border - #0050C8"
             },
             "hover": {
               "value": "{color.border.primary.intense.0}",
               "type": "color",
-              "description": "Primary button hover border"
+              "description": "Primary button hover border - #0042A8"
             },
             "active": {
               "value": "{color.border.primary.default}",
               "type": "color",
-              "description": "Primary button active border"
+              "description": "Primary button active border - #003588"
             },
             "focused": {
               "value": "{color.border.primary.default}",
               "type": "color",
-              "description": "Primary button focused border"
+              "description": "Primary button focused border - #0042A8"
             },
             "disabled": {
               "value": "{color.border.primary.subtle.1}",
               "type": "color",
-              "description": "Primary button disabled border"
+              "description": "Primary button disabled border - #E2E8F0"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Primary button default text color"
+              "description": "Primary button default text color - #FFFFFF"
             },
             "hover": {
               "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Primary button hover text color"
+              "description": "Primary button hover text color - #FFFFFF"
             },
             "active": {
               "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Primary button active text color"
+              "description": "Primary button active text color - #FFFFFF"
             },
             "focused": {
               "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Primary button focused text color"
+              "description": "Primary button focused text color - #FFFFFF"
             },
             "disabled": {
               "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Primary button disabled text color"
+              "description": "Primary button disabled text color - #FFFFFF"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Primary button default icon color"
+              "description": "Primary button default icon color - #FFFFFF"
             },
             "hover": {
               "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Primary button hover icon color"
+              "description": "Primary button hover icon color - #FFFFFF"
             },
             "active": {
               "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Primary button active icon color"
+              "description": "Primary button active icon color - #FFFFFF"
             },
             "focused": {
               "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Primary button focused icon color"
+              "description": "Primary button focused icon color - #FFFFFF"
             },
             "disabled": {
               "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Primary button disabled icon color"
+              "description": "Primary button disabled icon color - #FFFFFF"
             }
           }
         },
@@ -117,108 +117,108 @@
             "default": {
               "value": "{color.background.neutral.base}",
               "type": "color",
-              "description": "Secondary button default background"
+              "description": "Secondary button default background - #FFFFFF"
             },
             "hover": {
               "value": "{color.background.neutral.subtle.0}",
               "type": "color",
-              "description": "Secondary button hover background"
+              "description": "Secondary button hover background - #F9FAFB"
             },
             "active": {
               "value": "{color.background.primary.subtle.1}",
               "type": "color",
-              "description": "Secondary button active background"
+              "description": "Secondary button active background - #d1e0ff"
             },
             "focused": {
               "value": "{color.background.primary.subtle.0}",
               "type": "color",
-              "description": "Secondary button focused background"
+              "description": "Secondary button focused background - #eff4ff "
             },
             "disabled": {
               "value": "{color.background.neutral.base}",
               "type": "color",
-              "description": "Secondary button disabled background"
+              "description": "Secondary button disabled background - #ffffff"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.primary.subtle.2}",
               "type": "color",
-              "description": "Secondary button default border"
+              "description": "Secondary button default border - #0050C8"
             },
             "hover": {
               "value": "{color.border.primary.subtle.2}",
               "type": "color",
-              "description": "Secondary button hover border"
+              "description": "Secondary button hover border - #0042A8"
             },
             "active": {
               "value": "{color.border.primary.subtle.2}",
               "type": "color",
-              "description": "Secondary button active border"
+              "description": "Secondary button active border - #003588"
             },
             "focused": {
               "value": "{color.border.primary.subtle.2}",
               "type": "color",
-              "description": "Secondary button focused border"
+              "description": "Secondary button focused border - #0042A8"
             },
             "disabled": {
               "value": "{color.border.primary.subtle.1}",
               "type": "color",
-              "description": "Secondary button disabled border"
+              "description": "Secondary button disabled border - #E2E8F0"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.primary.body.1}",
               "type": "color",
-              "description": "Secondary button default text color"
+              "description": "Secondary button default text color - #101828"
             },
             "hover": {
               "value": "{color.text.primary.title.2}",
               "type": "color",
-              "description": "Secondary button hover text color"
+              "description": "Secondary button hover text color - #101828"
             },
             "active": {
               "value": "{color.text.primary.title.1}",
               "type": "color",
-              "description": "Secondary button active text color"
+              "description": "Secondary button active text color - #101828"
             },
             "focused": {
               "value": "{color.text.primary.title.2}",
               "type": "color",
-              "description": "Secondary button focused text color"
+              "description": "Secondary button focused text color - #101828"
             },
             "disabled": {
               "value": "{color.text.primary.inactive.2}",
               "type": "color",
-              "description": "Secondary button disabled text color"
+              "description": "Secondary button disabled text color - #667085"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.primary.default}",
               "type": "color",
-              "description": "Secondary button default icon color"
+              "description": "Secondary button default icon color - #101828"
             },
             "hover": {
               "value": "{color.icon.primary.default}",
               "type": "color",
-              "description": "Secondary button hover icon color"
+              "description": "Secondary button hover icon color - #101828"
             },
             "active": {
               "value": "{color.icon.primary.default}",
               "type": "color",
-              "description": "Secondary button active icon color"
+              "description": "Secondary button active icon color - #101828"
             },
             "focused": {
               "value": "{color.icon.primary.default}",
               "type": "color",
-              "description": "Secondary button focused icon color"
+              "description": "Secondary button focused icon color - #101828"
             },
             "disabled": {
               "value": "{color.icon.primary.subtle.0}",
               "type": "color",
-              "description": "Secondary button disabled icon color"
+              "description": "Secondary button disabled icon color - #667085"
             }
           }
         },
@@ -227,108 +227,108 @@
             "default": {
               "value": "{color.background.primary.subtle.0}",
               "type": "color",
-              "description": "Tertiary button default background"
+              "description": "Tertiary button default background - #F2F4F7"
             },
             "hover": {
               "value": "{color.background.primary.subtle.1}",
               "type": "color",
-              "description": "Tertiary button hover background"
+              "description": "Tertiary button hover background - #F2F4F7"
             },
             "active": {
               "value": "{color.background.primary.subtle.2}",
               "type": "color",
-              "description": "Tertiary button active background"
+              "description": "Tertiary button active background - #F2F4F7"
             },
             "focused": {
               "value": "{color.background.primary.subtle.1}",
               "type": "color",
-              "description": "Tertiary button focused background"
+              "description": "Tertiary button focused background - #F2F4F7"
             },
             "disabled": {
               "value": "{color.background.primary.inactive}",
               "type": "color",
-              "description": "Tertiary button disabled background"
+              "description": "Tertiary button disabled background - #E2E8F0"
             }
           },
           "border": {
             "default": {
               "value": "{color.border.primary.subtle.0}",
               "type": "color",
-              "description": "Tertiary button default border"
+              "description": "Tertiary button default border - #0050C8"
             },
             "hover": {
               "value": "{color.border.primary.subtle.1}",
               "type": "color",
-              "description": "Tertiary button hover border"
+              "description": "Tertiary button hover border - #0042A8"
             },
             "active": {
               "value": "{color.border.primary.subtle.2}",
               "type": "color",
-              "description": "Tertiary button active border"
+              "description": "Tertiary button active border - #003588"
             },
             "focused": {
               "value": "{color.border.primary.subtle.1}",
               "type": "color",
-              "description": "Tertiary button focused border"
+              "description": "Tertiary button focused border - #0042A8"
             },
             "disabled": {
               "value": "{color.border.primary.inactive}",
               "type": "color",
-              "description": "Tertiary button disabled border"
+              "description": "Tertiary button disabled border - #E2E8F0"
             }
           },
           "text": {
             "default": {
               "value": "{color.text.primary.body.1}",
               "type": "color",
-              "description": "Tertiary button default text color"
+              "description": "Tertiary button default text color - #004EEB"
             },
             "hover": {
               "value": "{color.text.primary.title.2}",
               "type": "color",
-              "description": "Tertiary button hover text color"
+              "description": "Tertiary button hover text color - #0040C1"
             },
             "active": {
               "value": "{color.text.primary.title.1}",
               "type": "color",
-              "description": "Tertiary button active text color"
+              "description": "Tertiary button active text color - #00359E"
             },
             "focused": {
               "value": "{color.text.primary.title.2}",
               "type": "color",
-              "description": "Tertiary button focused text color"
+              "description": "Tertiary button focused text color - #0040C1"
             },
             "disabled": {
               "value": "{color.text.primary.inactive.1}",
               "type": "color",
-              "description": "Tertiary button disabled text color"
+              "description": "Tertiary button disabled text color - #84ADFF"
             }
           },
           "icon": {
             "default": {
               "value": "{color.icon.primary.default}",
               "type": "color",
-              "description": "Tertiary button default icon color"
+              "description": "Tertiary button default icon color - #004EEB"
             },
             "hover": {
               "value": "{color.icon.primary.default}",
               "type": "color",
-              "description": "Tertiary button hover icon color"
+              "description": "Tertiary button hover icon color - #004EEB"
             },
             "active": {
               "value": "{color.icon.primary.default}",
               "type": "color",
-              "description": "Tertiary button active icon color"
+              "description": "Tertiary button active icon color - #004EEB"
             },
             "focused": {
               "value": "{color.icon.primary.default}",
               "type": "color",
-              "description": "Tertiary button focused icon color"
+              "description": "Tertiary button focused icon color - #004EEB"
             },
             "disabled": {
               "value": "{color.icon.primary.subtle.0}",
               "type": "color",
-              "description": "Tertiary button disabled icon color"
+              "description": "Tertiary button disabled icon color - #B2CCFF"
             }
           }
         },
@@ -337,7 +337,7 @@
             "default": {
               "value": "{color.background.transparent}",
               "type": "color",
-              "description": "Ghost button default background"
+              "description": "Ghost button default background - #FFFFFF00"
             },
             "hover": {
               "value": "{color.background.primary.subtle.1}",

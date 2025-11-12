@@ -29,38 +29,38 @@
         "3xs": {
           "value": "{border.radius.3xs}",
           "type": "dimension",
-          "description": "Input border radius for 3xs size"
+          "description": "Input border radius for 3xs size - 4px"
         },
         "2xs": {
           "value": "{border.radius.2xs}",
           "type": "dimension",
-          "description": "Input border radius for 2xs size"
+          "description": "Input border radius for 2xs size - 4px"
         },
         "xs": {
           "value": "{border.radius.xs}",
           "type": "dimension",
-          "description": "Input border radius for xs size"
+          "description": "Input border radius for xs size - 4px"
         },
         "sm": {
           "value": "{border.radius.1[5]}",
           "type": "dimension",
-          "description": "Input border radius for sm size"
+          "description": "Input border radius for sm size - 6px"
         },
         "md": {
           "value": "{border.radius.md}",
           "type": "dimension",
-          "description": "Input border radius for md size"
+          "description": "Input border radius for md size - 8px"
         },
         "lg": {
           "value": "{border.radius.lg}",
           "type": "dimension",
-          "description": "Input border radius for lg size"
+          "description": "Input border radius for lg size - 8px"
         }
       },
       "width": {
         "value": "{border.width.default}",
         "type": "dimension",
-        "description": "Input border width"
+        "description": "Input border width - 1px"
       }
     },
     "padding": {
@@ -69,38 +69,38 @@
         "3xs": {
           "value": "{padding.x.4xs}",
           "type": "dimension",
-          "description": "Input horizontal padding for 3xs size"
+          "description": "Input horizontal padding for 3xs size - 8px"
         },
         "2xs": {
           "value": "{padding.x.4xs}",
           "type": "dimension",
-          "description": "Input horizontal padding for 2xs size"
+          "description": "Input horizontal padding for 2xs size - 8px"
         },
         "xs": {
           "value": "{padding.x.3xs}",
           "type": "dimension",
-          "description": "Input horizontal padding for xs size"
+          "description": "Input horizontal padding for xs size - 12px"
         },
         "sm": {
           "value": "{padding.x.3xs}",
           "type": "dimension",
-          "description": "Input horizontal padding for sm size"
+          "description": "Input horizontal padding for sm size - 12px"
         },
         "md": {
           "value": "{padding.x.xs}",
           "type": "dimension",
-          "description": "Input horizontal padding for md size"
+          "description": "Input horizontal padding for md size - 16px"
         },
         "lg": {
           "value": "{padding.x.sm}",
           "type": "dimension",
-          "description": "Input horizontal padding for lg size"
+          "description": "Input horizontal padding for lg size - 18px"
         }
       },
       "y": {
         "value": "{padding.y.none}",
         "type": "dimension",
-        "description": "Input vertical padding"
+        "description": "Input vertical padding - 0px"
       }
     },
     "height": {
@@ -108,46 +108,46 @@
       "3xs": {
         "value": "{size.height.3xs}",
         "type": "dimension",
-        "description": "Input height for 3xs size"
+        "description": "Input height for 3xs size - 24px"
       },
       "2xs": {
         "value": "{size.height.2xs}",
         "type": "dimension",
-        "description": "Input height for 2xs size"
+        "description": "Input height for 2xs size - 28px"
       },
       "xs": {
         "value": "{size.height.xs}",
         "type": "dimension",
-        "description": "Input height for xs size"
+        "description": "Input height for xs size - 32px"
       },
       "sm": {
         "value": "{size.height.sm}",
         "type": "dimension",
-        "description": "Input height for sm size"
+        "description": "Input height for sm size - 36px"
       },
       "md": {
         "value": "{size.height.md}",
         "type": "dimension",
-        "description": "Input height for md size"
+        "description": "Input height for md size - 40px"
       },
       "lg": {
         "value": "{size.height.lg}",
         "type": "dimension",
-        "description": "Input height for lg size"
+        "description": "Input height for lg size - 44px"
       }
     },
     "gap": {
       "$comment": "Spacing between input elements (icons, text, and other internal elements)",
       "value": "{gap.xs}",
       "type": "dimension",
-      "description": "Gap between input elements"
+      "description": "Gap between input elements - 8px"
     },
     "shadow": {
       "$comment": "Subtle elevation shadow for input fields",
       "default": {
         "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
         "type": "boxShadow",
-        "description": "Input default shadow"
+        "description": "Input default shadow - 0px 1px 2px 0px rgba(16, 24, 40, 0.05)"
       }
     },
     "text": {
@@ -156,32 +156,32 @@
         "3xs": {
           "value": "{font.body.regular.base}",
           "type": "string",
-          "description": "Input text typography for 3xs size"
+          "description": "Input text typography for 3xs size - 14px regular"
         },
         "2xs": {
           "value": "{font.body.regular.base}",
           "type": "string",
-          "description": "Input text typography for 2xs size"
+          "description": "Input text typography for 2xs size - 14px regular"
         },
         "xs": {
           "value": "{font.body.regular.base}",
           "type": "string",
-          "description": "Input text typography for xs size"
+          "description": "Input text typography for xs size - 14px regular"
         },
         "sm": {
-          "value": "{font.body.regular.md}",
+          "value": "{font.body.regular.base}",
           "type": "string",
-          "description": "Input text typography for sm size"
+          "description": "Input text typography for sm size - 14px regular"
         },
         "md": {
           "value": "{font.body.regular.2xl}",
           "type": "string",
-          "description": "Input text typography for md size"
+          "description": "Input text typography for md size - 16px regular"
         },
         "lg": {
           "value": "{font.body.regular.2xl}",
           "type": "string",
-          "description": "Input text typography for lg size"
+          "description": "Input text typography for lg size - 16px regular"
         }
       }
     },
@@ -191,32 +191,32 @@
         "3xs": {
           "value": "{size.icon.3xs}",
           "type": "dimension",
-          "description": "Input icon size for 3xs"
+          "description": "Input icon size for 3xs - 12px"
         },
         "2xs": {
           "value": "{size.icon.2xs}",
           "type": "dimension",
-          "description": "Input icon size for 2xs"
+          "description": "Input icon size for 2xs - 14px"
         },
         "xs": {
           "value": "{size.icon.2xs}",
           "type": "dimension",
-          "description": "Input icon size for xs"
+          "description": "Input icon size for xs - 14px"
         },
         "sm": {
           "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Input icon size for sm"
+          "description": "Input icon size for sm - 16px"
         },
         "md": {
           "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Input icon size for md"
+          "description": "Input icon size for md - 16px"
         },
         "lg": {
           "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Input icon size for lg"
+          "description": "Input icon size for lg - 16px"
         }
       }
     },
@@ -228,140 +228,140 @@
           "default": {
             "value": "{color.background.neutral.base}",
             "type": "color",
-            "description": "Default input background in default state"
+            "description": "Default input background in default state - white/base - #ffffff"
           },
           "hover": {
             "value": "{color.background.neutral.base}",
             "type": "color",
-            "description": "Default input background in hover state"
+            "description": "Default input background in hover state - white/base - #ffffff"
           },
           "filled": {
             "value": "{color.background.neutral.base}",
             "type": "color",
-            "description": "Default input background in filled state"
+            "description": "Default input background in filled state - white/base - #ffffff"
           },
           "focused": {
             "value": "{color.background.neutral.base}",
             "type": "color",
-            "description": "Default input background in focused state"
+            "description": "Default input background in focused state - white/base - #ffffff"
           },
           "hover-filled": {
             "value": "{color.background.neutral.base}",
             "type": "color",
-            "description": "Default input background in hover-filled state"
+            "description": "Default input background in hover-filled state - white/base - #ffffff"
           },
           "disabled": {
             "value": "{color.background.neutral.subtle.0}",
             "type": "color",
-            "description": "Default input background in disabled state"
+            "description": "Default input background in disabled state - gray/50 - #f9fafb"
           }
         },
         "border": {
           "default": {
             "value": "{color.border.neutral.default}",
             "type": "color",
-            "description": "Default input border in default state"
+            "description": "Default input border in default state - gray/300 - #d0d5dd"
           },
           "hover": {
             "value": "{color.border.primary.default}",
             "type": "color",
-            "description": "Default input border in hover state"
+            "description": "Default input border in hover state - blue/600 - #155EEF"
           },
           "filled": {
             "value": "{color.border.neutral.default}",
             "type": "color",
-            "description": "Default input border in filled state"
+            "description": "Default input border in filled state - gray/300 - #d0d5dd"
           },
           "focused": {
-            "value": "{color.border.primary.subtle.2}",
+            "value": "{color.border.primary.default}",
             "type": "color",
-            "description": "Default input border in focused state"
+            "description": "Default input border in focused state - blue/600 - #155EEF"
           },
           "hover-filled": {
             "value": "{color.border.primary.default}",
             "type": "color",
-            "description": "Default input border in hover-filled state"
+            "description": "Default input border in hover-filled state - blue/600 - #155EEF"
           },
           "disabled": {
             "value": "{color.border.neutral.default}",
             "type": "color",
-            "description": "Default input border in disabled state"
+            "description": "Default input border in disabled state - gray/300 - #d0d5dd"
           }
         },
         "text": {
           "default": {
             "value": "{color.text.neutral.subtitle.1}",
             "type": "color",
-            "description": "Default input text color in default state"
+            "description": "Default input text color in default state - gray/500 - #667085"
           },
           "hover": {
             "value": "{color.text.neutral.subtitle.1}",
             "type": "color",
-            "description": "Default input text color in hover state"
+            "description": "Default input text color in hover state - gray/500 - #667085"
           },
           "filled": {
             "value": "{color.text.neutral.title.1}",
             "type": "color",
-            "description": "Default input text color in filled state"
+            "description": "Default input text color in filled state - gray/900 - #101828"
           },
           "focused": {
             "value": "{color.text.neutral.title.1}",
             "type": "color",
-            "description": "Default input text color in focused state"
+            "description": "Default input text color in focused state - gray/900 - #101828"
           },
           "hover-filled": {
             "value": "{color.text.neutral.title.1}",
             "type": "color",
-            "description": "Default input text color in hover-filled state"
+            "description": "Default input text color in hover-filled state - gray/900 - #101828"
           },
           "disabled": {
             "value": "{color.text.neutral.subtitle.2}",
             "type": "color",
-            "description": "Default input text color in disabled state"
+            "description": "Default input text color in disabled state - gray/400 - #98a2b3"
           }
         },
         "icon": {
           "default": {
             "value": "{color.icon.neutral.info}",
             "type": "color",
-            "description": "Default input icon color in default state"
+            "description": "Default input icon color in default state - gray/400 - #98a2b3"
           },
           "hover": {
             "value": "{color.icon.neutral.info}",
             "type": "color",
-            "description": "Default input icon color in hover state"
+            "description": "Default input icon color in hover state - gray/400 - #98a2b3"
           },
           "filled": {
             "value": "{color.icon.neutral.info}",
             "type": "color",
-            "description": "Default input icon color in filled state"
+            "description": "Default input icon color in filled state - gray/400 - #98a2b3"
           },
           "focused": {
             "value": "{color.icon.neutral.info}",
             "type": "color",
-            "description": "Default input icon color in focused state"
+            "description": "Default input icon color in focused state - gray/400 - #98a2b3"
           },
           "hover-filled": {
             "value": "{color.icon.neutral.info}",
             "type": "color",
-            "description": "Default input icon color in hover-filled state"
+            "description": "Default input icon color in hover-filled state - gray/400 - #98a2b3"
           },
           "disabled": {
             "value": "{color.icon.neutral.subtle.2}",
             "type": "color",
-            "description": "Default input icon color in disabled state"
+            "description": "Default input icon color in disabled state - gray/300 - #d0d5dd"
           }
         },
         "focus": {
           "ring": {
             "value": "{color.border.primary.subtle.2}",
             "type": "color",
-            "description": "Default input focus ring color"
+            "description": "Default input focus ring color - primary/300 - #84ADFF"
           },
           "shadow": {
             "value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
             "type": "boxShadow",
-            "description": "Default input focus shadow"
+            "description": "Default input focus shadow - 0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)"
           }
         }
       },
@@ -371,141 +371,141 @@
           "default": {
             "value": "{color.background.neutral.base}",
             "type": "color",
-            "description": "Destructive input background in default state"
+            "description": "Destructive input background in default state - white/base - #ffffff"
           },
           "hover": {
             "value": "{color.background.neutral.base}",
             "type": "color",
-            "description": "Destructive input background in hover state"
+            "description": "Destructive input background in hover state - white/base - #ffffff"
           },
           "filled": {
             "value": "{color.background.neutral.base}",
             "type": "color",
-            "description": "Destructive input background in filled state"
+            "description": "Destructive input background in filled state - white/base - #ffffff"
           },
           "focused": {
             "value": "{color.background.neutral.base}",
             "type": "color",
-            "description": "Destructive input background in focused state"
+            "description": "Destructive input background in focused state - white/base - #ffffff"
           },
           "hover-filled": {
             "value": "{color.background.neutral.base}",
             "type": "color",
-            "description": "Destructive input background in hover-filled state"
+            "description": "Destructive input background in hover-filled state - white/base - #ffffff"
           }
         },
         "border": {
           "default": {
             "value": "{color.border.error.moderate.0}",
             "type": "color",
-            "description": "Destructive input border in default state"
+            "description": "Destructive input border in default state - error/300 - #fda29b"
           },
           "hover": {
             "value": "{color.border.error.default}",
             "type": "color",
-            "description": "Destructive input border in hover state"
+            "description": "Destructive input border in hover state - error/600 - #d92d20"
           },
           "filled": {
             "value": "{color.border.error.moderate.0}",
             "type": "color",
-            "description": "Destructive input border in filled state"
+            "description": "Destructive input border in filled state - error/300 - #fda29b"
           },
           "focused": {
             "value": "{color.border.error.default}",
             "type": "color",
-            "description": "Destructive input border in focused state"
+            "description": "Destructive input border in focused state - error/600 - #d92d20"
           },
           "hover-filled": {
             "value": "{color.border.error.default}",
             "type": "color",
-            "description": "Destructive input border in hover-filled state"
+            "description": "Destructive input border in hover-filled state - error/600 - #d92d20"
           }
         },
         "text": {
           "default": {
             "value": "{color.text.neutral.subtitle.1}",
             "type": "color",
-            "description": "Destructive input text color in default state"
+            "description": "Destructive input text color in default state - gray/500 - #667085"
           },
           "hover": {
             "value": "{color.text.neutral.subtitle.1}",
             "type": "color",
-            "description": "Destructive input text color in hover state"
+            "description": "Destructive input text color in hover state - gray/500 - #667085"
           },
           "filled": {
             "value": "{color.text.neutral.title.1}",
             "type": "color",
-            "description": "Destructive input text color in filled state"
+            "description": "Destructive input text color in filled state - gray/900 - #101828"
           },
           "focused": {
             "value": "{color.text.neutral.title.1}",
             "type": "color",
-            "description": "Destructive input text color in focused state"
+            "description": "Destructive input text color in focused state - gray/900 - #101828"
           },
           "hover-filled": {
             "value": "{color.text.neutral.title.1}",
             "type": "color",
-            "description": "Destructive input text color in hover-filled state"
+            "description": "Destructive input text color in hover-filled state - gray/900 - #101828"
           }
         },
         "icon": {
           "default": {
             "value": "{color.icon.error.moderate}",
             "type": "color",
-            "description": "Destructive input icon color in default state"
+            "description": "Destructive input icon color in default state - error/600 - #d92d20"
           },
           "hover": {
             "value": "{color.icon.error.moderate}",
             "type": "color",
-            "description": "Destructive input icon color in hover state"
+            "description": "Destructive input icon color in hover state - error/600 - #d92d20"
           },
           "filled": {
             "value": "{color.icon.error.moderate}",
             "type": "color",
-            "description": "Destructive input icon color in filled state"
+            "description": "Destructive input icon color in filled state - error/600 - #d92d20"
           },
           "focused": {
             "value": "{color.icon.error.moderate}",
             "type": "color",
-            "description": "Destructive input icon color in focused state"
+            "description": "Destructive input icon color in focused state - error/600 - #d92d20"
           },
           "hover-filled": {
             "value": "{color.icon.error.moderate}",
             "type": "color",
-            "description": "Destructive input icon color in hover-filled state"
+            "description": "Destructive input icon color in hover-filled state - error/600 - #d92d20"
           }
         },
         "focus": {
           "ring": {
             "value": "{color.border.error.subtle.2}",
             "type": "color",
-            "description": "Destructive input focus ring color"
+            "description": "Destructive input focus ring color - error/300 - #fecdca"
           },
           "shadow": {
             "value": "0px 0px 0px 4px rgba(254, 228, 226, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
             "type": "boxShadow",
-            "description": "Destructive input focus shadow"
+            "description": "Destructive input focus shadow - 0px 0px 0px 4px rgba(254, 228, 226, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)"
           }
         }
       }
     },
     "addon": {
-      "$comment": "Leading addon element - non-editable label at the start of input (e.g., 'https://', domain prefixes)",
+      "$comment": "Leading/Trailing addon element - non-editable label at the start/end of input (e.g., 'https://', '.com', domain prefixes)",
       "background": {
         "value": "{color.background.neutral.transparent}",
         "type": "color",
-        "description": "Leading addon background color"
+        "description": "Leading/Trailing addon background color - transparent - #FFFFFF00"
       },
       "border": {
         "value": "{color.border.neutral.transparent}",
         "type": "color",
-        "description": "Leading addon border color"
+        "description": "Leading/Trailing addon border color - transparent - #FFFFFF00"
       },
       "text": {
         "color": {
           "value": "{color.text.neutral.body.2}",
           "type": "color",
-          "description": "Leading addon text color"
+          "description": "Leading/Trailing addon text color - gray/600 - #475467"
         }
       },
       "padding": {
@@ -513,64 +513,64 @@
           "3xs": {
             "value": "{padding.x.4xs}",
             "type": "dimension",
-            "description": "Leading addon horizontal padding for 3xs size"
+            "description": "Leading/trailing addon horizontal padding for 3xs size - 8px"
           },
           "2xs": {
             "value": "{padding.x.4xs}",
             "type": "dimension",
-            "description": "Leading addon horizontal padding for xs size"
+            "description": "Leading/trailing addon horizontal padding for xs size - 8px"
           },
           "xs": {
             "value": "{padding.x.3xs}",
             "type": "dimension",
-            "description": "Leading addon horizontal padding for xs size"
+            "description": "Leading/trailing addon horizontal padding for xs size - 12px"
           },
           "sm": {
             "value": "{padding.x.3xs}",
             "type": "dimension",
-            "description": "Leading addon horizontal padding for sm size"
+            "description": "Leading/trailing addon horizontal padding for sm size - 12px"
           },
           "md": {
             "value": "{padding.x.xs}",
             "type": "dimension",
-            "description": "Leading addon horizontal padding for md size"
+            "description": "Leading/trailing addon horizontal padding for md size - 16px"
           },
           "lg": {
             "value": "{padding.x.sm}",
             "type": "dimension",
-            "description": "Leading addon horizontal padding for lg size"
+            "description": "Leading/trailing addon horizontal padding for lg size - 18px"
           }
         },
         "y": {
           "3xs": {
             "value": "{padding.y.3xs}",
             "type": "dimension",
-            "description": "Leading addon vertical padding for 3xs size"
+            "description": "Leading/trailing addon vertical padding for 3xs size - 8px"
           },
           "2xs": {
             "value": "{padding.y.2xs}",
             "type": "dimension",
-            "description": "Leading addon vertical padding for 2xs size"
+            "description": "Leading/trailing addon vertical padding for 2xs size - 8px"
           },
           "xs": {
             "value": "{padding.y.xs}",
             "type": "dimension",
-            "description": "Leading addon vertical padding for xs size"
+            "description": "Leading/trailing addon vertical padding for xs size - 8px"
           },
           "sm": {
             "value": "{padding.y.sm}",
             "type": "dimension",
-            "description": "Leading addon vertical padding for sm size"
+            "description": "Leading/trailing addon vertical padding for sm size - 8px"
           },
           "md": {
             "value": "{padding.y.sm}",
             "type": "dimension",
-            "description": "Leading addon vertical padding for md size"
+            "description": "Leading/trailing addon vertical padding for md size - 8px"
           },
           "lg": {
             "value": "{padding.y.md}",
             "type": "dimension",
-            "description": "Leading addon vertical padding for lg size"
+            "description": "Leading/trailing addon vertical padding for lg size - 8px"
           }
         }
       }
@@ -582,12 +582,12 @@
           "default": {
             "value": "{color.text.neutral.subtitle.1}",
             "type": "color",
-            "description": "Prefix text color in default state"
+            "description": "Prefix text color in default state - gray/500 - #667085"
           },
           "disabled": {
             "value": "{color.text.neutral.subtitle.2}",
             "type": "color",
-            "description": "Prefix text color in disabled state"
+            "description": "Prefix text color in disabled state - gray/400 - #98a2b3"
           }
         }
       }
@@ -599,12 +599,12 @@
           "default": {
             "value": "{color.text.neutral.subtitle.1}",
             "type": "color",
-            "description": "Suffix text color in default state"
+            "description": "Suffix text color in default state - gray/500 - #667085"
           },
           "disabled": {
             "value": "{color.text.neutral.subtitle.2}",
             "type": "color",
-            "description": "Suffix text color in disabled state"
+            "description": "Suffix text color in disabled state - gray/400 - #98a2b3"
           }
         }
       }
@@ -614,24 +614,24 @@
       "gap": {
         "value": "{gap.3xs}",
         "type": "dimension",
-        "description": "Gap between dropdown elements"
+        "description": "Gap between dropdown elements - 4px"
       },
       "text": {
         "color": {
           "default": {
             "value": "{color.text.neutral.subtitle.1}",
             "type": "color",
-            "description": "Dropdown text color in default state"
+            "description": "Dropdown text color in default state - gray/500 - #667085"
           },
           "filled": {
             "value": "{color.text.neutral.title.1}",
             "type": "color",
-            "description": "Dropdown text color in filled state"
+            "description": "Dropdown text color in filled state - gray/900 - #101828"
           },
           "disabled": {
             "value": "{color.text.neutral.subtitle.2}",
             "type": "color",
-            "description": "Dropdown text color in disabled state"
+            "description": "Dropdown text color in disabled state - gray/400 - #98a2b3"
           }
         }
       },
@@ -640,44 +640,44 @@
           "3xs": {
             "value": "{size.icon.3xs}",
             "type": "dimension",
-            "description": "Dropdown chevron size for 3xs size"
+            "description": "Dropdown chevron size for 3xs size - 12px"
           },
           "2xs": {
             "value": "{size.icon.2xs}",
             "type": "dimension",
-            "description": "Dropdown chevron size for 2xs size"
+            "description": "Dropdown chevron size for 2xs size - 14px"
           },
           "xs": {
             "value": "{size.icon.2xs}",
             "type": "dimension",
-            "description": "Dropdown chevron size for xs size"
+            "description": "Dropdown chevron size for xs size - 14px"
           },
           "sm": {
             "value": "{size.icon.xs}",
             "type": "dimension",
-            "description": "Dropdown chevron size for sm size"
+            "description": "Dropdown chevron size for sm size - 16px"
           },
           "md": {
             "value": "{size.icon.md}",
             "type": "dimension",
-            "description": "Dropdown chevron size for md size"
+            "description": "Dropdown chevron size for md size - 20px"
           },
           "lg": {
             "value": "{size.icon.md}",
             "type": "dimension",
-            "description": "Dropdown chevron size for lg size"
+            "description": "Dropdown chevron size for lg size - 20px"
           }
         },
         "color": {
           "default": {
             "value": "{color.icon.neutral.moderate.0}",
             "type": "color",
-            "description": "Dropdown chevron color in default state"
+            "description": "Dropdown chevron color in default state - gray/500 - #667085"
           },
           "disabled": {
             "value": "{color.icon.neutral.subtle.2}",
             "type": "color",
-            "description": "Dropdown chevron color in disabled state"
+            "description": "Dropdown chevron color in disabled state - gray/300 - #d0d5dd"
           }
         }
       }
@@ -690,44 +690,44 @@
             "3xs": {
               "value": "{size.icon.3xs}",
               "type": "dimension",
-              "description": "Password toggle icon size for 3xs size"
+              "description": "Password toggle icon size for 3xs size - 12px"
             },
             "2xs": {
               "value": "{size.icon.2xs}",
               "type": "dimension",
-              "description": "Password toggle icon size for 2xs size"
+              "description": "Password toggle icon size for 2xs size - 14px"
             },
             "xs": {
               "value": "{size.icon.2xs}",
               "type": "dimension",
-              "description": "Password toggle icon size for xs size"
+              "description": "Password toggle icon size for xs size - 14px"
             },
             "sm": {
               "value": "{size.icon.xs}",
               "type": "dimension",
-              "description": "Password toggle icon size for sm size"
+              "description": "Password toggle icon size for sm size - 16px"
             },
             "md": {
               "value": "{size.icon.xs}",
               "type": "dimension",
-              "description": "Password toggle icon size for md size"
+              "description": "Password toggle icon size for md size - 20px"
             },
             "lg": {
               "value": "{size.icon.xs}",
               "type": "dimension",
-              "description": "Password toggle icon size for lg size"
+              "description": "Password toggle icon size for lg size - 20px"
             }
           },
           "color": {
             "default": {
               "value": "{color.icon.neutral.moderate.0}",
               "type": "color",
-              "description": "Password toggle icon color in default state"
+              "description": "Password toggle icon color in default state - gray/500 - #667085"
             },
             "disabled": {
               "value": "{color.icon.neutral.moderate.0}",
               "type": "color",
-              "description": "Password toggle icon color in disabled state"
+              "description": "Password toggle icon color in disabled state - gray/500 - #667085"
             }
           }
         }
@@ -737,46 +737,46 @@
       "$comment": "Leading icon element - icon at the start of input field (e.g., search icon, lock icon)",
       "size": {
         "3xs": {
-          "value": "{size.icon.3xs}",
+          "value": "{size.icon.2xs}",
           "type": "dimension",
-          "description": "Leading icon size for 3xs size"
+          "description": "Leading icon size for 3xs size - 14px"
         },
         "2xs": {
           "value": "{size.icon.2xs}",
           "type": "dimension",
-          "description": "Leading icon size for 2xs size"
+          "description": "Leading icon size for 2xs size - 14px"
         },
         "xs": {
-          "value": "{size.icon.2xs}",
+          "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Leading icon size for xs size"
+          "description": "Leading icon size for xs size - 16px"
         },
         "sm": {
           "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Leading icon size for sm size"
+          "description": "Leading icon size for sm size - 16px"
         },
         "md": {
-          "value": "{size.icon.xs}",
+          "value": "{size.icon.md}",
           "type": "dimension",
-          "description": "Leading icon size for md size"
+          "description": "Leading icon size for md size - 20px"
         },
         "lg": {
-          "value": "{size.icon.xs}",
+          "value": "{size.icon.md}",
           "type": "dimension",
-          "description": "Leading icon size for lg size"
+          "description": "Leading icon size for lg size - 20px"
         }
       },
       "color": {
         "default": {
           "value": "{color.icon.neutral.moderate.0}",
           "type": "color",
-          "description": "Leading icon color in default state"
+          "description": "Leading icon color in default state - gray/500 - #667085"
         },
         "disabled": {
           "value": "{color.icon.neutral.subtle.2}",
           "type": "color",
-          "description": "Leading icon color in disabled state"
+          "description": "Leading icon color in disabled state - gray/300 - #d0d5dd"
         }
       }
     },
@@ -818,12 +818,12 @@
         "gap-between-tags": {
           "value": "{gap.x.2xs}",
           "type": "dimension",
-          "description": "Gap between tags - horizontal"
+          "description": "Gap between tags - horizontal - 6px"
         },
         "gap-between-tags-and-input": {
           "value": "{gap.x.3xs}",
           "type": "dimension",
-          "description": "Gap between tags and input - horizontal"
+          "description": "Gap between tags and input - horizontal - 4px"
         }
       }
     },
@@ -834,44 +834,44 @@
           "3xs": {
             "value": "{size.icon.xs}",
             "type": "dimension",
-            "description": "Clear button icon size for 3xs size"
+            "description": "Clear button icon size for 3xs size - 12px"
           },
           "2xs": {
             "value": "{size.icon.xs}",
             "type": "dimension",
-            "description": "Clear button icon size for 2xs size"
+            "description": "Clear button icon size for 2xs size - 12px"
           },
           "xs": {
             "value": "{size.icon.xs}",
             "type": "dimension",
-            "description": "Clear button icon size for xs size"
+            "description": "Clear button icon size for xs size - 12px"
           },
           "sm": {
             "value": "{size.icon.md}",
             "type": "dimension",
-            "description": "Clear button icon size for sm size"
+            "description": "Clear button icon size for sm size - 16px"
           },
           "md": {
             "value": "{size.icon.md}",
             "type": "dimension",
-            "description": "Clear button icon size for md size"
+            "description": "Clear button icon size for md size - 20px"
           },
           "lg": {
             "value": "{size.icon.md}",
             "type": "dimension",
-            "description": "Clear button icon size for lg size"
+            "description": "Clear button icon size for lg size - 24px"
           }
         },
         "color": {
           "filled": {
             "value": "{color.icon.neutral.moderate.0}",
             "type": "color",
-            "description": "Clear button icon color in filled state"
+            "description": "Clear button icon color in filled state - gray/500 - #667085"
           },
           "disabled": {
             "value": "{color.icon.neutral.subtle.2}",
             "type": "color",
-            "description": "Clear button icon color in disabled state"
+            "description": "Clear button icon color in disabled state - gray/300 - #d0d5dd"
           }
         }
       }
@@ -882,39 +882,39 @@
         "3xs": {
           "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Loading indicator size for 3xs size"
+          "description": "Loading indicator size for 3xs size - 12px"
         },
         "2xs": {
           "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Loading indicator size for 2xs size"
+          "description": "Loading indicator size for 2xs size - 12px"
         },
         "xs": {
           "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Loading indicator size for xs size"
+          "description": "Loading indicator size for xs size - 12px"
         },
         "sm": {
           "value": "{size.icon.md}",
           "type": "dimension",
-          "description": "Loading indicator size for sm size"
+          "description": "Loading indicator size for sm size - 16px"
         },
         "md": {
           "value": "{size.icon.md}",
           "type": "dimension",
-          "description": "Loading indicator size for md size"
+          "description": "Loading indicator size for md size - 20px"
         },
         "lg": {
           "value": "{size.icon.md}",
           "type": "dimension",
-          "description": "Loading indicator size for lg size"
+          "description": "Loading indicator size for lg size - 24px"
         }
       },
       "color": {
         "default": {
           "value": "{color.icon.primary.moderate.0}",
           "type": "color",
-          "description": "Loading indicator color in default state"
+          "description": "Loading indicator color in default state - blue/500 - #2970ff"
         }
       }
     },
@@ -924,39 +924,39 @@
         "3xs": {
           "value": "{font.body.regular.3xs}",
           "type": "string",
-          "description": "Character limit counter size for 3xs size"
+          "description": "Character limit counter size for 3xs size - 10px"
         },
         "2xs": {
           "value": "{font.body.regular.2xs}",
           "type": "string",
-          "description": "Character limit counter size for 2xs size"
+          "description": "Character limit counter size for 2xs size - 12px"
         },
         "xs": {
           "value": "{font.body.regular.base}",
           "type": "string",
-          "description": "Character limit counter size for xs size"
+          "description": "Character limit counter size for xs size - 14px"
         },
         "sm": {
           "value": "{font.body.regular.base}",
           "type": "string",
-          "description": "Character limit counter size for sm size"
+          "description": "Character limit counter size for sm size - 16px"
         },
         "md": {
           "value": "{font.body.regular.2xl}",
           "type": "string",
-          "description": "Character limit counter size for md size"
+          "description": "Character limit counter size for md size - 18px"
         },
         "lg": {
           "value": "{font.body.regular.2xl}",
           "type": "string",
-          "description": "Character limit counter size for lg size"
+          "description": "Character limit counter size for lg size - 20px"
         }
       },
       "color": {
         "default": {
           "value": "{color.text.neutral.body.2}",
           "type": "color",
-          "description": "Character limit counter color in default state"
+          "description": "Character limit counter color in default state - gray/600 - #475467"
         }
       }
     },
@@ -965,71 +965,113 @@
       "card-icon": {
         "size": {
           "width": {
-              "3xs": {  
-                "value": "{size.width.3xs}",
-                "type": "dimension",
-                "description": "Payment input card icon width for 3xs size"
-              },
-              "2xs": {
-                "value": "{size.width.2xs}",
-                "type": "dimension",
-                "description": "Payment input card icon width for xs size"
-              },
-              "xs": {
-                "value": "{size.width.8[5]}",
-                "type": "dimension",
-                "description": "Payment input card icon width for xs size"
-              },
-              "sm": {
-                "value": "{size.width.8[5]}",
-                "type": "dimension",
-                "description": "Payment input card icon size for sm size"
-              },
-              "md": {
-                "value": "{size.width.8[5]}",
-                "type": "dimension",
-                "description": "Payment input card icon size for md size"
-              },
-              "lg": {
-                "value": "{size.width.8[5]}",
-                "type": "dimension",
-                "description": "Payment input card icon size for lg size"
-              }
+            "3xs": {
+              "value": "{size.width.3xs}",
+              "type": "dimension",
+              "description": "Payment input card icon width for 3xs size - 24px"
+            },
+            "2xs": {
+              "value": "{size.width.2xs}",
+              "type": "dimension",
+              "description": "Payment input card icon width for xs size - 28px"
+            },
+            "xs": {
+              "value": "{size.width.8[5]}",
+              "type": "dimension",
+              "description": "Payment input card icon width for xs size - 34px"
+            },
+            "sm": {
+              "value": "{size.width.8[5]}",
+              "type": "dimension",
+              "description": "Payment input card icon width for sm size - 34px"
+            },
+            "md": {
+              "value": "{size.width.8[5]}",
+              "type": "dimension",
+              "description": "Payment input card icon width for md size - 34px"
+            },
+            "lg": {
+              "value": "{size.width.8[5]}",
+              "type": "dimension",
+              "description": "Payment input card icon width for lg size - 34px"
+            }
           },
           "height": {
             "3xs": {
               "value": "{size.height.4}",
               "type": "dimension",
-              "description": "Payment input card icon height for 3xs size"
+              "description": "Payment input card icon height for 3xs size - 16px"
             },
             "2xs": {
               "value": "{size.height.4}",
               "type": "dimension",
-              "description": "Payment input card icon height for 2xs size"
+              "description": "Payment input card icon height for 2xs size - 16px"
             },
             "xs": {
               "value": "{size.height.3xs}",
               "type": "dimension",
-              "description": "Payment input card icon height for xs size"
+              "description": "Payment input card icon height for xs size - 24px"
             },
             "sm": {
               "value": "{size.height.3xs}",
               "type": "dimension",
-              "description": "Payment input card icon height for sm size"
+              "description": "Payment input card icon height for sm size - 24px"
             },
             "md": {
               "value": "{size.height.3xs}",
               "type": "dimension",
-              "description": "Payment input card icon height for md size"
+              "description": "Payment input card icon height for md size - 24px"
             },
             "lg": {
               "value": "{size.height.3xs}",
               "type": "dimension",
-              "description": "Payment input card icon height for lg size"
+              "description": "Payment input card icon height for lg size - 24px"
             }
           }
+        }
+      }
+    },
+    "phone-number": {
+      "$comment": "Phone number input variant - includes country code selector",
+      "country-code-selector": {
+        "size": {
+          "3xs": {
+            "value": "{size.icon.3xs}",
+            "type": "dimension",
+            "description": "Phone number input country code selector size for 3xs size - 12px"
+          },
+          "2xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Phone number input country code selector size for 2xs size - 16px"
+          },
+          "xs": {
+            "value": "{size.icon.sm}",
+            "type": "dimension",
+            "description": "Phone number input country code selector size for xs size - 18px"
+          },
+          "sm": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Phone number input country code selector size for sm size - 20px"
+          },
+          "md": {
+            "value": "{size.icon.lg}",
+            "type": "dimension",
+            "description": "Phone number input country code selector size for md size - 24px"
+          },
+          "lg": {
+            "value": "{size.icon.lg}",
+            "type": "dimension",
+            "description": "Phone number input country code selector size for lg size - 24px"
+          }
+        }
+      },
+      "gap": {
+        "value": "{gap.3xs}",
+        "type": "dimension",
+        "description": "Gap between phone number elements - 4px"
       }
     }
   }
-}
 }

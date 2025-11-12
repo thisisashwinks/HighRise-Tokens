@@ -1,0 +1,805 @@
+{
+  "$comment": "Mobile Input Component Tokens",
+  "$description": "Component tokens for Mobile Input fields with multiple variants including text input, password, dropdown/select, date/time pickers, phone input, and tag input. Supports default, destructive (error), and success states across 3 sizes (sm, md, lg). Figma Reference: Node ID 4-17822",
+  "$component": {
+    "name": "Input",
+    "description": "A foundational mobile form component for user text input, with support for various input types and states. Includes features like leading/trailing addons, prefix/suffix text, icons, validation states, and character counting.",
+    "structure": "Container with border, optional leading addon/icon, input text field, optional trailing icon/suffix, with focus states and validation feedback",
+    "sizes": {
+      "sm": "32px height - Small size for compact mobile interfaces",
+      "md": "48px height - Medium size (commonly used default for mobile)",
+      "lg": "56px height - Large size for prominent mobile inputs"
+    },
+    "variants": {
+      "default": "Standard input with neutral colors for normal data entry",
+      "destructive": "Error state with red/error colors for validation feedback",
+      "success": "Success state with green/success colors for validation feedback",
+      "types": "text, password (with toggle), dropdown/select, date picker, time picker, phone input, tag input, leading text, trailing button/dropdown, payment input, icon leading"
+    },
+    "usage": {
+      "contexts": "Mobile forms, search bars, filters, login screens, settings panels, data entry interfaces",
+      "features": "Leading addon (labels like 'https://'), Prefix (symbols like '$'), Suffix (units like 'kg'), Dropdown chevron, Character counter, Password toggle icon, Payment card icon"
+    }
+  },
+  "input": {
+    "border": {
+      "$comment": "Border radius and width for mobile input fields",
+      "radius": {
+        "sm": {
+          "value": "{border.radius.1[5]}",
+          "type": "dimension",
+          "description": "Mobile input border radius for sm size - 6px"
+        },
+        "md": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "Mobile input border radius for md size - 8px"
+        },
+        "lg": {
+          "value": "{border.radius.lg}",
+          "type": "dimension",
+          "description": "Mobile input border radius for lg size - 8px"
+        }
+      },
+      "width": {
+        "value": "{border.width.default}",
+        "type": "dimension",
+        "description": "Mobile input border width - 1px"
+      }
+    },
+    "padding": {
+      "$comment": "Internal spacing for mobile input content - horizontal (x) and vertical (y) padding",
+      "x": {
+        "sm": {
+          "value": "{padding.x.3xs}",
+          "type": "dimension",
+          "description": "Mobile input horizontal padding for sm size - 8px"
+        },
+        "md": {
+          "value": "{padding.x.xs}",
+          "type": "dimension",
+          "description": "Mobile input horizontal padding for md size - 12px"
+        },
+        "lg": {
+          "value": "{padding.x.sm}",
+          "type": "dimension",
+          "description": "Mobile input horizontal padding for lg size - 14px"
+        }
+      },
+      "y": {
+        "value": "{padding.y.none}",
+        "type": "dimension",
+        "description": "Mobile input vertical padding - 0px"
+      }
+    },
+    "height": {
+      "$comment": "Mobile input field heights for each size variant",
+      "sm": {
+        "value": "{size.height.xs}",
+        "type": "dimension",
+        "description": "Mobile input height for sm size - 32px"
+      },
+      "md": {
+        "value": "{size.height.xl}",
+        "type": "dimension",
+        "description": "Mobile input height for md size - 48px"
+      },
+      "lg": {
+        "value": "{size.height.2xl}",
+        "type": "dimension",
+        "description": "Mobile input height for lg size - 56px"
+      }
+    },
+    "gap": {
+      "$comment": "Spacing between mobile input elements (icons, text, and other internal elements)",
+      "value": "{gap.xs}",
+      "type": "dimension",
+      "description": "Gap between mobile input elements - 8px"
+    },
+    "shadow": {
+      "$comment": "Subtle elevation shadow for mobile input fields",
+      "default": {
+        "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+        "type": "boxShadow",
+        "description": "Mobile input default shadow - 0px 1px 2px 0px rgba(16, 24, 40, 0.05)"
+      }
+    },
+    "text": {
+      "$comment": "Typography tokens for mobile input text content across all sizes",
+      "typography": {
+        "sm": {
+          "value": "{font.body.regular.base}",
+          "type": "typography",
+          "description": "Mobile input text typography for sm size - 14px regular"
+        },
+        "md": {
+          "value": "{font.body.regular.2xl}",
+          "type": "typography",
+          "description": "Mobile input text typography for md size - 16px regular"
+        },
+        "lg": {
+          "value": "{font.body.regular.2xl}",
+          "type": "typography",
+          "description": "Mobile input text typography for lg size - 16px regular"
+        }
+      }
+    },
+    "icon": {
+      "$comment": "Icon sizes for help icons, validation icons, and other decorative icons inside mobile inputs",
+      "size": {
+        "sm": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Mobile input icon size for sm - 16px"
+        },
+        "md": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Mobile input icon size for md - 16px"
+        },
+        "lg": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Mobile input icon size for lg - 16px"
+        }
+      }
+    },
+    "color": {
+      "$comment": "Color tokens for mobile input states - includes default (neutral), destructive (error/validation), and success variants with interaction states",
+      "default": {
+        "$comment": "Default mobile input colors with neutral palette for standard data entry",
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile default input default background - white/base - #ffffff"
+          },
+          "filled": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile default input filled background - white/base - #ffffff"
+          },
+          "focused": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile default input focused background - white/base - #ffffff"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile default input disabled background - gray/100 - #f2f4f7"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Mobile default input default border - gray/300 - #d0d5dd"
+          },
+          "filled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Mobile default input filled border - gray/300 - #d0d5dd"
+          },
+          "focused": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Mobile default input focused border - blue/600 - #155EEF"
+          },
+          "disabled": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Mobile default input disabled border - transparent - #00000000"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Mobile default input default text - gray/500 - #667085"
+          },
+          "filled": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Mobile default input filled text - gray/900 - #101828"
+          },
+          "focused": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Mobile default input focused text - gray/900 - #101828"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "Mobile default input disabled text - gray/400 - #98a2b3"
+          }
+        },
+        "icon": {
+          "default": {
+            "value": "{color.icon.neutral.info}",
+            "type": "color",
+            "description": "Mobile default input default icon - gray/400 - #98a2b3"
+          },
+          "filled": {
+            "value": "{color.icon.neutral.info}",
+            "type": "color",
+            "description": "Mobile default input filled icon - gray/400 - #98a2b3"
+          },
+          "focused": {
+            "value": "{color.icon.neutral.info}",
+            "type": "color",
+            "description": "Mobile default input focused icon - gray/400 - #98a2b3"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile default input disabled icon - gray/300 - #d0d5dd"
+          }
+        },
+        "focus": {
+          "ring": {
+            "value": "{color.border.primary.subtle.2}",
+            "type": "color",
+            "description": "Mobile default input focus ring - primary/300 - #84adff"
+          },
+          "shadow": {
+            "value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+            "type": "boxShadow",
+            "description": "Mobile default input focus shadow"
+          }
+        }
+      },
+      "destructive": {
+        "$comment": "Destructive/error state mobile input colors with red/error palette for validation feedback",
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile destructive input default background - white/base - #ffffff"
+          },
+          "filled": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile destructive input filled background - white/base - #ffffff"
+          },
+          "focused": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile destructive input focused background - white/base - #ffffff"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.error.moderate.0}",
+            "type": "color",
+            "description": "Mobile destructive input default border - error/300 - #fda29b"
+          },
+          "filled": {
+            "value": "{color.border.error.moderate.0}",
+            "type": "color",
+            "description": "Mobile destructive input filled border - error/300 - #fda29b"
+          },
+          "focused": {
+            "value": "{color.border.error.default}",
+            "type": "color",
+            "description": "Mobile destructive input focused border - error/600 - #d92d20"
+          }
+        },
+        "text": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Mobile destructive input default text - gray/500 - #667085"
+          },
+          "filled": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Mobile destructive input filled text - gray/900 - #101828"
+          },
+          "focused": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Mobile destructive input focused text - gray/900 - #101828"
+          }
+        },
+        "icon": {
+          "default": {
+            "value": "{color.icon.error.moderate}",
+            "type": "color",
+            "description": "Mobile destructive input default icon - error/600 - #d92d20"
+          },
+          "filled": {
+            "value": "{color.icon.error.moderate}",
+            "type": "color",
+            "description": "Mobile destructive input filled icon - error/600 - #d92d20"
+          },
+          "focused": {
+            "value": "{color.icon.error.moderate}",
+            "type": "color",
+            "description": "Mobile destructive input focused icon - error/600 - #d92d20"
+          }
+        },
+        "focus": {
+          "ring": {
+            "value": "{color.border.error.subtle.2}",
+            "type": "color",
+            "description": "Mobile destructive input focus ring - error/300 - #fecdca"
+          },
+          "shadow": {
+            "value": "0px 0px 0px 4px rgba(254, 228, 226, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+            "type": "boxShadow",
+            "description": "Mobile destructive input focus shadow"
+          }
+        }
+      },
+      "success": {
+        "$comment": "Success state mobile input colors with green/success palette for validation feedback",
+        "background": {
+          "filled": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile success input filled background - gray/0 - #ffffff"
+          },
+          "focused": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile success input focused background - gray/0 - #ffffff"
+          }
+        },
+        "border": {
+          "filled": {
+            "value": "{color.border.success.default}",
+            "type": "color",
+            "description": "Mobile success input filled border - success/600 - #039855"
+          },
+          "focused": {
+            "value": "{color.border.success.default}",
+            "type": "color",
+            "description": "Mobile success input focused border - success/600 - #039855"
+          }
+        },
+        "text": {
+          "filled": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Mobile success input filled text - gray/900 - #101828"
+          },
+          "focused": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Mobile success input focused text - gray/900 - #101828"
+          }
+        },
+        "icon": {
+          "filled": {
+            "value": "{color.icon.success.moderate}",
+            "type": "color",
+            "description": "Mobile success input filled icon - success/600 - #039855"
+          },
+          "focused": {
+            "value": "{color.icon.success.moderate}",
+            "type": "color",
+            "description": "Mobile success input focused icon - success/600 - #039855"
+          }
+        },
+        "focus": {
+          "ring": {
+            "value": "{color.border.success.subtle.2}",
+            "type": "color",
+            "description": "Mobile success input focus ring - success/300 - #86efac"
+          },
+          "shadow": {
+            "value": "0px 0px 0px 4px rgba(209, 250, 229, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+            "type": "boxShadow",
+            "description": "Mobile success input focus shadow"
+          }
+        }
+      }
+    },
+    "prefix": {
+      "$comment": "Prefix text inside mobile input field - appears before user text (e.g., '$', '@', '#')",
+      "text": {
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Mobile prefix text default color - gray/500 - #667085"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "Mobile prefix text disabled color - gray/400 - #98a2b3"
+          }
+        }
+      }
+    },
+    "suffix": {
+      "$comment": "Suffix text inside mobile input field - appears after user text (e.g., '.com', 'kg', 'USD')",
+      "text": {
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Mobile suffix text default color - gray/500 - #667085"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "Mobile suffix text disabled color - gray/400 - #98a2b3"
+          }
+        }
+      }
+    },
+    "dropdown": {
+      "$comment": "Dropdown/select mobile input variant - includes chevron icon and specific colors (e.g., date picker, time picker, country selector)",
+      "gap": {
+        "value": "{gap.3xs}",
+        "type": "dimension",
+        "description": "Gap between mobile dropdown elements - 4px"
+      },
+      "text": {
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Mobile dropdown text default color - gray/500 - #667085"
+          },
+          "filled": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Mobile dropdown text filled color - gray/900 - #101828"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "Mobile dropdown text disabled color - gray/400 - #98a2b3"
+          }
+        }
+      },
+      "chevron": {
+        "size": {
+          "sm": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Mobile dropdown chevron size for sm - 16px"
+          },
+          "md": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Mobile dropdown chevron size for md - 20px"
+          },
+          "lg": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Mobile dropdown chevron size for lg - 20px"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.0}",
+            "type": "color",
+            "description": "Mobile dropdown chevron default color - gray/500 - #667085"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile dropdown chevron disabled color - gray/300 - #d0d5dd"
+          }
+        }
+      }
+    },
+    "password": {
+      "$comment": "Password mobile input variant - includes eye icon toggle for showing/hiding password text",
+      "toggle": {
+        "icon": {
+          "size": {
+            "sm": {
+              "value": "{size.icon.xs}",
+              "type": "dimension",
+              "description": "Mobile password toggle icon size for sm - 16px"
+            },
+            "md": {
+              "value": "{size.icon.md}",
+              "type": "dimension",
+              "description": "Mobile password toggle icon size for md - 20px"
+            },
+            "lg": {
+              "value": "{size.icon.md}",
+              "type": "dimension",
+              "description": "Mobile password toggle icon size for lg - 20px"
+            }
+          },
+          "color": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.0}",
+              "type": "color",
+              "description": "Mobile password toggle icon default color - gray/500 - #667085"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.moderate.0}",
+              "type": "color",
+              "description": "Mobile password toggle icon disabled color - gray/500 - #667085"
+            }
+          }
+        }
+      }
+    },
+    "leading-icon": {
+      "$comment": "Leading icon element - icon at the start of mobile input field (e.g., search icon, lock icon)",
+      "size": {
+        "sm": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Mobile leading icon size for sm - 16px"
+        },
+        "md": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Mobile leading icon size for md - 20px"
+        },
+        "lg": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Mobile leading icon size for lg - 20px"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.icon.neutral.moderate.0}",
+          "type": "color",
+          "description": "Mobile leading icon default color - gray/500 - #667085"
+        },
+        "disabled": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile leading icon disabled color - gray/300 - #d0d5dd"
+        }
+      }
+    },
+    "addon": {
+      "$comment": "Leading/Trailing addon element - non-editable label at the start/end of mobile input (e.g., 'https://', '.com', domain prefixes)",
+      "background": {
+        "value": "{color.background.transparent}",
+        "type": "color",
+        "description": "Mobile leading/trailing addon background - transparent - #FFFFFF00"
+      },
+      "border": {
+        "value": "{color.border.transparent}",
+        "type": "color",
+        "description": "Mobile leading/trailing addon border - transparent - #FFFFFF00"
+      },
+      "text": {
+        "color": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Mobile leading/trailing addon text color - gray/600 - #475467"
+        }
+      },
+      "padding": {
+        "x": {
+          "sm": {
+            "value": "{padding.x.4xs}",
+            "type": "dimension",
+            "description": "Mobile leading/trailing addon horizontal padding for sm - 8px"
+          },
+          "md": {
+            "value": "{padding.x.3xs}",
+            "type": "dimension",
+            "description": "Mobile leading/trailing addon horizontal padding for md - 12px"
+          },
+          "lg": {
+            "value": "{padding.x.3xs}",
+            "type": "dimension",
+            "description": "Mobile leading/trailing addon horizontal padding for lg - 14px"
+          }
+        },
+        "y": {
+          "sm": {
+            "value": "{padding.y.sm}",
+            "type": "dimension",
+            "description": "Mobile leading text vertical padding for sm - 8px"
+          },
+          "md": {
+            "value": "{padding.y.md}",
+            "type": "dimension",
+            "description": "Mobile leading text vertical padding for md - 10px"
+          },
+          "lg": {
+            "value": "{padding.y.xl}",
+            "type": "dimension",
+            "description": "Mobile leading/trailing addon vertical padding for lg - 12px"
+          }
+        }
+      }
+    },
+    "phone-number": {
+      "country-code-selector": {
+        "size": {
+          "sm": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Phone number input country code selector size for sm size - 20px"
+          },
+          "md": {
+            "value": "{size.icon.lg}",
+            "type": "dimension",
+            "description": "Phone number input country code selector size for md size - 24px"
+          },
+          "lg": {
+            "value": "{size.icon.lg}",
+            "type": "dimension",
+            "description": "Phone number input country code selector size for lg size - 24px"
+          }
+        }
+      },
+      "$comment": "Phone number mobile input variant - includes country code selector",
+      "gap": {
+        "value": "{gap.xs}",
+        "type": "dimension",
+        "description": "Gap between mobile phone number elements - 4px"
+      }
+    },
+    "tags": {
+      "$comment": "Tags mobile input variant - includes tags with removable/editable labels",
+      "tags": {
+        "size": {
+          "sm": {
+            "value": "{size.height.3xs}",
+            "type": "dimension",
+            "description": "Mobile tags size for sm - tag height: 24px"
+          },
+          "md": {
+            "value": "{size.height.2xs}",
+            "type": "dimension",
+            "description": "Mobile tags size for md - tag height: 28px"
+          },
+          "lg": {
+            "value": "{size.height.2xs}",
+            "type": "dimension",
+            "description": "Mobile tags size for lg - tag height: 28px"
+          }
+        },
+        "gap-between-tags": {
+          "value": "{gap.x.2xs}",
+          "type": "dimension",
+          "description": "Gap between mobile tags - horizontal - 6px"
+        },
+        "gap-between-tags-and-input": {
+          "value": "{gap.x.3xs}",
+          "type": "dimension",
+          "description": "Gap between mobile tags and input - horizontal - 4px"
+        }
+      }
+    },
+    "payment-input": {
+      "$comment": "Payment input mobile variant - includes card icon",
+      "card-icon": {
+        "size": {
+          "width": {
+            "sm": {
+              "value": "{size.width.8[5]}",
+              "type": "dimension",
+              "description": "Mobile payment input card icon width for sm - 34px"
+            },
+            "md": {
+              "value": "{size.width.8[5]}",
+              "type": "dimension",
+              "description": "Mobile payment input card icon width for md - 34px"
+            },
+            "lg": {
+              "value": "{size.width.8[5]}",
+              "type": "dimension",
+              "description": "Mobile payment input card icon width for lg - 34px"
+            }
+          },
+          "height": {
+            "sm": {
+              "value": "{size.height.3xs}",
+              "type": "dimension",
+              "description": "Mobile payment input card icon height for sm - 24px"
+            },
+            "md": {
+              "value": "{size.height.3xs}",
+              "type": "dimension",
+              "description": "Mobile payment input card icon height for md - 24px"
+            },
+            "lg": {
+              "value": "{size.height.3xs}",
+              "type": "dimension",
+              "description": "Mobile payment input card icon height for lg - 24px"
+            }
+          }
+        }
+      }
+    },
+    "clear-button": {
+      "$comment": "Clear button element - button to clear the input value",
+      "icon": {
+        "size": {
+          "sm": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Mobile clear button icon size for sm - 20px"
+          },
+          "md": {
+            "value": "{size.icon.lg}",
+            "type": "dimension",
+            "description": "Mobile clear button icon size for md - 24px"
+          },
+          "lg": {
+            "value": "{size.icon.lg}",
+            "type": "dimension",
+            "description": "Mobile clear button icon size for lg - 24px"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.0}",
+            "type": "color",
+            "description": "Mobile clear button icon default color - gray/500 - #667085"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile clear button icon disabled color - gray/300 - #d0d5dd"
+          }
+        }
+      }
+    },
+    "loading-indicator": {
+      "$comment": "Loading indicator element - indicator to show that the input is loading",
+      "size": {
+        "sm": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Mobile loading indicator size for sm - 20px"
+        },
+        "md": {
+          "value": "{size.icon.lg}",
+          "type": "dimension",
+          "description": "Mobile loading indicator size for md - 24px"
+        },
+        "lg": {
+          "value": "{size.icon.lg}",
+          "type": "dimension",
+          "description": "Mobile loading indicator size for lg - 24px"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.icon.primary.moderate.0}",
+          "type": "color",
+          "description": "Mobile loading indicator color in default state - blue/500 - #2970ff"
+        }
+      }
+    },
+    "character-limit-counter": {
+      "$comment": "Character limit counter element - indicator to show the number of characters in the input",
+      "size": {
+        "sm": {
+          "value": "{font.body.regular.base}",
+          "type": "dimension",
+          "description": "Mobile character limit counter size for sm - 14px"
+        },
+        "md": {
+          "value": "{font.body.regular.2xl}",
+          "type": "dimension",
+          "description": "Mobile character limit counter size for md - 16px"
+        },
+        "lg": {
+          "value": "{font.body.regular.2xl}",
+          "type": "dimension",
+          "description": "Mobile character limit counter size for lg - 16px"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Mobile character limit counter color in default state - gray/600 - #475467"
+        }
+      }
+    }
+  }
+}
+
