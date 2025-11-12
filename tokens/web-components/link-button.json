@@ -634,7 +634,7 @@
         }
       },
       "width": {
-        "value": "{border.width.default}",
+        "value": "{border.width.none}",
         "type": "dimension"
       }
     },
