@@ -1,0 +1,87 @@
+{
+  "$comment": "Mobile Tab Component Tokens",
+  "$description": "Component tokens for Mobile Tab container component that groups multiple tab items together. Supports fixed and intrinsic width behaviors, with optional border visibility. Figma Reference: Node ID 27-10855",
+  "$component": {
+    "name": "Tab",
+    "description": "A mobile container component that groups multiple tab items together for navigation. Supports horizontal layout with configurable spacing between items, optional border visibility, and different width behaviors (fixed or intrinsic).",
+    "structure": "Container with optional border, horizontal flex layout containing multiple tab items with configurable gap spacing",
+    "sizes": {
+      "sm": "24px height - Small size for compact mobile interfaces",
+      "md": "32px height - Medium size for standard mobile navigation",
+      "lg": "40px height - Large size for prominent mobile tabs",
+      "xl": "40px height - Extra large size (same as large)",
+      "2xl": "40px height - 2XL size (same as large)"
+    },
+    "variants": {
+      "default": "Standard tab container with visible border",
+      "no-border": "Tab container with hidden border for cleaner appearance"
+    },
+    "usage": {
+      "contexts": "Mobile navigation bars, content switchers, filter tabs, section navigation, tabbed interfaces",
+      "features": "Border visibility toggle, Configurable gap spacing, Fixed or intrinsic width behavior, Overflow handling"
+    }
+  },
+  "tab": {
+    "border": {
+      "$comment": "Border tokens for mobile tab container - includes radius",
+      "radius": {
+          "value": "{border.radius.none}",
+          "type": "dimension",
+          "description": "Mobile tab container default border radius - none - 0px"
+      }
+    },
+    "padding": {
+      "$comment": "Padding tokens for mobile tab container",
+        "value": "{padding.none}",
+        "type": "dimension",
+        "description": "Mobile tab container default padding - 0px"
+    },
+    "gap": {
+      "$comment": "Gap tokens for spacing between mobile tab items",
+          "value": "{gap.none}",
+          "type": "dimension",
+          "description": "Mobile tab container gap between items - 0px"
+    },
+    "height": {
+      "$comment": "Height tokens for mobile tab container across different sizes",
+      "default": {
+          "value": "{size.height.2xl}",
+          "type": "dimension",
+          "description": "Mobile tab container height for default variant - 56px"
+      },
+      "top-icon": {
+          "value": "{size.height.3xl}",
+          "type": "dimension",
+          "description": "Mobile tab container height for top-icon variant - 64px"
+        }
+    },
+    "variants": {
+      "$comment": "Color tokens for mobile tab container variants",
+      "default": {
+        "background": {
+          "value": "{color.background.transparent}",
+          "type": "color",
+          "description": "Mobile tab container default background - transparent - #FFFFFF00"
+        },
+        "border": {
+          "value": "{color.border.transparent}",
+          "type": "color",
+          "description": "Mobile tab container default border color - transparent - #FFFFFF00"
+        }
+      },
+      "no-border": {
+        "background": {
+          "value": "{color.background.transparent}",
+          "type": "color",
+          "description": "Mobile tab container no-border background - transparent - #FFFFFF00"
+        },
+        "border": {
+          "value": "{color.border.transparent}",
+          "type": "color",
+          "description": "Mobile tab container no-border border color - transparent - #FFFFFF00"
+        }
+      }
+    }
+  }
+}
+

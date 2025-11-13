@@ -117,11 +117,17 @@ HighRise-Tokens/
 │   ├── primitive/
 │   │   └── Default.json              # Base primitive tokens (3,140 lines)
 │   ├── Semantic.json                 # Semantic layer tokens (4,508 lines)
-│   ├── components/                   # Component-specific tokens
+│   ├── web-components/               # Web component-specific tokens
 │   │   ├── component-token-template.json
 │   │   ├── icon.json                 # Generated component tokens
 │   │   ├── button.json
 │   │   ├── input.json
+│   │   └── ...
+│   ├── mobile-components/            # Mobile component-specific tokens
+│   │   ├── button.json
+│   │   ├── input.json
+│   │   ├── tab.json
+│   │   ├── tab-item.json
 │   │   └── ...
 │   ├── generated-highrise-scales/    # Generated color scales
 │   │   ├── light.json
@@ -284,7 +290,9 @@ The project uses a **3+ usage rule** for creating semantic tokens:
 
 ### 📈 **Component Status Summary**
 
-#### **Completed Component Token Files (24 Files)**
+#### **Completed Component Token Files (42 Files)**
+
+**Web Components (35 files):**
 
 **Core Interactive Components:**
 - ✅ `button.json` - Primary button component with all variants
@@ -305,57 +313,90 @@ The project uses a **3+ usage rule** for creating semantic tokens:
 - ✅ `avatar-profile-photo.json` - Avatar with profile photo
 - ✅ `avatar-company-icon.json` - Avatar with company icon
 - ✅ `avatar-online-indicator.json` - Online status indicator
+- ✅ `avatar-add-button.json` - Avatar add button
+- ✅ `avatar-with-label.json` - Avatar with label
+- ✅ `avatar-group.json` - Avatar group component
 
 **Tag Components:**
 - ✅ `tag.json` - Base tag component
 - ✅ `tag-close.json` - Tag close button
 - ✅ `tag-count.json` - Tag count indicator
+- ✅ `tag-group.json` - Tag group component
+- ✅ `badge-group.json` - Badge group component
 
 **Navigation & Menu Components:**
 - ✅ `tab.json` - Base tab component
 - ✅ `tab-item.json` - Individual tab item
 - ✅ `dropdown-menu.json` - Dropdown menu container
 - ✅ `dropdown-list-item.json` - Dropdown menu item
+- ✅ `content-switcher.json` - Content switcher container
+- ✅ `content-switcher-item.json` - Content switcher item
+- ✅ `pagination.json` - Pagination component
+- ✅ `pagination-item.json` - Pagination item
+- ✅ `pagination-button-group.json` - Pagination button group
 
 **Feedback Components:**
 - ✅ `alert.json` - Alert/banner component
 - ✅ `tooltip.json` - Tooltip component
 
+**Other Components:**
+- ✅ `action-group.json` - Action group component
+- ✅ `time-picker.json` - Time picker component
+
 **Template:**
 - ✅ `component-token-template.json` - Standard template for new components
 
+**Mobile Components (7 files):**
+- ✅ `button.json` - Mobile button component
+- ✅ `input.json` - Mobile input field component
+- ✅ `tab.json` - Mobile tab container component
+- ✅ `tab-item.json` - Mobile tab item component
+- ✅ `content-switcher.json` - Mobile content switcher container
+- ✅ `content-switcher-item.json` - Mobile content switcher item
+- ✅ `no-badge.json` - Mobile no badge component
+
 #### **Progress Overview:**
 ```
-Component Token Files: 24 completed
-├── Core Components: 4 files (button, link-button, action-icon, icon)
-├── Form Components: 6 files (input, input-form, textarea, select, checkbox, radio)
-├── Avatar System: 4 files (avatar variants and indicators)
-├── Tag System: 3 files (tag, close, count)
-├── Navigation: 4 files (tabs, dropdown menu/items)
-└── Feedback: 2 files (alert, tooltip)
+Component Token Files: 42 completed
+├── Web Components: 35 files
+│   ├── Core Components: 4 files (button, link-button, action-icon, icon)
+│   ├── Form Components: 6 files (input, input-form, textarea, select, checkbox, radio)
+│   ├── Avatar System: 7 files (avatar variants, indicators, group)
+│   ├── Tag System: 5 files (tag, close, count, group, badge-group)
+│   ├── Navigation: 9 files (tabs, dropdown, content-switcher, pagination)
+│   ├── Feedback: 2 files (alert, tooltip)
+│   └── Other: 2 files (action-group, time-picker)
+└── Mobile Components: 7 files
+    ├── Core: 1 file (button)
+    ├── Forms: 1 file (input)
+    ├── Navigation: 4 files (tab, tab-item, content-switcher, content-switcher-item)
+    └── Other: 1 file (no-badge)
 ```
 
 ### 🎯 **Core Component Coverage**
 
-| Component Category | Files Created | Status |
-|-------------------|---------------|---------|
-| **Buttons** | 3 files | ✅ Complete |
-| **Forms** | 6 files | ✅ Complete |
-| **Avatars** | 4 files | ✅ Complete |
-| **Tags** | 3 files | ✅ Complete |
-| **Navigation** | 4 files | ✅ Complete |
-| **Icons** | 2 files | ✅ Complete |
-| **Feedback** | 2 files | ✅ Complete |
+| Component Category | Web Files | Mobile Files | Total | Status |
+|-------------------|-----------|--------------|-------|---------|
+| **Buttons** | 3 files | 1 file | 4 files | ✅ Complete |
+| **Forms** | 6 files | 1 file | 7 files | ✅ Complete |
+| **Avatars** | 7 files | - | 7 files | ✅ Complete |
+| **Tags** | 5 files | - | 5 files | ✅ Complete |
+| **Navigation** | 9 files | 4 files | 13 files | ✅ Complete |
+| **Icons** | 2 files | - | 2 files | ✅ Complete |
+| **Feedback** | 2 files | - | 2 files | ✅ Complete |
+| **Other** | 1 file | 1 file | 2 files | ✅ Complete |
 
 ### 📈 **Progress Metrics**
 - **Primitive Tokens**: 3,140 (Complete) ✅
 - **Semantic Tokens**: 4,508 (Complete) ✅
-- **Component Token Files**: **24 files generated** ✅
-  - Button variants: 3 files
-  - Form components: 6 files
-  - Avatar system: 4 files
-  - Tag system: 3 files
-  - Navigation: 4 files
+- **Component Token Files**: **42 files generated** ✅
+  - Web components: 35 files
+  - Mobile components: 7 files
+  - Button variants: 4 files (3 web + 1 mobile)
+  - Form components: 7 files (6 web + 1 mobile)
+  - Avatar system: 7 files
+  - Tag system: 5 files
+  - Navigation: 13 files (9 web + 4 mobile)
   - Feedback: 2 files
   - Icons: 2 files
 

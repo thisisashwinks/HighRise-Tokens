@@ -667,6 +667,11 @@
         "value": "{size.14}",
         "type": "dimension",
         "description": "Size (height): 56px"
+      },
+      "3xl": {
+        "value": "{size.16}",
+        "type": "dimension",
+        "description": "Size (height): 64px"
       }
     },
     "5xs": {
@@ -718,6 +723,11 @@
       "value": "{size.14}",
       "type": "dimension",
       "description": "Size: 56px"
+    },
+    "3xl": {
+      "value": "{size.16}",
+      "type": "dimension",
+      "description": "Size: 64px"
     },
     "icon": {
       "6xs": {
@@ -1542,6 +1552,16 @@
         "value": "{padding.0}",
         "type": "dimension",
         "description": "Padding (vertical): 0px"
+      },
+      "5xs": {
+        "value": "{padding.1",
+        "type": "dimension",
+        "description": "Padding (vertical): 1px"
+      },
+      "4xs": {
+        "value": "{padding.1[5]}",
+        "type": "dimension",
+        "description": "Padding (vertical): 6px"
       },
       "3xs": {
         "value": "{padding.2}",

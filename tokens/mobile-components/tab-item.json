@@ -1,0 +1,196 @@
+{
+    "$comment": "Mobile Tab Item Component Tokens",
+    "$description": "Component tokens for Mobile Tab Item navigation component with multiple variants including default, leading icon, top icon, icon-only, trailing badge, and selected text. Supports default, active, and disabled states with optional border visibility. Figma Reference: Node ID 24-12525",
+    "$component": {
+        "name": "Tab Item",
+        "description": "A mobile navigation component that allows users to switch between related content groups. Supports text labels, icons (leading or top position), badges, and icon-only variants. Includes interaction states and optional bottom border indicator.",
+        "structure": "Container with optional bottom border, content area with icon (leading or top), text label, optional badge, with active/disabled states",
+        "sizes": {
+            "sm": "24px height - Small size for compact mobile interfaces",
+            "md": "32px height - Medium size for standard mobile navigation",
+            "lg": "40px height - Large size for prominent mobile tabs",
+            "xl": "40px height - Extra large size (same as large)",
+            "2xl": "40px height - 2XL size (same as large)"
+        },
+        "variants": {
+            "default": "Standard tab with text label only",
+            "leading-icon": "Tab with icon positioned before text label",
+            "top-icon": "Tab with icon positioned above text label",
+            "icon-only": "Tab with icon only, no text label",
+            "trailing-badge": "Tab with badge indicator after text",
+            "selected-text": "Tab with selected text variant"
+        },
+        "usage": {
+            "contexts": "Mobile navigation bars, content switchers, filter tabs, section navigation, tabbed interfaces",
+            "features": "Icon positioning (leading/top), Badge indicators, Border visibility toggle, Active state indicator, Disabled state support"
+        }
+    },
+    "tab-item": {
+        "color": {
+            "$comment": "Color tokens for mobile tab item states - includes default, active, and disabled states",
+            "default": {
+                "background": {
+                    "value": "{color.background.transparent}",
+                    "type": "color",
+                    "description": "Mobile tab item default background - transparent - #FFFFFF00"
+                },
+                "border": {
+                    "value": "{color.border.neutral.default}",
+                    "type": "color",
+                    "description": "Mobile tab item default border color - gray/300 - #d0d5dd"
+                },
+                "text": {
+                    "value": "{color.text.neutral.subtitle.1}",
+                    "type": "color",
+                    "description": "Mobile tab item default text color - gray/500 - #667085"
+                },
+                "icon": {
+                    "value": "{color.icon.neutral.moderate.2}",
+                    "type": "color",
+                    "description": "Mobile tab item default icon color - gray/600 - #475467"
+                }
+            },
+            "active": {
+                "background": {
+                    "value": "{color.background.transparent}",
+                    "type": "color",
+                    "description": "Mobile tab item active background - transparent - #FFFFFF00"
+                },
+                "border": {
+                    "value": "{color.border.primary.intense.0}",
+                    "type": "color",
+                    "description": "Mobile tab item active border color - primary/700 - #004eeb"
+                },
+                "text": {
+                    "value": "{color.text.primary.body.1}",
+                    "type": "color",
+                    "description": "Mobile tab item active text color - primary/700 - #004eeb"
+                },
+                "icon": {
+                    "value": "{color.icon.primary.default}",
+                    "type": "color",
+                    "description": "Mobile tab item active icon color - primary/700 - #004eeb"
+                }
+            },
+            "disabled": {
+                "background": {
+                    "value": "{color.background.transparent}",
+                    "type": "color",
+                    "description": "Mobile tab item disabled background - transparent - #FFFFFF00"
+                },
+                "border": {
+                    "value": "{color.border.neutral.subtle.1}",
+                    "type": "color",
+                    "description": "Mobile tab item disabled border color - gray/100 - #f2f4f7"
+                },
+                "text": {
+                    "value": "{color.text.neutral.subtitle.2}",
+                    "type": "color",
+                    "description": "Mobile tab item disabled text color - gray/400 - #98a2b3"
+                },
+                "icon": {
+                    "value": "{color.icon.neutral.subtle.2}",
+                    "type": "color",
+                    "description": "Mobile tab item disabled icon color - gray/300 - #d0d5dd"
+                }
+            }
+        },
+        "border": {
+            "$comment": "Border tokens for mobile tab item - includes radius and width for active state indicator",
+            "radius": {
+                "value": "{border.radius.none}",
+                "type": "dimension",
+                "description": "Mobile tab item border radius - none - 0px"
+            },
+            "width": {
+                "active": {
+                    "value": "{border.width.lg}",
+                    "type": "dimension",
+                    "description": "Mobile tab item active state bottom border width - 4px"
+                }
+            }
+        },
+        "padding": {
+            "$comment": "Spacing tokens for mobile tab item - horizontal and vertical padding",
+            "x": {
+                "default": {
+                    "value": "{padding.x.3xs}",
+                    "type": "dimension",
+                    "description": "Mobile tab item horizontal padding for default variant - 8px"
+                }
+            },
+            "y": {
+                "default": {
+                    "value": "{padding.y.5xs}",
+                    "type": "dimension",
+                    "description": "Mobile tab item vertical padding for default variant - 4px"
+                }
+            },
+            "icon-top": {
+                "top": {
+                    "value": "{padding.top.1}",
+                    "type": "dimension",
+                    "description": "Mobile tab item top padding for top-icon variant - 4px"
+                },
+                "bottom": {
+                    "value": "{padding.bottom.2}",
+                    "type": "dimension",
+                    "description": "Mobile tab item bottom padding for top-icon variant - 8px"
+                }
+            }
+        },
+        "gap": {
+            "value": "{gap.3xs}",
+            "type": "dimension",
+            "description": "Mobile tab item gap between icon and text - 4px"
+        },
+        "height": {
+            "$comment": "Size tokens for mobile tab item heights across different sizes",
+            "default": {
+                "value": "{size.height.2xl}",
+                "type": "dimension",
+                "description": "Mobile tab item height for default variant - 56px"
+            },
+            "icon-top": {
+                "value": "{size.height.3xl}",
+                "type": "dimension",
+                "description": "Mobile tab item height for icon-top variant - 64px"
+            }
+        },
+        "icon": {
+            "size": {
+                "value": "{size.icon.lg}",
+                "type": "dimension",
+                "description": "Mobile tab item icon size - 24px"
+            }
+        },
+        "typography": {
+            "$comment": "Typography tokens for mobile tab item text across sizes and states",
+            "text": {
+                "active": {
+                    "value": "{font.body.semibold.base}",
+                    "type": "typography",
+                    "description": "Mobile tab item active text typography - 14px semibold weight"
+                },
+                "default": {
+                    "value": "{font.body.medium.base}",
+                    "type": "typography",
+                    "description": "Mobile tab item default text typography - 13px medium weight"
+                },
+                "disabled": {
+                    "value": "{font.body.medium.base}",
+                    "type": "typography",
+                    "description": "Mobile tab item disabled text typography - 14px medium weight"
+                }
+            }
+        },
+        "badge": {
+            "$comment": "Badge size tokens for mobile tab item trailing badge variant",
+            "size": {
+                "value": "{size.height.3xs}",
+                "type": "dimension",
+                "description": "Mobile tab item badge size for default variant - 24px height"
+            }
+        }
+    }
+}

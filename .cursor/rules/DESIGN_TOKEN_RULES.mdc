@@ -2,11 +2,41 @@
 
 ## Token Structure Cleanup Guidelines
 
-### Schema and Metadata Removal
+### Platform-Specific Structure Rules
+
+#### Web Components (tokens/web-components/)
 - **Remove all schema/metadata**: $schema, $description, name, version, description
 - **Use actual component name as root key** (e.g., "input", "button", "tab-item", "textarea") not "component"
 - **Remove documentation sections**: responsive, states, variants, types
 - **Keep only core token definitions**: size, color, border-radius, container, layout, content, actions
+- **Use `description` field** (without $) for individual token descriptions
+- **No header structure** - start directly with component tokens
+
+#### Mobile Components (tokens/mobile-components/)
+- **REQUIRED header structure**: Include `$comment`, `$description`, and `$component` object at the top
+- **$component object structure**:
+  ```json
+  "$component": {
+    "name": "Component Name",
+    "description": "Detailed component description",
+    "structure": "Visual/DOM hierarchy description",
+    "sizes": {
+      "sm": "Height and usage context",
+      "md": "Height and usage context",
+      "lg": "Height and usage context"
+    },
+    "variants": {
+      "default": "Variant description",
+      "variant-name": "Variant description"
+    },
+    "usage": {
+      "contexts": "Usage contexts",
+      "features": "Key features"
+    }
+  }
+  ```
+- **Use `description` field** (without $) for individual token descriptions
+- **Prefix descriptions with "Mobile "** for clarity (e.g., "Mobile tab item default background")
 
 ### Token Hierarchy Workflow
 **CRITICAL**: Always follow this hierarchy:
@@ -43,6 +73,7 @@
 - **Size tokens**: `{size.3}`, `{size.4}`, `{size.5}`, `{size.6}`, `{size.7}`, `{size.8}`, `{size.9}`, `{size.10}`, `{size.11}`, `{size.12}`, `{size.14}`, `{size.16}`, `{size.20}`, `{size.24}`, `{size.28}`, `{size.32}`, `{size.36}`, `{size.40}`, `{size.44}`, `{size.45}`, `{size.48}`, `{size.56}`, `{size.80}`
 - **Height tokens**: `{size.height.3xs}`, `{size.height.2xs}`, `{size.height.xs}`, `{size.height.sm}`, `{size.height.md}`, `{size.height.lg}`, `{size.height.xl}`, `{size.height.2xl}`
 - **Use directional tokens when needed**: `{padding.x.3xs}`, `{padding.x.2xs}`, `{padding.x.xs}`, `{padding.x.sm}`, `{padding.x.md}`, `{padding.x.lg}`, `{padding.x.xl}`, `{padding.x.2xl}`, `{padding.y.xs}`, `{padding.y.sm}`, `{padding.y.md}`, `{padding.y.lg}`, `{padding.y.xl}`, `{padding.y.2xl}`, `{gap.3xs}`, `{gap.4xs}`, etc.
+- **Mobile component directional padding**: Use `padding.x.default`, `padding.y.default`, and variant-specific padding like `padding.icon-top.top`, `padding.icon-top.bottom`
 - **NEVER use "tokens.padding.x" or "tokens.gap.x"** - always use direct references
 
 #### Size Optimization
@@ -378,6 +409,22 @@
 }
 ```
 
+**Option 3 - Variant-based height** (for mobile components with layout variants):
+```json
+"height": {
+  "default": {
+    "value": "{size.height.2xl}",
+    "type": "dimension",
+    "description": "Mobile component height for default variant - 56px"
+  },
+  "top-icon": {
+    "value": "{size.height.3xl}",
+    "type": "dimension",
+    "description": "Mobile component height for top-icon variant - 64px"
+  }
+}
+```
+
 ## State Naming Standards (UPDATED)
 
 ### Standard Interactive States (REQUIRED)
@@ -387,6 +434,13 @@
 - `active` - Clicked/pressed state
 - `focused` - Keyboard focus state
 - `disabled` - Non-interactive state
+
+### Mobile Component States (SIMPLIFIED)
+**Mobile components may use simplified state structure**:
+- `default` - Initial/rest state
+- `active` - Selected/active state
+- `disabled` - Non-interactive state
+- **Note**: Mobile components typically omit `hover` and `focused` states unless specifically required
 
 ### Extended Form States (for form components)
 **Additional states for input-like components**:
@@ -527,6 +581,50 @@
 }
 ```
 
+### Mobile Component Padding Patterns
+**For mobile components with variant-specific padding**:
+
+```json
+"padding": {
+  "x": {
+    "default": {
+      "value": "{padding.x.3xs}",
+      "type": "dimension",
+      "description": "Mobile component horizontal padding for default variant - 8px"
+    },
+    "icon-only": {
+      "value": "{padding.x.none}",
+      "type": "dimension",
+      "description": "Mobile component horizontal padding for icon-only variant - 0px"
+    }
+  },
+  "y": {
+    "default": {
+      "value": "{padding.y.5xs}",
+      "type": "dimension",
+      "description": "Mobile component vertical padding for default variant - 4px"
+    },
+    "icon-only": {
+      "value": "{padding.y.none}",
+      "type": "dimension",
+      "description": "Mobile component vertical padding for icon-only variant - 0px"
+    }
+  },
+  "icon-top": {
+    "top": {
+      "value": "{padding.top.1}",
+      "type": "dimension",
+      "description": "Mobile component top padding for top-icon variant - 4px"
+    },
+    "bottom": {
+      "value": "{padding.bottom.2}",
+      "type": "dimension",
+      "description": "Mobile component bottom padding for top-icon variant - 8px"
+    }
+  }
+}
+```
+
 ## Component Organization Patterns (UPDATED)
 
 ### Size-Based Properties First
@@ -597,6 +695,30 @@
     },
     "supporting": {
       "default": {"value": "{font.body.regular.md}", "type": "typography"}
+    }
+  }
+}
+```
+
+### State-Based Typography Pattern (MOBILE COMPONENTS)
+**For mobile components with state-dependent typography**:
+```json
+"typography": {
+  "text": {
+    "default": {
+      "value": "{font.body.medium.base}",
+      "type": "typography",
+      "description": "Mobile component default text typography - 14px medium weight"
+    },
+    "active": {
+      "value": "{font.body.semibold.base}",
+      "type": "typography",
+      "description": "Mobile component active text typography - 14px semibold weight"
+    },
+    "disabled": {
+      "value": "{font.body.medium.base}",
+      "type": "typography",
+      "description": "Mobile component disabled text typography - 14px medium weight"
     }
   }
 }
@@ -692,4 +814,18 @@
     - Clean JSON structure without metadata
     - Direct token mapping from Figma component properties
     - Reference existing primitive/semantic tokens properly
-    - Support extended size scale (3xs through 2xl) 
+    - Support extended size scale (3xs through 2xl)
+
+15. **DESCRIPTION FIELD STANDARDIZATION:**
+    - **Both web and mobile components**: Use `description` field (without $) for individual token descriptions
+    - **Never use `$description`** for individual tokens (only `$description` is used in mobile component headers)
+    - **Mobile component descriptions**: Prefix with "Mobile " for clarity (e.g., "Mobile tab item default background")
+
+16. **MOBILE COMPONENT REQUIREMENTS:**
+    - **Header structure**: Include `$comment`, `$description`, and `$component` object
+    - **Description field**: Use `description` (without $) for individual tokens
+    - **Description prefix**: Prefix all descriptions with "Mobile " (e.g., "Mobile tab item default background")
+    - **Simplified states**: Mobile components typically use `default`, `active`, `disabled` (omit hover/focused unless required)
+    - **Variant-based properties**: Height and padding can have variant-based structures (e.g., `height.default`, `height.top-icon`)
+    - **Directional padding**: Use `padding.x`, `padding.y`, and variant-specific padding (e.g., `padding.icon-top.top`, `padding.icon-top.bottom`)
+    - **State-based typography**: Typography can be organized by states (`typography.text.default`, `typography.text.active`, `typography.text.disabled`) 
