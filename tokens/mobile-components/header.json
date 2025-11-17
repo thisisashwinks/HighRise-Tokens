@@ -1,0 +1,239 @@
+{
+  "$comment": "Mobile Header Component Tokens",
+  "$description": "Component tokens for Mobile Header component with platform-specific variants (iOS/Android), multiple type variants (Default, Default Left, Compact Large, Large Title), optional leading icons, and optional tabs. Supports flexible layouts with title, subtitle, avatar, and action groups. Figma Reference: Node ID 55-32232",
+  "$component": {
+    "name": "Header",
+    "description": "A mobile header component that provides navigation and context at the top of mobile screens. Supports platform-specific designs (iOS and Android), multiple type variants for different use cases, optional leading icons for navigation, optional tabs for secondary navigation, and flexible content including titles, subtitles, avatars, and action groups.",
+    "structure": "Container with background, shadow, and padding. Contains leading section (optional icon + avatar), center section (title with optional icon + subtitle with optional tags), trailing section (action group). Optional tabs section below main header. Layout adapts based on type variant (horizontal for Default/Default Left, vertical for Large Title).",
+    "sizes": {
+      "default": "70px height (iOS) / 70px height (Android) - Standard header without tabs",
+      "with-tabs": "106px height (iOS) / 112px height (Android) - Header with tabs below",
+      "large-title": "118px height (iOS/Android) - Large title variant without tabs",
+      "large-title-with-tabs": "174px height (iOS/Android) - Large title variant with tabs"
+    },
+    "variants": {
+      "platform": {
+        "ios": "iOS platform design with iOS-specific styling and spacing",
+        "android": "Android platform design with Android-specific styling and spacing"
+      },
+      "type": {
+        "default": "Standard header with horizontal layout, 16px title (iOS) / 20px title (Android)",
+        "default-left": "Default header with left-aligned title",
+        "compact-large": "Compact large variant with adjusted spacing",
+        "large-title": "Large title variant with 36px title (iOS) / vertical layout, prominent title display"
+      },
+      "leading-icon": {
+        "none": "No leading icon, avatar starts at left edge",
+        "present": "Leading icon (back/chevron) before avatar with 8px gap"
+      },
+      "tabs": {
+        "none": "No tabs section below header",
+        "present": "Tabs section below header, increases header height"
+      }
+    },
+    "usage": {
+      "contexts": "Mobile app screens, navigation headers, detail pages, list headers, profile headers, settings screens",
+      "features": "Platform-specific designs, Multiple type variants, Optional leading navigation icons, Optional tabs for secondary navigation, Flexible content (title, subtitle, avatar, tags), Action groups for header actions, Shadow elevation"
+    }
+  },
+  "header": {
+    "container": {
+      "$comment": "Container tokens for mobile header - background, padding, shadow, and layout",
+      "color": {
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile header default background - neutral/white - #ffffff"
+          }
+        }
+      },
+      "padding": {
+        "default": {
+          "x": {
+            "value": "{padding.x.md}",
+            "type": "dimension",
+            "description": "Mobile header horizontal padding - 16px"
+          },
+          "y": {
+            "value": "{padding.y.sm}",
+            "type": "dimension",
+            "description": "Mobile header vertical padding - 8px"
+          }
+        },
+        "with-tabs": {
+          "x": {
+            "value": "{padding.x.md}",
+            "type": "dimension",
+            "description": "Mobile header horizontal padding - 16px"
+          },
+          "top": {
+            "value": "{padding.top.2}",
+            "type": "dimension",
+            "description": "Mobile header vertical padding - 8px"
+          },
+          "bottom": {
+            "value": "{padding.bottom.0}",
+            "type": "dimension",
+            "description": "Mobile header vertical padding - 0px"
+          }
+        }
+      },
+      "shadow": {
+        "default": {
+          "value": "0px 1px 3px 0px rgba(16, 24, 40, 0.1), 0px 1px 2px 0px rgba(16, 24, 40, 0.06)",
+          "type": "boxShadow",
+          "description": "Mobile header default shadow - elevation shadow for header separation"
+        }
+      },
+      "gap": {
+        "content": {
+          "default": {
+            "value": "{gap.auto}",
+            "type": "dimension",
+            "description": "Mobile header gap between main sections (leading, center, trailing) - auto"
+          },
+          "large-title": {
+            "value": "{gap.2}",
+            "type": "dimension",
+            "description": "Mobile header gap between main sections (leading, center, trailing) - 8px"
+          }
+        }
+      }
+    },
+    "leading": {
+      "$comment": "Leading section tokens - optional back icon and avatar/leading icon",
+      "icon": {
+        "size": {
+          "value": "{size.icon.2xl}",
+          "type": "dimension",
+          "description": "Mobile header back icon size - 32px"
+        },
+        "color": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile header back/leading icon default color - neutral/gray-600 - #475467"
+        }
+      },
+      "avatar": {
+        "size": {
+          "default": {
+            "value": "{size.md}",
+            "type": "dimension",
+            "description": "Mobile header avatar/leading icon default size - 20px"
+          },
+          "large-title": {
+            "value": "{size.2xl}",
+            "type": "dimension",
+            "description": "Mobile header avatar/leading icon size for large title variant - 56px"
+          }
+        },
+        "border": {
+          "radius": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Mobile header avatar/leading icon border radius - fully rounded/circular"
+          }
+        }
+      }
+    },
+    "title": {
+      "$comment": "Title section tokens - typography varies by platform and type variant",
+      "typography": {
+        "ios": {
+          "default": {
+            "value": "{font.body.semibold.2xl}",
+            "type": "typography",
+            "description": "Mobile header iOS default title typography - 16px semibold, 24px line height"
+          },
+          "large-title": {
+            "value": "{font.heading.semibold.h3}",
+            "type": "typography",
+            "description": "Mobile header iOS large title typography - 36px semibold, 44px line height, -0.72px letter spacing"
+          }
+        },
+        "android": {
+          "default": {
+            "value": "{font.heading.semibold.h6}",
+            "type": "typography",
+            "description": "Mobile header Android default title typography - 20px semibold, 30px line height"
+          },
+          "large-title": {
+            "value": "{font.heading.semibold.h3}",
+            "type": "typography",
+            "description": "Mobile header Android large title typography - 36px semibold, 44px line height"
+          }
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.title.1}",
+          "type": "color",
+          "description": "Mobile header title default color - neutral/gray-900 - #101828"
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{size.icon.sm}",
+          "type": "dimension",
+          "description": "Mobile header title icon size - 18px"
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile header title icon default color - neutral/gray-600 - #475467"
+          }
+        },
+        "gap": {
+          "value": "{gap.3xs}",
+          "type": "dimension",
+          "description": "Mobile header gap between title text and icon - 4px"
+        }
+      }
+    },
+    "subtitle": {
+      "$comment": "Subtitle section tokens - text and optional tags",
+      "typography": {
+        "value": "{font.body.regular.sm}",
+        "type": "typography",
+        "description": "Mobile header subtitle typography - 12px regular, 17px line height"
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.subtitle.1}",
+          "type": "color",
+          "description": "Mobile header subtitle default color - neutral/gray-500 - #667085"
+        }
+      },
+      "gap": {
+        "value": "{gap.3xs}",
+        "type": "dimension",
+        "description": "Mobile header gap between subtitle elements (tags and text) - 4px"
+      }
+    },
+    "height": {
+      "$comment": "Height tokens for mobile header across different variants",
+      "default": {
+        "value": "{size.height.17[5]}",
+        "type": "dimension",
+        "description": "Mobile header iOS default height - 70px"
+      },
+      "with-tabs": {
+        "value": "{size.height.28}",
+        "type": "dimension",
+        "description": "Mobile header iOS height with tabs - 112px"
+      },
+      "large-title": {
+        "value": "{size.height.29[5]}",
+        "type": "dimension",
+        "description": "Mobile header iOS large title height - 118px"
+      },
+      "large-title-with-tabs": {
+        "value": "{size.height.43[5]}",
+        "type": "dimension",
+        "description": "Mobile header iOS large title height with tabs - 174px"
+      }
+    }
+  }
+}

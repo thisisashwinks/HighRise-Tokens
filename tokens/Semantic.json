@@ -628,6 +628,31 @@
         "type": "dimension",
         "description": "Size (height): 38px"
       },
+      "17[5]": {
+        "value": "{size.17[5]}",
+        "type": "dimension",
+        "description": "Size (height): 70px"
+      },
+      "29[5]": {
+        "value": "{size.29[5]}",
+        "type": "dimension",
+        "description": "Size (height): 118px"
+      },
+      "43[5]": {
+        "value": "{size.43[5]}",
+        "type": "dimension",
+        "description": "Size (height): 174px"
+      },
+      "5xs": {
+        "value": "{size.4}",
+        "type": "dimension",
+        "description": "Size (height): 16px"
+      },
+      "4xs": {
+        "value": "{size.5}",
+        "type": "dimension",
+        "description": "Size (height): 20px"
+      },
       "3xs": {
         "value": "{size.6}",
         "type": "dimension",
@@ -673,6 +698,11 @@
         "type": "dimension",
         "description": "Size (height): 64px"
       }
+    },
+    "6xs": {
+      "value": "{size.3}",
+      "type": "dimension",
+      "description": "Size: 12px"
     },
     "5xs": {
       "value": "{size.4}",
@@ -3577,6 +3607,11 @@
       "value": "{spacing.-2[5]}",
       "type": "dimension",
       "description": "Gap: -10px"
+    },
+    "auto": {
+      "value": "{spacing.auto}",
+      "type": "dimension",
+      "description": "Gap: auto - CSS equivalent (flexbox): justify-content: space-between"
     },
     "none": {
       "value": "{gap.0}",

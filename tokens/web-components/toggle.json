@@ -1,0 +1,275 @@
+{
+  "$comment": "Toggle Component Tokens",
+  "$description": "Component tokens for Toggle switch component with pressed (checked) and unpressed (unchecked) states across 3 sizes (sm, md, lg). Includes default, hover, focus, disabled, and error states. Figma Reference: Node ID 26953-5957",
+  "$component": {
+    "name": "Toggle",
+    "description": "A toggle switch component for binary on/off states. Consists of a track (container) and a thumb (sliding button). Supports multiple sizes, states, and error validation.",
+    "structure": "Track container with rounded background, containing a thumb element that slides between positions. Track changes color based on pressed state, thumb maintains consistent appearance.",
+    "sizes": {
+      "sm": "16px height, 28px width - Small size for compact interfaces, thumb size 12px",
+      "md": "20px height, 36px width - Medium size (commonly used default), thumb size 16px",
+      "lg": "24px height, 44px width - Large size for prominent toggles, thumb size 20px"
+    },
+    "variants": {
+      "unpressed": "Toggle in off/unchecked state with neutral background colors",
+      "pressed": "Toggle in on/checked state with primary blue background colors"
+    },
+    "usage": {
+      "contexts": "Settings panels, forms, feature toggles, preferences, configuration screens, data entry interfaces",
+      "features": "Binary state switching, focus indicators, hover feedback, disabled state, error validation, size variants"
+    }
+  },
+  "toggle": {
+    "track": {
+      "height": {
+        "sm": {
+          "value": "{size.height.5xs}",
+          "type": "dimension",
+          "description": "Toggle track height for sm size - 16px"
+        },
+        "md": {
+          "value": "{size.height.4xs}",
+          "type": "dimension",
+          "description": "Toggle track height for md size - 20px"
+        },
+        "lg": {
+          "value": "{size.height.3xs}",
+          "type": "dimension",
+          "description": "Toggle track height for lg size - 24px"
+        }
+      },
+      "width": {
+        "sm": {
+          "value": "{size.width.2xs}",
+          "type": "dimension",
+          "description": "Toggle track width for sm size - 28px"
+        },
+        "md": {
+          "value": "{size.width.sm}",
+          "type": "dimension",
+          "description": "Toggle track width for md size - 36px"
+        },
+        "lg": {
+          "value": "{size.width.lg}",
+          "type": "dimension",
+          "description": "Toggle track width for lg size - 44px"
+        }
+      },
+      "border": {
+        "radius": {
+          "sm": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Fully rounded border radius for sm toggle track"
+          },
+          "md": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Fully rounded border radius for md toggle track"
+          },
+          "lg": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Fully rounded border radius for lg toggle track"
+          }
+        }
+      },
+      "padding": {
+        "value": "{spacing.0[5]}",
+        "type": "dimension",
+        "description": "Internal padding for toggle track - 2px"
+      },
+      "color": {
+      "background": {
+        "unpressed": {
+          "default": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Unpressed toggle default background - neutral/gray-100 - #f2f4f7"
+          },
+          "hover": {
+            "value": "{color.background.neutral.subtle.2}",
+            "type": "color",
+            "description": "Unpressed toggle hover background - neutral/gray-200 - #eaecf0"
+          },
+          "focused": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Unpressed toggle focused background - neutral/gray-50 - #f9fafb"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Unpressed toggle disabled background - neutral/gray-100 - #f2f4f7"
+          },
+          "error": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Unpressed toggle error background - neutral/gray-100 - #f2f4f7"
+          }
+        },
+        "pressed": {
+          "default": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Pressed toggle default background - primary/blue-600 - #155eef"
+          },
+          "hover": {
+            "value": "{color.background.primary.intense.0}",
+            "type": "color",
+            "description": "Pressed toggle hover background - primary/blue-700 - #004eeb"
+          },
+          "focused": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Pressed toggle focused background - primary/blue-600 - #155eef"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Pressed toggle disabled background - neutral/gray-100 - #f2f4f7"
+          },
+          "error": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Pressed toggle error background - primary/blue-600 - #155eef"
+          }
+        }
+      },
+      "border": {
+        "unpressed": {
+          "default": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Unpressed toggle default border - transparent - no visible border"
+          },
+          "hover": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Unpressed toggle hover border - transparent - no visible border"
+          },
+          "focused": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Unpressed toggle focused border - transparent - no visible border"
+          },
+          "disabled": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Unpressed toggle disabled border - transparent - no visible border"
+          },
+          "error": {
+            "value": "{color.border.error.moderate.1}",
+            "type": "color",
+            "description": "Unpressed toggle error border - error/red-500 - #f04438"
+          }
+        },
+        "pressed": {
+          "default": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Pressed toggle default border - transparent - no visible border"
+          },
+          "hover": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Pressed toggle hover border - transparent - no visible border"
+          },
+          "focused": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Pressed toggle focused border - transparent - no visible border"
+          },
+          "disabled": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Pressed toggle disabled border - transparent - no visible border"
+          },
+          "error": {
+            "value": "{color.border.error.moderate.1}",
+            "type": "color",
+            "description": "Pressed toggle error border - error/red-500 - #f04438"
+          }
+        }
+      }
+    }
+    },
+    "thumb": {
+      "size": {
+        "sm": {
+          "value": "{size.6xs}",
+          "type": "dimension",
+          "description": "Toggle thumb size for sm size - 12px"
+        },
+        "md": {
+          "value": "{size.5xs}",
+          "type": "dimension",
+          "description": "Toggle thumb size for md size - 16px"
+        },
+        "lg": {
+          "value": "{size.4xs}",
+          "type": "dimension",
+          "description": "Toggle thumb size for lg size - 20px"
+        }
+      },
+      "border": {
+        "radius": {
+          "sm": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Fully rounded border radius for sm toggle thumb - circular"
+          },
+          "md": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Fully rounded border radius for md toggle thumb - circular"
+          },
+          "lg": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Fully rounded border radius for lg toggle thumb - circular"
+          }
+        }
+      },
+      "background": {
+        "default": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Toggle thumb default background - neutral/gray-0 - #ffffff"
+        },
+        "disabled": {
+          "value": "{color.background.neutral.subtle.0}",
+          "type": "color",
+          "description": "Toggle thumb disabled background - neutral/gray-50 - #f9fafb"
+        }
+      }
+    },
+    "focus": {
+      "outline": {
+        "color": {
+          "value": "{color.border.primary.subtle.1}",
+          "type": "color",
+          "description": "Focus outline color for toggle - primary/blue-200 - #b2ccff"
+        },
+        "width": {
+          "sm": {
+            "value": "{spacing.1}",
+            "type": "dimension",
+            "description": "Focus outline width for sm toggle - 4px"
+          },
+          "md": {
+            "value": "{spacing.1}",
+            "type": "dimension",
+            "description": "Focus outline width for md toggle - 4px"
+          },
+          "lg": {
+            "value": "{spacing.1}",
+            "type": "dimension",
+            "description": "Focus outline width for lg toggle - 4px"
+          }
+        }
+      }
+    }
+  }
+}
+

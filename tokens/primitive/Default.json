@@ -1968,6 +1968,11 @@
     }
   },
   "spacing": {
+    "auto": {
+      "value": "auto",
+      "type": "string",
+      "description": "Spacing: auto - CSS equivalent (flexbox): justify-content: space-between"
+    },
     "0": {
       "value": 0,
       "type": "number",
@@ -3153,6 +3158,21 @@
       "value": 38,
       "type": "number",
       "description": "Size: 38px"
+    },
+    "17[5]": {
+      "value": 70,
+      "type": "number",
+      "description": "Size: 70px"
+    },
+    "29[5]": {
+      "value": 118,
+      "type": "number",
+      "description": "Size: 118px"
+    },
+    "43[5]": {
+      "value": 174,
+      "type": "number",
+      "description": "Size: 174px"
     }
   },
   "position": {

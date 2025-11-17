@@ -1,0 +1,90 @@
+{
+  "$comment": "Mobile Header Action Group Component Tokens",
+  "$description": "Component tokens for Mobile Header Action Group component that groups action buttons and icons in mobile headers. Supports multiple variants including single/double/triple buttons, single/double/triple icons, and icon+button combinations. Includes optional badge indicators. Figma Reference: Node ID 55-29924",
+  "$component": {
+    "name": "Header Action Group",
+    "description": "A mobile header component that groups multiple action elements (buttons and/or icons) together. Supports various combinations including buttons only, icons only, or mixed icon+button layouts. Includes optional badge indicators for notifications or counts. Used in mobile app headers for primary actions and navigation.",
+    "structure": "Horizontal flex container with configurable gap spacing, containing action buttons and/or icon buttons. Optional badge indicators positioned absolutely on icon buttons. Buttons have primary subtle background with primary text, icons are neutral colored.",
+    "sizes": {
+      "default": "Standard size - buttons use 14px padding horizontal, 8px vertical. Icons are 32px square."
+    },
+    "variants": {
+      "double-button": "Two action buttons grouped together with 8px gap",
+      "single-button": "Single action button",
+      "single-icon": "Single icon button (32px) with optional badge",
+      "double-icon": "Two icon buttons (32px each) with 10px gap and optional badge",
+      "triple-icon": "Three icon buttons (32px each) with 10px gap",
+      "icon-button": "Icon button (32px) + action button combination with 10px gap and optional badge"
+    },
+    "usage": {
+      "contexts": "Mobile app headers, navigation bars, action bars, toolbar components, header action areas",
+      "features": "Multiple action combinations, Badge indicators, Primary action styling, Icon-only actions, Button+icon combinations, Configurable spacing"
+    }
+  },
+  "header-action-group": {
+    "container": {
+      "$comment": "Container tokens for mobile header action group - gap spacing between elements",
+      "gap": {
+        "button": {
+          "value": "{gap.sm}",
+          "type": "dimension",
+          "description": "Mobile header action group gap between buttons - 8px"
+        },
+        "icon": {
+          "value": "{gap.2[5]}",
+          "type": "dimension",
+          "description": "Mobile header action group gap between icons - 10px"
+        },
+        "icon-button": {
+          "value": "{gap.2[5]}",
+          "type": "dimension",
+          "description": "Mobile header action group gap between icon and button - 10px"
+        }
+      }
+    },
+    "button": {
+      "$comment": "Button tokens for mobile header action group - primary subtle style buttons",
+      "size": {
+        "height": {
+          "value": "{size.height.xs}",
+          "type": "dimension",
+          "description": "Mobile header action group button height (sm) - 32px"
+        }
+      }
+    },
+    "icon": {
+      "$comment": "Icon tokens for mobile header action group - icon-only buttons",
+      "size": {
+        "value": "{size.icon.2xl}",
+        "type": "dimension",
+        "description": "Mobile header action group icon size - 32px"
+      },
+      "color": {
+        "value": "{color.icon.neutral.moderate.2}",
+        "type": "color",
+        "description": "Mobile header action group icon default color - neutral/gray-600 - #475467"
+      }
+    }
+  },
+  "badge": {
+    "$comment": "Badge tokens for mobile header action group - notification/count indicators on icons",
+    "size": {
+      "value": "{size.5xs}",
+      "type": "dimension",
+      "description": "Mobile header action group badge size - 16px"
+    },
+    "position": {
+      "$comment": "Badge positioning relative to icon - absolute positioning offsets",
+      "x": {
+        "value": "{position.x.4}",
+        "type": "dimension",
+        "description": "Mobile header action group badge horizontal offset from icon edge - 16px"
+      },
+      "y": {
+        "value": "{position.y.0}",
+        "type": "dimension",
+        "description": "Mobile header action group badge vertical offset from icon top - 0px"
+      }
+    }
+  }
+}

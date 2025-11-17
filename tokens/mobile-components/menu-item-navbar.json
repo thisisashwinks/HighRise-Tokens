@@ -1,0 +1,265 @@
+{
+  "$comment": "Mobile Menu Item Navbar Component Tokens",
+  "$description": "Component tokens for Mobile Menu Item Navbar component used in mobile navigation bars. Supports platform-specific variants (iOS/Android), selection states (default/selected), selection types (with background/without background), optional badges, optional borders (top/bottom/none), and optional label visibility. Figma Reference: Node ID 71-5030",
+  "$component": {
+    "name": "Menu Item Navbar",
+    "description": "A mobile navigation component that displays menu items in a navigation bar. Supports platform-specific designs (iOS pill-shaped container vs Android square container), selection states with optional icon backgrounds, optional badge indicators, optional border indicators (top or bottom), and optional label visibility. Used for primary navigation in mobile apps.",
+    "structure": "Container with platform-specific border radius (iOS: pill-shaped, Android: square), padding, and optional borders. Contains icon container (32px) with icon (24px), optional badge positioned on icon, and optional label text below icon. Gap between icon and label.",
+    "sizes": {
+      "ios": "71px height - iOS platform with pill-shaped container (100px border radius)",
+      "android": "Variable height - Android platform with square container (no border radius)"
+    },
+    "variants": {
+      "platform": {
+        "ios": "iOS platform design with pill-shaped container (100px border radius), 71px height",
+        "android": "Android platform design with square container (no border radius), variable height"
+      },
+      "selected": {
+        "default": "Not selected state - gray icon and text, transparent background",
+        "selected": "Selected state - blue icon and text, optional icon background, optional border indicator"
+      },
+      "selection-type": {
+        "with-bg": "Selected state with icon background - blue background (#d1e0ff) on icon container, 6px border radius",
+        "without-bg": "Selected state without icon background - transparent icon container background"
+      },
+      "border": {
+        "none": "No border indicator",
+        "top": "Top border indicator - 2px primary blue border at top of container",
+        "bottom": "Bottom border indicator - 2px primary blue border at bottom of container"
+      },
+      "badge": {
+        "none": "No badge indicator",
+        "present": "Badge indicator positioned on icon - 18px height, 6px horizontal padding, 9px border radius"
+      },
+      "label": {
+        "visible": "Label text visible below icon",
+        "hidden": "Label text hidden, icon-only display"
+      }
+    },
+    "usage": {
+      "contexts": "Mobile navigation bars, bottom navigation, tab bars, primary navigation menus, mobile app navigation",
+      "features": "Platform-specific designs (iOS/Android), Selection states, Optional icon backgrounds, Badge indicators, Border indicators (top/bottom), Optional label visibility, Icon-only variants"
+    }
+  },
+  "menu-item-navbar": {
+    "color": {
+      "$comment": "Color tokens for mobile menu item navbar - includes default and selected states",
+      "default": {
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile menu item navbar default background - neutral/white - #ffffff"
+        },
+        "icon": {
+          "background": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Mobile menu item navbar default icon container background - transparent - #FFFFFF00"
+          },
+          "color": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile menu item navbar default icon color - neutral/gray-600 - #475467"
+          }
+        },
+        "text": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Mobile menu item navbar default text color - neutral/gray-600 - #475467"
+        },
+        "border": {
+          "value": "{color.border.transparent}",
+          "type": "color",
+          "description": "Mobile menu item navbar default border color - transparent - #FFFFFF00"
+        }
+      },
+      "selected": {
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile menu item navbar selected background - neutral/white - #ffffff"
+        },
+        "icon": {
+          "background": {
+            "with-bg": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile menu item navbar selected icon container background with background - primary/blue-100 - #d1e0ff"
+            },
+            "without-bg": {
+              "value": "{color.background.transparent}",
+              "type": "color",
+              "description": "Mobile menu item navbar selected icon container background without background - transparent - #FFFFFF00"
+            }
+          },
+          "color": {
+            "value": "{color.icon.primary.default}",
+            "type": "color",
+            "description": "Mobile menu item navbar selected icon color - primary/blue-700 - #004eeb"
+          }
+        },
+        "text": {
+          "value": "{color.text.primary.body.1}",
+          "type": "color",
+          "description": "Mobile menu item navbar selected text color - primary/blue-700 - #004eeb"
+        },
+        "border": {
+          "top": {
+            "value": "{color.border.primary.intense.0}",
+            "type": "color",
+            "description": "Mobile menu item navbar selected top border color - primary/blue-700 - #004eeb"
+          },
+          "bottom": {
+            "value": "{color.border.primary.intense.0}",
+            "type": "color",
+            "description": "Mobile menu item navbar selected bottom border color - primary/blue-700 - #004eeb"
+          }
+        }
+      }
+    },
+    "badge": {
+      "$comment": "Badge tokens for mobile menu item navbar - includes default and selected states",
+      "default": {
+        "background": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "description": "Mobile menu item navbar default badge background - neutral/gray-100 - #f2f4f7"
+        },
+        "text": {
+          "value": "{color.text.neutral.title.2}",
+          "type": "color",
+          "description": "Mobile menu item navbar default badge text color - neutral/gray-700 - #344054"
+        }
+      },
+      "selected": {
+        "background": {
+          "value": "{color.background.primary.subtle.0}",
+          "type": "color",
+          "description": "Mobile menu item navbar selected badge background - primary/blue-50 - #eff4ff"
+        },
+        "text": {
+          "value": "{color.text.primary.body.1}",
+          "type": "color",
+          "description": "Mobile menu item navbar selected badge text color - primary/blue-700 - #004eeb"
+        }
+      },
+      "size": {
+        "height": {
+          "value": "{size.height.3xs}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar badge height - 18px"
+        }
+      },
+      "padding": {
+        "x": {
+          "value": "{padding.x.5xs}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar badge horizontal padding - 6px"
+        }
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius[9]}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar badge border radius - 9px"
+        }
+      },
+      "typography": {
+        "value": "{font.body.medium.xs}",
+        "type": "typography",
+        "description": "Mobile menu item navbar badge typography - 11px medium weight, 16px line height"
+      }
+    },
+    "border": {
+      "$comment": "Border tokens for mobile menu item navbar - includes radius and width",
+      "radius": {
+        "ios": {
+          "value": "{border.radius.full}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar iOS container border radius - fully rounded/pill-shaped - 100px"
+        },
+        "android": {
+          "value": "{border.radius.none}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar Android container border radius - none - 0px"
+        },
+        "icon": {
+          "value": "{border.radius.sm}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar icon container border radius (for selected with background) - 6px"
+        }
+      },
+      "width": {
+        "selected": {
+          "value": "{border.width.md}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar selected state border width (top/bottom) - 2px"
+        }
+      }
+    },
+    "padding": {
+      "$comment": "Spacing tokens for mobile menu item navbar container",
+      "default": {
+        "value": "{padding.all.2}",
+        "type": "dimension",
+        "description": "Mobile menu item navbar container padding - 8px"
+      }
+    },
+    "gap": {
+      "$comment": "Gap tokens for mobile menu item navbar - spacing between elements",
+      "icon-label": {
+        "value": "{gap.3xs}",
+        "type": "dimension",
+        "description": "Mobile menu item navbar gap between icon and label - 6px"
+      },
+      "badge": {
+        "value": "{gap.5xs}",
+        "type": "dimension",
+        "description": "Mobile menu item navbar gap between badge elements - 2px"
+      }
+    },
+    "size": {
+      "$comment": "Size tokens for mobile menu item navbar - icon, container, and badge dimensions",
+      "icon": {
+        "container": {
+          "value": "{size.width.8}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar icon container size - 32px square"
+        },
+        "icon": {
+          "value": "{size.icon.lg}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar icon size - 24px"
+        }
+      },
+      "height": {
+        "ios": {
+          "value": "{size.height.2xl}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar iOS container height - 71px"
+        },
+        "android": {
+          "value": "auto",
+          "type": "dimension",
+          "description": "Mobile menu item navbar Android container height - auto (content-based)"
+        }
+      }
+    },
+    "typography": {
+      "$comment": "Typography tokens for mobile menu item navbar label text",
+      "label": {
+        "default": {
+          "value": "{font.body.medium.sm}",
+          "type": "typography",
+          "description": "Mobile menu item navbar default label typography - 12px medium weight, 17px line height"
+        },
+        "selected": {
+          "value": "{font.body.medium.sm}",
+          "type": "typography",
+          "description": "Mobile menu item navbar selected label typography - 12px medium weight, 17px line height"
+        }
+      }
+    }
+  }
+}
+

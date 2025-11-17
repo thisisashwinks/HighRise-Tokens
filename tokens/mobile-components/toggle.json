@@ -1,0 +1,432 @@
+{
+  "$comment": "Mobile Toggle Component Tokens",
+  "$description": "Component tokens for Mobile Toggle switch component with Android and iOS platform variants. Supports pressed (checked) and unpressed (unchecked) states with default, hover, focus, disabled, and error states. Includes Default and Icon variants. Figma Reference: Node ID 20-70104",
+  "$component": {
+    "name": "Toggle",
+    "description": "A mobile toggle switch component for binary on/off states. Supports both Android and iOS platform-specific designs. Consists of a track (container) and a thumb/knob (sliding element). Android variant uses circular thumb, iOS variant uses pill-shaped knob. Includes optional icon variant with icon inside thumb.",
+    "structure": "Track container with rounded background, containing a thumb/knob element that slides between positions. Track changes color based on pressed state. Android uses circular thumb, iOS uses wider pill-shaped knob.",
+    "sizes": {
+      "android": "28px height, 52px width (pressed) - Android platform toggle with 24px circular thumb",
+      "ios": "28px height, 64px width (pressed) - iOS platform toggle with 24px height x 39px width pill-shaped knob"
+    },
+    "variants": {
+      "default": "Standard toggle without icon",
+      "icon": "Toggle with icon displayed inside thumb/knob",
+      "android": "Android platform design with circular thumb",
+      "ios": "iOS platform design with pill-shaped knob"
+    },
+    "usage": {
+      "contexts": "Mobile settings panels, mobile forms, feature toggles, preferences, configuration screens, mobile data entry interfaces",
+      "features": "Platform-specific designs (Android/iOS), Binary state switching, focus indicators, hover feedback, disabled state, error validation, icon variant support"
+    }
+  },
+  "toggle": {
+    "track": {
+      "height": {
+        "android": {
+          "value": "{size.height.2xs}",
+          "type": "dimension",
+          "description": "Mobile Android toggle track height - 28px"
+        },
+        "ios": {
+          "value": "{size.height.2xs}",
+          "type": "dimension",
+          "description": "Mobile iOS toggle track height - 28px"
+        }
+      },
+      "width": {
+        "android": {
+          "value": "{size.width.13}",
+          "type": "dimension",
+          "description": "Mobile Android toggle track width - 52px (constant for both pressed and unpressed states)"
+        },
+        "ios": {
+          "value": "{size.width.16}",
+          "type": "dimension",
+          "description": "Mobile iOS toggle track width - 64px (constant for both pressed and unpressed states)"
+        }
+      },
+      "border": {
+        "radius": {
+          "android": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Fully rounded border radius for mobile Android toggle track"
+          },
+          "ios": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Fully rounded border radius for mobile iOS toggle track"
+          }
+        }
+      },
+      "padding": {
+        "value": "{spacing.0[5]}",
+        "type": "dimension",
+        "description": "Internal padding for mobile toggle track - 2px"
+      },
+      "color": {
+        "background": {
+          "android": {
+            "unpressed": {
+              "default": {
+                "value": "{color.background.neutral.subtle.1}",
+                "type": "color",
+                "description": "Mobile Android unpressed toggle default background - neutral/gray-100 - #f2f4f7"
+              },
+              "hover": {
+                "value": "{color.background.neutral.subtle.2}",
+                "type": "color",
+                "description": "Mobile Android unpressed toggle hover background - neutral/gray-200 - #eaecf0"
+              },
+              "focused": {
+                "value": "{color.background.neutral.subtle.0}",
+                "type": "color",
+                "description": "Mobile Android unpressed toggle focused background - neutral/gray-50 - #f9fafb"
+              },
+              "disabled": {
+                "value": "{color.background.neutral.subtle.2}",
+                "type": "color",
+                "description": "Mobile Android unpressed toggle disabled background - neutral/gray-200 - #eaecf0"
+              },
+              "error": {
+                "value": "{color.background.neutral.subtle.1}",
+                "type": "color",
+                "description": "Mobile Android unpressed toggle error background - neutral/gray-100 - #f2f4f7"
+              }
+            },
+            "pressed": {
+              "default": {
+                "value": "{color.background.primary.default}",
+                "type": "color",
+                "description": "Mobile Android pressed toggle default background - primary/blue-600 - #155eef"
+              },
+              "hover": {
+                "value": "{color.background.primary.intense.0}",
+                "type": "color",
+                "description": "Mobile Android pressed toggle hover background - primary/blue-700 - #004eeb"
+              },
+              "focused": {
+                "value": "{color.background.primary.default}",
+                "type": "color",
+                "description": "Mobile Android pressed toggle focused background - primary/blue-600 - #155eef"
+              },
+              "disabled": {
+                "value": "{color.background.neutral.subtle.2}",
+                "type": "color",
+                "description": "Mobile Android pressed toggle disabled background - neutral/gray-200 - #eaecf0"
+              },
+              "error": {
+                "value": "{color.background.primary.default}",
+                "type": "color",
+                "description": "Mobile Android pressed toggle error background - primary/blue-600 - #155eef"
+              }
+            }
+          },
+          "ios": {
+            "unpressed": {
+              "default": {
+                "value": "{color.background.neutral.subtle.2}",
+                "type": "color",
+                "description": "Mobile iOS unpressed toggle default background - neutral/gray-200 - #eaecf0"
+              },
+              "hover": {
+                "value": "{color.background.neutral.subtle.2}",
+                "type": "color",
+                "description": "Mobile iOS unpressed toggle hover background - neutral/gray-200 - #eaecf0"
+              },
+              "focused": {
+                "value": "{color.background.neutral.subtle.2}",
+                "type": "color",
+                "description": "Mobile iOS unpressed toggle focused background - neutral/gray-200 - #eaecf0"
+              },
+              "disabled": {
+                "value": "{color.background.neutral.subtle.2}",
+                "type": "color",
+                "description": "Mobile iOS unpressed toggle disabled background - neutral/gray-200 - #eaecf0"
+              },
+              "error": {
+                "value": "{color.background.neutral.subtle.2}",
+                "type": "color",
+                "description": "Mobile iOS unpressed toggle error background - neutral/gray-200 - #eaecf0"
+              }
+            },
+            "pressed": {
+              "default": {
+                "value": "{color.background.primary.default}",
+                "type": "color",
+                "description": "Mobile iOS pressed toggle default background - primary/blue-600 - #155eef"
+              },
+              "hover": {
+                "value": "{color.background.primary.intense.0}",
+                "type": "color",
+                "description": "Mobile iOS pressed toggle hover background - primary/blue-700 - #004eeb"
+              },
+              "focused": {
+                "value": "{color.background.primary.default}",
+                "type": "color",
+                "description": "Mobile iOS pressed toggle focused background - primary/blue-600 - #155eef"
+              },
+              "disabled": {
+                "value": "{color.background.neutral.subtle.1}",
+                "type": "color",
+                "description": "Mobile iOS pressed toggle disabled background - neutral/gray-100 - #f2f4f7"
+              },
+              "error": {
+                "value": "{color.background.primary.default}",
+                "type": "color",
+                "description": "Mobile iOS pressed toggle error background - primary/blue-600 - #155eef"
+              }
+            }
+          }
+        },
+        "border": {
+          "android": {
+            "unpressed": {
+              "default": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile Android unpressed toggle default border - transparent - no visible border"
+              },
+              "hover": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile Android unpressed toggle hover border - transparent - no visible border"
+              },
+              "focused": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile Android unpressed toggle focused border - transparent - no visible border"
+              },
+              "disabled": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile Android unpressed toggle disabled border - transparent - no visible border"
+              },
+              "error": {
+                "value": "{color.border.error.moderate.1}",
+                "type": "color",
+                "description": "Mobile Android unpressed toggle error border - error/red-500 - #f04438"
+              }
+            },
+            "pressed": {
+              "default": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile Android pressed toggle default border - transparent - no visible border"
+              },
+              "hover": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile Android pressed toggle hover border - transparent - no visible border"
+              },
+              "focused": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile Android pressed toggle focused border - transparent - no visible border"
+              },
+              "disabled": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile Android pressed toggle disabled border - transparent - no visible border"
+              },
+              "error": {
+                "value": "{color.border.error.moderate.1}",
+                "type": "color",
+                "description": "Mobile Android pressed toggle error border - error/red-500 - #f04438"
+              }
+            }
+          },
+          "ios": {
+            "unpressed": {
+              "default": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile iOS unpressed toggle default border - transparent - no visible border"
+              },
+              "hover": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile iOS unpressed toggle hover border - transparent - no visible border"
+              },
+              "focused": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile iOS unpressed toggle focused border - transparent - no visible border"
+              },
+              "disabled": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile iOS unpressed toggle disabled border - transparent - no visible border"
+              },
+              "error": {
+                "value": "{color.border.error.moderate.1}",
+                "type": "color",
+                "description": "Mobile iOS unpressed toggle error border - error/red-500 - #f04438"
+              }
+            },
+            "pressed": {
+              "default": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile iOS pressed toggle default border - transparent - no visible border"
+              },
+              "hover": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile iOS pressed toggle hover border - transparent - no visible border"
+              },
+              "focused": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile iOS pressed toggle focused border - transparent - no visible border"
+              },
+              "disabled": {
+                "value": "{color.border.transparent}",
+                "type": "color",
+                "description": "Mobile iOS pressed toggle disabled border - transparent - no visible border"
+              },
+              "error": {
+                "value": "{color.border.error.moderate.1}",
+                "type": "color",
+                "description": "Mobile iOS pressed toggle error border - error/red-500 - #f04438"
+              }
+            }
+          }
+        }
+      }
+    },
+    "thumb": {
+      "android": {
+        "size": {
+          "value": "{size.3xs}",
+          "type": "dimension",
+          "description": "Mobile Android toggle thumb size - 24px circular"
+        },
+        "border": {
+          "radius": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Fully rounded border radius for mobile Android toggle thumb - circular"
+          }
+        },
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile Android toggle thumb default background - neutral/gray-0 - #ffffff"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.moderate.0}",
+            "type": "color",
+            "description": "Mobile Android toggle thumb disabled background - neutral/gray-300 - #d0d5dd"
+          }
+        },
+        "icon": {
+          "$comment": "Icon variant for mobile Android toggle - icon displayed inside thumb",
+          "size": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Mobile Android toggle thumb icon size - 16px"
+          },
+          "color": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile Android toggle thumb icon default color - neutral/gray-600 - #475467"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile Android toggle thumb icon disabled color - neutral/gray-600 - #475467"
+            }
+          },
+          "padding": {
+            "value": "{spacing.1}",
+            "type": "dimension",
+            "description": "Mobile Android toggle thumb icon padding from edge - 4px"
+          }
+        }
+      },
+      "ios": {
+        "size": {
+          "height": {
+            "value": "{size.height.3xs}",
+            "type": "dimension",
+            "description": "Mobile iOS toggle knob height - 24px"
+          },
+          "width": {
+            "value": "{size.width.10}",
+            "type": "dimension",
+            "description": "Mobile iOS toggle knob width - 40px (approximates 39px design value, constant for both pressed and unpressed states)"
+          }
+        },
+        "border": {
+          "radius": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Fully rounded border radius for mobile iOS toggle knob - pill-shaped"
+          }
+        },
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile iOS toggle knob default background - neutral/gray-0 - #ffffff"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.moderate.0}",
+            "type": "color",
+            "description": "Mobile iOS toggle knob disabled background - neutral/gray-300 - #d0d5dd"
+          }
+        },
+        "icon": {
+          "$comment": "Icon variant for mobile iOS toggle - icon displayed inside knob",
+          "size": {
+            "value": "{size.icon.sm}",
+            "type": "dimension",
+            "description": "Mobile iOS toggle knob icon size - 16px"
+          },
+          "color": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile iOS toggle knob icon default color - neutral/gray-600 - #475467"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile iOS toggle knob icon disabled color - neutral/gray-600 - #475467"
+            }
+          },
+          "padding": {
+            "value": "{spacing.1}",
+            "type": "dimension",
+            "description": "Mobile iOS toggle knob icon padding from edge - 4px"
+          }
+        }
+      }
+    },
+    "focus": {
+      "outline": {
+        "color": {
+          "value": "{color.border.primary.subtle.1}",
+          "type": "color",
+          "description": "Focus outline color for mobile toggle - primary/blue-200 - #b2ccff"
+        },
+        "width": {
+          "android": {
+            "value": "{spacing.1}",
+            "type": "dimension",
+            "description": "Focus outline width for mobile Android toggle - 4px"
+          },
+          "ios": {
+            "value": "{spacing.1}",
+            "type": "dimension",
+            "description": "Focus outline width for mobile iOS toggle - 4px"
+          }
+        }
+      }
+    }
+  }
+}
