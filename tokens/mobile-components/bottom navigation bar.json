@@ -50,9 +50,16 @@
       "$comment": "Container tokens for mobile navigation bar - background, border, and layout",
       "color": {
         "background": {
-          "value": "{color.background.neutral.base}",
-          "type": "color",
-          "description": "Mobile navigation bar container background - neutral/white - #ffffff"
+          "android": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile navigation bar container background - neutral/white - #ffffff"
+          },
+          "ios": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile navigation bar container background - neutral/gray-100 - #f2f4f7"
+          }
         }
       },
       "border": {
@@ -72,29 +79,17 @@
     },
     "menu-items": {
       "$comment": "Menu items container tokens - references menu-item-navbar component",
-      "container": {
-        "$comment": "Mobile navigation bar menu items container - horizontal flex layout with equal distribution",
-        "layout": {
-          "value": "flex-row",
-          "type": "string",
-          "description": "Mobile navigation bar menu items layout - horizontal flex row"
-        },
-        "distribution": {
-          "value": "equal",
-          "type": "string",
-          "description": "Mobile navigation bar menu items distribution - equal distribution across container width (basis-0, grow)"
-        }
-      },
-      "menu-item": {
-        "$comment": "Mobile navigation bar menu item - references menu-item-navbar component tokens",
-        "value": "{menu-item-navbar}",
-        "type": "reference",
-        "description": "Mobile navigation bar menu item - references menu-item-navbar component tokens"
-      },
       "gap": {
-        "value": "{gap.none}",
-        "type": "dimension",
-        "description": "Mobile navigation bar gap between menu items - 0px (items touch edges)"
+        "android": {
+          "value": "{gap.none}",
+          "type": "dimension",
+          "description": "Mobile navigation bar gap between menu items - 0px (items touch edges)"
+        },
+        "ios": {
+          "value": "{gap.auto}",
+          "type": "dimension",
+          "description": "Mobile navigation bar gap between menu items - auto"
+        }
       }
     },
     "gesture-bar": {
@@ -106,7 +101,7 @@
           "description": "Mobile navigation bar gesture bar container background - neutral/white - #ffffff"
         },
         "height": {
-          "value": "{size.height.6}",
+          "value": "{size.height.3xs}",
           "type": "dimension",
           "description": "Mobile navigation bar gesture bar container height - 24px"
         }
@@ -129,15 +124,10 @@
         },
         "border": {
           "radius": {
-            "value": "{border.radius.3}",
+            "value": "{border.radius.3xl}",
             "type": "dimension",
             "description": "Mobile navigation bar gesture bar handle border radius - 12px"
           }
-        },
-        "position": {
-          "value": "center",
-          "type": "string",
-          "description": "Mobile navigation bar gesture bar handle position - centered horizontally"
         }
       }
     },

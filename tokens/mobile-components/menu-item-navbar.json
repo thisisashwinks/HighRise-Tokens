@@ -118,56 +118,25 @@
       }
     },
     "badge": {
-      "$comment": "Badge tokens for mobile menu item navbar - includes default and selected states",
-      "default": {
-        "background": {
-          "value": "{color.background.neutral.subtle.1}",
-          "type": "color",
-          "description": "Mobile menu item navbar default badge background - neutral/gray-100 - #f2f4f7"
-        },
-        "text": {
-          "value": "{color.text.neutral.title.2}",
-          "type": "color",
-          "description": "Mobile menu item navbar default badge text color - neutral/gray-700 - #344054"
-        }
-      },
-      "selected": {
-        "background": {
-          "value": "{color.background.primary.subtle.0}",
-          "type": "color",
-          "description": "Mobile menu item navbar selected badge background - primary/blue-50 - #eff4ff"
-        },
-        "text": {
-          "value": "{color.text.primary.body.1}",
-          "type": "color",
-          "description": "Mobile menu item navbar selected badge text color - primary/blue-700 - #004eeb"
-        }
-      },
+      "$comment": "Badge tokens for mobile menu item navbar",
       "size": {
         "height": {
-          "value": "{size.height.3xs}",
+          "value": "{size.height.4[5]}",
           "type": "dimension",
           "description": "Mobile menu item navbar badge height - 18px"
         }
       },
-      "padding": {
+      "position": {
         "x": {
-          "value": "{padding.x.5xs}",
-          "type": "dimension",
-          "description": "Mobile menu item navbar badge horizontal padding - 6px"
+          "value": "{position.x.3[5]}",
+          "type": "position",
+          "description": "Mobile menu item navbar badge horizontal position - 14px"
+        },
+        "y": {
+          "value": "{position.y.0}",
+          "type": "position",
+          "description": "Mobile menu item navbar badge vertical position - 0px"
         }
-      },
-      "border": {
-        "radius": {
-          "value": "{border.radius[9]}",
-          "type": "dimension",
-          "description": "Mobile menu item navbar badge border radius - 9px"
-        }
-      },
-      "typography": {
-        "value": "{font.body.medium.xs}",
-        "type": "typography",
-        "description": "Mobile menu item navbar badge typography - 11px medium weight, 16px line height"
       }
     },
     "border": {
@@ -184,7 +153,7 @@
           "description": "Mobile menu item navbar Android container border radius - none - 0px"
         },
         "icon": {
-          "value": "{border.radius.sm}",
+          "value": "{border.radius.1[5]}",
           "type": "dimension",
           "description": "Mobile menu item navbar icon container border radius (for selected with background) - 6px"
         }
@@ -200,66 +169,63 @@
     "padding": {
       "$comment": "Spacing tokens for mobile menu item navbar container",
       "default": {
-        "value": "{padding.all.2}",
-        "type": "dimension",
-        "description": "Mobile menu item navbar container padding - 8px"
+        "x": {
+          "value": "{padding.x.3xs}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar container horizontal padding - 8px"
+        },
+        "y": {
+          "value": "{padding.y.3xs}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar container vertical padding - 8px"
+        }
+      },
+      "icon-with-bg": {
+        "x": {
+          "value": "{padding.x.5xs}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar icon with background horizontal padding - 4px"
+        },
+        "y": {
+          "value": "{padding.y.1}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar icon with background vertical padding - 4px"
+        }
       }
     },
     "gap": {
       "$comment": "Gap tokens for mobile menu item navbar - spacing between elements",
-      "icon-label": {
-        "value": "{gap.3xs}",
-        "type": "dimension",
-        "description": "Mobile menu item navbar gap between icon and label - 6px"
-      },
-      "badge": {
-        "value": "{gap.5xs}",
-        "type": "dimension",
-        "description": "Mobile menu item navbar gap between badge elements - 2px"
-      }
+      "value": "{gap.xs}",
+      "type": "dimension",
+      "description": "Mobile menu item navbar gap between icon and label - 6px"
     },
     "size": {
       "$comment": "Size tokens for mobile menu item navbar - icon, container, and badge dimensions",
       "icon": {
         "container": {
-          "value": "{size.width.8}",
+          "value": "{size.xs}",
           "type": "dimension",
-          "description": "Mobile menu item navbar icon container size - 32px square"
+          "description": "Mobile menu item navbar icon container size - 32px"
         },
         "icon": {
-          "value": "{size.icon.lg}",
+          "value": "{size.icon.3xs}",
           "type": "dimension",
           "description": "Mobile menu item navbar icon size - 24px"
         }
       },
       "height": {
-        "ios": {
-          "value": "{size.height.2xl}",
-          "type": "dimension",
-          "description": "Mobile menu item navbar iOS container height - 71px"
-        },
-        "android": {
-          "value": "auto",
-          "type": "dimension",
-          "description": "Mobile menu item navbar Android container height - auto (content-based)"
-        }
+        "value": "{size.height.17[75]}",
+        "type": "dimension",
+        "description": "Mobile menu item navbar container height - 71px"
       }
     },
     "typography": {
       "$comment": "Typography tokens for mobile menu item navbar label text",
       "label": {
-        "default": {
-          "value": "{font.body.medium.sm}",
-          "type": "typography",
-          "description": "Mobile menu item navbar default label typography - 12px medium weight, 17px line height"
-        },
-        "selected": {
-          "value": "{font.body.medium.sm}",
-          "type": "typography",
-          "description": "Mobile menu item navbar selected label typography - 12px medium weight, 17px line height"
-        }
+        "value": "{font.body.medium.sm}",
+        "type": "typography",
+        "description": "Mobile menu item navbar label typography - 12px medium weight, 17px line height"
       }
     }
   }
 }
-

@@ -3164,6 +3164,11 @@
       "type": "number",
       "description": "Size: 70px"
     },
+    "17[75]": {
+      "value": 71,
+      "type": "number",
+      "description": "Size: 71px"
+    },
     "29[5]": {
       "value": 118,
       "type": "number",

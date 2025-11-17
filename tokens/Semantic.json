@@ -633,6 +633,11 @@
         "type": "dimension",
         "description": "Size (height): 70px"
       },
+      "17[75]": {
+        "value": "{size.17[75]}",
+        "type": "dimension",
+        "description": "Size (height): 71px"
+      },
       "29[5]": {
         "value": "{size.29[5]}",
         "type": "dimension",
@@ -1360,6 +1365,11 @@
         "value": "{padding.0}",
         "type": "dimension",
         "description": "Padding (horizontal): 0px"
+      },
+      "5xs": {
+        "value": "{padding.1}",
+        "type": "dimension",
+        "description": "Padding (horizontal): 4px"
       },
       "4xs": {
         "value": "{padding.1[5]}",
