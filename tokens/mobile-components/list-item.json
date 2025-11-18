@@ -1,0 +1,297 @@
+{
+  "$comment": "Mobile List Item Component Tokens",
+  "$description": "Component tokens for Mobile List Item component with multiple leading content options (None, Avatar, Featured Icon, Icon, Image), trailing content variants (Default, Dual Actions, Single Action, Input Stepper, Toggle iOS/Android, Checkbox, Radio, Chevron, Icon, Value, Tag, Tag+Icon, Avatar group, Avatar + Icon, Tag + icon, Avatar group + Tag, Tag group), and subtext options (None, 1 Line, 2 Lines). Supports flexible layouts for displaying list items with various content combinations. Figma Reference: Node ID 126-26679",
+  "$component": {
+    "name": "List Item",
+    "description": "A mobile list item component that displays content in a structured list format. Supports multiple leading content types (avatar, icons, images, or none), flexible trailing content (actions, controls, indicators, or none), and optional subtext (none, single line, or two lines). Used for displaying structured data in mobile lists, menus, and navigation.",
+    "structure": "Container with background, padding, and gap. Contains leading content section (optional avatar/icon/image), main content section (text with optional tag and optional icon), optional subtext section (1 or 2 lines), trailing content section (various action/control types), and optional divider at bottom.",
+    "sizes": {
+      "no-subtext": "33px-50px height - List item without subtext, height varies based on leading/trailing content",
+      "1-line-subtext": "50px-61px height - List item with single line subtext, height varies based on leading/trailing content",
+      "2-line-subtext": "67px height - List item with two line subtext, consistent height"
+    },
+    "variants": {
+      "leading-content": {
+        "none": "No leading content, text starts at left edge",
+        "avatar": "Avatar image (48px) as leading content",
+        "featured-icon": "Featured icon as leading content",
+        "icon": "Standard icon as leading content",
+        "image": "Image as leading content"
+      },
+      "trailing-content": {
+        "default": "No trailing content, text extends to right edge",
+        "dual-actions": "Two action buttons in trailing section",
+        "single-action": "Single action button in trailing section",
+        "input-stepper": "Input stepper control in trailing section",
+        "toggle-ios": "iOS-style toggle switch in trailing section",
+        "toggle-android": "Android-style toggle switch in trailing section",
+        "checkbox": "Checkbox control in trailing section",
+        "radio": "Radio button control in trailing section",
+        "chevron": "Chevron icon indicating navigation",
+        "icon": "Icon in trailing section",
+        "value": "Value text in trailing section",
+        "tag": "Tag component in trailing section",
+        "tag-icon": "Tag with icon in trailing section",
+        "avatar-group": "Avatar group in trailing section",
+        "avatar-icon": "Avatar with icon in trailing section",
+        "tag-icon-alt": "Tag with icon (alternative) in trailing section",
+        "avatar-group-tag": "Avatar group with tag in trailing section",
+        "tag-group": "Tag group in trailing section"
+      },
+      "subtext": {
+        "none": "No subtext, single line display",
+        "1-line": "Single line subtext below main text",
+        "2-lines": "Two lines of subtext below main text"
+      }
+    },
+    "usage": {
+      "contexts": "Mobile lists, menus, navigation items, settings screens, data displays, user profiles, content lists, selection lists",
+      "features": "Flexible leading content (avatar/icon/image/none), Multiple trailing content options (actions/controls/indicators), Optional subtext (none/1-line/2-lines), Divider separator, Flexible layouts, Various interaction patterns"
+    }
+  },
+  "list-item": {
+    "container": {
+      "$comment": "Container tokens for mobile list item - background, padding, and layout",
+      "color": {
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile list item container background - neutral/white - #ffffff"
+        }
+      },
+      "padding": {
+        "horizontal": {
+          "value": "{padding.x.none}",
+          "type": "dimension",
+          "description": "Mobile list item container horizontal padding - 0px"
+        },
+        "vertical": {
+          "value": "{padding.y.none}",
+          "type": "dimension",
+          "description": "Mobile list item container vertical padding - 0px"
+        }
+      }
+    },
+    "gap": {
+      "container": {
+        "value": "{gap.2xl}",
+        "type": "dimension",
+        "description": "Mobile list item gap between main sections (leading, content, trailing) - 12px"
+      },
+      "content": {
+        "value": "{gap.auto}",
+        "type": "dimension",
+        "description": "Mobile list item gap between content elements (text, tag, icon) - auto"
+      },
+      "leading": {
+        "value": "{gap.sm}",
+        "type": "dimension",
+        "description": "Mobile list item gap between leading content and main content - 8px"
+      },
+      "trailing": {
+        "value": "{gap.sm}",
+        "type": "dimension",
+        "description": "Mobile list item gap between trailing action elements - 8px"
+      },
+      "main-label": {
+        "value": "{gap.sm}",
+        "type": "dimension",
+        "description": "Mobile list item gap between main label, badge & icon - 8px"
+      },
+      "subtext": {
+        "value": "{gap.none}",
+        "type": "dimension",
+        "description": "Mobile list item gap between main content and subtext - 0px"
+      }
+    },
+    "color": {
+      "$comment": "Color tokens for mobile list item - text, icon, and divider colors",
+      "text": {
+        "main-label": {
+          "value": "{color.text.neutral.body.1}",
+          "type": "color",
+          "description": "Mobile list item main label text color - neutral/gray-700 - #344054"
+        },
+        "subtext": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Mobile list item subtext color - neutral/gray-600 - #475467"
+        },
+        "input-stepper": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Mobile list item input-stepper text color - neutral/gray-600 - #475467"
+        },
+        "numeric-value": {
+          "text": {
+            "value": "{color.text.neutral.body.1}",
+            "type": "color",
+            "description": "Mobile list item numeric value text color - neutral/gray-700 - #344054"
+          },
+          "supporting-text": {
+            "value": "{color.text.neutral.body.2}",
+            "type": "color",
+            "description": "Mobile list item numeric value supporting text color - neutral/gray-600 - #475467"
+          }
+        }
+      },
+      "icon": {
+        "default": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile list item default icon color - neutral/gray-600 - #475467"
+        }
+      },
+      "divider": {
+        "value": "{color.border.neutral.subtle.2}",
+        "type": "color",
+        "description": "Mobile list item divider color - neutral/gray-200 - #eaecf0"
+      }
+    },
+    "typography": {
+      "$comment": "Typography tokens for mobile list item - text and subtext fonts",
+      "main-label": {
+        "value": "{font.body.semibold.base}",
+        "type": "typography",
+        "description": "Mobile list item main label text typography - 14px semibold weight, 20px line height"
+      },
+      "subtext": {
+        "value": "{font.body.regular.sm}",
+        "type": "typography",
+        "description": "Mobile list item subtext typography - 12px regular weight, 17px line height"
+      },
+      "input-stepper": {
+        "value": "{font.body.semibold.3xl}",
+        "type": "typography",
+        "description": "Mobile list item input-stepper typography - 18px semibold weight, 28px line height"
+      },
+      "numeric-value": {
+        "text": {
+          "value": "{font.body.semibold.base}",
+          "type": "typography",
+          "description": "Mobile list item numeric value text typography - 14px semibold weight, 20px line height"
+        },
+        "supporting-text": {
+          "value": "{font.body.regular.sm}",
+          "type": "typography",
+          "description": "Mobile list item numeric value unit typography - 12px regular weight, 17px line height"
+        }
+      }
+    },
+    "size": {
+      "$comment": "Size tokens for mobile list item - leading content and icon dimensions",
+      "leading": {
+        "avatar": {
+          "value": "{size.xl}",
+          "type": "dimension",
+          "description": "Mobile list item leading avatar size - 48px"
+        },
+        "icon": {
+          "value": "{size.icon.2xl}",
+          "type": "dimension",
+          "description": "Mobile list item leading icon size - 32px"
+        },
+        "featured-icon": {
+          "container": {
+            "value": "{size.md}",
+            "type": "dimension",
+            "description": "Mobile list item leading featured icon container size - 40px"
+          },
+          "icon": {
+            "value": "{size.icon.lg}",
+            "type": "dimension",
+            "description": "Mobile list item leading featured icon icon size - 24px"
+          }
+        },
+        "image": {
+          "value": "{size.xl}",
+          "type": "dimension",
+          "description": "Mobile list item leading image size - 48px"
+        }
+      },
+      "content": {
+        "icon": {
+          "value": "{size.icon.sm}",
+          "type": "dimension",
+          "description": "Mobile list item content icon size - 18px"
+        },
+        "badge": {
+          "value": "{size.height.4[5]}",
+          "type": "dimension",
+          "description": "Mobile list item content badge(xs) height - 18px"
+        }
+      },
+      "trailing": {
+        "icon": {
+          "value": "{size.icon.xl}",
+          "type": "dimension",
+          "description": "Mobile list item trailing icon size - 28px"
+        },
+        "chevron": {
+          "value": "{size.icon.xl}",
+          "type": "dimension",
+          "description": "Mobile list item trailing chevron icon size - 28px"
+        },
+        "checkbox": {
+          "value": "{size.3xs}",
+          "type": "dimension",
+          "description": "Mobile list item trailing checkbox size - 24px"
+        },
+        "radio": {
+          "value": "{size.3xs}",
+          "type": "dimension",
+          "description": "Mobile list item trailing radio size - 24px"
+        },
+        "avatar": {
+          "value": "{size.xs}",
+          "type": "dimension",
+          "description": "Mobile list item trailing avatar(sm) size - 32px"
+        },
+        "input-stepper": {
+          "container": {
+            "value": "{size.xs}",
+            "type": "dimension",
+            "description": "Mobile list item trailing input-stepper container size - 32px"
+          },
+          "icon": {
+            "value": "{size.icon.sm}",
+            "type": "dimension",
+            "description": "Mobile list item trailing input-stepper icon size - 18px"
+          }
+        },
+        "height": {
+          "button": {
+            "value": "{size.height.xl}",
+            "type": "dimension",
+            "description": "Mobile list item trailing button(md) height - 48px"
+          },
+          "toggle-ios": {
+            "value": "{size.height.2xs}",
+            "type": "dimension",
+            "description": "Mobile list item trailing toggle-ios height - 28px"
+          },
+          "toggle-android": {
+            "value": "{size.height.2xs}",
+            "type": "dimension",
+            "description": "Mobile list item trailing toggle-android height - 28px"
+          },
+          "tag": {
+            "value": "{size.height.2xs}",
+            "type": "dimension",
+            "description": "Mobile list item trailing tag (lg) height - 28px"
+          },
+          "avatar-group": {
+            "value": "{size.height.3xs}",
+            "type": "dimension",
+            "description": "Mobile list item trailing avatar-group height - 24px"
+          },
+          "tag-group": {
+            "value": "{size.height.3xs}",
+            "type": "dimension",
+            "description": "Mobile list item trailing tag-group(xs) height - 24px"
+          }
+        }
+      }
+    }
+  }
+}

@@ -828,4 +828,161 @@
     - **Simplified states**: Mobile components typically use `default`, `active`, `disabled` (omit hover/focused unless required)
     - **Variant-based properties**: Height and padding can have variant-based structures (e.g., `height.default`, `height.top-icon`)
     - **Directional padding**: Use `padding.x`, `padding.y`, and variant-specific padding (e.g., `padding.icon-top.top`, `padding.icon-top.bottom`)
-    - **State-based typography**: Typography can be organized by states (`typography.text.default`, `typography.text.active`, `typography.text.disabled`) 
+    - **State-based typography**: Typography can be organized by states (`typography.text.default`, `typography.text.active`, `typography.text.disabled`)
+
+## Additional Token Patterns (UPDATED FROM COMPONENT ANALYSIS)
+
+### Decimal Value Patterns
+**Use bracket notation for decimal values in token references**:
+- Border radius: `{border.radius.1[5]}` for 6px (1.5 * 4px base)
+- Size dimensions: `{size.height.4[5]}` for 18px, `{size.height.5[5]}` for 22px
+- Position: `{position.x.3[25]}` for 13px, `{position.y.-0[25]}` for -1px
+- Format: `{token.path.number[decimal]}` where decimal is in brackets
+
+### Gap Token Patterns
+**Gap tokens can use directional OR descriptive naming**:
+- **Directional**: `gap.x` (horizontal), `gap.y` (vertical), `gap.x.2xs`, `gap.x.3xs`
+- **Descriptive**: `gap.container`, `gap.content`, `gap.leading`, `gap.trailing`, `gap.main-label`, `gap.subtext`
+- Use descriptive naming when gaps serve specific layout purposes (e.g., between main sections vs between content elements)
+- Example:
+  ```json
+  "gap": {
+    "container": {"value": "{gap.2xl}", "type": "dimension", "description": "Gap between main sections - 12px"},
+    "content": {"value": "{gap.auto}", "type": "dimension", "description": "Gap between content elements - auto"},
+    "leading": {"value": "{gap.sm}", "type": "dimension", "description": "Gap between leading content and main content - 8px"}
+  }
+  ```
+
+### Position Tokens
+**For absolute positioning (e.g., badge positioning on icons)**:
+- Use `position.x` and `position.y` with decimal notation
+- Type field: `"type": "position"`
+- Example:
+  ```json
+  "position": {
+    "x": {
+      "default": {
+        "sm": {
+          "value": "{position.x.3[25]}",
+          "type": "position",
+          "description": "Badge x position - 13px"
+        }
+      }
+    },
+    "y": {
+      "default": {
+        "sm": {
+          "value": "{position.y.-0[25]}",
+          "type": "position",
+          "description": "Badge y position - -1px"
+        }
+      }
+    }
+  }
+  ```
+
+### Shadow Token Patterns
+**Prefer semantic shadow tokens when available**:
+- **Semantic reference**: `{shadow.xs}` (preferred)
+- **Hardcoded boxShadow**: `"0px 1px 2px 0px rgba(16, 24, 40, 0.05)"` (when no semantic token exists)
+- **Type field**: Use `"type": "shadow"` for semantic references, `"type": "boxShadow"` for hardcoded values
+- Focus shadows: Always hardcoded with consistent pattern: `"0px 0px 0px 4px rgba(...), 0px 1px 2px 0px rgba(...)"`
+
+### Type Field Standards (COMPLETE LIST)
+**Every token MUST include a `type` field with one of these values**:
+- `color` - Color values
+- `dimension` - Size/dimension values (px, rem, etc.)
+- `typography` - Font definitions (complete font tokens)
+- `spacing` - Spacing values
+- `string` - String values (for typography references in some cases)
+- `number` - Numeric values
+- `boxShadow` - Hardcoded box shadow values
+- `shadow` - Shadow token references (semantic tokens)
+- `position` - Position values (for absolute positioning)
+
+### Success State Patterns
+**Some components include success state (especially mobile inputs)**:
+- Mobile input components may include `success` variant alongside `default` and `destructive`
+- Success state follows same structure as other variants
+- Example:
+  ```json
+  "success": {
+    "background": { "filled": {...}, "focused": {...} },
+    "border": { "filled": {...}, "focused": {...} },
+    "text": { "filled": {...}, "focused": {...} },
+    "icon": { "filled": {...}, "focused": {...} },
+    "focus": { "ring": {...}, "shadow": {...} }
+  }
+  ```
+
+### Sub-Component Structures
+**Complex components may include sub-component sections**:
+- Document sub-components within the main component file
+- Each sub-component should have `$comment` field explaining its purpose
+- Examples:
+  - `input.dropdown` - Dropdown/select variant
+  - `input.password` - Password input variant
+  - `input.tags` - Tag input variant
+  - `input.prefix` - Prefix text element
+  - `input.suffix` - Suffix text element
+  - `input.addon` - Leading/trailing addon
+  - `input.clear-button` - Clear button element
+  - `input.loading-indicator` - Loading indicator
+  - `input.character-limit-counter` - Character counter
+  - `list-item.container` - Container tokens
+  - `list-item.size.leading` - Leading content sizes
+  - `list-item.size.trailing` - Trailing content sizes
+
+### $comment Fields Within Sections
+**Use `$comment` fields within token structures for clarification**:
+- Place `$comment` at the start of major sections
+- Helps organize complex component structures
+- Example:
+  ```json
+  "color": {
+    "$comment": "Color tokens for mobile list item - text, icon, and divider colors",
+    "text": { ... },
+    "icon": { ... },
+    "divider": { ... }
+  },
+  "typography": {
+    "$comment": "Typography tokens for mobile list item - text and subtext fonts",
+    "main-label": { ... },
+    "subtext": { ... }
+  }
+  ```
+
+### Figma Reference Patterns
+**Include Figma Node ID in `$description` when available**:
+- Format: `"Component tokens for [Component] with [variants/states]. Figma Reference: Node ID [ID]"`
+- Example: `"Component tokens for Mobile List Item component with multiple leading content options. Figma Reference: Node ID 126-26679"`
+- Helps traceability back to design source
+
+### Token Organization Hierarchy (REFINED)
+**Components MUST follow this organizational order**:
+1. **Color tokens** (background, border, text, icon, divider, focus ring)
+2. **Border tokens** (radius, width)
+3. **Spacing tokens** (padding with x/y or directional, margin, gap)
+4. **Typography tokens** (font, size, weight, line-height)
+5. **Size/Dimension tokens** (height, width, min/max, icon sizes)
+6. **Shadow/Effects tokens** (shadow, focus shadow, focus ring)
+7. **Other property tokens** (position, etc.)
+8. **Sub-component sections** (dropdown, password, tags, etc.)
+
+### Verification Checklist
+**Before completing a component token file, verify**:
+- [ ] File header includes all metadata ($comment, $description, $component for mobile)
+- [ ] All token values reference Semantic.json or Default.json (no arbitrary values unless justified)
+- [ ] Every token has value/type/description fields
+- [ ] Descriptions include semantic path and actual values (hex codes, pixel values)
+- [ ] States follow order (default → hover → active → focused → disabled)
+- [ ] Size scales use standardized naming (3xs through 2xl - use only applicable sizes)
+- [ ] Type fields use standardized values (color, dimension, typography, spacing, string, number, boxShadow, shadow, position)
+- [ ] Platform-specific naming for mobile components (prefix descriptions with "Mobile ")
+- [ ] Token hierarchy follows logical organization
+- [ ] Proper JSON formatting
+- [ ] Component name in file matches filename
+- [ ] $comment fields used within sections for clarification when needed
+- [ ] Variant structures are properly documented
+- [ ] Sub-component structures are properly documented
+- [ ] Figma Node ID included in $description when available 
