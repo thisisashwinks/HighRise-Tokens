@@ -407,23 +407,23 @@
         }
       }
     },
-    "focus": {
-      "outline": {
-        "color": {
-          "value": "{color.border.primary.subtle.1}",
-          "type": "color",
-          "description": "Focus outline color for mobile toggle - primary/blue-200 - #b2ccff"
-        },
-        "width": {
+    "effects": {
+      "shadow": {
+        "thumb": {
           "android": {
-            "value": "{spacing.1}",
-            "type": "dimension",
-            "description": "Focus outline width for mobile Android toggle - 4px"
+            "value": "boxShadow.outer.sm",
+            "type": "boxShadow",
+            "description": "Focus shadow for mobile Android toggle - outer sm"
           },
           "ios": {
-            "value": "{spacing.1}",
-            "type": "dimension",
-            "description": "Focus outline width for mobile iOS toggle - 4px"
+            "value": "boxShadow.none",
+            "type": "boxShadow",
+            "description": "Focus shadow for mobile iOS toggle - none"
+          },
+          "focused": {
+            "value": "boxShadow.focus.2xs.primary.100",
+            "type": "boxShadow",
+            "description": "Focus shadow for mobile toggle - focus 2xs primary 100"
           }
         }
       }

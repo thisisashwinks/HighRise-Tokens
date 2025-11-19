@@ -99,9 +99,24 @@
     "shadow": {
       "$comment": "Subtle elevation shadow for mobile input fields",
       "default": {
-        "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+        "value": "boxShadow.outer.xs",
         "type": "boxShadow",
-        "description": "Mobile input default shadow - 0px 1px 2px 0px rgba(16, 24, 40, 0.05)"
+        "description": "Mobile input default shadow - outer xs"
+      },
+      "filled": {
+        "value": "boxShadow.outer.xs",
+        "type": "boxShadow",
+        "description": "Mobile input filled shadow - outer xs"
+      },
+      "focused": {
+        "value": "boxShadow.none",
+        "type": "boxShadow",
+        "description": "Mobile input focused shadow - none"
+      },
+      "disabled": {
+        "value": "boxShadow.outer.xs",
+        "type": "boxShadow",
+        "description": "Mobile input disabled shadow - outer xs"
       }
     },
     "text": {
@@ -235,18 +250,6 @@
             "type": "color",
             "description": "Mobile default input disabled icon - gray/300 - #d0d5dd"
           }
-        },
-        "focus": {
-          "ring": {
-            "value": "{color.border.primary.subtle.2}",
-            "type": "color",
-            "description": "Mobile default input focus ring - primary/300 - #84adff"
-          },
-          "shadow": {
-            "value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
-            "type": "boxShadow",
-            "description": "Mobile default input focus shadow"
-          }
         }
       },
       "destructive": {
@@ -318,18 +321,6 @@
             "type": "color",
             "description": "Mobile destructive input focused icon - error/600 - #d92d20"
           }
-        },
-        "focus": {
-          "ring": {
-            "value": "{color.border.error.subtle.2}",
-            "type": "color",
-            "description": "Mobile destructive input focus ring - error/300 - #fecdca"
-          },
-          "shadow": {
-            "value": "0px 0px 0px 4px rgba(254, 228, 226, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
-            "type": "boxShadow",
-            "description": "Mobile destructive input focus shadow"
-          }
         }
       },
       "success": {
@@ -380,18 +371,6 @@
             "value": "{color.icon.success.moderate}",
             "type": "color",
             "description": "Mobile success input focused icon - success/600 - #039855"
-          }
-        },
-        "focus": {
-          "ring": {
-            "value": "{color.border.success.subtle.2}",
-            "type": "color",
-            "description": "Mobile success input focus ring - success/300 - #86efac"
-          },
-          "shadow": {
-            "value": "0px 0px 0px 4px rgba(209, 250, 229, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
-            "type": "boxShadow",
-            "description": "Mobile success input focus shadow"
           }
         }
       }

@@ -4915,148 +4915,148 @@
     "heading": {
       "regular": {
         "display": {
-          "value": "{font.size.10xl, font.letter-spacing.closest, font.line-height.10xl, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.10xl, font.letter-spacing.closest, font.line-height.10xl, font.weight.regular}",
           "type": "string",
           "description": "Font (heading regular): Size: 72px, Weight: 400, Line-height: 90px, Letter-spacing: -2px"
         },
         "h1": {
-          "value": "{font.size.9xl, font.line-height.9xl, font.letter-spacing.closest, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.9xl, font.line-height.9xl, font.letter-spacing.closest, font.weight.regular}",
           "type": "string",
           "description": "Font (heading regular): Size: 60px, Weight: 400, Line-height: 72px, Letter-spacing: -2px"
         },
         "h2": {
-          "value": "{font.size.8xl, font.line-height.8xl, font.letter-spacing.closest, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.8xl, font.line-height.8xl, font.letter-spacing.closest, font.weight.regular}",
           "type": "string",
           "description": "Font (heading regular): Size: 48px, Weight: 400, Line-height: 60px, Letter-spacing: -2px"
         },
         "h3": {
-          "value": "{font.size.7xl, font.line-height.7xl, font.letter-spacing.closest, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.7xl, font.line-height.7xl, font.letter-spacing.closest, font.weight.regular}",
           "type": "string",
           "description": "Font (heading regular): Size: 36px, Weight: 400, Line-height: 44px, Letter-spacing: -2px"
         },
         "h4": {
-          "value": "{font.size.6xl, font.line-height.6xl, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.6xl, font.line-height.6xl, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (heading regular): Size: 30px, Weight: 400, Line-height: 38px, Letter-spacing: 0px"
         },
         "h5": {
-          "value": "{font.size.5xl, font.line-height.5xl, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.5xl, font.line-height.5xl, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (heading regular): Size: 24px, Weight: 400, Line-height: 32px, Letter-spacing: 0px"
         },
         "h6": {
-          "value": "{font.size.4xl, font.line-height.4xl, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.4xl, font.line-height.4xl, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (heading regular): Size: 20px, Weight: 400, Line-height: 30px, Letter-spacing: 0px"
         }
       },
       "medium": {
         "display": {
-          "value": "{font.size.10xl, font.letter-spacing.closest, font.weight.medium, font.line-height.10xl}",
+          "value": "{font.fontFamily.Inter, font.size.10xl, font.letter-spacing.closest, font.weight.medium, font.line-height.10xl}",
           "type": "string",
           "description": "Font (heading medium): Size: 72px, Weight: 500, Line-height: 90px, Letter-spacing: -2px"
         },
         "h1": {
-          "value": "{font.size.9xl, font.line-height.9xl, font.letter-spacing.closest, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.9xl, font.line-height.9xl, font.letter-spacing.closest, font.weight.medium}",
           "type": "string",
           "description": "Font (heading medium): Size: 60px, Weight: 500, Line-height: 72px, Letter-spacing: -2px"
         },
         "h2": {
-          "value": "{font.size.8xl, font.line-height.8xl, font.letter-spacing.closest, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.8xl, font.line-height.8xl, font.letter-spacing.closest, font.weight.medium}",
           "type": "string",
           "description": "Font (heading medium): Size: 48px, Weight: 500, Line-height: 60px, Letter-spacing: -2px"
         },
         "h3": {
-          "value": "{font.size.7xl, font.line-height.7xl, font.letter-spacing.closest, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.7xl, font.line-height.7xl, font.letter-spacing.closest, font.weight.medium}",
           "type": "string",
           "description": "Font (heading medium): Size: 36px, Weight: 500, Line-height: 44px, Letter-spacing: -2px"
         },
         "h4": {
-          "value": "{font.size.6xl, font.line-height.6xl, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.6xl, font.line-height.6xl, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (heading medium): Size: 30px, Weight: 500, Line-height: 38px, Letter-spacing: 0px"
         },
         "h5": {
-          "value": "{font.size.5xl, font.line-height.5xl, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.5xl, font.line-height.5xl, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (heading medium): Size: 24px, Weight: 500, Line-height: 32px, Letter-spacing: 0px"
         },
         "h6": {
-          "value": "{font.size.4xl, font.line-height.4xl, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.4xl, font.line-height.4xl, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (heading medium): Size: 20px, Weight: 500, Line-height: 30px, Letter-spacing: 0px"
         }
       },
       "semibold": {
         "display": {
-          "value": "{font.size.10xl, font.letter-spacing.closest, font.weight.semibold, font.line-height.10xl}",
+          "value": "{font.fontFamily.Inter, font.size.10xl, font.letter-spacing.closest, font.weight.semibold, font.line-height.10xl}",
           "type": "string",
           "description": "Font (heading semibold): Size: 72px, Weight: 600, Line-height: 90px, Letter-spacing: -2px"
         },
         "h1": {
-          "value": "{font.size.9xl, font.line-height.9xl, font.letter-spacing.closest, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.9xl, font.line-height.9xl, font.letter-spacing.closest, font.weight.semibold}",
           "type": "string",
           "description": "Font (heading semibold): Size: 60px, Weight: 600, Line-height: 72px, Letter-spacing: -2px"
         },
         "h2": {
-          "value": "{font.size.8xl, font.line-height.8xl, font.letter-spacing.closest, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.8xl, font.line-height.8xl, font.letter-spacing.closest, font.weight.semibold}",
           "type": "string",
           "description": "Font (heading semibold): Size: 48px, Weight: 600, Line-height: 60px, Letter-spacing: -2px"
         },
         "h3": {
-          "value": "{font.size.7xl, font.line-height.7xl, font.letter-spacing.closest, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.7xl, font.line-height.7xl, font.letter-spacing.closest, font.weight.semibold}",
           "type": "string",
           "description": "Font (heading semibold): Size: 36px, Weight: 600, Line-height: 44px, Letter-spacing: -2px"
         },
         "h4": {
-          "value": "{font.size.6xl, font.line-height.6xl, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.6xl, font.line-height.6xl, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (heading semibold): Size: 30px, Weight: 600, Line-height: 38px, Letter-spacing: 0px"
         },
         "h5": {
-          "value": "{font.size.5xl, font.line-height.5xl, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.5xl, font.line-height.5xl, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (heading semibold): Size: 24px, Weight: 600, Line-height: 32px, Letter-spacing: 0px"
         },
         "h6": {
-          "value": "{font.size.4xl, font.line-height.4xl, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.4xl, font.line-height.4xl, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (heading semibold): Size: 20px, Weight: 600, Line-height: 30px, Letter-spacing: 0px"
         }
       },
       "bold": {
         "display": {
-          "value": "{font.size.10xl, font.letter-spacing.closest, font.weight.bold, font.line-height.10xl}",
+          "value": "{font.fontFamily.Inter, font.size.10xl, font.letter-spacing.closest, font.weight.bold, font.line-height.10xl}",
           "type": "string",
           "description": "Font (heading bold): Size: 72px, Weight: 700, Line-height: 90px, Letter-spacing: -2px"
         },
         "h1": {
-          "value": "{font.size.9xl, font.line-height.9xl, font.letter-spacing.closest, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.9xl, font.line-height.9xl, font.letter-spacing.closest, font.weight.bold}",
           "type": "string",
           "description": "Font (heading bold): Size: 60px, Weight: 700, Line-height: 72px, Letter-spacing: -2px"
         },
         "h2": {
-          "value": "{font.size.8xl, font.line-height.8xl, font.letter-spacing.closest, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.8xl, font.line-height.8xl, font.letter-spacing.closest, font.weight.bold}",
           "type": "string",
           "description": "Font (heading bold): Size: 48px, Weight: 700, Line-height: 60px, Letter-spacing: -2px"
         },
         "h3": {
-          "value": "{font.size.7xl, font.line-height.7xl, font.letter-spacing.closest, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.7xl, font.line-height.7xl, font.letter-spacing.closest, font.weight.bold}",
           "type": "string",
           "description": "Font (heading bold): Size: 36px, Weight: 700, Line-height: 44px, Letter-spacing: -2px"
         },
         "h4": {
-          "value": "{font.size.6xl, font.line-height.6xl, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.6xl, font.line-height.6xl, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (heading bold): Size: 30px, Weight: 700, Line-height: 38px, Letter-spacing: 0px"
         },
         "h5": {
-          "value": "{font.size.5xl, font.line-height.5xl, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.5xl, font.line-height.5xl, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (heading bold): Size: 24px, Weight: 700, Line-height: 32px, Letter-spacing: 0px"
         },
         "h6": {
-          "value": "{font.size.4xl, font.line-height.4xl, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.4xl, font.line-height.4xl, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (heading bold): Size: 20px, Weight: 700, Line-height: 30px, Letter-spacing: 0px"
         }
@@ -5065,68 +5065,68 @@
     "subheading": {
       "regular": {
         "lg": {
-          "value": "{font.size.3xl, font.line-height.3xl, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.3xl, font.line-height.3xl, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (subheading regular): Size: 18px, Weight: 400, Line-height: 28px, Letter-spacing: 0px"
         },
         "md": {
-          "value": "{font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (subheading regular): Size: 16px, Weight: 400, Line-height: 24px, Letter-spacing: 0px"
         },
         "sm": {
-          "value": "{font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (subheading regular): Size: 15px, Weight: 400, Line-height: 20px, Letter-spacing: 0px"
         }
       },
       "medium": {
         "lg": {
-          "value": "{font.size.3xl, font.line-height.3xl, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.3xl, font.line-height.3xl, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (subheading medium): Size: 18px, Weight: 500, Line-height: 28px, Letter-spacing: 0px"
         },
         "md": {
-          "value": "{font.size.2xl, font.line-height.2xl, font.letter-spacing.normal}",
+          "value": "{font.fontFamily.Inter, font.size.2xl, font.line-height.2xl, font.letter-spacing.normal}",
           "type": "string",
           "description": "Font (subheading medium): Size: 16px, Line-height: 24px, Letter-spacing: 0px"
         },
         "sm": {
-          "value": "{font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (subheading medium): Size: 15px, Weight: 500, Line-height: 20px, Letter-spacing: 0px"
         }
       },
       "semibold": {
         "lg": {
-          "value": "{font.size.3xl, font.line-height.3xl, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.3xl, font.line-height.3xl, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (subheading semibold): Size: 18px, Weight: 600, Line-height: 28px, Letter-spacing: 0px"
         },
         "md": {
-          "value": "{font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (subheading semibold): Size: 16px, Weight: 600, Line-height: 24px, Letter-spacing: 0px"
         },
         "sm": {
-          "value": "{font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (subheading semibold): Size: 15px, Weight: 600, Line-height: 20px, Letter-spacing: 0px"
         }
       },
       "bold": {
         "lg": {
-          "value": "{font.size.3xl, font.line-height.3xl, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.3xl, font.line-height.3xl, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (subheading bold): Size: 18px, Weight: 700, Line-height: 28px, Letter-spacing: 0px"
         },
         "md": {
-          "value": "{font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (subheading bold): Size: 16px, Weight: 700, Line-height: 24px, Letter-spacing: 0px"
         },
         "sm": {
-          "value": "{font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (subheading bold): Size: 15px, Weight: 700, Line-height: 20px, Letter-spacing: 0px"
         }
@@ -5135,188 +5135,188 @@
     "body": {
       "regular": {
         "2xl": {
-          "value": "{font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (body regular): Size: 16px, Weight: 400, Line-height: 24px, Letter-spacing: 0px"
         },
         "xl": {
-          "value": "{font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (body regular): Size: 15px, Weight: 400, Line-height: 20px, Letter-spacing: 0px"
         },
         "base": {
-          "value": "{font.size.lg, font.line-height.lg, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.lg, font.line-height.lg, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (body regular): Size: 14px, Weight: 400, Line-height: 20px, Letter-spacing: 0px"
         },
         "md": {
-          "value": "{font.size.md, font.line-height.md, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.md, font.line-height.md, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (body regular): Size: 13px, Weight: 400, Line-height: 18px, Letter-spacing: 0px"
         },
         "sm": {
-          "value": "{font.size.sm, font.line-height.sm, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.sm, font.line-height.sm, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (body regular): Size: 12px, Weight: 400, Line-height: 17px, Letter-spacing: 0px"
         },
         "xs": {
-          "value": "{font.size.xs, font.line-height.xs, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.xs, font.line-height.xs, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (body regular): Size: 11px, Weight: 400, Line-height: 16px, Letter-spacing: 0px"
         },
         "2xs": {
-          "value": "{font.size.2xs, font.line-height.2xs, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.2xs, font.line-height.2xs, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (body regular): Size: 10px, Weight: 400, Line-height: 15px, Letter-spacing: 0px"
         },
         "3xs": {
-          "value": "{font.size.3xs, font.line-height.3xs, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.3xs, font.line-height.3xs, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (body regular): Size: 9px, Weight: 400, Line-height: 14px, Letter-spacing: 0px"
         },
         "4xs": {
-          "value": "{font.size.4xs, font.line-height.4xs, font.letter-spacing.normal, font.weight.regular}",
+          "value": "{font.fontFamily.Inter, font.size.4xs, font.line-height.4xs, font.letter-spacing.normal, font.weight.regular}",
           "type": "string",
           "description": "Font (body regular): Size: 8px, Weight: 400, Line-height: 12px, Letter-spacing: 0px"
         }
       },
       "medium": {
         "2xl": {
-          "value": "{font.size.2xl, font.line-height.2xl, font.letter-spacing.normal}",
+          "value": "{font.fontFamily.Inter, font.size.2xl, font.line-height.2xl, font.letter-spacing.normal}",
           "type": "string",
           "description": "Font (body medium): Size: 16px, Line-height: 24px, Letter-spacing: 0px"
         },
         "xl": {
-          "value": "{font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (body medium): Size: 15px, Weight: 500, Line-height: 20px, Letter-spacing: 0px"
         },
         "base": {
-          "value": "{font.size.lg, font.line-height.lg, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.lg, font.line-height.lg, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (body medium): Size: 14px, Weight: 500, Line-height: 20px, Letter-spacing: 0px"
         },
         "md": {
-          "value": "{font.size.md, font.line-height.md, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.md, font.line-height.md, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (body medium): Size: 13px, Weight: 500, Line-height: 18px, Letter-spacing: 0px"
         },
         "sm": {
-          "value": "{font.size.sm, font.line-height.sm, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.sm, font.line-height.sm, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (body medium): Size: 12px, Weight: 500, Line-height: 17px, Letter-spacing: 0px"
         },
         "xs": {
-          "value": "{font.size.xs, font.line-height.xs, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.xs, font.line-height.xs, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (body medium): Size: 11px, Weight: 500, Line-height: 16px, Letter-spacing: 0px"
         },
         "2xs": {
-          "value": "{font.size.2xs, font.line-height.2xs, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.2xs, font.line-height.2xs, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (body medium): Size: 10px, Weight: 500, Line-height: 15px, Letter-spacing: 0px"
         },
         "3xs": {
-          "value": "{font.size.3xs, font.line-height.3xs, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.3xs, font.line-height.3xs, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (body medium): Size: 9px, Weight: 500, Line-height: 14px, Letter-spacing: 0px"
         },
         "4xs": {
-          "value": "{font.size.4xs, font.line-height.4xs, font.letter-spacing.normal, font.weight.medium}",
+          "value": "{font.fontFamily.Inter, font.size.4xs, font.line-height.4xs, font.letter-spacing.normal, font.weight.medium}",
           "type": "string",
           "description": "Font (body medium): Size: 8px, Weight: 500, Line-height: 12px, Letter-spacing: 0px"
         }
       },
       "semibold": {
         "2xl": {
-          "value": "{font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (body semibold): Size: 16px, Weight: 600, Line-height: 24px, Letter-spacing: 0px"
         },
         "xl": {
-          "value": "{font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (body semibold): Size: 15px, Weight: 600, Line-height: 20px, Letter-spacing: 0px"
         },
         "base": {
-          "value": "{font.size.lg, font.line-height.lg, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.lg, font.line-height.lg, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (body semibold): Size: 14px, Weight: 600, Line-height: 20px, Letter-spacing: 0px"
         },
         "md": {
-          "value": "{font.size.md, font.line-height.md, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.md, font.line-height.md, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (body semibold): Size: 13px, Weight: 600, Line-height: 18px, Letter-spacing: 0px"
         },
         "sm": {
-          "value": "{font.size.sm, font.line-height.sm, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.sm, font.line-height.sm, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (body semibold): Size: 12px, Weight: 600, Line-height: 17px, Letter-spacing: 0px"
         },
         "xs": {
-          "value": "{font.size.xs, font.line-height.xs, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.xs, font.line-height.xs, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (body semibold): Size: 11px, Weight: 600, Line-height: 16px, Letter-spacing: 0px"
         },
         "2xs": {
-          "value": "{font.size.2xs, font.line-height.2xs, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.2xs, font.line-height.2xs, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (body semibold): Size: 10px, Weight: 600, Line-height: 15px, Letter-spacing: 0px"
         },
         "3xs": {
-          "value": "{font.size.3xs, font.line-height.3xs, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.3xs, font.line-height.3xs, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (body semibold): Size: 9px, Weight: 600, Line-height: 14px, Letter-spacing: 0px"
         },
         "4xs": {
-          "value": "{font.size.4xs, font.line-height.4xs, font.letter-spacing.normal, font.weight.semibold}",
+          "value": "{font.fontFamily.Inter, font.size.4xs, font.line-height.4xs, font.letter-spacing.normal, font.weight.semibold}",
           "type": "string",
           "description": "Font (body semibold): Size: 8px, Weight: 600, Line-height: 12px, Letter-spacing: 0px"
         }
       },
       "bold": {
         "2xl": {
-          "value": "{font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.2xl, font.line-height.2xl, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (body bold): Size: 16px, Weight: 700, Line-height: 24px, Letter-spacing: 0px"
         },
         "xl": {
-          "value": "{font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.xl, font.line-height.xl, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (body bold): Size: 15px, Weight: 700, Line-height: 20px, Letter-spacing: 0px"
         },
         "base": {
-          "value": "{font.size.lg, font.line-height.lg, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.lg, font.line-height.lg, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (body bold): Size: 14px, Weight: 700, Line-height: 20px, Letter-spacing: 0px"
         },
         "md": {
-          "value": "{font.size.md, font.line-height.md, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.md, font.line-height.md, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (body bold): Size: 13px, Weight: 700, Line-height: 18px, Letter-spacing: 0px"
         },
         "sm": {
-          "value": "{font.size.sm, font.line-height.sm, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.sm, font.line-height.sm, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (body bold): Size: 12px, Weight: 700, Line-height: 17px, Letter-spacing: 0px"
         },
         "xs": {
-          "value": "{font.size.xs, font.line-height.xs, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.xs, font.line-height.xs, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (body bold): Size: 11px, Weight: 700, Line-height: 16px, Letter-spacing: 0px"
         },
         "2xs": {
-          "value": "{font.size.2xs, font.line-height.2xs, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.2xs, font.line-height.2xs, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (body bold): Size: 10px, Weight: 700, Line-height: 15px, Letter-spacing: 0px"
         },
         "3xs": {
-          "value": "{font.size.3xs, font.line-height.3xs, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.3xs, font.line-height.3xs, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (body bold): Size: 9px, Weight: 700, Line-height: 14px, Letter-spacing: 0px"
         },
         "4xs": {
-          "value": "{font.size.4xs, font.line-height.4xs, font.letter-spacing.normal, font.weight.bold}",
+          "value": "{font.fontFamily.Inter, font.size.4xs, font.line-height.4xs, font.letter-spacing.normal, font.weight.bold}",
           "type": "string",
           "description": "Font (body bold): Size: 8px, Weight: 700, Line-height: 12px, Letter-spacing: 0px"
         }
@@ -6298,6 +6298,231 @@
           "value": "{color.secondary.warning.300}",
           "type": "color",
           "description": "Color (icon warning): #fec84b"
+        }
+      }
+    }
+  },
+  "boxShadow": {
+    "none": {
+      "value": "none",
+      "type": "string",
+      "description": "Box shadow (none): none"
+    },
+    "outer": {
+      "xs": {
+        "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
+        "type": "string",
+        "description": "Box shadow (outer xs): 0px 1px 2px 0px rgba(16, 24, 40, 0.05)"
+      },
+      "sm": {
+        "value": "[{position.x.0, position.y.0[25], blur.0[75], spread.0, color-shadow.default.0[10]}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[06]}]",
+        "type": "string",
+        "description": "Box shadow (outer sm): 0px 1px 3px 0px rgba(16, 24, 40, 0.10), 0px 1px 2px 0px rgba(16, 24, 40, 0.06)"
+      },
+      "md": {
+        "value": "[{position.x.0, position.y.1, blur.2, spread.-0[5], color-shadow.default.0[10]}, {position.x.0, position.y.0[5], blur.1, spread.-0[5], color-shadow.default.0[06]}]",
+        "type": "string",
+        "description": "Box shadow (outer md): 0px 1px 4px -2px rgba(16, 24, 40, 0.10), 0px 1px 2px -2px rgba(16, 24, 40, 0.06)"
+      },
+      "lg": {
+        "value": "[{position.x.0, position.y.3, blur.4, spread.-1, color-shadow.default.0[08]}, {position.x.0, position.y.1, blur.1[5], spread.-0[5], color-shadow.default.0[03]}]",
+        "type": "string",
+        "description": "Box shadow (outer lg): 0 12px 16px -4px rgba(16, 24, 40, 0.08), 0 4px 6px -2px rgba(16, 24, 40, 0.03)"
+      },
+      "xl": {
+        "value": "[{position.x.0, position.y.5, blur.6, spread.-1, color-shadow.default.0[08]}, {position.x.0, position.y.2, blur.2, spread.-1, color-shadow.default.0[03]}]",
+        "type": "string",
+        "description": "Box shadow (outer xl): 0 20px 24px -4px rgba(16, 24, 40, 0.08), 0 8px 8px -4px rgba(16, 24, 40, 0.03)"
+      },
+      "2xl": {
+        "value": "[{position.x.0, position.y.6, blur.12, spread.-3, color-shadow.default.0[18]}]",
+        "type": "string",
+        "description": "Box shadow (outer 2xl): 0 24px 48px -12px rgba(16, 24, 40, 0.18)"
+      },
+      "3xl": {
+        "value": "[{position.x.0, position.y.8, blur.16, spread.-3, color-shadow.default.0[14]}]",
+        "type": "string",
+        "description": "Box shadow (outer 3xl): 0 32px 64px -12px rgba(16, 24, 40, 0.14)"
+      }
+    },
+    "inner": {
+      "xs": {
+        "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05], color-shadow.inset.true}]",
+        "type": "string",
+        "description": "Box shadow (inner xs): inset 0px 1px 2px 0px rgba(16, 24, 40, 0.05)"
+      },
+      "sm": {
+        "value": "[{position.x.0, position.y.0[25], blur.0[75], spread.0, color-shadow.default.0[10], color-shadow.inset.true}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[06], color-shadow.inset.true}]",
+        "type": "string",
+        "description": "Box shadow (inner sm): inset 0px 1px 3px 0px rgba(16, 24, 40, 0.10), inset 0px 1px 2px 0px rgba(16, 24, 40, 0.06)"
+      },
+      "md": {
+        "value": "[{position.x.0, position.y.1, blur.2, spread.-0[5], color-shadow.default.0[10], color-shadow.inset.true}, {position.x.0, position.y.0[5], blur.1, spread.-0[5], color-shadow.default.0[06], color-shadow.inset.true}]",
+        "type": "string",
+        "description": "Box shadow (inner md): inset 0px 1px 4px -2px rgba(16, 24, 40, 0.10), inset 0px 1px 2px -2px rgba(16, 24, 40, 0.06)"
+      },
+      "lg": {
+        "value": "[{position.x.0, position.y.3, blur.4, spread.-1, color-shadow.default.0[08], color-shadow.inset.true}, {position.x.0, position.y.1, blur.1[5], spread.-0[5], color-shadow.default.0[03], color-shadow.inset.true}]",
+        "type": "string",
+        "description": "Box shadow (inner lg): inset 0 12px 16px -4px rgba(16, 24, 40, 0.08), inset 0 4px 6px -2px rgba(16, 24, 40, 0.03)"
+      },
+      "xl": {
+        "value": "[{position.x.0, position.y.5, blur.6, spread.-1, color-shadow.default.0[08], color-shadow.inset.true}, {position.x.0, position.y.2, blur.2, spread.-1, color-shadow.default.0[03], color-shadow.inset.true}]",
+        "type": "string",
+        "description": "Box shadow (inner xl): inset 0 20px 24px -4px rgba(16, 24, 40, 0.08), inset 0 8px 8px -4px rgba(16, 24, 40, 0.03)"
+      },
+      "2xl": {
+        "value": "[{position.x.0, position.y.6, blur.12, spread.-3, color-shadow.default.0[18], color-shadow.inset.true}]",
+        "type": "string",
+        "description": "Box shadow (inner 2xl): inset 0 24px 48px -12px rgba(16, 24, 40, 0.18)"
+      },
+      "3xl": {
+        "value": "[{position.x.0, position.y.8, blur.16, spread.-3, color-shadow.default.0[14], color-shadow.inset.true}]",
+        "type": "string",
+        "description": "Box shadow (inner 3xl): inset 0 32px 64px -12px rgba(16, 24, 40, 0.14)"
+      }
+    },
+    "focus": {
+      "2xs": {
+        "primary": {
+          "100": {
+            "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.primary.blue.100}]",
+            "type": "string",
+            "description": "Box shadow (focus 4px primary 100): 0px 0px 0px 4px #d1e0ff"
+          },
+          "500": {
+            "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.primary.blue.500}]",
+            "type": "string",
+            "description": "Box shadow (focus 4px primary 500): 0px 0px 0px 4px #2970ff"
+          }
+        },
+        "gray": {
+          "100": {
+            "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.neutral.gray.100}]",
+            "type": "string",
+            "description": "Box shadow (focus 4px gray 100): 0px 0px 0px 4px #f2f4f7"
+          },
+          "500": {
+            "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.neutral.gray.500}]",
+            "type": "string",
+            "description": "Box shadow (focus 4px gray 500): 0px 0px 0px 4px #667085"
+          }
+        },
+        "error": {
+          "100": {
+            "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.secondary.error.100}]",
+            "type": "string",
+            "description": "Box shadow (focus 4px error 100): 0px 0px 0px 4px #fda29b"
+          }
+        }
+      },
+      "xs": {
+        "primary": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.primary.blue.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs primary 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e0ff"
+          }
+        },
+        "gray": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.neutral.gray.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs gray 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #f2f4f7"
+          }
+        },
+        "error": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.secondary.error.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs error 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #fda29b"
+          }
+        },
+        "warning": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.secondary.warning.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs warning 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #fec84b"
+          }
+        },
+        "success": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.secondary.success.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs success 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #6ce9a6"
+          }
+        },
+        "gray-blue": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.neutral.gray-blue.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs gray-blue 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #e4e7eb"
+          }
+        },
+        "blue-light": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.accent.blue-light.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs gray-blue 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e0ff"
+          }
+        },
+        "blue": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.accent.blue.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs blue 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e0ff"
+          }
+        },
+        "indigo": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.accent.indigo.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs indigo 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e0ff"
+          }
+        },
+        "purple": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.accent.purple.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs purple 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e0ff"
+          }
+        },
+        "pink": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.accent.pink.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs pink 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e0ff"
+          }
+        },
+        "rose": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.accent.rose.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs rose 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e0ff"
+          }
+        },
+        "orange-dark": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}, {position.x.0, position.y.0, blur.0, spread.1, color.accent.orange-dark.100}]",
+            "type": "string",
+            "description": "Box shadow (focus xs orange-dark 100): 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #ffe4e8"
+          }
+        }
+      },
+      "sm": {
+        "primary": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[75], spread.0, color-shadow.default.0[10]}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[06]}, {position.x.0, position.y.0, blur.0, spread.1, #F4EBFF}]",
+            "type": "string",
+            "description": "Box shadow (focus sm primary 100): 0px 1px 3px 0px rgba(16, 24, 40, 0.10), 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 0px 0px 4px #f4ebff"
+          }
+        },
+        "gray": {
+          "100": {
+            "value": "[{position.x.0, position.y.0[25], blur.0[75], spread.0, color-shadow.default.0[10]}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[06]}, {position.x.0, position.y.0, blur.0, spread.1, color.neutral.gray.100}]",
+            "type": "string",
+            "description": "Box shadow (focus sm gray 100): 0px 1px 3px 0px rgba(16, 24, 40, 0.10), 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 0px 0px 4px #f2f4f7"
+          }
         }
       }
     }

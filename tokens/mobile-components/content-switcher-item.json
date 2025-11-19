@@ -59,10 +59,10 @@
     "typography": {
       "label": {
         "selected": {
-            "value": "{font.body.semibold.base}",
-            "type": "typography",
-            "description": "Mobile content switcher item selected label font - 14px semibold"
-          },
+          "value": "{font.body.semibold.base}",
+          "type": "typography",
+          "description": "Mobile content switcher item selected label font - 14px semibold"
+        },
         "default": {
           "value": "{font.body.medium.base}",
           "type": "typography",
@@ -75,29 +75,29 @@
         "description": "Mobile content switcher item subtext font - 12px regular"
       }
     },
-      "padding": {
-        "horizontal": {
-          "value": "{padding.x.md}",
-          "type": "dimension",
-          "description": "Mobile content switcher item horizontal padding - 16px"
-        },
-        "vertical": {
-          "value": "{padding.y.sm}",
-          "type": "dimension",
-          "description": "Mobile content switcher item vertical padding - 8px"
-        }
+    "padding": {
+      "horizontal": {
+        "value": "{padding.x.md}",
+        "type": "dimension",
+        "description": "Mobile content switcher item horizontal padding - 16px"
       },
-      "gap": {
-        "content": {
-          "value": "{gap.sm}",
-          "type": "dimension",
-          "description": "Mobile content switcher item content gap - 8px between icon, label, badge, and subtext"
-        },
-        "horizontal": {
-          "value": "{gap.sm}",
-          "type": "dimension",
-          "description": "Mobile content switcher item horizontal gap - 8px between icon, label, and badge on the same row"
-        }
+      "vertical": {
+        "value": "{padding.y.sm}",
+        "type": "dimension",
+        "description": "Mobile content switcher item vertical padding - 8px"
+      }
+    },
+    "gap": {
+      "content": {
+        "value": "{gap.sm}",
+        "type": "dimension",
+        "description": "Mobile content switcher item content gap - 8px between icon, label, badge, and subtext"
+      },
+      "horizontal": {
+        "value": "{gap.sm}",
+        "type": "dimension",
+        "description": "Mobile content switcher item horizontal gap - 8px between icon, label, and badge on the same row"
+      }
     },
     "border": {
       "radius": {
@@ -107,16 +107,15 @@
       }
     },
     "shadow": {
-      "value": "{shadow.xs}",
+      "value": "{boxShadow.outer.xs}",
       "type": "shadow",
-      "description": "Mobile content switcher item shadow - 0px 1px 2px 0px rgba(16, 24, 40, 0.05)"
+      "description": "Mobile content switcher item shadow - outer xs - For all content switcher items"
     },
     "sizing": {
       "icon": {
-          "value": "{size.icon.sm}",
-          "type": "dimension",
-          "description": "Mobile content switcher item icon size - 18px"
-        
+        "value": "{size.icon.sm}",
+        "type": "dimension",
+        "description": "Mobile content switcher item icon size - 18px"
       },
       "badge": {
         "value": "{size.5xs}",
@@ -126,4 +125,3 @@
     }
   }
 }
-

@@ -80,11 +80,9 @@
         }
       },
       "shadow": {
-        "default": {
-          "value": "0px 1px 3px 0px rgba(16, 24, 40, 0.1), 0px 1px 2px 0px rgba(16, 24, 40, 0.06)",
-          "type": "boxShadow",
-          "description": "Mobile header default shadow - elevation shadow for header separation"
-        }
+        "value": "boxShadow.outer.sm",
+        "type": "boxShadow",
+        "description": "Mobile header shadow - outer sm"
       },
       "gap": {
         "content": {

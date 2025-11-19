@@ -1226,7 +1226,7 @@
           "description": "Accent blue-dark color: #001a4d"
         }
       },
-      "indigo": {      
+      "indigo": {
         "25": {
           "value": "{indigo-25}",
           "type": "color",
@@ -2346,6 +2346,12 @@
     }
   },
   "font": {
+    "fontFamily": {
+      "Inter": {
+        "value": "Inter, sans-serif",
+        "type": "fontFamily"
+      }
+    },
     "size": {
       "4xs": {
         "value": 8,
@@ -3181,266 +3187,266 @@
     }
   },
   "position": {
-      "0": {
-        "value": 0,
-        "type": "number",
-        "description": "Position: 0px"
-      },
-      "1": {
-        "value": 4,
-        "type": "number",
-        "description": "Position: 4px"
-      },
-      "2": {
-        "value": 8,
-        "type": "number",
-        "description": "Position: 8px"
-      },
-      "3": {
-        "value": 12,
-        "type": "number",
-        "description": "Position: 12px"
-      },
-      "4": {
-        "value": 16,
-        "type": "number",
-        "description": "Position: 16px"
-      },
-      "5": {
-        "value": 20,
-        "type": "number",
-        "description": "Position: 20px"
-      },
-      "6": {
-        "value": 24,
-        "type": "number",
-        "description": "Position: 24px"
-      },
-      "7": {
-        "value": 28,
-        "type": "number",
-        "description": "Position: 28px"
-      },
-      "8": {
-        "value": 32,
-        "type": "number",
-        "description": "Position: 32px"
-      },
-      "9": {
-        "value": 36,
-        "type": "number",
-        "description": "Position: 36px"
-      },
-      "10": {
-        "value": 40,
-        "type": "number",
-        "description": "Position: 40px"
-      },
-      "11": {
-        "value": 44,
-        "type": "number",
-        "description": "Position: 44px"
-      },
-      "12": {
-        "value": 48,
-        "type": "number",
-        "description": "Position: 48px"
-      },
-      "14": {
-        "value": 56,
-        "type": "number",
-        "description": "Position: 56px"
-      },
-      "16": {
-        "value": 64,
-        "type": "number",
-        "description": "Position: 64px"
-      },
-      "18": {
-        "value": 72,
-        "type": "number",
-        "description": "Position: 72px"
-      },
-      "20": {
-        "value": 80,
-        "type": "number",
-        "description": "Position: 80px"
-      },
-      "24": {
-        "value": 96,
-        "type": "number",
-        "description": "Position: 96px"
-      },
-      "40": {
-        "value": 160,
-        "type": "number",
-        "description": "Position: 160px"
-      },
-      "-20": {
-        "value": -80,
-        "type": "number",
-        "description": "Position: -80px"
-      },
-      "-18": {
-        "value": -72,
-        "type": "number",
-        "description": "Position: -72px"
-      },
-      "-16": {
-        "value": -64,
-        "type": "number",
-        "description": "Position: -64px"
-      },
-      "-14": {
-        "value": -56,
-        "type": "number",
-        "description": "Position: -56px"
-      },
-      "-12": {
-        "value": -48,
-        "type": "number",
-        "description": "Position: -48px"
-      },
-      "-11": {
-        "value": -44,
-        "type": "number",
-        "description": "Position: -44px"
-      },
-      "-10": {
-        "value": -40,
-        "type": "number",
-        "description": "Position: -40px"
-      },
-      "-9": {
-        "value": -36,
-        "type": "number",
-        "description": "Position: -36px"
-      },
-      "-8": {
-        "value": -32,
-        "type": "number",
-        "description": "Position: -32px"
-      },
-      "-7": {
-        "value": -28,
-        "type": "number",
-        "description": "Position: -28px"
-      },
-      "-6": {
-        "value": -24,
-        "type": "number",
-        "description": "Position: -24px"
-      },
-      "-5": {
-        "value": -20,
-        "type": "number",
-        "description": "Position: -20px"
-      },
-      "-4[5]": {
-        "value": -18,
-        "type": "number",
-        "description": "Position: -18px"
-      },
-      "-4": {
-        "value": -16,
-        "type": "number",
-        "description": "Position: -16px"
-      },
-      "-3[5]": {
-        "value": -14,
-        "type": "number",
-        "description": "Position: -14px"
-      },
-      "-3": {
-        "value": -12,
-        "type": "number",
-        "description": "Position: -12px"
-      },
-      "-2[5]": {
-        "value": -10,
-        "type": "number",
-        "description": "Position: -10px"
-      },
-      "-2": {
-        "value": -8,
-        "type": "number",
-        "description": "Position: -8px"
-      },
-      "-1[5]": {
-        "value": -6,
-        "type": "number",
-        "description": "Position: -6px"
-      },
-      "-1": {
-        "value": -4,
-        "type": "number",
-        "description": "Position: -4px"
-      },
-      "-0[75]": {
-        "value": -3,
-        "type": "number",
-        "description": "Position: -3px"
-      },
-      "-0[5]": {
-        "value": -2,
-        "type": "number",
-        "description": "Position: -2px"
-      },
-      "-0[25]": {
-        "value": -1,
-        "type": "number",
-        "description": "Position: -1px"
-      },
-      "0[25]": {
-        "value": 1,
-        "type": "number",
-        "description": "Position: 1px"
-      },
-      "0[5]": {
-        "value": 2,
-        "type": "number",
-        "description": "Position: 2px"
-      },
-      "0[75]": {
-        "value": 3,
-        "type": "number",
-        "description": "Position: 3px"
-      },
-      "1[5]": {
-        "value": 6,
-        "type": "number",
-        "description": "Position: 6px"
-      },
-      "2[5]": {
-        "value": 10,
-        "type": "number",
-        "description": "Position: 10px"
-      },
-      "3[25]": {
-        "value": 13,
-        "type": "number",
-        "description": "Position: 13px"
-      },
-      "3[5]": {
-        "value": 14,
-        "type": "number",
-        "description": "Position: 14px"
-      },
-      "4[5]": {
-        "value": 18,
-        "type": "number",
-        "description": "Position: 18px"
-      },
-      "5[25]": {
-        "value": 21,
-        "type": "number",
-        "description": "Position: 21px"
-      },
-      "7[25]": {
-        "value": 29,
-        "type": "number",
-        "description": "Position: 29px"
-      }
+    "0": {
+      "value": 0,
+      "type": "number",
+      "description": "Position: 0px"
+    },
+    "1": {
+      "value": 4,
+      "type": "number",
+      "description": "Position: 4px"
+    },
+    "2": {
+      "value": 8,
+      "type": "number",
+      "description": "Position: 8px"
+    },
+    "3": {
+      "value": 12,
+      "type": "number",
+      "description": "Position: 12px"
+    },
+    "4": {
+      "value": 16,
+      "type": "number",
+      "description": "Position: 16px"
+    },
+    "5": {
+      "value": 20,
+      "type": "number",
+      "description": "Position: 20px"
+    },
+    "6": {
+      "value": 24,
+      "type": "number",
+      "description": "Position: 24px"
+    },
+    "7": {
+      "value": 28,
+      "type": "number",
+      "description": "Position: 28px"
+    },
+    "8": {
+      "value": 32,
+      "type": "number",
+      "description": "Position: 32px"
+    },
+    "9": {
+      "value": 36,
+      "type": "number",
+      "description": "Position: 36px"
+    },
+    "10": {
+      "value": 40,
+      "type": "number",
+      "description": "Position: 40px"
+    },
+    "11": {
+      "value": 44,
+      "type": "number",
+      "description": "Position: 44px"
+    },
+    "12": {
+      "value": 48,
+      "type": "number",
+      "description": "Position: 48px"
+    },
+    "14": {
+      "value": 56,
+      "type": "number",
+      "description": "Position: 56px"
+    },
+    "16": {
+      "value": 64,
+      "type": "number",
+      "description": "Position: 64px"
+    },
+    "18": {
+      "value": 72,
+      "type": "number",
+      "description": "Position: 72px"
+    },
+    "20": {
+      "value": 80,
+      "type": "number",
+      "description": "Position: 80px"
+    },
+    "24": {
+      "value": 96,
+      "type": "number",
+      "description": "Position: 96px"
+    },
+    "40": {
+      "value": 160,
+      "type": "number",
+      "description": "Position: 160px"
+    },
+    "-20": {
+      "value": -80,
+      "type": "number",
+      "description": "Position: -80px"
+    },
+    "-18": {
+      "value": -72,
+      "type": "number",
+      "description": "Position: -72px"
+    },
+    "-16": {
+      "value": -64,
+      "type": "number",
+      "description": "Position: -64px"
+    },
+    "-14": {
+      "value": -56,
+      "type": "number",
+      "description": "Position: -56px"
+    },
+    "-12": {
+      "value": -48,
+      "type": "number",
+      "description": "Position: -48px"
+    },
+    "-11": {
+      "value": -44,
+      "type": "number",
+      "description": "Position: -44px"
+    },
+    "-10": {
+      "value": -40,
+      "type": "number",
+      "description": "Position: -40px"
+    },
+    "-9": {
+      "value": -36,
+      "type": "number",
+      "description": "Position: -36px"
+    },
+    "-8": {
+      "value": -32,
+      "type": "number",
+      "description": "Position: -32px"
+    },
+    "-7": {
+      "value": -28,
+      "type": "number",
+      "description": "Position: -28px"
+    },
+    "-6": {
+      "value": -24,
+      "type": "number",
+      "description": "Position: -24px"
+    },
+    "-5": {
+      "value": -20,
+      "type": "number",
+      "description": "Position: -20px"
+    },
+    "-4[5]": {
+      "value": -18,
+      "type": "number",
+      "description": "Position: -18px"
+    },
+    "-4": {
+      "value": -16,
+      "type": "number",
+      "description": "Position: -16px"
+    },
+    "-3[5]": {
+      "value": -14,
+      "type": "number",
+      "description": "Position: -14px"
+    },
+    "-3": {
+      "value": -12,
+      "type": "number",
+      "description": "Position: -12px"
+    },
+    "-2[5]": {
+      "value": -10,
+      "type": "number",
+      "description": "Position: -10px"
+    },
+    "-2": {
+      "value": -8,
+      "type": "number",
+      "description": "Position: -8px"
+    },
+    "-1[5]": {
+      "value": -6,
+      "type": "number",
+      "description": "Position: -6px"
+    },
+    "-1": {
+      "value": -4,
+      "type": "number",
+      "description": "Position: -4px"
+    },
+    "-0[75]": {
+      "value": -3,
+      "type": "number",
+      "description": "Position: -3px"
+    },
+    "-0[5]": {
+      "value": -2,
+      "type": "number",
+      "description": "Position: -2px"
+    },
+    "-0[25]": {
+      "value": -1,
+      "type": "number",
+      "description": "Position: -1px"
+    },
+    "0[25]": {
+      "value": 1,
+      "type": "number",
+      "description": "Position: 1px"
+    },
+    "0[5]": {
+      "value": 2,
+      "type": "number",
+      "description": "Position: 2px"
+    },
+    "0[75]": {
+      "value": 3,
+      "type": "number",
+      "description": "Position: 3px"
+    },
+    "1[5]": {
+      "value": 6,
+      "type": "number",
+      "description": "Position: 6px"
+    },
+    "2[5]": {
+      "value": 10,
+      "type": "number",
+      "description": "Position: 10px"
+    },
+    "3[25]": {
+      "value": 13,
+      "type": "number",
+      "description": "Position: 13px"
+    },
+    "3[5]": {
+      "value": 14,
+      "type": "number",
+      "description": "Position: 14px"
+    },
+    "4[5]": {
+      "value": 18,
+      "type": "number",
+      "description": "Position: 18px"
+    },
+    "5[25]": {
+      "value": 21,
+      "type": "number",
+      "description": "Position: 21px"
+    },
+    "7[25]": {
+      "value": 29,
+      "type": "number",
+      "description": "Position: 29px"
+    }
   },
   "blur": {
     "0": {
@@ -3799,6 +3805,52 @@
       "value": 18,
       "type": "number",
       "description": "Spread: 18px"
+    }
+  },
+  "color-shadow": {
+    "default": {
+      "0[03]": {
+        "value": "{#10182808}",
+        "type": "color",
+        "description": "Color shadow: #10182808"
+      },
+      "0[05]": {
+        "value": "{#1018280D}",
+        "type": "color",
+        "description": "Color shadow: #1018280D"
+      },
+      "0[06]": {
+        "value": "{#1018280F}",
+        "type": "color",
+        "description": "Color shadow: #1018280F"
+      },
+      "0[08]": {
+        "value": "{#10182814}",
+        "type": "color",
+        "description": "Color shadow: #10182814"
+      },
+      "0[10]": {
+        "value": "{#1018281A}",
+        "type": "color",
+        "description": "Color shadow: #1018281A"
+      },
+      "0[14]": {
+        "value": "{#10182824}",
+        "type": "color",
+        "description": "Color shadow: #10182824"
+      },
+      "0[18]": {
+        "value": "{#1018282E}",
+        "type": "color",
+        "description": "Color shadow: #1018282E"
+      }
+    },
+    "inset": {
+      "true": {
+        "value": "inset",
+        "type": "string",
+        "description": "Inset: true"
+      }
     }
   },
   "motion": {

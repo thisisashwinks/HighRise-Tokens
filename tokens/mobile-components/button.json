@@ -2834,16 +2834,51 @@
     "effects": {
       "shadow": {
         "default": {
-          "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+          "value": "boxShadow.outer.xs",
           "type": "boxShadow",
-          "description": "Default mobile button shadow"
-        }
-      },
-      "focus": {
-        "ring": {
-          "value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+          "description": "Default mobile button shadow - For only Primary & Secondary buttons"
+        },
+        "hover": {
+          "value": "boxShadow.outer.xs",
           "type": "boxShadow",
-          "description": "Focus ring for mobile buttons"
+          "description": "Hover mobile button shadow - For only Primary & Secondary buttons"
+        },
+        "active": {
+          "value": "boxShadow.none",
+          "type": "boxShadow",
+          "description": "Active mobile button shadow - For only Primary & Secondary buttons"
+        },
+        "focused": {
+          "primary": {
+            "value": "boxShadow.focus.xs.primary.100",
+            "type": "boxShadow",
+            "description": "Focused mobile button shadow - For all buttons"
+          },
+          "neutral": {
+            "value": "boxShadow.focus.xs.gray.100",
+            "type": "boxShadow",
+            "description": "Focused mobile button shadow - For all buttons"
+          },
+          "error": {
+            "value": "boxShadow.focus.xs.error.100",
+            "type": "boxShadow",
+            "description": "Focused mobile button shadow - For all buttons"
+          },
+          "warning": {
+            "value": "boxShadow.focus.xs.warning.100",
+            "type": "boxShadow",
+            "description": "Focused mobile button shadow - For all buttons"
+          },
+          "success": {
+            "value": "boxShadow.focus.xs.success.100",
+            "type": "boxShadow",
+            "description": "Focused mobile button shadow - For all buttons"
+          }
+        },
+        "disabled": {
+          "value": "boxShadow.none",
+          "type": "boxShadow",
+          "description": "Disabled mobile button shadow - For only Primary & Secondary buttons"
         }
       }
     },

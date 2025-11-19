@@ -75,6 +75,11 @@
             "description": "Mobile navigation bar top border width - 1px"
           }
         }
+      },
+      "shadow": {
+        "value": "boxShadow.outer.sm",
+        "type": "boxShadow",
+        "description": "Mobile navigation bar shadow - outer sm"
       }
     },
     "menu-items": {
@@ -160,4 +165,3 @@
     }
   }
 }
-
