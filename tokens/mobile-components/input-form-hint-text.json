@@ -1,0 +1,94 @@
+{
+  "$comment": "Mobile Input Form Hint Text Component Tokens",
+  "$description": "Component tokens for Mobile Input Form Hint Text component that provides contextual guidance and validation feedback below input fields. Supports multiple states including default (neutral), success, destructive (error), and warning variants across 3 sizes (sm, md, lg). Figma Reference: Node ID 8-68031",
+  "$component": {
+    "name": "Input Form Hint Text",
+    "description": "A mobile form component that displays helpful text, instructions, or validation messages below input fields. Provides contextual guidance to users about input requirements, format expectations, or validation status. Supports multiple semantic states for different types of feedback.",
+    "structure": "Text element positioned below input field with appropriate spacing, supporting multiple semantic color variants",
+    "sizes": {
+      "3xs": "Extra small size for compact mobile interfaces - typically 8px-9px",
+      "2xs": "Extra small size for compact mobile interfaces - typically 10px-11px",
+      "xs": "Small size for compact mobile interfaces - typically 12px-13px",
+      "sm": "Small size for compact mobile interfaces - typically 12px-13px",
+      "md": "Medium size (commonly used default for mobile) - typically 13px-14px",
+      "lg": "Large size for prominent mobile forms - typically 14px-16px"
+    },
+    "variants": {
+      "default": "Neutral hint text with gray colors for standard guidance and instructions",
+      "success": "Success state with green colors for positive validation feedback",
+      "destructive": "Error state with red colors for validation errors and warnings",
+      "warning": "Warning state with orange/yellow colors for cautionary messages",
+      "disabled": "Disabled state with muted colors when form is disabled"
+    },
+    "usage": {
+      "contexts": "Mobile forms, input validation, password requirements, format instructions, character limits, field descriptions, error messages, success confirmations",
+      "features": "Contextual guidance, validation feedback, format instructions, character count, error messaging, success confirmation"
+    }
+  },
+  "input-form-hint-text": {
+    "text": {
+      "$comment": "Typography tokens for mobile input form hint text across all sizes",
+      "typography": {
+        "3xs": {
+          "value": "{font.body.regular.2xs}",
+          "type": "typography",
+          "description": "Mobile hint text typography for 3xs size - Regular 10px/15px"
+        },
+        "2xs": {
+          "value": "{font.body.regular.xs}",
+          "type": "typography",
+          "description": "Mobile hint text typography for 2xs size - Regular 11px/16px"
+        },
+        "xs": {
+          "value": "{font.body.regular.sm}",
+          "type": "typography",
+          "description": "Mobile hint text typography for xs size - Regular 12px/17px"
+        },
+        "sm": {
+          "value": "{font.body.regular.md}",
+          "type": "typography",
+          "description": "Mobile hint text typography for sm size - Regular 13px/18px"
+        },
+        "md": {
+          "value": "{font.body.regular.base}",
+          "type": "typography",
+          "description": "Mobile hint text typography for md size - Regular 14px/20px"
+        },
+        "lg": {
+          "value": "{font.body.regular.base}",
+          "type": "typography",
+          "description": "Mobile hint text typography for lg size - Regular 14px/20px"
+        }
+      }
+    },
+    "color": {
+      "$comment": "Color tokens for mobile input form hint text states - includes default (neutral), success, destructive (error), warning, and disabled variants",
+      "default": {
+        "value": "{color.text.neutral.body.2}",
+        "type": "color",
+        "description": "Mobile default hint text color - gray/600 - #475467"
+      },
+      "success": {
+        "value": "{color.text.success.body.2}",
+        "type": "color",
+        "description": "Mobile success hint text color - success/600 - #039855"
+      },
+      "destructive": {
+        "value": "{color.text.error.inactive.1}",
+        "type": "color",
+        "description": "Mobile destructive hint text color - error/500 - #f04438"
+      },
+      "warning": {
+        "value": "{color.text.warning.body.2}",
+        "type": "color",
+        "description": "Mobile warning hint text color - warning/600 - #dc6803"
+      },
+      "disabled": {
+        "value": "{color.text.neutral.subtitle.2}",
+        "type": "color",
+        "description": "Mobile disabled hint text color - gray/400 - #98a2b3"
+      }
+    }
+  }
+}
+

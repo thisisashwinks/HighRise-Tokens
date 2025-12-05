@@ -1,0 +1,580 @@
+{
+  "$comment": "Inline Text Container Component Tokens",
+  "$description": "Component tokens for Inline Text Container component with multiple states (Placeholder, Hover, Active, Filled, Disabled), sizes (3xs, 2xs, xs, sm, md), validation states (Error, Warning), and content types (String Default, String Phone Number, Badge). Figma Reference: Node ID 27377-709",
+  "$component": {
+    "name": "Inline Text Container",
+    "description": "An inline text input container component that displays text content with optional leading icons, action icons, and trailing icons. Features a bottom border design with hover states that reveal action icons. Supports validation states (error, warning) and multiple content types including string inputs and badge displays.",
+    "structure": "Container with bottom border, optional leading icon, flexible text content area, optional action icons (visible on hover), and trailing icon (chevron or other indicator). Background changes on hover to reveal action icons.",
+    "sizes": {
+      "3xs": "20px height - Minimal size for very compact inline layouts",
+      "2xs": "22px height - Extra small for dense inline forms",
+      "xs": "26px height - Small size for compact inline interfaces",
+      "sm": "28px height - Standard small size for most inline inputs",
+      "md": "36px height - Medium size for prominent inline text containers"
+    },
+    "variants": {
+      "default": "Standard inline text container with neutral colors for normal text display",
+      "error": "Error state with red/error colors for validation feedback",
+      "warning": "Warning state with yellow/warning colors for validation feedback",
+      "types": "String (Default), String (Phone Number), Badge"
+    },
+    "usage": {
+      "contexts": "Inline forms, editable text fields, data entry interfaces, table cells, list items with editable content, settings panels",
+      "features": "Leading icon support, multiple action icons (visible on hover), trailing indicator icon, bottom border design, hover state reveals actions, validation states, disabled state"
+    }
+  },
+  "inline-text-container": {
+    "border": {
+      "$comment": "Border styling for inline text container - uses bottom border only",
+      "width": {
+        "value": "{border.width.default}",
+        "type": "dimension",
+        "description": "Inline text container border width - 1px"
+      },
+      "radius": {
+        "$comment": "Border radius applied on hover state",
+        "hover": {
+          "value": "{border.radius.sm}",
+          "type": "dimension",
+          "description": "Inline text container border radius on hover - 4px"
+        }
+      }
+    },
+    "height": {
+      "$comment": "Container heights for each size variant",
+      "3xs": {
+        "value": "{size.height.5}",
+        "type": "dimension",
+        "description": "Inline text container height for 3xs size - 20px"
+      },
+      "2xs": {
+        "value": "{size.height.5[5]}",
+        "type": "dimension",
+        "description": "Inline text container height for 2xs size - 22px"
+      },
+      "xs": {
+        "value": "{size.height.6[5]}",
+        "type": "dimension",
+        "description": "Inline text container height for xs size - 26px"
+      },
+      "sm": {
+        "value": "{size.height.7}",
+        "type": "dimension",
+        "description": "Inline text container height for sm size - 28px"
+      },
+      "md": {
+        "value": "{size.height.9}",
+        "type": "dimension",
+        "description": "Inline text container height for md size - 36px"
+      }
+    },
+    "gap": {
+      "$comment": "Spacing between container elements (leading icon, text, action icons, trailing icon)",
+      "default": {
+        "value": "{gap.4xs}",
+        "type": "dimension",
+        "description": "Gap between inline text container elements - 2px"
+      },
+      "icon": {
+        "value": "{gap.x.2xs}",
+        "type": "dimension",
+        "description": "Gap between icon and adjacent elements - 10px"
+      }
+    },
+    "text": {
+      "$comment": "Typography tokens for inline text container text content across all sizes",
+      "typography": {
+        "3xs": {
+          "value": "{font.body.regular.base}",
+          "type": "string",
+          "description": "Inline text container text typography for 3xs size - 14px regular, 20px line-height"
+        },
+        "2xs": {
+          "value": "{font.body.regular.base}",
+          "type": "string",
+          "description": "Inline text container text typography for 2xs size - 14px regular, 20px line-height"
+        },
+        "xs": {
+          "value": "{font.body.regular.base}",
+          "type": "string",
+          "description": "Inline text container text typography for xs size - 14px regular, 20px line-height"
+        },
+        "sm": {
+          "value": "{font.body.regular.base}",
+          "type": "string",
+          "description": "Inline text container text typography for sm size - 14px regular, 20px line-height"
+        },
+        "md": {
+          "value": "{font.body.regular.base}",
+          "type": "string",
+          "description": "Inline text container text typography for md size - 14px regular, 20px line-height"
+        }
+      }
+    },
+    "icon": {
+      "$comment": "Icon sizes for leading, action, and trailing icons inside inline text container",
+      "size": {
+        "3xs": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Inline text container icon size for 3xs - 12px"
+        },
+        "2xs": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Inline text container icon size for 2xs - 12px"
+        },
+        "xs": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Inline text container icon size for xs - 12px"
+        },
+        "sm": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Inline text container icon size for sm - 12px"
+        },
+        "md": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Inline text container icon size for md - 12px"
+        }
+      }
+    },
+    "color": {
+      "$comment": "Color tokens for inline text container states - includes default (neutral), error, and warning variants with interaction states",
+      "default": {
+        "$comment": "Default inline text container colors with neutral palette for standard text display",
+        "background": {
+          "placeholder": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Default inline text container background in placeholder state - transparent - #FFFFFF00"
+          },
+          "hover": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Default inline text container background in hover state - gray/100 - #f2f4f7"
+          },
+          "active": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Default inline text container background in active state - transparent - #FFFFFF00"
+          },
+          "filled": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Default inline text container background in filled state - transparent - #FFFFFF00"
+          },
+          "disabled": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Default inline text container background in disabled state - transparent - #FFFFFF00"
+          }
+        },
+        "border": {
+          "placeholder": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Default inline text container border in placeholder state - gray/300 - #d0d5dd"
+          },
+          "hover": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Default inline text container border in hover state - gray/300 - #d0d5dd"
+          },
+          "active": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Default inline text container border in active state - gray/300 - #d0d5dd"
+          },
+          "filled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Default inline text container border in filled state - gray/300 - #d0d5dd"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Default inline text container border in disabled state - gray/300 - #d0d5dd"
+          }
+        },
+        "text": {
+          "placeholder": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Default inline text container text color in placeholder state - gray/500 - #667085"
+          },
+          "hover": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Default inline text container text color in hover state - gray/900 - #101828"
+          },
+          "active": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Default inline text container text color in active state - gray/900 - #101828"
+          },
+          "filled": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Default inline text container text color in filled state - gray/900 - #101828"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "Default inline text container text color in disabled state - gray/400 - #98a2b3"
+          }
+        },
+        "icon": {
+          "leading": {
+            "placeholder": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Default inline text container leading icon color in placeholder state - gray/600 - #475467"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Default inline text container leading icon color in hover state - gray/600 - #475467"
+            },
+            "active": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Default inline text container leading icon color in active state - gray/600 - #475467"
+            },
+            "filled": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Default inline text container leading icon color in filled state - gray/600 - #475467"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "description": "Default inline text container leading icon color in disabled state - gray/300 - #d0d5dd"
+            }
+          },
+          "action": {
+            "hover": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Default inline text container action icon color in hover state - gray/600 - #475467"
+            },
+            "active": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Default inline text container action icon color in active state - gray/600 - #475467"
+            }
+          },
+          "trailing": {
+            "placeholder": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Default inline text container trailing icon color in placeholder state - gray/600 - #475467"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Default inline text container trailing icon color in hover state - gray/600 - #475467"
+            },
+            "active": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Default inline text container trailing icon color in active state - gray/600 - #475467"
+            },
+            "filled": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Default inline text container trailing icon color in filled state - gray/600 - #475467"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "description": "Default inline text container trailing icon color in disabled state - gray/300 - #d0d5dd"
+            }
+          }
+        }
+      },
+      "error": {
+        "$comment": "Error state inline text container colors with red/error palette for validation feedback",
+        "background": {
+          "placeholder": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Error inline text container background in placeholder state - transparent - #FFFFFF00"
+          },
+          "hover": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Error inline text container background in hover state - gray/100 - #f2f4f7"
+          },
+          "active": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Error inline text container background in active state - transparent - #FFFFFF00"
+          },
+          "filled": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Error inline text container background in filled state - transparent - #FFFFFF00"
+          }
+        },
+        "border": {
+          "placeholder": {
+            "value": "{color.border.error.moderate.0}",
+            "type": "color",
+            "description": "Error inline text container border in placeholder state - error/300 - #fda29b"
+          },
+          "hover": {
+            "value": "{color.border.error.moderate.0}",
+            "type": "color",
+            "description": "Error inline text container border in hover state - error/300 - #fda29b"
+          },
+          "active": {
+            "value": "{color.border.error.moderate.0}",
+            "type": "color",
+            "description": "Error inline text container border in active state - error/300 - #fda29b"
+          },
+          "filled": {
+            "value": "{color.border.error.moderate.0}",
+            "type": "color",
+            "description": "Error inline text container border in filled state - error/300 - #fda29b"
+          }
+        },
+        "text": {
+          "placeholder": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Error inline text container text color in placeholder state - gray/500 - #667085"
+          },
+          "hover": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Error inline text container text color in hover state - gray/900 - #101828"
+          },
+          "active": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Error inline text container text color in active state - gray/900 - #101828"
+          },
+          "filled": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Error inline text container text color in filled state - gray/900 - #101828"
+          }
+        },
+        "icon": {
+          "leading": {
+            "placeholder": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Error inline text container leading icon color in placeholder state - error/600 - #d92d20"
+            },
+            "hover": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Error inline text container leading icon color in hover state - error/600 - #d92d20"
+            },
+            "active": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Error inline text container leading icon color in active state - error/600 - #d92d20"
+            },
+            "filled": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Error inline text container leading icon color in filled state - error/600 - #d92d20"
+            }
+          },
+          "action": {
+            "hover": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Error inline text container action icon color in hover state - error/600 - #d92d20"
+            },
+            "active": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Error inline text container action icon color in active state - error/600 - #d92d20"
+            }
+          },
+          "trailing": {
+            "placeholder": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Error inline text container trailing icon color in placeholder state - error/600 - #d92d20"
+            },
+            "hover": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Error inline text container trailing icon color in hover state - error/600 - #d92d20"
+            },
+            "active": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Error inline text container trailing icon color in active state - error/600 - #d92d20"
+            },
+            "filled": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Error inline text container trailing icon color in filled state - error/600 - #d92d20"
+            }
+          }
+        }
+      },
+      "warning": {
+        "$comment": "Warning state inline text container colors with yellow/warning palette for validation feedback",
+        "background": {
+          "placeholder": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Warning inline text container background in placeholder state - transparent - #FFFFFF00"
+          },
+          "hover": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Warning inline text container background in hover state - gray/100 - #f2f4f7"
+          },
+          "active": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Warning inline text container background in active state - transparent - #FFFFFF00"
+          },
+          "filled": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Warning inline text container background in filled state - transparent - #FFFFFF00"
+          }
+        },
+        "border": {
+          "placeholder": {
+            "value": "{color.border.warning.moderate.0}",
+            "type": "color",
+            "description": "Warning inline text container border in placeholder state - warning/300 - #fec84b"
+          },
+          "hover": {
+            "value": "{color.border.warning.moderate.0}",
+            "type": "color",
+            "description": "Warning inline text container border in hover state - warning/300 - #fec84b"
+          },
+          "active": {
+            "value": "{color.border.warning.moderate.0}",
+            "type": "color",
+            "description": "Warning inline text container border in active state - warning/300 - #fec84b"
+          },
+          "filled": {
+            "value": "{color.border.warning.moderate.0}",
+            "type": "color",
+            "description": "Warning inline text container border in filled state - warning/300 - #fec84b"
+          }
+        },
+        "text": {
+          "placeholder": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Warning inline text container text color in placeholder state - gray/500 - #667085"
+          },
+          "hover": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Warning inline text container text color in hover state - gray/900 - #101828"
+          },
+          "active": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Warning inline text container text color in active state - gray/900 - #101828"
+          },
+          "filled": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Warning inline text container text color in filled state - gray/900 - #101828"
+          }
+        },
+        "icon": {
+          "leading": {
+            "placeholder": {
+              "value": "{color.icon.warning.moderate}",
+              "type": "color",
+              "description": "Warning inline text container leading icon color in placeholder state - warning/600 - #dc6803"
+            },
+            "hover": {
+              "value": "{color.icon.warning.moderate}",
+              "type": "color",
+              "description": "Warning inline text container leading icon color in hover state - warning/600 - #dc6803"
+            },
+            "active": {
+              "value": "{color.icon.warning.moderate}",
+              "type": "color",
+              "description": "Warning inline text container leading icon color in active state - warning/600 - #dc6803"
+            },
+            "filled": {
+              "value": "{color.icon.warning.moderate}",
+              "type": "color",
+              "description": "Warning inline text container leading icon color in filled state - warning/600 - #dc6803"
+            }
+          },
+          "action": {
+            "hover": {
+              "value": "{color.icon.warning.moderate}",
+              "type": "color",
+              "description": "Warning inline text container action icon color in hover state - warning/600 - #dc6803"
+            },
+            "active": {
+              "value": "{color.icon.warning.moderate}",
+              "type": "color",
+              "description": "Warning inline text container action icon color in active state - warning/600 - #dc6803"
+            }
+          },
+          "trailing": {
+            "placeholder": {
+              "value": "{color.icon.warning.moderate}",
+              "type": "color",
+              "description": "Warning inline text container trailing icon color in placeholder state - warning/600 - #dc6803"
+            },
+            "hover": {
+              "value": "{color.icon.warning.moderate}",
+              "type": "color",
+              "description": "Warning inline text container trailing icon color in hover state - warning/600 - #dc6803"
+            },
+            "active": {
+              "value": "{color.icon.warning.moderate}",
+              "type": "color",
+              "description": "Warning inline text container trailing icon color in active state - warning/600 - #dc6803"
+            },
+            "filled": {
+              "value": "{color.icon.warning.moderate}",
+              "type": "color",
+              "description": "Warning inline text container trailing icon color in filled state - warning/600 - #dc6803"
+            }
+          }
+        }
+      }
+    },
+    "action-icon-container": {
+      "$comment": "Container styling for action icons that appear on hover",
+      "background": {
+        "hover": {
+          "value": "{color.background.neutral.subtle.0}",
+          "type": "color",
+          "description": "Action icon container background on hover - gray/50 - #f9fafb"
+        }
+      },
+      "padding": {
+        "value": "{padding.0[5]}",
+        "type": "dimension",
+        "description": "Action icon container padding - 2px"
+      },
+      "border-radius": {
+        "value": "{border.radius.2xs}",
+        "type": "dimension",
+        "description": "Action icon container border radius - 2px"
+      },
+      "gap": {
+        "value": "{gap.2}",
+        "type": "dimension",
+        "description": "Gap between action icons - 8px"
+      }
+    }
+  }
+}
+

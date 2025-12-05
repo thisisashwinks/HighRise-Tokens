@@ -2,301 +2,214 @@
   "dropdown-list-item": {
     "container": {
       "padding": {
-        "vertical": {
-          "value": "{padding.1}",
+        "y": {
+          "value": "{padding.y.1}",
           "type": "dimension",
-          "description": "Vertical padding for menu item container (top and bottom)"
+          "description": "Vertical padding for menu item container (top and bottom) - 4px"
         },
-        "horizontal": {
-          "value": "{padding.2}",
+        "x": {
+          "value": "{padding.x.3xs}",
           "type": "dimension",
-          "description": "Horizontal padding for menu item container (left and right)"
-        }
-      },
-      "gap": {
-        "primary": {
-          "value": "{gap.2}",
-          "type": "dimension",
-          "description": "Primary gap between checkbox/check indicator and content area"
-        },
-        "content": {
-          "value": "{gap.1}",
-          "type": "dimension",
-          "description": "Gap between icon and text content within content area"
+          "description": "Horizontal padding for menu item container (left and right) - 8px"
         }
       },
       "border-radius": {
-        "value": "{border.radius.sm}",
+        "value": "{border.radius.none}",
         "type": "dimension",
-        "description": "Border radius for menu item container"
-      },
-      "min-height": {
-        "value": "{size.11}",
-        "type": "dimension",
-        "description": "Minimum height for menu item container (44px)"
+        "description": "Border radius for menu item container - 0px"
       }
     },
-    "content": {
-      "gap": {
-        "primary": {
-          "value": "{gap.1}",
-          "type": "dimension",
-          "description": "Gap between leading icon and text/description stack"
-        },
-        "secondary": {
-          "value": "{gap.0[5]}",
-          "type": "dimension",
-          "description": "Gap between label and description text (2px)"
-        }
+    "gap": {
+      "container": {
+        "value": "{gap.xs}",
+        "type": "dimension",
+        "description": "Gap between checkbox/check indicator and content area - 8px"
+      },
+      "content": {
+        "value": "{gap.3xs}",
+        "type": "dimension",
+        "description": "Gap between icon and text content within content area - 4px"
+      },
+      "text": {
+        "value": "{gap.4xs}",
+        "type": "dimension",
+        "description": "Gap between text and supporting text - 2px"
+      },
+      "supporting": {
+        "value": "{gap.4xs}",
+        "type": "dimension",
+        "description": "Gap between supporting text and icon - 2px"
+      },
+      "group-title": {
+        "value": "{gap.xs}",
+        "type": "dimension",
+        "description": "Gap between group title and content - 8px"
+      },
+      "more-desc": {
+        "value": "{gap.3xs}",
+        "type": "dimension",
+        "description": "Gap between more description text and icon - 4px"
       }
     },
     "icon": {
       "size": {
-        "primary": {
+        "leading": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Size of leading icon - 14px"
+        },
+        "supporting": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "Size of supporting icon - 10px"
+        },
+        "trailing": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Size of trailing icon - 14px"
+        },
+        "check": {
           "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Size for main action/leading icons (14px)"
+          "description": "Size of check indicator icon - 16px"
         },
-        "description": {
-          "value": "{size.2[5]}",
+        "expand": {
+          "value": "{size.icon.sm}",
           "type": "dimension",
-          "description": "Size for description/supporting icons (10px)"
-        },
-        "group": {
-          "value": "{size.3}",
-          "type": "dimension",
-          "description": "Size for group title icons (12px)"
+          "description": "Size of expand icon - 18px"
         }
       },
       "color": {
-        "default": {
-          "value": "{color.icon.neutral.moderate.1}",
+        "leading": {
+          "value": "{color.icon.neutral.moderate.2}",
           "type": "color",
-          "description": "Default icon color for enabled state"
+          "description": "Color of leading icon - gray/600 - #475467"
         },
         "disabled": {
           "value": "{color.icon.neutral.subtle.2}",
           "type": "color",
-          "description": "Icon color for disabled state"
+          "description": "Color of icon for disabled state - gray/300 - #d0d5dd"
+        },
+        "supporting": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Color of supporting icon - gray/600 - #475467"
+        },
+        "trailing": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Color of trailing icon - gray/600 - #475467"
+        },
+        "check": {
+          "value": "{color.icon.primary.default}",
+          "type": "color",
+          "description": "Color of check indicator icon - primary/blue/700 - #004eeb"
+        },
+        "expand": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Color of expand icon - gray/600 - #475467"
         }
       }
     },
     "avatar": {
       "size": {
-        "value": "{size.xs}",
+        "value": "{size.3xs}",
         "type": "dimension",
-        "description": "Avatar size for list items with avatar variant"
+        "description": "Avatar size for list items with avatar variant - 24px"
       }
     },
     "checkbox": {
       "size": {
-        "value": "{checkbox.container.size.xs}",
+        "value": "{size.icon.2xs}",
         "type": "dimension",
-        "description": "Checkbox size for multi-select menu items"
-      },
-      "border-radius": {
-        "value": "{checkbox.container.border-radius.xs}",
-        "type": "dimension",
-        "description": "Checkbox border radius for multi-select items"
-      },
-      "background": {
-        "unchecked": {
-          "default": {
-            "value": "{checkbox.background.unchecked.default}",
-            "type": "color",
-            "description": "Background color for unchecked checkbox in default state"
-          },
-          "hover": {
-            "value": "{checkbox.background.unchecked.hover}",
-            "type": "color",
-            "description": "Background color for unchecked checkbox on hover"
-          },
-          "disabled": {
-            "value": "{checkbox.background.unchecked.disabled}",
-            "type": "color",
-            "description": "Background color for unchecked checkbox when disabled"
-          }
-        },
-        "checked": {
-          "default": {
-            "value": "{checkbox.background.checked.default}",
-            "type": "color",
-            "description": "Background color for checked checkbox in default state"
-          },
-          "hover": {
-            "value": "{checkbox.background.checked.hover}",
-            "type": "color",
-            "description": "Background color for checked checkbox on hover"
-          },
-          "disabled": {
-            "value": "{checkbox.background.checked.disabled}",
-            "type": "color",
-            "description": "Background color for checked checkbox when disabled"
-          }
-        }
-      },
-      "border": {
-        "unchecked": {
-          "default": {
-            "value": "{checkbox.border.unchecked.default}",
-            "type": "color",
-            "description": "Border color for unchecked checkbox in default state"
-          },
-          "hover": {
-            "value": "{checkbox.border.unchecked.hover}",
-            "type": "color",
-            "description": "Border color for unchecked checkbox on hover"
-          },
-          "disabled": {
-            "value": "{checkbox.border.unchecked.disabled}",
-            "type": "color",
-            "description": "Border color for unchecked checkbox when disabled"
-          }
-        },
-        "checked": {
-          "default": {
-            "value": "{checkbox.border.checked.default}",
-            "type": "color",
-            "description": "Border color for checked checkbox in default state"
-          },
-          "hover": {
-            "value": "{checkbox.border.checked.hover}",
-            "type": "color",
-            "description": "Border color for checked checkbox on hover"
-          },
-          "disabled": {
-            "value": "{checkbox.border.checked.disabled}",
-            "type": "color",
-            "description": "Border color for checked checkbox when disabled"
-          }
-        }
+        "description": "Checkbox size for multi-select menu items - 14px"
       }
     },
     "text": {
-      "label": {
-        "typography": {
-          "value": "{font.body.regular.md}",
-          "type": "typography",
-          "description": "Primary label text style (13px, Regular, 18px line-height)"
-        },
-        "color": {
-          "default": {
-            "value": "{color.text.neutral.title.1}",
-            "type": "color",
-            "description": "Label text color in default/enabled state"
-          },
-          "disabled": {
-            "value": "{color.text.neutral.subtitle.2}",
-            "type": "color",
-            "description": "Label text color in disabled state"
-          }
-        }
+      "typography": {
+        "value": "{font.body.regular.md}",
+        "type": "typography",
+        "description": "Primary label text style (13px, Regular, 18px line-height)"
       },
-      "description": {
-        "typography": {
-          "value": "{font.body.regular.xs}",
-          "type": "typography",
-          "description": "Supporting description text style (11px, Regular, 16px line-height)"
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.body.1}",
+          "type": "color",
+          "description": "Label text color in default/enabled state - gray/700 - #101828"
         },
-        "color": {
-          "default": {
-            "value": "{color.text.neutral.moderate.1}",
-            "type": "color",
-            "description": "Description text color in default/enabled state"
-          },
-          "disabled": {
-            "value": "{color.text.neutral.subtitle.2}",
-            "type": "color",
-            "description": "Description text color in disabled state"
-          }
+        "disabled": {
+          "value": "{color.text.neutral.subtitle.2}",
+          "type": "color",
+          "description": "Label text color in disabled state - gray/400 - #98a2b3"
         }
+      }
+    },
+    "supporting": {
+      "typography": {
+        "value": "{font.body.regular.xs}",
+        "type": "typography",
+        "description": "Supporting description text style (11px, Regular, 16px line-height)"
       },
-      "supporting": {
-        "typography": {
-          "value": "{font.body.regular.xs}",
-          "type": "typography",
-          "description": "Supporting information text style (11px, Regular, 16px line-height)"
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Description text color in default/enabled state - gray/600 - #475467"
         },
-        "color": {
-          "default": {
-            "value": "{color.text.neutral.body.2}",
-            "type": "color",
-            "description": "Supporting text color in default state"
-          },
-          "disabled": {
-            "value": "{color.text.neutral.subtitle.2}",
-            "type": "color",
-            "description": "Supporting text color in disabled state"
-          }
+        "disabled": {
+          "value": "{color.text.neutral.subtitle.2}",
+          "type": "color",
+          "description": "Description text color in disabled state - gray/400 - #98a2b3"
+        }
+      }
+    },
+    "more-desc": {
+      "typography": {
+        "value": "{font.body.regular.xs}",
+        "type": "typography",
+        "description": "Supporting information text style (11px, Regular, 16px line-height)"
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.subtitle.1}",
+          "type": "color",
+          "description": "Supporting text color in default state - gray/500 - #667085"
+        },
+        "disabled": {
+          "value": "{color.text.neutral.subtitle.2}",
+          "type": "color",
+          "description": "Supporting text color in disabled state - gray/400 - #98a2b3"
         }
       }
     },
     "background": {
       "default": {
-        "value": "{color.background.neutral.base}",
+        "value": "{color.background.transparent}",
         "type": "color",
-        "description": "Background color for menu item in default/rest state"
+        "description": "Background color for menu item in default state - transparent - #ffffff00"
       },
       "hover": {
-        "value": "{color.background.neutral.subtle.2}",
-        "type": "color",
-        "description": "Background color for menu item on hover (Gray 100)"
-      },
-      "selected": {
-        "value": "{color.background.brand.subtle.1}",
-        "type": "color",
-        "description": "Background color for selected menu item (Blue 50)"
-      },
-      "disabled": {
-        "value": "{color.background.neutral.inactive}",
-        "type": "color",
-        "description": "Background color for disabled menu item (Gray 50)"
-      }
-    },
-    "group-title": {
-      "padding": {
-        "top": {
-          "value": "{padding.2}",
-          "type": "dimension",
-          "description": "Top padding for group title container (8px)"
-        },
-        "right": {
-          "value": "{padding.2[5]}",
-          "type": "dimension",
-          "description": "Right padding for group title container (10px)"
-        },
-        "bottom": {
-          "value": "{padding.1}",
-          "type": "dimension",
-          "description": "Bottom padding for group title container (4px)"
-        },
-        "left": {
-          "value": "{padding.2}",
-          "type": "dimension",
-          "description": "Left padding for group title container (8px)"
-        }
-      },
-      "gap": {
-        "value": "{gap.1}",
-        "type": "dimension",
-        "description": "Gap between icon and title text (4px)"
-      },
-      "text": {
-        "typography": {
-          "value": "{font.body.medium.xs}",
-          "type": "typography",
-          "description": "Group title text style (11px, Medium, 16px line-height)"
-        },
-        "color": {
-          "value": "{color.text.neutral.subtitle.1}",
-          "type": "color",
-          "description": "Group title text color (Gray 400)"
-        }
-      },
-      "background": {
         "value": "{color.background.neutral.subtle.1}",
         "type": "color",
-        "description": "Group title background color (Gray 50)"
+        "description": "Background color for menu item on hover - gray/100 - #f2f4f7"
+      },
+      "selected": {
+        "value": "{color.background.primary.subtle.0}",
+        "type": "color",
+        "description": "Background color for selected menu item - primary/blue/50 - #eff4ff"
+      },
+      "disabled": {
+        "value": "{color.background.neutral.subtle.0}",
+        "type": "color",
+        "description": "Background color for disabled menu item - gray/50 - #f9fafb"
+      }
+    },
+    "tag": {
+      "height": {
+        "value": "{size.height.4[5]}",
+        "type": "dimension",
+        "description": "Height of tag (xs size) - 18px"
       }
     },
     "search": {

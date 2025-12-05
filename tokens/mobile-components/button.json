@@ -120,7 +120,7 @@
               "description": "Mobile secondary button default background"
             },
             "hover": {
-              "value": "{color.background.neutral.subtle.0}",
+              "value": "{color.background.primary.subtle.0}",
               "type": "color",
               "description": "Mobile secondary button hover background"
             },
@@ -2202,7 +2202,7 @@
               "description": "Mobile warning link button focused icon color"
             },
             "disabled": {
-              "value": "{color.icon.success.inactive}",
+              "value": "{color.icon.warning.inactive}",
               "type": "color",
               "description": "Mobile warning link button disabled icon color"
             }

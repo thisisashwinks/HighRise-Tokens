@@ -1,0 +1,175 @@
+{
+  "$comment": "Mobile Input Form Component Tokens",
+  "$description": "Component tokens for Mobile Input Form component - a composite form component that includes label, input field, hint text, and optional action button. Supports multiple states including default (neutral), success, destructive (error), and warning variants across 3 sizes (sm, md, lg). Figma Reference: Node ID 7-22883",
+  "$component": {
+    "name": "Input Form",
+    "description": "A mobile form component that combines label, input field, hint text, and optional action button into a cohesive form structure. Provides complete form field styling with validation states, spacing, and typography for mobile interfaces. Supports multiple semantic states for different types of feedback.",
+    "structure": "Vertical container with label at top, input field in middle, hint text below, and optional action button aligned with label",
+    "sizes": {
+      "3xs": "Extra small size for compact mobile interfaces - typically 8px-9px",
+      "2xs": "Extra small size for compact mobile interfaces - typically 10px-11px",
+      "xs": "Small size for compact mobile interfaces - typically 12px-13px",
+      "sm": "Small size for compact mobile interfaces - typically 12px-13px",
+      "md": "Medium size (commonly used default for mobile) - typically 13px-14px",
+      "lg": "Large size for prominent mobile forms - typically 14px-16px"
+    },
+    "variants": {
+      "default": "Neutral form with gray colors for standard data entry",
+      "success": "Success state with green colors for positive validation feedback",
+      "destructive": "Error state with red colors for validation errors and warnings",
+      "warning": "Warning state with orange/yellow colors for cautionary messages",
+      "disabled": "Disabled state with muted colors when form is disabled"
+    },
+    "usage": {
+      "contexts": "Mobile forms, registration screens, login forms, settings panels, data entry interfaces, profile forms, search forms",
+      "features": "Label with optional action button, Input field with validation states, Hint text for guidance, Spacing between elements, Focus states, Disabled states"
+    }
+  },
+  "input-form": {
+    "gap": {
+      "$comment": "Spacing tokens for mobile input form - defines gaps between label, input field, and hint text",
+      "value": "{gap.3xs}",
+      "type": "dimension",
+      "description": "Mobile input form gap for 3xs size - gap between label, input, and hint text - 4px"
+    },
+    "label": {
+      "$comment": "Label tokens for mobile input form - includes typography, colors, and spacing",
+      "text": {
+        "typography": {
+          "3xs": {
+            "value": "{font.body.medium.xs}",
+            "type": "typography",
+            "description": "Mobile input form label typography for 3xs size - Medium 11px/16px"
+          },
+          "2xs": {
+            "value": "{font.body.medium.sm}",
+            "type": "typography",
+            "description": "Mobile input form label typography for 2xs size - Medium 12px/17px"
+          },
+          "xs": {
+            "value": "{font.body.medium.md}",
+            "type": "typography",
+            "description": "Mobile input form label typography for xs size - Medium 13px/18px"
+          },
+          "sm": {
+            "value": "{font.body.medium.base}",
+            "type": "typography",
+            "description": "Mobile input form label typography for sm size - Medium 14px/20px"
+          },
+          "md": {
+            "value": "{font.body.medium.2xl}",
+            "type": "typography",
+            "description": "Mobile input form label typography for md size - Medium 16px/24px"
+          },
+          "lg": {
+            "value": "{font.body.medium.2xl}",
+            "type": "typography",
+            "description": "Mobile input form label typography for lg size - Medium 16px/24px"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.body.2}",
+            "type": "color",
+            "description": "Mobile input form label default text color - gray/600 - #475467"
+          }
+        }
+      },
+      "spacing": {
+            "value": "{gap.3xs}",
+            "type": "dimension",
+            "description": "Mobile input form label bottom spacing for sm size - space between label and input - 4px"
+      }
+    },
+    "input": {
+      "height": {
+        "$comment": "Mobile input form input field heights for each size variant",
+        "3xs": {
+          "value": "{size.height.3xs}",
+          "type": "dimension",
+          "description": "Mobile input form input height for 3xs size - 24px"
+        },
+        "2xs": {
+          "value": "{size.height.2xs}",
+          "type": "dimension",
+          "description": "Mobile input form input height for 2xs size - 28px"
+        },
+        "xs": {
+          "value": "{size.height.xs}",
+          "type": "dimension",
+          "description": "Mobile input form input height for xs size - 32px"
+        },
+        "sm": {
+          "value": "{size.height.sm}",
+          "type": "dimension",
+          "description": "Mobile input form input height for sm size - 36px"
+        },
+        "md": {
+          "value": "{size.height.md}",
+          "type": "dimension",
+          "description": "Mobile input form input height for md size - 40px"
+        },
+        "lg": {
+          "value": "{size.height.lg}",
+          "type": "dimension",
+          "description": "Mobile input form input height for lg size - 44px"
+        }
+      }
+    },
+    "action": {
+      "$comment": "Action button tokens for mobile input form - optional button aligned with label (e.g., 'Forgot password?', 'Clear')",
+      "button": {
+        "typography": {
+          "sm": {
+            "value": "{font.body.semibold.md}",
+            "type": "typography",
+            "description": "Mobile input form action button typography for sm size - Semibold 14px/20px"
+          },
+          "md": {
+            "value": "{font.body.semibold.base}",
+            "type": "typography",
+            "description": "Mobile input form action button typography for md size - Semibold 16px/20px"
+          },
+          "lg": {
+            "value": "{font.body.semibold.base}",
+            "type": "typography",
+            "description": "Mobile input form action button typography for lg size - Semibold 16px/20px"
+          }
+        },
+        "color": {
+          "primary": {
+            "value": "{color.text.primary.body.2}",
+            "type": "color",
+            "description": "Mobile input form action button primary text color - primary/700 - #004EEB"
+          },
+          "neutral": {
+            "value": "{color.text.neutral.body.1}",
+            "type": "color",
+            "description": "Mobile input form action button neutral text color - gray/700 - #344054"
+          }
+        }
+      },
+      "spacing": {
+        "$comment": "Spacing tokens for mobile input form action button - defines space on the left side when aligned with label",
+        "left": {
+          "sm": {
+            "value": "{gap.xs}",
+            "type": "dimension",
+            "description": "Mobile input form action button left spacing for sm size - space between label and action button - 8px"
+          },
+          "md": {
+            "value": "{gap.xs}",
+            "type": "dimension",
+            "description": "Mobile input form action button left spacing for md size - space between label and action button - 8px"
+          },
+          "lg": {
+            "value": "{gap.sm}",
+            "type": "dimension",
+            "description": "Mobile input form action button left spacing for lg size - space between label and action button - 12px"
+          }
+        }
+      }
+    }
+  }
+}
+
