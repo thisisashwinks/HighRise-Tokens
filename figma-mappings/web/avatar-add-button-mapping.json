@@ -1,0 +1,464 @@
+{
+  "component": "avatar-add-button",
+  "version": "1.0.0",
+  "description": "Figma mapping for avatar-add-button component tokens",
+  "tokens": {
+    "avatar-add-button.container.background.color.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Avatar add button default background color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.background.color.hover": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Avatar add button hover background color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.background.color.focus": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Avatar add button focus background color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.background.color.disabled": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Avatar add button disabled background color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.border.color.default": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Avatar add button default border color",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.border.color.hover": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Avatar add button hover border color",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.border.color.focus": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Avatar add button focus border color",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.border.color.disabled": {
+      "value": "{color.border.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.2}",
+      "description": "Avatar add button disabled border color",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Avatar add button default border width",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.border.radius.xs": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Avatar add button xs border radius - full circle",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.border.radius.sm": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Avatar add button sm border radius - full circle",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.border.radius.md": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Avatar add button md border radius - full circle",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.size.xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.6}",
+      "description": "Avatar add button xs container size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.size.sm": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.8}",
+      "description": "Avatar add button sm container size - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.size.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.10}",
+      "description": "Avatar add button md container size - 40px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.container.padding.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "Avatar add button xs padding - 4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.container.padding.sm": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "Avatar add button sm padding - 4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.container.padding.md": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "Avatar add button md padding - 4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.icon.color.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Avatar add button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "avatar-add-button.icon.color.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Avatar add button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "avatar-add-button.icon.color.focus": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Avatar add button focus icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "avatar-add-button.icon.color.disabled": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Avatar add button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "avatar-add-button.icon.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Avatar add button xs icon size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar-add-button.icon.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Avatar add button sm icon size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar-add-button.icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Avatar add button md icon size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar-add-button.interaction.cursor.default": {
+      "value": "pointer",
+      "type": "string",
+      "reference": null,
+      "description": "Avatar add button default cursor",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.interaction.cursor.disabled": {
+      "value": "not-allowed",
+      "type": "string",
+      "reference": null,
+      "description": "Avatar add button disabled cursor",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.interaction.transition.duration": {
+      "value": "150",
+      "type": "number",
+      "reference": "{motion.duration.fast}",
+      "description": "Avatar add button transition duration",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.interaction.transition.timing": {
+      "value": "ease-in-out",
+      "type": "string",
+      "reference": "{motion.ease.in-out}",
+      "description": "Avatar add button transition timing function",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.tooltip.text": {
+      "value": "Add user",
+      "type": "string",
+      "reference": null,
+      "description": "Default tooltip text for avatar add button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.tooltip.background.color": {
+      "value": "{color.background.neutral.intense.2}",
+      "type": "color",
+      "reference": "{color.background.neutral.intense.2}",
+      "description": "Avatar add button tooltip background color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.tooltip.text-color": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Avatar add button tooltip text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "avatar-add-button.tooltip.padding.x": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{spacing.3}",
+      "description": "Avatar add button tooltip horizontal padding - 12px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.tooltip.padding.y": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{spacing.2}",
+      "description": "Avatar add button tooltip vertical padding - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.tooltip.border-radius": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.2}",
+      "description": "Avatar add button tooltip border radius - 8px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.tooltip.typography": {
+      "value": "{font.body.semibold.sm}",
+      "type": "string",
+      "reference": "{font.body.semibold.sm}",
+      "description": "Avatar add button tooltip typography",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.tooltip.shadow": {
+      "value": "Avatar add button tooltip shadow",
+      "type": "shadow",
+      "reference": "{shadow.lg}",
+      "description": "Avatar add button tooltip shadow",
+      "figma_property": {
+        "property": "effects",
+        "target": "container"
+      }
+    },
+    "avatar-add-button.tooltip.offset.y": {
+      "value": "8",
+      "type": "number",
+      "reference": "{spacing.2}",
+      "description": "Avatar add button tooltip vertical offset from button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.accessibility.role": {
+      "value": "button",
+      "type": "string",
+      "reference": null,
+      "description": "ARIA role for avatar add button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-add-button.accessibility.label": {
+      "value": "Add user",
+      "type": "string",
+      "reference": null,
+      "description": "Default ARIA label for avatar add button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

@@ -8,546 +8,546 @@
     "neutral": {
       "gray": {
         "0": {
-          "value": "{gray-0}",
+          "value": "#ffffff",
           "type": "color",
           "description": "Neutral gray color: #ffffff"
         },
         "25": {
-          "value": "{gray-25}",
+          "value": "#fcfcfd",
           "type": "color",
           "description": "Neutral gray color: #fcfcfd"
         },
         "50": {
-          "value": "{gray-50}",
+          "value": "#f9fafb",
           "type": "color",
           "description": "Neutral gray color: #f9fafb"
         },
         "100": {
-          "value": "{gray-100}",
+          "value": "#f2f4f7",
           "type": "color",
           "description": "Neutral gray color: #f2f4f7"
         },
         "200": {
-          "value": "{gray-200}",
+          "value": "#eaecf0",
           "type": "color",
           "description": "Neutral gray color: #eaecf0"
         },
         "300": {
-          "value": "{gray-300}",
+          "value": "#d0d5dd",
           "type": "color",
           "description": "Neutral gray color: #d0d5dd"
         },
         "400": {
-          "value": "{gray-400}",
+          "value": "#98a2b3",
           "type": "color",
           "description": "Neutral gray color: #98a2b3"
         },
         "500": {
-          "value": "{gray-500}",
+          "value": "#667085",
           "type": "color",
           "description": "Neutral gray color: #667085"
         },
         "600": {
-          "value": "{gray-600}",
+          "value": "#475467",
           "type": "color",
           "description": "Neutral gray color: #475467"
         },
         "700": {
-          "value": "{gray-700}",
+          "value": "#344054",
           "type": "color",
           "description": "Neutral gray color: #344054"
         },
         "800": {
-          "value": "{gray-800}",
+          "value": "#1d2939",
           "type": "color",
           "description": "Neutral gray color: #1d2939"
         },
         "900": {
-          "value": "{gray-900}",
+          "value": "#101828",
           "type": "color",
           "description": "Neutral gray color: #101828"
         },
         "950": {
-          "value": "{gray-950}",
+          "value": "#0a0d12",
           "type": "color",
           "description": "Neutral gray color: #0a0d12"
         },
         "975": {
-          "value": "{gray-975}",
+          "value": "#040508",
           "type": "color",
           "description": "Neutral gray color: #040508"
         },
         "1000": {
-          "value": "{gray-1000}",
+          "value": "#000000",
           "type": "color",
           "description": "Neutral gray color: #000000"
         }
       },
       "gray-blue": {
         "25": {
-          "value": "{grayBlue-25}",
+          "value": "#fcfcfd",
           "type": "color",
           "description": "Neutral gray-blue color: #fcfcfd"
         },
         "50": {
-          "value": "{grayBlue-50}",
+          "value": "#f8f9fc",
           "type": "color",
           "description": "Neutral gray-blue color: #f8f9fc"
         },
         "100": {
-          "value": "{grayBlue-100}",
+          "value": "#eaecf5",
           "type": "color",
           "description": "Neutral gray-blue color: #eaecf5"
         },
         "200": {
-          "value": "{grayBlue-200}",
+          "value": "#d5d9eb",
           "type": "color",
           "description": "Neutral gray-blue color: #d5d9eb"
         },
         "300": {
-          "value": "{grayBlue-300}",
+          "value": "#b3b8db",
           "type": "color",
           "description": "Neutral gray-blue color: #b3b8db"
         },
         "400": {
-          "value": "{grayBlue-400}",
+          "value": "#717bbc",
           "type": "color",
           "description": "Neutral gray-blue color: #717bbc"
         },
         "500": {
-          "value": "{grayBlue-500}",
+          "value": "#4e5ba6",
           "type": "color",
           "description": "Neutral gray-blue color: #4e5ba6"
         },
         "600": {
-          "value": "{grayBlue-600}",
+          "value": "#3e4784",
           "type": "color",
           "description": "Neutral gray-blue color: #3e4784"
         },
         "700": {
-          "value": "{grayBlue-700}",
+          "value": "#363f72",
           "type": "color",
           "description": "Neutral gray-blue color: #363f72"
         },
         "800": {
-          "value": "{grayBlue-800}",
+          "value": "#293056",
           "type": "color",
           "description": "Neutral gray-blue color: #293056"
         },
         "900": {
-          "value": "{grayBlue-900}",
+          "value": "#101323",
           "type": "color",
           "description": "Neutral gray-blue color: #101323"
         },
         "950": {
-          "value": "{grayBlue-950}",
+          "value": "#0d0f1c",
           "type": "color",
           "description": "Neutral gray-blue color: #0d0f1c"
         },
         "975": {
-          "value": "{grayBlue-975}",
+          "value": "#070912",
           "type": "color",
           "description": "Neutral gray-blue color: #070912"
         }
       },
       "gray-cool": {
         "25": {
-          "value": "{grayCool-25}",
+          "value": "#fcfcfd",
           "type": "color",
           "description": "Neutral gray-cool color: #fcfcfd"
         },
         "50": {
-          "value": "{grayCool-50}",
+          "value": "#f9f9fb",
           "type": "color",
           "description": "Neutral gray-cool color: #f9f9fb"
         },
         "100": {
-          "value": "{grayCool-100}",
+          "value": "#eff1f5",
           "type": "color",
           "description": "Neutral gray-cool color: #eff1f5"
         },
         "200": {
-          "value": "{grayCool-200}",
+          "value": "#dcdfea",
           "type": "color",
           "description": "Neutral gray-cool color: #dcdfea"
         },
         "300": {
-          "value": "{grayCool-300}",
+          "value": "#b9c0d4",
           "type": "color",
           "description": "Neutral gray-cool color: #b9c0d4"
         },
         "400": {
-          "value": "{grayCool-400}",
+          "value": "#7d89b0",
           "type": "color",
           "description": "Neutral gray-cool color: #7d89b0"
         },
         "500": {
-          "value": "{grayCool-500}",
+          "value": "#5d6b98",
           "type": "color",
           "description": "Neutral gray-cool color: #5d6b98"
         },
         "600": {
-          "value": "{grayCool-600}",
+          "value": "#4a5578",
           "type": "color",
           "description": "Neutral gray-cool color: #4a5578"
         },
         "700": {
-          "value": "{grayCool-700}",
+          "value": "#404968",
           "type": "color",
           "description": "Neutral gray-cool color: #404968"
         },
         "800": {
-          "value": "{grayCool-800}",
+          "value": "#30374f",
           "type": "color",
           "description": "Neutral gray-cool color: #30374f"
         },
         "900": {
-          "value": "{grayCool-900}",
+          "value": "#111322",
           "type": "color",
           "description": "Neutral gray-cool color: #111322"
         },
         "950": {
-          "value": "{grayCool-950}",
+          "value": "#0e101b",
           "type": "color",
           "description": "Neutral gray-cool color: #0e101b"
         },
         "975": {
-          "value": "{grayCool-975}",
+          "value": "#07090f",
           "type": "color",
           "description": "Neutral gray-cool color: #07090f"
         }
       },
       "gray-modern": {
         "25": {
-          "value": "{grayModern-25}",
+          "value": "#fcfcfd",
           "type": "color",
           "description": "Neutral gray-modern color: #fcfcfd"
         },
         "50": {
-          "value": "{grayModern-50}",
+          "value": "#f8fafc",
           "type": "color",
           "description": "Neutral gray-modern color: #f8fafc"
         },
         "100": {
-          "value": "{grayModern-100}",
+          "value": "#eef2f6",
           "type": "color",
           "description": "Neutral gray-modern color: #eef2f6"
         },
         "200": {
-          "value": "{grayModern-200}",
+          "value": "#e3e8ef",
           "type": "color",
           "description": "Neutral gray-modern color: #e3e8ef"
         },
         "300": {
-          "value": "{grayModern-300}",
+          "value": "#cdd5df",
           "type": "color",
           "description": "Neutral gray-modern color: #cdd5df"
         },
         "400": {
-          "value": "{grayModern-400}",
+          "value": "#9aa4b2",
           "type": "color",
           "description": "Neutral gray-modern color: #9aa4b2"
         },
         "500": {
-          "value": "{grayModern-500}",
+          "value": "#697586",
           "type": "color",
           "description": "Neutral gray-modern color: #697586"
         },
         "600": {
-          "value": "{grayModern-600}",
+          "value": "#4b5565",
           "type": "color",
           "description": "Neutral gray-modern color: #4b5565"
         },
         "700": {
-          "value": "{grayModern-700}",
+          "value": "#364152",
           "type": "color",
           "description": "Neutral gray-modern color: #364152"
         },
         "800": {
-          "value": "{grayModern-800}",
+          "value": "#202939",
           "type": "color",
           "description": "Neutral gray-modern color: #202939"
         },
         "900": {
-          "value": "{grayModern-900}",
+          "value": "#121926",
           "type": "color",
           "description": "Neutral gray-modern color: #121926"
         },
         "950": {
-          "value": "{grayModern-950}",
+          "value": "#0d121c",
           "type": "color",
           "description": "Neutral gray-modern color: #0d0f1c"
         },
         "975": {
-          "value": "{grayModern-975}",
+          "value": "#06080d",
           "type": "color",
           "description": "Neutral gray-modern color: #080b12"
         }
       },
       "gray-neutral": {
         "25": {
-          "value": "{grayNeutral-25}",
+          "value": "#fcfcfd",
           "type": "color",
           "description": "Neutral gray-neutral color: #fcfcfd"
         },
         "50": {
-          "value": "{grayNeutral-50}",
+          "value": "#f9fafb",
           "type": "color",
           "description": "Neutral gray-neutral color: #f9fafb"
         },
         "100": {
-          "value": "{grayNeutral-100}",
+          "value": "#f3f4f6",
           "type": "color",
           "description": "Neutral gray-neutral color: #f3f4f6"
         },
         "200": {
-          "value": "{grayNeutral-200}",
+          "value": "#e5e7eb",
           "type": "color",
           "description": "Neutral gray-neutral color: #e5e7eb"
         },
         "300": {
-          "value": "{grayNeutral-300}",
+          "value": "#d2d6db",
           "type": "color",
           "description": "Neutral gray-neutral color: #d2d6db"
         },
         "400": {
-          "value": "{grayNeutral-400}",
+          "value": "#9da4ae",
           "type": "color",
           "description": "Neutral gray-neutral color: #9da4ae"
         },
         "500": {
-          "value": "{grayNeutral-500}",
+          "value": "#6c737f",
           "type": "color",
           "description": "Neutral gray-neutral color: #6c737f"
         },
         "600": {
-          "value": "{grayNeutral-600}",
+          "value": "#4d5761",
           "type": "color",
           "description": "Neutral gray-neutral color: #4d5761"
         },
         "700": {
-          "value": "{grayNeutral-700}",
+          "value": "#384250",
           "type": "color",
           "description": "Neutral gray-neutral color: #384250"
         },
         "800": {
-          "value": "{grayNeutral-800}",
+          "value": "#1f2a37",
           "type": "color",
           "description": "Neutral gray-neutral color: #1f2a37"
         },
         "900": {
-          "value": "{grayNeutral-900}",
+          "value": "#111927",
           "type": "color",
           "description": "Neutral gray-neutral color: #111927"
         },
         "950": {
-          "value": "{grayNeutral-950}",
+          "value": "#0d121c",
           "type": "color",
           "description": "Neutral gray-neutral color: #0d121c"
         },
         "975": {
-          "value": "{grayNeutral-975}",
+          "value": "#06070a",
           "type": "color",
           "description": "Neutral gray-neutral color: #070a0f"
         }
       },
       "gray-iron": {
         "25": {
-          "value": "{grayIron-25}",
+          "value": "#fcfcfc",
           "type": "color",
           "description": "Neutral gray-iron color: #fcfcfc"
         },
         "50": {
-          "value": "{grayIron-50}",
+          "value": "#fafafa",
           "type": "color",
           "description": "Neutral gray-iron color: #fafafa"
         },
         "100": {
-          "value": "{grayIron-100}",
+          "value": "#f4f4f5",
           "type": "color",
           "description": "Neutral gray-iron color: #f4f4f5"
         },
         "200": {
-          "value": "{grayIron-200}",
+          "value": "#e4e4e7",
           "type": "color",
           "description": "Neutral gray-iron color: #e4e4e7"
         },
         "300": {
-          "value": "{grayIron-300}",
+          "value": "#d1d1d6",
           "type": "color",
           "description": "Neutral gray-iron color: #d1d1d6"
         },
         "400": {
-          "value": "{grayIron-400}",
+          "value": "#a0a0ab",
           "type": "color",
           "description": "Neutral gray-iron color: #a0a0ab"
         },
         "500": {
-          "value": "{grayIron-500}",
+          "value": "#70707b",
           "type": "color",
           "description": "Neutral gray-iron color: #70707b"
         },
         "600": {
-          "value": "{grayIron-600}",
+          "value": "#51525c",
           "type": "color",
           "description": "Neutral gray-iron color: #51525c"
         },
         "700": {
-          "value": "{grayIron-700}",
+          "value": "#3f3f46",
           "type": "color",
           "description": "Neutral gray-iron color: #3f3f46"
         },
         "800": {
-          "value": "{grayIron-800}",
+          "value": "#26272b",
           "type": "color",
           "description": "Neutral gray-iron color: #26272b"
         },
         "900": {
-          "value": "{grayIron-900}",
+          "value": "#18181b",
           "type": "color",
           "description": "Neutral gray-iron color: #18181b"
         },
         "950": {
-          "value": "{grayIron-950}",
+          "value": "#131316",
           "type": "color",
           "description": "Neutral gray-iron color: #131316"
         },
         "975": {
-          "value": "{grayIron-975}",
+          "value": "#08080a",
           "type": "color",
           "description": "Neutral gray-iron color: #08080a"
         }
       },
       "gray-true": {
         "25": {
-          "value": "{grayTrue-25}",
+          "value": "#fcfcfc",
           "type": "color",
           "description": "Neutral gray-true color: #fcfcfc"
         },
         "50": {
-          "value": "{grayTrue-50}",
+          "value": "#fafafa",
           "type": "color",
           "description": "Neutral gray-true color: #fafafa"
         },
         "100": {
-          "value": "{grayTrue-100}",
+          "value": "#f5f5f5",
           "type": "color",
           "description": "Neutral gray-true color: #f5f5f5"
         },
         "200": {
-          "value": "{grayTrue-200}",
+          "value": "#e5e5e5",
           "type": "color",
           "description": "Neutral gray-true color: #e5e5e5"
         },
         "300": {
-          "value": "{grayTrue-300}",
+          "value": "#d6d6d6",
           "type": "color",
           "description": "Neutral gray-true color: #d6d6d6"
         },
         "400": {
-          "value": "{grayTrue-400}",
+          "value": "#a3a3a3",
           "type": "color",
           "description": "Neutral gray-true color: #a3a3a3"
         },
         "500": {
-          "value": "{grayTrue-500}",
+          "value": "#737373",
           "type": "color",
           "description": "Neutral gray-true color: #737373"
         },
         "600": {
-          "value": "{grayTrue-600}",
+          "value": "#525252",
           "type": "color",
           "description": "Neutral gray-true color: #525252"
         },
         "700": {
-          "value": "{grayTrue-700}",
+          "value": "#424242",
           "type": "color",
           "description": "Neutral gray-true color: #424242"
         },
         "800": {
-          "value": "{grayTrue-800}",
+          "value": "#292929",
           "type": "color",
           "description": "Neutral gray-true color: #292929"
         },
         "900": {
-          "value": "{grayTrue-900}",
+          "value": "#141414",
           "type": "color",
           "description": "Neutral gray-true color: #141414"
         },
         "950": {
-          "value": "{grayTrue-950}",
+          "value": "#0f0f0f",
           "type": "color",
           "description": "Neutral gray-true color: #0f0f0f"
         },
         "975": {
-          "value": "{grayTrue-975}",
+          "value": "#050505",
           "type": "color",
           "description": "Neutral gray-true color: #050505"
         }
       },
       "gray-warm": {
         "25": {
-          "value": "{grayWarm-25}",
+          "value": "#fdfdfc",
           "type": "color",
           "description": "Neutral gray-warm color: #fdfdfc"
         },
         "50": {
-          "value": "{grayWarm-50}",
+          "value": "#fafaf9",
           "type": "color",
           "description": "Neutral gray-warm color: #fafaf9"
         },
         "100": {
-          "value": "{grayWarm-100}",
+          "value": "#f5f5f4",
           "type": "color",
           "description": "Neutral gray-warm color: #f5f5f4"
         },
         "200": {
-          "value": "{grayWarm-200}",
+          "value": "#e7e5e4",
           "type": "color",
           "description": "Neutral gray-warm color: #e7e5e4"
         },
         "300": {
-          "value": "{grayWarm-300}",
+          "value": "#d7d3d0",
           "type": "color",
           "description": "Neutral gray-warm color: #d7d3d0"
         },
         "400": {
-          "value": "{grayWarm-400}",
+          "value": "#a9a29d",
           "type": "color",
           "description": "Neutral gray-warm color: #a9a29d"
         },
         "500": {
-          "value": "{grayWarm-500}",
+          "value": "#79716b",
           "type": "color",
           "description": "Neutral gray-warm color: #79716b"
         },
         "600": {
-          "value": "{grayWarm-600}",
+          "value": "#57534e",
           "type": "color",
           "description": "Neutral gray-warm color: #57534e"
         },
         "700": {
-          "value": "{grayWarm-700}",
+          "value": "#44403c",
           "type": "color",
           "description": "Neutral gray-warm color: #44403c"
         },
         "800": {
-          "value": "{grayWarm-800}",
+          "value": "#292524",
           "type": "color",
           "description": "Neutral gray-warm color: #292524"
         },
         "900": {
-          "value": "{grayWarm-900}",
+          "value": "#1c1917",
           "type": "color",
           "description": "Neutral gray-warm color: #1c1917"
         },
         "950": {
-          "value": "{grayWarm-950}",
+          "value": "#171412",
           "type": "color",
           "description": "Neutral gray-warm color: #171412"
         },
         "975": {
-          "value": "{grayWarm-975}",
+          "value": "#0a0908",
           "type": "color",
           "description": "Neutral gray-warm color: #0a0908"
         }
@@ -556,67 +556,67 @@
     "primary": {
       "blue": {
         "25": {
-          "value": "{primary-25}",
+          "value": "#f5f8ff",
           "type": "color",
           "description": "Primary blue color: #f5f8ff"
         },
         "50": {
-          "value": "{primary-50}",
+          "value": "#eff4ff",
           "type": "color",
           "description": "Primary blue color: #eff4ff"
         },
         "100": {
-          "value": "{primary-100}",
+          "value": "#d1e0ff",
           "type": "color",
           "description": "Primary blue color: #d1e0ff"
         },
         "200": {
-          "value": "{primary-200}",
+          "value": "#b2ccff",
           "type": "color",
           "description": "Primary blue color: #b2ccff"
         },
         "300": {
-          "value": "{primary-300}",
+          "value": "#84adff",
           "type": "color",
           "description": "Primary blue color: #84adff"
         },
         "400": {
-          "value": "{primary-400}",
+          "value": "#528bff",
           "type": "color",
           "description": "Primary blue color: #528bff"
         },
         "500": {
-          "value": "{primary-500}",
+          "value": "#2970ff",
           "type": "color",
           "description": "Primary blue color: #2970ff"
         },
         "600": {
-          "value": "{primary-600}",
+          "value": "#155eef",
           "type": "color",
           "description": "Primary blue color: #155eef"
         },
         "700": {
-          "value": "{primary-700}",
+          "value": "#004eeb",
           "type": "color",
           "description": "Primary blue color: #004eeb"
         },
         "800": {
-          "value": "{primary-800}",
+          "value": "#0040c1",
           "type": "color",
           "description": "Primary blue color: #0040c1"
         },
         "900": {
-          "value": "{primary-900}",
+          "value": "#00359e",
           "type": "color",
           "description": "Primary blue color: #00359e"
         },
         "950": {
-          "value": "{primary-950}",
+          "value": "#002b82",
           "type": "color",
           "description": "Primary blue color: #002b82"
         },
         "975": {
-          "value": "{primary-975}",
+          "value": "#002570",
           "type": "color",
           "description": "Primary blue color: #002570"
         }
@@ -625,1139 +625,1139 @@
     "accent": {
       "yellow": {
         "25": {
-          "value": "{yellow-25}",
+          "value": "#fefdf0",
           "type": "color",
           "description": "Accent yellow color: #fefdf0"
         },
         "50": {
-          "value": "{yellow-50}",
+          "value": "#fefbe8",
           "type": "color",
           "description": "Accent yellow color: #fefbe8"
         },
         "100": {
-          "value": "{yellow-100}",
+          "value": "#fef7c3",
           "type": "color",
           "description": "Accent yellow color: #fef7c3"
         },
         "200": {
-          "value": "{yellow-200}",
+          "value": "#feee95",
           "type": "color",
           "description": "Accent yellow color: #feee95"
         },
         "300": {
-          "value": "{yellow-300}",
+          "value": "#fde272",
           "type": "color",
           "description": "Accent yellow color: #fde272"
         },
         "400": {
-          "value": "{yellow-400}",
+          "value": "#fac515",
           "type": "color",
           "description": "Accent yellow color: #fac515"
         },
         "500": {
-          "value": "{yellow-500}",
+          "value": "#eaaa08",
           "type": "color",
           "description": "Accent yellow color: #eaaa08"
         },
         "600": {
-          "value": "{yellow-600}",
+          "value": "#ca8504",
           "type": "color",
           "description": "Accent yellow color: #ca8504"
         },
         "700": {
-          "value": "{yellow-700}",
+          "value": "#a15c07",
           "type": "color",
           "description": "Accent yellow color: #a15c07"
         },
         "800": {
-          "value": "{yellow-800}",
+          "value": "#854a0e",
           "type": "color",
           "description": "Accent yellow color: #854a0e"
         },
         "900": {
-          "value": "{yellow-900}",
+          "value": "#713b12",
           "type": "color",
           "description": "Accent yellow color: #713b12"
         },
         "950": {
-          "value": "{yellow-950}",
+          "value": "#542c0d",
           "type": "color",
           "description": "Accent yellow color: #542c0d"
         },
         "975": {
-          "value": "{yellow-975}",
+          "value": "#452308",
           "type": "color",
           "description": "Accent yellow color: #452308"
         }
       },
       "green-light": {
         "25": {
-          "value": "{greenLight-25}",
+          "value": "#fafef5",
           "type": "color",
           "description": "Accent green-light color: #fafef5"
         },
         "50": {
-          "value": "{greenLight-50}",
+          "value": "#f3fee7",
           "type": "color",
           "description": "Accent green-light color: #f3fee7"
         },
         "100": {
-          "value": "{greenLight-100}",
+          "value": "#e4fbcc",
           "type": "color",
           "description": "Accent green-light color: #e4fbcc"
         },
         "200": {
-          "value": "{greenLight-200}",
+          "value": "#d0f8ab",
           "type": "color",
           "description": "Accent green-light color: #d0f8ab"
         },
         "300": {
-          "value": "{greenLight-300}",
+          "value": "#a6ef67",
           "type": "color",
           "description": "Accent green-light color: #a6ef67"
         },
         "400": {
-          "value": "{greenLight-400}",
+          "value": "#85e13a",
           "type": "color",
           "description": "Accent green-light color: #85e13a"
         },
         "500": {
-          "value": "{greenLight-500}",
+          "value": "#66c61c",
           "type": "color",
           "description": "Accent green-light color: #66c61c"
         },
         "600": {
-          "value": "{greenLight-600}",
+          "value": "#4ca30d",
           "type": "color",
           "description": "Accent green-light color: #4ca30d"
         },
         "700": {
-          "value": "{greenLight-700}",
+          "value": "#3b7c0f",
           "type": "color",
           "description": "Accent green-light color: #3b7c0f"
         },
         "800": {
-          "value": "{greenLight-800}",
+          "value": "#326212",
           "type": "color",
           "description": "Accent green-light color: #326212"
         },
         "900": {
-          "value": "{greenLight-900}",
+          "value": "#2b5314",
           "type": "color",
           "description": "Accent green-light color: #2b5314"
         },
         "950": {
-          "value": "{greenLight-950}",
+          "value": "#15290a",
           "type": "color",
           "description": "Accent green-light color: #15290a"
         },
         "975": {
-          "value": "{greenLight-975}",
+          "value": "#0b1705",
           "type": "color",
           "description": "Accent green-light color: #0b1705"
         }
       },
       "moss": {
         "25": {
-          "value": "{moss-25}",
+          "value": "#fafdf7",
           "type": "color",
           "description": "Accent moss color: #fafdf7"
         },
         "50": {
-          "value": "{moss-50}",
+          "value": "#f5fbee",
           "type": "color",
           "description": "Accent moss color: #f5fbee"
         },
         "100": {
-          "value": "{moss-100}",
+          "value": "#e6f4d7",
           "type": "color",
           "description": "Accent moss color: #e6f4d7"
         },
         "200": {
-          "value": "{moss-200}",
+          "value": "#ceeab0",
           "type": "color",
           "description": "Accent moss color: #ceeab0"
         },
         "300": {
-          "value": "{moss-300}",
+          "value": "#acdc79",
           "type": "color",
           "description": "Accent moss color: #acdc79"
         },
         "400": {
-          "value": "{moss-400}",
+          "value": "#86cb3c",
           "type": "color",
           "description": "Accent moss color: #86cb3c"
         },
         "500": {
-          "value": "{moss-500}",
+          "value": "#669f2a",
           "type": "color",
           "description": "Accent moss color: #669f2a"
         },
         "600": {
-          "value": "{moss-600}",
+          "value": "#4f7a21",
           "type": "color",
           "description": "Accent moss color: #4f7a21"
         },
         "700": {
-          "value": "{moss-700}",
+          "value": "#3f621a",
           "type": "color",
           "description": "Accent moss color: #3f621a"
         },
         "800": {
-          "value": "{moss-800}",
+          "value": "#335015",
           "type": "color",
           "description": "Accent moss color: #335015"
         },
         "900": {
-          "value": "{moss-900}",
+          "value": "#2b4212",
           "type": "color",
           "description": "Accent moss color: #2b4212"
         },
         "950": {
-          "value": "{moss-950}",
+          "value": "#1a280b",
           "type": "color",
           "description": "Accent moss color: #1a280b"
         },
         "975": {
-          "value": "{moss-975}",
+          "value": "#101a06",
           "type": "color",
           "description": "Accent moss color: #101a06"
         }
       },
       "green": {
         "25": {
-          "value": "{green-25}",
+          "value": "#f6fef9",
           "type": "color",
           "description": "Accent green color: #f6fef9"
         },
         "50": {
-          "value": "{green-50}",
+          "value": "#edfcf2",
           "type": "color",
           "description": "Accent green color: #edfcf2"
         },
         "100": {
-          "value": "{green-100}",
+          "value": "#d3f8df",
           "type": "color",
           "description": "Accent green color: #d3f8df"
         },
         "200": {
-          "value": "{green-200}",
+          "value": "#aaf0c4",
           "type": "color",
           "description": "Accent green color: #aaf0c4"
         },
         "300": {
-          "value": "{green-300}",
+          "value": "#73e2a3",
           "type": "color",
           "description": "Accent green color: #73e2a3"
         },
         "400": {
-          "value": "{green-400}",
+          "value": "#3ccb7f",
           "type": "color",
           "description": "Accent green color: #3ccb7f"
         },
         "500": {
-          "value": "{green-500}",
+          "value": "#16b364",
           "type": "color",
           "description": "Accent green color: #16b364"
         },
         "600": {
-          "value": "{green-600}",
+          "value": "#099250",
           "type": "color",
           "description": "Accent green color: #099250"
         },
         "700": {
-          "value": "{green-700}",
+          "value": "#087443",
           "type": "color",
           "description": "Accent green color: #087443"
         },
         "800": {
-          "value": "{green-800}",
+          "value": "#095c37",
           "type": "color",
           "description": "Accent green color: #095c37"
         },
         "900": {
-          "value": "{green-900}",
+          "value": "#084c2e",
           "type": "color",
           "description": "Accent green color: #084c2e"
         },
         "950": {
-          "value": "{green-950}",
+          "value": "#052e1c",
           "type": "color",
           "description": "Accent green color: #052e1c"
         },
         "975": {
-          "value": "{green-975}",
+          "value": "#031c11",
           "type": "color",
           "description": "Accent green color: #031c11"
         }
       },
       "teal": {
         "25": {
-          "value": "{teal-25}",
+          "value": "#f6fefc",
           "type": "color",
           "description": "Accent teal color: #f6fefc"
         },
         "50": {
-          "value": "{teal-50}",
+          "value": "#f0fdf9",
           "type": "color",
           "description": "Accent teal color: #f0fdf9"
         },
         "100": {
-          "value": "{teal-100}",
+          "value": "#ccfbef",
           "type": "color",
           "description": "Accent teal color: #ccfbef"
         },
         "200": {
-          "value": "{teal-200}",
+          "value": "#99f6e0",
           "type": "color",
           "description": "Accent teal color: #99f6e0"
         },
         "300": {
-          "value": "{teal-300}",
+          "value": "#5fe9d0",
           "type": "color",
           "description": "Accent teal color: #5fe9d0"
         },
         "400": {
-          "value": "{teal-400}",
+          "value": "#2ed3b7",
           "type": "color",
           "description": "Accent teal color: #2ed3b7"
         },
         "500": {
-          "value": "{teal-500}",
+          "value": "#15b79e",
           "type": "color",
           "description": "Accent teal color: #15b79e"
         },
         "600": {
-          "value": "{teal-600}",
+          "value": "#0e9384",
           "type": "color",
           "description": "Accent teal color: #0e9384"
         },
         "700": {
-          "value": "{teal-700}",
+          "value": "#107569",
           "type": "color",
           "description": "Accent teal color: #107569"
         },
         "800": {
-          "value": "{teal-800}",
+          "value": "#125d56",
           "type": "color",
           "description": "Accent teal color: #125d56"
         },
         "900": {
-          "value": "{teal-900}",
+          "value": "#134e48",
           "type": "color",
           "description": "Accent teal color: #134e48"
         },
         "950": {
-          "value": "{teal-950}",
+          "value": "#0a2926",
           "type": "color",
           "description": "Accent teal color: #0a2926"
         },
         "975": {
-          "value": "{teal-975}",
+          "value": "#061a18",
           "type": "color",
           "description": "Accent teal color: #061a18"
         }
       },
       "cyan": {
         "25": {
-          "value": "{cyan-25}",
+          "value": "#f5feff",
           "type": "color",
           "description": "Accent cyan color: #f5feff"
         },
         "50": {
-          "value": "{cyan-50}",
+          "value": "#ecfdff",
           "type": "color",
           "description": "Accent cyan color: #ecfdff"
         },
         "100": {
-          "value": "{cyan-100}",
+          "value": "#cff9fe",
           "type": "color",
           "description": "Accent cyan color: #cff9fe"
         },
         "200": {
-          "value": "{cyan-200}",
+          "value": "#a5f0fc",
           "type": "color",
           "description": "Accent cyan color: #a5f0fc"
         },
         "300": {
-          "value": "{cyan-300}",
+          "value": "#67e3f9",
           "type": "color",
           "description": "Accent cyan color: #67e3f9"
         },
         "400": {
-          "value": "{cyan-400}",
+          "value": "#22ccee",
           "type": "color",
           "description": "Accent cyan color: #22ccee"
         },
         "500": {
-          "value": "{cyan-500}",
+          "value": "#06aed4",
           "type": "color",
           "description": "Accent cyan color: #06aed4"
         },
         "600": {
-          "value": "{cyan-600}",
+          "value": "#088ab2",
           "type": "color",
           "description": "Accent cyan color: #088ab2"
         },
         "700": {
-          "value": "{cyan-700}",
+          "value": "#0e7090",
           "type": "color",
           "description": "Accent cyan color: #0e7090"
         },
         "800": {
-          "value": "{cyan-800}",
+          "value": "#155b75",
           "type": "color",
           "description": "Accent cyan color: #155b75"
         },
         "900": {
-          "value": "{cyan-900}",
+          "value": "#164c63",
           "type": "color",
           "description": "Accent cyan color: #164c63"
         },
         "950": {
-          "value": "{cyan-950}",
+          "value": "#0d2d3a",
           "type": "color",
           "description": "Accent cyan color: #0d2d3a"
         },
         "975": {
-          "value": "{cyan-975}",
+          "value": "#09212b",
           "type": "color",
           "description": "Accent cyan color: #09212b"
         }
       },
       "blue-light": {
         "25": {
-          "value": "{blueLight-25}",
+          "value": "#f5fbff",
           "type": "color",
           "description": "Accent blue-light color: #f5fbff"
         },
         "50": {
-          "value": "{blueLight-50}",
+          "value": "#f0f9ff",
           "type": "color",
           "description": "Accent blue-light color: #f0f9ff"
         },
         "100": {
-          "value": "{blueLight-100}",
+          "value": "#e0f2fe",
           "type": "color",
           "description": "Accent blue-light color: #e0f2fe"
         },
         "200": {
-          "value": "{blueLight-200}",
+          "value": "#b9e6fe",
           "type": "color",
           "description": "Accent blue-light color: #b9e6fe"
         },
         "300": {
-          "value": "{blueLight-300}",
+          "value": "#7cd4fd",
           "type": "color",
           "description": "Accent blue-light color: #7cd4fd"
         },
         "400": {
-          "value": "{blueLight-400}",
+          "value": "#36bffa",
           "type": "color",
           "description": "Accent blue-light color: #36bffa"
         },
         "500": {
-          "value": "{blueLight-500}",
+          "value": "#0ba5ec",
           "type": "color",
           "description": "Accent blue-light color: #0ba5ec"
         },
         "600": {
-          "value": "{blueLight-600}",
+          "value": "#0086c9",
           "type": "color",
           "description": "Accent blue-light color: #0086c9"
         },
         "700": {
-          "value": "{blueLight-700}",
+          "value": "#026aa2",
           "type": "color",
           "description": "Accent blue-light color: #026aa2"
         },
         "800": {
-          "value": "{blueLight-800}",
+          "value": "#065986",
           "type": "color",
           "description": "Accent blue-light color: #065986"
         },
         "900": {
-          "value": "{blueLight-900}",
+          "value": "#0b4a6f",
           "type": "color",
           "description": "Accent blue-light color: #0b4a6f"
         },
         "950": {
-          "value": "{blueLight-950}",
+          "value": "#062c41",
           "type": "color",
           "description": "Accent blue-light color: #062c41"
         },
         "975": {
-          "value": "{blueLight-975}",
+          "value": "#031f2e",
           "type": "color",
           "description": "Accent blue-light color: #031f2e"
         }
       },
       "blue": {
         "25": {
-          "value": "{blue-25}",
+          "value": "#f5faff",
           "type": "color",
           "description": "Accent blue color: #f5faff"
         },
         "50": {
-          "value": "{blue-50}",
+          "value": "#eff8ff",
           "type": "color",
           "description": "Accent blue color: #eff8ff"
         },
         "100": {
-          "value": "{blue-100}",
+          "value": "#d1e9ff",
           "type": "color",
           "description": "Accent blue color: #d1e9ff"
         },
         "200": {
-          "value": "{blue-200}",
+          "value": "#b2ddff",
           "type": "color",
           "description": "Accent blue color: #b2ddff"
         },
         "300": {
-          "value": "{blue-300}",
+          "value": "#84caff",
           "type": "color",
           "description": "Accent blue color: #84caff"
         },
         "400": {
-          "value": "{blue-400}",
+          "value": "#53b1fd",
           "type": "color",
           "description": "Accent blue color: #53b1fd"
         },
         "500": {
-          "value": "{blue-500}",
+          "value": "#2e90fa",
           "type": "color",
           "description": "Accent blue color: #2e90fa"
         },
         "600": {
-          "value": "{blue-600}",
+          "value": "#1570ef",
           "type": "color",
           "description": "Accent blue color: #1570ef"
         },
         "700": {
-          "value": "{blue-700}",
+          "value": "#175cd3",
           "type": "color",
           "description": "Accent blue color: #175cd3"
         },
         "800": {
-          "value": "{blue-800}",
+          "value": "#1849a9",
           "type": "color",
           "description": "Accent blue color: #1849a9"
         },
         "900": {
-          "value": "{blue-900}",
+          "value": "#194185",
           "type": "color",
           "description": "Accent blue color: #194185"
         },
         "950": {
-          "value": "{blue-950}",
+          "value": "#102a56",
           "type": "color",
           "description": "Accent blue color: #102a56"
         },
         "975": {
-          "value": "{blue-975}",
+          "value": "#0c2145",
           "type": "color",
           "description": "Accent blue color: #0c2145"
         }
       },
       "blue-dark": {
         "25": {
-          "value": "{blueDark-25}",
+          "value": "#f5f8ff",
           "type": "color",
           "description": "Accent blue-dark color: #f5f8ff"
         },
         "50": {
-          "value": "{blueDark-50}",
+          "value": "#eff4ff",
           "type": "color",
           "description": "Accent blue-dark color: #eff4ff"
         },
         "100": {
-          "value": "{blueDark-100}",
+          "value": "#d1e0ff",
           "type": "color",
           "description": "Accent blue-dark color: #d1e0ff"
         },
         "200": {
-          "value": "{blueDark-200}",
+          "value": "#b2ccff",
           "type": "color",
           "description": "Accent blue-dark color: #b2ccff"
         },
         "300": {
-          "value": "{blueDark-300}",
+          "value": "#84adff",
           "type": "color",
           "description": "Accent blue-dark color: #84adff"
         },
         "400": {
-          "value": "{blueDark-400}",
+          "value": "#528bff",
           "type": "color",
           "description": "Accent blue-dark color: #528bff"
         },
         "500": {
-          "value": "{blueDark-500}",
+          "value": "#2970ff",
           "type": "color",
           "description": "Accent blue-dark color: #2970ff"
         },
         "600": {
-          "value": "{blueDark-600}",
+          "value": "#155eef",
           "type": "color",
           "description": "Accent blue-dark color: #155eef"
         },
         "700": {
-          "value": "{blueDark-700}",
+          "value": "#004eeb",
           "type": "color",
           "description": "Accent blue-dark color: #004eeb"
         },
         "800": {
-          "value": "{blueDark-800}",
+          "value": "#0040c1",
           "type": "color",
           "description": "Accent blue-dark color: #0040c1"
         },
         "900": {
-          "value": "{blueDark-900}",
+          "value": "#00359e",
           "type": "color",
           "description": "Accent blue-dark color: #00359e"
         },
         "950": {
-          "value": "{blueDark-950}",
+          "value": "#002266",
           "type": "color",
           "description": "Accent blue-dark color: #001a4d"
         },
         "975": {
-          "value": "{blueDark-975}",
+          "value": "#001a4d",
           "type": "color",
           "description": "Accent blue-dark color: #001a4d"
         }
       },
       "indigo": {
         "25": {
-          "value": "{indigo-25}",
+          "value": "#f5f8ff",
           "type": "color",
           "description": "Accent indigo color: #f5f8ff"
         },
         "50": {
-          "value": "{indigo-50}",
+          "value": "#eef4ff",
           "type": "color",
           "description": "Accent indigo color: #eef4ff"
         },
         "100": {
-          "value": "{indigo-100}",
+          "value": "#e0eaff",
           "type": "color",
           "description": "Accent indigo color: #e0eaff"
         },
         "200": {
-          "value": "{indigo-200}",
+          "value": "#c7d7fe",
           "type": "color",
           "description": "Accent indigo color: #c7d7fe"
         },
         "300": {
-          "value": "{indigo-300}",
+          "value": "#a4bcfd",
           "type": "color",
           "description": "Accent indigo color: #a4bcfd"
         },
         "400": {
-          "value": "{indigo-400}",
+          "value": "#8098f9",
           "type": "color",
           "description": "Accent indigo color: #8098f9"
         },
         "500": {
-          "value": "{indigo-500}",
+          "value": "#6172f3",
           "type": "color",
           "description": "Accent indigo color: #6172f3"
         },
         "600": {
-          "value": "{indigo-600}",
+          "value": "#444ce7",
           "type": "color",
           "description": "Accent indigo color: #444ce7"
         },
         "700": {
-          "value": "{indigo-700}",
+          "value": "#3538cd",
           "type": "color",
           "description": "Accent indigo color: #3538cd"
         },
         "800": {
-          "value": "{indigo-800}",
+          "value": "#2d31a6",
           "type": "color",
           "description": "Accent indigo color: #2d31a6"
         },
         "900": {
-          "value": "{indigo-900}",
+          "value": "#2d3282",
           "type": "color",
           "description": "Accent indigo color: #2d3282"
         },
         "950": {
-          "value": "{indigo-950}",
+          "value": "#1f235b",
           "type": "color",
           "description": "Accent indigo color: #1f235b"
         },
         "975": {
-          "value": "{indigo-975}",
+          "value": "#171a47",
           "type": "color",
           "description": "Accent indigo color: #171a47"
         }
       },
       "violet": {
         "25": {
-          "value": "{violet-25}",
+          "value": "#fbfaff",
           "type": "color",
           "description": "Accent violet color: #fbfaff"
         },
         "50": {
-          "value": "{violet-50}",
+          "value": "#f5f3ff",
           "type": "color",
           "description": "Accent violet color: #f5f3ff"
         },
         "100": {
-          "value": "{violet-100}",
+          "value": "#ece9fe",
           "type": "color",
           "description": "Accent violet color: #ece9fe"
         },
         "200": {
-          "value": "{violet-200}",
+          "value": "#ddd6fe",
           "type": "color",
           "description": "Accent violet color: #ddd6fe"
         },
         "300": {
-          "value": "{violet-300}",
+          "value": "#c3b5fd",
           "type": "color",
           "description": "Accent violet color: #c3b5fd"
         },
         "400": {
-          "value": "{violet-400}",
+          "value": "#a48afb",
           "type": "color",
           "description": "Accent violet color: #a48afb"
         },
         "500": {
-          "value": "{violet-500}",
+          "value": "#875bf7",
           "type": "color",
           "description": "Accent violet color: #875bf7"
         },
         "600": {
-          "value": "{violet-600}",
+          "value": "#7839ee",
           "type": "color",
           "description": "Accent violet color: #7839ee"
         },
         "700": {
-          "value": "{violet-700}",
+          "value": "#6927da",
           "type": "color",
           "description": "Accent violet color: #6927da"
         },
         "800": {
-          "value": "{violet-800}",
+          "value": "#5720b7",
           "type": "color",
           "description": "Accent violet color: #5720b7"
         },
         "900": {
-          "value": "{violet-900}",
+          "value": "#491c96",
           "type": "color",
           "description": "Accent violet color: #491c96"
         },
         "950": {
-          "value": "{violet-950}",
+          "value": "#2e125e",
           "type": "color",
           "description": "Accent violet color: #2e125e"
         },
         "975": {
-          "value": "{violet-975}",
+          "value": "#220c47 ",
           "type": "color",
           "description": "Accent violet color: #220c47"
         }
       },
       "purple": {
         "25": {
-          "value": "{purple-25}",
+          "value": "#fafaff",
           "type": "color",
           "description": "Accent purple color: #fafaff"
         },
         "50": {
-          "value": "{purple-50}",
+          "value": "#f4f3ff",
           "type": "color",
           "description": "Accent purple color: #f4f3ff"
         },
         "100": {
-          "value": "{purple-100}",
+          "value": "#ebe9fe",
           "type": "color",
           "description": "Accent purple color: #ebe9fe"
         },
         "200": {
-          "value": "{purple-200}",
+          "value": "#d9d6fe",
           "type": "color",
           "description": "Accent purple color: #d9d6fe"
         },
         "300": {
-          "value": "{purple-300}",
+          "value": "#bdb4fe",
           "type": "color",
           "description": "Accent purple color: #bdb4fe"
         },
         "400": {
-          "value": "{purple-400}",
+          "value": "#9b8afb",
           "type": "color",
           "description": "Accent purple color: #9b8afb"
         },
         "500": {
-          "value": "{purple-500}",
+          "value": "#7a5af8",
           "type": "color",
           "description": "Accent purple color: #7a5af8"
         },
         "600": {
-          "value": "{purple-600}",
+          "value": "#6938ef",
           "type": "color",
           "description": "Accent purple color: #6938ef"
         },
         "700": {
-          "value": "{purple-700}",
+          "value": "#5925dc",
           "type": "color",
           "description": "Accent purple color: #5925dc"
         },
         "800": {
-          "value": "{purple-800}",
+          "value": "#4a1fb8",
           "type": "color",
           "description": "Accent purple color: #4a1fb8"
         },
         "900": {
-          "value": "{purple-900}",
+          "value": "#3e1c96",
           "type": "color",
           "description": "Accent purple color: #3e1c96"
         },
         "950": {
-          "value": "{purple-950}",
+          "value": "#27115f",
           "type": "color",
           "description": "Accent purple color: #27115f"
         },
         "975": {
-          "value": "{purple-975}",
+          "value": "#1d0c4a",
           "type": "color",
           "description": "Accent purple color: #1d0c4a"
         }
       },
       "fuchsia": {
         "25": {
-          "value": "{fuchsia-25}",
+          "value": "#fefaff",
           "type": "color",
           "description": "Accent fuchsia color: #fefaff"
         },
         "50": {
-          "value": "{fuchsia-50}",
+          "value": "#fdf4ff",
           "type": "color",
           "description": "Accent fuchsia color: #fdf4ff"
         },
         "100": {
-          "value": "{fuchsia-100}",
+          "value": "#fbe8ff",
           "type": "color",
           "description": "Accent fuchsia color: #fbe8ff"
         },
         "200": {
-          "value": "{fuchsia-200}",
+          "value": "#f6d0fe",
           "type": "color",
           "description": "Accent fuchsia color: #f6d0fe"
         },
         "300": {
-          "value": "{fuchsia-300}",
+          "value": "#eeaafd",
           "type": "color",
           "description": "Accent fuchsia color: #eeaafd"
         },
         "400": {
-          "value": "{fuchsia-400}",
+          "value": "#e478fa",
           "type": "color",
           "description": "Accent fuchsia color: #e478fa"
         },
         "500": {
-          "value": "{fuchsia-500}",
+          "value": "#d444f1",
           "type": "color",
           "description": "Accent fuchsia color: #d444f1"
         },
         "600": {
-          "value": "{fuchsia-600}",
+          "value": "#ba24d5",
           "type": "color",
           "description": "Accent fuchsia color: #ba24d5"
         },
         "700": {
-          "value": "{fuchsia-700}",
+          "value": "#9f1ab1",
           "type": "color",
           "description": "Accent fuchsia color: #9f1ab1"
         },
         "800": {
-          "value": "{fuchsia-800}",
+          "value": "#821890",
           "type": "color",
           "description": "Accent fuchsia color: #821890"
         },
         "900": {
-          "value": "{fuchsia-900}",
+          "value": "#6f1877",
           "type": "color",
           "description": "Accent fuchsia color: #6f1877"
         },
         "950": {
-          "value": "{fuchsia-950}",
+          "value": "#47104c",
           "type": "color",
           "description": "Accent fuchsia color: #47104c"
         },
         "975": {
-          "value": "{fuchsia-975}",
+          "value": "#3b0c40",
           "type": "color",
           "description": "Accent fuchsia color: #3b0c40"
         }
       },
       "pink": {
         "25": {
-          "value": "{pink-25}",
+          "value": "#fef6fb",
           "type": "color",
           "description": "Accent pink color: #fef6fb"
         },
         "50": {
-          "value": "{pink-50}",
+          "value": "#fdf2fa",
           "type": "color",
           "description": "Accent pink color: #fdf2fa"
         },
         "100": {
-          "value": "{pink-100}",
+          "value": "#fce7f6",
           "type": "color",
           "description": "Accent pink color: #fce7f6"
         },
         "200": {
-          "value": "{pink-200}",
+          "value": "#fcceee",
           "type": "color",
           "description": "Accent pink color: #fcceee"
         },
         "300": {
-          "value": "{pink-300}",
+          "value": "#faa7e0",
           "type": "color",
           "description": "Accent pink color: #faa7e0"
         },
         "400": {
-          "value": "{pink-400}",
+          "value": "#f670c7",
           "type": "color",
           "description": "Accent pink color: #f670c7"
         },
         "500": {
-          "value": "{pink-500}",
+          "value": "#ee46bc",
           "type": "color",
           "description": "Accent pink color: #ee46bc"
         },
         "600": {
-          "value": "{pink-600}",
+          "value": "#dd2590",
           "type": "color",
           "description": "Accent pink color: #dd2590"
         },
         "700": {
-          "value": "{pink-700}",
+          "value": "#c11574",
           "type": "color",
           "description": "Accent pink color: #c11574"
         },
         "800": {
-          "value": "{pink-800}",
+          "value": "#9e165f",
           "type": "color",
           "description": "Accent pink color: #9e165f"
         },
         "900": {
-          "value": "{pink-900}",
+          "value": "#851651",
           "type": "color",
           "description": "Accent pink color: #851651"
         },
         "950": {
-          "value": "{pink-950}",
+          "value": "#4e0d30",
           "type": "color",
           "description": "Accent pink color: #4e0d30"
         },
         "975": {
-          "value": "{pink-975}",
+          "value": "#3d0925",
           "type": "color",
           "description": "Accent pink color: #3d0925"
         }
       },
       "rose": {
         "25": {
-          "value": "{rose-25}",
+          "value": "#fff5f6",
           "type": "color",
           "description": "Accent rose color: #fff5f6"
         },
         "50": {
-          "value": "{rose-50}",
+          "value": "#fff1f3",
           "type": "color",
           "description": "Accent rose color: #fff1f3"
         },
         "100": {
-          "value": "{rose-100}",
+          "value": "#ffe4e8",
           "type": "color",
           "description": "Accent rose color: #ffe4e8"
         },
         "200": {
-          "value": "{rose-200}",
+          "value": "#fecdd6",
           "type": "color",
           "description": "Accent rose color: #fecdd6"
         },
         "300": {
-          "value": "{rose-300}",
+          "value": "#fea3b4",
           "type": "color",
           "description": "Accent rose color: #fea3b4"
         },
         "400": {
-          "value": "{rose-400}",
+          "value": "#fd6f8e",
           "type": "color",
           "description": "Accent rose color: #fd6f8e"
         },
         "500": {
-          "value": "{rose-500}",
+          "value": "#f63d68",
           "type": "color",
           "description": "Accent rose color: #f63d68"
         },
         "600": {
-          "value": "{rose-600}",
+          "value": "#e31b54",
           "type": "color",
           "description": "Accent rose color: #e31b54"
         },
         "700": {
-          "value": "{rose-700}",
+          "value": "#c01048",
           "type": "color",
           "description": "Accent rose color: #c01048"
         },
         "800": {
-          "value": "{rose-800}",
+          "value": "#a11043",
           "type": "color",
           "description": "Accent rose color: #a11043"
         },
         "900": {
-          "value": "{rose-900}",
+          "value": "#89123e",
           "type": "color",
           "description": "Accent rose color: #89123e"
         },
         "950": {
-          "value": "{rose-950}",
+          "value": "#510b24",
           "type": "color",
           "description": "Accent rose color: #510b24"
         },
         "975": {
-          "value": "{rose-975}",
+          "value": "#3b0619",
           "type": "color",
           "description": "Accent rose color: #3b0619"
         }
       },
       "orange-dark": {
         "25": {
-          "value": "{orangeDark-25}",
+          "value": "#fff9f5",
           "type": "color",
           "description": "Accent orange-dark color: #fff9f5"
         },
         "50": {
-          "value": "{orangeDark-50}",
+          "value": "#fff4ed",
           "type": "color",
           "description": "Accent orange-dark color: #fff4ed"
         },
         "100": {
-          "value": "{orangeDark-100}",
+          "value": "#ffe6d5",
           "type": "color",
           "description": "Accent orange-dark color: #ffe6d5"
         },
         "200": {
-          "value": "{orangeDark-200}",
+          "value": "#ffd6ae",
           "type": "color",
           "description": "Accent orange-dark color: #ffd6ae"
         },
         "300": {
-          "value": "{orangeDark-300}",
+          "value": "#ff9c66",
           "type": "color",
           "description": "Accent orange-dark color: #ff9c66"
         },
         "400": {
-          "value": "{orangeDark-400}",
+          "value": "#ff692e",
           "type": "color",
           "description": "Accent orange-dark color: #ff692e"
         },
         "500": {
-          "value": "{orangeDark-500}",
+          "value": "#ff4405",
           "type": "color",
           "description": "Accent orange-dark color: #ff4405"
         },
         "600": {
-          "value": "{orangeDark-600}",
+          "value": "#e62e05",
           "type": "color",
           "description": "Accent orange-dark color: #e62e05"
         },
         "700": {
-          "value": "{orangeDark-700}",
+          "value": "#bc1b06",
           "type": "color",
           "description": "Accent orange-dark color: #bc1b06"
         },
         "800": {
-          "value": "{orangeDark-800}",
+          "value": "#97180c",
           "type": "color",
           "description": "Accent orange-dark color: #97180c"
         },
         "900": {
-          "value": "{orangeDark-900}",
+          "value": "#771a0d",
           "type": "color",
           "description": "Accent orange-dark color: #771a0d"
         },
         "950": {
-          "value": "{orangeDark-950}",
+          "value": "#57130a",
           "type": "color",
           "description": "Accent orange-dark color: #57130a"
         },
         "975": {
-          "value": "{orangeDark-975}",
+          "value": "#470e06",
           "type": "color",
           "description": "Accent orange-dark color: #470e06"
         }
       },
       "orange": {
         "25": {
-          "value": "{orange-25}",
+          "value": "#fefaf5",
           "type": "color",
           "description": "Accent orange color: #fefaf5"
         },
         "50": {
-          "value": "{orange-50}",
+          "value": "#fef6ee",
           "type": "color",
           "description": "Accent orange color: #fef6ee"
         },
         "100": {
-          "value": "{orange-100}",
+          "value": "#fdead7",
           "type": "color",
           "description": "Accent orange color: #fdead7"
         },
         "200": {
-          "value": "{orange-200}",
+          "value": "#f9dbaf",
           "type": "color",
           "description": "Accent orange color: #f9dbaf"
         },
         "300": {
-          "value": "{orange-300}",
+          "value": "#f7b27a",
           "type": "color",
           "description": "Accent orange color: #f7b27a"
         },
         "400": {
-          "value": "{orange-400}",
+          "value": "#f38744",
           "type": "color",
           "description": "Accent orange color: #f38744"
         },
         "500": {
-          "value": "{orange-500}",
+          "value": "#ef6820",
           "type": "color",
           "description": "Accent orange color: #ef6820"
         },
         "600": {
-          "value": "{orange-600}",
+          "value": "#e04f16",
           "type": "color",
           "description": "Accent orange color: #e04f16"
         },
         "700": {
-          "value": "{orange-700}",
+          "value": "#b93815",
           "type": "color",
           "description": "Accent orange color: #b93815"
         },
         "800": {
-          "value": "{orange-800}",
+          "value": "#932f19",
           "type": "color",
           "description": "Accent orange color: #932f19"
         },
         "900": {
-          "value": "{orange-900}",
+          "value": "#772917",
           "type": "color",
           "description": "Accent orange color: #772917"
         },
         "950": {
-          "value": "{orange-950}",
+          "value": "#511c10",
           "type": "color",
           "description": "Accent orange color: #511c10"
         },
         "975": {
-          "value": "{orange-975}",
+          "value": "#45170c",
           "type": "color",
           "description": "Accent orange color: #45170c"
         }
@@ -1766,201 +1766,201 @@
     "secondary": {
       "error": {
         "25": {
-          "value": "{error-25}",
+          "value": "#fffbfa",
           "type": "color",
           "description": "Secondary error color: #fffbfa"
         },
         "50": {
-          "value": "{error-50}",
+          "value": "#fef3f2",
           "type": "color",
           "description": "Secondary error color: #fef3f2"
         },
         "100": {
-          "value": "{error-100}",
+          "value": "#fee4e2",
           "type": "color",
           "description": "Secondary error color: #fee4e2"
         },
         "200": {
-          "value": "{error-200}",
+          "value": "#fecdca",
           "type": "color",
           "description": "Secondary error color: #fecdca"
         },
         "300": {
-          "value": "{error-300}",
+          "value": "#fda29b",
           "type": "color",
           "description": "Secondary error color: #fda29b"
         },
         "400": {
-          "value": "{error-400}",
+          "value": "#f97066",
           "type": "color",
           "description": "Secondary error color: #f97066"
         },
         "500": {
-          "value": "{error-500}",
+          "value": "#f04438",
           "type": "color",
           "description": "Secondary error color: #f04438"
         },
         "600": {
-          "value": "{error-600}",
+          "value": "#d92d20",
           "type": "color",
           "description": "Secondary error color: #d92d20"
         },
         "700": {
-          "value": "{error-700}",
+          "value": "#b42318",
           "type": "color",
           "description": "Secondary error color: #b42318"
         },
         "800": {
-          "value": "{error-800}",
+          "value": "#912018",
           "type": "color",
           "description": "Secondary error color: #912018"
         },
         "900": {
-          "value": "{error-900}",
+          "value": "#7a271a",
           "type": "color",
           "description": "Secondary error color: #7a271a"
         },
         "950": {
-          "value": "{error-950}",
+          "value": "#55160c",
           "type": "color",
           "description": "Secondary error color: #55160c"
         },
         "975": {
-          "value": "{error-975}",
+          "value": "#471109",
           "type": "color",
           "description": "Secondary error color: #471109"
         }
       },
       "warning": {
         "25": {
-          "value": "{warning-25}",
+          "value": "#fffcf5",
           "type": "color",
           "description": "Secondary warning color: #fffcf5"
         },
         "50": {
-          "value": "{warning-50}",
+          "value": "#fffaeb",
           "type": "color",
           "description": "Secondary warning color: #fffaeb"
         },
         "100": {
-          "value": "{warning-100}",
+          "value": "#fef0c7",
           "type": "color",
           "description": "Secondary warning color: #fef0c7"
         },
         "200": {
-          "value": "{warning-200}",
+          "value": "#fedf89",
           "type": "color",
           "description": "Secondary warning color: #fedf89"
         },
         "300": {
-          "value": "{warning-300}",
+          "value": "#fec84b",
           "type": "color",
           "description": "Secondary warning color: #fec84b"
         },
         "400": {
-          "value": "{warning-400}",
+          "value": "#fdb022",
           "type": "color",
           "description": "Secondary warning color: #fdb022"
         },
         "500": {
-          "value": "{warning-500}",
+          "value": "#f79009",
           "type": "color",
           "description": "Secondary warning color: #f79009"
         },
         "600": {
-          "value": "{warning-600}",
+          "value": "#dc6803",
           "type": "color",
           "description": "Secondary warning color: #dc6803"
         },
         "700": {
-          "value": "{warning-700}",
+          "value": "#b54708",
           "type": "color",
           "description": "Secondary warning color: #b54708"
         },
         "800": {
-          "value": "{warning-800}",
+          "value": "#93370d",
           "type": "color",
           "description": "Secondary warning color: #93370d"
         },
         "900": {
-          "value": "{warning-900}",
+          "value": "#7a2e0e",
           "type": "color",
           "description": "Secondary warning color: #7a2e0e"
         },
         "950": {
-          "value": "{warning-950}",
+          "value": "#4e1d09",
           "type": "color",
           "description": "Secondary warning color: #4e1d09"
         },
         "975": {
-          "value": "{warning-975}",
+          "value": "#421807",
           "type": "color",
           "description": "Secondary warning color: #421807"
         }
       },
       "success": {
         "25": {
-          "value": "{success-25}",
+          "value": "#f6fef9",
           "type": "color",
           "description": "Secondary success color: #f6fef9"
         },
         "50": {
-          "value": "{success-50}",
+          "value": "#ecfdf3",
           "type": "color",
           "description": "Secondary success color: #ecfdf3"
         },
         "100": {
-          "value": "{success-100}",
+          "value": "#d1fadf",
           "type": "color",
           "description": "Secondary success color: #d1fadf"
         },
         "200": {
-          "value": "{success-200}",
+          "value": "#a6f4c5",
           "type": "color",
           "description": "Secondary success color: #a6f4c5"
         },
         "300": {
-          "value": "{success-300}",
+          "value": "#6ce9a6",
           "type": "color",
           "description": "Secondary success color: #6ce9a6"
         },
         "400": {
-          "value": "{success-400}",
+          "value": "#32d583",
           "type": "color",
           "description": "Secondary success color: #32d583"
         },
         "500": {
-          "value": "{success-500}",
+          "value": "#12b76a",
           "type": "color",
           "description": "Secondary success color: #12b76a"
         },
         "600": {
-          "value": "{success-600}",
+          "value": "#039855",
           "type": "color",
           "description": "Secondary success color: #039855"
         },
         "700": {
-          "value": "{success-700}",
+          "value": "#027a48",
           "type": "color",
           "description": "Secondary success color: #027a48"
         },
         "800": {
-          "value": "{success-800}",
+          "value": "#05603a",
           "type": "color",
           "description": "Secondary success color: #05603a"
         },
         "900": {
-          "value": "{success-900}",
+          "value": "#054f31",
           "type": "color",
           "description": "Secondary success color: #054f31"
         },
         "950": {
-          "value": "{success-950}",
+          "value": "#044028",
           "type": "color",
           "description": "Secondary success color: #044028"
         },
         "975": {
-          "value": "{success-975}",
+          "value": "#02331f",
           "type": "color",
           "description": "Secondary success color: #02331f"
         }
@@ -1968,11 +1968,6 @@
     }
   },
   "spacing": {
-    "auto": {
-      "value": "auto",
-      "type": "string",
-      "description": "Spacing: auto - CSS equivalent (flexbox): justify-content: space-between"
-    },
     "0": {
       "value": 0,
       "type": "number",
@@ -2082,6 +2077,11 @@
       "value": 160,
       "type": "number",
       "description": "Spacing: 160px"
+    },
+    "auto": {
+      "value": "auto",
+      "type": "string",
+      "description": "Spacing: auto - CSS equivalent (flexbox): justify-content: space-between"
     },
     "0[25]": {
       "value": 1,
@@ -2206,20 +2206,10 @@
         "type": "number",
         "description": "Border radius: 16px"
       },
-      "4[5]": {
-        "value": 18,
-        "type": "number",
-        "description": "Border radius: 18px"
-      },
       "5": {
         "value": 20,
         "type": "number",
         "description": "Border radius: 20px"
-      },
-      "5[5]": {
-        "value": 22,
-        "type": "number",
-        "description": "Border radius: 22px"
       },
       "6": {
         "value": 24,
@@ -2266,6 +2256,21 @@
         "type": "number",
         "description": "Border radius: 96px"
       },
+      "250": {
+        "value": 1000,
+        "type": "number",
+        "description": "Border radius: 1000px"
+      },
+      "4[5]": {
+        "value": 18,
+        "type": "number",
+        "description": "Border radius: 18px"
+      },
+      "5[5]": {
+        "value": 22,
+        "type": "number",
+        "description": "Border radius: 22px"
+      },
       "0[5]": {
         "value": 2,
         "type": "number",
@@ -2280,11 +2285,6 @@
         "value": 10,
         "type": "number",
         "description": "Border radius: 10px"
-      },
-      "250": {
-        "value": 1000,
-        "type": "number",
-        "description": "Border radius: 1000px"
       }
     },
     "width": {
@@ -2524,65 +2524,60 @@
       }
     },
     "paragraph-spacing": {
-      "xs": {
+      "0": {
+        "value": 0,
+        "type": "number",
+        "description": "Paragraph spacing: 0px"
+      },
+      "3": {
         "value": 12,
         "type": "number",
         "description": "Paragraph spacing: 12px"
       },
-      "sm": {
+      "4": {
         "value": 16,
         "type": "number",
         "description": "Paragraph spacing: 16px"
       },
-      "md": {
+      "5": {
         "value": 20,
         "type": "number",
         "description": "Paragraph spacing: 20px"
       },
-      "lg": {
+      "6": {
         "value": 24,
         "type": "number",
         "description": "Paragraph spacing: 24px"
       },
-      "xl": {
+      "7[5]": {
+        "value": 30,
+        "type": "number",
+        "description": "Paragraph spacing: 30px"
+      },
+      "9": {
         "value": 36,
         "type": "number",
         "description": "Paragraph spacing: 36px"
       },
-      "2xl": {
+      "12": {
         "value": 48,
         "type": "number",
         "description": "Paragraph spacing: 48px"
       },
-      "3xl": {
+      "14": {
         "value": 56,
         "type": "number",
         "description": "Paragraph spacing: 56px"
       },
-      "4xl": {
+      "15": {
+        "value": 60,
+        "type": "number",
+        "description": "Paragraph spacing: 60px"
+      },
+      "18": {
         "value": 72,
         "type": "number",
         "description": "Paragraph spacing: 72px"
-      },
-      "5xl": {
-        "value": 96,
-        "type": "number",
-        "description": "Paragraph spacing: 96px"
-      },
-      "6xl": {
-        "value": 112,
-        "type": "number",
-        "description": "Paragraph spacing: 112px"
-      },
-      "7xl": {
-        "value": 128,
-        "type": "number",
-        "description": "Paragraph spacing: 128px"
-      },
-      "8xl": {
-        "value": 144,
-        "type": "number",
-        "description": "Paragraph spacing: 144px"
       }
     },
     "line-height": {

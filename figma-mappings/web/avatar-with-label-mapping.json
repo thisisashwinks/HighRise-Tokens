@@ -1,0 +1,491 @@
+{
+  "component": "avatar-with-label",
+  "version": "1.0.0",
+  "description": "Figma mapping for avatar-with-label component tokens",
+  "tokens": {
+    "avatar-with-label.container.layout.direction": {
+      "value": "horizontal",
+      "type": "string",
+      "reference": null,
+      "description": "Avatar with label uses horizontal layout (avatar left, text right)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-with-label.container.layout.align-items": {
+      "value": "center",
+      "type": "string",
+      "reference": null,
+      "description": "Vertical alignment of avatar and text container",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-with-label.container.gap.sm": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Gap between avatar and text for sm size - 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.container.gap.md": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{gap.2xs}",
+      "description": "Gap between avatar and text for md size - 6px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.container.gap.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "Gap between avatar and text for lg size - 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.container.gap.xl": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.sm}",
+      "description": "Gap between avatar and text for xl size - 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.avatar.size.sm": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.icon.2xl}",
+      "description": "Avatar size for sm variant - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.avatar.size.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.icon.4xl}",
+      "description": "Avatar size for md variant - 40px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.avatar.size.lg": {
+      "value": "48px",
+      "type": "dimension",
+      "reference": "{size.icon.12}",
+      "description": "Avatar size for lg variant - 48px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.avatar.size.xl": {
+      "value": "56px",
+      "type": "dimension",
+      "reference": "{size.icon.14}",
+      "description": "Avatar size for xl variant - 56px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.avatar.border-radius.sm": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Avatar border radius for sm - full circle",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.avatar.border-radius.md": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Avatar border radius for md - full circle",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.avatar.border-radius.lg": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Avatar border radius for lg - full circle",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.avatar.border-radius.xl": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Avatar border radius for xl - full circle",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.text-container.layout.direction": {
+      "value": "vertical",
+      "type": "string",
+      "reference": null,
+      "description": "Text container uses vertical layout (name on top, description below)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-with-label.text-container.layout.align-items": {
+      "value": "start",
+      "type": "string",
+      "reference": null,
+      "description": "Horizontal alignment of text items",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-with-label.text-container.layout.justify-content": {
+      "value": "center",
+      "type": "string",
+      "reference": null,
+      "description": "Vertical justification of text content",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-with-label.text-container.gap.sm": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{gap.none}",
+      "description": "Gap between name and description for sm size - 0px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.text-container.gap.md": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{gap.none}",
+      "description": "Gap between name and description for md size - 0px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.text-container.gap.lg": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{gap.none}",
+      "description": "Gap between name and description for lg size - 0px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.text-container.gap.xl": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{gap.none}",
+      "description": "Gap between name and description for xl size - 0px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.name.color.default": {
+      "value": "{color.text.neutral.body.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.1}",
+      "description": "Name text color - gray-700",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-with-label.name.typography.sm": {
+      "value": {
+        "size": "14px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.lg}",
+      "description": "Name typography for sm size - 14px semibold",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar-with-label.name.typography.md": {
+      "value": {
+        "size": "14px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.lg}",
+      "description": "Name typography for md size - 14px semibold",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar-with-label.name.typography.lg": {
+      "value": {
+        "size": "16px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.2xl}",
+      "description": "Name typography for lg size - 16px semibold",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar-with-label.name.typography.xl": {
+      "value": {
+        "size": "18px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.3xl}",
+      "description": "Name typography for xl size - 18px semibold",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar-with-label.name.line-height.sm": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{font.line-height.lg}",
+      "description": "Name line height for sm size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.name.line-height.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{font.line-height.lg}",
+      "description": "Name line height for md size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.name.line-height.lg": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{font.line-height.2xl}",
+      "description": "Name line height for lg size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.name.line-height.xl": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{font.line-height.3xl}",
+      "description": "Name line height for xl size - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.description.color.default": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Description text color - gray-600",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-with-label.description.typography.sm": {
+      "value": {
+        "size": "12px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.sm}",
+      "description": "Description typography for sm size - 12px regular",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar-with-label.description.typography.md": {
+      "value": {
+        "size": "14px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.lg}",
+      "description": "Description typography for md size - 14px regular",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar-with-label.description.typography.lg": {
+      "value": {
+        "size": "16px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Description typography for lg size - 16px regular",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar-with-label.description.typography.xl": {
+      "value": {
+        "size": "16px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Description typography for xl size - 16px regular",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar-with-label.description.line-height.sm": {
+      "value": "17px",
+      "type": "dimension",
+      "reference": "{font.line-height.sm}",
+      "description": "Description line height for sm size - 17px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.description.line-height.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{font.line-height.lg}",
+      "description": "Description line height for md size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.description.line-height.lg": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{font.line-height.2xl}",
+      "description": "Description line height for lg size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.description.line-height.xl": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{font.line-height.2xl}",
+      "description": "Description line height for xl size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-with-label.accessibility.role.static": {
+      "value": "presentation",
+      "type": "string",
+      "reference": null,
+      "description": "ARIA role for non-interactive avatar with label",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-with-label.accessibility.role.interactive": {
+      "value": "button",
+      "type": "string",
+      "reference": null,
+      "description": "ARIA role when avatar with label is clickable",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-with-label.accessibility.label.format": {
+      "value": "{name} - {description}",
+      "type": "string",
+      "reference": "{name} - {description}",
+      "description": "Format for ARIA label combining name and description",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

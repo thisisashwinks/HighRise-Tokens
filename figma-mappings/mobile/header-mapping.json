@@ -1,0 +1,357 @@
+{
+  "component": "header",
+  "version": "1.0.0",
+  "description": "Figma mapping for header component tokens",
+  "tokens": {
+    "header.container.color.background.default": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Mobile header default background - neutral/white - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "header.container.padding.default.x": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{padding.x.md}",
+      "description": "Mobile header horizontal padding - 16px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "header.container.padding.default.y": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.sm}",
+      "description": "Mobile header vertical padding - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "header.container.padding.with-tabs.x": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{padding.x.md}",
+      "description": "Mobile header horizontal padding - 16px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "header.container.padding.with-tabs.top": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.top.2}",
+      "description": "Mobile header vertical padding - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "header.container.padding.with-tabs.bottom": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.bottom.0}",
+      "description": "Mobile header vertical padding - 0px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "header.container.shadow": {
+      "value": "boxShadow.outer.sm",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Mobile header shadow - outer sm",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "header.container.gap.content.default": {
+      "value": "{gap.auto}",
+      "type": "dimension",
+      "reference": "{gap.auto}",
+      "description": "Mobile header gap between main sections (leading, center, trailing) - auto",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "header.container.gap.content.large-title": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.2}",
+      "description": "Mobile header gap between main sections (leading, center, trailing) - 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "header.leading.icon.size": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.icon.2xl}",
+      "description": "Mobile header back icon size - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "header.leading.icon.color": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Mobile header back/leading icon default color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "header.leading.avatar.size.default": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.md}",
+      "description": "Mobile header avatar/leading icon default size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "header.leading.avatar.size.large-title": {
+      "value": "56px",
+      "type": "dimension",
+      "reference": "{size.2xl}",
+      "description": "Mobile header avatar/leading icon size for large title variant - 56px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "header.leading.avatar.border.radius": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Mobile header avatar/leading icon border radius - fully rounded/circular",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "header.title.typography.ios.default": {
+      "value": {
+        "size": "16px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.2xl}",
+      "description": "Mobile header iOS default title typography - 16px semibold, 24px line height",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "header.title.typography.ios.large-title": {
+      "value": {
+        "size": "36px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.heading.semibold.h3}",
+      "description": "Mobile header iOS large title typography - 36px semibold, 44px line height, -0.72px letter spacing",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "header.title.typography.android.default": {
+      "value": {
+        "size": "20px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.heading.semibold.h6}",
+      "description": "Mobile header Android default title typography - 20px semibold, 30px line height",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "header.title.typography.android.large-title": {
+      "value": {
+        "size": "36px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.heading.semibold.h3}",
+      "description": "Mobile header Android large title typography - 36px semibold, 44px line height",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "header.title.color.default": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Mobile header title default color - neutral/gray-900 - #101828",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "header.title.icon.size": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.icon.sm}",
+      "description": "Mobile header title icon size - 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "header.title.icon.color.default": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Mobile header title icon default color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "header.title.icon.gap": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Mobile header gap between title text and icon - 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "header.subtitle.typography": {
+      "value": {
+        "size": "12px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.sm}",
+      "description": "Mobile header subtitle typography - 12px regular, 17px line height",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "header.subtitle.color.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Mobile header subtitle default color - neutral/gray-500 - #667085",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "header.subtitle.gap": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Mobile header gap between subtitle elements (tags and text) - 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "header.height.default": {
+      "value": "70px",
+      "type": "dimension",
+      "reference": "{size.height.17[5]}",
+      "description": "Mobile header iOS default height - 70px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "header.height.with-tabs": {
+      "value": "112px",
+      "type": "dimension",
+      "reference": "{size.height.28}",
+      "description": "Mobile header iOS height with tabs - 112px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "header.height.large-title": {
+      "value": "118px",
+      "type": "dimension",
+      "reference": "{size.height.29[5]}",
+      "description": "Mobile header iOS large title height - 118px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "header.height.large-title-with-tabs": {
+      "value": "174px",
+      "type": "dimension",
+      "reference": "{size.height.43[5]}",
+      "description": "Mobile header iOS large title height with tabs - 174px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

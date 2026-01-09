@@ -1,0 +1,222 @@
+{
+  "component": "navigation",
+  "version": "1.0.0",
+  "description": "Figma mapping for navigation component tokens",
+  "tokens": {
+    "navigation.container.color.background.android": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Mobile navigation bar container background - neutral/white - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "navigation.container.color.background.ios": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Mobile navigation bar container background - neutral/gray-100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "navigation.container.border.top.color": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.1}",
+      "description": "Mobile navigation bar top border color - neutral/gray-100 - #f2f4f7",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "navigation.container.border.top.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Mobile navigation bar top border width - 1px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "navigation.container.shadow": {
+      "value": "boxShadow.outer.sm",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Mobile navigation bar shadow - outer sm",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "navigation.menu-items.gap.android": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{gap.none}",
+      "description": "Mobile navigation bar gap between menu items - 0px (items touch edges)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "navigation.menu-items.gap.ios": {
+      "value": "{gap.auto}",
+      "type": "dimension",
+      "reference": "{gap.auto}",
+      "description": "Mobile navigation bar gap between menu items - auto",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "navigation.gesture-bar.container.background": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Mobile navigation bar gesture bar container background - neutral/white - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "navigation.gesture-bar.container.height": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Mobile navigation bar gesture bar container height - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "navigation.gesture-bar.handle.background": {
+      "value": "#1d2939",
+      "type": "color",
+      "reference": "{color.background.neutral.intense.1}",
+      "description": "Mobile navigation bar gesture bar handle background - neutral/gray-800 - #1d2939",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "navigation.gesture-bar.handle.height": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{size.height.1}",
+      "description": "Mobile navigation bar gesture bar handle height - 4px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "navigation.gesture-bar.handle.width": {
+      "value": "112px",
+      "type": "dimension",
+      "reference": "{size.width.28}",
+      "description": "Mobile navigation bar gesture bar handle width - 112px (closest token to 108px design value)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "navigation.gesture-bar.handle.border.radius": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{border.radius.3xl}",
+      "description": "Mobile navigation bar gesture bar handle border radius - 12px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "navigation.height.ios.with-labels": {
+      "value": "80px",
+      "type": "dimension",
+      "reference": "{size.height.20}",
+      "description": "Mobile navigation bar iOS height with labels - 80px (closest token to 79px design value, includes gesture bar)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "navigation.height.ios.without-labels": {
+      "value": "56px",
+      "type": "dimension",
+      "reference": "{size.height.14}",
+      "description": "Mobile navigation bar iOS height without labels - 56px (includes gesture bar)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "navigation.height.android.with-labels": {
+      "value": "96px",
+      "type": "dimension",
+      "reference": "{size.height.24}",
+      "description": "Mobile navigation bar Android height with labels - 96px (closest token to 95px design value)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "navigation.height.android.without-labels": {
+      "value": "72px",
+      "type": "dimension",
+      "reference": "{size.height.18}",
+      "description": "Mobile navigation bar Android height without labels - 72px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

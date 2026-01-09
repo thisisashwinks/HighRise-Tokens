@@ -1,0 +1,510 @@
+{
+  "component": "avatar-group",
+  "version": "1.0.0",
+  "description": "Figma mapping for avatar-group component tokens",
+  "tokens": {
+    "avatar-group.container.layout.direction": {
+      "value": "horizontal",
+      "type": "string",
+      "reference": null,
+      "description": "Avatar group uses horizontal layout with left-to-right arrangement",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.container.layout.align-items": {
+      "value": "flex-start",
+      "type": "string",
+      "reference": null,
+      "description": "Vertical alignment of avatars and CTA button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.container.spacing.stacked.overlap.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.-1}",
+      "description": "Negative margin-right for 3xs avatars: -4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.container.spacing.stacked.overlap.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.-1}",
+      "description": "Negative margin-right for 2xs avatars: -4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.container.spacing.stacked.overlap.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.-1}",
+      "description": "Negative margin-right for xs avatars: -4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.container.spacing.stacked.overlap.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.-2}",
+      "description": "Negative margin-right for sm avatars: -8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.container.spacing.stacked.overlap.md": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{gap.-3}",
+      "description": "Negative margin-right for md avatars: -12px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.container.spacing.stacked.overall-gap.3xs": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{gap.4xs}",
+      "description": "Padding-right on avatars container for 3xs: 2px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-group.container.spacing.stacked.overall-gap.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Padding-right on avatars container for 2xs: 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-group.container.spacing.stacked.overall-gap.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Padding-right on avatars container for xs: 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-group.container.spacing.stacked.overall-gap.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "Padding-right on avatars container for sm: 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-group.container.spacing.stacked.overall-gap.md": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{gap.2xl}",
+      "description": "Padding-right on avatars container for md: 12px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-group.container.spacing.non-stacked.gap.3xs": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{gap.4xs}",
+      "description": "Gap between 3xs avatars: 2px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-group.container.spacing.non-stacked.gap.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Gap between 2xs avatars: 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-group.container.spacing.non-stacked.gap.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Gap between xs avatars: 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-group.container.spacing.non-stacked.gap.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "Gap between sm avatars: 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-group.container.spacing.non-stacked.gap.md": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{gap.2xl}",
+      "description": "Gap between md avatars: 12px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "avatar-group.avatar.size.3xs": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{size.icon.4xs}",
+      "description": "Avatar size for 3xs group: 10px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.avatar.size.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Avatar size for 2xs group: 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.avatar.size.xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "Avatar size for xs group: 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.avatar.size.sm": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.icon.2xl}",
+      "description": "Avatar size for sm group: 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.avatar.size.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.icon.4xl}",
+      "description": "Avatar size for md group: 40px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.avatar.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Border width for all avatars: 1px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.avatar.border.color": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.neutral.white.base}",
+      "description": "Border color for all avatars: white (#FFFFFF)",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-group.avatar.border.radius": {
+      "value": "200px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Border radius for all avatars: full circle (200px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-group.avatar.z-index.base": {
+      "value": 10,
+      "type": "number",
+      "reference": null,
+      "description": "Base z-index for first avatar",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.avatar.z-index.decrement": {
+      "value": 1,
+      "type": "number",
+      "reference": null,
+      "description": "Amount to decrease z-index for each subsequent avatar (10, 9, 8, 7...)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.cta.size.3xs": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{size.icon.4xs}",
+      "description": "CTA button size for 3xs group: 10px (matches avatar size)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.size.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "CTA button size for 2xs group: 16px (matches avatar size)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.size.xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "CTA button size for xs group: 24px (matches avatar size)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.size.sm": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.icon.2xl}",
+      "description": "CTA button size for sm group: 32px (matches avatar size)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.size.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.icon.4xl}",
+      "description": "CTA button size for md group: 40px (matches avatar size)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.background": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.neutral.white.base}",
+      "description": "Background color of CTA button: white (#FFFFFF)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.border.width.3xs": {
+      "value": "0.5px",
+      "type": "dimension",
+      "reference": "{border.width.xs}",
+      "description": "Border width for CTA button: 0.5px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.border.width.2xs": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Border width for CTA button: 1px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.border.width.xs": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Border width for CTA button: 1px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.border.width.sm": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Border width for CTA button: 1px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.border.width.md": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Border width for CTA button: 1px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.border.color": {
+      "value": "#D0D5DD",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Border color for CTA button: #D0D5DD (neutral-200)",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.border.radius": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Border radius for CTA button: full circle",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-group.cta.icon": {
+      "value": "plus",
+      "type": "string",
+      "reference": null,
+      "description": "Icon displayed in CTA button: plus/add icon",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.accessibility.role.container": {
+      "value": "group",
+      "type": "string",
+      "reference": null,
+      "description": "ARIA role for avatar group container",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.accessibility.role.avatar": {
+      "value": "img",
+      "type": "string",
+      "reference": null,
+      "description": "ARIA role for individual avatars",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.accessibility.role.cta": {
+      "value": "button",
+      "type": "string",
+      "reference": null,
+      "description": "ARIA role for Add More CTA button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.accessibility.label.container": {
+      "value": "Avatar group showing {count} members",
+      "type": "string",
+      "reference": null,
+      "description": "Format for ARIA label describing the group",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-group.accessibility.label.cta": {
+      "value": "Add more members",
+      "type": "string",
+      "reference": null,
+      "description": "ARIA label for Add More CTA button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

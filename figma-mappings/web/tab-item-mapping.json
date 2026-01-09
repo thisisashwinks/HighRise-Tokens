@@ -1,0 +1,1598 @@
+{
+  "component": "tab-item",
+  "version": "1.0.0",
+  "description": "Figma mapping for tab-item component tokens",
+  "tokens": {
+    "tab-item.border.radius.line": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "tab-item.border.radius.segment": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "tab-item.border.width.line.active.sm": {
+      "value": "1.5px",
+      "type": "dimension",
+      "reference": "{border.width.sm}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.border.width.line.active.md": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{border.width.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.border.width.line.active.lg": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{border.width.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.border.width.line.active.xl": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{border.width.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.border.width.line.active.2xl": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{border.width.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.padding.x.default": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.padding.x.icon-only": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.x.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.padding.y.default": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.y.1}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.padding.y.icon-only": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.height.default.sm": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.height.default.md": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.height.default.lg": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.height.default.xl": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.height.default.2xl": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.height.icon-only.sm": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.height.icon-only.md": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.height.icon-only.lg": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.height.icon-only.xl": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.height.icon-only.2xl": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.width.icon-only.sm": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.width.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.width.icon-only.md": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.width.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.width.icon-only.lg": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.width.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.width.icon-only.xl": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.width.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.width.icon-only.2xl": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.width.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.color.line.primary.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.primary.background.hover": {
+      "value": "{color.background.primary.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.primary.background.active": {
+      "value": "{color.background.neutral.transparent}",
+      "type": "color",
+      "reference": "{color.background.neutral.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.primary.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.primary.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.primary.border.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.primary.border.active": {
+      "value": "{color.border.primary.intense.0}",
+      "type": "color",
+      "reference": "{color.border.primary.intense.0}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.primary.border.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.primary.text.default": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.line.primary.text.hover": {
+      "value": "{color.text.neutral.title.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.line.primary.text.active": {
+      "value": "{color.text.primary.body.1}",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.line.primary.text.disabled": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.line.primary.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.line.primary.icon.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.line.primary.icon.active": {
+      "value": "{color.icon.primary.default}",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.line.primary.icon.disabled": {
+      "value": "{color.icon.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.line.neutral.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.neutral.background.hover": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.neutral.background.active": {
+      "value": "{color.background.neutral.transparent}",
+      "type": "color",
+      "reference": "{color.background.neutral.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.neutral.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.neutral.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.neutral.border.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.neutral.border.active": {
+      "value": "{color.border.neutral.intense.1}",
+      "type": "color",
+      "reference": "{color.border.neutral.intense.1}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.neutral.border.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.line.neutral.text.default": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.line.neutral.text.hover": {
+      "value": "{color.text.neutral.title.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.line.neutral.text.active": {
+      "value": "{color.text.neutral.title.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.line.neutral.text.disabled": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.line.neutral.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.line.neutral.icon.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.line.neutral.icon.active": {
+      "value": "{color.icon.neutral.intense.1}",
+      "type": "color",
+      "reference": "{color.icon.neutral.intense.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.line.neutral.icon.disabled": {
+      "value": "{color.icon.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.segment.primary.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.primary.background.hover": {
+      "value": "{color.background.primary.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.primary.background.active": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.primary.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.primary.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.primary.border.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.primary.border.active": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.primary.border.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.primary.text.default": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.segment.primary.text.hover": {
+      "value": "{color.text.neutral.title.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.segment.primary.text.active": {
+      "value": "{color.text.primary.body.1}",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.segment.primary.text.disabled": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.segment.primary.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.segment.primary.icon.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.segment.primary.icon.active": {
+      "value": "{color.icon.primary.default}",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.segment.primary.icon.disabled": {
+      "value": "{color.icon.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.segment.neutral.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.neutral.background.hover": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.neutral.background.active": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.neutral.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.neutral.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.neutral.border.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.neutral.border.active": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.neutral.border.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.segment.neutral.text.default": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.segment.neutral.text.hover": {
+      "value": "{color.text.neutral.title.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.segment.neutral.text.active": {
+      "value": "{color.text.neutral.title.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.segment.neutral.text.disabled": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.segment.neutral.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.segment.neutral.icon.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.segment.neutral.icon.active": {
+      "value": "{color.icon.neutral.intense.1}",
+      "type": "color",
+      "reference": "{color.icon.neutral.intense.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.segment.neutral.icon.disabled": {
+      "value": "{color.icon.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.text.typography.default.sm": {
+      "value": "{font.body.medium.md}",
+      "type": "string",
+      "reference": "{font.body.medium.md}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.text.typography.default.md": {
+      "value": "{font.body.medium.base}",
+      "type": "string",
+      "reference": "{font.body.medium.base}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.text.typography.default.lg": {
+      "value": "{font.body.medium.base}",
+      "type": "string",
+      "reference": "{font.body.medium.base}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.text.typography.default.xl": {
+      "value": "{font.body.medium.xl}",
+      "type": "string",
+      "reference": "{font.body.medium.xl}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.text.typography.default.2xl": {
+      "value": "{font.body.medium.2xl}",
+      "type": "string",
+      "reference": "{font.body.medium.2xl}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.text.typography.active.sm": {
+      "value": "{font.body.semibold.md}",
+      "type": "string",
+      "reference": "{font.body.semibold.md}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.text.typography.active.md": {
+      "value": "{font.body.semibold.base}",
+      "type": "string",
+      "reference": "{font.body.semibold.base}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.text.typography.active.lg": {
+      "value": "{font.body.semibold.base}",
+      "type": "string",
+      "reference": "{font.body.semibold.base}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.text.typography.active.xl": {
+      "value": "{font.body.semibold.xl}",
+      "type": "string",
+      "reference": "{font.body.semibold.xl}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.text.typography.active.2xl": {
+      "value": "{font.body.semibold.2xl}",
+      "type": "string",
+      "reference": "{font.body.semibold.2xl}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.icon.size.sm": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.icon.size.lg": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.icon.size.xl": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.icon.size.2xl": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.badge.size.default": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.height.4[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "badge",
+        "also": "height"
+      }
+    },
+    "tab-item.badge.size.icon-only": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.height.3}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.default.sm": {
+      "value": "13px",
+      "type": "dimension",
+      "reference": "{position.x.3[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.default.md": {
+      "value": "21px",
+      "type": "dimension",
+      "reference": "{position.x.5[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.default.lg": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.x.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.default.xl": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.x.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.default.2xl": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.x.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.bottom.sm": {
+      "value": "13px",
+      "type": "dimension",
+      "reference": "{position.x.3[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.bottom.md": {
+      "value": "21px",
+      "type": "dimension",
+      "reference": "{position.x.5[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.bottom.lg": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.x.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.bottom.xl": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.x.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.bottom.2xl": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.x.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.left.sm": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.x.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.left.md": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.x.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.left.lg": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.x.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.left.xl": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.x.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.left.2xl": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.x.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.right.sm": {
+      "value": "13px",
+      "type": "dimension",
+      "reference": "{position.x.3[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.right.md": {
+      "value": "21px",
+      "type": "dimension",
+      "reference": "{position.x.5[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.right.lg": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.x.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.right.xl": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.x.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.x.right.2xl": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.x.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.default.sm": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.default.md": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.default.lg": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.default.xl": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.default.2xl": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.bottom.sm": {
+      "value": "13px",
+      "type": "dimension",
+      "reference": "{position.y.3[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.bottom.md": {
+      "value": "21px",
+      "type": "dimension",
+      "reference": "{position.y.5[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.bottom.lg": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.y.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.bottom.xl": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.y.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.bottom.2xl": {
+      "value": "29px",
+      "type": "dimension",
+      "reference": "{position.y.7[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.left.sm": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.left.md": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.left.lg": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.left.xl": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.left.2xl": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.right.sm": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.right.md": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.right.lg": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.right.xl": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.badge.position.icon-only.y.right.2xl": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{position.y.-0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

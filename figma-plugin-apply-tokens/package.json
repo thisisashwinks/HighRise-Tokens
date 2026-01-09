@@ -1,0 +1,23 @@
+{
+  "name": "figma-plugin-apply-tokens",
+  "version": "1.0.0",
+  "description": "Apply component design tokens to Figma components automatically",
+  "main": "code.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "figma",
+    "plugin",
+    "design-tokens",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.88.0",
+    "typescript": "^5.0.0"
+  }
+}
+

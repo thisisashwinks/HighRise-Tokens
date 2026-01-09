@@ -178,7 +178,7 @@
     "shadow": {
       "$comment": "Subtle elevation shadow for select fields",
       "default": {
-        "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+        "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
         "type": "boxShadow",
         "description": "Select default shadow"
       }
@@ -459,7 +459,7 @@
             "description": "Default select focus ring color"
           },
           "shadow": {
-            "value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+            "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.primary.blue.100}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
             "type": "boxShadow",
             "description": "Default select focus shadow"
           }

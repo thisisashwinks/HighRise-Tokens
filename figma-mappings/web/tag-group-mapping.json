@@ -1,0 +1,613 @@
+{
+  "component": "tag-group",
+  "version": "1.0.0",
+  "description": "Figma mapping for tag-group component tokens",
+  "tokens": {
+    "tag-group.gap.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "tag-group.gap.sm": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "tag-group.gap.md": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "tag-group.gap.lg": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "tag-group.padding.x.xs": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.x.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.padding.x.sm": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.x.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.padding.x.md": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.x.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.padding.x.lg": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.x.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.padding.y.xs": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.padding.y.sm": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.padding.y.md": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.padding.y.lg": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.size.xs": {
+      "value": "18",
+      "type": "number",
+      "reference": "{size.4[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.size.sm": {
+      "value": "22",
+      "type": "number",
+      "reference": "{size.5[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.size.md": {
+      "value": "24",
+      "type": "number",
+      "reference": "{size.6}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.size.lg": {
+      "value": "28",
+      "type": "number",
+      "reference": "{size.7}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.border.radius.xs": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.border.radius.sm": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.border.radius.md": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.border.radius.lg": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.border.width.default": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.padding.x.xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.x.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.padding.x.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.padding.x.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.padding.x.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.padding.y.xs": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.padding.y.sm": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.padding.y.md": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.padding.y.lg": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.add-button.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.background.hover": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.background.active": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.background.focused": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.border-color.default": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.border-color.hover": {
+      "value": "{color.border.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.neutral.moderate.0}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.border-color.active": {
+      "value": "{color.border.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.border-color.focused": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tag-group.add-button.icon.size.xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tag-group.add-button.icon.size.sm": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tag-group.add-button.icon.size.md": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tag-group.add-button.icon.size.lg": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.icon.sm}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tag-group.add-button.icon.color.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tag-group.add-button.icon.color.hover": {
+      "value": "{color.icon.neutral.intense.0}",
+      "type": "color",
+      "reference": "{color.icon.neutral.intense.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tag-group.add-button.icon.color.active": {
+      "value": "{color.icon.neutral.intense.1}",
+      "type": "color",
+      "reference": "{color.icon.neutral.intense.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tag-group.add-button.icon.color.focused": {
+      "value": "{color.icon.neutral.intense.0}",
+      "type": "color",
+      "reference": "{color.icon.neutral.intense.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tag-group.add-button.focus.ring": {
+      "value": "{color.border.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.layout.direction": {
+      "value": "row",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.layout.align-items": {
+      "value": "center",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.layout.justify-content": {
+      "value": "flex-start",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.layout.flex-wrap": {
+      "value": "wrap",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-group.max-width.xs": {
+      "value": "100%",
+      "type": "dimension",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tag-group.max-width.sm": {
+      "value": "100%",
+      "type": "dimension",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tag-group.max-width.md": {
+      "value": "100%",
+      "type": "dimension",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tag-group.max-width.lg": {
+      "value": "100%",
+      "type": "dimension",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tag-group.overflow.behavior": {
+      "value": "visible",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

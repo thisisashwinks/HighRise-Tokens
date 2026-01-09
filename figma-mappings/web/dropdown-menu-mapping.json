@@ -1,0 +1,352 @@
+{
+  "component": "dropdown-menu",
+  "version": "1.0.0",
+  "description": "Figma mapping for dropdown-menu component tokens",
+  "tokens": {
+    "dropdown-menu.container.width.fixed": {
+      "value": "{size.width.182}",
+      "type": "dimension",
+      "reference": "{size.width.182}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.container.width.min": {
+      "value": "640px",
+      "type": "dimension",
+      "reference": "{size.width.160}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.container.width.max": {
+      "value": "1440px",
+      "type": "dimension",
+      "reference": "{size.width.360}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.container.background": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.container.border.color": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.container.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.container.border.radius": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.container.shadow": {
+      "value": "[{position.x.0, position.y.2, blur.1, spread.-0[5], color-shadow.default.0[06]}, {position.x.0, position.y.4, blur.2, spread.-0[5], color-shadow.default.0[10]}]",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.container.padding.vertical": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.1}",
+      "description": "",
+      "figma_property": {
+        "property": "paddingTop",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.container.padding.horizontal": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.0}",
+      "description": "",
+      "figma_property": {
+        "property": "paddingLeft",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.layout.direction": {
+      "value": "column",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.layout.gap": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{gap.2xs}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.layout.alignment.items": {
+      "value": "stretch",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.layout.alignment.content": {
+      "value": "flex-start",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.scrollable.max-height.sm": {
+      "value": "768px",
+      "type": "dimension",
+      "reference": "{size.height.192}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.scrollable.max-height.md": {
+      "value": "1024px",
+      "type": "dimension",
+      "reference": "{size.height.256}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.scrollable.max-height.lg": {
+      "value": "1440px",
+      "type": "dimension",
+      "reference": "{size.height.360}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-menu.scrollable.scrollbar.width": {
+      "value": "4",
+      "type": "number",
+      "reference": "{size.1}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.scrollable.scrollbar.color.thumb": {
+      "value": "{color.background.neutral.moderate.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.moderate.1}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.scrollable.scrollbar.color.track": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.positioning.z-index": {
+      "value": "700px",
+      "type": "dimension",
+      "reference": "{z-index.xl}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.positioning.offset.top": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{gap.0[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.animation.duration.open": {
+      "value": "200ms",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.animation.duration.close": {
+      "value": "150ms",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.animation.easing": {
+      "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.empty-state.padding": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{padding.6} {padding.4}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.empty-state.text.font": {
+      "value": "{font.body.regular.sm}",
+      "type": "string",
+      "reference": "{font.body.regular.sm}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-menu.empty-state.text.color": {
+      "value": "{color.text.neutral.subtitle.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "dropdown-menu.empty-state.icon.size": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "dropdown-menu.empty-state.icon.color": {
+      "value": "{color.icon.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

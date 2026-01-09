@@ -1,0 +1,154 @@
+{
+  "component": "no-badge",
+  "version": "1.0.0",
+  "description": "Figma mapping for no-badge component tokens",
+  "tokens": {
+    "no-badge.color.background.default": {
+      "value": "#d1e0ff",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.1}",
+      "description": "Default background color for no. badge - primary/100 - #d1e0ff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "no-badge.color.background.disabled": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Disabled background color for no. badge - neutral/100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "no-badge.color.text.default": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Default text color for no. badge - primary/700 - #004eeb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "no-badge.color.text.disabled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Disabled text color for no. badge - neutral/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "no-badge.typography": {
+      "value": {
+        "size": "8px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.4xs}",
+      "description": "8px semibold font for no. badge",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "no-badge.padding.x": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.x.4xs}",
+      "description": "Mobile no. badge horizontal padding - 6px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "no-badge.padding.y": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "Mobile no. badge vertical padding - 0px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "no-badge.padding.gap": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{gap.4xs}",
+      "description": "Mobile no. badge internal gap - 2px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "no-badge.border.radius": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.2xs}",
+      "description": "Mobile no. badge border radius - 8px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "no-badge.sizing": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.5xs}",
+      "description": "Mobile no. badge size - 16px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

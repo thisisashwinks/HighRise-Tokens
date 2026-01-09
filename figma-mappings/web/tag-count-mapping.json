@@ -1,0 +1,269 @@
+{
+  "component": "tag-count",
+  "version": "1.0.0",
+  "description": "Figma mapping for tag-count component tokens",
+  "tokens": {
+    "tag-count.container.background.color.default": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tag-count.container.border.radius.xs": {
+      "value": "2",
+      "type": "number",
+      "reference": "{border.radius.0[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-count.container.border.radius.sm": {
+      "value": "2",
+      "type": "number",
+      "reference": "{border.radius.0[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-count.container.border.radius.md": {
+      "value": "2",
+      "type": "number",
+      "reference": "{border.radius.0[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-count.container.border.radius.lg": {
+      "value": "4",
+      "type": "number",
+      "reference": "{border.radius.1}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-count.container.padding.horizontal.xs": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{padding.0[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "paddingLeft",
+        "target": "container"
+      }
+    },
+    "tag-count.container.padding.horizontal.sm": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.1}",
+      "description": "",
+      "figma_property": {
+        "property": "paddingLeft",
+        "target": "container"
+      }
+    },
+    "tag-count.container.padding.horizontal.md": {
+      "value": "5px",
+      "type": "dimension",
+      "reference": "{padding.1[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "paddingLeft",
+        "target": "container"
+      }
+    },
+    "tag-count.container.padding.horizontal.lg": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.1[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "paddingLeft",
+        "target": "container"
+      }
+    },
+    "tag-count.container.padding.vertical.xs": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.0}",
+      "description": "",
+      "figma_property": {
+        "property": "paddingTop",
+        "target": "container"
+      }
+    },
+    "tag-count.container.padding.vertical.sm": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.0}",
+      "description": "",
+      "figma_property": {
+        "property": "paddingTop",
+        "target": "container"
+      }
+    },
+    "tag-count.container.padding.vertical.md": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.0}",
+      "description": "",
+      "figma_property": {
+        "property": "paddingTop",
+        "target": "container"
+      }
+    },
+    "tag-count.container.padding.vertical.lg": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.0}",
+      "description": "",
+      "figma_property": {
+        "property": "paddingTop",
+        "target": "container"
+      }
+    },
+    "tag-count.container.size.height.xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.height.3}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tag-count.container.size.height.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.height.4}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tag-count.container.size.height.md": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.height.4[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tag-count.container.size.height.lg": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.height.4[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tag-count.content.text.color.default": {
+      "value": "{color.text.neutral.body.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tag-count.content.text.typography.xs": {
+      "value": "{font.body.medium.2xs}",
+      "type": "string",
+      "reference": "{font.body.medium.2xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-count.content.text.typography.sm": {
+      "value": "{font.body.medium.xs}",
+      "type": "string",
+      "reference": "{font.body.medium.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-count.content.text.typography.md": {
+      "value": "{font.body.medium.sm}",
+      "type": "string",
+      "reference": "{font.body.medium.sm}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tag-count.content.text.typography.lg": {
+      "value": "{font.body.medium.md}",
+      "type": "string",
+      "reference": "{font.body.medium.md}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

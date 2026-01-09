@@ -1,0 +1,386 @@
+{
+  "component": "menu-item-navbar",
+  "version": "1.0.0",
+  "description": "Figma mapping for menu-item-navbar component tokens",
+  "tokens": {
+    "menu-item-navbar.color.default.background": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Mobile menu item navbar default background - neutral/white - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.color.default.icon.background": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Mobile menu item navbar default icon container background - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.color.default.icon.color": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Mobile menu item navbar default icon color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "menu-item-navbar.color.default.text": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Mobile menu item navbar default text color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "menu-item-navbar.color.default.border": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile menu item navbar default border color - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.color.selected.background": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Mobile menu item navbar selected background - neutral/white - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.color.selected.icon.background.with-bg": {
+      "value": "#d1e0ff",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.1}",
+      "description": "Mobile menu item navbar selected icon container background with background - primary/blue-100 - #d1e0ff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.color.selected.icon.background.without-bg": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Mobile menu item navbar selected icon container background without background - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.color.selected.icon.color": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Mobile menu item navbar selected icon color - primary/blue-700 - #004eeb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "menu-item-navbar.color.selected.text": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Mobile menu item navbar selected text color - primary/blue-700 - #004eeb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "menu-item-navbar.color.selected.border.top": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.border.primary.intense.0}",
+      "description": "Mobile menu item navbar selected top border color - primary/blue-700 - #004eeb",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.color.selected.border.bottom": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.border.primary.intense.0}",
+      "description": "Mobile menu item navbar selected bottom border color - primary/blue-700 - #004eeb",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.badge.size.height": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.height.4[5]}",
+      "description": "Mobile menu item navbar badge height - 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "badge",
+        "also": "height"
+      }
+    },
+    "menu-item-navbar.badge.position.x": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{position.x.3[5]}",
+      "description": "Mobile menu item navbar badge horizontal position - 14px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "menu-item-navbar.badge.position.y": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{position.y.0}",
+      "description": "Mobile menu item navbar badge vertical position - 0px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "menu-item-navbar.border.radius.ios": {
+      "value": "100px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Mobile menu item navbar iOS container border radius - fully rounded/pill-shaped - 100px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.border.radius.android": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{border.radius.none}",
+      "description": "Mobile menu item navbar Android container border radius - none - 0px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.border.radius.icon": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{border.radius.1[5]}",
+      "description": "Mobile menu item navbar icon container border radius (for selected with background) - 6px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.border.width.selected": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{border.width.md}",
+      "description": "Mobile menu item navbar selected state border width (top/bottom) - 2px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.padding.default.x": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Mobile menu item navbar container horizontal padding - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "menu-item-navbar.padding.default.y": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.3xs}",
+      "description": "Mobile menu item navbar container vertical padding - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "menu-item-navbar.padding.icon-with-bg.x": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.x.5xs}",
+      "description": "Mobile menu item navbar icon with background horizontal padding - 4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "menu-item-navbar.padding.icon-with-bg.y": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.y.1}",
+      "description": "Mobile menu item navbar icon with background vertical padding - 4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "menu-item-navbar.gap": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "Mobile menu item navbar gap between icon and label - 6px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.size.icon.container": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.xs}",
+      "description": "Mobile menu item navbar icon container size - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "menu-item-navbar.size.icon.icon": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Mobile menu item navbar icon size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "menu-item-navbar.size.height": {
+      "value": "71px",
+      "type": "dimension",
+      "reference": "{size.height.17[75]}",
+      "description": "Mobile menu item navbar container height - 71px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "menu-item-navbar.typography.label": {
+      "value": {
+        "size": "12px",
+        "weight": "medium"
+      },
+      "type": "typography",
+      "reference": "{font.body.medium.sm}",
+      "description": "Mobile menu item navbar label typography - 12px medium weight, 17px line height",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    }
+  },
+  "instructions": {
+    "selected": {
+      "container": {
+        "background": "{color.background.neutral.base}",
+        "border": null,
+        "padding": {
+          "horizontal": "menu-item-navbar.padding.horizontal",
+          "vertical": "menu-item-navbar.padding.vertical"
+        },
+        "borderRadius": "menu-item-navbar.border.radius"
+      },
+      "text": {
+        "color": "{color.text.primary.body.1}"
+      },
+      "icon": {
+        "color": null
+      },
+      "subtext": {
+        "color": null
+      }
+    },
+    "default": {
+      "container": {
+        "background": "{color.background.neutral.base}",
+        "border": "{color.border.transparent}",
+        "padding": {
+          "horizontal": "menu-item-navbar.padding.horizontal",
+          "vertical": "menu-item-navbar.padding.vertical"
+        },
+        "borderRadius": "menu-item-navbar.border.radius"
+      },
+      "text": {
+        "color": "{color.text.neutral.body.2}"
+      },
+      "icon": {
+        "color": null
+      },
+      "subtext": {
+        "color": null
+      }
+    }
+  },
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

@@ -1,0 +1,971 @@
+{
+  "component": "select",
+  "version": "1.0.0",
+  "description": "Figma mapping for select component tokens",
+  "tokens": {
+    "select.border.radius.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.3xs}",
+      "description": "Select border radius for 3xs size",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "select.border.radius.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.2xs}",
+      "description": "Select border radius for 2xs size",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "select.border.radius.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "Select border radius for xs size",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "select.border.radius.sm": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{border.radius.1[5]}",
+      "description": "Select border radius for sm size",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "select.border.radius.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.md}",
+      "description": "Select border radius for md size",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "select.border.radius.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.lg}",
+      "description": "Select border radius for lg size",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "select.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Select border width",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.padding.x.3xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Select horizontal padding for 3xs size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.padding.x.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Select horizontal padding for 2xs size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.padding.x.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Select horizontal padding for xs size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.padding.x.sm": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{padding.x.xs}",
+      "description": "Select horizontal padding for sm size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.padding.x.md": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{padding.x.sm}",
+      "description": "Select horizontal padding for md size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.padding.x.lg": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{padding.x.sm}",
+      "description": "Select horizontal padding for lg size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.padding.y.3xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.1[5]}",
+      "description": "Select vertical padding for 3xs size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.padding.y.2xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.1[5]}",
+      "description": "Select vertical padding for 2xs size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.padding.y.xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.1[5]}",
+      "description": "Select vertical padding for xs size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.padding.y.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.sm}",
+      "description": "Select vertical padding for sm size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.padding.y.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.sm}",
+      "description": "Select vertical padding for md size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.padding.y.lg": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{padding.y.lg}",
+      "description": "Select vertical padding for lg size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.height.3xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Select height for 3xs size",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.height.2xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Select height for 2xs size",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.height.xs": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "Select height for xs size",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.height.sm": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.height.sm}",
+      "description": "Select height for sm size",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.height.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "Select height for md size",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.height.lg": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{size.height.lg}",
+      "description": "Select height for lg size",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.gap.default": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "Gap between select elements",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "select.gap.search-variant": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Gap between select elements for search variant",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "select.shadow.default": {
+      "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Select default shadow",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.text.typography.3xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Select text typography for 3xs size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.text.typography.2xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Select text typography for 2xs size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.text.typography.xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Select text typography for xs size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.text.typography.sm": {
+      "value": "{font.body.regular.sm}",
+      "type": "string",
+      "reference": "{font.body.regular.sm}",
+      "description": "Select text typography for sm size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.text.typography.md": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Select text typography for md size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.text.typography.lg": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Select text typography for lg size",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.icon.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Select icon size for 3xs",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.icon.size.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Select icon size for 2xs",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.icon.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Select icon size for xs",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.icon.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Select icon size for sm",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Select icon size for md",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.icon.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Select icon size for lg",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.filter-icon.size.3xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Select icon size for 3xs",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.filter-icon.size.2xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Select icon size for 2xs",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.filter-icon.size.xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Select icon size for xs",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.filter-icon.size.sm": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Select icon size for sm",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.filter-icon.size.md": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Select icon size for md",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.filter-icon.size.lg": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Select icon size for lg",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "select.color.default.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Default select background in default/placeholder state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.background.hover": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Default select background in hover state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.background.filled": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Default select background in filled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.background.focused": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Default select background in focused/open state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.background.hover-filled": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Default select background in hover-filled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.background.disabled": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Default select background in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.border.default": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Default select border in default state",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.border.hover": {
+      "value": "{color.border.primary.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "Default select border in hover state",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.border.filled": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Default select border in filled state",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.border.focused": {
+      "value": "{color.border.primary.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "Default select border in focused state",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.border.hover-filled": {
+      "value": "{color.border.primary.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "Default select border in hover-filled state",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.border.disabled": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Default select border in disabled state",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "select.color.default.text.default": {
+      "value": "{color.text.neutral.subtitle.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Default select text color in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "select.color.default.text.hover": {
+      "value": "{color.text.neutral.subtitle.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Default select text color in hover state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "select.color.default.text.filled": {
+      "value": "{color.text.neutral.title.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Default select text color in filled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "select.color.default.text.focused": {
+      "value": "{color.text.neutral.title.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Default select text color in focused state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "select.color.default.text.hover-filled": {
+      "value": "{color.text.neutral.title.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Default select text color in hover-filled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "select.color.default.text.disabled": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Default select text color in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "select.color.default.icon.default": {
+      "value": "{color.icon.neutral.moderate.1}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.1}",
+      "description": "Default select icon color in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.icon.hover": {
+      "value": "{color.icon.neutral.moderate.1}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.1}",
+      "description": "Default select icon color in hover state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.icon.filled": {
+      "value": "{color.icon.neutral.moderate.1}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.1}",
+      "description": "Default select icon color in filled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.icon.focused": {
+      "value": "{color.icon.neutral.moderate.1}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.1}",
+      "description": "Default select icon color in focused state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.icon.hover-filled": {
+      "value": "{color.icon.neutral.moderate.1}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.1}",
+      "description": "Default select icon color in hover-filled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.icon.disabled": {
+      "value": "{color.icon.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Default select icon color in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.filter-icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default select filter icon color in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.filter-icon.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default select filter icon color in hover state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.filter-icon.filled": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default select filter icon color in filled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.filter-icon.focused": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default select filter icon color in focused state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.filter-icon.hover-filled": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default select filter icon color in hover-filled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.filter-icon.disabled": {
+      "value": "{color.icon.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Default select filter icon color in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "select.color.default.focus.ring": {
+      "value": "{color.border.primary.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "Default select focus ring color",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.color.default.focus.shadow": {
+      "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.primary.blue.100}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Default select focus shadow",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "select.tags.size.3xs": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.height.4[5]}",
+      "description": "Tags size for 3xs size - tag size: xs; tag height: 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.tags.size.2xs": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.height.4[5]}",
+      "description": "Tags size for 2xs size - tag size: xs; tag height: 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.tags.size.xs": {
+      "value": "22px",
+      "type": "dimension",
+      "reference": "{size.height.5[5]}",
+      "description": "Tags size for xs size - tag size: sm; tag height: 22px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.tags.size.sm": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Tags size for sm size - tag size: md; tag height: 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.tags.size.md": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Tags size for md size - tag size: lg; tag height: 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.tags.size.lg": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Tags size for lg size - tag size: lg; tag height: 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "select.tags.gap-between-tags": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{gap.x.2xs}",
+      "description": "Gap between tags - horizontal",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "select.tags.gap-between-tags-and-input": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.x.3xs}",
+      "description": "Gap between tags and input - horizontal",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    }
+  },
+  "instructions": {
+    "default": {
+      "container": {
+        "background": null,
+        "border": null,
+        "padding": {
+          "horizontal": "select.padding.horizontal",
+          "vertical": "select.padding.vertical"
+        },
+        "borderRadius": "select.border.radius",
+        "shadow": "select.shadow"
+      },
+      "text": {
+        "color": null
+      },
+      "icon": {
+        "color": null
+      },
+      "subtext": {
+        "color": null
+      }
+    }
+  },
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

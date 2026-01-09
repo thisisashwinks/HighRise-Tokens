@@ -1,0 +1,5325 @@
+{
+  "component": "button",
+  "version": "1.0.0",
+  "description": "Figma mapping for button component tokens",
+  "tokens": {
+    "button.color.primary.primary.background.default": {
+      "value": "#0050C8",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Primary button default background - #0050C8",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.primary.background.hover": {
+      "value": "#0042A8",
+      "type": "color",
+      "reference": "{color.background.primary.intense.1}",
+      "description": "Primary button hover background - #0042A8",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.primary.background.active": {
+      "value": "#003588",
+      "type": "color",
+      "reference": "{color.background.primary.intense.2}",
+      "description": "Primary button active background - #003588",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.primary.background.focused": {
+      "value": "#0042A8",
+      "type": "color",
+      "reference": "{color.background.primary.intense.1}",
+      "description": "Primary button focused background - #0042A8",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.primary.background.disabled": {
+      "value": "#E2E8F0",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.2}",
+      "description": "Primary button disabled background - #E2E8F0",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.primary.border.default": {
+      "value": "#0050C8",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "Primary button default border - #0050C8",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.primary.border.hover": {
+      "value": "#0042A8",
+      "type": "color",
+      "reference": "{color.border.primary.intense.0}",
+      "description": "Primary button hover border - #0042A8",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.primary.border.active": {
+      "value": "#003588",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "Primary button active border - #003588",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.primary.border.focused": {
+      "value": "#0042A8",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "Primary button focused border - #0042A8",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.primary.border.disabled": {
+      "value": "#E2E8F0",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.1}",
+      "description": "Primary button disabled border - #E2E8F0",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.primary.text.default": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Primary button default text color - #FFFFFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.primary.text.hover": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Primary button hover text color - #FFFFFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.primary.text.active": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Primary button active text color - #FFFFFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.primary.text.focused": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Primary button focused text color - #FFFFFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.primary.text.disabled": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Primary button disabled text color - #FFFFFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.primary.icon.default": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Primary button default icon color - #FFFFFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.primary.icon.hover": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Primary button hover icon color - #FFFFFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.primary.icon.active": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Primary button active icon color - #FFFFFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.primary.icon.focused": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Primary button focused icon color - #FFFFFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.primary.icon.disabled": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Primary button disabled icon color - #FFFFFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.secondary.background.default": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Secondary button default background - #FFFFFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.secondary.background.hover": {
+      "value": "#F9FAFB",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Secondary button hover background - #F9FAFB",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.secondary.background.active": {
+      "value": "#d1e0ff",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.1}",
+      "description": "Secondary button active background - #d1e0ff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.secondary.background.focused": {
+      "value": "#eff4ff",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.0}",
+      "description": "Secondary button focused background - #eff4ff ",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.secondary.background.disabled": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Secondary button disabled background - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.secondary.border.default": {
+      "value": "#0050C8",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "Secondary button default border - #0050C8",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.secondary.border.hover": {
+      "value": "#0042A8",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "Secondary button hover border - #0042A8",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.secondary.border.active": {
+      "value": "#003588",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "Secondary button active border - #003588",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.secondary.border.focused": {
+      "value": "#0042A8",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "Secondary button focused border - #0042A8",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.secondary.border.disabled": {
+      "value": "#E2E8F0",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.1}",
+      "description": "Secondary button disabled border - #E2E8F0",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.secondary.text.default": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Secondary button default text color - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.secondary.text.hover": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.primary.title.2}",
+      "description": "Secondary button hover text color - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.secondary.text.active": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.primary.title.1}",
+      "description": "Secondary button active text color - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.secondary.text.focused": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.primary.title.2}",
+      "description": "Secondary button focused text color - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.secondary.text.disabled": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.primary.inactive.2}",
+      "description": "Secondary button disabled text color - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.secondary.icon.default": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Secondary button default icon color - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.secondary.icon.hover": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Secondary button hover icon color - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.secondary.icon.active": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Secondary button active icon color - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.secondary.icon.focused": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Secondary button focused icon color - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.secondary.icon.disabled": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.icon.primary.subtle.0}",
+      "description": "Secondary button disabled icon color - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.tertiary.background.default": {
+      "value": "#F2F4F7",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.0}",
+      "description": "Tertiary button default background - #F2F4F7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.tertiary.background.hover": {
+      "value": "#F2F4F7",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.1}",
+      "description": "Tertiary button hover background - #F2F4F7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.tertiary.background.active": {
+      "value": "#F2F4F7",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.2}",
+      "description": "Tertiary button active background - #F2F4F7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.tertiary.background.focused": {
+      "value": "#F2F4F7",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.1}",
+      "description": "Tertiary button focused background - #F2F4F7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.tertiary.background.disabled": {
+      "value": "#E2E8F0",
+      "type": "color",
+      "reference": "{color.background.primary.inactive}",
+      "description": "Tertiary button disabled background - #E2E8F0",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.tertiary.border.default": {
+      "value": "#0050C8",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.0}",
+      "description": "Tertiary button default border - #0050C8",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.tertiary.border.hover": {
+      "value": "#0042A8",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.1}",
+      "description": "Tertiary button hover border - #0042A8",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.tertiary.border.active": {
+      "value": "#003588",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "Tertiary button active border - #003588",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.tertiary.border.focused": {
+      "value": "#0042A8",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.1}",
+      "description": "Tertiary button focused border - #0042A8",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.tertiary.border.disabled": {
+      "value": "#E2E8F0",
+      "type": "color",
+      "reference": "{color.border.primary.inactive}",
+      "description": "Tertiary button disabled border - #E2E8F0",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.tertiary.text.default": {
+      "value": "#004EEB",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Tertiary button default text color - #004EEB",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.tertiary.text.hover": {
+      "value": "#0040C1",
+      "type": "color",
+      "reference": "{color.text.primary.title.2}",
+      "description": "Tertiary button hover text color - #0040C1",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.tertiary.text.active": {
+      "value": "#00359E",
+      "type": "color",
+      "reference": "{color.text.primary.title.1}",
+      "description": "Tertiary button active text color - #00359E",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.tertiary.text.focused": {
+      "value": "#0040C1",
+      "type": "color",
+      "reference": "{color.text.primary.title.2}",
+      "description": "Tertiary button focused text color - #0040C1",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.tertiary.text.disabled": {
+      "value": "#84ADFF",
+      "type": "color",
+      "reference": "{color.text.primary.inactive.1}",
+      "description": "Tertiary button disabled text color - #84ADFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.tertiary.icon.default": {
+      "value": "#004EEB",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Tertiary button default icon color - #004EEB",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.tertiary.icon.hover": {
+      "value": "#004EEB",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Tertiary button hover icon color - #004EEB",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.tertiary.icon.active": {
+      "value": "#004EEB",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Tertiary button active icon color - #004EEB",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.tertiary.icon.focused": {
+      "value": "#004EEB",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Tertiary button focused icon color - #004EEB",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.tertiary.icon.disabled": {
+      "value": "#B2CCFF",
+      "type": "color",
+      "reference": "{color.icon.primary.subtle.0}",
+      "description": "Tertiary button disabled icon color - #B2CCFF",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.ghost.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Ghost button default background - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.ghost.background.hover": {
+      "value": "{color.background.primary.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.1}",
+      "description": "Ghost button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.ghost.background.active": {
+      "value": "{color.background.primary.subtle.2}",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.2}",
+      "description": "Ghost button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.ghost.background.focused": {
+      "value": "{color.background.primary.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.1}",
+      "description": "Ghost button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.ghost.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Ghost button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.ghost.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Ghost button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.ghost.border.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Ghost button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.ghost.border.active": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Ghost button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.ghost.border.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Ghost button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.ghost.border.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Ghost button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.primary.ghost.text.default": {
+      "value": "{color.text.primary.body.1}",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Ghost button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.ghost.text.hover": {
+      "value": "{color.text.primary.title.2}",
+      "type": "color",
+      "reference": "{color.text.primary.title.2}",
+      "description": "Ghost button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.ghost.text.active": {
+      "value": "{color.text.primary.title.1}",
+      "type": "color",
+      "reference": "{color.text.primary.title.1}",
+      "description": "Ghost button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.ghost.text.focused": {
+      "value": "{color.text.primary.title.2}",
+      "type": "color",
+      "reference": "{color.text.primary.title.2}",
+      "description": "Ghost button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.ghost.text.disabled": {
+      "value": "{color.text.primary.inactive.2}",
+      "type": "color",
+      "reference": "{color.text.primary.inactive.2}",
+      "description": "Ghost button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.primary.ghost.icon.default": {
+      "value": "{color.icon.primary.default}",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Ghost button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.ghost.icon.hover": {
+      "value": "{color.icon.primary.default}",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Ghost button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.ghost.icon.active": {
+      "value": "{color.icon.primary.default}",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Ghost button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.ghost.icon.focused": {
+      "value": "{color.icon.primary.default}",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Ghost button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.primary.ghost.icon.disabled": {
+      "value": "{color.icon.primary.subtle.0}",
+      "type": "color",
+      "reference": "{color.icon.primary.subtle.0}",
+      "description": "Ghost button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.primary.background.default": {
+      "value": "{color.background.error.default}",
+      "type": "color",
+      "reference": "{color.background.error.default}",
+      "description": "Error primary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.primary.background.hover": {
+      "value": "{color.background.error.intense.0}",
+      "type": "color",
+      "reference": "{color.background.error.intense.0}",
+      "description": "Error primary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.primary.background.active": {
+      "value": "{color.background.error.intense.1}",
+      "type": "color",
+      "reference": "{color.background.error.intense.1}",
+      "description": "Error primary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.primary.background.focused": {
+      "value": "{color.background.error.intense.0}",
+      "type": "color",
+      "reference": "{color.background.error.intense.0}",
+      "description": "Error primary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.primary.background.disabled": {
+      "value": "{color.background.error.subtle.2}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.2}",
+      "description": "Error primary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.primary.border.default": {
+      "value": "{color.border.error.default}",
+      "type": "color",
+      "reference": "{color.border.error.default}",
+      "description": "Error primary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.primary.border.hover": {
+      "value": "{color.border.error.intense.0}",
+      "type": "color",
+      "reference": "{color.border.error.intense.0}",
+      "description": "Error primary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.primary.border.active": {
+      "value": "{color.border.error.intense.2}",
+      "type": "color",
+      "reference": "{color.border.error.intense.2}",
+      "description": "Error primary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.primary.border.focused": {
+      "value": "{color.border.error.intense.0}",
+      "type": "color",
+      "reference": "{color.border.error.intense.0}",
+      "description": "Error primary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.primary.border.disabled": {
+      "value": "{color.border.error.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.error.subtle.2}",
+      "description": "Error primary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.primary.text.default": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Error primary button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.primary.text.hover": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Error primary button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.primary.text.active": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Error primary button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.primary.text.focused": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Error primary button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.primary.text.disabled": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Error primary button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.primary.icon.default": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Error primary button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.primary.icon.hover": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Error primary button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.primary.icon.active": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Error primary button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.primary.icon.focused": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Error primary button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.primary.icon.disabled": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Error primary button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.secondary.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Error secondary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.secondary.background.hover": {
+      "value": "{color.background.error.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.0}",
+      "description": "Error secondary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.secondary.background.active": {
+      "value": "{color.background.error.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.1}",
+      "description": "Error secondary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.secondary.background.focused": {
+      "value": "{color.background.error.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.0}",
+      "description": "Error secondary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.secondary.background.disabled": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Error secondary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.secondary.border.default": {
+      "value": "{color.border.error.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.error.moderate.0}",
+      "description": "Error secondary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.secondary.border.hover": {
+      "value": "{color.border.error.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.error.moderate.0}",
+      "description": "Error secondary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.secondary.border.active": {
+      "value": "{color.border.error.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.error.moderate.0}",
+      "description": "Error secondary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.secondary.border.focused": {
+      "value": "{color.border.error.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.error.moderate.0}",
+      "description": "Error secondary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.secondary.border.disabled": {
+      "value": "{color.border.error.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.error.subtle.2}",
+      "description": "Error secondary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.secondary.text.default": {
+      "value": "{color.text.error.body.1}",
+      "type": "color",
+      "reference": "{color.text.error.body.1}",
+      "description": "Error secondary button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.secondary.text.hover": {
+      "value": "{color.text.error.title.2}",
+      "type": "color",
+      "reference": "{color.text.error.title.2}",
+      "description": "Error secondary button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.secondary.text.active": {
+      "value": "{color.text.error.title.1}",
+      "type": "color",
+      "reference": "{color.text.error.title.1}",
+      "description": "Error secondary button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.secondary.text.focused": {
+      "value": "{color.text.error.title.2}",
+      "type": "color",
+      "reference": "{color.text.error.title.2}",
+      "description": "Error secondary button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.secondary.text.disabled": {
+      "value": "{color.text.error.inactive.2}",
+      "type": "color",
+      "reference": "{color.text.error.inactive.2}",
+      "description": "Error secondary button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.secondary.icon.default": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error secondary button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.secondary.icon.hover": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error secondary button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.secondary.icon.active": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error secondary button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.secondary.icon.focused": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error secondary button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.secondary.icon.disabled": {
+      "value": "{color.icon.error.inactive}",
+      "type": "color",
+      "reference": "{color.icon.error.inactive}",
+      "description": "Error secondary button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.tertiary.background.default": {
+      "value": "{color.background.error.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.0}",
+      "description": "Error tertiary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.tertiary.background.hover": {
+      "value": "{color.background.error.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.1}",
+      "description": "Error tertiary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.tertiary.background.active": {
+      "value": "{color.background.error.subtle.2}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.2}",
+      "description": "Error tertiary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.tertiary.background.focused": {
+      "value": "{color.background.error.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.1}",
+      "description": "Error tertiary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.tertiary.background.disabled": {
+      "value": "{color.background.error.inactive}",
+      "type": "color",
+      "reference": "{color.background.error.inactive}",
+      "description": "Error tertiary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.tertiary.border.default": {
+      "value": "{color.border.error.subtle.0}",
+      "type": "color",
+      "reference": "{color.border.error.subtle.0}",
+      "description": "Error tertiary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.tertiary.border.hover": {
+      "value": "{color.border.error.subtle.1}",
+      "type": "color",
+      "reference": "{color.border.error.subtle.1}",
+      "description": "Error tertiary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.tertiary.border.active": {
+      "value": "{color.border.error.subtle.0}",
+      "type": "color",
+      "reference": "{color.border.error.subtle.0}",
+      "description": "Error tertiary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.tertiary.border.focused": {
+      "value": "{color.border.error.subtle.1}",
+      "type": "color",
+      "reference": "{color.border.error.subtle.1}",
+      "description": "Error tertiary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.tertiary.border.disabled": {
+      "value": "{color.border.error.inactive}",
+      "type": "color",
+      "reference": "{color.border.error.inactive}",
+      "description": "Error tertiary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.tertiary.text.default": {
+      "value": "{color.text.error.body.1}",
+      "type": "color",
+      "reference": "{color.text.error.body.1}",
+      "description": "Error tertiary button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.tertiary.text.hover": {
+      "value": "{color.text.error.title.2}",
+      "type": "color",
+      "reference": "{color.text.error.title.2}",
+      "description": "Error tertiary button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.tertiary.text.active": {
+      "value": "{color.text.error.title.1}",
+      "type": "color",
+      "reference": "{color.text.error.title.1}",
+      "description": "Error tertiary button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.tertiary.text.focused": {
+      "value": "{color.text.error.title.1}",
+      "type": "color",
+      "reference": "{color.text.error.title.1}",
+      "description": "Error tertiary button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.tertiary.text.disabled": {
+      "value": "{color.text.error.inactive.2}",
+      "type": "color",
+      "reference": "{color.text.error.inactive.2}",
+      "description": "Error tertiary button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.tertiary.icon.default": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error tertiary button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.tertiary.icon.hover": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error tertiary button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.tertiary.icon.active": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error tertiary button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.tertiary.icon.focused": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error tertiary button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.tertiary.icon.disabled": {
+      "value": "{color.icon.error.inactive}",
+      "type": "color",
+      "reference": "{color.icon.error.inactive}",
+      "description": "Error tertiary button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.ghost.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Error ghost button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.ghost.background.hover": {
+      "value": "{color.background.error.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.0}",
+      "description": "Error ghost button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.ghost.background.active": {
+      "value": "{color.background.error.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.1}",
+      "description": "Error ghost button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.ghost.background.focused": {
+      "value": "{color.background.error.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.0}",
+      "description": "Error ghost button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.ghost.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Error ghost button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.ghost.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Error ghost button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.ghost.border.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Error ghost button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.ghost.border.active": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Error ghost button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.ghost.border.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Error ghost button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.ghost.border.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Error ghost button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.error.ghost.text.default": {
+      "value": "{color.text.error.body.1}",
+      "type": "color",
+      "reference": "{color.text.error.body.1}",
+      "description": "Error ghost button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.ghost.text.hover": {
+      "value": "{color.text.error.title.2}",
+      "type": "color",
+      "reference": "{color.text.error.title.2}",
+      "description": "Error ghost button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.ghost.text.active": {
+      "value": "{color.text.error.title.1}",
+      "type": "color",
+      "reference": "{color.text.error.title.1}",
+      "description": "Error ghost button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.ghost.text.focused": {
+      "value": "{color.text.error.title.2}",
+      "type": "color",
+      "reference": "{color.text.error.title.2}",
+      "description": "Error ghost button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.ghost.text.disabled": {
+      "value": "{color.text.error.inactive.2}",
+      "type": "color",
+      "reference": "{color.text.error.inactive.2}",
+      "description": "Error ghost button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.error.ghost.icon.default": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error ghost button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.ghost.icon.hover": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error ghost button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.ghost.icon.active": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error ghost button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.ghost.icon.focused": {
+      "value": "{color.icon.error.moderate}",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error ghost button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.error.ghost.icon.disabled": {
+      "value": "{color.icon.error.inactive}",
+      "type": "color",
+      "reference": "{color.icon.error.inactive}",
+      "description": "Error ghost button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.primary.background.default": {
+      "value": "{color.background.neutral.moderate.3}",
+      "type": "color",
+      "reference": "{color.background.neutral.moderate.3}",
+      "description": "Neutral primary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.primary.background.hover": {
+      "value": "{color.background.neutral.intense.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.intense.0}",
+      "description": "Neutral primary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.primary.background.active": {
+      "value": "{color.background.neutral.intense.2}",
+      "type": "color",
+      "reference": "{color.background.neutral.intense.2}",
+      "description": "Neutral primary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.primary.background.focused": {
+      "value": "{color.background.neutral.intense.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.intense.0}",
+      "description": "Neutral primary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.primary.background.disabled": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Neutral primary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.primary.border.default": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Neutral primary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.primary.border.hover": {
+      "value": "{color.border.neutral.intense.0}",
+      "type": "color",
+      "reference": "{color.border.neutral.intense.0}",
+      "description": "Neutral primary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.primary.border.active": {
+      "value": "{color.border.neutral.intense.1}",
+      "type": "color",
+      "reference": "{color.border.neutral.intense.1}",
+      "description": "Neutral primary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.primary.border.focused": {
+      "value": "{color.border.neutral.intense.0}",
+      "type": "color",
+      "reference": "{color.border.neutral.intense.0}",
+      "description": "Neutral primary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.primary.border.disabled": {
+      "value": "{color.border.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.2}",
+      "description": "Neutral primary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.primary.text.default": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Neutral primary button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.primary.text.hover": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Neutral primary button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.primary.text.active": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Neutral primary button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.primary.text.focused": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Neutral primary button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.primary.text.disabled": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Neutral primary button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.primary.icon.default": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Neutral primary button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.primary.icon.hover": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Neutral primary button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.primary.icon.active": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Neutral primary button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.primary.icon.focused": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Neutral primary button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.primary.icon.disabled": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Neutral primary button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.secondary.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Neutral secondary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.secondary.background.hover": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Neutral secondary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.secondary.background.active": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Neutral secondary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.secondary.background.focused": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Neutral secondary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.secondary.background.disabled": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Neutral secondary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.secondary.border.default": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Neutral secondary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.secondary.border.hover": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Neutral secondary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.secondary.border.active": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Neutral secondary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.secondary.border.focused": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Neutral secondary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.secondary.border.disabled": {
+      "value": "{color.border.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.2}",
+      "description": "Neutral secondary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.secondary.text.default": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Neutral secondary button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.secondary.text.hover": {
+      "value": "{color.text.neutral.title.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.2}",
+      "description": "Neutral secondary button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.secondary.text.active": {
+      "value": "{color.text.neutral.title.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Neutral secondary button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.secondary.text.focused": {
+      "value": "{color.text.neutral.title.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.2}",
+      "description": "Neutral secondary button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.secondary.text.disabled": {
+      "value": "{color.text.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.text.neutral.inactive}",
+      "description": "Neutral secondary button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.secondary.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral secondary button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.secondary.icon.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral secondary button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.secondary.icon.active": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral secondary button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.secondary.icon.focused": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral secondary button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.secondary.icon.disabled": {
+      "value": "{color.icon.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Neutral secondary button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.tertiary.background.default": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Neutral tertiary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.tertiary.background.hover": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Neutral tertiary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.tertiary.background.active": {
+      "value": "{color.background.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.2}",
+      "description": "Neutral tertiary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.tertiary.background.focused": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Neutral tertiary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.tertiary.background.disabled": {
+      "value": "{color.background.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.background.neutral.inactive}",
+      "description": "Neutral tertiary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.tertiary.border.default": {
+      "value": "{color.border.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.0}",
+      "description": "Neutral tertiary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.tertiary.border.hover": {
+      "value": "{color.border.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.2}",
+      "description": "Neutral tertiary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.tertiary.border.active": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Neutral tertiary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.tertiary.border.focused": {
+      "value": "{color.border.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.2}",
+      "description": "Neutral tertiary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.tertiary.border.disabled": {
+      "value": "{color.border.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.border.neutral.inactive}",
+      "description": "Neutral tertiary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.tertiary.text.default": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Neutral tertiary button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.tertiary.text.hover": {
+      "value": "{color.text.neutral.title.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.2}",
+      "description": "Neutral tertiary button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.tertiary.text.active": {
+      "value": "{color.text.neutral.title.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Neutral tertiary button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.tertiary.text.focused": {
+      "value": "{color.text.neutral.title.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.2}",
+      "description": "Neutral tertiary button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.tertiary.text.disabled": {
+      "value": "{color.text.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.text.neutral.inactive}",
+      "description": "Neutral tertiary button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.tertiary.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral tertiary button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.tertiary.icon.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral tertiary button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.tertiary.icon.active": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral tertiary button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.tertiary.icon.focused": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral tertiary button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.tertiary.icon.disabled": {
+      "value": "{color.icon.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.1}",
+      "description": "Neutral tertiary button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.ghost.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Neutral ghost button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.ghost.background.hover": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Neutral ghost button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.ghost.background.active": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Neutral ghost button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.ghost.background.focused": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Neutral ghost button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.ghost.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Neutral ghost button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.ghost.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Neutral ghost button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.ghost.border.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Neutral ghost button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.ghost.border.active": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Neutral ghost button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.ghost.border.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Neutral ghost button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.ghost.border.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Neutral ghost button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.neutral.ghost.text.default": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Neutral ghost button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.ghost.text.hover": {
+      "value": "{color.text.neutral.title.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.2}",
+      "description": "Neutral ghost button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.ghost.text.active": {
+      "value": "{color.text.neutral.title.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Neutral ghost button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.ghost.text.focused": {
+      "value": "{color.text.neutral.title.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.2}",
+      "description": "Neutral ghost button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.ghost.text.disabled": {
+      "value": "{color.text.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.text.neutral.inactive}",
+      "description": "Neutral ghost button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.neutral.ghost.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral ghost button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.ghost.icon.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral ghost button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.ghost.icon.active": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral ghost button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.ghost.icon.focused": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Neutral ghost button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.neutral.ghost.icon.disabled": {
+      "value": "{color.icon.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Neutral ghost button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.primary.background.default": {
+      "value": "{color.background.warning.default}",
+      "type": "color",
+      "reference": "{color.background.warning.default}",
+      "description": "Warning primary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.primary.background.hover": {
+      "value": "{color.background.warning.intense.0}",
+      "type": "color",
+      "reference": "{color.background.warning.intense.0}",
+      "description": "Warning primary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.primary.background.active": {
+      "value": "{color.background.warning.intense.1}",
+      "type": "color",
+      "reference": "{color.background.warning.intense.1}",
+      "description": "Warning primary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.primary.background.focused": {
+      "value": "{color.background.warning.intense.0}",
+      "type": "color",
+      "reference": "{color.background.warning.intense.0}",
+      "description": "Warning primary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.primary.background.disabled": {
+      "value": "{color.background.warning.subtle.2}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.2}",
+      "description": "Warning primary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.primary.border.default": {
+      "value": "{color.border.warning.default}",
+      "type": "color",
+      "reference": "{color.border.warning.default}",
+      "description": "Warning primary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.primary.border.hover": {
+      "value": "{color.border.warning.intense.0}",
+      "type": "color",
+      "reference": "{color.border.warning.intense.0}",
+      "description": "Warning primary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.primary.border.active": {
+      "value": "{color.border.warning.intense.2}",
+      "type": "color",
+      "reference": "{color.border.warning.intense.2}",
+      "description": "Warning primary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.primary.border.focused": {
+      "value": "{color.border.warning.intense.0}",
+      "type": "color",
+      "reference": "{color.border.warning.intense.0}",
+      "description": "Warning primary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.primary.border.disabled": {
+      "value": "{color.border.warning.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.warning.subtle.2}",
+      "description": "Warning primary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.primary.text.default": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Warning primary button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.primary.text.hover": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Warning primary button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.primary.text.active": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Warning primary button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.primary.text.focused": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Warning primary button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.primary.text.disabled": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Warning primary button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.primary.icon.default": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Warning primary button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.primary.icon.hover": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Warning primary button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.primary.icon.active": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Warning primary button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.primary.icon.focused": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Warning primary button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.primary.icon.disabled": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Warning primary button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.secondary.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Warning secondary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.secondary.background.hover": {
+      "value": "{color.background.warning.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.0}",
+      "description": "Warning secondary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.secondary.background.active": {
+      "value": "{color.background.warning.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.1}",
+      "description": "Warning secondary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.secondary.background.focused": {
+      "value": "{color.background.warning.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.0}",
+      "description": "Warning secondary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.secondary.background.disabled": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Warning secondary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.secondary.border.default": {
+      "value": "{color.border.warning.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.warning.moderate.0}",
+      "description": "Warning secondary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.secondary.border.hover": {
+      "value": "{color.border.warning.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.warning.moderate.0}",
+      "description": "Warning secondary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.secondary.border.active": {
+      "value": "{color.border.warning.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.warning.moderate.0}",
+      "description": "Warning secondary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.secondary.border.focused": {
+      "value": "{color.border.warning.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.warning.moderate.0}",
+      "description": "Warning secondary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.secondary.border.disabled": {
+      "value": "{color.border.warning.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.warning.subtle.2}",
+      "description": "Warning secondary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.secondary.text.default": {
+      "value": "{color.text.warning.body.1}",
+      "type": "color",
+      "reference": "{color.text.warning.body.1}",
+      "description": "Warning secondary button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.secondary.text.hover": {
+      "value": "{color.text.warning.title.2}",
+      "type": "color",
+      "reference": "{color.text.warning.title.2}",
+      "description": "Warning secondary button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.secondary.text.active": {
+      "value": "{color.text.warning.title.1}",
+      "type": "color",
+      "reference": "{color.text.warning.title.1}",
+      "description": "Warning secondary button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.secondary.text.focused": {
+      "value": "{color.text.warning.title.2}",
+      "type": "color",
+      "reference": "{color.text.warning.title.2}",
+      "description": "Warning secondary button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.secondary.text.disabled": {
+      "value": "{color.text.warning.inactive.2}",
+      "type": "color",
+      "reference": "{color.text.warning.inactive.2}",
+      "description": "Warning secondary button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.secondary.icon.default": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning secondary button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.secondary.icon.hover": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning secondary button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.secondary.icon.active": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning secondary button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.secondary.icon.focused": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning secondary button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.secondary.icon.disabled": {
+      "value": "{color.icon.warning.inactive}",
+      "type": "color",
+      "reference": "{color.icon.warning.inactive}",
+      "description": "Warning secondary button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.tertiary.background.default": {
+      "value": "{color.background.warning.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.0}",
+      "description": "Warning tertiary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.tertiary.background.hover": {
+      "value": "{color.background.warning.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.1}",
+      "description": "Warning tertiary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.tertiary.background.active": {
+      "value": "{color.background.warning.subtle.2}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.2}",
+      "description": "Warning tertiary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.tertiary.background.focused": {
+      "value": "{color.background.warning.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.1}",
+      "description": "Warning tertiary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.tertiary.background.disabled": {
+      "value": "{color.background.warning.inactive}",
+      "type": "color",
+      "reference": "{color.background.warning.inactive}",
+      "description": "Warning tertiary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.tertiary.border.default": {
+      "value": "{color.border.warning.subtle.0}",
+      "type": "color",
+      "reference": "{color.border.warning.subtle.0}",
+      "description": "Warning tertiary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.tertiary.border.hover": {
+      "value": "{color.border.warning.subtle.1}",
+      "type": "color",
+      "reference": "{color.border.warning.subtle.1}",
+      "description": "Warning tertiary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.tertiary.border.active": {
+      "value": "{color.border.warning.subtle.0}",
+      "type": "color",
+      "reference": "{color.border.warning.subtle.0}",
+      "description": "Warning tertiary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.tertiary.border.focused": {
+      "value": "{color.border.warning.subtle.1}",
+      "type": "color",
+      "reference": "{color.border.warning.subtle.1}",
+      "description": "Warning tertiary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.tertiary.border.disabled": {
+      "value": "{color.border.warning.inactive}",
+      "type": "color",
+      "reference": "{color.border.warning.inactive}",
+      "description": "Warning tertiary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.tertiary.text.default": {
+      "value": "{color.text.warning.body.1}",
+      "type": "color",
+      "reference": "{color.text.warning.body.1}",
+      "description": "Warning tertiary button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.tertiary.text.hover": {
+      "value": "{color.text.warning.title.2}",
+      "type": "color",
+      "reference": "{color.text.warning.title.2}",
+      "description": "Warning tertiary button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.tertiary.text.active": {
+      "value": "{color.text.warning.title.1}",
+      "type": "color",
+      "reference": "{color.text.warning.title.1}",
+      "description": "Warning tertiary button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.tertiary.text.focused": {
+      "value": "{color.text.warning.title.2}",
+      "type": "color",
+      "reference": "{color.text.warning.title.2}",
+      "description": "Warning tertiary button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.tertiary.text.disabled": {
+      "value": "{color.text.warning.inactive.1}",
+      "type": "color",
+      "reference": "{color.text.warning.inactive.1}",
+      "description": "Warning tertiary button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.tertiary.icon.default": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning tertiary button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.tertiary.icon.hover": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning tertiary button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.tertiary.icon.active": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning tertiary button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.tertiary.icon.focused": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning tertiary button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.tertiary.icon.disabled": {
+      "value": "{color.icon.warning.inactive}",
+      "type": "color",
+      "reference": "{color.icon.warning.inactive}",
+      "description": "Warning tertiary button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.ghost.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Warning ghost button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.ghost.background.hover": {
+      "value": "{color.background.warning.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.0}",
+      "description": "Warning ghost button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.ghost.background.active": {
+      "value": "{color.background.warning.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.1}",
+      "description": "Warning ghost button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.ghost.background.focused": {
+      "value": "{color.background.warning.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.0}",
+      "description": "Warning ghost button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.ghost.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Warning ghost button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.ghost.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Warning ghost button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.ghost.border.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Warning ghost button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.ghost.border.active": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Warning ghost button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.ghost.border.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Warning ghost button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.ghost.border.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Warning ghost button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.warning.ghost.text.default": {
+      "value": "{color.text.warning.body.1}",
+      "type": "color",
+      "reference": "{color.text.warning.body.1}",
+      "description": "Warning ghost button default text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.ghost.text.hover": {
+      "value": "{color.text.warning.title.2}",
+      "type": "color",
+      "reference": "{color.text.warning.title.2}",
+      "description": "Warning ghost button hover text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.ghost.text.active": {
+      "value": "{color.text.warning.title.1}",
+      "type": "color",
+      "reference": "{color.text.warning.title.1}",
+      "description": "Warning ghost button active text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.ghost.text.focused": {
+      "value": "{color.text.warning.title.2}",
+      "type": "color",
+      "reference": "{color.text.warning.title.2}",
+      "description": "Warning ghost button focused text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.ghost.text.disabled": {
+      "value": "{color.text.warning.inactive.2}",
+      "type": "color",
+      "reference": "{color.text.warning.inactive.2}",
+      "description": "Warning ghost button disabled text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.warning.ghost.icon.default": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning ghost button default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.ghost.icon.hover": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning ghost button hover icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.ghost.icon.active": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning ghost button active icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.ghost.icon.focused": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "Warning ghost button focused icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.warning.ghost.icon.disabled": {
+      "value": "{color.icon.warning.inactive}",
+      "type": "color",
+      "reference": "{color.icon.warning.inactive}",
+      "description": "Warning ghost button disabled icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.primary.background.default": {
+      "value": "{color.background.success.default}",
+      "type": "color",
+      "reference": "{color.background.success.default}",
+      "description": "Success primary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.primary.background.hover": {
+      "value": "{color.background.success.intense.0}",
+      "type": "color",
+      "reference": "{color.background.success.intense.0}",
+      "description": "Success primary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.primary.background.active": {
+      "value": "{color.background.success.intense.1}",
+      "type": "color",
+      "reference": "{color.background.success.intense.1}",
+      "description": "Success primary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.primary.background.focused": {
+      "value": "{color.background.success.intense.0}",
+      "type": "color",
+      "reference": "{color.background.success.intense.0}",
+      "description": "Success primary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.primary.background.disabled": {
+      "value": "{color.background.success.subtle.2}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.2}",
+      "description": "Success primary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.primary.border.default": {
+      "value": "{color.border.success.default}",
+      "type": "color",
+      "reference": "{color.border.success.default}",
+      "description": "Success primary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.primary.border.hover": {
+      "value": "{color.border.success.intense.0}",
+      "type": "color",
+      "reference": "{color.border.success.intense.0}",
+      "description": "Success primary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.primary.border.active": {
+      "value": "{color.border.success.intense.2}",
+      "type": "color",
+      "reference": "{color.border.success.intense.2}",
+      "description": "Success primary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.primary.border.focused": {
+      "value": "{color.border.success.intense.0}",
+      "type": "color",
+      "reference": "{color.border.success.intense.0}",
+      "description": "Success primary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.primary.border.disabled": {
+      "value": "{color.border.success.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.success.subtle.2}",
+      "description": "Success primary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.primary.text.default": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Success primary button default text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.primary.text.hover": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Success primary button hover text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.primary.text.active": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Success primary button active text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.primary.text.focused": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Success primary button focused text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.primary.text.disabled": {
+      "value": "{color.text.neutral.base}",
+      "type": "color",
+      "reference": "{color.text.neutral.base}",
+      "description": "Success primary button disabled text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.primary.icon.default": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Success primary button default icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.primary.icon.hover": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Success primary button hover icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.primary.icon.active": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Success primary button active icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.primary.icon.focused": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Success primary button focused icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.primary.icon.disabled": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Success primary button disabled icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.secondary.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Success secondary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.secondary.background.hover": {
+      "value": "{color.background.success.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.0}",
+      "description": "Success secondary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.secondary.background.active": {
+      "value": "{color.background.success.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.1}",
+      "description": "Success secondary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.secondary.background.focused": {
+      "value": "{color.background.success.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.0}",
+      "description": "Success secondary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.secondary.background.disabled": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Success secondary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.secondary.border.default": {
+      "value": "{color.border.success.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.success.moderate.0}",
+      "description": "Success secondary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.secondary.border.hover": {
+      "value": "{color.border.success.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.success.moderate.0}",
+      "description": "Success secondary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.secondary.border.active": {
+      "value": "{color.border.success.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.success.moderate.0}",
+      "description": "Success secondary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.secondary.border.focused": {
+      "value": "{color.border.success.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.success.moderate.0}",
+      "description": "Success secondary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.secondary.border.disabled": {
+      "value": "{color.border.success.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.success.subtle.2}",
+      "description": "Success secondary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.secondary.text.default": {
+      "value": "{color.text.success.body.1}",
+      "type": "color",
+      "reference": "{color.text.success.body.1}",
+      "description": "Success secondary button default text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.secondary.text.hover": {
+      "value": "{color.text.success.title.2}",
+      "type": "color",
+      "reference": "{color.text.success.title.2}",
+      "description": "Success secondary button hover text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.secondary.text.active": {
+      "value": "{color.text.success.title.1}",
+      "type": "color",
+      "reference": "{color.text.success.title.1}",
+      "description": "Success secondary button active text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.secondary.text.focused": {
+      "value": "{color.text.success.title.2}",
+      "type": "color",
+      "reference": "{color.text.success.title.2}",
+      "description": "Success secondary button focused text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.secondary.text.disabled": {
+      "value": "{color.text.success.inactive.2}",
+      "type": "color",
+      "reference": "{color.text.success.inactive.2}",
+      "description": "Success secondary button disabled text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.secondary.icon.default": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success secondary button default icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.secondary.icon.hover": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success secondary button hover icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.secondary.icon.active": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success secondary button active icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.secondary.icon.focused": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success secondary button focused icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.secondary.icon.disabled": {
+      "value": "{color.icon.success.inactive}",
+      "type": "color",
+      "reference": "{color.icon.success.inactive}",
+      "description": "Success secondary button disabled icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.tertiary.background.default": {
+      "value": "{color.background.success.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.0}",
+      "description": "Success tertiary button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.tertiary.background.hover": {
+      "value": "{color.background.success.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.1}",
+      "description": "Success tertiary button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.tertiary.background.active": {
+      "value": "{color.background.success.subtle.2}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.2}",
+      "description": "Success tertiary button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.tertiary.background.focused": {
+      "value": "{color.background.success.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.1}",
+      "description": "Success tertiary button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.tertiary.background.disabled": {
+      "value": "{color.background.success.inactive}",
+      "type": "color",
+      "reference": "{color.background.success.inactive}",
+      "description": "Success tertiary button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.tertiary.border.default": {
+      "value": "{color.border.success.subtle.0}",
+      "type": "color",
+      "reference": "{color.border.success.subtle.0}",
+      "description": "Success tertiary button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.tertiary.border.hover": {
+      "value": "{color.border.success.subtle.1}",
+      "type": "color",
+      "reference": "{color.border.success.subtle.1}",
+      "description": "Success tertiary button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.tertiary.border.active": {
+      "value": "{color.border.success.subtle.0}",
+      "type": "color",
+      "reference": "{color.border.success.subtle.0}",
+      "description": "Success tertiary button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.tertiary.border.focused": {
+      "value": "{color.border.success.subtle.1}",
+      "type": "color",
+      "reference": "{color.border.success.subtle.1}",
+      "description": "Success tertiary button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.tertiary.border.disabled": {
+      "value": "{color.border.success.inactive}",
+      "type": "color",
+      "reference": "{color.border.success.inactive}",
+      "description": "Success tertiary button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.tertiary.text.default": {
+      "value": "{color.text.success.body.1}",
+      "type": "color",
+      "reference": "{color.text.success.body.1}",
+      "description": "Success tertiary button default text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.tertiary.text.hover": {
+      "value": "{color.text.success.title.2}",
+      "type": "color",
+      "reference": "{color.text.success.title.2}",
+      "description": "Success tertiary button hover text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.tertiary.text.active": {
+      "value": "{color.text.success.title.1}",
+      "type": "color",
+      "reference": "{color.text.success.title.1}",
+      "description": "Success tertiary button active text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.tertiary.text.focused": {
+      "value": "{color.text.success.title.2}",
+      "type": "color",
+      "reference": "{color.text.success.title.2}",
+      "description": "Success tertiary button focused text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.tertiary.text.disabled": {
+      "value": "{color.text.success.inactive.2}",
+      "type": "color",
+      "reference": "{color.text.success.inactive.2}",
+      "description": "Success tertiary button disabled text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.tertiary.icon.default": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success tertiary button default icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.tertiary.icon.hover": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success tertiary button hover icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.tertiary.icon.active": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success tertiary button active icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.tertiary.icon.focused": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success tertiary button focused icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.tertiary.icon.disabled": {
+      "value": "{color.icon.success.inactive}",
+      "type": "color",
+      "reference": "{color.icon.success.inactive}",
+      "description": "Success tertiary button disabled icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.ghost.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Success ghost button default background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.ghost.background.hover": {
+      "value": "{color.background.success.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.0}",
+      "description": "Success ghost button hover background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.ghost.background.active": {
+      "value": "{color.background.success.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.1}",
+      "description": "Success ghost button active background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.ghost.background.focused": {
+      "value": "{color.background.success.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.0}",
+      "description": "Success ghost button focused background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.ghost.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Success ghost button disabled background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.ghost.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Success ghost button default border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.ghost.border.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Success ghost button hover border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.ghost.border.active": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Success ghost button active border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.ghost.border.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Success ghost button focused border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.ghost.border.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Success ghost button disabled border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "button.color.success.ghost.text.default": {
+      "value": "{color.text.success.body.1}",
+      "type": "color",
+      "reference": "{color.text.success.body.1}",
+      "description": "Success ghost button default text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.ghost.text.hover": {
+      "value": "{color.text.success.title.2}",
+      "type": "color",
+      "reference": "{color.text.success.title.2}",
+      "description": "Success ghost button hover text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.ghost.text.active": {
+      "value": "{color.text.success.title.1}",
+      "type": "color",
+      "reference": "{color.text.success.title.1}",
+      "description": "Success ghost button active text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.ghost.text.focused": {
+      "value": "{color.text.success.title.2}",
+      "type": "color",
+      "reference": "{color.text.success.title.2}",
+      "description": "Success ghost button focused text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.ghost.text.disabled": {
+      "value": "{color.text.success.inactive.2}",
+      "type": "color",
+      "reference": "{color.text.success.inactive.2}",
+      "description": "Success ghost button disabled text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "button.color.success.ghost.icon.default": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success ghost button default icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.ghost.icon.hover": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success ghost button hover icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.ghost.icon.active": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success ghost button active icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.ghost.icon.focused": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "Success ghost button focused icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.color.success.ghost.icon.disabled": {
+      "value": "{color.icon.success.inactive}",
+      "type": "color",
+      "reference": "{color.icon.success.inactive}",
+      "description": "Success ghost button disabled icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "button.typography.3xs": {
+      "value": {
+        "size": "11px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.xs}",
+      "description": "11px semibold font for 3xs buttons",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "button.typography.2xs": {
+      "value": {
+        "size": "12px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.sm}",
+      "description": "12px semibold font for 2xs buttons",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "button.typography.xs": {
+      "value": {
+        "size": "13px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.md}",
+      "description": "13px semibold font for xs buttons",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "button.typography.sm": {
+      "value": {
+        "size": "14px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.lg}",
+      "description": "14px semibold font for sm buttons",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "button.typography.md": {
+      "value": {
+        "size": "14px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.lg}",
+      "description": "14px semibold font for md buttons",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "button.typography.lg": {
+      "value": {
+        "size": "16px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.2xl}",
+      "description": "16px semibold font for lg buttons",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "button.typography.xl": {
+      "value": {
+        "size": "16px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.2xl}",
+      "description": "16px semibold font for xl buttons",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "button.typography.2xl": {
+      "value": {
+        "size": "18px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.3xl}",
+      "description": "18px semibold font for 2xl buttons",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "button.border.radius.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.3xs}",
+      "description": "4px border radius for 3xs",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "button.border.radius.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.2xs}",
+      "description": "4px border radius for 2xs",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "button.border.radius.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "4px border radius for xs",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "button.border.radius.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "8px border radius for sm",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "button.border.radius.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.md}",
+      "description": "8px border radius for md",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "button.border.radius.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.lg}",
+      "description": "8px border radius for lg",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "button.border.radius.xl": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.xl}",
+      "description": "8px border radius for xl",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "button.border.radius.2xl": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.2xl}",
+      "description": "8px border radius for 2xl",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "button.border.width.default": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "1px border width",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "button.effects.shadow.default": {
+      "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Default button shadow",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.effects.focus.ring": {
+      "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.primary.blue.100}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Focus ring for buttons",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.height.3xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "24px button height for 3xs",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "button.regular.height.2xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "28px button height for 2xs",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "button.regular.height.xs": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "32px button height for xs",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "button.regular.height.sm": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.height.sm}",
+      "description": "36px button height for sm",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "button.regular.height.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "40px button height for md",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "button.regular.height.lg": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{size.height.lg}",
+      "description": "44px button height for lg",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "button.regular.height.xl": {
+      "value": "48px",
+      "type": "dimension",
+      "reference": "{size.height.xl}",
+      "description": "48px button height for xl",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "button.regular.height.2xl": {
+      "value": "56px",
+      "type": "dimension",
+      "reference": "{size.height.2xl}",
+      "description": "56px button height for 2xl",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "button.regular.padding.x.3xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.x.4xs}",
+      "description": "6px horizontal padding for 3xs",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.x.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "8px horizontal padding for 2xs",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.x.xs": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{padding.x.2xs}",
+      "description": "10px horizontal padding for xs",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.x.sm": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{padding.x.sm}",
+      "description": "14px horizontal padding for sm",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.x.md": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{padding.x.md}",
+      "description": "16px horizontal padding for md",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.x.lg": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{padding.x.lg}",
+      "description": "18px horizontal padding for lg",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.x.xl": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{padding.x.xl}",
+      "description": "20px horizontal padding for xl",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.x.2xl": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{padding.x.2xl}",
+      "description": "28px horizontal padding for 2xl",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.y.3xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.3xs}",
+      "description": "8px vertical padding for 3xs",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.y.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.2xs}",
+      "description": "8px vertical padding for 2xs",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.y.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.xs}",
+      "description": "8px vertical padding for xs",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.y.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.sm}",
+      "description": "8px vertical padding for sm",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.y.md": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{padding.y.md}",
+      "description": "10px vertical padding for md",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.y.lg": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{padding.y.lg}",
+      "description": "10px vertical padding for lg",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.y.xl": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{padding.y.xl}",
+      "description": "12px vertical padding for xl",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.padding.y.2xl": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{padding.y.2xl}",
+      "description": "16px vertical padding for 2xl",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.regular.gap.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "4px gap between text and icon for 3xs",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "button.regular.gap.2xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{gap.1[5]}",
+      "description": "6px gap between text and icon for 2xs",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "button.regular.gap.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.2}",
+      "description": "8px gap between text and icon for xs",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "button.regular.gap.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.2}",
+      "description": "8px gap between text and icon for sm",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "button.regular.gap.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.2}",
+      "description": "8px gap between text and icon for md",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "button.regular.gap.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.2}",
+      "description": "8px gap between text and icon for lg",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "button.regular.gap.xl": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.2}",
+      "description": "8px gap between text and icon for xl",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "button.regular.gap.2xl": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{gap.3}",
+      "description": "12px gap between text and icon for 2xl",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "button.regular.icon.size.3xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "14px icon size for 3xs buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.regular.icon.size.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "16px icon size for 2xs buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.regular.icon.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "16px icon size for xs buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.regular.icon.size.sm": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "20px icon size for sm buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.regular.icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "20px icon size for md buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.regular.icon.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "20px icon size for lg buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.regular.icon.size.xl": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "20px icon size for xl buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.regular.icon.size.2xl": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "24px icon size for 2xl buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.height.3xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.3xs}",
+      "description": "24px square icon button height for 3xs",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.height.2xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.2xs}",
+      "description": "28px square icon button height for 2xs",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.height.xs": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.xs}",
+      "description": "32px square icon button height for xs",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.height.sm": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.sm}",
+      "description": "36px square icon button height for sm",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.height.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.md}",
+      "description": "40px square icon button height for md",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.height.lg": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{size.lg}",
+      "description": "44px square icon button height for lg",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.height.xl": {
+      "value": "48px",
+      "type": "dimension",
+      "reference": "{size.xl}",
+      "description": "48px square icon button height for xl",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.height.2xl": {
+      "value": "56px",
+      "type": "dimension",
+      "reference": "{size.2xl}",
+      "description": "56px square icon button heighr for 2xl",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.padding.3xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.1[5]}",
+      "description": "6px padding for 3xs icon button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.icon.padding.2xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.1[5]}",
+      "description": "6px padding for 2xs icon button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.icon.padding.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.2}",
+      "description": "8px padding for xs icon button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.icon.padding.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.2}",
+      "description": "8px padding for sm icon button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.icon.padding.md": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{padding.2[5]}",
+      "description": "10px padding for md icon button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.icon.padding.lg": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{padding.3}",
+      "description": "12px padding for lg icon button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.icon.padding.xl": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{padding.3[5]}",
+      "description": "14px padding for xl icon button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.icon.padding.2xl": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{padding.4}",
+      "description": "16px padding for 2xl icon button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "button.icon.icon.size.3xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "14px icon for 3xs icon button",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.icon.size.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "16px icon for 2xs icon button",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.icon.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "16px icon for xs icon button",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.icon.size.sm": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "20px icon for sm icon button",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "20px icon for md icon button",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.icon.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "20px icon for lg icon button",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.icon.size.xl": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "20px icon for xl icon button",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "button.icon.icon.size.2xl": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "24px icon for 2xl icon button",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

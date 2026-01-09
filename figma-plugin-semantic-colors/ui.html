@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      padding: 16px;
+      margin: 0;
+      background: #ffffff;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    h1 {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0 0 8px 0;
+      color: #000000;
+    }
+    .file-input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    label {
+      font-size: 12px;
+      font-weight: 500;
+      color: #333333;
+    }
+    input[type="file"] {
+      font-size: 11px;
+      padding: 8px;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+      background: #ffffff;
+    }
+    .button {
+      padding: 10px 16px;
+      background: #18a0fb;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      width: 100%;
+    }
+    .button:hover {
+      background: #1592e6;
+    }
+    .button:disabled {
+      background: #cccccc;
+      cursor: not-allowed;
+    }
+    .status {
+      font-size: 11px;
+      color: #666666;
+      margin-top: 8px;
+    }
+    .status.success {
+      color: #039855;
+    }
+    .status.error {
+      color: #d92d20;
+    }
+    .status.processing {
+      color: #667085;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Create Semantic Variables & Styles</h1>
+    <div class="file-input-group">
+      <label for="lightFile">Light Theme JSON:</label>
+      <input type="file" id="lightFile" accept=".json" />
+    </div>
+    <div class="file-input-group">
+      <label for="darkFile">Dark Theme JSON:</label>
+      <input type="file" id="darkFile" accept=".json" />
+    </div>
+    <div class="file-input-group">
+      <label for="primitiveFile">Primitive.json (optional, for reference resolution):</label>
+      <input type="file" id="primitiveFile" accept=".json" />
+    </div>
+    <div class="file-input-group">
+      <label for="semanticFile">Semantic.json (required for font styles):</label>
+      <input type="file" id="semanticFile" accept=".json" />
+    </div>
+    <button class="button" id="createButton" disabled>Create Variables</button>
+    <button class="button" id="createFontStylesButton" style="background: #10b981; margin-top: 8px;" disabled>Create Font Styles from Semantic.json</button>
+    <button class="button" id="testButton" style="background: #667085; margin-top: 8px;">Test Attach Variables to Effects</button>
+    <div id="status" class="status"></div>
+    <div id="testResults" style="font-size: 10px; color: #666; margin-top: 8px; max-height: 200px; overflow-y: auto; display: none;"></div>
+  </div>
+  <script>
+    const lightFileInput = document.getElementById('lightFile');
+    const darkFileInput = document.getElementById('darkFile');
+    const primitiveFileInput = document.getElementById('primitiveFile');
+    const semanticFileInput = document.getElementById('semanticFile');
+    const createButton = document.getElementById('createButton');
+    const createFontStylesButton = document.getElementById('createFontStylesButton');
+    const testButton = document.getElementById('testButton');
+    const statusDiv = document.getElementById('status');
+    const testResultsDiv = document.getElementById('testResults');
+
+    let lightData = null;
+    let darkData = null;
+    let primitiveData = null;
+    let semanticData = null;
+
+    function updateButtonState() {
+      createButton.disabled = !(lightData && darkData);
+      createFontStylesButton.disabled = !semanticData;
+    }
+
+    function showStatus(message, type = '') {
+      statusDiv.textContent = message;
+      statusDiv.className = `status ${type}`;
+    }
+
+    lightFileInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          try {
+            lightData = JSON.parse(event.target.result);
+            showStatus('Light theme loaded', 'success');
+            updateButtonState();
+          } catch (error) {
+            showStatus('Error parsing Light JSON: ' + error.message, 'error');
+            lightData = null;
+            updateButtonState();
+          }
+        };
+        reader.readAsText(file);
+      }
+    });
+
+    darkFileInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          try {
+            darkData = JSON.parse(event.target.result);
+            showStatus('Dark theme loaded', 'success');
+            updateButtonState();
+          } catch (error) {
+            showStatus('Error parsing Dark JSON: ' + error.message, 'error');
+            darkData = null;
+            updateButtonState();
+          }
+        };
+        reader.readAsText(file);
+      }
+    });
+
+    primitiveFileInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          try {
+            primitiveData = JSON.parse(event.target.result);
+            showStatus('Primitive tokens loaded', 'success');
+          } catch (error) {
+            showStatus('Error parsing Primitive JSON: ' + error.message, 'error');
+            primitiveData = null;
+          }
+        };
+        reader.readAsText(file);
+      }
+    });
+
+    semanticFileInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          try {
+            semanticData = JSON.parse(event.target.result);
+            showStatus('Semantic.json loaded', 'success');
+            updateButtonState();
+          } catch (error) {
+            showStatus('Error parsing Semantic JSON: ' + error.message, 'error');
+            semanticData = null;
+            updateButtonState();
+          }
+        };
+        reader.readAsText(file);
+      }
+    });
+
+    createButton.addEventListener('click', () => {
+      if (lightData && darkData) {
+        showStatus('Creating variables...', '');
+        createButton.disabled = true;
+        parent.postMessage({
+          pluginMessage: {
+            type: 'create-variables',
+            lightData,
+            darkData,
+            primitiveData
+          }
+        }, '*');
+      }
+    });
+
+    createFontStylesButton.addEventListener('click', () => {
+      console.log('=== BUTTON CLICKED ===');
+      console.log('semanticData:', semanticData ? 'PRESENT' : 'MISSING');
+      console.log('primitiveData:', primitiveData ? 'PRESENT' : 'MISSING');
+      
+      if (!semanticData) {
+        showStatus('Please upload Semantic.json first', 'error');
+        return;
+      }
+      
+      showStatus('Creating font styles from Semantic.json...', 'processing');
+      createFontStylesButton.disabled = true;
+      createFontStylesButton.textContent = 'Processing...';
+      
+      console.log('Sending message to plugin...');
+      const message = {
+        type: 'create-font-styles',
+        semanticData,
+        primitiveData
+      };
+      console.log('Message being sent:', {
+        type: message.type,
+        hasSemanticData: !!message.semanticData,
+        hasPrimitiveData: !!message.primitiveData,
+        semanticDataKeys: message.semanticData ? Object.keys(message.semanticData).slice(0, 5) : []
+      });
+      
+      try {
+        parent.postMessage({
+          pluginMessage: message
+        }, '*');
+        console.log('Message sent successfully');
+      } catch (error) {
+        console.error('Error sending message:', error);
+        showStatus('Error sending message: ' + error.message, 'error');
+        createFontStylesButton.disabled = false;
+        createFontStylesButton.textContent = 'Create Font Styles from Semantic.json';
+      }
+    });
+
+    testButton.addEventListener('click', () => {
+      showStatus('Testing variable attachment...', '');
+      testResultsDiv.style.display = 'none';
+      parent.postMessage({
+        pluginMessage: {
+          type: 'test-attach-variables'
+        }
+      }, '*');
+    });
+
+    // Listen for messages from the plugin code
+    window.addEventListener('message', (event) => {
+      if (event.data.pluginMessage) {
+        const { type, message, error, results, logs } = event.data.pluginMessage;
+        if (type === 'status') {
+          const statusType = error ? 'error' : (message.includes('Processing') || message.includes('Scanning') || message.includes('Extracting') ? 'processing' : 'success');
+          showStatus(message, statusType);
+          
+          // Show logs if available
+          if (logs && logs.length > 0) {
+            const logsHtml = '<div style="font-size: 10px; color: #666; margin-top: 8px; max-height: 300px; overflow-y: auto; font-family: monospace; background: #f5f5f5; padding: 8px; border-radius: 4px; white-space: pre-wrap;"><strong>Logs:</strong><br>' + logs.join('<br>') + '</div>';
+            testResultsDiv.innerHTML = logsHtml;
+            testResultsDiv.style.display = 'block';
+          }
+          
+          // Re-enable buttons when processing is complete (not during progress updates)
+          if (!message.includes('Processing') && !message.includes('Scanning') && !message.includes('Extracting')) {
+            createButton.disabled = false;
+            createFontStylesButton.disabled = false;
+            createFontStylesButton.textContent = 'Create Font Styles from Semantic.json';
+          }
+        } else if (type === 'test-result') {
+          showStatus(message, error ? 'error' : 'success');
+          if (results && results.length > 0) {
+            testResultsDiv.innerHTML = '<strong>Test Results:</strong><br>' + results.join('<br>');
+            testResultsDiv.style.display = 'block';
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+

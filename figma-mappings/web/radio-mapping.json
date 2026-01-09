@@ -1,0 +1,525 @@
+{
+  "component": "radio",
+  "version": "1.0.0",
+  "description": "Figma mapping for radio component tokens",
+  "tokens": {
+    "radio.container.size.3xs": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{size.2[5]}",
+      "description": "10px radio button container",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.container.size.2xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.3}",
+      "description": "12px radio button container",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.container.size.xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.3[5]}",
+      "description": "14px radio button container",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.container.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.4}",
+      "description": "16px radio button container",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.container.size.md": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.4[5]}",
+      "description": "18px radio button container",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.container.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.5}",
+      "description": "20px radio button container",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.container.border.radius.3xs": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular border radius for radio button",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "radio.container.border.radius.2xs": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular border radius for radio button",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "radio.container.border.radius.xs": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular border radius for radio button",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "radio.container.border.radius.sm": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular border radius for radio button",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "radio.container.border.radius.md": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular border radius for radio button",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "radio.container.border.radius.lg": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular border radius for radio button",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "radio.container.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Radio button border width",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.check.size.3xs": {
+      "value": "3.75px",
+      "type": "dimension",
+      "reference": "{size.0[75]}",
+      "description": "3.75px inner check circle",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.check.size.2xs": {
+      "value": "4.5px",
+      "type": "dimension",
+      "reference": "{size.1[25]}",
+      "description": "4.5px inner check circle",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.check.size.xs": {
+      "value": "5.25px",
+      "type": "dimension",
+      "reference": "{size.1[25]}",
+      "description": "5.25px inner check circle",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.check.size.sm": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{size.1[5]}",
+      "description": "6px inner check circle",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.check.size.md": {
+      "value": "7.2px",
+      "type": "dimension",
+      "reference": "{size.1[75]}",
+      "description": "7.2px inner check circle",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.check.size.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{size.2}",
+      "description": "8px inner check circle",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.background.unchecked.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Default unchecked radio background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.background.unchecked.hover": {
+      "value": "{color.background.primary.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.1}",
+      "description": "Hover state unchecked radio background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.background.unchecked.focused": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Focused state unchecked radio background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.background.unchecked.disabled": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Disabled unchecked radio background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.background.checked.default": {
+      "value": "{color.background.primary.default}",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Default checked radio background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.background.checked.hover": {
+      "value": "{color.background.primary.intense.0}",
+      "type": "color",
+      "reference": "{color.background.primary.intense.0}",
+      "description": "Hover state checked radio background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.background.checked.focused": {
+      "value": "{color.background.primary.default}",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Focused state checked radio background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.background.checked.disabled": {
+      "value": "{color.background.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.moderate.0}",
+      "description": "Disabled checked radio background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.border.unchecked.default": {
+      "value": "{color.border.neutral.moderate.1}",
+      "type": "color",
+      "reference": "{color.border.neutral.moderate.1}",
+      "description": "Default unchecked radio border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.border.unchecked.hover": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "Hover state unchecked radio border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.border.unchecked.focused": {
+      "value": "{color.border.primary.moderate.1}",
+      "type": "color",
+      "reference": "{color.border.primary.moderate.1}",
+      "description": "Focused state unchecked radio border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.border.unchecked.disabled": {
+      "value": "{color.border.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.neutral.moderate.0}",
+      "description": "Disabled unchecked radio border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.border.unchecked.error": {
+      "value": "{color.border.error.default}",
+      "type": "color",
+      "reference": "{color.border.error.default}",
+      "description": "Error state unchecked radio border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.border.checked.default": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "Default checked radio border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.border.checked.hover": {
+      "value": "{color.border.primary.intense.0}",
+      "type": "color",
+      "reference": "{color.border.primary.intense.0}",
+      "description": "Hover state checked radio border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.border.checked.focused": {
+      "value": "{color.border.primary.moderate.1}",
+      "type": "color",
+      "reference": "{color.border.primary.moderate.1}",
+      "description": "Focused state checked radio border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.border.checked.disabled": {
+      "value": "{color.border.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.neutral.moderate.0}",
+      "description": "Disabled checked radio border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.border.checked.error": {
+      "value": "{color.border.error.default}",
+      "type": "color",
+      "reference": "{color.border.error.default}",
+      "description": "Error state checked radio border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "radio.check-mark.color.default": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Default check mark color",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "radio.check-mark.color.disabled": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "Disabled check mark color",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "radio.focus.outline.color": {
+      "value": "{color.border.primary.subtle.1}",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.1}",
+      "description": "Focus outline color for radio button",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "radio.focus.outline.width.3xs": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{spacing.0[5]}",
+      "description": "2px focus outline for 3xs radio",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.focus.outline.width.2xs": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{spacing.0[5]}",
+      "description": "2px focus outline for 2xs radio",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.focus.outline.width.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "4px focus outline for xs radio",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.focus.outline.width.sm": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "4px focus outline for sm radio",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.focus.outline.width.md": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "4px focus outline for md radio",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "radio.focus.outline.width.lg": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "4px focus outline for lg radio",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

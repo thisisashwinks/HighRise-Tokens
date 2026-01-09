@@ -1,0 +1,553 @@
+{
+  "component": "pagination",
+  "version": "1.0.0",
+  "description": "Figma mapping for pagination component tokens",
+  "tokens": {
+    "pagination.color.rows-per-page.label.default": {
+      "value": "{color.text.primary.body.1}",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Pagination 'Rows per page' label text color - standard body text for good readability",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Rows per page dropdown default background - white for clear contrast",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.background.hover": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Rows per page dropdown hover background - light gray for feedback",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.background.focused": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Rows per page dropdown focused background - white",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.background.disabled": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Rows per page dropdown disabled background - light gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.border.default": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Rows per page dropdown default border - standard neutral border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.border.hover": {
+      "value": "{color.border.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.moderate.2}",
+      "description": "Rows per page dropdown hover border - darker gray for emphasis",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.border.focused": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "Rows per page dropdown focused border - primary blue for focus indication",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.border.disabled": {
+      "value": "{color.border.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.2}",
+      "description": "Rows per page dropdown disabled border - light gray",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.text.default": {
+      "value": "{color.text.neutral.title.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Rows per page dropdown default text - dark for readability",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.text.disabled": {
+      "value": "{color.text.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.text.neutral.inactive}",
+      "description": "Rows per page dropdown disabled text - muted gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Rows per page dropdown chevron icon - medium gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.icon.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Rows per page dropdown hover chevron icon - medium gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.icon.focused": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Rows per page dropdown focused chevron icon - medium gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination.color.rows-per-page.dropdown.icon.disabled": {
+      "value": "{color.icon.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Rows per page dropdown disabled chevron icon - light gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination.color.item-range.text.default": {
+      "value": "{color.text.primary.body.1}",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Item range text color (e.g., '1-20 of 212') - standard body text for clarity",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "pagination.color.container.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Pagination container background - transparent to inherit from parent context",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination.typography.rows-per-page.label.md": {
+      "value": {
+        "size": "13px",
+        "weight": "medium"
+      },
+      "type": "typography",
+      "reference": "{font.body.medium.md}",
+      "description": "13px medium weight font for medium 'Rows per page' label",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "pagination.typography.rows-per-page.label.sm": {
+      "value": {
+        "size": "11px",
+        "weight": "medium"
+      },
+      "type": "typography",
+      "reference": "{font.body.medium.xs}",
+      "description": "11px medium weight font for small 'Rows per page' label",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "pagination.typography.rows-per-page.dropdown.md": {
+      "value": {
+        "size": "14px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.lg}",
+      "description": "14px regular weight font for medium rows per page dropdown value",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "pagination.typography.rows-per-page.dropdown.sm": {
+      "value": {
+        "size": "14px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.lg}",
+      "description": "14px regular weight font for small rows per page dropdown value",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "pagination.typography.item-range.md": {
+      "value": {
+        "size": "13px",
+        "weight": "medium"
+      },
+      "type": "typography",
+      "reference": "{font.body.medium.md}",
+      "description": "13px medium weight font for medium item range text (e.g., '1-20 of 212')",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "pagination.typography.item-range.sm": {
+      "value": {
+        "size": "11px",
+        "weight": "medium"
+      },
+      "type": "typography",
+      "reference": "{font.body.medium.xs}",
+      "description": "11px medium weight font for small item range text",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "pagination.border.radius.dropdown": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.3xs}",
+      "description": "4px border radius for rows per page dropdown",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "pagination.border.width.default": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "1px border width for pagination elements",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination.spacing.gap.main.md": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{gap.4}",
+      "description": "16px gap between rows-per-page section and pagination controls (medium size)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "pagination.spacing.gap.main.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{gap.4}",
+      "description": "16px gap between rows-per-page section and pagination controls (small size)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "pagination.spacing.gap.rows-per-page.md": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "4px gap between elements within rows-per-page section (medium size)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "pagination.spacing.gap.rows-per-page.sm": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "4px gap between elements within rows-per-page section (small size)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "pagination.spacing.padding.container.x.md": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": null,
+      "description": "No horizontal padding for medium pagination container - relies on parent spacing",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination.spacing.padding.container.x.sm": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": null,
+      "description": "No horizontal padding for small pagination container - relies on parent spacing",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination.spacing.padding.container.y.md": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": null,
+      "description": "No vertical padding for medium pagination container - relies on parent spacing",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination.spacing.padding.container.y.sm": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": null,
+      "description": "No vertical padding for small pagination container - relies on parent spacing",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination.container.rows-per-page.dropdown.width.md": {
+      "value": "64px",
+      "type": "dimension",
+      "reference": null,
+      "description": "64px width for medium rows per page dropdown (accommodates typical values like '10', '20', '50')",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination.container.rows-per-page.dropdown.width.sm": {
+      "value": "56px",
+      "type": "dimension",
+      "reference": null,
+      "description": "56px width for small rows per page dropdown",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination.container.rows-per-page.dropdown.height.md": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "32px height for medium rows per page dropdown",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination.container.rows-per-page.dropdown.height.sm": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "24px height for small rows per page dropdown",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination.container.rows-per-page.dropdown.padding.x.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "8px horizontal padding for medium rows per page dropdown",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination.container.rows-per-page.dropdown.padding.x.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "8px horizontal padding for small rows per page dropdown",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination.container.rows-per-page.dropdown.padding.y.md": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.4xs}",
+      "description": "6px vertical padding for medium rows per page dropdown",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination.container.rows-per-page.dropdown.padding.y.sm": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.4xs}",
+      "description": "6px vertical padding for small rows per page dropdown",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination.container.height.md": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "32px minimum height for medium pagination container (aligns with button heights)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination.container.height.sm": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "24px minimum height for small pagination container (aligns with button heights)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination.icon.dropdown.size.md": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "16px chevron icon size for medium rows per page dropdown",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "pagination.icon.dropdown.size.sm": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "12px chevron icon size for small rows per page dropdown",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "pagination.effects.dropdown.focus.ring": {
+      "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.primary.blue.100}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Focus ring for rows per page dropdown - primary blue glow",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination.effects.dropdown.shadow": {
+      "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Subtle shadow for rows per page dropdown",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

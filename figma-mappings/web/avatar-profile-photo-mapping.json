@@ -1,0 +1,385 @@
+{
+  "component": "avatar-profile-photo",
+  "version": "1.0.0",
+  "description": "Figma mapping for avatar-profile-photo component tokens",
+  "tokens": {
+    "avatar-profile-photo.container.background.color.text-type": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Background color for text/initials placeholder",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.background.color.image": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Background color when displaying image",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.background.color.placeholder": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Background color for user icon placeholder",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.border.radius.sm": {
+      "value": "90px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Border radius for small avatar profile photo (90px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.border.radius.md": {
+      "value": "144px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Border radius for medium avatar profile photo (144px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.border.radius.lg": {
+      "value": "346px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Border radius for large avatar profile photo (346px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.border.width.sm": {
+      "value": "{border.width.0[75]}",
+      "type": "dimension",
+      "reference": "{border.width.0[75]}",
+      "description": "Border width for small avatar profile photo",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.border.width.md": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.width.lg}",
+      "description": "Border width for medium avatar profile photo",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.border.width.lg": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.width.lg}",
+      "description": "Border width for large avatar profile photo",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.border.color": {
+      "value": "{color.border.neutral.base}",
+      "type": "color",
+      "reference": "{color.border.neutral.base}",
+      "description": "White border color around avatar profile photo",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.size.sm": {
+      "value": "72px",
+      "type": "dimension",
+      "reference": "{size.18}",
+      "description": "Size for small avatar profile photo (72px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.size.md": {
+      "value": "96px",
+      "type": "dimension",
+      "reference": "{size.24}",
+      "description": "Size for medium avatar profile photo (96px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.container.size.lg": {
+      "value": "160px",
+      "type": "dimension",
+      "reference": "{size.40}",
+      "description": "Size for large avatar profile photo (160px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.text.color": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Text color for initials (gray-600)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "avatar-profile-photo.text.typography.sm": {
+      "value": {
+        "size": "30px",
+        "weight": "Display"
+      },
+      "type": "typography",
+      "reference": "{font.heading.medium.h4}",
+      "description": "Typography for small size initials (30px Display Medium)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar-profile-photo.text.typography.md": {
+      "value": {
+        "size": "36px",
+        "weight": "Display"
+      },
+      "type": "typography",
+      "reference": "{font.heading.medium.h3}",
+      "description": "Typography for medium size initials (36px Display Medium)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar-profile-photo.text.typography.lg": {
+      "value": {
+        "size": "60px",
+        "weight": "Display"
+      },
+      "type": "typography",
+      "reference": "{font.heading.medium.h1}",
+      "description": "Typography for large size initials (60px Display Medium)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar-profile-photo.placeholder-icon.color": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Color for user placeholder icon",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "avatar-profile-photo.placeholder-icon.size.sm": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.icon.3xl}",
+      "description": "Icon size for small avatar profile photo (36px)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar-profile-photo.placeholder-icon.size.md": {
+      "value": "48px",
+      "type": "dimension",
+      "reference": "{size.icon.12}",
+      "description": "Icon size for medium avatar profile photo (48px)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar-profile-photo.placeholder-icon.size.lg": {
+      "value": "80px",
+      "type": "dimension",
+      "reference": "{size.icon.20}",
+      "description": "Icon size for large avatar profile photo (80px)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar-profile-photo.verified-tick.size.sm": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Size of verified tick badge for small avatar (20px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.verified-tick.size.md": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "Size of verified tick badge for medium avatar (24px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.verified-tick.size.lg": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.icon.2xl}",
+      "description": "Size of verified tick badge for large avatar (32px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "avatar-profile-photo.verified-tick.position.sm.bottom": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{position.y.0}",
+      "description": "Bottom position for verified tick in small size (0px from edge)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-profile-photo.verified-tick.position.sm.right": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{position.x.0}",
+      "description": "Right position for verified tick in small size (0px from edge)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-profile-photo.verified-tick.position.md.bottom": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{position.y.0[5]}",
+      "description": "Bottom position for verified tick in medium size (2px from edge)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-profile-photo.verified-tick.position.md.right": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{position.x.0[5]}",
+      "description": "Right position for verified tick in medium size (2px from edge)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-profile-photo.verified-tick.position.lg.bottom": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{position.y.1}",
+      "description": "Bottom position for verified tick in large size (4px from edge)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-profile-photo.verified-tick.position.lg.right": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{position.x.1}",
+      "description": "Right position for verified tick in large size (4px from edge)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-profile-photo.image.fit": {
+      "value": "cover",
+      "type": "string",
+      "reference": null,
+      "description": "Object fit for profile photo image (fills container while maintaining aspect ratio)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar-profile-photo.image.position": {
+      "value": "center",
+      "type": "string",
+      "reference": null,
+      "description": "Object position for profile photo image",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

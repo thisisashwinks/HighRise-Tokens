@@ -1,0 +1,1263 @@
+{
+  "component": "time-picker",
+  "version": "1.0.0",
+  "description": "Figma mapping for time-picker component tokens",
+  "tokens": {
+    "time-picker.time-input-field.height.3xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Time input field height for 3xs size (24px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.height.2xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Time input field height for 2xs size (28px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.height.xs": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "Time input field height for xs size (32px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.height.sm": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.height.sm}",
+      "description": "Time input field height for sm size (36px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.height.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "Time input field height for md size (40px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.height.lg": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{size.height.lg}",
+      "description": "Time input field height for lg size (44px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.border.radius": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{border.radius.none}",
+      "description": "Time input field border radius (0px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.padding": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.none",
+      "description": "Time input field horizontal padding (0px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.time-input-field.gap.between-elements": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "Gap between clock icon and first time digit (8px)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.gap.between-digits": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Gap between time digits and colons (4px)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.clock-icon.size.3xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Clock icon size for 3xs (14px)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "time-picker.time-input-field.clock-icon.size.2xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Clock icon size for 2xs (14px)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "time-picker.time-input-field.clock-icon.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Clock icon size for xs (16px)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "time-picker.time-input-field.clock-icon.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Clock icon size for sm (16px)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "time-picker.time-input-field.clock-icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Clock icon size for md (20px)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "time-picker.time-input-field.clock-icon.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Clock icon size for lg (20px)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "time-picker.time-input-field.clock-icon.color.default": {
+      "value": "{color.icon.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.0}",
+      "description": "Clock icon color in default state (gray-500)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "time-picker.time-input-field.clock-icon.color.disabled": {
+      "value": "#D0D5DD",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Clock icon color in disabled state (gray-300 / #D0D5DD)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "time-picker.time-input-field.time-text.typography.3xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Time text typography for 3xs size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.time-input-field.time-text.typography.2xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Time text typography for 2xs size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.time-input-field.time-text.typography.xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Time text typography for xs size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.time-input-field.time-text.typography.sm": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Time text typography for sm size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.time-input-field.time-text.typography.md": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Time text typography for md size (16px / 24px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.time-input-field.time-text.typography.lg": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Time text typography for lg size (16px / 24px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.time-input-field.time-text.color.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Time text color in default state (gray-500 / #667085)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "time-picker.time-input-field.time-text.color.disabled": {
+      "value": "#98A2B3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Time text color in disabled state (gray-400 / #98A2B3)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "time-picker.time-input-field.color.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Time input field background in default state (white)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.color.background.disabled": {
+      "value": "#F9FAFB",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Time input field background in disabled state (gray-50 / #F9FAFB)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.color.border.default": {
+      "value": "#D0D5DD",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Time input field border in default state (gray-300 / #D0D5DD)",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.time-input-field.color.border.disabled": {
+      "value": "#D0D5DD",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Time input field border in disabled state (gray-300 / #D0D5DD)",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.height.3xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "AM/PM selector height for 3xs size (24px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.height.2xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "AM/PM selector height for 2xs size (28px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.height.xs": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "AM/PM selector height for xs size (32px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.height.sm": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.height.sm}",
+      "description": "AM/PM selector height for sm size (36px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.height.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "AM/PM selector height for md size (40px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.height.lg": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{size.height.lg}",
+      "description": "AM/PM selector height for lg size (44px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "AM/PM selector border width (1px) - applied to right, top, and bottom only",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.border.style": {
+      "value": "1px 1px 1px 0px",
+      "type": "string",
+      "reference": null,
+      "description": "Border style: right, top, bottom borders only (no left border)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.x.3xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "AM/PM selector horizontal padding for 3xs size (8px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.x.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "AM/PM selector horizontal padding for 2xs size (8px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.x.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "AM/PM selector horizontal padding for xs size (8px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.x.sm": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{padding.x.xs}",
+      "description": "AM/PM selector horizontal padding for sm size (12px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.x.md": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{padding.x.sm}",
+      "description": "AM/PM selector horizontal padding for md size (14px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.x.lg": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{padding.x.sm}",
+      "description": "AM/PM selector horizontal padding for lg size (14px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.y.3xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.4xs}",
+      "description": "AM/PM selector vertical padding for 3xs size (6px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.y.2xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.4xs}",
+      "description": "AM/PM selector vertical padding for 2xs size (6px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.y.xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.4xs}",
+      "description": "AM/PM selector vertical padding for xs size (6px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.y.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.3xs}",
+      "description": "AM/PM selector vertical padding for sm size (8px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.y.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.3xs}",
+      "description": "AM/PM selector vertical padding for md size (8px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.padding.y.lg": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{padding.y.2xs}",
+      "description": "AM/PM selector vertical padding for lg size (10px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.gap": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "Gap between AM/PM text and chevron icon (8px)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.text.typography.3xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "AM/PM text typography for 3xs size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.text.typography.2xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "AM/PM text typography for 2xs size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.text.typography.xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "AM/PM text typography for xs size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.text.typography.sm": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "AM/PM text typography for sm size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.text.typography.md": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "AM/PM text typography for md size (16px / 24px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.text.typography.lg": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "AM/PM text typography for lg size (16px / 24px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.text.color.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "AM/PM text color in default state (gray-500 / #667085)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "time-picker.am-pm-selector.text.color.disabled": {
+      "value": "#98A2B3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "AM/PM text color in disabled state (gray-400 / #98A2B3)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "time-picker.am-pm-selector.chevron.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.4xs}",
+      "description": "Chevron icon size for 3xs (12px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.chevron.size.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Chevron icon size for 2xs (16px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.chevron.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Chevron icon size for xs (16px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.chevron.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Chevron icon size for sm (16px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.chevron.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Chevron icon size for md (20px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.chevron.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Chevron icon size for lg (20px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.chevron.color.default": {
+      "value": "{color.icon.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.0}",
+      "description": "Chevron icon color in default state (gray-500)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.chevron.color.disabled": {
+      "value": "#D0D5DD",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Chevron icon color in disabled state (gray-300 / #D0D5DD)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.am-pm-selector.color.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "AM/PM selector background in default state (white)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.color.background.disabled": {
+      "value": "#F9FAFB",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "AM/PM selector background in disabled state (gray-50 / #F9FAFB)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.color.border.default": {
+      "value": "#D0D5DD",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "AM/PM selector border in default state (gray-300 / #D0D5DD)",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.am-pm-selector.color.border.disabled": {
+      "value": "#D0D5DD",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "AM/PM selector border in disabled state (gray-300 / #D0D5DD)",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.height.3xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Timezone selector height for 3xs size (24px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.height.2xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Timezone selector height for 2xs size (28px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.height.xs": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "Timezone selector height for xs size (32px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.height.sm": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.height.sm}",
+      "description": "Timezone selector height for sm size (36px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.height.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "Timezone selector height for md size (40px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.height.lg": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{size.height.lg}",
+      "description": "Timezone selector height for lg size (44px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Timezone selector border width (1px) - applied to right, top, and bottom only",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.border.style": {
+      "value": "1px 1px 1px 0px",
+      "type": "string",
+      "reference": null,
+      "description": "Border style: right, top, bottom borders only (no left border)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.border.radius.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.3xs}",
+      "description": "Timezone selector right border radius for 3xs size (4px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.border.radius.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.2xs}",
+      "description": "Timezone selector right border radius for 2xs size (4px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.border.radius.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "Timezone selector right border radius for xs size (4px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.border.radius.sm": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{border.radius.1[5]}",
+      "description": "Timezone selector right border radius for sm size (6px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.border.radius.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.md}",
+      "description": "Timezone selector right border radius for md size (8px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.border.radius.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.lg}",
+      "description": "Timezone selector right border radius for lg size (8px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.padding.x.3xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Timezone selector horizontal padding for 3xs size (8px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.padding.x.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Timezone selector horizontal padding for 2xs size (8px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.padding.x.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Timezone selector horizontal padding for xs size (8px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.padding.x.sm": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{padding.x.xs}",
+      "description": "Timezone selector horizontal padding for sm size (12px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.padding.x.md": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{padding.x.sm}",
+      "description": "Timezone selector horizontal padding for md size (14px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.padding.x.lg": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{padding.x.sm}",
+      "description": "Timezone selector horizontal padding for lg size (14px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.padding.y.3xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.4xs}",
+      "description": "Timezone selector vertical padding for 3xs size (6px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.padding.y.2xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.4xs}",
+      "description": "Timezone selector vertical padding for 2xs size (6px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.padding.y.xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.4xs}",
+      "description": "Timezone selector vertical padding for xs size (6px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.padding.y.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.3xs}",
+      "description": "Timezone selector vertical padding for sm size (8px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.padding.y.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.3xs}",
+      "description": "Timezone selector vertical padding for md size (8px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.padding.y.lg": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{padding.y.2xs}",
+      "description": "Timezone selector vertical padding for lg size (10px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.gap": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "Gap between timezone text and chevron icon (8px)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.text.typography.3xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Timezone text typography for 3xs size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.text.typography.2xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Timezone text typography for 2xs size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.text.typography.xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Timezone text typography for xs size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.text.typography.sm": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Timezone text typography for sm size (14px / 20px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.text.typography.md": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Timezone text typography for md size (16px / 24px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.text.typography.lg": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Timezone text typography for lg size (16px / 24px line-height)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.text.color.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Timezone text color in default state (gray-500 / #667085)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "time-picker.timezone-selector.text.color.disabled": {
+      "value": "#98A2B3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Timezone text color in disabled state (gray-400 / #98A2B3)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "time-picker.timezone-selector.chevron.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.4xs}",
+      "description": "Chevron icon size for 3xs (12px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.chevron.size.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Chevron icon size for 2xs (16px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.chevron.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Chevron icon size for xs (16px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.chevron.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Chevron icon size for sm (16px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.chevron.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Chevron icon size for md (20px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.chevron.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Chevron icon size for lg (20px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.chevron.color.default": {
+      "value": "{color.icon.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.0}",
+      "description": "Chevron icon color in default state (gray-500)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.chevron.color.disabled": {
+      "value": "#D0D5DD",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Chevron icon color in disabled state (gray-300 / #D0D5DD)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "time-picker.timezone-selector.color.background.default": {
+      "value": "{color.background.primary.default}",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Timezone selector background in default state (white)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.color.background.disabled": {
+      "value": "#F9FAFB",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Timezone selector background in disabled state (gray-50 / #F9FAFB)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.color.border.default": {
+      "value": "#D0D5DD",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Timezone selector border in default state (gray-300 / #D0D5DD)",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.timezone-selector.color.border.disabled": {
+      "value": "#D0D5DD",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Timezone selector border in disabled state (gray-300 / #D0D5DD)",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "time-picker.shadow.default": {
+      "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Time picker default shadow for subtle depth",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

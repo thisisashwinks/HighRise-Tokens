@@ -1,0 +1,486 @@
+{
+  "component": "list-item",
+  "version": "1.0.0",
+  "description": "Figma mapping for list-item component tokens",
+  "tokens": {
+    "list-item.container.color.background": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Mobile list item container background - neutral/white - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "list-item.container.padding.horizontal": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.x.none}",
+      "description": "Mobile list item container horizontal padding - 0px",
+      "figma_property": {
+        "property": "paddingLeft",
+        "target": "container"
+      }
+    },
+    "list-item.container.padding.vertical": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "Mobile list item container vertical padding - 0px",
+      "figma_property": {
+        "property": "paddingTop",
+        "target": "container"
+      }
+    },
+    "list-item.gap.container": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{gap.2xl}",
+      "description": "Mobile list item gap between main sections (leading, content, trailing) - 12px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "list-item.gap.content": {
+      "value": "{gap.auto}",
+      "type": "dimension",
+      "reference": "{gap.auto}",
+      "description": "Mobile list item gap between content elements (text, tag, icon) - auto",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "list-item.gap.leading": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.sm}",
+      "description": "Mobile list item gap between leading content and main content - 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "list-item.gap.trailing": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.sm}",
+      "description": "Mobile list item gap between trailing action elements - 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "list-item.gap.main-label": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.sm}",
+      "description": "Mobile list item gap between main label, badge & icon - 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "list-item.gap.subtext": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{gap.none}",
+      "description": "Mobile list item gap between main content and subtext - 0px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "list-item.color.text.main-label": {
+      "value": "#344054",
+      "type": "color",
+      "reference": "{color.text.neutral.body.1}",
+      "description": "Mobile list item main label text color - neutral/gray-700 - #344054",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "list-item.color.text.subtext": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Mobile list item subtext color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "list-item.color.text.input-stepper": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Mobile list item input-stepper text color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "list-item.color.text.numeric-value.text": {
+      "value": "#344054",
+      "type": "color",
+      "reference": "{color.text.neutral.body.1}",
+      "description": "Mobile list item numeric value text color - neutral/gray-700 - #344054",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "list-item.color.text.numeric-value.supporting-text": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Mobile list item numeric value supporting text color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "list-item.color.icon.default": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Mobile list item default icon color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "list-item.color.divider": {
+      "value": "#eaecf0",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.2}",
+      "description": "Mobile list item divider color - neutral/gray-200 - #eaecf0",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "list-item.typography.main-label": {
+      "value": {
+        "size": "14px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.base}",
+      "description": "Mobile list item main label text typography - 14px semibold weight, 20px line height",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "list-item.typography.subtext": {
+      "value": {
+        "size": "12px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.sm}",
+      "description": "Mobile list item subtext typography - 12px regular weight, 17px line height",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "list-item.typography.input-stepper": {
+      "value": {
+        "size": "18px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.3xl}",
+      "description": "Mobile list item input-stepper typography - 18px semibold weight, 28px line height",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "list-item.typography.numeric-value.text": {
+      "value": {
+        "size": "14px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.base}",
+      "description": "Mobile list item numeric value text typography - 14px semibold weight, 20px line height",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "list-item.typography.numeric-value.supporting-text": {
+      "value": {
+        "size": "12px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.sm}",
+      "description": "Mobile list item numeric value unit typography - 12px regular weight, 17px line height",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "list-item.size.leading.avatar": {
+      "value": "48px",
+      "type": "dimension",
+      "reference": "{size.xl}",
+      "description": "Mobile list item leading avatar size - 48px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.leading.icon": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.icon.2xl}",
+      "description": "Mobile list item leading icon size - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "list-item.size.leading.featured-icon.container": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.md}",
+      "description": "Mobile list item leading featured icon container size - 40px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "list-item.size.leading.featured-icon.icon": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "Mobile list item leading featured icon icon size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "list-item.size.leading.image": {
+      "value": "48px",
+      "type": "dimension",
+      "reference": "{size.xl}",
+      "description": "Mobile list item leading image size - 48px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.content.icon": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.icon.sm}",
+      "description": "Mobile list item content icon size - 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "list-item.size.content.badge": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.height.4[5]}",
+      "description": "Mobile list item content badge(xs) height - 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "badge",
+        "also": "height"
+      }
+    },
+    "list-item.size.trailing.icon": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.icon.xl}",
+      "description": "Mobile list item trailing icon size - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "list-item.size.trailing.chevron": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.icon.xl}",
+      "description": "Mobile list item trailing chevron icon size - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.trailing.checkbox": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.3xs}",
+      "description": "Mobile list item trailing checkbox size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.trailing.radio": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.3xs}",
+      "description": "Mobile list item trailing radio size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.trailing.avatar": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.xs}",
+      "description": "Mobile list item trailing avatar(sm) size - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.trailing.input-stepper.container": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.xs}",
+      "description": "Mobile list item trailing input-stepper container size - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.trailing.input-stepper.icon": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.icon.sm}",
+      "description": "Mobile list item trailing input-stepper icon size - 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "list-item.size.trailing.height.button": {
+      "value": "48px",
+      "type": "dimension",
+      "reference": "{size.height.xl}",
+      "description": "Mobile list item trailing button(md) height - 48px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.trailing.height.toggle-ios": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Mobile list item trailing toggle-ios height - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.trailing.height.toggle-android": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Mobile list item trailing toggle-android height - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.trailing.height.tag": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Mobile list item trailing tag (lg) height - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.trailing.height.avatar-group": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Mobile list item trailing avatar-group height - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "list-item.size.trailing.height.tag-group": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Mobile list item trailing tag-group(xs) height - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

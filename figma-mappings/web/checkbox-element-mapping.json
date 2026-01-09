@@ -1,0 +1,518 @@
+{
+  "component": "checkbox",
+  "version": "1.0.0",
+  "description": "Figma mapping for checkbox component tokens",
+  "tokens": {
+    "checkbox.container.size.3xs": {
+      "value": "10",
+      "type": "number",
+      "reference": "{size.2[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "checkbox.container.size.2xs": {
+      "value": "12",
+      "type": "number",
+      "reference": "{size.3}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "checkbox.container.size.xs": {
+      "value": "14",
+      "type": "number",
+      "reference": "{size.3[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "checkbox.container.size.sm": {
+      "value": "16",
+      "type": "number",
+      "reference": "{size.4}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "checkbox.container.size.md": {
+      "value": "18",
+      "type": "number",
+      "reference": "{size.4[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "checkbox.container.size.lg": {
+      "value": "20",
+      "type": "number",
+      "reference": "{size.5}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "checkbox.container.border.radius.3xs": {
+      "value": "2",
+      "type": "number",
+      "reference": "{border.radius.0[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "checkbox.container.border.radius.2xs": {
+      "value": "2",
+      "type": "number",
+      "reference": "{border.radius.0[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "checkbox.container.border.radius.xs": {
+      "value": "2",
+      "type": "number",
+      "reference": "{border.radius.0[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "checkbox.container.border.radius.sm": {
+      "value": "4",
+      "type": "number",
+      "reference": "{border.radius.1}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "checkbox.container.border.radius.md": {
+      "value": "4",
+      "type": "number",
+      "reference": "{border.radius.1}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "checkbox.container.border.radius.lg": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{border.radius.1[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "checkbox.container.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "checkbox.background.unchecked.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.background.unchecked.hover": {
+      "value": "{color.background.primary.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.background.unchecked.focused": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.background.unchecked.disabled": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.background.checked.default": {
+      "value": "{color.background.primary.default}",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.background.checked.hover": {
+      "value": "{color.background.primary.moderate.1}",
+      "type": "color",
+      "reference": "{color.background.primary.moderate.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.background.checked.focused": {
+      "value": "{color.background.primary.default}",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.background.checked.disabled": {
+      "value": "{color.background.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.moderate.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.background.indeterminate.default": {
+      "value": "{color.background.primary.default}",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.background.indeterminate.hover": {
+      "value": "{color.background.primary.moderate.1}",
+      "type": "color",
+      "reference": "{color.background.primary.moderate.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.background.indeterminate.focused": {
+      "value": "{color.background.primary.default}",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.background.indeterminate.disabled": {
+      "value": "{color.background.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.moderate.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.unchecked.default": {
+      "value": "{color.border.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.neutral.moderate.0}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.unchecked.hover": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.unchecked.focused": {
+      "value": "{color.border.primary.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.unchecked.disabled": {
+      "value": "{color.border.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.unchecked.error": {
+      "value": "{color.border.error.moderate.1}",
+      "type": "color",
+      "reference": "{color.border.error.moderate.1}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.checked.default": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.checked.hover": {
+      "value": "{color.border.primary.moderate.1}",
+      "type": "color",
+      "reference": "{color.border.primary.moderate.1}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.checked.focused": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.checked.disabled": {
+      "value": "{color.border.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.checked.error": {
+      "value": "{color.border.error.moderate.1}",
+      "type": "color",
+      "reference": "{color.border.error.moderate.1}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.indeterminate.default": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.indeterminate.hover": {
+      "value": "{color.border.primary.moderate.1}",
+      "type": "color",
+      "reference": "{color.border.primary.moderate.1}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.indeterminate.focused": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.indeterminate.disabled": {
+      "value": "{color.border.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.border.indeterminate.error": {
+      "value": "{color.border.error.moderate.1}",
+      "type": "color",
+      "reference": "{color.border.error.moderate.1}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "checkbox.icon.check.color.default": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "checkbox.icon.check.color.disabled": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "checkbox.icon.indeterminate.color.default": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "checkbox.icon.indeterminate.color.disabled": {
+      "value": "{color.icon.neutral.base}",
+      "type": "color",
+      "reference": "{color.icon.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

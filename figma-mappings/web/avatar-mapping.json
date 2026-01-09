@@ -1,0 +1,749 @@
+{
+  "component": "avatar",
+  "version": "1.0.0",
+  "description": "Figma mapping for avatar component tokens",
+  "tokens": {
+    "avatar.container.background.color.text-type": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar.container.background.color.image": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "avatar.container.border.radius.rounded.3xs": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar.container.border.radius.rounded.2xs": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar.container.border.radius.rounded.xs": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar.container.border.radius.rounded.sm": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar.container.border.radius.rounded.md": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar.container.border.radius.rounded.lg": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar.container.border.radius.rounded.xl": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar.container.border.radius.rounded.2xl": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar.container.border.radius.square.3xs": {
+      "value": "{border.radius.0[25]}",
+      "type": "dimension",
+      "reference": "{border.radius.0[25]}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar.container.border.radius.square.2xs": {
+      "value": "2",
+      "type": "number",
+      "reference": "{border.radius.0[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.border.radius.square.xs": {
+      "value": "4",
+      "type": "number",
+      "reference": "{border.radius.1}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.border.radius.square.sm": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{border.radius.1[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "avatar.container.border.radius.square.md": {
+      "value": "8",
+      "type": "number",
+      "reference": "{border.radius.2}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.border.radius.square.lg": {
+      "value": "8",
+      "type": "number",
+      "reference": "{border.radius.2}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.border.radius.square.xl": {
+      "value": "8",
+      "type": "number",
+      "reference": "{border.radius.2}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.border.radius.square.2xl": {
+      "value": "8",
+      "type": "number",
+      "reference": "{border.radius.2}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.size.3xs": {
+      "value": "10",
+      "type": "number",
+      "reference": "{size.2[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.size.2xs": {
+      "value": "16",
+      "type": "number",
+      "reference": "{size.4}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.size.xs": {
+      "value": "24",
+      "type": "number",
+      "reference": "{size.6}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.size.sm": {
+      "value": "32",
+      "type": "number",
+      "reference": "{size.8}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.size.md": {
+      "value": "40",
+      "type": "number",
+      "reference": "{size.10}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.size.lg": {
+      "value": "48",
+      "type": "number",
+      "reference": "{size.12}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.size.xl": {
+      "value": "56",
+      "type": "number",
+      "reference": "{size.14}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.container.size.2xl": {
+      "value": "64",
+      "type": "number",
+      "reference": "{size.16}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.text.color": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "avatar.text.typography.3xs": {
+      "value": "{font.body.semibold.4xs}",
+      "type": "string",
+      "reference": "{font.body.semibold.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.text.typography.2xs": {
+      "value": "{font.body.semibold.4xs}",
+      "type": "string",
+      "reference": "{font.body.semibold.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.text.typography.xs": {
+      "value": "{font.body.medium.sm}",
+      "type": "string",
+      "reference": "{font.body.medium.sm}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.text.typography.sm": {
+      "value": "{font.body.semibold.lg}",
+      "type": "typography",
+      "reference": "{font.body.semibold.lg}",
+      "description": "",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar.text.typography.md": {
+      "value": "{font.body.semibold.2xl}",
+      "type": "string",
+      "reference": "{font.body.semibold.2xl}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.text.typography.lg": {
+      "value": "{font.body.semibold.3xl}",
+      "type": "typography",
+      "reference": "{font.body.semibold.3xl}",
+      "description": "",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar.text.typography.xl": {
+      "value": "{font.body.regular.4xl}",
+      "type": "typography",
+      "reference": "{font.body.regular.4xl}",
+      "description": "",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "avatar.text.typography.2xl": {
+      "value": "{font.heading.medium.h5}",
+      "type": "string",
+      "reference": "{font.heading.medium.h5}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.icon.color": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "avatar.icon.size.3xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{size.icon.6xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar.icon.size.2xs": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{size.icon.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar.icon.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar.icon.size.sm": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar.icon.size.md": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar.icon.size.lg": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.icon.xl}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar.icon.size.xl": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.icon.2xl}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar.icon.size.2xl": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.icon.2xl}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "avatar.status.position.company.xs.x": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{position.x.4}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.company.xs.y": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{position.y.4}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.company.sm.x": {
+      "value": "{position.x.5[5]}",
+      "type": "dimension",
+      "reference": "{position.x.5[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.company.sm.y": {
+      "value": "{position.y.5[5]}",
+      "type": "dimension",
+      "reference": "{position.y.5[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.company.md.x": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{position.x.7}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.company.md.y": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{position.y.7}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.company.lg.x": {
+      "value": "{position.x.8[5]}",
+      "type": "dimension",
+      "reference": "{position.x.8[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.company.lg.y": {
+      "value": "{position.y.8[5]}",
+      "type": "dimension",
+      "reference": "{position.y.8[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.company.xl.x": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{position.x.10}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.company.xl.y": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{position.y.10}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.company.2xl.x": {
+      "value": "{position.x.11[5]}",
+      "type": "dimension",
+      "reference": "{position.x.11[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.company.2xl.y": {
+      "value": "{position.y.11[5]}",
+      "type": "dimension",
+      "reference": "{position.y.11[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.xs.x": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{position.x.4[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.xs.y": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{position.y.4[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.sm.x": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{position.x.6}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.sm.y": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{position.y.6}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.md.x": {
+      "value": "{position.x.7[5]}",
+      "type": "dimension",
+      "reference": "{position.x.7[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.md.y": {
+      "value": "{position.y.7[5]}",
+      "type": "dimension",
+      "reference": "{position.y.7[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.lg.x": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{position.x.9}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.lg.y": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{position.y.9}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.xl.x": {
+      "value": "{position.x.10[5]}",
+      "type": "dimension",
+      "reference": "{position.x.10[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.xl.y": {
+      "value": "{position.y.10[5]}",
+      "type": "dimension",
+      "reference": "{position.y.10[5]}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.2xl.x": {
+      "value": "48px",
+      "type": "dimension",
+      "reference": "{position.x.12}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.status.position.online.2xl.y": {
+      "value": "48px",
+      "type": "dimension",
+      "reference": "{position.y.12}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "avatar.image.fit": {
+      "value": "fill",
+      "type": "string",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

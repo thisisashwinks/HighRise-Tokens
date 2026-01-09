@@ -1,0 +1,1050 @@
+{
+  "component": "input-form",
+  "version": "1.0.0",
+  "description": "Figma mapping for input-form component tokens",
+  "tokens": {
+    "input-form.border.radius.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.lg}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input-form.border.radius.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.lg}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input-form.border.radius.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input-form.border.radius.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input-form.border.radius.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input-form.border.radius.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input-form.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input-form.height.lg": {
+      "value": "{size.44}",
+      "type": "dimension",
+      "reference": "{size.44}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input-form.height.md": {
+      "value": "160",
+      "type": "number",
+      "reference": "{size.40}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.height.sm": {
+      "value": "144",
+      "type": "number",
+      "reference": "{size.36}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.height.xs": {
+      "value": "128",
+      "type": "number",
+      "reference": "{size.32}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.height.2xs": {
+      "value": "112",
+      "type": "number",
+      "reference": "{size.28}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.height.3xs": {
+      "value": "96",
+      "type": "number",
+      "reference": "{size.24}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.min-width": {
+      "value": "320",
+      "type": "number",
+      "reference": "{size.80}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.gap.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "input-form.gap.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "input-form.gap.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "input-form.gap.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "input-form.gap.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "input-form.gap.3xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "input-form.text.typography.lg": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.text.typography.md": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.text.typography.sm": {
+      "value": "{font.body.regular.md}",
+      "type": "string",
+      "reference": "{font.body.regular.md}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.text.typography.xs": {
+      "value": "{font.body.regular.xs}",
+      "type": "string",
+      "reference": "{font.body.regular.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.text.typography.2xs": {
+      "value": "{font.body.regular.2xs}",
+      "type": "string",
+      "reference": "{font.body.regular.2xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.text.typography.3xs": {
+      "value": "{font.body.regular.3xs}",
+      "type": "string",
+      "reference": "{font.body.regular.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.color.neutral.default.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.neutral.default.background.disabled": {
+      "value": "{color.background.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.background.neutral.inactive}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.neutral.default.border.default": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.neutral.default.border.hover": {
+      "value": "{color.border.neutral.moderate.0}",
+      "type": "color",
+      "reference": "{color.border.neutral.moderate.0}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.neutral.default.border.focused": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.neutral.default.border.disabled": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.neutral.default.text.default": {
+      "value": "{color.text.neutral.body.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.neutral.default.text.placeholder": {
+      "value": "{color.text.neutral.subtitle.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.neutral.default.text.disabled": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.neutral.default.focus.ring": {
+      "value": "{color.border.primary.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.color.success.default.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.success.default.background.disabled": {
+      "value": "{color.background.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.background.neutral.inactive}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.success.default.border.default": {
+      "value": "{color.border.success.default}",
+      "type": "color",
+      "reference": "{color.border.success.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.success.default.border.hover": {
+      "value": "{color.border.success.moderate.1}",
+      "type": "color",
+      "reference": "{color.border.success.moderate.1}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.success.default.border.focused": {
+      "value": "{color.border.success.default}",
+      "type": "color",
+      "reference": "{color.border.success.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.success.default.border.disabled": {
+      "value": "{color.border.success.default}",
+      "type": "color",
+      "reference": "{color.border.success.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.success.default.text.default": {
+      "value": "{color.text.neutral.body.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.success.default.text.placeholder": {
+      "value": "{color.text.neutral.subtitle.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.success.default.text.disabled": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.success.default.focus.ring": {
+      "value": "{color.border.success.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.success.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.color.error.default.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.error.default.background.disabled": {
+      "value": "{color.background.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.background.neutral.inactive}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.error.default.border.default": {
+      "value": "{color.border.error.default}",
+      "type": "color",
+      "reference": "{color.border.error.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.error.default.border.hover": {
+      "value": "{color.border.error.moderate.1}",
+      "type": "color",
+      "reference": "{color.border.error.moderate.1}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.error.default.border.focused": {
+      "value": "{color.border.error.default}",
+      "type": "color",
+      "reference": "{color.border.error.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.error.default.border.disabled": {
+      "value": "{color.border.error.default}",
+      "type": "color",
+      "reference": "{color.border.error.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.error.default.text.default": {
+      "value": "{color.text.neutral.body.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.error.default.text.placeholder": {
+      "value": "{color.text.neutral.subtitle.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.error.default.text.disabled": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.error.default.focus.ring": {
+      "value": "{color.border.error.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.error.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.color.warning.default.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.warning.default.background.disabled": {
+      "value": "{color.background.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.background.neutral.inactive}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.warning.default.border.default": {
+      "value": "{color.border.warning.default}",
+      "type": "color",
+      "reference": "{color.border.warning.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.warning.default.border.hover": {
+      "value": "{color.border.warning.moderate.1}",
+      "type": "color",
+      "reference": "{color.border.warning.moderate.1}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.warning.default.border.focused": {
+      "value": "{color.border.warning.default}",
+      "type": "color",
+      "reference": "{color.border.warning.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.warning.default.border.disabled": {
+      "value": "{color.border.warning.default}",
+      "type": "color",
+      "reference": "{color.border.warning.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input-form.color.warning.default.text.default": {
+      "value": "{color.text.neutral.body.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.warning.default.text.placeholder": {
+      "value": "{color.text.neutral.subtitle.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.warning.default.text.disabled": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.color.warning.default.focus.ring": {
+      "value": "{color.border.warning.subtle.2}",
+      "type": "color",
+      "reference": "{color.border.warning.subtle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.label.text.typography.lg": {
+      "value": "{font.body.medium.base}",
+      "type": "string",
+      "reference": "{font.body.medium.base}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.label.text.typography.md": {
+      "value": "{font.body.medium.base}",
+      "type": "string",
+      "reference": "{font.body.medium.base}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.label.text.typography.sm": {
+      "value": "{font.body.medium.md}",
+      "type": "string",
+      "reference": "{font.body.medium.md}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.label.text.typography.xs": {
+      "value": "{font.body.medium.xs}",
+      "type": "string",
+      "reference": "{font.body.medium.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.label.text.typography.2xs": {
+      "value": "{font.body.medium.2xs}",
+      "type": "string",
+      "reference": "{font.body.medium.2xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.label.text.typography.3xs": {
+      "value": "{font.body.medium.3xs}",
+      "type": "string",
+      "reference": "{font.body.medium.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.label.text.color.default": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.label.text.color.disabled": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.label.spacing.bottom": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.helper-text.text.typography.lg": {
+      "value": "{font.body.regular.md}",
+      "type": "string",
+      "reference": "{font.body.regular.md}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.helper-text.text.typography.md": {
+      "value": "{font.body.regular.md}",
+      "type": "string",
+      "reference": "{font.body.regular.md}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.helper-text.text.typography.sm": {
+      "value": "{font.body.regular.xs}",
+      "type": "string",
+      "reference": "{font.body.regular.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.helper-text.text.typography.xs": {
+      "value": "{font.body.regular.2xs}",
+      "type": "string",
+      "reference": "{font.body.regular.2xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.helper-text.text.typography.2xs": {
+      "value": "{font.body.regular.3xs}",
+      "type": "string",
+      "reference": "{font.body.regular.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.helper-text.text.typography.3xs": {
+      "value": "{font.body.regular.4xs}",
+      "type": "string",
+      "reference": "{font.body.regular.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.helper-text.text.color.neutral": {
+      "value": "{color.text.neutral.subtitle.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.helper-text.text.color.success": {
+      "value": "{color.text.success.body.2}",
+      "type": "color",
+      "reference": "{color.text.success.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.helper-text.text.color.error": {
+      "value": "{color.text.error.body.2}",
+      "type": "color",
+      "reference": "{color.text.error.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.helper-text.text.color.warning": {
+      "value": "{color.text.warning.body.2}",
+      "type": "color",
+      "reference": "{color.text.warning.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.helper-text.text.color.disabled": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form.helper-text.spacing.top": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.action.button.typography.lg": {
+      "value": "{font.body.semibold.base}",
+      "type": "string",
+      "reference": "{font.body.semibold.base}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.action.button.typography.md": {
+      "value": "{font.body.semibold.md}",
+      "type": "string",
+      "reference": "{font.body.semibold.md}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.action.button.typography.sm": {
+      "value": "{font.body.semibold.md}",
+      "type": "string",
+      "reference": "{font.body.semibold.md}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.action.button.typography.xs": {
+      "value": "{font.body.semibold.xs}",
+      "type": "string",
+      "reference": "{font.body.semibold.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.action.button.typography.2xs": {
+      "value": "{font.body.semibold.2xs}",
+      "type": "string",
+      "reference": "{font.body.semibold.2xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.action.button.typography.3xs": {
+      "value": "{font.body.semibold.3xs}",
+      "type": "string",
+      "reference": "{font.body.semibold.3xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.action.button.color.primary": {
+      "value": "{color.text.primary.body.2}",
+      "type": "color",
+      "reference": "{color.text.primary.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.action.button.color.neutral": {
+      "value": "{color.text.neutral.body.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form.action.spacing.left": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

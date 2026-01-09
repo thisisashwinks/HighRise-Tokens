@@ -1,0 +1,219 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2025-12-08T16:08:18.761173",
+  "total_mappings": 52,
+  "mappings": {
+    "web": [
+      {
+        "component": "tag",
+        "file": "web/tag-mapping.json"
+      },
+      {
+        "component": "avatar-group",
+        "file": "web/avatar-group-mapping.json"
+      },
+      {
+        "component": "tag-close",
+        "file": "web/tag-close-mapping.json"
+      },
+      {
+        "component": "tag-group",
+        "file": "web/tag-group-mapping.json"
+      },
+      {
+        "component": "dropdown-menu",
+        "file": "web/dropdown-menu-mapping.json"
+      },
+      {
+        "component": "avatar-company-icon",
+        "file": "web/avatar-company-icon-mapping.json"
+      },
+      {
+        "component": "checkbox-element",
+        "file": "web/checkbox-element-mapping.json"
+      },
+      {
+        "component": "action-group",
+        "file": "web/action-group-mapping.json"
+      },
+      {
+        "component": "select",
+        "file": "web/select-mapping.json"
+      },
+      {
+        "component": "action-icon",
+        "file": "web/action-icon-mapping.json"
+      },
+      {
+        "component": "pagination-button-group",
+        "file": "web/pagination-button-group-mapping.json"
+      },
+      {
+        "component": "inline-text-container",
+        "file": "web/inline-text-container-mapping.json"
+      },
+      {
+        "component": "textarea",
+        "file": "web/textarea-mapping.json"
+      },
+      {
+        "component": "icon",
+        "file": "web/icon-mapping.json"
+      },
+      {
+        "component": "time-picker",
+        "file": "web/time-picker-mapping.json"
+      },
+      {
+        "component": "content-switcher-item",
+        "file": "web/content-switcher-item-mapping.json"
+      },
+      {
+        "component": "alert",
+        "file": "web/alert-mapping.json"
+      },
+      {
+        "component": "tag-count",
+        "file": "web/tag-count-mapping.json"
+      },
+      {
+        "component": "avatar-add-button",
+        "file": "web/avatar-add-button-mapping.json"
+      },
+      {
+        "component": "toggle",
+        "file": "web/toggle-mapping.json"
+      },
+      {
+        "component": "input",
+        "file": "web/input-mapping.json"
+      },
+      {
+        "component": "avatar-online-indicator",
+        "file": "web/avatar-online-indicator-mapping.json"
+      },
+      {
+        "component": "badge-group",
+        "file": "web/badge-group-mapping.json"
+      },
+      {
+        "component": "avatar-profile-photo",
+        "file": "web/avatar-profile-photo-mapping.json"
+      },
+      {
+        "component": "dropdown-list-item",
+        "file": "web/dropdown-list-item-mapping.json"
+      },
+      {
+        "component": "pagination-item",
+        "file": "web/pagination-item-mapping.json"
+      },
+      {
+        "component": "tab-item",
+        "file": "web/tab-item-mapping.json"
+      },
+      {
+        "component": "input-form",
+        "file": "web/input-form-mapping.json"
+      },
+      {
+        "component": "tooltip",
+        "file": "web/tooltip-mapping.json"
+      },
+      {
+        "component": "avatar-with-label",
+        "file": "web/avatar-with-label-mapping.json"
+      },
+      {
+        "component": "link-button",
+        "file": "web/link-button-mapping.json"
+      },
+      {
+        "component": "radio",
+        "file": "web/radio-mapping.json"
+      },
+      {
+        "component": "pagination",
+        "file": "web/pagination-mapping.json"
+      },
+      {
+        "component": "tab",
+        "file": "web/tab-mapping.json"
+      },
+      {
+        "component": "button",
+        "file": "web/button-mapping.json"
+      },
+      {
+        "component": "avatar",
+        "file": "web/avatar-mapping.json"
+      },
+      {
+        "component": "content-switcher",
+        "file": "web/content-switcher-mapping.json"
+      }
+    ],
+    "mobile": [
+      {
+        "component": "header-action-group",
+        "file": "mobile/header-action-group-mapping.json"
+      },
+      {
+        "component": "header",
+        "file": "mobile/header-mapping.json"
+      },
+      {
+        "component": "no-badge",
+        "file": "mobile/no-badge-mapping.json"
+      },
+      {
+        "component": "content-switcher-item",
+        "file": "mobile/content-switcher-item-mapping.json"
+      },
+      {
+        "component": "input-form-hint-text",
+        "file": "mobile/input-form-hint-text-mapping.json"
+      },
+      {
+        "component": "toggle",
+        "file": "mobile/toggle-mapping.json"
+      },
+      {
+        "component": "input",
+        "file": "mobile/input-mapping.json"
+      },
+      {
+        "component": "tab-item",
+        "file": "mobile/tab-item-mapping.json"
+      },
+      {
+        "component": "input-form",
+        "file": "mobile/input-form-mapping.json"
+      },
+      {
+        "component": "list-item",
+        "file": "mobile/list-item-mapping.json"
+      },
+      {
+        "component": "bottom navigation bar",
+        "file": "mobile/bottom navigation bar-mapping.json"
+      },
+      {
+        "component": "tab",
+        "file": "mobile/tab-mapping.json"
+      },
+      {
+        "component": "button",
+        "file": "mobile/button-mapping.json"
+      },
+      {
+        "component": "content-switcher",
+        "file": "mobile/content-switcher-mapping.json"
+      },
+      {
+        "component": "menu-item-navbar",
+        "file": "mobile/menu-item-navbar-mapping.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,828 @@
+{
+  "component": "icon",
+  "version": "1.0.0",
+  "description": "Figma mapping for icon component tokens",
+  "tokens": {
+    "icon.size.4xs": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{size.icon.4xs}",
+      "description": "Extra extra extra small icon - 10px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "icon.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Extra extra small icon - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "icon.size.2xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Extra small icon - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "icon.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Small icon - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "icon.size.sm": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.icon.sm}",
+      "description": "Small medium icon - 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Medium icon - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "icon.size.lg": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "Large icon - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "icon.size.xl": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.icon.xl}",
+      "description": "Extra large icon - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "icon.size.2xl": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.icon.2xl}",
+      "description": "Extra extra large icon - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "icon.size.3xl": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.icon.3xl}",
+      "description": "Extra extra extra large icon - 36px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "icon.size.4xl": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.icon.4xl}",
+      "description": "Maximum icon size - 40px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "icon.color.icon.default": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.neutral.gray.600}",
+      "description": "Default icon color - gray-600",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.icon.white": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.neutral.gray.0}",
+      "description": "White icon color for dark backgrounds",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.icon.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.neutral.gray.300}",
+      "description": "Disabled icon color - gray-300",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.icon.primary": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.primary.blue.600}",
+      "description": "Primary brand icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.icon.primary-disabled": {
+      "value": "#b2ccff",
+      "type": "color",
+      "reference": "{color.primary.blue.200}",
+      "description": "Disabled primary icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.icon.error": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.secondary.error.600}",
+      "description": "Error state icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.icon.error-disabled": {
+      "value": "#fecdca",
+      "type": "color",
+      "reference": "{color.secondary.error.200}",
+      "description": "Disabled error icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.icon.warning": {
+      "value": "#f79009",
+      "type": "color",
+      "reference": "{color.secondary.warning.500}",
+      "description": "Warning state icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.icon.success": {
+      "value": "#039855",
+      "type": "color",
+      "reference": "{color.secondary.success.600}",
+      "description": "Success state icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.icon.info": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.primary.blue.600}",
+      "description": "Info state icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.featured.background.default": {
+      "value": "#f9fafb",
+      "type": "color",
+      "reference": "{color.neutral.gray.50}",
+      "description": "Default featured icon background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "icon.color.featured.background.info": {
+      "value": "#eff4ff",
+      "type": "color",
+      "reference": "{color.primary.blue.50}",
+      "description": "Info featured icon background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "icon.color.featured.background.error": {
+      "value": "#fef3f2",
+      "type": "color",
+      "reference": "{color.secondary.error.50}",
+      "description": "Error featured icon background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "icon.color.featured.background.warning": {
+      "value": "#fffaeb",
+      "type": "color",
+      "reference": "{color.secondary.warning.50}",
+      "description": "Warning featured icon background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "icon.color.featured.background.success": {
+      "value": "#ecfdf3",
+      "type": "color",
+      "reference": "{color.secondary.success.50}",
+      "description": "Success featured icon background",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "icon.color.featured.icon.default": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.neutral.gray.600}",
+      "description": "Featured default icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.featured.icon.info": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.primary.blue.600}",
+      "description": "Featured info icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.featured.icon.error": {
+      "value": "#b42318",
+      "type": "color",
+      "reference": "{color.secondary.error.700}",
+      "description": "Featured error icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.featured.icon.warning": {
+      "value": "#b54708",
+      "type": "color",
+      "reference": "{color.secondary.warning.700}",
+      "description": "Featured warning icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.color.featured.icon.success": {
+      "value": "#027a48",
+      "type": "color",
+      "reference": "{color.secondary.success.700}",
+      "description": "Featured success icon color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "icon.border-radius.featured.square.4xs": {
+      "value": "4",
+      "type": "number",
+      "reference": "{border.radius.1}",
+      "description": "Square featured background radius for 4xs",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.border-radius.featured.square.3xs": {
+      "value": "4",
+      "type": "number",
+      "reference": "{border.radius.1}",
+      "description": "Square featured background radius for 3xs",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.border-radius.featured.square.2xs": {
+      "value": "4",
+      "type": "number",
+      "reference": "{border.radius.1}",
+      "description": "Square featured background radius for 2xs",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.border-radius.featured.square.xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{border.radius.1[5]}",
+      "description": "Square featured background radius for xs",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.square.sm": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{border.radius.1[5]}",
+      "description": "Square featured background radius for sm",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.square.md": {
+      "value": "8",
+      "type": "number",
+      "reference": "{border.radius.2}",
+      "description": "Square featured background radius for md",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.border-radius.featured.square.lg": {
+      "value": "8",
+      "type": "number",
+      "reference": "{border.radius.2}",
+      "description": "Square featured background radius for lg",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.border-radius.featured.square.xl": {
+      "value": "8",
+      "type": "number",
+      "reference": "{border.radius.2}",
+      "description": "Square featured background radius for xl",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.border-radius.featured.square.2xl": {
+      "value": "8",
+      "type": "number",
+      "reference": "{border.radius.2}",
+      "description": "Square featured background radius for 2xl",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.border-radius.featured.square.3xl": {
+      "value": "8",
+      "type": "number",
+      "reference": "{border.radius.2}",
+      "description": "Square featured background radius for 3xl",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.border-radius.featured.square.4xl": {
+      "value": "8",
+      "type": "number",
+      "reference": "{border.radius.2}",
+      "description": "Square featured background radius for 4xl",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.border-radius.featured.circular.4xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular featured background radius for 4xs - 16px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.circular.3xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular featured background radius for 3xs - 16px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.circular.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular featured background radius for 2xs - 16px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.circular.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular featured background radius for xs - 16px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.circular.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular featured background radius for sm - 16px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.circular.md": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular featured background radius for md - 18px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.circular.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular featured background radius for lg - 20px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.circular.xl": {
+      "value": "22px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular featured background radius for xl - 22px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.circular.2xl": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular featured background radius for 2xl - 24px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.circular.3xl": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular featured background radius for 3xl - 28px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.border-radius.featured.circular.4xl": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Circular featured background radius for 4xl - 32px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "icon.container.featured.padding.4xs": {
+      "value": "3px",
+      "type": "dimension",
+      "reference": "{padding.0[75]}",
+      "description": "Featured container padding for 4xs - 3px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.padding.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.1}",
+      "description": "Featured container padding for 3xs - 4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.padding.2xs": {
+      "value": "5px",
+      "type": "dimension",
+      "reference": "{padding.1[25]}",
+      "description": "Featured container padding for 2xs - 5px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.padding.xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.1[5]}",
+      "description": "Featured container padding for xs - 6px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.padding.sm": {
+      "value": "7px",
+      "type": "dimension",
+      "reference": "{padding.1[75]}",
+      "description": "Featured container padding for sm - 7px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.padding.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.2}",
+      "description": "Featured container padding for md - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.padding.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.2}",
+      "description": "Featured container padding for lg - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.padding.xl": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.2}",
+      "description": "Featured container padding for xl - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.padding.2xl": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.2}",
+      "description": "Featured container padding for 2xl - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.padding.3xl": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{padding.2[5]}",
+      "description": "Featured container padding for 3xl - 10px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.padding.4xl": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{padding.3}",
+      "description": "Featured container padding for 4xl - 12px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.dimensions.4xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.4}",
+      "description": "Featured container size for 4xs - 16px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.dimensions.3xs": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.5}",
+      "description": "Featured container size for 3xs - 20px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.dimensions.2xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.6}",
+      "description": "Featured container size for 2xs - 24px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.dimensions.xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.7}",
+      "description": "Featured container size for xs - 28px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.dimensions.sm": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.8}",
+      "description": "Featured container size for sm - 32px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.dimensions.md": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.9}",
+      "description": "Featured container size for md - 36px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.dimensions.lg": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.10}",
+      "description": "Featured container size for lg - 40px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.dimensions.xl": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{size.11}",
+      "description": "Featured container size for xl - 44px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.dimensions.2xl": {
+      "value": "48px",
+      "type": "dimension",
+      "reference": "{size.12}",
+      "description": "Featured container size for 2xl - 48px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.dimensions.3xl": {
+      "value": "56px",
+      "type": "dimension",
+      "reference": "{size.14}",
+      "description": "Featured container size for 3xl - 56px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "icon.container.featured.dimensions.4xl": {
+      "value": "64px",
+      "type": "dimension",
+      "reference": "{size.16}",
+      "description": "Featured container size for 4xl - 64px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

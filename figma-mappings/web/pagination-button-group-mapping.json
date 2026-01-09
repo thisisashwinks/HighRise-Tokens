@@ -1,0 +1,849 @@
+{
+  "component": "pagination-button-group",
+  "version": "1.0.0",
+  "description": "Figma mapping for pagination-button-group component tokens",
+  "tokens": {
+    "pagination-button-group.color.number.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Pagination number button default background - transparent for minimal visual weight",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.number.background.hover": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Pagination number button hover background - subtle gray to indicate interactivity",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.number.background.focused": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Pagination number button focused background - white with border to indicate focus state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.number.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Pagination number button disabled background - transparent",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.number.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Pagination number button default border - transparent for clean look",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.number.border.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Pagination number button hover border - transparent",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.number.border.focused": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "Pagination number button focused border - primary blue to indicate focus",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.number.border.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Pagination number button disabled border - transparent",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.number.text.default": {
+      "value": "{color.text.primary.body.1}",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Pagination number button default text - standard body text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.color.number.text.hover": {
+      "value": "{color.text.neutral.title.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Pagination number button hover text - darker for emphasis",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.color.number.text.focused": {
+      "value": "{color.text.primary.body.1}",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Pagination number button focused text - standard body text color",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.color.number.text.disabled": {
+      "value": "{color.text.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.text.neutral.inactive}",
+      "description": "Pagination number button disabled text - muted gray to indicate inactive state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.color.arrow.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Pagination arrow button default background - white for clear containment",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow.background.hover": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Pagination arrow button hover background - light gray for feedback",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow.background.focused": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Pagination arrow button focused background - medium gray for focus state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow.background.disabled": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Pagination arrow button disabled background - white",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow.border.default": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Pagination arrow button default border - standard neutral border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow.border.hover": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Pagination arrow button hover border - standard neutral border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow.border.focused": {
+      "value": "{color.border.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.moderate.2}",
+      "description": "Pagination arrow button focused border - darker gray for focus emphasis",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow.border.disabled": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Pagination arrow button disabled border - standard neutral border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Pagination arrow button default icon - medium gray for neutral appearance",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination-button-group.color.arrow.icon.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Pagination arrow button hover icon - medium gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination-button-group.color.arrow.icon.focused": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Pagination arrow button focused icon - medium gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination-button-group.color.arrow.icon.disabled": {
+      "value": "{color.icon.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Pagination arrow button disabled icon - light gray to indicate inactive state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.background.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Pagination arrow without bg default background - transparent for minimal design",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.background.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Pagination arrow without bg hover background - transparent",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.background.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Pagination arrow without bg focused background - transparent",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Pagination arrow without bg disabled background - transparent",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Pagination arrow without bg default border - transparent for borderless design",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.border.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Pagination arrow without bg hover border - transparent",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.border.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Pagination arrow without bg focused border - transparent",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.border.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Pagination arrow without bg disabled border - transparent",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Pagination arrow without bg default icon - medium gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.icon.hover": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Pagination arrow without bg hover icon - medium gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.icon.focused": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Pagination arrow without bg focused icon - medium gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination-button-group.color.arrow-without-bg.icon.disabled": {
+      "value": "{color.icon.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Pagination arrow without bg disabled icon - light gray to indicate inactive state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "pagination-button-group.color.text-button.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Pagination text button (Previous/Next) default background - white",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.text-button.background.hover": {
+      "value": "{color.background.neutral.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Pagination text button hover background - light gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.text-button.background.focused": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Pagination text button focused background - medium gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.text-button.background.disabled": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Pagination text button disabled background - white",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.text-button.border.default": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Pagination text button default border - standard neutral border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.text-button.border.hover": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Pagination text button hover border - standard neutral border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.text-button.border.focused": {
+      "value": "{color.border.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.border.neutral.moderate.2}",
+      "description": "Pagination text button focused border - darker gray for focus emphasis",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.text-button.border.disabled": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Pagination text button disabled border - standard neutral border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.color.text-button.text.default": {
+      "value": "{color.text.primary.body.1}",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Pagination text button default text - standard body text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.color.text-button.text.hover": {
+      "value": "{color.text.neutral.title.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Pagination text button hover text - darker for emphasis",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.color.text-button.text.focused": {
+      "value": "{color.text.primary.body.1}",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Pagination text button focused text - standard body text",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.color.text-button.text.disabled": {
+      "value": "{color.text.neutral.inactive}",
+      "type": "color",
+      "reference": "{color.text.neutral.inactive}",
+      "description": "Pagination text button disabled text - muted gray",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.typography.number.md": {
+      "value": {
+        "size": "13px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.md}",
+      "description": "13px regular font for medium pagination number buttons",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.typography.number.sm": {
+      "value": {
+        "size": "11px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.xs}",
+      "description": "11px regular font for small pagination number buttons",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.typography.text-button.md": {
+      "value": {
+        "size": "13px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.md}",
+      "description": "13px semibold font for medium pagination text buttons (Previous/Next)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.typography.text-button.sm": {
+      "value": {
+        "size": "11px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.xs}",
+      "description": "11px semibold font for small pagination text buttons (Previous/Next)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "pagination-button-group.border.radius": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.3xs}",
+      "description": "4px border radius for pagination buttons - subtle rounding",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.border.width.default": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "1px border width for pagination buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.container.number.size.md": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.xs}",
+      "description": "32px square size for medium pagination number buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.container.number.size.sm": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.3xs}",
+      "description": "24px square size for small pagination number buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.container.number.padding.md": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.1[5]}",
+      "description": "6px padding for medium pagination number buttons",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination-button-group.container.number.padding.sm": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.1[5]}",
+      "description": "6px padding for small pagination number buttons",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination-button-group.container.arrow.size.md": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.xs}",
+      "description": "32px square size for medium pagination arrow buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.container.arrow.size.sm": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.3xs}",
+      "description": "24px square size for small pagination arrow buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.container.arrow.padding.md": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.1[5]}",
+      "description": "6px padding for medium pagination arrow buttons",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination-button-group.container.arrow.padding.sm": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.1[5]}",
+      "description": "6px padding for small pagination arrow buttons",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination-button-group.container.arrow-without-bg.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "20px icon size for medium pagination arrow buttons without background",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.container.arrow-without-bg.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "16px icon size for small pagination arrow buttons without background",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.container.text-button.height.md": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "32px height for medium pagination text buttons (Previous/Next)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.container.text-button.height.sm": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "24px height for small pagination text buttons (Previous/Next)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.container.text-button.padding.x.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "8px horizontal padding for medium pagination text buttons",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination-button-group.container.text-button.padding.x.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "8px horizontal padding for small pagination text buttons",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination-button-group.container.text-button.padding.y.md": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.y.3xs}",
+      "description": "4px vertical padding for medium pagination text buttons",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination-button-group.container.text-button.padding.y.sm": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.y.3xs}",
+      "description": "4px vertical padding for small pagination text buttons",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "pagination-button-group.icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "20px icon size for medium pagination buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "pagination-button-group.icon.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "16px icon size for small pagination buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "pagination-button-group.gap.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.2}",
+      "description": "8px gap between elements in medium pagination buttons",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "pagination-button-group.gap.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.2}",
+      "description": "8px gap between elements in small pagination buttons",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

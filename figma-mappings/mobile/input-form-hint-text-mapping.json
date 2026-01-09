@@ -1,0 +1,178 @@
+{
+  "component": "input-form-hint-text",
+  "version": "1.0.0",
+  "description": "Figma mapping for input-form-hint-text component tokens",
+  "tokens": {
+    "input-form-hint-text.text.typography.3xs": {
+      "value": "{font.body.regular.2xs}",
+      "type": "string",
+      "reference": "{font.body.regular.2xs}",
+      "description": "Mobile hint text typography for 3xs size - Regular 10px/15px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form-hint-text.text.typography.2xs": {
+      "value": "{font.body.regular.xs}",
+      "type": "string",
+      "reference": "{font.body.regular.xs}",
+      "description": "Mobile hint text typography for 2xs size - Regular 11px/16px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form-hint-text.text.typography.xs": {
+      "value": "{font.body.regular.sm}",
+      "type": "string",
+      "reference": "{font.body.regular.sm}",
+      "description": "Mobile hint text typography for xs size - Regular 12px/17px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form-hint-text.text.typography.sm": {
+      "value": "{font.body.regular.md}",
+      "type": "string",
+      "reference": "{font.body.regular.md}",
+      "description": "Mobile hint text typography for sm size - Regular 13px/18px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form-hint-text.text.typography.md": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Mobile hint text typography for md size - Regular 14px/20px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form-hint-text.text.typography.lg": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Mobile hint text typography for lg size - Regular 14px/20px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input-form-hint-text.color.default": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Mobile default hint text color - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form-hint-text.color.success": {
+      "value": "#039855",
+      "type": "color",
+      "reference": "{color.text.success.body.2}",
+      "description": "Mobile success hint text color - success/600 - #039855",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form-hint-text.color.destructive": {
+      "value": "#f04438",
+      "type": "color",
+      "reference": "{color.text.error.inactive.1}",
+      "description": "Mobile destructive hint text color - error/500 - #f04438",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form-hint-text.color.warning": {
+      "value": "#dc6803",
+      "type": "color",
+      "reference": "{color.text.warning.body.2}",
+      "description": "Mobile warning hint text color - warning/600 - #dc6803",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input-form-hint-text.color.disabled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Mobile disabled hint text color - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    }
+  },
+  "instructions": {
+    "default": {
+      "container": {
+        "background": null,
+        "border": null
+      },
+      "text": {
+        "color": null
+      },
+      "icon": {
+        "color": null
+      },
+      "subtext": {
+        "color": null
+      }
+    }
+  },
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

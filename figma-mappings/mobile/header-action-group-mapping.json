@@ -1,0 +1,140 @@
+{
+  "component": "header-action-group",
+  "version": "1.0.0",
+  "description": "Figma mapping for header-action-group component tokens",
+  "tokens": {
+    "header-action-group.container.gap.button": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.sm}",
+      "description": "Mobile header action group gap between buttons - 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "header-action-group.container.gap.icon": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{gap.2[5]}",
+      "description": "Mobile header action group gap between icons - 10px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "header-action-group.container.gap.icon-button": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{gap.2[5]}",
+      "description": "Mobile header action group gap between icon and button - 10px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "header-action-group.button.size.height": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "Mobile header action group button height (sm) - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "header-action-group.icon.size": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.icon.2xl}",
+      "description": "Mobile header action group icon size - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "header-action-group.icon.color": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Mobile header action group icon default color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "badge.size": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.5xs}",
+      "description": "Mobile header action group badge size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "badge",
+        "also": "height"
+      }
+    },
+    "badge.position.x": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{position.x.4}",
+      "description": "Mobile header action group badge horizontal offset from icon edge - 16px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge.position.y": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{position.y.0}",
+      "description": "Mobile header action group badge vertical offset from icon top - 0px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

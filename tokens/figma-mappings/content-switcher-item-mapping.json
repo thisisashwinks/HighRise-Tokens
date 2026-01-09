@@ -1,0 +1,325 @@
+{
+  "component": "content-switcher-item",
+  "version": "1.0.0",
+  "description": "Figma mapping for content-switcher-item component tokens",
+  "tokens": {
+    "content-switcher-item.color.selected.background": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Mobile content switcher item selected background - gray/0 - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "content-switcher-item.color.selected.border": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile content switcher item selected border color - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "content-switcher-item.color.selected.text": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Mobile content switcher item selected text color - primary/700 - #004eeb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "content-switcher-item.color.selected.icon": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Mobile content switcher item selected icon color - primary/default.700 - #004eeb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "content-switcher-item.color.selected.subtext": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Mobile content switcher item selected subtext color - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "content-switcher-item.color.default.background": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Mobile content switcher item default background - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "content-switcher-item.color.default.border": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile content switcher item default border color - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "content-switcher-item.color.default.text": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Mobile content switcher item default text color - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "content-switcher-item.color.default.icon": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Mobile content switcher item default icon color - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "content-switcher-item.color.default.subtext": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Mobile content switcher item default subtext color - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "content-switcher-item.typography.label.selected": {
+      "value": {
+        "size": "14px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.base}",
+      "description": "Mobile content switcher item selected label font - 14px semibold",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "content-switcher-item.typography.label.default": {
+      "value": {
+        "size": "14px",
+        "weight": "medium"
+      },
+      "type": "typography",
+      "reference": "{font.body.medium.base}",
+      "description": "Mobile content switcher item default label font - 14px medium",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "content-switcher-item.typography.subtext": {
+      "value": {
+        "size": "12px",
+        "weight": "regular"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.sm}",
+      "description": "Mobile content switcher item subtext font - 12px regular",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "content-switcher-item.padding.horizontal": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{padding.x.md}",
+      "description": "Mobile content switcher item horizontal padding - 16px",
+      "figma_property": {
+        "property": "paddingLeft",
+        "target": "container"
+      }
+    },
+    "content-switcher-item.padding.vertical": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.sm}",
+      "description": "Mobile content switcher item vertical padding - 8px",
+      "figma_property": {
+        "property": "paddingTop",
+        "target": "container"
+      }
+    },
+    "content-switcher-item.gap.content": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.sm}",
+      "description": "Mobile content switcher item content gap - 8px between icon, label, badge, and subtext",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "content-switcher-item.gap.horizontal": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.sm}",
+      "description": "Mobile content switcher item horizontal gap - 8px between icon, label, and badge on the same row",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "content-switcher-item.border.radius": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "Mobile content switcher item border radius - 8px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "content-switcher-item.shadow": {
+      "value": "Mobile content switcher item shadow - outer xs - For all content switcher items",
+      "type": "shadow",
+      "reference": "{boxShadow.outer.xs}",
+      "description": "Mobile content switcher item shadow - outer xs - For all content switcher items",
+      "figma_property": {
+        "property": "effects",
+        "target": "container"
+      }
+    },
+    "content-switcher-item.sizing.icon": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.icon.sm}",
+      "description": "Mobile content switcher item icon size - 18px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "content-switcher-item.sizing.badge": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.5xs}",
+      "description": "Mobile content switcher item badge size - 16px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {
+    "selected": {
+      "container": {
+        "background": "{color.background.neutral.base}",
+        "border": "{color.border.transparent}",
+        "padding": {
+          "horizontal": "content-switcher-item.padding.horizontal",
+          "vertical": "content-switcher-item.padding.vertical"
+        },
+        "borderRadius": "content-switcher-item.border.radius",
+        "shadow": "content-switcher-item.shadow"
+      },
+      "text": {
+        "color": "{color.text.primary.body.1}",
+        "typography": "content-switcher-item.typography.label.selected"
+      },
+      "icon": {
+        "color": "{color.icon.primary.default}",
+        "size": "content-switcher-item.sizing.icon"
+      },
+      "subtext": {
+        "color": "{color.text.neutral.subtitle.1}",
+        "typography": "content-switcher-item.typography.subtext"
+      }
+    },
+    "default": {
+      "container": {
+        "background": "{color.background.transparent}",
+        "border": "{color.border.transparent}",
+        "padding": {
+          "horizontal": "content-switcher-item.padding.horizontal",
+          "vertical": "content-switcher-item.padding.vertical"
+        },
+        "borderRadius": "content-switcher-item.border.radius",
+        "shadow": "content-switcher-item.shadow"
+      },
+      "text": {
+        "color": "{color.text.neutral.body.2}",
+        "typography": "content-switcher-item.typography.label.default"
+      },
+      "icon": {
+        "color": "{color.icon.neutral.moderate.2}",
+        "size": "content-switcher-item.sizing.icon"
+      },
+      "subtext": {
+        "color": "{color.text.neutral.subtitle.1}",
+        "typography": "content-switcher-item.typography.subtext"
+      }
+    }
+  },
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

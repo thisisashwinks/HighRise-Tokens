@@ -1,0 +1,1081 @@
+{
+  "component": "inline-text-container",
+  "version": "1.0.0",
+  "description": "Figma mapping for inline-text-container component tokens",
+  "tokens": {
+    "inline-text-container.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Inline text container border width - 1px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "inline-text-container.border.radius.hover": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "Inline text container border radius on hover - 4px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "inline-text-container.height.3xs": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.height.5}",
+      "description": "Inline text container height for 3xs size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "inline-text-container.height.2xs": {
+      "value": "22px",
+      "type": "dimension",
+      "reference": "{size.height.5[5]}",
+      "description": "Inline text container height for 2xs size - 22px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "inline-text-container.height.xs": {
+      "value": "26px",
+      "type": "dimension",
+      "reference": "{size.height.6[5]}",
+      "description": "Inline text container height for xs size - 26px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "inline-text-container.height.sm": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.7}",
+      "description": "Inline text container height for sm size - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "inline-text-container.height.md": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.height.9}",
+      "description": "Inline text container height for md size - 36px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "inline-text-container.gap.default": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{gap.4xs}",
+      "description": "Gap between inline text container elements - 2px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "inline-text-container.gap.icon": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{gap.x.2xs}",
+      "description": "Gap between icon and adjacent elements - 10px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "inline-text-container.text.typography.3xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Inline text container text typography for 3xs size - 14px regular, 20px line-height",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "inline-text-container.text.typography.2xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Inline text container text typography for 2xs size - 14px regular, 20px line-height",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "inline-text-container.text.typography.xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Inline text container text typography for xs size - 14px regular, 20px line-height",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "inline-text-container.text.typography.sm": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Inline text container text typography for sm size - 14px regular, 20px line-height",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "inline-text-container.text.typography.md": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Inline text container text typography for md size - 14px regular, 20px line-height",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "inline-text-container.icon.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Inline text container icon size for 3xs - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "inline-text-container.icon.size.2xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Inline text container icon size for 2xs - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "inline-text-container.icon.size.xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Inline text container icon size for xs - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "inline-text-container.icon.size.sm": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Inline text container icon size for sm - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "inline-text-container.icon.size.md": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Inline text container icon size for md - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "inline-text-container.color.default.background.placeholder": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Default inline text container background in placeholder state - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.default.background.hover": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Default inline text container background in hover state - gray/100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.default.background.active": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Default inline text container background in active state - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.default.background.filled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Default inline text container background in filled state - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.default.background.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Default inline text container background in disabled state - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.default.border.placeholder": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Default inline text container border in placeholder state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.default.border.hover": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Default inline text container border in hover state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.default.border.active": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Default inline text container border in active state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.default.border.filled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Default inline text container border in filled state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.default.border.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Default inline text container border in disabled state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.default.text.placeholder": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Default inline text container text color in placeholder state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.text.hover": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Default inline text container text color in hover state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.text.active": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Default inline text container text color in active state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.text.filled": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Default inline text container text color in filled state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.text.disabled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Default inline text container text color in disabled state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.leading.placeholder": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default inline text container leading icon color in placeholder state - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.leading.hover": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default inline text container leading icon color in hover state - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.leading.active": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default inline text container leading icon color in active state - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.leading.filled": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default inline text container leading icon color in filled state - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.leading.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Default inline text container leading icon color in disabled state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.action.hover": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default inline text container action icon color in hover state - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.action.active": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default inline text container action icon color in active state - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.trailing.placeholder": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default inline text container trailing icon color in placeholder state - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.trailing.hover": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default inline text container trailing icon color in hover state - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.trailing.active": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default inline text container trailing icon color in active state - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.trailing.filled": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Default inline text container trailing icon color in filled state - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.default.icon.trailing.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Default inline text container trailing icon color in disabled state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.background.placeholder": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Error inline text container background in placeholder state - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.error.background.hover": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Error inline text container background in hover state - gray/100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.error.background.active": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Error inline text container background in active state - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.error.background.filled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Error inline text container background in filled state - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.error.border.placeholder": {
+      "value": "#fda29b",
+      "type": "color",
+      "reference": "{color.border.error.moderate.0}",
+      "description": "Error inline text container border in placeholder state - error/300 - #fda29b",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.error.border.hover": {
+      "value": "#fda29b",
+      "type": "color",
+      "reference": "{color.border.error.moderate.0}",
+      "description": "Error inline text container border in hover state - error/300 - #fda29b",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.error.border.active": {
+      "value": "#fda29b",
+      "type": "color",
+      "reference": "{color.border.error.moderate.0}",
+      "description": "Error inline text container border in active state - error/300 - #fda29b",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.error.border.filled": {
+      "value": "#fda29b",
+      "type": "color",
+      "reference": "{color.border.error.moderate.0}",
+      "description": "Error inline text container border in filled state - error/300 - #fda29b",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.error.text.placeholder": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Error inline text container text color in placeholder state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.text.hover": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Error inline text container text color in hover state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.text.active": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Error inline text container text color in active state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.text.filled": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Error inline text container text color in filled state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.icon.leading.placeholder": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error inline text container leading icon color in placeholder state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.icon.leading.hover": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error inline text container leading icon color in hover state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.icon.leading.active": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error inline text container leading icon color in active state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.icon.leading.filled": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error inline text container leading icon color in filled state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.icon.action.hover": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error inline text container action icon color in hover state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.icon.action.active": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error inline text container action icon color in active state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.icon.trailing.placeholder": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error inline text container trailing icon color in placeholder state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.icon.trailing.hover": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error inline text container trailing icon color in hover state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.icon.trailing.active": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error inline text container trailing icon color in active state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.error.icon.trailing.filled": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Error inline text container trailing icon color in filled state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.background.placeholder": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Warning inline text container background in placeholder state - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.warning.background.hover": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Warning inline text container background in hover state - gray/100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.warning.background.active": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Warning inline text container background in active state - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.warning.background.filled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Warning inline text container background in filled state - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.warning.border.placeholder": {
+      "value": "#fec84b",
+      "type": "color",
+      "reference": "{color.border.warning.moderate.0}",
+      "description": "Warning inline text container border in placeholder state - warning/300 - #fec84b",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.warning.border.hover": {
+      "value": "#fec84b",
+      "type": "color",
+      "reference": "{color.border.warning.moderate.0}",
+      "description": "Warning inline text container border in hover state - warning/300 - #fec84b",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.warning.border.active": {
+      "value": "#fec84b",
+      "type": "color",
+      "reference": "{color.border.warning.moderate.0}",
+      "description": "Warning inline text container border in active state - warning/300 - #fec84b",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.warning.border.filled": {
+      "value": "#fec84b",
+      "type": "color",
+      "reference": "{color.border.warning.moderate.0}",
+      "description": "Warning inline text container border in filled state - warning/300 - #fec84b",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.color.warning.text.placeholder": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Warning inline text container text color in placeholder state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.text.hover": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Warning inline text container text color in hover state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.text.active": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Warning inline text container text color in active state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.text.filled": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Warning inline text container text color in filled state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.icon.leading.placeholder": {
+      "value": "#dc6803",
+      "type": "color",
+      "reference": "{color.icon.warning.moderate}",
+      "description": "Warning inline text container leading icon color in placeholder state - warning/600 - #dc6803",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.icon.leading.hover": {
+      "value": "#dc6803",
+      "type": "color",
+      "reference": "{color.icon.warning.moderate}",
+      "description": "Warning inline text container leading icon color in hover state - warning/600 - #dc6803",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.icon.leading.active": {
+      "value": "#dc6803",
+      "type": "color",
+      "reference": "{color.icon.warning.moderate}",
+      "description": "Warning inline text container leading icon color in active state - warning/600 - #dc6803",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.icon.leading.filled": {
+      "value": "#dc6803",
+      "type": "color",
+      "reference": "{color.icon.warning.moderate}",
+      "description": "Warning inline text container leading icon color in filled state - warning/600 - #dc6803",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.icon.action.hover": {
+      "value": "#dc6803",
+      "type": "color",
+      "reference": "{color.icon.warning.moderate}",
+      "description": "Warning inline text container action icon color in hover state - warning/600 - #dc6803",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.icon.action.active": {
+      "value": "#dc6803",
+      "type": "color",
+      "reference": "{color.icon.warning.moderate}",
+      "description": "Warning inline text container action icon color in active state - warning/600 - #dc6803",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.icon.trailing.placeholder": {
+      "value": "#dc6803",
+      "type": "color",
+      "reference": "{color.icon.warning.moderate}",
+      "description": "Warning inline text container trailing icon color in placeholder state - warning/600 - #dc6803",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.icon.trailing.hover": {
+      "value": "#dc6803",
+      "type": "color",
+      "reference": "{color.icon.warning.moderate}",
+      "description": "Warning inline text container trailing icon color in hover state - warning/600 - #dc6803",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.icon.trailing.active": {
+      "value": "#dc6803",
+      "type": "color",
+      "reference": "{color.icon.warning.moderate}",
+      "description": "Warning inline text container trailing icon color in active state - warning/600 - #dc6803",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.color.warning.icon.trailing.filled": {
+      "value": "#dc6803",
+      "type": "color",
+      "reference": "{color.icon.warning.moderate}",
+      "description": "Warning inline text container trailing icon color in filled state - warning/600 - #dc6803",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "inline-text-container.action-icon-container.background.hover": {
+      "value": "#f9fafb",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Action icon container background on hover - gray/50 - #f9fafb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "inline-text-container.action-icon-container.padding": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{padding.0[5]}",
+      "description": "Action icon container padding - 2px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "inline-text-container.action-icon-container.border-radius": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{border.radius.2xs}",
+      "description": "Action icon container border radius - 2px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "inline-text-container.action-icon-container.gap": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.2}",
+      "description": "Gap between action icons - 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    }
+  },
+  "instructions": {
+    "default": {
+      "container": {
+        "background": null,
+        "border": null,
+        "borderRadius": "inline-text-container.border.radius"
+      },
+      "text": {
+        "color": null
+      },
+      "icon": {
+        "color": null
+      },
+      "subtext": {
+        "color": null
+      }
+    }
+  },
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

@@ -1,0 +1,628 @@
+{
+  "component": "action-icon",
+  "version": "1.0.0",
+  "description": "Figma mapping for action-icon component tokens",
+  "tokens": {
+    "action-icon.size.4xs": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{size.icon.4xs}",
+      "description": "Container size for 4xs action icon",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-icon.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Container size for 3xs action icon",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-icon.size.2xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Container size for 2xs action icon",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-icon.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Container size for xs action icon",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-icon.size.sm": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.icon.sm}",
+      "description": "Container size for sm action icon",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Container size for md action icon",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-icon.size.lg": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "Container size for lg action icon",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-icon.size.xl": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.icon.xl}",
+      "description": "Container size for xl action icon",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-icon.size.2xl": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.icon.2xl}",
+      "description": "Container size for 2xl action icon",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-icon.size.3xl": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.icon.3xl}",
+      "description": "Container size for 3xl action icon",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-icon.size.4xl": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.icon.4xl}",
+      "description": "Container size for 4xl action icon",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-icon.border-radius.4xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "Border radius for 4xs action icon",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-icon.border-radius.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "Border radius for 3xs action icon",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-icon.border-radius.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "Border radius for 2xs action icon",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-icon.border-radius.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "Border radius for xs action icon",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-icon.border-radius.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "Border radius for sm action icon",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-icon.border-radius.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "Border radius for md action icon",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-icon.border-radius.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "Border radius for lg action icon",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-icon.border-radius.xl": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.md}",
+      "description": "Border radius for xl action icon",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-icon.border-radius.2xl": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.md}",
+      "description": "Border radius for 2xl action icon",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-icon.border-radius.3xl": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.lg}",
+      "description": "Border radius for 3xl action icon",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-icon.border-radius.4xl": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.lg}",
+      "description": "Border radius for 4xl action icon",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-icon.color.icon.neutral.default": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.neutral.gray.600}",
+      "description": "Icon color for neutral action icon in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-icon.color.icon.neutral.disabled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.neutral.gray.400}",
+      "description": "Icon color for neutral action icon in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-icon.color.icon.primary.default": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.primary.blue.700}",
+      "description": "Icon color for primary action icon in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-icon.color.icon.primary.disabled": {
+      "value": "#84adff",
+      "type": "color",
+      "reference": "{color.primary.blue.300}",
+      "description": "Icon color for primary action icon in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-icon.color.icon.success.default": {
+      "value": "#027a48",
+      "type": "color",
+      "reference": "{color.secondary.success.700}",
+      "description": "Icon color for success action icon in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-icon.color.icon.success.disabled": {
+      "value": "#6ce9a6",
+      "type": "color",
+      "reference": "{color.secondary.success.300}",
+      "description": "Icon color for success action icon in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-icon.color.icon.error.default": {
+      "value": "#b42318",
+      "type": "color",
+      "reference": "{color.secondary.error.700}",
+      "description": "Icon color for error action icon in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-icon.color.icon.error.disabled": {
+      "value": "#fda29b",
+      "type": "color",
+      "reference": "{color.secondary.error.300}",
+      "description": "Icon color for error action icon in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-icon.color.icon.warning.default": {
+      "value": "#b54708",
+      "type": "color",
+      "reference": "{color.secondary.warning.700}",
+      "description": "Icon color for warning action icon in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-icon.color.icon.warning.disabled": {
+      "value": "#fec84b",
+      "type": "color",
+      "reference": "{color.secondary.warning.300}",
+      "description": "Icon color for warning action icon in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-icon.color.background.neutral.default": {
+      "value": "transparent",
+      "type": "color",
+      "reference": null,
+      "description": "Background color for neutral action icon in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.neutral.hover": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.neutral.gray.100}",
+      "description": "Background color for neutral action icon in hover state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.neutral.clicked": {
+      "value": "#eaecf0",
+      "type": "color",
+      "reference": "{color.neutral.gray.200}",
+      "description": "Background color for neutral action icon in clicked state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.neutral.disabled": {
+      "value": "transparent",
+      "type": "color",
+      "reference": null,
+      "description": "Background color for neutral action icon in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.primary.default": {
+      "value": "transparent",
+      "type": "color",
+      "reference": null,
+      "description": "Background color for primary action icon in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.primary.hover": {
+      "value": "#eff4ff",
+      "type": "color",
+      "reference": "{color.primary.blue.50}",
+      "description": "Background color for primary action icon in hover state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.primary.clicked": {
+      "value": "#d1e0ff",
+      "type": "color",
+      "reference": "{color.primary.blue.100}",
+      "description": "Background color for primary action icon in clicked state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.primary.disabled": {
+      "value": "transparent",
+      "type": "color",
+      "reference": null,
+      "description": "Background color for primary action icon in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.success.default": {
+      "value": "transparent",
+      "type": "color",
+      "reference": null,
+      "description": "Background color for success action icon in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.success.hover": {
+      "value": "#ecfdf3",
+      "type": "color",
+      "reference": "{color.secondary.success.50}",
+      "description": "Background color for success action icon in hover state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.success.clicked": {
+      "value": "#d1fadf",
+      "type": "color",
+      "reference": "{color.secondary.success.100}",
+      "description": "Background color for success action icon in clicked state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.success.disabled": {
+      "value": "transparent",
+      "type": "color",
+      "reference": null,
+      "description": "Background color for success action icon in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.error.default": {
+      "value": "transparent",
+      "type": "color",
+      "reference": null,
+      "description": "Background color for error action icon in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.error.hover": {
+      "value": "#fef3f2",
+      "type": "color",
+      "reference": "{color.secondary.error.50}",
+      "description": "Background color for error action icon in hover state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.error.clicked": {
+      "value": "#fee4e2",
+      "type": "color",
+      "reference": "{color.secondary.error.100}",
+      "description": "Background color for error action icon in clicked state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.error.disabled": {
+      "value": "transparent",
+      "type": "color",
+      "reference": null,
+      "description": "Background color for error action icon in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.warning.default": {
+      "value": "transparent",
+      "type": "color",
+      "reference": null,
+      "description": "Background color for warning action icon in default state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.warning.hover": {
+      "value": "#fffaeb",
+      "type": "color",
+      "reference": "{color.secondary.warning.50}",
+      "description": "Background color for warning action icon in hover state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.warning.clicked": {
+      "value": "#fef0c7",
+      "type": "color",
+      "reference": "{color.secondary.warning.100}",
+      "description": "Background color for warning action icon in clicked state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.color.background.warning.disabled": {
+      "value": "transparent",
+      "type": "color",
+      "reference": null,
+      "description": "Background color for warning action icon in disabled state",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-icon.opacity.disabled": {
+      "value": "0.3",
+      "type": "opacity",
+      "reference": null,
+      "description": "Opacity for disabled action icon state (success, error, warning scenarios)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-icon.padding": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.0}",
+      "description": "Internal padding for action icon container",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

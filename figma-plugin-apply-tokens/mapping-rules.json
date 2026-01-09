@@ -1,0 +1,376 @@
+{
+  "$comment": "Component Token Mapping Rules - Comprehensive rules for mapping design tokens to Figma component properties",
+  "$description": "Rules for mapping design tokens from component token JSON files to Figma component properties. These rules apply to all components and ensure consistent token application.",
+  "version": "1.0",
+  "rules": {
+    "dimensions": {
+      "width": {
+        "description": "Component width - only apply if explicitly defined for component (NOT stroke width)",
+        "excludePattern": "border",
+        "note": "Only exclude width variables if variable name contains 'border' (border width variables are for stroke width, not component width). Don't apply if no component width variable exists.",
+        "variablePatterns": [
+          "{component}/{category}/{variant}/{variant}/width/{state}/{size}",
+          "{component}/{category}/{variant}/width/{state}/{size}",
+          "{component}/{category}/width/{state}/{size}"
+        ],
+        "requireSize": false
+      },
+      "height": {
+        "description": "Component height - size-specific and state-specific",
+        "variablePatterns": [
+          "{component}/regular/height/{state}/{size}",
+          "{component}/{category}/{variant}/height/{state}/{size}",
+          "{component}/height/{state}/{size}",
+          "{component}/height/{size}"
+        ],
+        "requireSize": true,
+        "examples": [
+          "button/regular/height/default/sm",
+          "button/regular/height/link/sm",
+          "button/icon/height/sm"
+        ]
+      },
+      "borderRadius": {
+        "description": "Border radius - size-specific, variant-specific, state-specific",
+        "variablePatterns": [
+          "{component}/border/{variant}/radius/{state}/{size}",
+          "{component}/border/default/radius/{state}/{size}",
+          "{component}/border/{variant}/radius/{size}",
+          "{component}/border/default/radius/{size}"
+        ],
+        "requireSize": true,
+        "excludeFor": ["icon", "placeholder"],
+        "note": "Do not apply border radius to icon placeholder components",
+        "examples": [
+          "button/border/default/radius/sm",
+          "button/border/link/radius",
+          "button/border/ghost/radius"
+        ]
+      },
+      "borderWidth": {
+        "description": "Border width (stroke width) - state-specific",
+        "variablePatterns": [
+          "{component}/border/{variant}/width/{state}",
+          "{component}/border/default/width/{state}",
+          "{component}/border/{variant}/width/default"
+        ],
+        "requireSize": false,
+        "note": "This is for stroke width, NOT component width",
+        "examples": [
+          "button/border/default/width/default",
+          "button/border/link/width",
+          "button/border/ghost/width"
+        ]
+      },
+      "padding": {
+        "description": "Padding - size-specific, state-specific, direction-specific",
+        "horizontal": {
+          "variablePatterns": [
+            "{component}/regular/padding/{state}/x/{size}",
+            "{component}/padding/{variant}/x/{state}/{size}",
+            "{component}/padding/x/{size}"
+          ],
+          "requireSize": true,
+          "examples": [
+            "button/regular/padding/default/x/sm",
+            "button/regular/padding/default/x/md",
+            "button/regular/padding/default/x/lg"
+          ]
+        },
+        "vertical": {
+          "variablePatterns": [
+            "{component}/regular/padding/{state}/y/{size}",
+            "{component}/padding/{variant}/y/{state}/{size}",
+            "{component}/padding/y/{size}"
+          ],
+          "requireSize": true,
+          "examples": [
+            "button/regular/padding/default/y/sm",
+            "button/regular/padding/default/y/md",
+            "button/regular/padding/default/y/lg"
+          ]
+        },
+        "both": {
+          "description": "Both horizontal and vertical padding (uniform or combined)",
+          "variablePatterns": [
+            "{component}/regular/padding/{state}/{size}",
+            "{component}/padding/{variant}/{state}/{size}",
+            "{component}/padding/{state}/{size}"
+          ],
+          "requireSize": true,
+          "examples": [
+            "button/regular/padding/default/sm",
+            "button/padding/primary/default/sm"
+          ]
+        },
+        "all": {
+          "description": "For icon buttons - uniform padding",
+          "variablePatterns": [
+            "{component}/icon/padding/{size}",
+            "{component}/padding/{size}"
+          ],
+          "requireSize": true,
+          "examples": [
+            "button/icon/padding/sm",
+            "button/icon/padding/md",
+            "button/icon/padding/lg"
+          ]
+        }
+      },
+      "gap": {
+        "description": "Gap (itemSpacing for auto-layout frames) - size-specific",
+        "variablePatterns": [
+          "{component}/regular/gap/{size}",
+          "{component}/gap/{variant}/{size}",
+          "{component}/gap/{size}"
+        ],
+        "requireSize": true,
+        "examples": [
+          "button/regular/gap/sm",
+          "button/regular/gap/md",
+          "button/regular/gap/lg"
+        ]
+      },
+      "iconSize": {
+        "description": "Icon size - applies to icon placeholder component width/height (NOT button container)",
+        "variablePatterns": [
+          "{component}/regular/icon/size/{size}",
+          "{component}/icon/icon/size/{size}",
+          "{component}/icon/size/{size}"
+        ],
+        "requireSize": true,
+        "applyTo": "iconPlaceholder",
+        "layerName": "placeholder",
+        "note": "This is for icon placeholder component dimensions (width & height), NOT button container dimensions. For button height, use button/regular/height/{state}/{size}",
+        "examples": [
+          "button/regular/icon/size/sm -> applies to placeholder icon component",
+          "button/regular/height/default/sm -> applies to button container height"
+        ]
+      }
+    },
+    "colors": {
+      "background": {
+        "description": "Background color - variant and state-specific",
+        "variablePatterns": [
+          "{component}/color/{variant}/{variant}/background/{state}",
+          "{component}/color/{variant}/background/{state}",
+          "{component}/color/background/{state}"
+        ],
+        "requireSize": false,
+        "examples": [
+          "button/color/primary/primary/background/default",
+          "button/color/primary/primary/background/hover",
+          "button/color/primary/primary/background/active",
+          "button/color/primary/primary/background/focused",
+          "button/color/primary/primary/background/disabled"
+        ]
+      },
+      "border": {
+        "description": "Border color - variant and state-specific",
+        "variablePatterns": [
+          "{component}/color/{variant}/{variant}/border/{state}",
+          "{component}/color/{variant}/border/{state}",
+          "{component}/color/border/{state}"
+        ],
+        "requireSize": false,
+        "examples": [
+          "button/color/primary/primary/border/default",
+          "button/color/primary/primary/border/hover",
+          "button/color/error/primary/border/default"
+        ]
+      },
+      "text": {
+        "description": "Text color - variant and state-specific",
+        "variablePatterns": [
+          "{component}/color/{variant}/{variant}/text/{state}",
+          "{component}/color/{variant}/text/{state}",
+          "{component}/color/text/{state}"
+        ],
+        "requireSize": false,
+        "applyTo": "textNodes",
+        "examples": [
+          "button/color/primary/primary/text/default",
+          "button/color/primary/primary/text/hover",
+          "button/color/link/primary/text/default"
+        ]
+      },
+      "icon": {
+        "description": "Icon color - variant and state-specific",
+        "variablePatterns": [
+          "{component}/color/{variant}/{variant}/icon/{state}",
+          "{component}/color/{variant}/icon/{state}",
+          "{component}/color/icon/{state}"
+        ],
+        "requireSize": false,
+        "applyTo": "iconChildLayers",
+        "excludeFrom": ["iconPlaceholder", "placeholder"],
+        "note": "Apply to icon child layers (VECTOR/BOOLEAN_OPERATION). Most common layer name: 'Icon (Stroke)', but can vary. DO NOT apply color to placeholder icon component (layer name: 'placeholder') - no fill & stroke for placeholder layer.",
+        "layerNamePatterns": ["Icon (Stroke)", "Icon", "icon"],
+        "excludeLayerNames": ["placeholder"],
+        "examples": [
+          "button/color/primary/primary/icon/default",
+          "button/color/primary/primary/icon/hover",
+          "button/color/error/primary/icon/default"
+        ]
+      }
+    },
+    "iconComponent": {
+      "description": "Icon component (placeholder) handling rules",
+      "parent": {
+        "description": "Icon placeholder component (parent container)",
+        "layerName": "placeholder",
+        "apply": ["size"],
+        "exclude": ["color", "borderRadius", "fill", "stroke"],
+        "sizePatterns": [
+          "{component}/regular/icon/size/{size}",
+          "{component}/icon/icon/size/{size}",
+          "{component}/icon/size/{size}"
+        ],
+        "note": "Icon placeholder (layer name: 'placeholder') gets size (width/height) from icon size tokens (button/regular/icon/size/{size}), NOT button height tokens. NO color variables should be applied - no fill & stroke for placeholder layer."
+      },
+      "child": {
+        "description": "Icon child layers (VECTOR/BOOLEAN_OPERATION)",
+        "apply": ["color"],
+        "exclude": ["size", "borderRadius"],
+        "colorPatterns": [
+          "{component}/color/{variant}/{variant}/icon/{state}",
+          "{component}/color/{variant}/icon/{state}"
+        ],
+        "note": "Icon child layers get color only, size comes from parent placeholder"
+      }
+    },
+    "typography": {
+      "description": "Typography from HighRise 1.2 Foundations File",
+      "source": "foundations",
+      "matchingStrategy": "styleName",
+      "tokenPattern": "{font.*}",
+      "sizeSpecific": true,
+      "styleNamePattern": "{type}/{size}/{weight}",
+      "styleNameMapping": {
+        "pattern": "{type}/{size}/{weight} -> Style Name from Foundations File",
+        "examples": [
+          "{font.body.semibold.2xl} -> body/2xl/semibold -> Text 2xl/Semibold",
+          "{font.body.medium.lg} -> body/lg/medium -> Text lg/Medium",
+          "{font.heading.display.regular.2xl} -> heading/display/regular -> Display 2xl/Regular"
+        ],
+        "note": "Change existing text style to matching style name from HighRise 1.2 Foundations File"
+      },
+      "tokenStructure": {
+        "pattern": "{component}/typography/{size}",
+        "examples": [
+          "button/typography/sm",
+          "button/typography/md",
+          "button/typography/lg"
+        ]
+      },
+      "applyTo": "textNodes",
+      "note": "Text styles are matched by style name pattern from Foundations File (e.g., body/2xl/semibold). Change existing style to matching style name from HighRise 1.2 Foundations File."
+    },
+    "shadows": {
+      "description": "Shadows (effects) from HighRise 1.2 Foundations File",
+      "source": "foundations",
+      "matchingStrategy": "styleName",
+      "tokenPattern": "boxShadow.*",
+      "stateSpecific": true,
+      "variantSpecific": true,
+      "styleNamePattern": "{type}/{size} or {type}/{size}/{variant}/{value}",
+      "styleNameMapping": {
+        "pattern": "{type}/{size} or {type}/{size}/{variant}/{value} -> Style Name from Foundations File",
+        "examples": [
+          "boxShadow.outer.xs -> outer/xs -> Shadow/xs",
+          "boxShadow.outer.sm -> outer/sm -> Shadow/sm",
+          "boxShadow.focus.xs.primary.100 -> focus/xs/primary/100 -> Focus ring/xs focused 4px primary-100",
+          "boxShadow.none -> (remove shadows)"
+        ],
+        "note": "Change existing effect style to matching style name from HighRise 1.2 Foundations File"
+      },
+      "tokenStructure": {
+        "pattern": "{component}/effects/shadow/{state}",
+        "variantPattern": "{component}/effects/shadow/{state}/{variant}",
+        "examples": [
+          "button/effects/shadow/default",
+          "button/effects/shadow/hover",
+          "button/effects/shadow/focused/primary",
+          "button/effects/shadow/focused/error"
+        ]
+      },
+      "applyTo": "containerNodes",
+      "note": "Effect styles are matched by style name pattern from Foundations File (e.g., outer/xs, focus/xs/primary/100). Change existing style to matching style name from HighRise 1.2 Foundations File. Pattern might change for focus styles."
+    },
+    "componentSpecific": {
+      "width": {
+        "excludePattern": "border",
+        "note": "Only exclude width variables if variable name contains 'border' (border width variables are for stroke width, not component width). Don't apply if no component width variable exists.",
+        "applyIfExists": true
+      },
+      "button": {
+        "heightPatterns": [
+          "button/regular/height/{state}/{size}",
+          "button/icon/height/{size}"
+        ],
+        "iconButtonHeight": {
+          "pattern": "button/icon/height/{size}",
+          "examples": [
+            "button/icon/height/sm",
+            "button/icon/height/md",
+            "button/icon/height/lg"
+          ]
+        }
+      }
+    },
+    "nodeMatching": {
+      "description": "Rules for matching nodes to components",
+      "strategies": [
+        "exactNameMatch",
+        "parentNameMatch",
+        "mainComponentMatch",
+        "patternMatch"
+      ],
+      "sizeExtraction": {
+        "pattern": "Size=({size})",
+        "examples": ["Size=sm", "Size=md", "Size=lg"]
+      },
+      "variantExtraction": {
+        "pattern": "Variant=({variant})",
+        "examples": ["Variant=Primary", "Variant=Secondary", "Variant=Link"]
+      },
+      "stateExtraction": {
+        "pattern": "State=({state})",
+        "examples": ["State=Default", "State=Hover", "State=Active", "State=Focussed", "State=Disabled"],
+        "normalization": {
+          "Focussed": "focused",
+          "Default": "default"
+        }
+      }
+    },
+    "applicationOrder": {
+      "description": "Order in which tokens should be applied",
+      "order": [
+        "1. Container colors (background, border)",
+        "2. Container dimensions (height, padding, gap, border radius)",
+        "3. Border width (stroke width)",
+        "4. Icon placeholder size",
+        "5. Text color and typography",
+        "6. Icon child color",
+        "7. Shadows/effects"
+      ]
+    },
+    "validation": {
+      "requireSize": [
+        "height",
+        "borderRadius",
+        "padding",
+        "gap",
+        "iconSize"
+      ],
+      "excludeComponents": {
+        "width": "Only if variable name contains 'border' or if no component width variable exists",
+        "borderRadius": ["icon", "placeholder"]
+      },
+      "excludeFrom": {
+        "iconColor": ["iconPlaceholder", "placeholder"],
+        "borderRadius": ["icon", "placeholder"]
+      }
+    }
+  }
+}

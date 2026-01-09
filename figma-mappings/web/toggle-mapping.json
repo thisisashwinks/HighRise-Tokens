@@ -1,0 +1,489 @@
+{
+  "component": "toggle",
+  "version": "1.0.0",
+  "description": "Figma mapping for toggle component tokens",
+  "tokens": {
+    "toggle.track.height.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.height.5xs}",
+      "description": "Toggle track height for sm size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.track.height.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.height.4xs}",
+      "description": "Toggle track height for md size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.track.height.lg": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Toggle track height for lg size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.track.width.sm": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.width.2xs}",
+      "description": "Toggle track width for sm size - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.track.width.md": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.width.sm}",
+      "description": "Toggle track width for md size - 36px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.track.width.lg": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{size.width.lg}",
+      "description": "Toggle track width for lg size - 44px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.track.border.radius.sm": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Fully rounded border radius for sm toggle track",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "toggle.track.border.radius.md": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Fully rounded border radius for md toggle track",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "toggle.track.border.radius.lg": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Fully rounded border radius for lg toggle track",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "toggle.track.padding": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{spacing.0[5]}",
+      "description": "Internal padding for toggle track - 2px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "toggle.track.color.background.unpressed.default": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Unpressed toggle default background - neutral/gray-100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.unpressed.hover": {
+      "value": "#eaecf0",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.2}",
+      "description": "Unpressed toggle hover background - neutral/gray-200 - #eaecf0",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.unpressed.focused": {
+      "value": "#f9fafb",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Unpressed toggle focused background - neutral/gray-50 - #f9fafb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.unpressed.disabled": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Unpressed toggle disabled background - neutral/gray-100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.unpressed.error": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Unpressed toggle error background - neutral/gray-100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.pressed.default": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Pressed toggle default background - primary/blue-600 - #155eef",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.pressed.hover": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.background.primary.intense.0}",
+      "description": "Pressed toggle hover background - primary/blue-700 - #004eeb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.pressed.focused": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Pressed toggle focused background - primary/blue-600 - #155eef",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.pressed.disabled": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Pressed toggle disabled background - neutral/gray-100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.pressed.error": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Pressed toggle error background - primary/blue-600 - #155eef",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.unpressed.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Unpressed toggle default border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.unpressed.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Unpressed toggle hover border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.unpressed.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Unpressed toggle focused border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.unpressed.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Unpressed toggle disabled border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.unpressed.error": {
+      "value": "#f04438",
+      "type": "color",
+      "reference": "{color.border.error.moderate.1}",
+      "description": "Unpressed toggle error border - error/red-500 - #f04438",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.pressed.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Pressed toggle default border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.pressed.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Pressed toggle hover border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.pressed.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Pressed toggle focused border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.pressed.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Pressed toggle disabled border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.pressed.error": {
+      "value": "#f04438",
+      "type": "color",
+      "reference": "{color.border.error.moderate.1}",
+      "description": "Pressed toggle error border - error/red-500 - #f04438",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.size.sm": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.6xs}",
+      "description": "Toggle thumb size for sm size - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.size.md": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.5xs}",
+      "description": "Toggle thumb size for md size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.4xs}",
+      "description": "Toggle thumb size for lg size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.border.radius.sm": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Fully rounded border radius for sm toggle thumb - circular",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.border.radius.md": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Fully rounded border radius for md toggle thumb - circular",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.border.radius.lg": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Fully rounded border radius for lg toggle thumb - circular",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.background.default": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Toggle thumb default background - neutral/gray-0 - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.background.disabled": {
+      "value": "#f9fafb",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Toggle thumb disabled background - neutral/gray-50 - #f9fafb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.focus.outline.color": {
+      "value": "#b2ccff",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.1}",
+      "description": "Focus outline color for toggle - primary/blue-200 - #b2ccff",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "toggle.focus.outline.width.sm": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "Focus outline width for sm toggle - 4px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.focus.outline.width.md": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "Focus outline width for md toggle - 4px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.focus.outline.width.lg": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "Focus outline width for lg toggle - 4px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

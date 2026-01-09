@@ -1,0 +1,1263 @@
+{
+  "component": "action-group",
+  "version": "1.0.0",
+  "description": "Figma mapping for action-group component tokens",
+  "tokens": {
+    "action-group.container.gap.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "4px gap between buttons in action group for 3xs size",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.container.gap.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "4px gap between buttons in action group for 2xs size",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.container.gap.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "4px gap between buttons in action group for xs size",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.container.gap.sm": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "4px gap between buttons in action group for sm size",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.container.gap.md": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "4px gap between buttons in action group for md size",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.container.gap.lg": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "4px gap between buttons in action group for lg size",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.container.direction.horizontal": {
+      "value": "row",
+      "type": "string",
+      "reference": null,
+      "description": "Horizontal layout direction for action group - buttons arranged in a row",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.container.direction.vertical": {
+      "value": "column",
+      "type": "string",
+      "reference": null,
+      "description": "Vertical layout direction for action group - buttons arranged in a column",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.container.alignment.horizontal": {
+      "value": "center",
+      "type": "string",
+      "reference": null,
+      "description": "Center alignment for horizontal action groups",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.container.alignment.vertical.start": {
+      "value": "flex-start",
+      "type": "string",
+      "reference": null,
+      "description": "Start alignment for vertical action groups",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.container.alignment.vertical.stretch": {
+      "value": "stretch",
+      "type": "string",
+      "reference": null,
+      "description": "Stretch alignment for vertical action groups - buttons take full width",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.button.color.neutral.secondary.background.default": {
+      "value": "{button.color.neutral.secondary.background.default}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.background.default}",
+      "description": "Default background for action group buttons - references neutral secondary button",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.secondary.background.hover": {
+      "value": "{button.color.neutral.secondary.background.hover}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.background.hover}",
+      "description": "Hover background for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.secondary.background.active": {
+      "value": "{button.color.neutral.secondary.background.active}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.background.active}",
+      "description": "Active background for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.secondary.background.focused": {
+      "value": "{button.color.neutral.secondary.background.focused}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.background.focused}",
+      "description": "Focused background for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.secondary.background.disabled": {
+      "value": "{button.color.neutral.secondary.background.disabled}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.background.disabled}",
+      "description": "Disabled background for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.secondary.border.default": {
+      "value": "{button.color.neutral.secondary.border.default}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.border.default}",
+      "description": "Default border for action group buttons",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.secondary.border.hover": {
+      "value": "{button.color.neutral.secondary.border.hover}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.border.hover}",
+      "description": "Hover border for action group buttons",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.secondary.border.active": {
+      "value": "{button.color.neutral.secondary.border.active}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.border.active}",
+      "description": "Active border for action group buttons",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.secondary.border.focused": {
+      "value": "{button.color.neutral.secondary.border.focused}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.border.focused}",
+      "description": "Focused border for action group buttons",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.secondary.border.disabled": {
+      "value": "{button.color.neutral.secondary.border.disabled}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.border.disabled}",
+      "description": "Disabled border for action group buttons",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.secondary.text.default": {
+      "value": "{button.color.neutral.secondary.text.default}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.text.default}",
+      "description": "Default text color for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "action-group.button.color.neutral.secondary.text.hover": {
+      "value": "{button.color.neutral.secondary.text.hover}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.text.hover}",
+      "description": "Hover text color for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "action-group.button.color.neutral.secondary.text.active": {
+      "value": "{button.color.neutral.secondary.text.active}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.text.active}",
+      "description": "Active text color for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "action-group.button.color.neutral.secondary.text.focused": {
+      "value": "{button.color.neutral.secondary.text.focused}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.text.focused}",
+      "description": "Focused text color for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "action-group.button.color.neutral.secondary.text.disabled": {
+      "value": "{button.color.neutral.secondary.text.disabled}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.text.disabled}",
+      "description": "Disabled text color for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "action-group.button.color.neutral.secondary.icon.default": {
+      "value": "{button.color.neutral.secondary.icon.default}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.icon.default}",
+      "description": "Default icon color for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-group.button.color.neutral.secondary.icon.hover": {
+      "value": "{button.color.neutral.secondary.icon.hover}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.icon.hover}",
+      "description": "Hover icon color for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-group.button.color.neutral.secondary.icon.active": {
+      "value": "{button.color.neutral.secondary.icon.active}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.icon.active}",
+      "description": "Active icon color for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-group.button.color.neutral.secondary.icon.focused": {
+      "value": "{button.color.neutral.secondary.icon.focused}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.icon.focused}",
+      "description": "Focused icon color for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-group.button.color.neutral.secondary.icon.disabled": {
+      "value": "{button.color.neutral.secondary.icon.disabled}",
+      "type": "color",
+      "reference": "{button.color.neutral.secondary.icon.disabled}",
+      "description": "Disabled icon color for action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-group.button.color.neutral.ghost.background.default": {
+      "value": "{button.color.neutral.ghost.background.default}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.background.default}",
+      "description": "Default background for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.ghost.background.hover": {
+      "value": "{button.color.neutral.ghost.background.hover}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.background.hover}",
+      "description": "Hover background for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.ghost.background.active": {
+      "value": "{button.color.neutral.ghost.background.active}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.background.active}",
+      "description": "Active background for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.ghost.background.focused": {
+      "value": "{button.color.neutral.ghost.background.focused}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.background.focused}",
+      "description": "Focused background for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.ghost.background.disabled": {
+      "value": "{button.color.neutral.ghost.background.disabled}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.background.disabled}",
+      "description": "Disabled background for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.ghost.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.border.default}",
+      "description": "Default border for ghost action group buttons - transparent",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.ghost.border.hover": {
+      "value": "{button.color.neutral.ghost.border.hover}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.border.hover}",
+      "description": "Hover border for ghost action group buttons",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.ghost.border.active": {
+      "value": "{button.color.neutral.ghost.border.active}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.border.active}",
+      "description": "Active border for ghost action group buttons",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.ghost.border.focused": {
+      "value": "{button.color.neutral.ghost.border.focused}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.border.focused}",
+      "description": "Focused border for ghost action group buttons",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.ghost.border.disabled": {
+      "value": "{button.color.neutral.ghost.border.disabled}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.border.disabled}",
+      "description": "Disabled border for ghost action group buttons",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "action-group.button.color.neutral.ghost.text.default": {
+      "value": "{button.color.neutral.ghost.text.default}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.text.default}",
+      "description": "Default text color for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "action-group.button.color.neutral.ghost.text.hover": {
+      "value": "{button.color.neutral.ghost.text.hover}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.text.hover}",
+      "description": "Hover text color for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "action-group.button.color.neutral.ghost.text.active": {
+      "value": "{button.color.neutral.ghost.text.active}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.text.active}",
+      "description": "Active text color for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "action-group.button.color.neutral.ghost.text.focused": {
+      "value": "{button.color.neutral.ghost.text.focused}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.text.focused}",
+      "description": "Focused text color for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "action-group.button.color.neutral.ghost.text.disabled": {
+      "value": "{button.color.neutral.ghost.text.disabled}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.text.disabled}",
+      "description": "Disabled text color for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "action-group.button.color.neutral.ghost.icon.default": {
+      "value": "{button.color.neutral.ghost.icon.default}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.icon.default}",
+      "description": "Default icon color for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-group.button.color.neutral.ghost.icon.hover": {
+      "value": "{button.color.neutral.ghost.icon.hover}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.icon.hover}",
+      "description": "Hover icon color for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-group.button.color.neutral.ghost.icon.active": {
+      "value": "{button.color.neutral.ghost.icon.active}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.icon.active}",
+      "description": "Active icon color for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-group.button.color.neutral.ghost.icon.focused": {
+      "value": "{button.color.neutral.ghost.icon.focused}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.icon.focused}",
+      "description": "Focused icon color for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-group.button.color.neutral.ghost.icon.disabled": {
+      "value": "{button.color.neutral.ghost.icon.disabled}",
+      "type": "color",
+      "reference": "{button.color.neutral.ghost.icon.disabled}",
+      "description": "Disabled icon color for ghost action group buttons",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "action-group.button.typography.3xs": {
+      "value": {
+        "size": "11px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{button.typography.3xs}",
+      "description": "11px semibold font for action group buttons (3xs size)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "action-group.button.typography.2xs": {
+      "value": {
+        "size": "12px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{button.typography.2xs}",
+      "description": "12px semibold font for action group buttons (2xs size)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "action-group.button.typography.xs": {
+      "value": {
+        "size": "13px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{button.typography.xs}",
+      "description": "13px semibold font for action group buttons (xs size)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "action-group.button.typography.sm": {
+      "value": {
+        "size": "14px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{button.typography.sm}",
+      "description": "14px semibold font for action group buttons (sm size)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "action-group.button.typography.md": {
+      "value": {
+        "size": "14px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{button.typography.md}",
+      "description": "14px semibold font for action group buttons (md size)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "action-group.button.typography.lg": {
+      "value": {
+        "size": "16px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{button.typography.lg}",
+      "description": "16px semibold font for action group buttons (lg size)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "action-group.button.border.radius.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{button.border.radius.3xs}",
+      "description": "4px border radius for action group buttons (3xs size)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-group.button.border.radius.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{button.border.radius.2xs}",
+      "description": "4px border radius for action group buttons (2xs size)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-group.button.border.radius.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{button.border.radius.xs}",
+      "description": "4px border radius for action group buttons (xs size)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-group.button.border.radius.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.border.radius.sm}",
+      "description": "8px border radius for action group buttons (sm size)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-group.button.border.radius.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.border.radius.md}",
+      "description": "8px border radius for action group buttons (md size)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-group.button.border.radius.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.border.radius.lg}",
+      "description": "8px border radius for action group buttons (lg size)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "action-group.button.border.width.default": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{button.border.width.default}",
+      "description": "1px border width for action group buttons",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "action-group.button.effects.shadow.default": {
+      "value": "{button.effects.shadow.default}",
+      "type": "boxShadow",
+      "reference": "{button.effects.shadow.default}",
+      "description": "Default shadow for action group buttons",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.button.effects.focus.ring": {
+      "value": "{button.effects.focus.ring}",
+      "type": "boxShadow",
+      "reference": "{button.effects.focus.ring}",
+      "description": "Focus ring for action group buttons",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.height.3xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{button.regular.container.height.3xs}",
+      "description": "24px button height for action group with text (3xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.container.height.2xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{button.regular.container.height.2xs}",
+      "description": "28px button height for action group with text (2xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.container.height.xs": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{button.regular.container.height.xs}",
+      "description": "32px button height for action group with text (xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.container.height.sm": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{button.regular.container.height.sm}",
+      "description": "36px button height for action group with text (sm size)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.container.height.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{button.regular.container.height.md}",
+      "description": "40px button height for action group with text (md size)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.container.height.lg": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{button.regular.container.height.lg}",
+      "description": "44px button height for action group with text (lg size)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.container.padding.x.3xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.x.3xs}",
+      "description": "6px horizontal padding for action group buttons with text (3xs size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.padding.x.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.x.2xs}",
+      "description": "8px horizontal padding for action group buttons with text (2xs size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.padding.x.xs": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.x.xs}",
+      "description": "10px horizontal padding for action group buttons with text (xs size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.padding.x.sm": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.x.sm}",
+      "description": "14px horizontal padding for action group buttons with text (sm size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.padding.x.md": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.x.md}",
+      "description": "16px horizontal padding for action group buttons with text (md size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.padding.x.lg": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.x.lg}",
+      "description": "18px horizontal padding for action group buttons with text (lg size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.padding.y.3xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.y.3xs}",
+      "description": "8px vertical padding for action group buttons with text (3xs size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.padding.y.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.y.2xs}",
+      "description": "8px vertical padding for action group buttons with text (2xs size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.padding.y.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.y.xs}",
+      "description": "8px vertical padding for action group buttons with text (xs size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.padding.y.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.y.sm}",
+      "description": "8px vertical padding for action group buttons with text (sm size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.padding.y.md": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.y.md}",
+      "description": "10px vertical padding for action group buttons with text (md size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.container.padding.y.lg": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{button.regular.container.padding.y.lg}",
+      "description": "10px vertical padding for action group buttons with text (lg size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.with-text.gap.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{button.regular.gap.3xs}",
+      "description": "4px gap between text and icon in action group buttons (3xs size)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.gap.2xs": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{button.regular.gap.2xs}",
+      "description": "6px gap between text and icon in action group buttons (2xs size)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.gap.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.regular.gap.xs}",
+      "description": "8px gap between text and icon in action group buttons (xs size)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.gap.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.regular.gap.sm}",
+      "description": "8px gap between text and icon in action group buttons (sm size)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.gap.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.regular.gap.md}",
+      "description": "8px gap between text and icon in action group buttons (md size)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.gap.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.regular.gap.lg}",
+      "description": "8px gap between text and icon in action group buttons (lg size)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "action-group.with-text.icon.size.3xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{button.regular.icon.size.3xs}",
+      "description": "14px icon size for action group buttons with text (3xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.with-text.icon.size.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{button.regular.icon.size.2xs}",
+      "description": "16px icon size for action group buttons with text (2xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.with-text.icon.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{button.regular.icon.size.xs}",
+      "description": "16px icon size for action group buttons with text (xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.with-text.icon.size.sm": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{button.regular.icon.size.sm}",
+      "description": "20px icon size for action group buttons with text (sm size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.with-text.icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{button.regular.icon.size.md}",
+      "description": "20px icon size for action group buttons with text (md size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.with-text.icon.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{button.regular.icon.size.lg}",
+      "description": "20px icon size for action group buttons with text (lg size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.container.size.3xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{button.icon.container.size.3xs}",
+      "description": "24px square icon button for action group (3xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.container.size.2xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{button.icon.container.size.2xs}",
+      "description": "28px square icon button for action group (2xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.container.size.xs": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{button.icon.container.size.xs}",
+      "description": "32px square icon button for action group (xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.container.size.sm": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{button.icon.container.size.sm}",
+      "description": "36px square icon button for action group (sm size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.container.size.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{button.icon.container.size.md}",
+      "description": "40px square icon button for action group (md size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.container.size.lg": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{button.icon.container.size.lg}",
+      "description": "44px square icon button for action group (lg size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.container.padding.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{button.icon.container.padding.3xs}",
+      "description": "4px padding for icon-only action group buttons (3xs size) - Note: Uses padding.2 (8px) for ghost variant",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.icon-only.container.padding.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{button.icon.container.padding.2xs}",
+      "description": "4px padding for icon-only action group buttons (2xs size) - Note: Uses padding.2 (8px) for ghost variant",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.icon-only.container.padding.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.icon.container.padding.xs}",
+      "description": "8px padding for icon-only action group buttons (xs size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.icon-only.container.padding.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{button.icon.container.padding.sm}",
+      "description": "8px padding for icon-only action group buttons (sm size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.icon-only.container.padding.md": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{button.icon.container.padding.md}",
+      "description": "10px padding for icon-only action group buttons (md size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.icon-only.container.padding.lg": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{button.icon.container.padding.lg}",
+      "description": "12px padding for icon-only action group buttons (lg size)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "action-group.icon-only.icon.size.3xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{button.icon.icon.size.3xs}",
+      "description": "14px icon for icon-only action group buttons (3xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.icon.size.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{button.icon.icon.size.2xs}",
+      "description": "16px icon for icon-only action group buttons (2xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.icon.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{button.icon.icon.size.xs}",
+      "description": "16px icon for icon-only action group buttons (xs size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.icon.size.sm": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{button.icon.icon.size.sm}",
+      "description": "20px icon for icon-only action group buttons (sm size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{button.icon.icon.size.md}",
+      "description": "20px icon for icon-only action group buttons (md size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "action-group.icon-only.icon.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{button.icon.icon.size.lg}",
+      "description": "20px icon for icon-only action group buttons (lg size)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

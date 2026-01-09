@@ -1,0 +1,219 @@
+{
+  "component": "content-switcher",
+  "version": "1.0.0",
+  "description": "Figma mapping for content-switcher component tokens",
+  "tokens": {
+    "content-switcher.border.radius.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.3xs}",
+      "description": "Border radius for 3xs size - 4px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "content-switcher.border.radius.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.2xs}",
+      "description": "Border radius for 2xs size - 4px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "content-switcher.border.radius.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "Border radius for xs size - 4px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "content-switcher.border.radius.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "Border radius for sm size - 8px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "content-switcher.border.radius.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.md}",
+      "description": "Border radius for md size - 8px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "content-switcher.border.radius.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.lg}",
+      "description": "Border radius for lg size - 8px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "content-switcher.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Border width for content switcher - 1px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "content-switcher.size.height.3xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Height for 3xs content switcher - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "content-switcher.size.height.2xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Height for 2xs content switcher - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "content-switcher.size.height.xs": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "Height for xs content switcher - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "content-switcher.size.height.sm": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.height.sm}",
+      "description": "Height for sm content switcher - 36px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "content-switcher.size.height.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "Height for md content switcher - 40px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "content-switcher.size.height.lg": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{size.height.lg}",
+      "description": "Height for lg content switcher - 44px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "content-switcher.gap": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{gap.none}",
+      "description": "Gap for content switcher - 0px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "content-switcher.padding": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.none}",
+      "description": "Padding for content switcher - 0px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "content-switcher.variants.background": {
+      "value": "#ffffff00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Primary variant default background - transparent (#ffffff00)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "content-switcher.variants.border": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Primary variant default border - gray-300 (#d0d5dd)",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

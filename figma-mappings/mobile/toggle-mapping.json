@@ -1,0 +1,767 @@
+{
+  "component": "toggle",
+  "version": "1.0.0",
+  "description": "Figma mapping for toggle component tokens",
+  "tokens": {
+    "toggle.track.height.android": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Mobile Android toggle track height - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.track.height.ios": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Mobile iOS toggle track height - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.track.width.android": {
+      "value": "52px",
+      "type": "dimension",
+      "reference": "{size.width.13}",
+      "description": "Mobile Android toggle track width - 52px (constant for both pressed and unpressed states)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.track.width.ios": {
+      "value": "64px",
+      "type": "dimension",
+      "reference": "{size.width.16}",
+      "description": "Mobile iOS toggle track width - 64px (constant for both pressed and unpressed states)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.track.border.radius.android": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Fully rounded border radius for mobile Android toggle track",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "toggle.track.border.radius.ios": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Fully rounded border radius for mobile iOS toggle track",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "toggle.track.padding": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{spacing.0[5]}",
+      "description": "Internal padding for mobile toggle track - 2px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "toggle.track.color.background.android.unpressed.default": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Mobile Android unpressed toggle default background - neutral/gray-100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.android.unpressed.hover": {
+      "value": "#eaecf0",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.2}",
+      "description": "Mobile Android unpressed toggle hover background - neutral/gray-200 - #eaecf0",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.android.unpressed.focused": {
+      "value": "#f9fafb",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Mobile Android unpressed toggle focused background - neutral/gray-50 - #f9fafb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.android.unpressed.disabled": {
+      "value": "#eaecf0",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.2}",
+      "description": "Mobile Android unpressed toggle disabled background - neutral/gray-200 - #eaecf0",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.android.unpressed.error": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Mobile Android unpressed toggle error background - neutral/gray-100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.android.pressed.default": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Mobile Android pressed toggle default background - primary/blue-600 - #155eef",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.android.pressed.hover": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.background.primary.intense.0}",
+      "description": "Mobile Android pressed toggle hover background - primary/blue-700 - #004eeb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.android.pressed.focused": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Mobile Android pressed toggle focused background - primary/blue-600 - #155eef",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.android.pressed.disabled": {
+      "value": "#eaecf0",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.2}",
+      "description": "Mobile Android pressed toggle disabled background - neutral/gray-200 - #eaecf0",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.android.pressed.error": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Mobile Android pressed toggle error background - primary/blue-600 - #155eef",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.ios.unpressed.default": {
+      "value": "#eaecf0",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.2}",
+      "description": "Mobile iOS unpressed toggle default background - neutral/gray-200 - #eaecf0",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.ios.unpressed.hover": {
+      "value": "#eaecf0",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.2}",
+      "description": "Mobile iOS unpressed toggle hover background - neutral/gray-200 - #eaecf0",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.ios.unpressed.focused": {
+      "value": "#eaecf0",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.2}",
+      "description": "Mobile iOS unpressed toggle focused background - neutral/gray-200 - #eaecf0",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.ios.unpressed.disabled": {
+      "value": "#eaecf0",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.2}",
+      "description": "Mobile iOS unpressed toggle disabled background - neutral/gray-200 - #eaecf0",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.ios.unpressed.error": {
+      "value": "#eaecf0",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.2}",
+      "description": "Mobile iOS unpressed toggle error background - neutral/gray-200 - #eaecf0",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.ios.pressed.default": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Mobile iOS pressed toggle default background - primary/blue-600 - #155eef",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.ios.pressed.hover": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.background.primary.intense.0}",
+      "description": "Mobile iOS pressed toggle hover background - primary/blue-700 - #004eeb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.ios.pressed.focused": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Mobile iOS pressed toggle focused background - primary/blue-600 - #155eef",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.ios.pressed.disabled": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Mobile iOS pressed toggle disabled background - neutral/gray-100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.background.ios.pressed.error": {
+      "value": "#155eef",
+      "type": "color",
+      "reference": "{color.background.primary.default}",
+      "description": "Mobile iOS pressed toggle error background - primary/blue-600 - #155eef",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.android.unpressed.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile Android unpressed toggle default border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.android.unpressed.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile Android unpressed toggle hover border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.android.unpressed.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile Android unpressed toggle focused border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.android.unpressed.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile Android unpressed toggle disabled border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.android.unpressed.error": {
+      "value": "#f04438",
+      "type": "color",
+      "reference": "{color.border.error.moderate.1}",
+      "description": "Mobile Android unpressed toggle error border - error/red-500 - #f04438",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.android.pressed.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile Android pressed toggle default border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.android.pressed.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile Android pressed toggle hover border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.android.pressed.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile Android pressed toggle focused border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.android.pressed.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile Android pressed toggle disabled border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.android.pressed.error": {
+      "value": "#f04438",
+      "type": "color",
+      "reference": "{color.border.error.moderate.1}",
+      "description": "Mobile Android pressed toggle error border - error/red-500 - #f04438",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.ios.unpressed.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile iOS unpressed toggle default border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.ios.unpressed.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile iOS unpressed toggle hover border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.ios.unpressed.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile iOS unpressed toggle focused border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.ios.unpressed.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile iOS unpressed toggle disabled border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.ios.unpressed.error": {
+      "value": "#f04438",
+      "type": "color",
+      "reference": "{color.border.error.moderate.1}",
+      "description": "Mobile iOS unpressed toggle error border - error/red-500 - #f04438",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.ios.pressed.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile iOS pressed toggle default border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.ios.pressed.hover": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile iOS pressed toggle hover border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.ios.pressed.focused": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile iOS pressed toggle focused border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.ios.pressed.disabled": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "Mobile iOS pressed toggle disabled border - transparent - no visible border",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.track.color.border.ios.pressed.error": {
+      "value": "#f04438",
+      "type": "color",
+      "reference": "{color.border.error.moderate.1}",
+      "description": "Mobile iOS pressed toggle error border - error/red-500 - #f04438",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.android.size": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.3xs}",
+      "description": "Mobile Android toggle thumb size - 24px circular",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.android.border.radius": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Fully rounded border radius for mobile Android toggle thumb - circular",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.android.background.default": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Mobile Android toggle thumb default background - neutral/gray-0 - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.android.background.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.background.neutral.moderate.0}",
+      "description": "Mobile Android toggle thumb disabled background - neutral/gray-300 - #d0d5dd",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.android.icon.size": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Mobile Android toggle thumb icon size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "toggle.thumb.android.icon.color.default": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Mobile Android toggle thumb icon default color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "toggle.thumb.android.icon.color.disabled": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Mobile Android toggle thumb icon disabled color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "toggle.thumb.android.icon.padding": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "Mobile Android toggle thumb icon padding from edge - 4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "toggle.thumb.ios.size.height": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Mobile iOS toggle knob height - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.ios.size.width": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.width.10}",
+      "description": "Mobile iOS toggle knob width - 40px (approximates 39px design value, constant for both pressed and unpressed states)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.ios.border.radius": {
+      "value": "1000px",
+      "type": "dimension",
+      "reference": "{border.radius.full}",
+      "description": "Fully rounded border radius for mobile iOS toggle knob - pill-shaped",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.ios.background.default": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Mobile iOS toggle knob default background - neutral/gray-0 - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.ios.background.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.background.neutral.moderate.0}",
+      "description": "Mobile iOS toggle knob disabled background - neutral/gray-300 - #d0d5dd",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "toggle.thumb.ios.icon.size": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.sm}",
+      "description": "Mobile iOS toggle knob icon size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "toggle.thumb.ios.icon.color.default": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Mobile iOS toggle knob icon default color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "toggle.thumb.ios.icon.color.disabled": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Mobile iOS toggle knob icon disabled color - neutral/gray-600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "toggle.thumb.ios.icon.padding": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{spacing.1}",
+      "description": "Mobile iOS toggle knob icon padding from edge - 4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "toggle.effects.shadow.thumb.android": {
+      "value": "boxShadow.outer.sm",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Focus shadow for mobile Android toggle - outer sm",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "toggle.effects.shadow.thumb.ios": {
+      "value": "boxShadow.none",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Focus shadow for mobile iOS toggle - none",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "toggle.effects.shadow.thumb.focused": {
+      "value": "boxShadow.focus.2xs.primary.100",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Focus shadow for mobile toggle - focus 2xs primary 100",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

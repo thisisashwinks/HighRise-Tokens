@@ -1,0 +1,352 @@
+{
+  "component": "tab-item",
+  "version": "1.0.0",
+  "description": "Figma mapping for tab-item component tokens",
+  "tokens": {
+    "tab-item.color.default.background": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Mobile tab item default background - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.default.border": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Mobile tab item default border color - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.default.text": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Mobile tab item default text color - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.default.icon": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Mobile tab item default icon color - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.active.background": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Mobile tab item active background - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.active.border": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.border.primary.intense.0}",
+      "description": "Mobile tab item active border color - primary/700 - #004eeb",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.active.text": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "Mobile tab item active text color - primary/700 - #004eeb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.active.icon": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Mobile tab item active icon color - primary/700 - #004eeb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.color.disabled.background": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Mobile tab item disabled background - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.disabled.border": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.border.neutral.subtle.1}",
+      "description": "Mobile tab item disabled border color - gray/100 - #f2f4f7",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "tab-item.color.disabled.text": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Mobile tab item disabled text color - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "tab-item.color.disabled.icon": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Mobile tab item disabled icon color - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "tab-item.border.radius": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{border.radius.none}",
+      "description": "Mobile tab item border radius - none - 0px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "tab-item.border.width.active": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.width.lg}",
+      "description": "Mobile tab item active state bottom border width - 4px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.padding.x.default": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Mobile tab item horizontal padding for default variant - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.padding.y.default": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.y.5xs}",
+      "description": "Mobile tab item vertical padding for default variant - 4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.padding.icon-top.top": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.top.1}",
+      "description": "Mobile tab item top padding for top-icon variant - 4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.padding.icon-top.bottom": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.bottom.2}",
+      "description": "Mobile tab item bottom padding for top-icon variant - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "tab-item.gap": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Mobile tab item gap between icon and text - 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "tab-item.height.default": {
+      "value": "56px",
+      "type": "dimension",
+      "reference": "{size.height.2xl}",
+      "description": "Mobile tab item height for default variant - 56px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "tab-item.height.icon-top": {
+      "value": "64px",
+      "type": "dimension",
+      "reference": "{size.height.3xl}",
+      "description": "Mobile tab item height for icon-top variant - 64px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.icon.size": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "Mobile tab item icon size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "tab-item.typography.text.active": {
+      "value": {
+        "size": "14px",
+        "weight": "semibold"
+      },
+      "type": "typography",
+      "reference": "{font.body.semibold.base}",
+      "description": "Mobile tab item active text typography - 14px semibold weight",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "tab-item.typography.text.default": {
+      "value": {
+        "size": "13px",
+        "weight": "medium"
+      },
+      "type": "typography",
+      "reference": "{font.body.medium.base}",
+      "description": "Mobile tab item default text typography - 13px medium weight",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "tab-item.typography.text.disabled": {
+      "value": {
+        "size": "14px",
+        "weight": "medium"
+      },
+      "type": "typography",
+      "reference": "{font.body.medium.base}",
+      "description": "Mobile tab item disabled text typography - 14px medium weight",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "tab-item.badge.size": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Mobile tab item badge size for default variant - 24px height",
+      "figma_property": {
+        "property": "width",
+        "target": "badge",
+        "also": "height"
+      }
+    }
+  },
+  "instructions": {
+    "default": {
+      "container": {
+        "background": "{color.background.transparent}",
+        "border": "{color.border.neutral.default}",
+        "padding": {
+          "horizontal": "tab-item.padding.horizontal",
+          "vertical": "tab-item.padding.vertical"
+        },
+        "borderRadius": "tab-item.border.radius"
+      },
+      "text": {
+        "color": "{color.text.neutral.subtitle.1}"
+      },
+      "icon": {
+        "color": "{color.icon.neutral.moderate.2}"
+      },
+      "subtext": {
+        "color": null
+      }
+    }
+  },
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

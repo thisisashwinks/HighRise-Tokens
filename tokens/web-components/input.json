@@ -145,7 +145,7 @@
     "shadow": {
       "$comment": "Subtle elevation shadow for input fields",
       "default": {
-        "value": "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+        "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
         "type": "boxShadow",
         "description": "Input default shadow - 0px 1px 2px 0px rgba(16, 24, 40, 0.05)"
       }
@@ -359,7 +359,7 @@
             "description": "Default input focus ring color - primary/300 - #84ADFF"
           },
           "shadow": {
-            "value": "0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+            "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.primary.blue.100}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
             "type": "boxShadow",
             "description": "Default input focus shadow - 0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)"
           }
@@ -482,7 +482,7 @@
             "description": "Destructive input focus ring color - error/300 - #fecdca"
           },
           "shadow": {
-            "value": "0px 0px 0px 4px rgba(254, 228, 226, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+            "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.secondary.error.100}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
             "type": "boxShadow",
             "description": "Destructive input focus shadow - 0px 0px 0px 4px rgba(254, 228, 226, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)"
           }

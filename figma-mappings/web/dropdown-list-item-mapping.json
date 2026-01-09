@@ -1,0 +1,774 @@
+{
+  "component": "dropdown-list-item",
+  "version": "1.0.0",
+  "description": "Figma mapping for dropdown-list-item component tokens",
+  "tokens": {
+    "dropdown-list-item.container.padding.y": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.y.1}",
+      "description": "Vertical padding for menu item container (top and bottom) - 4px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.container.padding.x": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Horizontal padding for menu item container (left and right) - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.container.border-radius": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{border.radius.none}",
+      "description": "Border radius for menu item container - 0px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.gap.container": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "Gap between checkbox/check indicator and content area - 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.gap.content": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Gap between icon and text content within content area - 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.gap.text": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{gap.4xs}",
+      "description": "Gap between text and supporting text - 2px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.gap.supporting": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{gap.4xs}",
+      "description": "Gap between supporting text and icon - 2px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.gap.group-title": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "Gap between group title and content - 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.gap.more-desc": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Gap between more description text and icon - 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.icon.size.leading": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Size of leading icon - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "dropdown-list-item.icon.size.supporting": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{size.icon.4xs}",
+      "description": "Size of supporting icon - 10px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "dropdown-list-item.icon.size.trailing": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Size of trailing icon - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "dropdown-list-item.icon.size.check": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Size of check indicator icon - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "dropdown-list-item.icon.size.expand": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.icon.sm}",
+      "description": "Size of expand icon - 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "dropdown-list-item.icon.color.leading": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Color of leading icon - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "dropdown-list-item.icon.color.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Color of icon for disabled state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "dropdown-list-item.icon.color.supporting": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Color of supporting icon - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "dropdown-list-item.icon.color.trailing": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Color of trailing icon - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "dropdown-list-item.icon.color.check": {
+      "value": "#004eeb",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "Color of check indicator icon - primary/blue/700 - #004eeb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "dropdown-list-item.icon.color.expand": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Color of expand icon - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "dropdown-list-item.avatar.size": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.3xs}",
+      "description": "Avatar size for list items with avatar variant - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.checkbox.size": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Checkbox size for multi-select menu items - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.text.typography": {
+      "value": {
+        "size": "18px",
+        "weight": "line"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.md}",
+      "description": "Primary label text style (13px, Regular, 18px line-height)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "dropdown-list-item.text.color.default": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.body.1}",
+      "description": "Label text color in default/enabled state - gray/700 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "dropdown-list-item.text.color.disabled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Label text color in disabled state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "dropdown-list-item.supporting.typography": {
+      "value": {
+        "size": "16px",
+        "weight": "line"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.xs}",
+      "description": "Supporting description text style (11px, Regular, 16px line-height)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "dropdown-list-item.supporting.color.default": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Description text color in default/enabled state - gray/600 - #475467",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.supporting.color.disabled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Description text color in disabled state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.more-desc.typography": {
+      "value": {
+        "size": "16px",
+        "weight": "line"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.xs}",
+      "description": "Supporting information text style (11px, Regular, 16px line-height)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "dropdown-list-item.more-desc.color.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Supporting text color in default state - gray/500 - #667085",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.more-desc.color.disabled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Supporting text color in disabled state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.background.default": {
+      "value": "#ffffff00",
+      "type": "color",
+      "reference": "{color.background.transparent}",
+      "description": "Background color for menu item in default state - transparent - #ffffff00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.background.hover": {
+      "value": "#f2f4f7",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Background color for menu item on hover - gray/100 - #f2f4f7",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.background.selected": {
+      "value": "#eff4ff",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.0}",
+      "description": "Background color for selected menu item - primary/blue/50 - #eff4ff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.background.disabled": {
+      "value": "#f9fafb",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Background color for disabled menu item - gray/50 - #f9fafb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.tag.gap": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "Gap between multiple tags in badge container (4px)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.search.container.padding": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.2}",
+      "description": "Container padding around search input (8px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.search.container.gap": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{gap.1[5]}",
+      "description": "Gap within search container (6px)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.search.input.height": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.7}",
+      "description": "Search input height (28px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.search.input.padding.vertical": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.1[5]}",
+      "description": "Vertical padding for search input (6px)",
+      "figma_property": {
+        "property": "paddingTop",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.search.input.padding.horizontal": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.2}",
+      "description": "Horizontal padding for search input (8px)",
+      "figma_property": {
+        "property": "paddingLeft",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.search.input.border.color.default": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Search input border color in default state (Gray 300)",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.search.input.border.color.focus": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "Search input border color on focus",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.search.input.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Search input border width (1px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.search.input.border-radius": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "Search input border radius (4px)",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.search.input.background": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Search input background color (White)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.search.input.gap": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.2}",
+      "description": "Gap between search icon and placeholder text (8px)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.search.icon.size": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.4}",
+      "description": "Search icon size (16px)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "dropdown-list-item.search.icon.color": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "Search icon color (Gray 500)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "dropdown-list-item.search.placeholder.typography": {
+      "value": {
+        "size": "20px",
+        "weight": "line"
+      },
+      "type": "typography",
+      "reference": "{font.body.regular.base}",
+      "description": "Search placeholder text style (14px, Regular, 20px line-height)",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "dropdown-list-item.search.placeholder.color": {
+      "value": "{color.text.neutral.subtitle.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Search placeholder text color (Gray 500)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.search.filter-icon.size": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Filter icon size within search (14px)",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "dropdown-list-item.search.filter-icon.gap": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "Gap between filter icons (4px)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.divider.height": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{size.0[25]}",
+      "description": "Divider height (1px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.divider.color": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Divider color (Gray 300)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.divider.margin.vertical": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.0}",
+      "description": "Vertical margin for divider (0px)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.custom.padding.vertical": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.2}",
+      "description": "Vertical padding for custom content (8px)",
+      "figma_property": {
+        "property": "paddingTop",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.custom.padding.horizontal": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.0}",
+      "description": "Horizontal padding for custom content (0px)",
+      "figma_property": {
+        "property": "paddingLeft",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.custom.border-radius": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.sm}",
+      "description": "Border radius for custom content container",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.custom.background": {
+      "value": "{color.background.neutral.subtle.2}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.2}",
+      "description": "Background color for custom content area (Gray 100)",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.check-indicator.size": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.4}",
+      "description": "Check indicator icon size for selected single-select items (16px)",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.check-indicator.color.default": {
+      "value": "{color.border.brand.default}",
+      "type": "color",
+      "reference": "{color.border.brand.default}",
+      "description": "Check indicator color for selected items (Brand Blue)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.right-info.gap": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.1}",
+      "description": "Gap between right-aligned info elements like badges and icons (4px)",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.keyboard-shortcut.typography": {
+      "value": "{font.body.regular.xs}",
+      "type": "string",
+      "reference": "{font.body.regular.xs}",
+      "description": "Typography for keyboard shortcuts display",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.keyboard-shortcut.color": {
+      "value": "{color.text.neutral.subtitle.1}",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Text color for keyboard shortcuts",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "dropdown-list-item.keyboard-shortcut.background": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "Background color for keyboard shortcut badge",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.keyboard-shortcut.padding.vertical": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{padding.0[5]}",
+      "description": "Vertical padding for keyboard shortcut badge",
+      "figma_property": {
+        "property": "paddingTop",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.keyboard-shortcut.padding.horizontal": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{padding.1}",
+      "description": "Horizontal padding for keyboard shortcut badge",
+      "figma_property": {
+        "property": "paddingLeft",
+        "target": "container"
+      }
+    },
+    "dropdown-list-item.keyboard-shortcut.border-radius": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "Border radius for keyboard shortcut badge",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

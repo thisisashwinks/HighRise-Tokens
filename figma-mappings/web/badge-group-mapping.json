@@ -1,0 +1,700 @@
+{
+  "component": "badge-group",
+  "version": "1.0.0",
+  "description": "Figma mapping for badge-group component tokens",
+  "tokens": {
+    "badge-group.border.radius.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.2xl}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "badge-group.border.radius.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.2xl}",
+      "description": "",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "badge-group.border.width.default": {
+      "value": "1.5px",
+      "type": "dimension",
+      "reference": null,
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "badge",
+        "also": "height"
+      }
+    },
+    "badge-group.padding.x.leading.md.left": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.x.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge-group.padding.x.leading.md.right": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{padding.x.2xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge-group.padding.x.leading.lg.left": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.x.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge-group.padding.x.leading.lg.right": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{padding.x.sm}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge-group.padding.x.trailing.md.left": {
+      "value": "10px",
+      "type": "dimension",
+      "reference": "{padding.x.2xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge-group.padding.x.trailing.md.right": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.x.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge-group.padding.x.trailing.lg.left": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{padding.x.sm}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge-group.padding.x.trailing.lg.right": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.x.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge-group.padding.y.md": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge-group.padding.y.lg": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{padding.y.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge-group.gap.md": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{gap.2xs}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "badge-group.gap.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "badge-group.content.gap.md": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{gap.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "badge-group.content.gap.lg": {
+      "value": "2px",
+      "type": "dimension",
+      "reference": "{gap.4xs}",
+      "description": "",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "badge-group.content.text.typography.md": {
+      "value": "{font.body.medium.sm}",
+      "type": "string",
+      "reference": "{font.body.medium.sm}",
+      "description": "",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "badge-group.content.text.typography.lg": {
+      "value": "{font.body.medium.lg}",
+      "type": "typography",
+      "reference": "{font.body.medium.lg}",
+      "description": "",
+      "figma_property": {
+        "property": "fontName",
+        "target": "text"
+      }
+    },
+    "badge-group.content.icon.size.md": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "badge-group.content.icon.size.lg": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "badge-group.variants.primary.medium.background.default": {
+      "value": "{color.background.primary.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.primary.subtle.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.primary.medium.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.primary.medium.text.default": {
+      "value": "{color.text.primary.body.1}",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "badge-group.variants.primary.medium.icon.default": {
+      "value": "{color.icon.primary.default}",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "badge-group.variants.primary.outline.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.primary.outline.border.default": {
+      "value": "{color.border.primary.default}",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.primary.outline.text.default": {
+      "value": "{color.text.primary.body.1}",
+      "type": "color",
+      "reference": "{color.text.primary.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "badge-group.variants.primary.outline.icon.default": {
+      "value": "{color.icon.primary.default}",
+      "type": "color",
+      "reference": "{color.icon.primary.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "badge-group.variants.error.medium.background.default": {
+      "value": "{color.background.error.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.error.subtle.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.error.medium.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.error.medium.text.default": {
+      "value": "{color.text.error.body.1}",
+      "type": "color",
+      "reference": "{color.text.error.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "badge-group.variants.error.medium.icon.default": {
+      "value": "{color.icon.error.default}",
+      "type": "color",
+      "reference": "{color.icon.error.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "badge-group.variants.error.outline.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.error.outline.border.default": {
+      "value": "{color.border.error.default}",
+      "type": "color",
+      "reference": "{color.border.error.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.error.outline.text.default": {
+      "value": "{color.text.error.body.1}",
+      "type": "color",
+      "reference": "{color.text.error.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "badge-group.variants.error.outline.icon.default": {
+      "value": "{color.icon.error.default}",
+      "type": "color",
+      "reference": "{color.icon.error.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "badge-group.variants.warning.medium.background.default": {
+      "value": "{color.background.warning.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.warning.subtle.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.warning.medium.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.warning.medium.text.default": {
+      "value": "{color.text.warning.body.1}",
+      "type": "color",
+      "reference": "{color.text.warning.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "badge-group.variants.warning.medium.icon.default": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "badge-group.variants.warning.outline.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.warning.outline.border.default": {
+      "value": "{color.border.warning.default}",
+      "type": "color",
+      "reference": "{color.border.warning.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.warning.outline.text.default": {
+      "value": "{color.text.warning.body.1}",
+      "type": "color",
+      "reference": "{color.text.warning.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "badge-group.variants.warning.outline.icon.default": {
+      "value": "{color.icon.warning.default}",
+      "type": "color",
+      "reference": "{color.icon.warning.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "badge-group.variants.success.medium.background.default": {
+      "value": "{color.background.success.subtle.0}",
+      "type": "color",
+      "reference": "{color.background.success.subtle.0}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.success.medium.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.success.medium.text.default": {
+      "value": "{color.text.success.body.1}",
+      "type": "color",
+      "reference": "{color.text.success.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "badge-group.variants.success.medium.icon.default": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "badge-group.variants.success.outline.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.success.outline.border.default": {
+      "value": "{color.border.success.default}",
+      "type": "color",
+      "reference": "{color.border.success.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.success.outline.text.default": {
+      "value": "{color.text.success.body.1}",
+      "type": "color",
+      "reference": "{color.text.success.body.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "badge-group.variants.success.outline.icon.default": {
+      "value": "{color.icon.success.default}",
+      "type": "color",
+      "reference": "{color.icon.success.default}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "badge-group.variants.gray.medium.background.default": {
+      "value": "{color.background.neutral.subtle.1}",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.1}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.gray.medium.border.default": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.transparent}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.gray.medium.text.default": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "badge-group.variants.gray.medium.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "badge-group.variants.gray.outline.background.default": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.gray.outline.border.default": {
+      "value": "{color.border.neutral.default}",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "badge-group.variants.gray.outline.text.default": {
+      "value": "{color.text.neutral.body.2}",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "badge-group.variants.gray.outline.icon.default": {
+      "value": "{color.icon.neutral.moderate.2}",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.2}",
+      "description": "",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    }
+  },
+  "instructions": {},
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}

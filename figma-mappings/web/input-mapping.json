@@ -1,0 +1,1945 @@
+{
+  "component": "input",
+  "version": "1.0.0",
+  "description": "Figma mapping for input component tokens",
+  "tokens": {
+    "input.border.radius.3xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.3xs}",
+      "description": "Input border radius for 3xs size - 4px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input.border.radius.2xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.2xs}",
+      "description": "Input border radius for 2xs size - 4px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input.border.radius.xs": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{border.radius.xs}",
+      "description": "Input border radius for xs size - 4px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input.border.radius.sm": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{border.radius.1[5]}",
+      "description": "Input border radius for sm size - 6px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input.border.radius.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.md}",
+      "description": "Input border radius for md size - 8px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input.border.radius.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{border.radius.lg}",
+      "description": "Input border radius for lg size - 8px",
+      "figma_property": {
+        "property": "cornerRadius",
+        "target": "container"
+      }
+    },
+    "input.border.width": {
+      "value": "1px",
+      "type": "dimension",
+      "reference": "{border.width.default}",
+      "description": "Input border width - 1px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.padding.x.3xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.4xs}",
+      "description": "Input horizontal padding for 3xs size - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.padding.x.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.4xs}",
+      "description": "Input horizontal padding for 2xs size - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.padding.x.xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Input horizontal padding for xs size - 12px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.padding.x.sm": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Input horizontal padding for sm size - 12px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.padding.x.md": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{padding.x.xs}",
+      "description": "Input horizontal padding for md size - 16px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.padding.x.lg": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{padding.x.sm}",
+      "description": "Input horizontal padding for lg size - 18px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.padding.y": {
+      "value": "0px",
+      "type": "dimension",
+      "reference": "{padding.y.none}",
+      "description": "Input vertical padding - 0px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.height.3xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Input height for 3xs size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.height.2xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Input height for 2xs size - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.height.xs": {
+      "value": "32px",
+      "type": "dimension",
+      "reference": "{size.height.xs}",
+      "description": "Input height for xs size - 32px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.height.sm": {
+      "value": "36px",
+      "type": "dimension",
+      "reference": "{size.height.sm}",
+      "description": "Input height for sm size - 36px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.height.md": {
+      "value": "40px",
+      "type": "dimension",
+      "reference": "{size.height.md}",
+      "description": "Input height for md size - 40px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.height.lg": {
+      "value": "44px",
+      "type": "dimension",
+      "reference": "{size.height.lg}",
+      "description": "Input height for lg size - 44px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.gap": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{gap.xs}",
+      "description": "Gap between input elements - 8px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "input.shadow.default": {
+      "value": "[{position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Input default shadow - 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.text.typography.3xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Input text typography for 3xs size - 14px regular",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.text.typography.2xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Input text typography for 2xs size - 14px regular",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.text.typography.xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Input text typography for xs size - 14px regular",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.text.typography.sm": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Input text typography for sm size - 14px regular",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.text.typography.md": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Input text typography for md size - 16px regular",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.text.typography.lg": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Input text typography for lg size - 16px regular",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.icon.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Input icon size for 3xs - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.icon.size.2xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Input icon size for 2xs - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.icon.size.xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Input icon size for xs - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.icon.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Input icon size for sm - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.icon.size.md": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Input icon size for md - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.icon.size.lg": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Input icon size for lg - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.color.default.background.default": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Default input background in default state - white/base - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.background.hover": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Default input background in hover state - white/base - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.background.filled": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Default input background in filled state - white/base - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.background.focused": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Default input background in focused state - white/base - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.background.hover-filled": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Default input background in hover-filled state - white/base - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.background.disabled": {
+      "value": "#f9fafb",
+      "type": "color",
+      "reference": "{color.background.neutral.subtle.0}",
+      "description": "Default input background in disabled state - gray/50 - #f9fafb",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.border.default": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Default input border in default state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.border.hover": {
+      "value": "#155EEF",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "Default input border in hover state - blue/600 - #155EEF",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.border.filled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Default input border in filled state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.border.focused": {
+      "value": "#155EEF",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "Default input border in focused state - blue/600 - #155EEF",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.border.hover-filled": {
+      "value": "#155EEF",
+      "type": "color",
+      "reference": "{color.border.primary.default}",
+      "description": "Default input border in hover-filled state - blue/600 - #155EEF",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.border.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.border.neutral.default}",
+      "description": "Default input border in disabled state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.default.text.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Default input text color in default state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.color.default.text.hover": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Default input text color in hover state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.color.default.text.filled": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Default input text color in filled state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.color.default.text.focused": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Default input text color in focused state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.color.default.text.hover-filled": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Default input text color in hover-filled state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.color.default.text.disabled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Default input text color in disabled state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.color.default.icon.default": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.icon.neutral.info}",
+      "description": "Default input icon color in default state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.color.default.icon.hover": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.icon.neutral.info}",
+      "description": "Default input icon color in hover state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.color.default.icon.filled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.icon.neutral.info}",
+      "description": "Default input icon color in filled state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.color.default.icon.focused": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.icon.neutral.info}",
+      "description": "Default input icon color in focused state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.color.default.icon.hover-filled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.icon.neutral.info}",
+      "description": "Default input icon color in hover-filled state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.color.default.icon.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Default input icon color in disabled state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.color.default.focus.ring": {
+      "value": "#84ADFF",
+      "type": "color",
+      "reference": "{color.border.primary.subtle.2}",
+      "description": "Default input focus ring color - primary/300 - #84ADFF",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.color.default.focus.shadow": {
+      "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.primary.blue.100}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Default input focus shadow - 0px 0px 0px 4px rgba(209, 224, 255, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.color.destructive.background.default": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Destructive input background in default state - white/base - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.destructive.background.hover": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Destructive input background in hover state - white/base - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.destructive.background.filled": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Destructive input background in filled state - white/base - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.destructive.background.focused": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Destructive input background in focused state - white/base - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.destructive.background.hover-filled": {
+      "value": "#ffffff",
+      "type": "color",
+      "reference": "{color.background.neutral.base}",
+      "description": "Destructive input background in hover-filled state - white/base - #ffffff",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.destructive.border.default": {
+      "value": "#fda29b",
+      "type": "color",
+      "reference": "{color.border.error.moderate.0}",
+      "description": "Destructive input border in default state - error/300 - #fda29b",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.destructive.border.hover": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.border.error.default}",
+      "description": "Destructive input border in hover state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.destructive.border.filled": {
+      "value": "#fda29b",
+      "type": "color",
+      "reference": "{color.border.error.moderate.0}",
+      "description": "Destructive input border in filled state - error/300 - #fda29b",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.destructive.border.focused": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.border.error.default}",
+      "description": "Destructive input border in focused state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.destructive.border.hover-filled": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.border.error.default}",
+      "description": "Destructive input border in hover-filled state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.color.destructive.text.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Destructive input text color in default state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.color.destructive.text.hover": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Destructive input text color in hover state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.color.destructive.text.filled": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Destructive input text color in filled state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.color.destructive.text.focused": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Destructive input text color in focused state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.color.destructive.text.hover-filled": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Destructive input text color in hover-filled state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.color.destructive.icon.default": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Destructive input icon color in default state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.color.destructive.icon.hover": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Destructive input icon color in hover state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.color.destructive.icon.filled": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Destructive input icon color in filled state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.color.destructive.icon.focused": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Destructive input icon color in focused state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.color.destructive.icon.hover-filled": {
+      "value": "#d92d20",
+      "type": "color",
+      "reference": "{color.icon.error.moderate}",
+      "description": "Destructive input icon color in hover-filled state - error/600 - #d92d20",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.color.destructive.focus.ring": {
+      "value": "#fecdca",
+      "type": "color",
+      "reference": "{color.border.error.subtle.2}",
+      "description": "Destructive input focus ring color - error/300 - #fecdca",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.color.destructive.focus.shadow": {
+      "value": "[{position.x.0, position.y.0, blur.0, spread.1, color.secondary.error.100}, {position.x.0, position.y.0[25], blur.0[5], spread.0, color-shadow.default.0[05]}]",
+      "type": "boxShadow",
+      "reference": null,
+      "description": "Destructive input focus shadow - 0px 0px 0px 4px rgba(254, 228, 226, 1), 0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.background": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.background.neutral.transparent}",
+      "description": "Leading/Trailing addon background color - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.addon.border": {
+      "value": "#FFFFFF00",
+      "type": "color",
+      "reference": "{color.border.neutral.transparent}",
+      "description": "Leading/Trailing addon border color - transparent - #FFFFFF00",
+      "figma_property": {
+        "property": "strokes",
+        "type": "SOLID",
+        "target": "container"
+      }
+    },
+    "input.addon.text.color": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Leading/Trailing addon text color - gray/600 - #475467",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.addon.padding.x.3xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.4xs}",
+      "description": "Leading/trailing addon horizontal padding for 3xs size - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.padding.x.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.x.4xs}",
+      "description": "Leading/trailing addon horizontal padding for xs size - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.padding.x.xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Leading/trailing addon horizontal padding for xs size - 12px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.padding.x.sm": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{padding.x.3xs}",
+      "description": "Leading/trailing addon horizontal padding for sm size - 12px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.padding.x.md": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{padding.x.xs}",
+      "description": "Leading/trailing addon horizontal padding for md size - 16px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.padding.x.lg": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{padding.x.sm}",
+      "description": "Leading/trailing addon horizontal padding for lg size - 18px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.padding.y.3xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.3xs}",
+      "description": "Leading/trailing addon vertical padding for 3xs size - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.padding.y.2xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.2xs}",
+      "description": "Leading/trailing addon vertical padding for 2xs size - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.padding.y.xs": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.xs}",
+      "description": "Leading/trailing addon vertical padding for xs size - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.padding.y.sm": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.sm}",
+      "description": "Leading/trailing addon vertical padding for sm size - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.padding.y.md": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.sm}",
+      "description": "Leading/trailing addon vertical padding for md size - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.addon.padding.y.lg": {
+      "value": "8px",
+      "type": "dimension",
+      "reference": "{padding.y.md}",
+      "description": "Leading/trailing addon vertical padding for lg size - 8px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.prefix.text.color.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Prefix text color in default state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.prefix.text.color.disabled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Prefix text color in disabled state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.suffix.text.color.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Suffix text color in default state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.suffix.text.color.disabled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Suffix text color in disabled state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.dropdown.gap": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Gap between dropdown elements - 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "input.dropdown.text.color.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.1}",
+      "description": "Dropdown text color in default state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.dropdown.text.color.filled": {
+      "value": "#101828",
+      "type": "color",
+      "reference": "{color.text.neutral.title.1}",
+      "description": "Dropdown text color in filled state - gray/900 - #101828",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.dropdown.text.color.disabled": {
+      "value": "#98a2b3",
+      "type": "color",
+      "reference": "{color.text.neutral.subtitle.2}",
+      "description": "Dropdown text color in disabled state - gray/400 - #98a2b3",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "text"
+      }
+    },
+    "input.dropdown.chevron.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Dropdown chevron size for 3xs size - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.dropdown.chevron.size.2xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Dropdown chevron size for 2xs size - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.dropdown.chevron.size.xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Dropdown chevron size for xs size - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.dropdown.chevron.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Dropdown chevron size for sm size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.dropdown.chevron.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Dropdown chevron size for md size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.dropdown.chevron.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Dropdown chevron size for lg size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.dropdown.chevron.color.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.0}",
+      "description": "Dropdown chevron color in default state - gray/500 - #667085",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.dropdown.chevron.color.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Dropdown chevron color in disabled state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.password.toggle.icon.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Password toggle icon size for 3xs size - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.password.toggle.icon.size.2xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Password toggle icon size for 2xs size - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.password.toggle.icon.size.xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Password toggle icon size for xs size - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.password.toggle.icon.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Password toggle icon size for sm size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.password.toggle.icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Password toggle icon size for md size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.password.toggle.icon.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Password toggle icon size for lg size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.password.toggle.icon.color.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.0}",
+      "description": "Password toggle icon color in default state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.password.toggle.icon.color.disabled": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.0}",
+      "description": "Password toggle icon color in disabled state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.leading-icon.size.3xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Leading icon size for 3xs size - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.leading-icon.size.2xs": {
+      "value": "14px",
+      "type": "dimension",
+      "reference": "{size.icon.2xs}",
+      "description": "Leading icon size for 2xs size - 14px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.leading-icon.size.xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Leading icon size for xs size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.leading-icon.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Leading icon size for sm size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.leading-icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Leading icon size for md size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.leading-icon.size.lg": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Leading icon size for lg size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.leading-icon.color.default": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.0}",
+      "description": "Leading icon color in default state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.leading-icon.color.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Leading icon color in disabled state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.tags.tags.size.3xs": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.height.4[5]}",
+      "description": "Tags size for 3xs size - tag size: xs; tag height: 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.tags.tags.size.2xs": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.height.4[5]}",
+      "description": "Tags size for 2xs size - tag size: xs; tag height: 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.tags.tags.size.xs": {
+      "value": "22px",
+      "type": "dimension",
+      "reference": "{size.height.5[5]}",
+      "description": "Tags size for xs size - tag size: sm; tag height: 22px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.tags.tags.size.sm": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Tags size for sm size - tag size: md; tag height: 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.tags.tags.size.md": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Tags size for md size - tag size: lg; tag height: 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.tags.tags.size.lg": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.height.2xs}",
+      "description": "Tags size for lg size - tag size: lg; tag height: 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.tags.tags.gap-between-tags": {
+      "value": "6px",
+      "type": "dimension",
+      "reference": "{gap.x.2xs}",
+      "description": "Gap between tags - horizontal - 6px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "input.tags.tags.gap-between-tags-and-input": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.x.3xs}",
+      "description": "Gap between tags and input - horizontal - 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    },
+    "input.clear-button.icon.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Clear button icon size for 3xs size - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.clear-button.icon.size.2xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Clear button icon size for 2xs size - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.clear-button.icon.size.xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Clear button icon size for xs size - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.clear-button.icon.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Clear button icon size for sm size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.clear-button.icon.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Clear button icon size for md size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.clear-button.icon.size.lg": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Clear button icon size for lg size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.clear-button.icon.color.filled": {
+      "value": "#667085",
+      "type": "color",
+      "reference": "{color.icon.neutral.moderate.0}",
+      "description": "Clear button icon color in filled state - gray/500 - #667085",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.clear-button.icon.color.disabled": {
+      "value": "#d0d5dd",
+      "type": "color",
+      "reference": "{color.icon.neutral.subtle.2}",
+      "description": "Clear button icon color in disabled state - gray/300 - #d0d5dd",
+      "figma_property": {
+        "property": "fills",
+        "type": "SOLID",
+        "target": "icon"
+      }
+    },
+    "input.loading-indicator.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Loading indicator size for 3xs size - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.loading-indicator.size.2xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Loading indicator size for 2xs size - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.loading-indicator.size.xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Loading indicator size for xs size - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.loading-indicator.size.sm": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Loading indicator size for sm size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.loading-indicator.size.md": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Loading indicator size for md size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.loading-indicator.size.lg": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Loading indicator size for lg size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.loading-indicator.color.default": {
+      "value": "#2970ff",
+      "type": "color",
+      "reference": "{color.icon.primary.moderate.0}",
+      "description": "Loading indicator color in default state - blue/500 - #2970ff",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.character-limit-counter.size.3xs": {
+      "value": "{font.body.regular.3xs}",
+      "type": "string",
+      "reference": "{font.body.regular.3xs}",
+      "description": "Character limit counter size for 3xs size - 10px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.character-limit-counter.size.2xs": {
+      "value": "{font.body.regular.2xs}",
+      "type": "string",
+      "reference": "{font.body.regular.2xs}",
+      "description": "Character limit counter size for 2xs size - 12px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.character-limit-counter.size.xs": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Character limit counter size for xs size - 14px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.character-limit-counter.size.sm": {
+      "value": "{font.body.regular.base}",
+      "type": "string",
+      "reference": "{font.body.regular.base}",
+      "description": "Character limit counter size for sm size - 16px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.character-limit-counter.size.md": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Character limit counter size for md size - 18px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.character-limit-counter.size.lg": {
+      "value": "{font.body.regular.2xl}",
+      "type": "string",
+      "reference": "{font.body.regular.2xl}",
+      "description": "Character limit counter size for lg size - 20px",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.character-limit-counter.color.default": {
+      "value": "#475467",
+      "type": "color",
+      "reference": "{color.text.neutral.body.2}",
+      "description": "Character limit counter color in default state - gray/600 - #475467",
+      "figma_property": {
+        "property": "unknown",
+        "target": "unknown"
+      }
+    },
+    "input.payment-input.card-icon.size.width.3xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.width.3xs}",
+      "description": "Payment input card icon width for 3xs size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.payment-input.card-icon.size.width.2xs": {
+      "value": "28px",
+      "type": "dimension",
+      "reference": "{size.width.2xs}",
+      "description": "Payment input card icon width for xs size - 28px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.payment-input.card-icon.size.width.xs": {
+      "value": "34px",
+      "type": "dimension",
+      "reference": "{size.width.8[5]}",
+      "description": "Payment input card icon width for xs size - 34px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.payment-input.card-icon.size.width.sm": {
+      "value": "34px",
+      "type": "dimension",
+      "reference": "{size.width.8[5]}",
+      "description": "Payment input card icon width for sm size - 34px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.payment-input.card-icon.size.width.md": {
+      "value": "34px",
+      "type": "dimension",
+      "reference": "{size.width.8[5]}",
+      "description": "Payment input card icon width for md size - 34px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.payment-input.card-icon.size.width.lg": {
+      "value": "34px",
+      "type": "dimension",
+      "reference": "{size.width.8[5]}",
+      "description": "Payment input card icon width for lg size - 34px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.payment-input.card-icon.size.height.3xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.height.4}",
+      "description": "Payment input card icon height for 3xs size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.payment-input.card-icon.size.height.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.height.4}",
+      "description": "Payment input card icon height for 2xs size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.payment-input.card-icon.size.height.xs": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Payment input card icon height for xs size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.payment-input.card-icon.size.height.sm": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Payment input card icon height for sm size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.payment-input.card-icon.size.height.md": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Payment input card icon height for md size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.payment-input.card-icon.size.height.lg": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.height.3xs}",
+      "description": "Payment input card icon height for lg size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "icon",
+        "also": "height"
+      }
+    },
+    "input.phone-number.country-code-selector.size.3xs": {
+      "value": "12px",
+      "type": "dimension",
+      "reference": "{size.icon.3xs}",
+      "description": "Phone number input country code selector size for 3xs size - 12px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.phone-number.country-code-selector.size.2xs": {
+      "value": "16px",
+      "type": "dimension",
+      "reference": "{size.icon.xs}",
+      "description": "Phone number input country code selector size for 2xs size - 16px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.phone-number.country-code-selector.size.xs": {
+      "value": "18px",
+      "type": "dimension",
+      "reference": "{size.icon.sm}",
+      "description": "Phone number input country code selector size for xs size - 18px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.phone-number.country-code-selector.size.sm": {
+      "value": "20px",
+      "type": "dimension",
+      "reference": "{size.icon.md}",
+      "description": "Phone number input country code selector size for sm size - 20px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.phone-number.country-code-selector.size.md": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "Phone number input country code selector size for md size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.phone-number.country-code-selector.size.lg": {
+      "value": "24px",
+      "type": "dimension",
+      "reference": "{size.icon.lg}",
+      "description": "Phone number input country code selector size for lg size - 24px",
+      "figma_property": {
+        "property": "width",
+        "target": "container"
+      }
+    },
+    "input.phone-number.gap": {
+      "value": "4px",
+      "type": "dimension",
+      "reference": "{gap.3xs}",
+      "description": "Gap between phone number elements - 4px",
+      "figma_property": {
+        "property": "itemSpacing",
+        "target": "container"
+      }
+    }
+  },
+  "instructions": {
+    "default": {
+      "container": {
+        "background": null,
+        "border": null,
+        "padding": {
+          "horizontal": "input.padding.horizontal",
+          "vertical": "input.padding.vertical"
+        },
+        "borderRadius": "input.border.radius",
+        "shadow": "input.shadow"
+      },
+      "text": {
+        "color": null
+      },
+      "icon": {
+        "color": null
+      },
+      "subtext": {
+        "color": null
+      }
+    }
+  },
+  "node_matching": {
+    "selected": {
+      "patterns": [
+        "State=Selected",
+        "state=selected",
+        "Selected",
+        "selected=true"
+      ],
+      "data_attribute": "data-name"
+    },
+    "default": {
+      "patterns": [
+        "State=Unselected",
+        "State=Default",
+        "state=unselected",
+        "state=default",
+        "Unselected",
+        "Default"
+      ],
+      "data_attribute": "data-name"
+    }
+  },
+  "application_guide": {
+    "container": {
+      "background": "Apply to frame.fills[0]",
+      "border": "Apply to frame.strokes[0]",
+      "borderRadius": "Apply to frame.cornerRadius",
+      "padding": "Apply to frame.paddingLeft/Right/Top/Bottom",
+      "shadow": "Apply to frame.effects"
+    },
+    "text": {
+      "color": "Apply to textNode.fills[0]",
+      "typography": "Apply to textNode.fontName, fontSize, fontWeight"
+    },
+    "icon": {
+      "color": "Apply to iconNode.fills[0]",
+      "size": "Apply to iconNode.width/height"
+    }
+  }
+}
