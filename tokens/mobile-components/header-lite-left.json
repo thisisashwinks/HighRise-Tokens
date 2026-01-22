@@ -1,0 +1,462 @@
+{
+  "$comment": "Mobile Header Lite Left Component Tokens",
+  "$description": "Component tokens for Mobile Header Lite Left component - the left section of Header Lite with leading icon, optional image/avatar, optional icon, title with optional info/error icons, optional badge/tag, and optional subtitle. Supports multiple sizes (lg, md, sm), disabled state, and optional badge. Figma Reference: Node ID 546-36659",
+  "$component": {
+    "name": "Header Lite Left",
+    "description": "The left section component of Header Lite that provides flexible content display with leading icon, optional image/avatar, optional icon, title text with optional info/error icons, optional badge/tag indicator, and optional subtitle text. Supports multiple size variants and disabled state for different mobile interface contexts.",
+    "structure": "Horizontal flex container with leading icon (40px), content group with optional image, optional icon, title section (title text with optional info/error icons and optional badge), and optional subtitle. Layout uses flexbox with configurable gap spacing between elements.",
+    "sizes": {
+      "lg": "Large size - Title 14px semibold, Subtitle 12px regular, Image 34px×24px, Icon 24px, Info/Error icons 16px, Badge height 24px",
+      "md": "Medium size - Title 13px semibold, Subtitle 11px regular, Image 28.33px×20px, Icon 20px, Info/Error icons 14px, Badge height 22px",
+      "sm": "Small size - Title 12px semibold, Subtitle 10px regular, Image 25.5px×18px, Icon 18px, Info/Error icons 12px, Badge height 18px"
+    },
+    "variants": {
+      "size": {
+        "lg": "Large size variant with larger typography and icon sizes",
+        "md": "Medium size variant with medium typography and icon sizes",
+        "sm": "Small size variant with smaller typography and icon sizes"
+      },
+      "state": {
+        "default": "Default enabled state with full color and opacity",
+        "disabled": "Disabled state with gray-300 colors and reduced opacity for badge"
+      },
+      "badge": {
+        "none": "No badge/tag displayed",
+        "present": "Badge/tag displayed after error icon in title section"
+      },
+      "subtitle": {
+        "none": "No subtitle displayed",
+        "present": "Subtitle text displayed below title section"
+      },
+      "info": {
+        "none": "No info icon displayed",
+        "present": "Info icon displayed after title text"
+      },
+      "error": {
+        "none": "No error icon displayed",
+        "present": "Error icon displayed after info icon"
+      },
+      "icon": {
+        "none": "No icon displayed in content group",
+        "present": "Icon displayed in content group"
+      },
+      "image-leading": {
+        "none": "No image/avatar displayed",
+        "present": "Image/avatar displayed as leading element in content group"
+      }
+    },
+    "usage": {
+      "contexts": "Mobile header components, list headers, navigation items, content displays, detail page headers, card headers",
+      "features": "Multiple size variants, Optional elements (image, icon, info, error, badge, subtitle), Disabled state support, Flexible content layout, Leading icon navigation"
+    }
+  },
+  "header-lite-left": {
+    "container": {
+      "$comment": "Container tokens for mobile header lite left - layout and spacing",
+      "gap": {
+        "content": {
+          "value": "{gap.2}",
+          "type": "dimension",
+          "description": "Mobile header lite left gap between leading icon and content group - 8px"
+        }
+      }
+    },
+    "leading-icon": {
+      "$comment": "Leading icon tokens - navigation icon (back arrow/chevron)",
+      "size": {
+        "value": "{size.icon.4xl}",
+        "type": "dimension",
+        "description": "Mobile header lite left leading icon size - 40px"
+      },
+      "color": {
+        "default": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile header lite left leading icon default color - neutral/gray-600 - #475467"
+        },
+        "disabled": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile header lite left leading icon disabled color - neutral/gray-300 - #d0d5dd"
+        }
+      }
+    },
+    "content-group": {
+      "$comment": "Content group tokens - image, icon, title section, and subtitle",
+      "gap": {
+        "lg": {
+          "value": "{gap.2}",
+          "type": "dimension",
+          "description": "Mobile header lite left content group gap for large size - 8px"
+        },
+        "md": {
+          "value": "{gap.1[5]}",
+          "type": "dimension",
+          "description": "Mobile header lite left content group gap for medium size - 6px"
+        },
+        "sm": {
+          "value": "{gap.3xs}",
+          "type": "dimension",
+          "description": "Mobile header lite left content group gap for small size - 4px"
+        }
+      },
+      "image": {
+        "$comment": "Image/avatar tokens - optional image or avatar display",
+        "size": {
+          "lg": {
+            "width": {
+              "value": "{size.width.8[5]}",
+              "type": "dimension",
+              "description": "Mobile header lite left image width for large size - 34px"
+            },
+            "height": {
+              "value": "{size.height.6}",
+              "type": "dimension",
+              "description": "Mobile header lite left image height for large size - 24px"
+            }
+          },
+          "md": {
+            "width": {
+              "value": "{size.width.7}",
+              "type": "dimension",
+              "description": "Mobile header lite left image width for medium size - 28px (closest to 28.33px design spec)"
+            },
+            "height": {
+              "value": "{size.height.5}",
+              "type": "dimension",
+              "description": "Mobile header lite left image height for medium size - 20px"
+            }
+          },
+          "sm": {
+            "width": {
+              "value": "{size.width.6[5]}",
+              "type": "dimension",
+              "description": "Mobile header lite left image width for small size - 26px (closest to 25.5px design spec)"
+            },
+            "height": {
+              "value": "{size.height.4[5]}",
+              "type": "dimension",
+              "description": "Mobile header lite left image height for small size - 18px (closest available token)"
+            }
+          }
+        },
+        "border": {
+          "radius": {
+            "value": "{border.radius.xs}",
+            "type": "dimension",
+            "description": "Mobile header lite left image border radius - 4px"
+          },
+          "width": {
+            "value": "{border.width.1}",
+            "type": "dimension",
+            "description": "Mobile header lite left image border width - 1px"
+          },
+          "color": {
+            "value": "{color.border.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile header lite left image border color - neutral/gray-100 - #f2f4f7"
+          }
+        },
+        "color": {
+          "background": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile header lite left image background - neutral/white - #ffffff"
+          }
+        }
+      },
+      "icon": {
+        "$comment": "Icon tokens - optional icon displayed in content group",
+        "size": {
+          "lg": {
+            "value": "{size.icon.lg}",
+            "type": "dimension",
+            "description": "Mobile header lite left content group icon size for large size - 24px"
+          },
+          "md": {
+            "value": "{size.icon.md}",
+            "type": "dimension",
+            "description": "Mobile header lite left content group icon size for medium size - 20px"
+          },
+          "sm": {
+            "value": "{size.icon.sm}",
+            "type": "dimension",
+            "description": "Mobile header lite left content group icon size for small size - 18px"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile header lite left content group icon default color - neutral/gray-600 - #475467"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile header lite left content group icon disabled color - neutral/gray-300 - #d0d5dd"
+          }
+        }
+      },
+      "title-section": {
+        "$comment": "Title section tokens - title text with optional info and error icons, and optional badge",
+        "gap": {
+          "elements": {
+            "value": "{gap.3xs}",
+            "type": "dimension",
+            "description": "Mobile header lite left gap between title section elements (title text, info icon, error icon, badge) - 4px"
+          },
+          "badge": {
+            "lg": {
+              "value": "{gap.1[5]}",
+              "type": "dimension",
+              "description": "Mobile header lite left gap before badge for large size - 6px"
+            },
+            "md": {
+              "value": "{gap.3xs}",
+              "type": "dimension",
+              "description": "Mobile header lite left gap before badge for medium size - 4px"
+            },
+            "sm": {
+              "value": "{gap.4xs}",
+              "type": "dimension",
+              "description": "Mobile header lite left gap before badge for small size - 2px"
+            }
+          }
+        },
+        "title": {
+          "$comment": "Title text tokens",
+          "typography": {
+            "lg": {
+              "value": "{font.body.semibold.base}",
+              "type": "typography",
+              "description": "Mobile header lite left title typography for large size - 14px semibold, 20px line height"
+            },
+            "md": {
+              "value": "{font.body.semibold.md}",
+              "type": "typography",
+              "description": "Mobile header lite left title typography for medium size - 13px semibold, 18px line height"
+            },
+            "sm": {
+              "value": "{font.body.semibold.sm}",
+              "type": "typography",
+              "description": "Mobile header lite left title typography for small size - 12px semibold, 17px line height"
+            }
+          },
+          "color": {
+            "default": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "description": "Mobile header lite left title default color - neutral/gray-900 - #101828"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.inactive}",
+              "type": "color",
+              "description": "Mobile header lite left title disabled color - neutral/gray-300 - #d0d5dd"
+            }
+          }
+        },
+        "info-icon": {
+          "$comment": "Info icon tokens - optional information icon",
+          "size": {
+            "lg": {
+              "value": "{size.icon.xs}",
+              "type": "dimension",
+              "description": "Mobile header lite left title info icon size for large size - 16px"
+            },
+            "md": {
+              "value": "{size.icon.2xs}",
+              "type": "dimension",
+              "description": "Mobile header lite left title info icon size for medium size - 14px"
+            },
+            "sm": {
+              "value": "{size.icon.3xs}",
+              "type": "dimension",
+              "description": "Mobile header lite left title info icon size for small size - 12px"
+            }
+          },
+          "color": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile header lite left title info icon default color - neutral/gray-600 - #475467"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile header lite left title info icon disabled color - neutral/gray-300 - #d0d5dd"
+            }
+          }
+        },
+        "error-icon": {
+          "$comment": "Error icon tokens - optional error/warning icon",
+          "size": {
+            "lg": {
+              "value": "{size.icon.xs}",
+              "type": "dimension",
+              "description": "Mobile header lite left title error icon size for large size - 16px"
+            },
+            "md": {
+              "value": "{size.icon.2xs}",
+              "type": "dimension",
+              "description": "Mobile header lite left title error icon size for medium size - 14px"
+            },
+            "sm": {
+              "value": "{size.icon.3xs}",
+              "type": "dimension",
+              "description": "Mobile header lite left title error icon size for small size - 12px"
+            }
+          },
+          "color": {
+            "default": {
+              "value": "{color.icon.error.moderate}",
+              "type": "color",
+              "description": "Mobile header lite left title error icon default color - error/red-600 - #d92d20"
+            },
+            "disabled": {
+              "value": "{color.icon.error.inactive}",
+              "type": "color",
+              "description": "Mobile header lite left title error icon disabled color - error/red-300 - #fda29b"
+            }
+          }
+        },
+        "badge": {
+          "$comment": "Badge/tag tokens - optional badge indicator in title section",
+          "height": {
+            "lg": {
+              "value": "{size.height.6}",
+              "type": "dimension",
+              "description": "Mobile header lite left badge height for large size - 24px"
+            },
+            "md": {
+              "value": "{size.height.5[5]}",
+              "type": "dimension",
+              "description": "Mobile header lite left badge height for medium size - 22px"
+            },
+            "sm": {
+              "value": "{size.height.4[5]}",
+              "type": "dimension",
+              "description": "Mobile header lite left badge height for small size - 18px"
+            }
+          },
+          "padding": {
+            "x": {
+              "lg": {
+                "value": "{padding.x.2}",
+                "type": "dimension",
+                "description": "Mobile header lite left badge horizontal padding for large size - 8px"
+              },
+              "md": {
+                "value": "{padding.x.2}",
+                "type": "dimension",
+                "description": "Mobile header lite left badge horizontal padding for medium size - 8px"
+              },
+              "sm": {
+                "value": "{padding.x.1[5]}",
+                "type": "dimension",
+                "description": "Mobile header lite left badge horizontal padding for small size - 6px"
+              }
+            }
+          },
+          "border": {
+            "radius": {
+              "lg": {
+                "value": "{border.radius.3xl}",
+                "type": "dimension",
+                "description": "Mobile header lite left badge border radius for large size - 12px"
+              },
+              "md": {
+                "value": "{border.radius.3xl}",
+                "type": "dimension",
+                "description": "Mobile header lite left badge border radius for medium size - 12px (closest to 11px design spec)"
+              },
+              "sm": {
+                "value": "{border.radius.2xl}",
+                "type": "dimension",
+                "description": "Mobile header lite left badge border radius for small size - 8px (closest to 9px design spec)"
+              }
+            }
+          },
+          "gap": {
+            "internal": {
+              "value": "{gap.4xs}",
+              "type": "dimension",
+              "description": "Mobile header lite left badge internal gap - 2px"
+            }
+          },
+          "typography": {
+            "lg": {
+              "value": "{font.body.medium.md}",
+              "type": "typography",
+              "description": "Mobile header lite left badge typography for large size - 13px medium, 18px line height"
+            },
+            "md": {
+              "value": "{font.body.medium.sm}",
+              "type": "typography",
+              "description": "Mobile header lite left badge typography for medium size - 12px medium, 17px line height"
+            },
+            "sm": {
+              "value": "{font.body.medium.xs}",
+              "type": "typography",
+              "description": "Mobile header lite left badge typography for small size - 11px medium, 16px line height"
+            }
+          },
+          "color": {
+            "background": {
+              "default": {
+                "value": "{color.background.success.subtle.0}",
+                "type": "color",
+                "description": "Mobile header lite left badge default background - success/50 - #ecfdf3"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.success.body.1}",
+                "type": "color",
+                "description": "Mobile header lite left badge default text color - success/700 - #027a48"
+              }
+            },
+            "opacity": {
+              "disabled": {
+                "value": "0.3",
+                "type": "number",
+                "description": "Mobile header lite left badge disabled opacity - 30%"
+              }
+            }
+          }
+        }
+      },
+      "subtitle": {
+        "$comment": "Subtitle text tokens",
+        "typography": {
+          "lg": {
+            "value": "{font.body.regular.sm}",
+            "type": "typography",
+            "description": "Mobile header lite left subtitle typography for large size - 12px regular, 17px line height"
+          },
+          "md": {
+            "value": "{font.body.regular.xs}",
+            "type": "typography",
+            "description": "Mobile header lite left subtitle typography for medium size - 11px regular, 16px line height"
+          },
+          "sm": {
+            "value": "{font.body.regular.2xs}",
+            "type": "typography",
+            "description": "Mobile header lite left subtitle typography for small size - 10px regular, 15px line height"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Mobile header lite left subtitle default color - neutral/gray-500 - #667085"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.inactive}",
+            "type": "color",
+            "description": "Mobile header lite left subtitle disabled color - neutral/gray-300 - #d0d5dd"
+          }
+        }
+      }
+    }
+  }
+}

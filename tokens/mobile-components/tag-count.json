@@ -1,0 +1,168 @@
+{
+  "$comment": "Mobile Tag Count Component Tokens",
+  "$description": "Component tokens for Mobile Tag Count component - a small badge/pill-shaped component used to display numeric counts or quantities. Features rounded corners, light background, and dark text. Supports 4 size variants (xs, sm, md, lg) for different mobile interface contexts. Figma Reference: Node ID 393-814",
+  "$component": {
+    "name": "Tag Count",
+    "description": "A mobile badge component used to display numeric counts, quantities, or indicators. Typically appears as a small pill-shaped element with rounded corners, containing centered numeric text. Used in navigation items, buttons, tabs, and other UI elements to show counts or notifications.",
+    "structure": "Horizontally elongated rounded rectangle container with centered numeric text. Background color provides subtle visual distinction, text color ensures readability.",
+    "sizes": {
+      "xs": "Extra small size for compact mobile interfaces - typically 12px height",
+      "sm": "Small size for standard mobile interfaces - typically 16px height",
+      "md": "Medium size for prominent mobile displays - typically 18px height",
+      "lg": "Large size for emphasized mobile displays - typically 18px height"
+    },
+    "variants": {
+      "default": "Standard tag count with neutral gray background and dark gray text"
+    },
+    "usage": {
+      "contexts": "Mobile navigation badges, tab indicators, button counts, notification badges, filter counts, list item quantities, mobile menu indicators",
+      "features": "Numeric count display, compact sizing, rounded pill shape, subtle background, clear text contrast"
+    }
+  },
+  "tag-count": {
+    "container": {
+      "$comment": "Container properties for mobile tag count component - background, border radius, padding, and height",
+      "background": {
+        "color": {
+          "default": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile tag count default background color - neutral/gray-100 - #f2f4f7 (light gray background)"
+          }
+        }
+      },
+      "border": {
+        "$comment": "Border radius for mobile tag count component - creates rounded pill shape",
+        "radius": {
+          "xs": {
+            "value": "{border.radius.0[5]}",
+            "type": "dimension",
+            "description": "Mobile tag count border radius for xs size - 2px (slightly rounded corners)"
+          },
+          "sm": {
+            "value": "{border.radius.0[5]}",
+            "type": "dimension",
+            "description": "Mobile tag count border radius for sm size - 2px (slightly rounded corners)"
+          },
+          "md": {
+            "value": "{border.radius.0[5]}",
+            "type": "dimension",
+            "description": "Mobile tag count border radius for md size - 2px (slightly rounded corners)"
+          },
+          "lg": {
+            "value": "{border.radius.1}",
+            "type": "dimension",
+            "description": "Mobile tag count border radius for lg size - 4px (more rounded corners for larger size)"
+          }
+        }
+      },
+      "padding": {
+        "$comment": "Internal padding for mobile tag count component - horizontal (x) and vertical (y) spacing around text",
+        "horizontal": {
+          "xs": {
+            "value": "{padding.0[5]}",
+            "type": "dimension",
+            "description": "Mobile tag count horizontal padding for xs size - 2px (minimal padding for compact size)"
+          },
+          "sm": {
+            "value": "{padding.1}",
+            "type": "dimension",
+            "description": "Mobile tag count horizontal padding for sm size - 4px (standard padding)"
+          },
+          "md": {
+            "value": "{padding.1[25]}",
+            "type": "dimension",
+            "description": "Mobile tag count horizontal padding for md size - 5px (slightly more padding for medium size)"
+          },
+          "lg": {
+            "value": "{padding.1[5]}",
+            "type": "dimension",
+            "description": "Mobile tag count horizontal padding for lg size - 6px (more padding for larger size)"
+          }
+        },
+        "vertical": {
+          "xs": {
+            "value": "{padding.0}",
+            "type": "dimension",
+            "description": "Mobile tag count vertical padding for xs size - 0px (no vertical padding, height determined by font size)"
+          },
+          "sm": {
+            "value": "{padding.0}",
+            "type": "dimension",
+            "description": "Mobile tag count vertical padding for sm size - 0px (no vertical padding, height determined by font size)"
+          },
+          "md": {
+            "value": "{padding.0}",
+            "type": "dimension",
+            "description": "Mobile tag count vertical padding for md size - 0px (no vertical padding, height determined by font size)"
+          },
+          "lg": {
+            "value": "{padding.0}",
+            "type": "dimension",
+            "description": "Mobile tag count vertical padding for lg size - 0px (no vertical padding, height determined by font size)"
+          }
+        }
+      },
+      "size": {
+        "$comment": "Height dimensions for mobile tag count component - determines overall component height for each size variant",
+        "height": {
+          "xs": {
+            "value": "{size.height.3}",
+            "type": "dimension",
+            "description": "Mobile tag count height for xs size - 12px (compact height for small badges)"
+          },
+          "sm": {
+            "value": "{size.height.4}",
+            "type": "dimension",
+            "description": "Mobile tag count height for sm size - 16px (standard height for mobile badges)"
+          },
+          "md": {
+            "value": "{size.height.4[5]}",
+            "type": "dimension",
+            "description": "Mobile tag count height for md size - 18px (medium height for prominent badges)"
+          },
+          "lg": {
+            "value": "{size.height.4[5]}",
+            "type": "dimension",
+            "description": "Mobile tag count height for lg size - 18px (larger height for emphasized badges)"
+          }
+        }
+      }
+    },
+    "content": {
+      "$comment": "Content properties for mobile tag count component - text color and typography",
+      "text": {
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.body.1}",
+            "type": "color",
+            "description": "Mobile tag count default text color - neutral/gray-700 - #344054 (dark gray text for good contrast on light background)"
+          }
+        },
+        "typography": {
+          "$comment": "Typography tokens for mobile tag count text content across all sizes",
+          "xs": {
+            "value": "{font.body.medium.2xs}",
+            "type": "typography",
+            "description": "Mobile tag count text typography for xs size - Medium 10px/14px (compact font for small badges)"
+          },
+          "sm": {
+            "value": "{font.body.medium.xs}",
+            "type": "typography",
+            "description": "Mobile tag count text typography for sm size - Medium 11px/16px (standard font for mobile badges)"
+          },
+          "md": {
+            "value": "{font.body.medium.sm}",
+            "type": "typography",
+            "description": "Mobile tag count text typography for md size - Medium 12px/17px (medium font for prominent badges)"
+          },
+          "lg": {
+            "value": "{font.body.medium.md}",
+            "type": "typography",
+            "description": "Mobile tag count text typography for lg size - Medium 13px/18px (larger font for emphasized badges)"
+          }
+        }
+      }
+    }
+  }
+}

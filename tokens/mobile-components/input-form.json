@@ -74,14 +74,9 @@
             "description": "Mobile input form label default text color - gray/600 - #475467"
           }
         }
-      },
-      "spacing": {
-            "value": "{gap.3xs}",
-            "type": "dimension",
-            "description": "Mobile input form label bottom spacing for sm size - space between label and input - 4px"
       }
     },
-    "input": {
+    "slot-input": {
       "height": {
         "$comment": "Mobile input form input field heights for each size variant",
         "3xs": {
@@ -113,60 +108,6 @@
           "value": "{size.height.lg}",
           "type": "dimension",
           "description": "Mobile input form input height for lg size - 44px"
-        }
-      }
-    },
-    "action": {
-      "$comment": "Action button tokens for mobile input form - optional button aligned with label (e.g., 'Forgot password?', 'Clear')",
-      "button": {
-        "typography": {
-          "sm": {
-            "value": "{font.body.semibold.md}",
-            "type": "typography",
-            "description": "Mobile input form action button typography for sm size - Semibold 14px/20px"
-          },
-          "md": {
-            "value": "{font.body.semibold.base}",
-            "type": "typography",
-            "description": "Mobile input form action button typography for md size - Semibold 16px/20px"
-          },
-          "lg": {
-            "value": "{font.body.semibold.base}",
-            "type": "typography",
-            "description": "Mobile input form action button typography for lg size - Semibold 16px/20px"
-          }
-        },
-        "color": {
-          "primary": {
-            "value": "{color.text.primary.body.2}",
-            "type": "color",
-            "description": "Mobile input form action button primary text color - primary/700 - #004EEB"
-          },
-          "neutral": {
-            "value": "{color.text.neutral.body.1}",
-            "type": "color",
-            "description": "Mobile input form action button neutral text color - gray/700 - #344054"
-          }
-        }
-      },
-      "spacing": {
-        "$comment": "Spacing tokens for mobile input form action button - defines space on the left side when aligned with label",
-        "left": {
-          "sm": {
-            "value": "{gap.xs}",
-            "type": "dimension",
-            "description": "Mobile input form action button left spacing for sm size - space between label and action button - 8px"
-          },
-          "md": {
-            "value": "{gap.xs}",
-            "type": "dimension",
-            "description": "Mobile input form action button left spacing for md size - space between label and action button - 8px"
-          },
-          "lg": {
-            "value": "{gap.sm}",
-            "type": "dimension",
-            "description": "Mobile input form action button left spacing for lg size - space between label and action button - 12px"
-          }
         }
       }
     }

@@ -1,0 +1,108 @@
+{
+  "$comment": "Mobile Tag Loader Component Tokens",
+  "$description": "Component tokens for Mobile Tag Loader component - a circular loading indicator/spinner used to show loading states. Supports multiple sizes (sm, md, lg) and theme variants (light, dark). Figma Reference: Node ID 396-34799",
+  "$component": {
+    "name": "Tag Loader",
+    "description": "A circular loading indicator component that displays an animated spinner ring. Used to indicate loading states in mobile interfaces. Features a circular ring with an animated segment that rotates continuously. Supports multiple sizes and theme variants for different contexts.",
+    "structure": "Circular ring shape with animated segment that rotates around the circumference. The ring consists of a track (base ring) and an active segment (highlighted portion).",
+    "sizes": {
+      "sm": "Small size for compact mobile interfaces - typically 18px-20px",
+      "md": "Medium size (commonly used default for mobile) - typically 20px-24px",
+      "lg": "Large size for prominent mobile loading indicators - typically 24px-28px"
+    },
+    "variants": {
+      "light": "Light theme variant with white/light grey colors for use on dark backgrounds",
+      "dark": "Dark theme variant with darker grey/blue colors for use on light backgrounds"
+    },
+    "usage": {
+      "contexts": "Mobile loading states, data fetching indicators, async operation feedback, tag loading states, content loading indicators",
+      "features": "Circular ring spinner, Animated segment, Multiple sizes, Theme variants (light/dark), Continuous rotation animation"
+    }
+  },
+  "tag-loader": {
+    "$comment": "Tag Loader component tokens - circular loading indicator with animated segment",
+    "size": {
+      "$comment": "Size tokens for tag loader - defines the diameter of the circular loader",
+      "sm": {
+        "value": "{size.icon.md}",
+        "type": "dimension",
+        "description": "Mobile tag loader size for sm - 20px diameter"
+      },
+      "md": {
+        "value": "{size.icon.lg}",
+        "type": "dimension",
+        "description": "Mobile tag loader size for md - 24px diameter"
+      },
+      "lg": {
+        "value": "{size.icon.xl}",
+        "type": "dimension",
+        "description": "Mobile tag loader size for lg - 28px diameter"
+      }
+    },
+    "stroke-width": {
+      "$comment": "Stroke width tokens for tag loader ring - defines the thickness of the circular ring",
+      "sm": {
+        "value": "2px",
+        "type": "dimension",
+        "description": "Mobile tag loader stroke width for sm - 2px ring thickness"
+      },
+      "md": {
+        "value": "2.5px",
+        "type": "dimension",
+        "description": "Mobile tag loader stroke width for md - 2.5px ring thickness"
+      },
+      "lg": {
+        "value": "3px",
+        "type": "dimension",
+        "description": "Mobile tag loader stroke width for lg - 3px ring thickness"
+      }
+    },
+    "color": {
+      "$comment": "Color tokens for tag loader - includes track (base ring) and active (animated segment) colors for light and dark themes",
+      "light": {
+        "$comment": "Light theme variant - designed for use on dark backgrounds",
+        "track": {
+          "value": "{color.icon.neutral.moderate.1}",
+          "type": "color",
+          "description": "Mobile tag loader light theme track color - base ring color - gray/500 - #667085"
+        },
+        "active": {
+          "value": "{color.icon.neutral.base}",
+          "type": "color",
+          "description": "Mobile tag loader light theme active segment color - animated highlight - white/base - #ffffff"
+        }
+      },
+      "dark": {
+        "$comment": "Dark theme variant - designed for use on light backgrounds",
+        "track": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile tag loader dark theme track color - base ring color - gray/300 - #d0d5dd"
+        },
+        "active": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile tag loader dark theme active segment color - animated highlight - gray/600 - #475467"
+        }
+      }
+    },
+    "animation": {
+      "$comment": "Animation tokens for tag loader - defines rotation speed and timing",
+      "duration": {
+        "value": "1s",
+        "type": "duration",
+        "description": "Mobile tag loader animation duration - time for one complete rotation - 1 second"
+      },
+      "timing-function": {
+        "value": "linear",
+        "type": "string",
+        "description": "Mobile tag loader animation timing function - linear for continuous rotation"
+      },
+      "iteration-count": {
+        "value": "infinite",
+        "type": "string",
+        "description": "Mobile tag loader animation iteration count - infinite for continuous rotation"
+      }
+    }
+  }
+}

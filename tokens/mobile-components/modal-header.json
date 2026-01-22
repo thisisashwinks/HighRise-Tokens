@@ -1,0 +1,222 @@
+{
+  "$comment": "Mobile Modal Header Component Tokens",
+  "$description": "Component tokens for Mobile Modal Header component - a header component for modal dialogs and bottom sheets with optional drag handle, back icon, title with optional icon and subtext, and close icon. Supports two layout variants (Left and Center) for flexible content alignment. Figma Reference: Node ID 565-22542",
+  "$component": {
+    "name": "Modal Header",
+    "description": "A mobile modal header component that provides navigation and context at the top of modal dialogs and bottom sheets. Features an optional drag handle for bottom sheet interaction, optional back icon for navigation, flexible content section with optional icon, title text, and optional subtext, and optional close icon for dismissal. Supports two layout variants: Left-aligned (standard) and Center-aligned (centered title with balanced spacing).",
+    "structure": "Container with white background and rounded top corners. Contains optional drag handle at top, followed by header contents section with horizontal flex layout. Header contents include: optional back icon, content group (optional icon + title with optional subtext), and optional close icon. Layout adapts based on variant (Left vs Center) affecting content alignment and spacing.",
+    "sizes": {
+      "default": "Variable height based on content - minimum height accommodates drag handle (8px) + gap (8px) + header contents (36px minimum) + padding (12px top, 12px horizontal)"
+    },
+    "variants": {
+      "layout": {
+        "left": "Left-aligned layout - back icon and content group aligned to left, close icon aligned to right",
+        "center": "Center-aligned layout - content group centered with balanced spacing on both sides, back icon and close icon on edges"
+      },
+      "drag-handle": {
+        "none": "No drag handle displayed",
+        "present": "Drag handle displayed at top of header (8px height, 69px width, rounded pill shape)"
+      },
+      "back-icon": {
+        "none": "No back icon displayed",
+        "present": "Back icon (arrow-left) displayed on left side (36px size)"
+      },
+      "close-icon": {
+        "none": "No close icon displayed",
+        "present": "Close icon (x) displayed on right side (36px size)"
+      },
+      "content-icon": {
+        "none": "No content icon displayed",
+        "present": "Content icon displayed before title (36px size)"
+      },
+      "subtext": {
+        "none": "No subtext displayed, only title",
+        "present": "Subtext displayed below title"
+      }
+    },
+    "usage": {
+      "contexts": "Mobile modal dialogs, bottom sheets, slide-up panels, full-screen modals, action sheets, confirmation dialogs",
+      "features": "Optional drag handle for bottom sheet interaction, Flexible navigation (back/close icons), Flexible content (icon, title, subtext), Two layout variants (Left/Center), Rounded top corners for modal appearance"
+    }
+  },
+  "modal-header": {
+    "container": {
+      "$comment": "Container tokens for mobile modal header - background, padding, border radius, and layout",
+      "color": {
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile modal header default background - neutral/white - #ffffff"
+          }
+        }
+      },
+      "padding": {
+        "top": {
+          "value": "{padding.3}",
+          "type": "dimension",
+          "description": "Mobile modal header top padding - 12px"
+        },
+        "x": {
+          "value": "{padding.3}",
+          "type": "dimension",
+          "description": "Mobile modal header horizontal padding - 12px"
+        },
+        "bottom": {
+          "value": "{padding.0}",
+          "type": "dimension",
+          "description": "Mobile modal header bottom padding - 0px"
+        }
+      },
+      "border": {
+        "radius": {
+          "top": {
+            "left": {
+              "value": "{border.radius.md}",
+              "type": "dimension",
+              "description": "Mobile modal header top-left border radius - 8px"
+            },
+            "right": {
+              "value": "{border.radius.md}",
+              "type": "dimension",
+              "description": "Mobile modal header top-right border radius - 8px"
+            }
+          }
+        }
+      },
+      "gap": {
+        "drag-handle": {
+          "value": "{gap.2}",
+          "type": "dimension",
+          "description": "Mobile modal header gap between drag handle and header contents - 8px"
+        },
+        "header-contents": {
+          "value": "{gap.2}",
+          "type": "dimension",
+          "description": "Mobile modal header gap between header content elements - 8px"
+        }
+      }
+    },
+    "drag-handle": {
+      "$comment": "Drag handle tokens - optional visual indicator for bottom sheet dragging",
+      "size": {
+        "width": {
+          "value": "{size.width.17}",
+          "type": "dimension",
+          "description": "Mobile modal header drag handle width - 68px (closest to 69px design spec)"
+        },
+        "height": {
+          "value": "{size.height.2}",
+          "type": "dimension",
+          "description": "Mobile modal header drag handle height - 8px"
+        }
+      },
+      "color": {
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile modal header drag handle default background - neutral/gray-200 - #eaecf0"
+          }
+        }
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.full}",
+          "type": "dimension",
+          "description": "Mobile modal header drag handle border radius - fully rounded/pill shape - 1000px"
+        }
+      }
+    },
+    "back-icon": {
+      "$comment": "Back icon tokens - optional left navigation icon",
+      "size": {
+        "value": "{size.icon.3xl}",
+        "type": "dimension",
+        "description": "Mobile modal header back icon size - 36px"
+      },
+      "color": {
+        "default": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile modal header back icon default color - neutral/gray-600 - #475467"
+        }
+      }
+    },
+    "content": {
+      "$comment": "Content section tokens - icon, title, and subtext group",
+      "gap": {
+        "elements": {
+          "value": "{gap.2}",
+          "type": "dimension",
+          "description": "Mobile modal header gap between content elements (icon, title section) - 8px"
+        },
+        "title-section": {
+          "value": "{gap.3xs}",
+          "type": "dimension",
+          "description": "Mobile modal header gap between title section elements (title text, subtext) - 4px"
+        }
+      },
+      "icon": {
+        "$comment": "Content icon tokens - optional icon displayed before title",
+        "size": {
+          "value": "{size.icon.3xl}",
+          "type": "dimension",
+          "description": "Mobile modal header content icon size - 36px"
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile modal header content icon default color - neutral/gray-600 - #475467"
+          }
+        }
+      },
+      "title": {
+        "$comment": "Title text tokens",
+        "typography": {
+          "value": "{font.body.semibold.2xl}",
+          "type": "typography",
+          "description": "Mobile modal header title typography - 16px semibold, 24px line height"
+        },
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Mobile modal header title default color - neutral/gray-900 - #101828"
+          }
+        }
+      },
+      "subtext": {
+        "$comment": "Subtext tokens - optional text displayed below title",
+        "typography": {
+          "value": "{font.body.regular.base}",
+          "type": "typography",
+          "description": "Mobile modal header subtext typography - 14px regular, 20px line height"
+        },
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Mobile modal header subtext default color - neutral/gray-500 - #667085"
+          }
+        }
+      }
+    },
+    "close-icon": {
+      "$comment": "Close icon tokens - optional right dismissal icon",
+      "size": {
+        "value": "{size.icon.3xl}",
+        "type": "dimension",
+        "description": "Mobile modal header close icon size - 36px"
+      },
+      "color": {
+        "default": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile modal header close icon default color - neutral/gray-600 - #475467"
+        }
+      }
+    }
+  }
+}

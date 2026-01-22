@@ -1,0 +1,238 @@
+{
+  "$comment": "Mobile Tag Close Component Tokens",
+  "$description": "Component tokens for Mobile Tag Close component - a close/dismiss icon button used in tags and badges. Supports three variants: standalone icon, icon with circular background (bold stroke), and icon with circular background (thin stroke). Includes four sizes (xs, sm, md, lg) with interaction states. Figma Reference: Node ID 393-789",
+  "$component": {
+    "name": "Tag Close",
+    "description": "A mobile close/dismiss icon button component used to remove tags, badges, or dismiss elements. Supports three visual variants: standalone X icon without background, X icon with circular background using bold stroke, and X icon with circular background using thin stroke. All variants support multiple sizes and interaction states.",
+    "structure": "Optional circular container with background, containing a centered X/close icon. Standalone variant has no container, only the icon. Circular variants have fully rounded background with icon centered inside.",
+    "sizes": {
+      "xs": "Extra small size for compact mobile interfaces - typically 12px-14px icon",
+      "sm": "Small size for standard mobile interfaces - typically 16px-18px icon",
+      "md": "Medium size (commonly used default for mobile) - typically 20px-24px icon",
+      "lg": "Large size for prominent mobile tags - typically 24px-28px icon"
+    },
+    "variants": {
+      "standalone": "X icon without any background container - minimal style for compact spaces",
+      "bold": "X icon with circular background and bold/thick stroke weight - prominent and easy to tap",
+      "thin": "X icon with circular background and thin stroke weight - subtle and refined appearance"
+    },
+    "usage": {
+      "contexts": "Mobile tags, badges, chips, filter pills, removable items, dismissible notifications, multi-select tags, search filters",
+      "features": "Close/dismiss functionality, multiple visual styles, size variants, interaction states (hover, pressed, focused, disabled), circular background option, stroke weight variants"
+    }
+  },
+  "tag-close": {
+    "container": {
+      "$comment": "Container properties for tag close variants with circular background (bold and thin variants)",
+      "size": {
+        "xs": {
+          "value": "{size.3}",
+          "type": "dimension",
+          "description": "Mobile tag close container size for xs - 12px (circular background diameter)"
+        },
+        "sm": {
+          "value": "{size.4}",
+          "type": "dimension",
+          "description": "Mobile tag close container size for sm - 16px (circular background diameter)"
+        },
+        "md": {
+          "value": "{size.5}",
+          "type": "dimension",
+          "description": "Mobile tag close container size for md - 20px (circular background diameter)"
+        },
+        "lg": {
+          "value": "{size.6}",
+          "type": "dimension",
+          "description": "Mobile tag close container size for lg - 24px (circular background diameter)"
+        }
+      },
+      "border": {
+        "radius": {
+          "xs": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Mobile tag close container border radius for xs - fully rounded circle"
+          },
+          "sm": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Mobile tag close container border radius for sm - fully rounded circle"
+          },
+          "md": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Mobile tag close container border radius for md - fully rounded circle"
+          },
+          "lg": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Mobile tag close container border radius for lg - fully rounded circle"
+          }
+        }
+      },
+      "color": {
+        "background": {
+          "$comment": "Background colors for circular container variants (bold and thin)",
+          "default": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile tag close container default background - gray/100 - #f2f4f7"
+          },
+          "hover": {
+            "value": "{color.background.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile tag close container hover background - gray/200 - #eaecf0"
+          },
+          "pressed": {
+            "value": "{color.background.neutral.moderate.0}",
+            "type": "color",
+            "description": "Mobile tag close container pressed/active background - gray/300 - #d0d5dd"
+          },
+          "focused": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile tag close container focused background - gray/100 - #f2f4f7"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile tag close container disabled background - gray/100 - #f2f4f7"
+          }
+        }
+      }
+    },
+    "icon": {
+      "$comment": "Icon properties for the X/close icon - size, stroke weight, and colors",
+      "size": {
+        "xs": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Mobile tag close icon size for xs - 10px"
+        },
+        "sm": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Mobile tag close icon size for sm - 12px"
+        },
+        "md": {
+          "value": "{size.icon.sm}",
+          "type": "dimension",
+          "description": "Mobile tag close icon size for md - 16px"
+        },
+        "lg": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Mobile tag close icon size for lg - 20px"
+        }
+      },
+      "stroke": {
+        "$comment": "Stroke weight for the X icon - bold for prominent variant, thin for subtle variant",
+        "bold": {
+          "value": "{border.width.md}",
+          "type": "dimension",
+          "description": "Mobile tag close icon bold stroke weight - 2px for prominent appearance"
+        },
+        "thin": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile tag close icon thin stroke weight - 1px for subtle appearance"
+        }
+      },
+      "color": {
+        "$comment": "Icon colors for the X/close icon across all interaction states",
+        "default": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile tag close icon default color - gray/600 - #475467"
+        },
+        "hover": {
+          "value": "{color.icon.neutral.title.1}",
+          "type": "color",
+          "description": "Mobile tag close icon hover color - gray/900 - #101828"
+        },
+        "pressed": {
+          "value": "{color.icon.neutral.title.1}",
+          "type": "color",
+          "description": "Mobile tag close icon pressed/active color - gray/900 - #101828"
+        },
+        "focused": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile tag close icon focused color - gray/600 - #475467"
+        },
+        "disabled": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile tag close icon disabled color - gray/300 - #d0d5dd"
+        }
+      }
+    },
+    "variant": {
+      "$comment": "Variant-specific tokens organized by visual style",
+      "standalone": {
+        "$comment": "Standalone variant - X icon without background container",
+        "container": {
+          "size": {
+            "xs": {
+              "value": "{size.icon.2xs}",
+              "type": "dimension",
+              "description": "Mobile tag close standalone container size for xs - matches icon size 10px"
+            },
+            "sm": {
+              "value": "{size.icon.xs}",
+              "type": "dimension",
+              "description": "Mobile tag close standalone container size for sm - matches icon size 12px"
+            },
+            "md": {
+              "value": "{size.icon.sm}",
+              "type": "dimension",
+              "description": "Mobile tag close standalone container size for md - matches icon size 16px"
+            },
+            "lg": {
+              "value": "{size.icon.md}",
+              "type": "dimension",
+              "description": "Mobile tag close standalone container size for lg - matches icon size 20px"
+            }
+          }
+        }
+      },
+      "bold": {
+        "$comment": "Bold variant - X icon with circular background and bold stroke",
+        "icon": {
+          "stroke": {
+            "value": "{border.width.md}",
+            "type": "dimension",
+            "description": "Mobile tag close bold variant icon stroke weight - 2px bold stroke"
+          }
+        }
+      },
+      "thin": {
+        "$comment": "Thin variant - X icon with circular background and thin stroke",
+        "icon": {
+          "stroke": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Mobile tag close thin variant icon stroke weight - 1px thin stroke"
+          }
+        }
+      }
+    },
+    "effects": {
+      "$comment": "Visual effects for mobile tag close - focus outline and shadows",
+      "outline": {
+        "focused": {
+          "value": "{outline.focus.neutral}",
+          "type": "outline",
+          "description": "Mobile tag close focus outline - neutral outline for accessibility"
+        }
+      },
+      "shadow": {
+        "focused": {
+          "value": "boxShadow.focus.2xs.neutral.100",
+          "type": "boxShadow",
+          "description": "Mobile tag close focus shadow - focus 2xs neutral 100 for visual focus indicator"
+        }
+      }
+    }
+  }
+}

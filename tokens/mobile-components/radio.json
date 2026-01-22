@@ -1,0 +1,179 @@
+{
+  "$comment": "Mobile Radio Component Tokens",
+  "$description": "Component tokens for Mobile Radio button component. Supports selected (checked) and unselected (unchecked) states with default, hover, focus, disabled, and error states. Radio buttons are circular selection controls used in groups where only one option can be selected. Figma Reference: Node ID 126-27359",
+  "$component": {
+    "name": "Radio",
+    "description": "A mobile radio button component for single selection within a group of options. Consists of a circular container with an optional inner dot indicator when selected. Radio buttons are used in groups where only one option can be selected at a time, making them ideal for mutually exclusive choices.",
+    "structure": "Circular container with optional inner dot (check mark) when selected. Container background and border change based on selection state and interaction state.",
+    "sizes": {
+      "default": "20px diameter - Standard mobile radio button size"
+    },
+    "variants": {
+      "unselected": "Radio button in unselected state - white/neutral background",
+      "selected": "Radio button in selected state - primary blue background with white inner dot"
+    },
+    "usage": {
+      "contexts": "Mobile forms, settings panels, preference selection, single-choice questions, mobile data entry interfaces, mobile configuration screens",
+      "features": "Single selection within groups, focus indicators, hover feedback, disabled state, error validation, visual selection feedback"
+    }
+  },
+  "radio": {
+    "container": {
+      "$comment": "Container size and border properties for mobile radio button",
+      "size": {
+        "value": "{size.5}",
+        "type": "dimension",
+        "description": "Mobile radio button container size - 20px diameter (circular)"
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.full}",
+          "type": "dimension",
+          "description": "Fully rounded border radius for mobile radio button - circular shape"
+        },
+        "width": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile radio button border width - 1px"
+        }
+      }
+    },
+    "check": {
+      "$comment": "Inner dot (check mark) size for selected mobile radio button",
+      "size": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "Mobile radio button inner check dot size - 8px diameter (circular, centered within 20px container)"
+      }
+    },
+    "background": {
+      "$comment": "Background colors for mobile radio button in unselected and selected states",
+      "unselected": {
+        "default": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile unselected radio default background - neutral/gray-0 - #ffffff (white)"
+        },
+        "hover": {
+          "value": "{color.background.primary.subtle.1}",
+          "type": "color",
+          "description": "Mobile unselected radio hover background - primary/blue-50 - #eff8ff (light blue fill on hover)"
+        },
+        "focused": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile unselected radio focused background - neutral/gray-0 - #ffffff (white, focus indicated by border)"
+        },
+        "disabled": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "description": "Mobile unselected radio disabled background - neutral/gray-100 - #f2f4f7 (light gray)"
+        }
+      },
+      "selected": {
+        "default": {
+          "value": "{color.background.primary.default}",
+          "type": "color",
+          "description": "Mobile selected radio default background - primary/blue-600 - #155eef (solid blue)"
+        },
+        "hover": {
+          "value": "{color.background.primary.intense.0}",
+          "type": "color",
+          "description": "Mobile selected radio hover background - primary/blue-700 - #004eeb (darker blue on hover)"
+        },
+        "focused": {
+          "value": "{color.background.primary.default}",
+          "type": "color",
+          "description": "Mobile selected radio focused background - primary/blue-600 - #155eef (solid blue, focus indicated by border)"
+        },
+        "disabled": {
+          "value": "{color.background.neutral.moderate.0}",
+          "type": "color",
+          "description": "Mobile selected radio disabled background - neutral/gray-300 - #d0d5dd (medium gray)"
+        }
+      }
+    },
+    "border": {
+      "$comment": "Border colors for mobile radio button in unselected and selected states",
+      "unselected": {
+        "default": {
+          "value": "{color.border.transparent}",
+          "type": "color",
+          "description": "Mobile unselected radio default border - transparent - no visible border"
+        },
+        "hover": {
+          "value": "{color.border.primary.default}",
+          "type": "color",
+          "description": "Mobile unselected radio hover border - primary/blue-600 - #155eef (light blue border on hover)"
+        },
+        "focused": {
+          "value": "{color.border.primary.moderate.1}",
+          "type": "color",
+          "description": "Mobile unselected radio focused border - primary/blue-500 - #2e90fa (light blue border for focus indicator)"
+        },
+        "disabled": {
+          "value": "{color.border.transparent}",
+          "type": "color",
+          "description": "Mobile unselected radio disabled border - transparent - no visible border"
+        },
+        "error": {
+          "value": "{color.border.error.moderate.1}",
+          "type": "color",
+          "description": "Mobile unselected radio error border - error/red-500 - #f04438 (red border for error/validation state)"
+        }
+      },
+      "selected": {
+        "default": {
+          "value": "{color.border.transparent}",
+          "type": "color",
+          "description": "Mobile selected radio default border - transparent - no visible border (selection indicated by background color)"
+        },
+        "hover": {
+          "value": "{color.border.primary.moderate.1}",
+          "type": "color",
+          "description": "Mobile selected radio hover border - primary/blue-500 - #2e90fa (light blue border on hover for additional feedback)"
+        },
+        "focused": {
+          "value": "{color.border.primary.moderate.1}",
+          "type": "color",
+          "description": "Mobile selected radio focused border - primary/blue-500 - #2e90fa (light blue border for focus indicator)"
+        },
+        "disabled": {
+          "value": "{color.border.transparent}",
+          "type": "color",
+          "description": "Mobile selected radio disabled border - transparent - no visible border"
+        },
+        "error": {
+          "value": "{color.border.error.moderate.1}",
+          "type": "color",
+          "description": "Mobile selected radio error border - error/red-500 - #f04438 (red border for error/validation state, overlays selected state)"
+        }
+      }
+    },
+    "check-mark": {
+      "$comment": "Inner dot (check mark) color for selected mobile radio button",
+      "color": {
+        "default": {
+          "value": "{color.icon.neutral.base}",
+          "type": "color",
+          "description": "Mobile selected radio check mark default color - neutral/gray-0 - #ffffff (white dot on blue background)"
+        },
+        "disabled": {
+          "value": "{color.icon.neutral.moderate.0}",
+          "type": "color",
+          "description": "Mobile selected radio check mark disabled color - neutral/gray-400 - #98a2b3 (light gray dot on gray background)"
+        }
+      }
+    },
+    "effects": {
+      "$comment": "Visual effects for mobile radio button including focus indicators",
+      "shadow": {
+        "focused": {
+          "value": "boxShadow.focus.2xs.primary.100",
+          "type": "boxShadow",
+          "description": "Focus shadow for mobile radio button - focus 2xs primary 100 (subtle blue glow for accessibility)"
+        }
+      }
+    }
+  }
+}

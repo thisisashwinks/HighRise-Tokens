@@ -1,0 +1,387 @@
+{
+  "$comment": "Mobile Select Component Tokens",
+  "$description": "Component tokens for Mobile Select dropdown fields with multiple variants including default, icon leading, avatar leading, search, and tags types. Supports placeholder, default, open, and disabled states across 3 sizes (3xs, 2xs, xs). Figma Reference: Node ID 1059-13248",
+  "$component": {
+    "name": "Select",
+    "description": "A mobile dropdown selection component for choosing from predefined options. Includes chevron indicator, multiple type variants (default, icon leading, avatar leading, search, tags), validation states, and focus indicators. Supports supporting text display and optional dropdown icon.",
+    "structure": "Container with border, optional leading icon/avatar, selected value display with optional supporting text, optional tags display, chevron icon for dropdown indication, with focus states and validation feedback",
+    "sizes": {
+      "3xs": "32px height - Smallest size for compact mobile interfaces",
+      "2xs": "48px height - Medium size (commonly used default for mobile)",
+      "xs": "56px height - Large size for prominent mobile selects"
+    },
+    "variants": {
+      "default": "Standard select with neutral colors for normal selection",
+      "icon-leading": "Select with leading icon for visual context",
+      "avatar-leading": "Select with leading avatar for user/entity selection",
+      "search": "Select with search icon for searchable dropdowns",
+      "tags": "Select with tag display for multi-select scenarios"
+    },
+    "usage": {
+      "contexts": "Mobile forms, filters, settings panels, data entry interfaces, user selection, team member selection, searchable dropdowns",
+      "features": "Chevron indicator, validation states, focus indicators, disabled state, icon support, avatar support, tag display, supporting text, search functionality"
+    }
+  },
+  "select": {
+    "border": {
+      "$comment": "Border radius and width for mobile select fields",
+      "radius": {
+        "3xs": {
+          "value": "{border.radius.xs}",
+          "type": "dimension",
+          "description": "Mobile select border radius for 3xs size - 4px"
+        },
+        "2xs": {
+          "value": "{border.radius.sm}",
+          "type": "dimension",
+          "description": "Mobile select border radius for 2xs size - 8px"
+        },
+        "xs": {
+          "value": "{border.radius.sm}",
+          "type": "dimension",
+          "description": "Mobile select border radius for xs size - 8px"
+        }
+      },
+      "width": {
+        "default": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile select border width for default state - 1px"
+        },
+        "open": {
+          "value": "{border.width.0[75]}",
+          "type": "dimension",
+          "description": "Mobile select border width for open/focused state - 3px"
+        }
+      }
+    },
+    "padding": {
+      "$comment": "Internal spacing for mobile select content - horizontal (x) and vertical (y) padding",
+      "x": {
+        "3xs": {
+          "value": "{padding.x.3xs}",
+          "type": "dimension",
+          "description": "Mobile select horizontal padding for 3xs size - 8px"
+        },
+        "2xs": {
+          "value": "{padding.x.3xs}",
+          "type": "dimension",
+          "description": "Mobile select horizontal padding for 2xs size - 8px"
+        },
+        "xs": {
+          "value": "{padding.x.3xs}",
+          "type": "dimension",
+          "description": "Mobile select horizontal padding for xs size - 8px"
+        }
+      },
+      "y": {
+        "value": "{padding.y.4xs}",
+        "type": "dimension",
+        "description": "Mobile select vertical padding - 6px"
+      }
+    },
+    "height": {
+      "$comment": "Mobile select field heights for each size variant",
+      "3xs": {
+        "value": "{size.height.xs}",
+        "type": "dimension",
+        "description": "Mobile select height for 3xs size - 32px"
+      },
+      "2xs": {
+        "value": "{size.height.xl}",
+        "type": "dimension",
+        "description": "Mobile select height for 2xs size - 48px"
+      },
+      "xs": {
+        "value": "{size.height.2xl}",
+        "type": "dimension",
+        "description": "Mobile select height for xs size - 56px"
+      }
+    },
+    "gap": {
+      "$comment": "Spacing between mobile select elements (icons, text, and chevron)",
+      "value": "{gap.xs}",
+      "type": "dimension",
+      "description": "Gap between mobile select elements - 8px"
+    },
+    "shadow": {
+      "$comment": "Subtle elevation shadow for mobile select fields",
+      "default": {
+        "value": "boxShadow.outer.xs",
+        "type": "boxShadow",
+        "description": "Mobile select default shadow - outer xs"
+      },
+      "open": {
+        "value": "boxShadow.none",
+        "type": "boxShadow",
+        "description": "Mobile select open/focused shadow - none"
+      },
+      "disabled": {
+        "value": "boxShadow.outer.xs",
+        "type": "boxShadow",
+        "description": "Mobile select disabled shadow - outer xs"
+      }
+    },
+    "text": {
+      "$comment": "Typography tokens for mobile select text content across all sizes",
+      "typography": {
+        "3xs": {
+          "value": "{font.body.regular.base}",
+          "type": "typography",
+          "description": "Mobile select text typography for 3xs size - 14px regular"
+        },
+        "2xs": {
+          "value": "{font.body.regular.2xl}",
+          "type": "typography",
+          "description": "Mobile select text typography for 2xs size - 16px regular"
+        },
+        "xs": {
+          "value": "{font.subheading.regular.lg}",
+          "type": "typography",
+          "description": "Mobile select text typography for xs size - 18px regular"
+        }
+      }
+    },
+    "icon": {
+      "$comment": "Icon sizes for chevron, leading icon, search icon inside mobile select fields",
+      "size": {
+        "chevron": {
+          "3xs": {
+            "value": "{size.icon.3xs}",
+            "type": "dimension",
+            "description": "Mobile select chevron icon size for 3xs - 12px"
+          },
+          "2xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Mobile select chevron icon size for 2xs - 16px"
+          },
+          "xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Mobile select chevron icon size for xs - 16px"
+          }
+        },
+        "leading": {
+          "3xs": {
+            "value": "{size.icon.3xs}",
+            "type": "dimension",
+            "description": "Mobile select leading icon size for 3xs - 12px"
+          },
+          "2xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Mobile select leading icon size for 2xs - 16px"
+          },
+          "xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Mobile select leading icon size for xs - 16px"
+          }
+        },
+        "search": {
+          "3xs": {
+            "value": "{size.icon.3xs}",
+            "type": "dimension",
+            "description": "Mobile select search icon size for 3xs - 12px"
+          },
+          "2xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Mobile select search icon size for 2xs - 16px"
+          },
+          "xs": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Mobile select search icon size for xs - 16px"
+          }
+        }
+      }
+    },
+    "avatar": {
+      "$comment": "Avatar sizes for avatar-leading variant in mobile select fields",
+      "size": {
+        "3xs": {
+          "value": "{size.3xs}",
+          "type": "dimension",
+          "description": "Mobile select avatar size for 3xs - 24px"
+        },
+        "2xs": {
+          "value": "{size.xs}",
+          "type": "dimension",
+          "description": "Mobile select avatar size for 2xs - 32px"
+        },
+        "xs": {
+          "value": "{size.md}",
+          "type": "dimension",
+          "description": "Mobile select avatar size for xs - 40px"
+        }
+      }
+    },
+    "color": {
+      "$comment": "Color tokens for mobile select states - includes default (neutral) variant with interaction states (placeholder, default, open, disabled)",
+      "default": {
+        "$comment": "Default mobile select colors with neutral palette for standard selection",
+        "background": {
+          "placeholder": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile select placeholder background - white/base - #ffffff"
+          },
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile select default background - white/base - #ffffff"
+          },
+          "open": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile select open/focused background - white/base - #ffffff"
+          },
+          "disabled": {
+              "value": "{color.background.neutral.subtle.0}",
+              "type": "color",
+              "description": "Mobile select disabled background for 3xs size - gray/100 - #f2f4f7"
+          }
+        },
+        "border": {
+          "placeholder": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Mobile select placeholder border - gray/300 - #d0d5dd"
+          },
+          "default": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Mobile select default border - gray/300 - #d0d5dd"
+          },
+          "open": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Mobile select open/focused border - blue/600 - #155EEF"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Mobile select disabled border - gray/300 - #d0d5dd"
+          }
+        },
+        "text": {
+          "placeholder": {
+            "value": "{color.text.neutral.subtitle.1}",
+            "type": "color",
+            "description": "Mobile select placeholder text - gray/500 - #667085"
+          },
+          "default": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Mobile select default text - gray/900 - #101828"
+          },
+          "open": {
+            "value": "{color.text.neutral.title.1}",
+            "type": "color",
+            "description": "Mobile select open/focused text - gray/900 - #101828"
+          },
+          "disabled": {
+            "value": "{color.text.neutral.subtitle.2}",
+            "type": "color",
+            "description": "Mobile select disabled text - gray/400 - #98a2b3"
+          }
+        },
+        "icon-leading": {
+          "$comment": "Leading icon color for icon-leading variant",
+          "default": {
+            "value": "{color.icon.neutral.moderate.1}",
+            "type": "color",
+            "description": "Mobile select leading icon default - gray/500 - #667085"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile select leading icon disabled - gray/300 - #d0d5dd"
+          }
+        },
+        "icon-search": {
+          "$comment": "Search icon color for search variant",
+          "default": {
+            "value": "{color.icon.neutral.moderate.1}",
+            "type": "color",
+            "description": "Mobile select search icon default - gray/500 - #667085"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile select search icon disabled - gray/300 - #d0d5dd"
+          }
+        },
+        "icon-chevron": {
+          "$comment": "Chevron dropdown icon color",
+          "placeholder": {
+            "value": "{color.icon.neutral.moderate.1}",
+            "type": "color",
+            "description": "Mobile select chevron icon placeholder - gray/500 - #667085"
+          },
+          "default": {
+            "value": "{color.icon.neutral.moderate.1}",
+            "type": "color",
+            "description": "Mobile select chevron icon default - gray/500 - #667085"
+          },
+          "open": {
+            "value": "{color.icon.neutral.moderate.1}",
+            "type": "color",
+            "description": "Mobile select chevron icon open/focused - gray/500 - #667085"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile select chevron icon disabled - gray/300 - #d0d5dd"
+          }
+        }
+      }
+    },
+    "tags": {
+      "$comment": "Tag-related tokens for tags variant in mobile select fields",
+      "gap": {
+        "between-tags": {
+          "3xs": {
+            "value": "{gap.x.3xs}",
+            "type": "dimension",
+            "description": "Gap between tags for 3xs size - 4px"
+          },
+          "2xs": {
+            "value": "{gap.x.3xs}",
+            "type": "dimension",
+            "description": "Gap between tags for 2xs size - 4px"
+          },
+          "xs": {
+            "value": "{gap.x.2xs}",
+            "type": "dimension",
+            "description": "Gap between tags for xs size - 6px"
+          }
+        },
+        "between-tags-and-input": {
+          "value": "{gap.x.xs}",
+          "type": "dimension",
+          "description": "Gap between tags and input text - 8px"
+        }
+      },
+      "height": {
+        "3xs": {
+          "value": "{size.height.4[5]}",
+          "type": "dimension",
+          "description": "Tag height for 3xs size - 18px"
+        },
+        "2xs": {
+          "value": "{size.height.5[5]}",
+          "type": "dimension",
+          "description": "Tag height for 2xs size - 22px"
+        },
+        "xs": {
+          "value": "{size.height.5[5]}",
+          "type": "dimension",
+          "description": "Tag height for xs size - 22px"
+        }
+      }
+    }
+  }
+}

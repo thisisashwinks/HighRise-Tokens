@@ -1,0 +1,511 @@
+{
+  "$comment": "Mobile Icon Component Tokens",
+  "$description": "Component tokens for Mobile Icon component - a flexible icon system supporting outlined, outlined with square background, and filled with glow variants. Includes multiple sizes (4xs through 4xl) and comprehensive color palettes (neutral, primary/blue, error/red, warning/orange, success/green). Figma Reference: Node ID 225-20469",
+  "$component": {
+    "name": "Icon",
+    "description": "A mobile icon component system providing flexible icon display options. Supports three visual variants: outlined icons (stroke only), outlined icons with square background containers, and filled icons with glow/halo effects. Includes comprehensive size and color options for various use cases.",
+    "structure": "Icon element with optional square background container. Outlined variant has stroke only, square background variant adds a rounded square container behind the icon, filled glow variant has solid fill with lighter glow effect around it.",
+    "sizes": {
+      "4xs": "Extra extra extra small icon - 10px",
+      "3xs": "Extra extra small icon - 12px",
+      "2xs": "Extra small icon - 14px",
+      "xs": "Small icon - 16px",
+      "sm": "Small medium icon - 18px",
+      "md": "Medium icon - 20px",
+      "lg": "Large icon - 24px",
+      "xl": "Extra large icon - 28px",
+      "2xl": "Extra extra large icon - 32px",
+      "3xl": "Extra extra extra large icon - 36px",
+      "4xl": "Maximum icon size - 40px"
+    },
+    "variants": {
+      "outlined": "Icon with stroke only, no fill or background - minimal and clean appearance",
+      "square-background": "Icon with stroke, placed on a rounded square background container - provides visual emphasis and better contrast",
+      "filled-glow": "Icon with solid fill and lighter glow/halo effect around it - creates emphasis and visual depth"
+    },
+    "usage": {
+      "contexts": "Mobile navigation, buttons, status indicators, notifications, badges, feature highlights, action buttons, information displays, form elements, list items",
+      "features": "Multiple visual styles, comprehensive size range, semantic color palettes, square background option, glow effects, stroke and fill variants"
+    }
+  },
+  "icon": {
+    "size": {
+      "$comment": "Icon size tokens - dimensions for the icon element itself across all size variants",
+      "4xs": {
+        "value": "{size.icon.4xs}",
+        "type": "dimension",
+        "description": "Mobile icon size for 4xs - 10px"
+      },
+      "3xs": {
+        "value": "{size.icon.3xs}",
+        "type": "dimension",
+        "description": "Mobile icon size for 3xs - 12px"
+      },
+      "2xs": {
+        "value": "{size.icon.2xs}",
+        "type": "dimension",
+        "description": "Mobile icon size for 2xs - 14px"
+      },
+      "xs": {
+        "value": "{size.icon.xs}",
+        "type": "dimension",
+        "description": "Mobile icon size for xs - 16px"
+      },
+      "sm": {
+        "value": "{size.icon.sm}",
+        "type": "dimension",
+        "description": "Mobile icon size for sm - 18px"
+      },
+      "md": {
+        "value": "{size.icon.md}",
+        "type": "dimension",
+        "description": "Mobile icon size for md - 20px"
+      },
+      "lg": {
+        "value": "{size.icon.lg}",
+        "type": "dimension",
+        "description": "Mobile icon size for lg - 24px"
+      },
+      "xl": {
+        "value": "{size.icon.xl}",
+        "type": "dimension",
+        "description": "Mobile icon size for xl - 28px"
+      },
+      "2xl": {
+        "value": "{size.icon.2xl}",
+        "type": "dimension",
+        "description": "Mobile icon size for 2xl - 32px"
+      },
+      "3xl": {
+        "value": "{size.icon.3xl}",
+        "type": "dimension",
+        "description": "Mobile icon size for 3xl - 36px"
+      },
+      "4xl": {
+        "value": "{size.icon.4xl}",
+        "type": "dimension",
+        "description": "Mobile icon size for 4xl - 40px"
+      }
+    },
+    "color": {
+      "$comment": "Icon color tokens - stroke colors for outlined variants, fill colors for filled variants",
+      "stroke": {
+        "$comment": "Stroke colors for outlined icon variants - organized by semantic color palette",
+        "neutral": {
+          "default": {
+            "value": "{color.icon.neutral.default}",
+            "type": "color",
+            "description": "Mobile icon neutral stroke color - gray/700 - #344054"
+          },
+          "moderate": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile icon neutral moderate stroke color - gray/600 - #475467"
+          },
+          "subtle": {
+            "value": "{color.icon.neutral.moderate.0}",
+            "type": "color",
+            "description": "Mobile icon neutral subtle stroke color - gray/400 - #98a2b3"
+          },
+          "light": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile icon neutral light stroke color - gray/300 - #d0d5dd"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile icon neutral disabled stroke color - gray/300 - #d0d5dd"
+          }
+        },
+        "primary": {
+          "default": {
+            "value": "{color.icon.primary.default}",
+            "type": "color",
+            "description": "Mobile icon primary stroke color - blue/700 - #004eeb"
+          },
+          "moderate": {
+            "value": "{color.icon.primary.moderate.1}",
+            "type": "color",
+            "description": "Mobile icon primary moderate stroke color - blue/600 - #155eef"
+          },
+          "disabled": {
+            "value": "{color.icon.primary.subtle.0}",
+            "type": "color",
+            "description": "Mobile icon primary disabled stroke color - blue/200 - #b2ccff"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "{color.icon.error.default}",
+            "type": "color",
+            "description": "Mobile icon error stroke color - red/700 - #b42318"
+          },
+          "moderate": {
+            "value": "{color.icon.error.moderate}",
+            "type": "color",
+            "description": "Mobile icon error moderate stroke color - red/600 - #d92d20"
+          },
+          "disabled": {
+            "value": "{color.icon.error.inactive}",
+            "type": "color",
+            "description": "Mobile icon error disabled stroke color - red/300 - #fda29b"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{color.icon.warning.default}",
+            "type": "color",
+            "description": "Mobile icon warning stroke color - orange/700 - #b54708"
+          },
+          "moderate": {
+            "value": "{color.icon.warning.moderate}",
+            "type": "color",
+            "description": "Mobile icon warning moderate stroke color - orange/600 - #dc6803"
+          },
+          "disabled": {
+            "value": "{color.icon.warning.inactive}",
+            "type": "color",
+            "description": "Mobile icon warning disabled stroke color - orange/300 - #fec84b"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "{color.icon.success.default}",
+            "type": "color",
+            "description": "Mobile icon success stroke color - green/700 - #027a48"
+          },
+          "moderate": {
+            "value": "{color.icon.success.moderate}",
+            "type": "color",
+            "description": "Mobile icon success moderate stroke color - green/600 - #039855"
+          },
+          "disabled": {
+            "value": "{color.icon.success.inactive}",
+            "type": "color",
+            "description": "Mobile icon success disabled stroke color - green/300 - #6ce9a6"
+          }
+        }
+      },
+      "fill": {
+        "$comment": "Fill colors for filled icon variants - solid fill for filled-glow variant",
+        "primary": {
+          "default": {
+            "value": "{color.icon.primary.moderate.1}",
+            "type": "color",
+            "description": "Mobile icon primary fill color - blue/600 - #155eef"
+          },
+          "disabled": {
+            "value": "{color.icon.primary.subtle.0}",
+            "type": "color",
+            "description": "Mobile icon primary disabled fill color - blue/200 - #b2ccff"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "{color.icon.error.moderate}",
+            "type": "color",
+            "description": "Mobile icon error fill color - red/600 - #d92d20"
+          },
+          "disabled": {
+            "value": "{color.icon.error.inactive}",
+            "type": "color",
+            "description": "Mobile icon error disabled fill color - red/300 - #fda29b"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{color.icon.warning.moderate}",
+            "type": "color",
+            "description": "Mobile icon warning fill color - orange/600 - #dc6803"
+          },
+          "disabled": {
+            "value": "{color.icon.warning.inactive}",
+            "type": "color",
+            "description": "Mobile icon warning disabled fill color - orange/300 - #fec84b"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "{color.icon.success.moderate}",
+            "type": "color",
+            "description": "Mobile icon success fill color - green/600 - #039855"
+          },
+          "disabled": {
+            "value": "{color.icon.success.inactive}",
+            "type": "color",
+            "description": "Mobile icon success disabled fill color - green/300 - #6ce9a6"
+          }
+        }
+      },
+      "glow": {
+        "$comment": "Glow/halo effect colors for filled-glow variant - lighter colors that create a glow effect around filled icons",
+        "primary": {
+          "value": "{color.background.primary.subtle.0}",
+          "type": "color",
+          "description": "Mobile icon primary glow color - blue/50 - #eff8ff"
+        },
+        "error": {
+          "value": "{color.background.error.subtle.0}",
+          "type": "color",
+          "description": "Mobile icon error glow color - red/50 - #fef3f2"
+        },
+        "warning": {
+          "value": "{color.background.warning.subtle.0}",
+          "type": "color",
+          "description": "Mobile icon warning glow color - orange/50 - #fff4e6"
+        },
+        "success": {
+          "value": "{color.background.success.subtle.0}",
+          "type": "color",
+          "description": "Mobile icon success glow color - green/50 - #ecfdf3"
+        }
+      }
+    },
+    "container": {
+      "$comment": "Container tokens for square-background variant - square background container behind the icon",
+      "square-background": {
+        "$comment": "Square background container properties - rounded square background for outlined icons",
+        "size": {
+          "4xs": {
+            "value": "{size.4}",
+            "type": "dimension",
+            "description": "Mobile icon square background size for 4xs - 16px"
+          },
+          "3xs": {
+            "value": "{size.5}",
+            "type": "dimension",
+            "description": "Mobile icon square background size for 3xs - 20px"
+          },
+          "2xs": {
+            "value": "{size.6}",
+            "type": "dimension",
+            "description": "Mobile icon square background size for 2xs - 24px"
+          },
+          "xs": {
+            "value": "{size.7}",
+            "type": "dimension",
+            "description": "Mobile icon square background size for xs - 28px"
+          },
+          "sm": {
+            "value": "{size.8}",
+            "type": "dimension",
+            "description": "Mobile icon square background size for sm - 32px"
+          },
+          "md": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Mobile icon square background size for md - 36px"
+          },
+          "lg": {
+            "value": "{size.10}",
+            "type": "dimension",
+            "description": "Mobile icon square background size for lg - 40px"
+          },
+          "xl": {
+            "value": "{size.11}",
+            "type": "dimension",
+            "description": "Mobile icon square background size for xl - 44px"
+          },
+          "2xl": {
+            "value": "{size.12}",
+            "type": "dimension",
+            "description": "Mobile icon square background size for 2xl - 48px"
+          },
+          "3xl": {
+            "value": "{size.14}",
+            "type": "dimension",
+            "description": "Mobile icon square background size for 3xl - 56px"
+          },
+          "4xl": {
+            "value": "{size.16}",
+            "type": "dimension",
+            "description": "Mobile icon square background size for 4xl - 64px"
+          }
+        },
+        "border": {
+          "radius": {
+            "4xs": {
+              "value": "{border.radius.1}",
+              "type": "dimension",
+              "description": "Mobile icon square background border radius for 4xs - 4px"
+            },
+            "3xs": {
+              "value": "{border.radius.1}",
+              "type": "dimension",
+              "description": "Mobile icon square background border radius for 3xs - 4px"
+            },
+            "2xs": {
+              "value": "{border.radius.1}",
+              "type": "dimension",
+              "description": "Mobile icon square background border radius for 2xs - 4px"
+            },
+            "xs": {
+              "value": "{border.radius.1[5]}",
+              "type": "dimension",
+              "description": "Mobile icon square background border radius for xs - 6px"
+            },
+            "sm": {
+              "value": "{border.radius.1[5]}",
+              "type": "dimension",
+              "description": "Mobile icon square background border radius for sm - 6px"
+            },
+            "md": {
+              "value": "{border.radius.2}",
+              "type": "dimension",
+              "description": "Mobile icon square background border radius for md - 8px"
+            },
+            "lg": {
+              "value": "{border.radius.2}",
+              "type": "dimension",
+              "description": "Mobile icon square background border radius for lg - 8px"
+            },
+            "xl": {
+              "value": "{border.radius.2}",
+              "type": "dimension",
+              "description": "Mobile icon square background border radius for xl - 8px"
+            },
+            "2xl": {
+              "value": "{border.radius.2}",
+              "type": "dimension",
+              "description": "Mobile icon square background border radius for 2xl - 8px"
+            },
+            "3xl": {
+              "value": "{border.radius.2}",
+              "type": "dimension",
+              "description": "Mobile icon square background border radius for 3xl - 8px"
+            },
+            "4xl": {
+              "value": "{border.radius.2}",
+              "type": "dimension",
+              "description": "Mobile icon square background border radius for 4xl - 8px"
+            }
+          }
+        },
+        "color": {
+          "background": {
+            "$comment": "Background colors for square background container - lighter shades matching icon stroke colors",
+            "neutral": {
+              "default": {
+                "value": "{color.background.neutral.subtle.0}",
+                "type": "color",
+                "description": "Mobile icon square background neutral color - gray/50 - #f9fafb"
+              },
+              "disabled": {
+                "value": "{color.background.neutral.subtle.1}",
+                "type": "color",
+                "description": "Mobile icon square background neutral disabled color - gray/100 - #f2f4f7"
+              }
+            },
+            "primary": {
+              "default": {
+                "value": "{color.background.primary.subtle.0}",
+                "type": "color",
+                "description": "Mobile icon square background primary color - blue/50 - #eff8ff"
+              },
+              "disabled": {
+                "value": "{color.background.primary.subtle.1}",
+                "type": "color",
+                "description": "Mobile icon square background primary disabled color - blue/100 - #d1e0ff"
+              }
+            },
+            "error": {
+              "default": {
+                "value": "{color.background.error.subtle.0}",
+                "type": "color",
+                "description": "Mobile icon square background error color - red/50 - #fef3f2"
+              },
+              "disabled": {
+                "value": "{color.background.error.subtle.1}",
+                "type": "color",
+                "description": "Mobile icon square background error disabled color - red/100 - #fee4e2"
+              }
+            },
+            "warning": {
+              "default": {
+                "value": "{color.background.warning.subtle.0}",
+                "type": "color",
+                "description": "Mobile icon square background warning color - orange/50 - #fff4e6"
+              },
+              "disabled": {
+                "value": "{color.background.warning.subtle.1}",
+                "type": "color",
+                "description": "Mobile icon square background warning disabled color - orange/100 - #fef0c7"
+              }
+            },
+            "success": {
+              "default": {
+                "value": "{color.background.success.subtle.0}",
+                "type": "color",
+                "description": "Mobile icon square background success color - green/50 - #ecfdf3"
+              },
+              "disabled": {
+                "value": "{color.background.success.subtle.1}",
+                "type": "color",
+                "description": "Mobile icon square background success disabled color - green/100 - #d1fadf"
+              }
+            }
+          }
+        },
+        "padding": {
+          "$comment": "Padding around icon within square background container - ensures proper spacing",
+          "4xs": {
+            "value": "{padding.0[75]}",
+            "type": "dimension",
+            "description": "Mobile icon square background padding for 4xs - 3px"
+          },
+          "3xs": {
+            "value": "{padding.1}",
+            "type": "dimension",
+            "description": "Mobile icon square background padding for 3xs - 4px"
+          },
+          "2xs": {
+            "value": "{padding.1[25]}",
+            "type": "dimension",
+            "description": "Mobile icon square background padding for 2xs - 5px"
+          },
+          "xs": {
+            "value": "{padding.1[5]}",
+            "type": "dimension",
+            "description": "Mobile icon square background padding for xs - 6px"
+          },
+          "sm": {
+            "value": "{padding.1[75]}",
+            "type": "dimension",
+            "description": "Mobile icon square background padding for sm - 7px"
+          },
+          "md": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Mobile icon square background padding for md - 8px"
+          },
+          "lg": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Mobile icon square background padding for lg - 8px"
+          },
+          "xl": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Mobile icon square background padding for xl - 8px"
+          },
+          "2xl": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Mobile icon square background padding for 2xl - 8px"
+          },
+          "3xl": {
+            "value": "{padding.2[5]}",
+            "type": "dimension",
+            "description": "Mobile icon square background padding for 3xl - 10px"
+          },
+          "4xl": {
+            "value": "{padding.3}",
+            "type": "dimension",
+            "description": "Mobile icon square background padding for 4xl - 12px"
+          }
+        }
+      }
+    }
+  }
+}

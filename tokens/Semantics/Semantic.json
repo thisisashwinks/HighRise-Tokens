@@ -4908,6 +4908,11 @@
         "value": "{border.width.4}",
         "type": "dimension",
         "description": "Border width: 16px"
+      },
+      "0[75]": {
+        "value": "{border.width.0[75]}",
+        "type": "dimension",
+        "description": "Border width: 3px"
       }
     }
   },

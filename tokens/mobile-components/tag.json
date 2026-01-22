@@ -1,0 +1,1761 @@
+{
+  "$comment": "Mobile Tag Component Tokens",
+  "$description": "Component tokens for Mobile Tag component - a compact label component used for categorization, filtering, and status indication. Supports multiple color variants (primary, neutral, success, error, warning, and accent colors), two styles (outline and filled), and multiple interactive states across 4 sizes (xs, sm, md, lg). Figma Reference: Node ID 393-823",
+  "$component": {
+    "name": "Tag",
+    "description": "A mobile tag component that displays a label with optional close icon. Used for categorization, filtering, status indication, and removable labels. Supports outline and filled styles, multiple color variants, and various interactive states. Features rounded corners, configurable padding, and optional tag count display.",
+    "structure": "Horizontal container with text label on the left, optional tag count badge, and optional close icon on the right. Supports square and rounded border radius variants.",
+    "sizes": {
+      "xs": "Extra small size for compact mobile interfaces - typically 18px height",
+      "sm": "Small size for compact mobile interfaces - typically 22px height",
+      "md": "Medium size (commonly used default for mobile) - typically 24px height",
+      "lg": "Large size for prominent mobile tags - typically 28px height"
+    },
+    "variants": {
+      "outline": "Tag style with colored border and light background, suitable for less prominent use cases",
+      "filled": "Tag style with solid colored background, suitable for prominent status indication",
+      "primary": "Primary blue color variant for main actions and primary content",
+      "neutral": "Neutral gray color variant for standard content and secondary information",
+      "success": "Green color variant for success states and positive feedback",
+      "error": "Red color variant for error states and destructive actions",
+      "warning": "Orange/yellow color variant for warning states and cautionary messages"
+    },
+    "usage": {
+      "contexts": "Mobile filters, category labels, status indicators, removable tags, tag input fields, search filters, content categorization, badge displays",
+      "features": "Removable close icon, Tag count badge, Multiple color variants, Outline and filled styles, Interactive states (hover, active, focused, disabled), Square and rounded corners"
+    }
+  },
+  "tag": {
+    "$comment": "Tag component tokens - includes border, padding, gap, height, variants, text, and icon tokens",
+    "border": {
+      "$comment": "Border tokens for tag component - includes radius variants (square and rounded) and border width",
+      "radius": {
+        "square": {
+          "$comment": "Square border radius variant - minimal rounding for tags",
+          "xs": {
+            "value": "{border.radius.xs}",
+            "type": "dimension",
+            "description": "Mobile tag square border radius for xs size - 4px"
+          },
+          "sm": {
+            "value": "{border.radius.xs}",
+            "type": "dimension",
+            "description": "Mobile tag square border radius for sm size - 4px"
+          },
+          "md": {
+            "value": "{border.radius.xs}",
+            "type": "dimension",
+            "description": "Mobile tag square border radius for md size - 4px"
+          },
+          "lg": {
+            "value": "{border.radius.xs}",
+            "type": "dimension",
+            "description": "Mobile tag square border radius for lg size - 4px"
+          }
+        },
+        "rounded": {
+          "$comment": "Rounded border radius variant - fully rounded corners for pill-shaped tags",
+          "xs": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Mobile tag rounded border radius for xs size - fully rounded"
+          },
+          "sm": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Mobile tag rounded border radius for sm size - fully rounded"
+          },
+          "md": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Mobile tag rounded border radius for md size - fully rounded"
+          },
+          "lg": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Mobile tag rounded border radius for lg size - fully rounded"
+          }
+        }
+      },
+      "width": {
+        "$comment": "Border width token for tag component",
+        "default": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile tag default border width - 1px"
+        }
+      }
+    },
+    "padding": {
+      "$comment": "Padding tokens for tag component - horizontal and vertical padding for each size",
+      "x": {
+        "xs": {
+          "value": "{padding.x.4xs}",
+          "type": "dimension",
+          "description": "Mobile tag horizontal padding for xs size - 6px"
+        },
+        "sm": {
+          "value": "{padding.x.3xs}",
+          "type": "dimension",
+          "description": "Mobile tag horizontal padding for sm size - 8px"
+        },
+        "md": {
+          "value": "{padding.x.3xs}",
+          "type": "dimension",
+          "description": "Mobile tag horizontal padding for md size - 8px"
+        },
+        "lg": {
+          "value": "{padding.x.3xs}",
+          "type": "dimension",
+          "description": "Mobile tag horizontal padding for lg size - 8px"
+        }
+      },
+      "y": {
+        "xs": {
+          "value": "{padding.y.none}",
+          "type": "dimension",
+          "description": "Mobile tag vertical padding for xs size - 0px"
+        },
+        "sm": {
+          "value": "{padding.y.none}",
+          "type": "dimension",
+          "description": "Mobile tag vertical padding for sm size - 0px"
+        },
+        "md": {
+          "value": "{padding.y.none}",
+          "type": "dimension",
+          "description": "Mobile tag vertical padding for md size - 0px"
+        },
+        "lg": {
+          "value": "{padding.y.none}",
+          "type": "dimension",
+          "description": "Mobile tag vertical padding for lg size - 0px"
+        }
+      }
+    },
+    "gap": {
+      "$comment": "Gap token for tag component - spacing between label and icon",
+      "xs": {
+        "value": "{gap.0[5]}",
+        "type": "dimension",
+        "description": "Mobile tag gap for xs size - 4px spacing between label and icon"
+      },
+      "sm": {
+        "value": "{gap.0[5]}",
+        "type": "dimension",
+        "description": "Mobile tag gap for sm size - 4px spacing between label and icon"
+      },
+      "md": {
+        "value": "{gap.0[5]}",
+        "type": "dimension",
+        "description": "Mobile tag gap for md size - 4px spacing between label and icon"
+      },
+      "lg": {
+        "value": "{gap.0[5]}",
+        "type": "dimension",
+        "description": "Mobile tag gap for lg size - 4px spacing between label and icon"
+      }
+    },
+    "height": {
+      "$comment": "Height tokens for tag component - defines the vertical size of the tag",
+      "xs": {
+        "value": "{size.4[5]}",
+        "type": "dimension",
+        "description": "Mobile tag height for xs size - 18px"
+      },
+      "sm": {
+        "value": "{size.5[5]}",
+        "type": "dimension",
+        "description": "Mobile tag height for sm size - 22px"
+      },
+      "md": {
+        "value": "{size.6}",
+        "type": "dimension",
+        "description": "Mobile tag height for md size - 24px"
+      },
+      "lg": {
+        "value": "{size.7}",
+        "type": "dimension",
+        "description": "Mobile tag height for lg size - 28px"
+      }
+    },
+    "variants": {
+      "$comment": "Color variant tokens for tag component - includes primary, neutral, success, error, and warning variants with outline and filled styles",
+      "primary": {
+        "$comment": "Primary color variant - blue color scheme for primary actions",
+        "outline": {
+          "$comment": "Primary outline style - colored border with light background",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile primary tag outline default background - white/base - #ffffff"
+            },
+            "hover": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile primary tag outline hover background - blue/100 - #eef4ff"
+            },
+            "active": {
+              "value": "{color.background.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile primary tag outline active background - blue/200 - #d1e0ff"
+            },
+            "focused": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile primary tag outline focused background - blue/100 - #eef4ff"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile primary tag outline disabled background - gray/100 - #f2f4f7"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.primary.default}",
+              "type": "color",
+              "description": "Mobile primary tag outline default border - blue/600 - #155eef"
+            },
+            "hover": {
+              "value": "{color.border.primary.intense.0}",
+              "type": "color",
+              "description": "Mobile primary tag outline hover border - blue/700 - #004eeb"
+            },
+            "active": {
+              "value": "{color.border.primary.intense.1}",
+              "type": "color",
+              "description": "Mobile primary tag outline active border - blue/800 - #0040c1"
+            },
+            "focused": {
+              "value": "{color.border.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile primary tag outline focused border - blue/300 - #84adff"
+            },
+            "disabled": {
+              "value": "{color.border.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile primary tag outline disabled border - blue/200 - #d1e0ff"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.primary.body.1}",
+              "type": "color",
+              "description": "Mobile primary tag outline default text - blue/700 - #004eeb"
+            },
+            "hover": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile primary tag outline hover text - blue/800 - #0040c1"
+            },
+            "active": {
+              "value": "{color.text.primary.title.1}",
+              "type": "color",
+              "description": "Mobile primary tag outline active text - blue/900 - #00359e"
+            },
+            "focused": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile primary tag outline focused text - blue/800 - #0040c1"
+            },
+            "disabled": {
+              "value": "{color.text.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile primary tag outline disabled text - blue/400 - #528bff"
+            }
+          },
+          "focus": {
+            "$comment": "Focus ring color for primary outline tag",
+            "ring": {
+              "value": "{color.border.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile primary tag outline focus ring - blue/300 - #84adff"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile primary tag outline default icon - blue/700 - #004eeb"
+            },
+            "hover": {
+              "value": "{color.icon.primary.intense.0}",
+              "type": "color",
+              "description": "Mobile primary tag outline hover icon - blue/800 - #0040c1"
+            },
+            "active": {
+              "value": "{color.icon.primary.intense.1}",
+              "type": "color",
+              "description": "Mobile primary tag outline active icon - blue/900 - #00359e"
+            },
+            "focused": {
+              "value": "{color.icon.primary.intense.0}",
+              "type": "color",
+              "description": "Mobile primary tag outline focused icon - blue/800 - #0040c1"
+            },
+            "disabled": {
+              "value": "{color.icon.primary.subtle.0}",
+              "type": "color",
+              "description": "Mobile primary tag outline disabled icon - blue/200 - #d1e0ff"
+            }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for primary outline tag",
+            "background": {
+              "default": {
+                "value": "{color.background.primary.inactive}",
+                "type": "color",
+                "description": "Mobile primary tag outline tag-count background - blue/50 - #eff8ff"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.primary.body.1}",
+                "type": "color",
+                "description": "Mobile primary tag outline tag-count text - blue/700 - #004eeb"
+              },
+              "hover": {
+                "value": "{color.text.primary.title.2}",
+                "type": "color",
+                "description": "Mobile primary tag outline tag-count hover text - blue/800 - #0040c1"
+              },
+              "active": {
+                "value": "{color.text.primary.title.1}",
+                "type": "color",
+                "description": "Mobile primary tag outline tag-count active text - blue/900 - #00359e"
+              },
+              "focused": {
+                "value": "{color.text.primary.title.2}",
+                "type": "color",
+                "description": "Mobile primary tag outline tag-count focused text - blue/800 - #0040c1"
+              }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Primary filled style - solid colored background",
+          "background": {
+            "default": {
+              "value": "{color.background.primary.subtle.0}",
+              "type": "color",
+              "description": "Mobile primary tag filled default background - blue/50 - #eff8ff"
+            },
+            "hover": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile primary tag filled hover background - blue/100 - #eef4ff"
+            },
+            "active": {
+              "value": "{color.background.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile primary tag filled active background - blue/200 - #d1e0ff"
+            },
+            "focused": {
+              "value": "{color.background.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile primary tag filled focused background - blue/100 - #eef4ff"
+            },
+            "disabled": {
+              "value": "{color.background.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile primary tag filled disabled background - blue/200 - #d1e0ff"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile primary tag filled default border - transparent - #FFFFFF00"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile primary tag filled hover border - transparent - #FFFFFF00"
+            },
+            "active": {
+              "value": "{color.border.primary.intense.1}",
+              "type": "color",
+              "description": "Mobile primary tag filled active border - blue/800 - #0040c1"
+            },
+            "focused": {
+              "value": "{color.border.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile primary tag filled focused border - blue/300 - #84adff"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile primary tag filled disabled border - transparent - #FFFFFF00"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.primary.body.1}",
+              "type": "color",
+              "description": "Mobile primary tag filled default text - blue/700 - #004eeb"
+            },
+            "hover": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile primary tag filled hover text - blue/800 - #0040c1"
+            },
+            "active": {
+              "value": "{color.text.primary.title.1}",
+              "type": "color",
+              "description": "Mobile primary tag filled active text - blue/900 - #00359e"
+            },
+            "focused": {
+              "value": "{color.text.primary.title.2}",
+              "type": "color",
+              "description": "Mobile primary tag filled focused text - blue/800 - #0040c1"
+            },
+            "disabled": {
+              "value": "{color.text.primary.subtle.1}",
+              "type": "color",
+              "description": "Mobile primary tag filled disabled text - blue/400 - #528bff"
+            }
+          },
+          "focus": {
+            "$comment": "Focus ring color for primary filled tag",
+            "ring": {
+              "value": "{color.border.primary.subtle.2}",
+              "type": "color",
+              "description": "Mobile primary tag filled focus ring - blue/300 - #84adff"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.primary.default}",
+              "type": "color",
+              "description": "Mobile primary tag filled default icon - blue/700 - #004eeb"
+            },
+            "hover": {
+              "value": "{color.icon.primary.intense.0}",
+              "type": "color",
+              "description": "Mobile primary tag filled hover icon - blue/800 - #0040c1"
+            },
+            "active": {
+              "value": "{color.icon.primary.intense.1}",
+              "type": "color",
+              "description": "Mobile primary tag filled active icon - blue/900 - #00359e"
+            },
+            "focused": {
+              "value": "{color.icon.primary.intense.0}",
+              "type": "color",
+              "description": "Mobile primary tag filled focused icon - blue/800 - #0040c1"
+            },
+            "disabled": {
+              "value": "{color.icon.primary.subtle.0}",
+              "type": "color",
+              "description": "Mobile primary tag filled disabled icon - blue/200 - #d1e0ff"
+            }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for primary filled tag",
+            "background": {
+              "default": {
+                "value": "{color.background.primary.inactive}",
+                "type": "color",
+                "description": "Mobile primary tag filled tag-count background - blue/50 - #eff8ff"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.primary.body.1}",
+                "type": "color",
+                "description": "Mobile primary tag filled tag-count text - blue/700 - #004eeb"
+              },
+              "hover": {
+                "value": "{color.text.primary.title.2}",
+                "type": "color",
+                "description": "Mobile primary tag filled tag-count hover text - blue/800 - #0040c1"
+              },
+              "active": {
+                "value": "{color.text.primary.title.1}",
+                "type": "color",
+                "description": "Mobile primary tag filled tag-count active text - blue/900 - #00359e"
+              },
+              "focused": {
+                "value": "{color.text.primary.title.2}",
+                "type": "color",
+                "description": "Mobile primary tag filled tag-count focused text - blue/800 - #0040c1"
+              }
+            }
+          }
+        }
+      },
+      "neutral": {
+        "$comment": "Neutral color variant - gray color scheme for standard content",
+        "outline": {
+          "$comment": "Neutral outline style - gray border with light background",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile neutral tag outline default background - white/base - #ffffff"
+            },
+            "hover": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral tag outline hover background - gray/100 - #f2f4f7"
+            },
+            "active": {
+              "value": "{color.background.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral tag outline active background - gray/200 - #eaecf0"
+            },
+            "focused": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral tag outline focused background - gray/100 - #f2f4f7"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral tag outline disabled background - gray/100 - #f2f4f7"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Mobile neutral tag outline default border - gray/300 - #d0d5dd"
+            },
+            "hover": {
+              "value": "{color.border.neutral.moderate.0}",
+              "type": "color",
+              "description": "Mobile neutral tag outline hover border - gray/400 - #98a2b3"
+            },
+            "active": {
+              "value": "{color.border.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral tag outline active border - gray/600 - #475467"
+            },
+            "focused": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Mobile neutral tag outline focused border - gray/300 - #d0d5dd"
+            },
+            "disabled": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral tag outline disabled border - gray/300 - #d0d5dd"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "description": "Mobile neutral tag outline default text - gray/600 - #475467"
+            },
+            "hover": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral tag outline hover text - gray/800 - #1d2939"
+            },
+            "active": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "description": "Mobile neutral tag outline active text - gray/900 - #101828"
+            },
+            "focused": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral tag outline focused text - gray/800 - #1d2939"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.subtitle.2}",
+              "type": "color",
+              "description": "Mobile neutral tag outline disabled text - gray/400 - #98a2b3"
+            }
+          },
+          "focus": {
+            "$comment": "Focus ring color for neutral outline tag",
+            "ring": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral tag outline focus ring - gray/300 - #d0d5dd"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral tag outline default icon - gray/600 - #475467"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.intense.0}",
+              "type": "color",
+              "description": "Mobile neutral tag outline hover icon - gray/800 - #1d2939"
+            },
+            "active": {
+              "value": "{color.icon.neutral.intense.1}",
+              "type": "color",
+              "description": "Mobile neutral tag outline active icon - gray/900 - #101828"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.intense.0}",
+              "type": "color",
+              "description": "Mobile neutral tag outline focused icon - gray/800 - #1d2939"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral tag outline disabled icon - gray/300 - #d0d5dd"
+            }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for neutral outline tag",
+            "background": {
+              "default": {
+                "value": "{color.background.neutral.inactive}",
+                "type": "color",
+                "description": "Mobile neutral tag outline tag-count background - gray/50 - #f9fafb"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.neutral.body.2}",
+                "type": "color",
+                "description": "Mobile neutral tag outline tag-count text - gray/600 - #475467"
+              },
+              "hover": {
+                "value": "{color.text.neutral.title.2}",
+                "type": "color",
+                "description": "Mobile neutral tag outline tag-count hover text - gray/800 - #1d2939"
+              },
+              "active": {
+                "value": "{color.text.neutral.title.1}",
+                "type": "color",
+                "description": "Mobile neutral tag outline tag-count active text - gray/900 - #101828"
+              },
+              "focused": {
+                "value": "{color.text.neutral.title.2}",
+                "type": "color",
+                "description": "Mobile neutral tag outline tag-count focused text - gray/800 - #1d2939"
+              }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Neutral filled style - solid gray background",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral tag filled default background - gray/100 - #f2f4f7"
+            },
+            "hover": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral tag filled hover background - gray/100 - #f2f4f7"
+            },
+            "active": {
+              "value": "{color.background.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral tag filled active background - gray/200 - #eaecf0"
+            },
+            "focused": {
+              "value": "{color.background.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile neutral tag filled focused background - gray/100 - #f2f4f7"
+            },
+            "disabled": {
+              "value": "{color.background.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral tag filled disabled background - gray/200 - #eaecf0"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral tag filled default border - transparent - #FFFFFF00"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral tag filled hover border - transparent - #FFFFFF00"
+            },
+            "active": {
+              "value": "{color.border.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral tag filled active border - gray/600 - #475467"
+            },
+            "focused": {
+              "value": "{color.border.neutral.default}",
+              "type": "color",
+              "description": "Mobile neutral tag filled focused border - gray/300 - #d0d5dd"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile neutral tag filled disabled border - transparent - #FFFFFF00"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.neutral.body.2}",
+              "type": "color",
+              "description": "Mobile neutral tag filled default text - gray/600 - #475467"
+            },
+            "hover": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral tag filled hover text - gray/800 - #1d2939"
+            },
+            "active": {
+              "value": "{color.text.neutral.title.1}",
+              "type": "color",
+              "description": "Mobile neutral tag filled active text - gray/900 - #101828"
+            },
+            "focused": {
+              "value": "{color.text.neutral.title.2}",
+              "type": "color",
+              "description": "Mobile neutral tag filled focused text - gray/800 - #1d2939"
+            },
+            "disabled": {
+              "value": "{color.text.neutral.subtitle.2}",
+              "type": "color",
+              "description": "Mobile neutral tag filled disabled text - gray/400 - #98a2b3"
+            }
+          },
+          "focus": {
+            "$comment": "Focus ring color for neutral filled tag",
+            "ring": {
+              "value": "{color.border.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral tag filled focus ring - gray/300 - #d0d5dd"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile neutral tag filled default icon - gray/600 - #475467"
+            },
+            "hover": {
+              "value": "{color.icon.neutral.intense.0}",
+              "type": "color",
+              "description": "Mobile neutral tag filled hover icon - gray/800 - #1d2939"
+            },
+            "active": {
+              "value": "{color.icon.neutral.intense.1}",
+              "type": "color",
+              "description": "Mobile neutral tag filled active icon - gray/900 - #101828"
+            },
+            "focused": {
+              "value": "{color.icon.neutral.intense.0}",
+              "type": "color",
+              "description": "Mobile neutral tag filled focused icon - gray/800 - #1d2939"
+            },
+            "disabled": {
+              "value": "{color.icon.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile neutral tag filled disabled icon - gray/300 - #d0d5dd"
+            }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for neutral filled tag",
+            "background": {
+              "default": {
+                "value": "{color.background.neutral.inactive}",
+                "type": "color",
+                "description": "Mobile neutral tag filled tag-count background - gray/50 - #f9fafb"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.neutral.body.2}",
+                "type": "color",
+                "description": "Mobile neutral tag filled tag-count text - gray/600 - #475467"
+              },
+              "hover": {
+                "value": "{color.text.neutral.title.2}",
+                "type": "color",
+                "description": "Mobile neutral tag filled tag-count hover text - gray/800 - #1d2939"
+              },
+              "active": {
+                "value": "{color.text.neutral.title.1}",
+                "type": "color",
+                "description": "Mobile neutral tag filled tag-count active text - gray/900 - #101828"
+              },
+              "focused": {
+                "value": "{color.text.neutral.title.2}",
+                "type": "color",
+                "description": "Mobile neutral tag filled tag-count focused text - gray/800 - #1d2939"
+              }
+            }
+          }
+        }
+      },
+      "success": {
+        "$comment": "Success color variant - green color scheme for success states",
+        "outline": {
+          "$comment": "Success outline style - green border with light background",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile success tag outline default background - white/base - #ffffff"
+            },
+            "hover": {
+              "value": "{color.background.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success tag outline hover background - green/100 - #d1fadf"
+            },
+            "active": {
+              "value": "{color.background.success.subtle.2}",
+              "type": "color",
+              "description": "Mobile success tag outline active background - green/200 - #a6f4c5"
+            },
+            "focused": {
+              "value": "{color.background.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success tag outline focused background - green/100 - #d1fadf"
+            },
+            "disabled": {
+              "value": "{color.background.success.subtle.2}",
+              "type": "color",
+              "description": "Mobile success tag outline disabled background - green/200 - #a6f4c5"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.success.default}",
+              "type": "color",
+              "description": "Mobile success tag outline default border - green/600 - #039855"
+            },
+            "hover": {
+              "value": "{color.border.success.intense.0}",
+              "type": "color",
+              "description": "Mobile success tag outline hover border - green/700 - #027a48"
+            },
+            "active": {
+              "value": "{color.border.success.intense.1}",
+              "type": "color",
+              "description": "Mobile success tag outline active border - green/800 - #05603a"
+            },
+            "focused": {
+              "value": "{color.border.success.moderate.0}",
+              "type": "color",
+              "description": "Mobile success tag outline focused border - green/300 - #6ce9a6"
+            },
+            "disabled": {
+              "value": "{color.border.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success tag outline disabled border - green/200 - #a6f4c5"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.success.body.1}",
+              "type": "color",
+              "description": "Mobile success tag outline default text - green/700 - #027a48"
+            },
+            "hover": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success tag outline hover text - green/800 - #05603a"
+            },
+            "active": {
+              "value": "{color.text.success.title.1}",
+              "type": "color",
+              "description": "Mobile success tag outline active text - green/900 - #054f31"
+            },
+            "focused": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success tag outline focused text - green/800 - #05603a"
+            },
+            "disabled": {
+              "value": "{color.text.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success tag outline disabled text - green/400 - #32d583"
+            }
+          },
+          "focus": {
+            "$comment": "Focus ring color for success outline tag",
+            "ring": {
+              "value": "{color.border.success.subtle.2}",
+              "type": "color",
+              "description": "Mobile success tag outline focus ring - green/300 - #6ce9a6"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.success.default}",
+              "type": "color",
+              "description": "Mobile success tag outline default icon - green/700 - #027a48"
+            },
+            "hover": {
+              "value": "{color.icon.success.intense.0}",
+              "type": "color",
+              "description": "Mobile success tag outline hover icon - green/800 - #05603a"
+            },
+            "active": {
+              "value": "{color.icon.success.intense.1}",
+              "type": "color",
+              "description": "Mobile success tag outline active icon - green/900 - #054f31"
+            },
+            "focused": {
+              "value": "{color.icon.success.intense.0}",
+              "type": "color",
+              "description": "Mobile success tag outline focused icon - green/800 - #05603a"
+            },
+            "disabled": {
+              "value": "{color.icon.success.subtle.0}",
+              "type": "color",
+              "description": "Mobile success tag outline disabled icon - green/200 - #a6f4c5"
+            }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for success outline tag",
+            "background": {
+              "default": {
+                "value": "{color.background.success.inactive}",
+                "type": "color",
+                "description": "Mobile success tag outline tag-count background - green/50 - #ecfdf3"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.success.body.1}",
+                "type": "color",
+                "description": "Mobile success tag outline tag-count text - green/700 - #027a48"
+              },
+              "hover": {
+                "value": "{color.text.success.title.2}",
+                "type": "color",
+                "description": "Mobile success tag outline tag-count hover text - green/800 - #05603a"
+              },
+              "active": {
+                "value": "{color.text.success.title.1}",
+                "type": "color",
+                "description": "Mobile success tag outline tag-count active text - green/900 - #054f31"
+              },
+              "focused": {
+                "value": "{color.text.success.title.2}",
+                "type": "color",
+                "description": "Mobile success tag outline tag-count focused text - green/800 - #05603a"
+              }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Success filled style - solid green background",
+          "background": {
+            "default": {
+              "value": "{color.background.success.subtle.0}",
+              "type": "color",
+              "description": "Mobile success tag filled default background - green/50 - #ecfdf3"
+            },
+            "hover": {
+              "value": "{color.background.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success tag filled hover background - green/100 - #d1fadf"
+            },
+            "active": {
+              "value": "{color.background.success.subtle.2}",
+              "type": "color",
+              "description": "Mobile success tag filled active background - green/200 - #a6f4c5"
+            },
+            "focused": {
+              "value": "{color.background.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success tag filled focused background - green/100 - #d1fadf"
+            },
+            "disabled": {
+              "value": "{color.background.success.subtle.2}",
+              "type": "color",
+              "description": "Mobile success tag filled disabled background - green/200 - #a6f4c5"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success tag filled default border - transparent - #FFFFFF00"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success tag filled hover border - transparent - #FFFFFF00"
+            },
+            "active": {
+              "value": "{color.border.success.intense.1}",
+              "type": "color",
+              "description": "Mobile success tag filled active border - green/800 - #05603a"
+            },
+            "focused": {
+              "value": "{color.border.success.moderate.0}",
+              "type": "color",
+              "description": "Mobile success tag filled focused border - green/300 - #6ce9a6"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile success tag filled disabled border - transparent - #FFFFFF00"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.success.body.1}",
+              "type": "color",
+              "description": "Mobile success tag filled default text - green/700 - #027a48"
+            },
+            "hover": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success tag filled hover text - green/800 - #05603a"
+            },
+            "active": {
+              "value": "{color.text.success.title.1}",
+              "type": "color",
+              "description": "Mobile success tag filled active text - green/900 - #054f31"
+            },
+            "focused": {
+              "value": "{color.text.success.title.2}",
+              "type": "color",
+              "description": "Mobile success tag filled focused text - green/800 - #05603a"
+            },
+            "disabled": {
+              "value": "{color.text.success.subtle.1}",
+              "type": "color",
+              "description": "Mobile success tag filled disabled text - green/400 - #32d583"
+            }
+          },
+          "focus": {
+            "$comment": "Focus ring color for success filled tag",
+            "ring": {
+              "value": "{color.border.success.subtle.2}",
+              "type": "color",
+              "description": "Mobile success tag filled focus ring - green/300 - #6ce9a6"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.success.moderate.2}",
+              "type": "color",
+              "description": "Mobile success tag filled default icon - green/600 - #039855"
+            },
+            "hover": {
+              "value": "{color.icon.success.intense.0}",
+              "type": "color",
+              "description": "Mobile success tag filled hover icon - green/800 - #05603a"
+            },
+            "active": {
+              "value": "{color.icon.success.intense.1}",
+              "type": "color",
+              "description": "Mobile success tag filled active icon - green/900 - #054f31"
+            },
+            "focused": {
+              "value": "{color.icon.success.intense.0}",
+              "type": "color",
+              "description": "Mobile success tag filled focused icon - green/800 - #05603a"
+            },
+            "disabled": {
+              "value": "{color.icon.success.subtle.0}",
+              "type": "color",
+              "description": "Mobile success tag filled disabled icon - green/200 - #a6f4c5"
+            }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for success filled tag",
+            "background": {
+              "default": {
+                "value": "{color.background.success.inactive}",
+                "type": "color",
+                "description": "Mobile success tag filled tag-count background - green/50 - #ecfdf3"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.success.body.1}",
+                "type": "color",
+                "description": "Mobile success tag filled tag-count text - green/700 - #027a48"
+              },
+              "hover": {
+                "value": "{color.text.success.title.2}",
+                "type": "color",
+                "description": "Mobile success tag filled tag-count hover text - green/800 - #05603a"
+              },
+              "active": {
+                "value": "{color.text.success.title.1}",
+                "type": "color",
+                "description": "Mobile success tag filled tag-count active text - green/900 - #054f31"
+              },
+              "focused": {
+                "value": "{color.text.success.title.2}",
+                "type": "color",
+                "description": "Mobile success tag filled tag-count focused text - green/800 - #05603a"
+              }
+            }
+          }
+        }
+      },
+      "error": {
+        "$comment": "Error color variant - red color scheme for error and destructive states",
+        "outline": {
+          "$comment": "Error outline style - red border with light background",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile error tag outline default background - white/base - #ffffff"
+            },
+            "hover": {
+              "value": "{color.background.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error tag outline hover background - red/100 - #fee4e2"
+            },
+            "active": {
+              "value": "{color.background.error.subtle.2}",
+              "type": "color",
+              "description": "Mobile error tag outline active background - red/200 - #fecdca"
+            },
+            "focused": {
+              "value": "{color.background.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error tag outline focused background - red/100 - #fee4e2"
+            },
+            "disabled": {
+              "value": "{color.background.error.subtle.2}",
+              "type": "color",
+              "description": "Mobile error tag outline disabled background - red/200 - #fecdca"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.error.default}",
+              "type": "color",
+              "description": "Mobile error tag outline default border - red/600 - #d92d20"
+            },
+            "hover": {
+              "value": "{color.border.error.intense.0}",
+              "type": "color",
+              "description": "Mobile error tag outline hover border - red/700 - #b42318"
+            },
+            "active": {
+              "value": "{color.border.error.intense.1}",
+              "type": "color",
+              "description": "Mobile error tag outline active border - red/800 - #912018"
+            },
+            "focused": {
+              "value": "{color.border.error.moderate.0}",
+              "type": "color",
+              "description": "Mobile error tag outline focused border - red/300 - #fda29b"
+            },
+            "disabled": {
+              "value": "{color.border.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error tag outline disabled border - red/200 - #fecdca"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.error.body.1}",
+              "type": "color",
+              "description": "Mobile error tag outline default text - red/700 - #b42318"
+            },
+            "hover": {
+              "value": "{color.text.error.title.2}",
+              "type": "color",
+              "description": "Mobile error tag outline hover text - red/800 - #912018"
+            },
+            "active": {
+              "value": "{color.text.error.title.1}",
+              "type": "color",
+              "description": "Mobile error tag outline active text - red/900 - #7a271a"
+            },
+            "focused": {
+              "value": "{color.text.error.title.2}",
+              "type": "color",
+              "description": "Mobile error tag outline focused text - red/800 - #912018"
+            },
+            "disabled": {
+              "value": "{color.text.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error tag outline disabled text - red/400 - #f97066"
+            }
+          },
+          "focus": {
+            "$comment": "Focus ring color for error outline tag",
+            "ring": {
+              "value": "{color.border.error.subtle.2}",
+              "type": "color",
+              "description": "Mobile error tag outline focus ring - red/300 - #fda29b"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.error.default}",
+              "type": "color",
+              "description": "Mobile error tag outline default icon - red/700 - #b42318"
+            },
+            "hover": {
+              "value": "{color.icon.error.intense.0}",
+              "type": "color",
+              "description": "Mobile error tag outline hover icon - red/800 - #912018"
+            },
+            "active": {
+              "value": "{color.icon.error.intense.1}",
+              "type": "color",
+              "description": "Mobile error tag outline active icon - red/900 - #7a271a"
+            },
+            "focused": {
+              "value": "{color.icon.error.intense.0}",
+              "type": "color",
+              "description": "Mobile error tag outline focused icon - red/800 - #912018"
+            },
+            "disabled": {
+              "value": "{color.icon.error.subtle.0}",
+              "type": "color",
+              "description": "Mobile error tag outline disabled icon - red/200 - #fecdca"
+            }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for error outline tag",
+            "background": {
+              "default": {
+                "value": "{color.background.error.inactive}",
+                "type": "color",
+                "description": "Mobile error tag outline tag-count background - red/50 - #fef3f2"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.error.body.1}",
+                "type": "color",
+                "description": "Mobile error tag outline tag-count text - red/700 - #b42318"
+              },
+              "hover": {
+                "value": "{color.text.error.title.2}",
+                "type": "color",
+                "description": "Mobile error tag outline tag-count hover text - red/800 - #912018"
+              },
+              "active": {
+                "value": "{color.text.error.title.1}",
+                "type": "color",
+                "description": "Mobile error tag outline tag-count active text - red/900 - #7a271a"
+              },
+              "focused": {
+                "value": "{color.text.error.title.2}",
+                "type": "color",
+                "description": "Mobile error tag outline tag-count focused text - red/800 - #912018"
+              }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Error filled style - solid red background",
+          "background": {
+            "default": {
+              "value": "{color.background.error.subtle.0}",
+              "type": "color",
+              "description": "Mobile error tag filled default background - red/50 - #fef3f2"
+            },
+            "hover": {
+              "value": "{color.background.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error tag filled hover background - red/100 - #fee4e2"
+            },
+            "active": {
+              "value": "{color.background.error.subtle.2}",
+              "type": "color",
+              "description": "Mobile error tag filled active background - red/200 - #fecdca"
+            },
+            "focused": {
+              "value": "{color.background.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error tag filled focused background - red/100 - #fee4e2"
+            },
+            "disabled": {
+              "value": "{color.background.error.subtle.2}",
+              "type": "color",
+              "description": "Mobile error tag filled disabled background - red/200 - #fecdca"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error tag filled default border - transparent - #FFFFFF00"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error tag filled hover border - transparent - #FFFFFF00"
+            },
+            "active": {
+              "value": "{color.border.error.intense.1}",
+              "type": "color",
+              "description": "Mobile error tag filled active border - red/800 - #912018"
+            },
+            "focused": {
+              "value": "{color.border.error.moderate.0}",
+              "type": "color",
+              "description": "Mobile error tag filled focused border - red/300 - #fda29b"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile error tag filled disabled border - transparent - #FFFFFF00"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.error.body.1}",
+              "type": "color",
+              "description": "Mobile error tag filled default text - red/700 - #b42318"
+            },
+            "hover": {
+              "value": "{color.text.error.title.2}",
+              "type": "color",
+              "description": "Mobile error tag filled hover text - red/800 - #912018"
+            },
+            "active": {
+              "value": "{color.text.error.title.1}",
+              "type": "color",
+              "description": "Mobile error tag filled active text - red/900 - #7a271a"
+            },
+            "focused": {
+              "value": "{color.text.error.title.2}",
+              "type": "color",
+              "description": "Mobile error tag filled focused text - red/800 - #912018"
+            },
+            "disabled": {
+              "value": "{color.text.error.subtle.1}",
+              "type": "color",
+              "description": "Mobile error tag filled disabled text - red/400 - #f97066"
+            }
+          },
+          "focus": {
+            "$comment": "Focus ring color for error filled tag",
+            "ring": {
+              "value": "{color.border.error.subtle.2}",
+              "type": "color",
+              "description": "Mobile error tag filled focus ring - red/300 - #fda29b"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.error.moderate.2}",
+              "type": "color",
+              "description": "Mobile error tag filled default icon - red/600 - #d92d20"
+            },
+            "hover": {
+              "value": "{color.icon.error.intense.0}",
+              "type": "color",
+              "description": "Mobile error tag filled hover icon - red/800 - #912018"
+            },
+            "active": {
+              "value": "{color.icon.error.intense.1}",
+              "type": "color",
+              "description": "Mobile error tag filled active icon - red/900 - #7a271a"
+            },
+            "focused": {
+              "value": "{color.icon.error.intense.0}",
+              "type": "color",
+              "description": "Mobile error tag filled focused icon - red/800 - #912018"
+            },
+            "disabled": {
+              "value": "{color.icon.error.subtle.0}",
+              "type": "color",
+              "description": "Mobile error tag filled disabled icon - red/200 - #fecdca"
+            }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for error filled tag",
+            "background": {
+              "default": {
+                "value": "{color.background.error.inactive}",
+                "type": "color",
+                "description": "Mobile error tag filled tag-count background - red/50 - #fef3f2"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.error.body.1}",
+                "type": "color",
+                "description": "Mobile error tag filled tag-count text - red/700 - #b42318"
+              },
+              "hover": {
+                "value": "{color.text.error.title.2}",
+                "type": "color",
+                "description": "Mobile error tag filled tag-count hover text - red/800 - #912018"
+              },
+              "active": {
+                "value": "{color.text.error.title.1}",
+                "type": "color",
+                "description": "Mobile error tag filled tag-count active text - red/900 - #7a271a"
+              },
+              "focused": {
+                "value": "{color.text.error.title.2}",
+                "type": "color",
+                "description": "Mobile error tag filled tag-count focused text - red/800 - #912018"
+              }
+            }
+          }
+        }
+      },
+      "warning": {
+        "$comment": "Warning color variant - orange/yellow color scheme for warning states",
+        "outline": {
+          "$comment": "Warning outline style - orange border with light background",
+          "background": {
+            "default": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile warning tag outline default background - white/base - #ffffff"
+            },
+            "hover": {
+              "value": "{color.background.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning tag outline hover background - orange/100 - #fef0c7"
+            },
+            "active": {
+              "value": "{color.background.warning.subtle.2}",
+              "type": "color",
+              "description": "Mobile warning tag outline active background - orange/200 - #fde68a"
+            },
+            "focused": {
+              "value": "{color.background.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning tag outline focused background - orange/100 - #fef0c7"
+            },
+            "disabled": {
+              "value": "{color.background.warning.subtle.2}",
+              "type": "color",
+              "description": "Mobile warning tag outline disabled background - orange/200 - #fde68a"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.warning.default}",
+              "type": "color",
+              "description": "Mobile warning tag outline default border - orange/600 - #dc6803"
+            },
+            "hover": {
+              "value": "{color.border.warning.intense.0}",
+              "type": "color",
+              "description": "Mobile warning tag outline hover border - orange/700 - #b54708"
+            },
+            "active": {
+              "value": "{color.border.warning.intense.1}",
+              "type": "color",
+              "description": "Mobile warning tag outline active border - orange/800 - #93370d"
+            },
+            "focused": {
+              "value": "{color.border.warning.moderate.0}",
+              "type": "color",
+              "description": "Mobile warning tag outline focused border - orange/300 - #fec84b"
+            },
+            "disabled": {
+              "value": "{color.border.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning tag outline disabled border - orange/200 - #fde68a"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.warning.body.1}",
+              "type": "color",
+              "description": "Mobile warning tag outline default text - orange/700 - #b54708"
+            },
+            "hover": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning tag outline hover text - orange/800 - #93370d"
+            },
+            "active": {
+              "value": "{color.text.warning.title.1}",
+              "type": "color",
+              "description": "Mobile warning tag outline active text - orange/900 - #7a2e0e"
+            },
+            "focused": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning tag outline focused text - orange/800 - #93370d"
+            },
+            "disabled": {
+              "value": "{color.text.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning tag outline disabled text - orange/400 - #fdb022"
+            }
+          },
+          "focus": {
+            "$comment": "Focus ring color for warning outline tag",
+            "ring": {
+              "value": "{color.border.warning.subtle.2}",
+              "type": "color",
+              "description": "Mobile warning tag outline focus ring - orange/300 - #fec84b"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.warning.default}",
+              "type": "color",
+              "description": "Mobile warning tag outline default icon - orange/700 - #b54708"
+            },
+            "hover": {
+              "value": "{color.icon.warning.intense.0}",
+              "type": "color",
+              "description": "Mobile warning tag outline hover icon - orange/800 - #93370d"
+            },
+            "active": {
+              "value": "{color.icon.warning.intense.1}",
+              "type": "color",
+              "description": "Mobile warning tag outline active icon - orange/900 - #7a2e0e"
+            },
+            "focused": {
+              "value": "{color.icon.warning.intense.0}",
+              "type": "color",
+              "description": "Mobile warning tag outline focused icon - orange/800 - #93370d"
+            },
+            "disabled": {
+              "value": "{color.icon.warning.subtle.0}",
+              "type": "color",
+              "description": "Mobile warning tag outline disabled icon - orange/200 - #fde68a"
+            }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for warning outline tag",
+            "background": {
+              "default": {
+                "value": "{color.background.warning.inactive}",
+                "type": "color",
+                "description": "Mobile warning tag outline tag-count background - orange/50 - #fffaeb"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.warning.body.1}",
+                "type": "color",
+                "description": "Mobile warning tag outline tag-count text - orange/700 - #b54708"
+              },
+              "hover": {
+                "value": "{color.text.warning.title.2}",
+                "type": "color",
+                "description": "Mobile warning tag outline tag-count hover text - orange/800 - #93370d"
+              },
+              "active": {
+                "value": "{color.text.warning.title.1}",
+                "type": "color",
+                "description": "Mobile warning tag outline tag-count active text - orange/900 - #7a2e0e"
+              },
+              "focused": {
+                "value": "{color.text.warning.title.2}",
+                "type": "color",
+                "description": "Mobile warning tag outline tag-count focused text - orange/800 - #93370d"
+              }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Warning filled style - solid orange background",
+          "background": {
+            "default": {
+              "value": "{color.background.warning.subtle.0}",
+              "type": "color",
+              "description": "Mobile warning tag filled default background - orange/50 - #fffaeb"
+            },
+            "hover": {
+              "value": "{color.background.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning tag filled hover background - orange/100 - #fef0c7"
+            },
+            "active": {
+              "value": "{color.background.warning.subtle.2}",
+              "type": "color",
+              "description": "Mobile warning tag filled active background - orange/200 - #fde68a"
+            },
+            "focused": {
+              "value": "{color.background.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning tag filled focused background - orange/100 - #fef0c7"
+            },
+            "disabled": {
+              "value": "{color.background.warning.subtle.2}",
+              "type": "color",
+              "description": "Mobile warning tag filled disabled background - orange/200 - #fde68a"
+            }
+          },
+          "border": {
+            "default": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning tag filled default border - transparent - #FFFFFF00"
+            },
+            "hover": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning tag filled hover border - transparent - #FFFFFF00"
+            },
+            "active": {
+              "value": "{color.border.warning.intense.1}",
+              "type": "color",
+              "description": "Mobile warning tag filled active border - orange/800 - #93370d"
+            },
+            "focused": {
+              "value": "{color.border.warning.moderate.0}",
+              "type": "color",
+              "description": "Mobile warning tag filled focused border - orange/300 - #fec84b"
+            },
+            "disabled": {
+              "value": "{color.border.transparent}",
+              "type": "color",
+              "description": "Mobile warning tag filled disabled border - transparent - #FFFFFF00"
+            }
+          },
+          "text": {
+            "default": {
+              "value": "{color.text.warning.body.1}",
+              "type": "color",
+              "description": "Mobile warning tag filled default text - orange/700 - #b54708"
+            },
+            "hover": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning tag filled hover text - orange/800 - #93370d"
+            },
+            "active": {
+              "value": "{color.text.warning.title.1}",
+              "type": "color",
+              "description": "Mobile warning tag filled active text - orange/900 - #7a2e0e"
+            },
+            "focused": {
+              "value": "{color.text.warning.title.2}",
+              "type": "color",
+              "description": "Mobile warning tag filled focused text - orange/800 - #93370d"
+            },
+            "disabled": {
+              "value": "{color.text.warning.subtle.1}",
+              "type": "color",
+              "description": "Mobile warning tag filled disabled text - orange/400 - #fdb022"
+            }
+          },
+          "focus": {
+            "$comment": "Focus ring color for warning filled tag",
+            "ring": {
+              "value": "{color.border.warning.subtle.2}",
+              "type": "color",
+              "description": "Mobile warning tag filled focus ring - orange/300 - #fec84b"
+            }
+          },
+          "icon": {
+            "default": {
+              "value": "{color.icon.warning.moderate.2}",
+              "type": "color",
+              "description": "Mobile warning tag filled default icon - orange/600 - #dc6803"
+            },
+            "hover": {
+              "value": "{color.icon.warning.intense.0}",
+              "type": "color",
+              "description": "Mobile warning tag filled hover icon - orange/800 - #93370d"
+            },
+            "active": {
+              "value": "{color.icon.warning.intense.1}",
+              "type": "color",
+              "description": "Mobile warning tag filled active icon - orange/900 - #7a2e0e"
+            },
+            "focused": {
+              "value": "{color.icon.warning.intense.0}",
+              "type": "color",
+              "description": "Mobile warning tag filled focused icon - orange/800 - #93370d"
+            },
+            "disabled": {
+              "value": "{color.icon.warning.subtle.0}",
+              "type": "color",
+              "description": "Mobile warning tag filled disabled icon - orange/200 - #fde68a"
+            }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for warning filled tag",
+            "background": {
+              "default": {
+                "value": "{color.background.warning.inactive}",
+                "type": "color",
+                "description": "Mobile warning tag filled tag-count background - orange/50 - #fffaeb"
+              }
+            },
+            "text": {
+              "default": {
+                "value": "{color.text.warning.body.1}",
+                "type": "color",
+                "description": "Mobile warning tag filled tag-count text - orange/700 - #b54708"
+              },
+              "hover": {
+                "value": "{color.text.warning.title.2}",
+                "type": "color",
+                "description": "Mobile warning tag filled tag-count hover text - orange/800 - #93370d"
+              },
+              "active": {
+                "value": "{color.text.warning.title.1}",
+                "type": "color",
+                "description": "Mobile warning tag filled tag-count active text - orange/900 - #7a2e0e"
+              },
+              "focused": {
+                "value": "{color.text.warning.title.2}",
+                "type": "color",
+                "description": "Mobile warning tag filled tag-count focused text - orange/800 - #93370d"
+              }
+            }
+          }
+        }
+      }
+    },
+    "text": {
+      "$comment": "Typography tokens for tag component - text label typography for each size",
+      "typography": {
+        "xs": {
+          "value": "{font.body.medium.xs}",
+          "type": "typography",
+          "description": "Mobile tag text typography for xs size - Medium 11px/16px"
+        },
+        "sm": {
+          "value": "{font.body.medium.sm}",
+          "type": "typography",
+          "description": "Mobile tag text typography for sm size - Medium 12px/17px"
+        },
+        "md": {
+          "value": "{font.body.medium.md}",
+          "type": "typography",
+          "description": "Mobile tag text typography for md size - Medium 13px/18px"
+        },
+        "lg": {
+          "value": "{font.body.medium.md}",
+          "type": "typography",
+          "description": "Mobile tag text typography for lg size - Medium 13px/18px"
+        }
+      }
+    },
+    "icon": {
+      "$comment": "Icon size tokens for tag component - close icon and other icon sizes",
+      "size": {
+        "xs": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Mobile tag icon size for xs size - 12px"
+        },
+        "sm": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Mobile tag icon size for sm size - 14px"
+        },
+        "md": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Mobile tag icon size for md size - 16px"
+        },
+        "lg": {
+          "value": "{size.icon.sm}",
+          "type": "dimension",
+          "description": "Mobile tag icon size for lg size - 18px"
+        }
+      }
+    }
+  }
+}

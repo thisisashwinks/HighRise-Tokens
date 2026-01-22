@@ -1,0 +1,348 @@
+{
+  "$comment": "Mobile Checkbox Component Tokens",
+  "$description": "Component tokens for Mobile Checkbox component with unchecked, checked, and indeterminate states. Supports default, hover, pressed, focused, disabled, and error states. Includes icon tokens for checkmark and indeterminate (minus) icons. Figma Reference: Node ID 126-27150",
+  "$component": {
+    "name": "Checkbox",
+    "description": "A mobile checkbox component for selection states. Supports three functional states: unchecked (empty), checked (with checkmark icon), and indeterminate (with minus icon). Square shape with subtle rounded corners. Includes comprehensive interaction states for user feedback.",
+    "structure": "Square container with border and optional background fill. Contains checkmark icon when checked or minus icon when indeterminate. Supports focus outline and error border states.",
+    "sizes": {
+      "sm": "Small size for compact mobile interfaces - typically 16px-18px",
+      "md": "Medium size (commonly used default for mobile) - typically 20px-24px",
+      "lg": "Large size for prominent mobile checkboxes - typically 24px-28px"
+    },
+    "variants": {
+      "unchecked": "Empty checkbox with border, no background fill or icon",
+      "checked": "Filled checkbox with checkmark icon indicating selected state",
+      "indeterminate": "Filled checkbox with minus icon indicating partial/indeterminate selection"
+    },
+    "usage": {
+      "contexts": "Mobile forms, settings panels, data entry interfaces, list selections, multi-select scenarios, agreement checkboxes, filter panels",
+      "features": "Three-state selection (unchecked/checked/indeterminate), focus indicators, hover feedback, pressed/active states, disabled state, error validation, icon support (checkmark and minus)"
+    }
+  },
+  "checkbox": {
+    "size": {
+      "$comment": "Checkbox container size - square dimensions for each size variant",
+      "sm": {
+        "value": "{size.4}",
+        "type": "dimension",
+        "description": "Mobile checkbox size for sm variant - 16px"
+      },
+      "md": {
+        "value": "{size.5}",
+        "type": "dimension",
+        "description": "Mobile checkbox size for md variant - 20px"
+      },
+      "lg": {
+        "value": "{size.6}",
+        "type": "dimension",
+        "description": "Mobile checkbox size for lg variant - 24px"
+      }
+    },
+    "border": {
+      "$comment": "Border properties for mobile checkbox - radius and width",
+      "radius": {
+        "sm": {
+          "value": "{border.radius.0[5]}",
+          "type": "dimension",
+          "description": "Mobile checkbox border radius for sm size - 2px"
+        },
+        "md": {
+          "value": "{border.radius.0[5]}",
+          "type": "dimension",
+          "description": "Mobile checkbox border radius for md size - 2px"
+        },
+        "lg": {
+          "value": "{border.radius.1}",
+          "type": "dimension",
+          "description": "Mobile checkbox border radius for lg size - 4px"
+        }
+      },
+      "width": {
+        "default": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile checkbox border width for default state - 1px"
+        },
+        "focused": {
+          "value": "{border.width.0[75]}",
+          "type": "dimension",
+          "description": "Mobile checkbox border width for focused state - 3px"
+        }
+      }
+    },
+    "icon": {
+      "$comment": "Icon tokens for mobile checkbox - checkmark icon for checked state and minus icon for indeterminate state",
+      "size": {
+        "check": {
+          "sm": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Mobile checkbox checkmark icon size for sm - 10px"
+          },
+          "md": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Mobile checkbox checkmark icon size for md - 12px"
+          },
+          "lg": {
+            "value": "{size.icon.sm}",
+            "type": "dimension",
+            "description": "Mobile checkbox checkmark icon size for lg - 16px"
+          }
+        },
+        "indeterminate": {
+          "sm": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Mobile checkbox indeterminate (minus) icon size for sm - 10px"
+          },
+          "md": {
+            "value": "{size.icon.xs}",
+            "type": "dimension",
+            "description": "Mobile checkbox indeterminate (minus) icon size for md - 12px"
+          },
+          "lg": {
+            "value": "{size.icon.sm}",
+            "type": "dimension",
+            "description": "Mobile checkbox indeterminate (minus) icon size for lg - 16px"
+          }
+        }
+      },
+      "color": {
+        "check": {
+          "$comment": "Checkmark icon color tokens - white on blue background for checked state, grey for disabled",
+          "default": {
+            "value": "{color.icon.neutral.base}",
+            "type": "color",
+            "description": "Mobile checkbox checkmark icon default color - white/base - #ffffff"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile checkbox checkmark icon disabled color - gray/600 - #475467"
+          }
+        },
+        "indeterminate": {
+          "$comment": "Indeterminate (minus) icon color tokens - white on blue background for indeterminate state, grey for disabled",
+          "default": {
+            "value": "{color.icon.neutral.base}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate (minus) icon default color - white/base - #ffffff"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate (minus) icon disabled color - gray/600 - #475467"
+          }
+        }
+      }
+    },
+    "color": {
+      "$comment": "Color tokens for mobile checkbox states - includes unchecked, checked, and indeterminate variants with interaction states",
+      "unchecked": {
+        "$comment": "Unchecked state colors - empty checkbox with border",
+        "background": {
+          "default": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile checkbox unchecked default background - white/base - #ffffff"
+          },
+          "hover": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile checkbox unchecked hover background - white/base - #ffffff"
+          },
+          "pressed": {
+            "value": "{color.background.primary.subtle.1}",
+            "type": "color",
+            "description": "Mobile checkbox unchecked pressed/active background - blue/50 - #eff8ff"
+          },
+          "focused": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile checkbox unchecked focused background - white/base - #ffffff"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile checkbox unchecked disabled background - gray/100 - #f2f4f7"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.neutral.moderate.0}",
+            "type": "color",
+            "description": "Mobile checkbox unchecked default border - gray/300 - #d0d5dd"
+          },
+          "hover": {
+            "value": "{color.border.neutral.moderate.0}",
+            "type": "color",
+            "description": "Mobile checkbox unchecked hover border - gray/300 - #d0d5dd"
+          },
+          "pressed": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox unchecked pressed/active border - blue/600 - #155eef"
+          },
+          "focused": {
+            "value": "{color.border.primary.subtle.2}",
+            "type": "color",
+            "description": "Mobile checkbox unchecked focused border - blue/200 - #b2ddff"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile checkbox unchecked disabled border - gray/300 - #d0d5dd"
+          },
+          "error": {
+            "value": "{color.border.error.moderate.1}",
+            "type": "color",
+            "description": "Mobile checkbox unchecked error border - red/600 - #d92d20"
+          }
+        }
+      },
+      "checked": {
+        "$comment": "Checked state colors - filled checkbox with checkmark icon",
+        "background": {
+          "default": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox checked default background - blue/600 - #155eef"
+          },
+          "hover": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox checked hover background - blue/600 - #155eef"
+          },
+          "pressed": {
+            "value": "{color.background.primary.intense.0}",
+            "type": "color",
+            "description": "Mobile checkbox checked pressed/active background - blue/700 - #004eeb"
+          },
+          "focused": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox checked focused background - blue/600 - #155eef"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile checkbox checked disabled background - gray/100 - #f2f4f7"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox checked default border - blue/600 - #155eef"
+          },
+          "hover": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox checked hover border - blue/600 - #155eef"
+          },
+          "pressed": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox checked pressed/active border - blue/600 - #155eef"
+          },
+          "focused": {
+            "value": "{color.border.primary.subtle.2}",
+            "type": "color",
+            "description": "Mobile checkbox checked focused border - blue/200 - #b2ddff"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile checkbox checked disabled border - gray/300 - #d0d5dd"
+          },
+          "error": {
+            "value": "{color.border.error.moderate.1}",
+            "type": "color",
+            "description": "Mobile checkbox checked error border - red/600 - #d92d20"
+          }
+        }
+      },
+      "indeterminate": {
+        "$comment": "Indeterminate state colors - filled checkbox with minus icon",
+        "background": {
+          "default": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate default background - blue/600 - #155eef"
+          },
+          "hover": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate hover background - blue/600 - #155eef"
+          },
+          "pressed": {
+            "value": "{color.background.primary.intense.0}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate pressed/active background - blue/700 - #004eeb"
+          },
+          "focused": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate focused background - blue/600 - #155eef"
+          },
+          "disabled": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate disabled background - gray/100 - #f2f4f7"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate default border - blue/600 - #155eef"
+          },
+          "hover": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate hover border - blue/600 - #155eef"
+          },
+          "pressed": {
+            "value": "{color.border.primary.default}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate pressed/active border - blue/600 - #155eef"
+          },
+          "focused": {
+            "value": "{color.border.primary.subtle.2}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate focused border - blue/200 - #b2ddff"
+          },
+          "disabled": {
+            "value": "{color.border.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate disabled border - gray/300 - #d0d5dd"
+          },
+          "error": {
+            "value": "{color.border.error.moderate.1}",
+            "type": "color",
+            "description": "Mobile checkbox indeterminate error border - red/600 - #d92d20"
+          }
+        }
+      }
+    },
+    "effects": {
+      "$comment": "Visual effects for mobile checkbox - focus outline and shadows",
+      "outline": {
+        "focused": {
+          "value": "{outline.focus.primary}",
+          "type": "outline",
+          "description": "Mobile checkbox focus outline - primary blue outline for accessibility"
+        }
+      },
+      "shadow": {
+        "focused": {
+          "value": "boxShadow.focus.2xs.primary.100",
+          "type": "boxShadow",
+          "description": "Mobile checkbox focus shadow - focus 2xs primary 100 for visual focus indicator"
+        }
+      }
+    }
+  }
+}

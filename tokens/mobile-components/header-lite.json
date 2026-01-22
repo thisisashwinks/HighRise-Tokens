@@ -1,0 +1,225 @@
+{
+  "$comment": "Mobile Header Lite Component Tokens",
+  "$description": "Component tokens for Mobile Header Lite component - a lightweight header variant with optional back icon, image/avatar, title with optional info/error icons, subtitle, and optional end icon. Supports flexible content layout. Figma Reference: Node ID 320-14857",
+  "$component": {
+    "name": "Header Lite",
+    "description": "A lightweight mobile header component that provides minimal navigation and context at the top of mobile screens. Features optional leading back icon, flexible content section with image/avatar, title with optional info/error icons, subtitle text, and optional trailing end icon. Designed for compact layouts requiring minimal vertical space.",
+    "structure": "Container with horizontal flex layout. Contains left section (optional back icon + content group with image/avatar, icon, title with optional icons, subtitle) and right section (optional end icon). Layout uses flexbox with gap spacing between sections.",
+    "sizes": {
+      "lg": "37px height - Large size variant, standard header lite height"
+    },
+    "variants": {
+      "size": {
+        "lg": "Large size variant with 37px height"
+      },
+      "end-icon": {
+        "none": "No trailing end icon",
+        "present": "Trailing end icon (chevron-down) displayed on the right"
+      },
+      "actions-and-inputs": {
+        "false": "Standard layout without additional actions or inputs",
+        "true": "Layout with additional actions and inputs (future variant)"
+      }
+    },
+    "usage": {
+      "contexts": "Mobile app screens requiring compact headers, detail pages, list headers, navigation headers, content pages with minimal header space",
+      "features": "Optional leading back icon, Flexible content (image/avatar, icon, title with optional info/error icons, subtitle), Optional trailing end icon, Compact height design, Horizontal flex layout"
+    }
+  },
+  "header-lite": {
+    "container": {
+      "$comment": "Container tokens for mobile header lite - layout, height, and spacing",
+      "height": {
+        "lg": {
+          "value": "{size.height.9}",
+          "type": "dimension",
+          "description": "Mobile header lite large size height - 36px (closest to 37px design spec)"
+        }
+      },
+      "gap": {
+        "sections": {
+          "value": "{gap.6}",
+          "type": "dimension",
+          "description": "Mobile header lite gap between left and right sections - 24px"
+        }
+      }
+    },
+    "left": {
+      "$comment": "Left section tokens - back icon and content group",
+      "gap": {
+        "content": {
+          "value": "{gap.2}",
+          "type": "dimension",
+          "description": "Mobile header lite gap between back icon and content group - 8px"
+        }
+      },
+      "back-icon": {
+        "$comment": "Back icon tokens - optional leading navigation icon",
+        "size": {
+          "value": "{size.icon.sm}",
+          "type": "dimension",
+          "description": "Mobile header lite back icon size - 18px"
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile header lite back icon default color - neutral/gray-600 - #475467"
+          }
+        }
+      },
+      "content-group": {
+        "$comment": "Content group tokens - image/avatar, icon, title section, and subtitle",
+        "gap": {
+          "elements": {
+            "value": "{gap.2}",
+            "type": "dimension",
+            "description": "Mobile header lite gap between content group elements (image, icon, title section) - 8px"
+          }
+        },
+        "image": {
+          "$comment": "Image/avatar tokens - optional image or avatar display",
+          "size": {
+            "width": {
+              "value": "{size.width.8[5]}",
+              "type": "dimension",
+              "description": "Mobile header lite image width - 34px"
+            },
+            "height": {
+              "value": "{size.height.6}",
+              "type": "dimension",
+              "description": "Mobile header lite image height - 24px"
+            }
+          },
+          "border": {
+            "radius": {
+              "value": "{border.radius.xs}",
+              "type": "dimension",
+              "description": "Mobile header lite image border radius - 4px"
+            },
+            "width": {
+              "value": "{border.width.1}",
+              "type": "dimension",
+              "description": "Mobile header lite image border width - 1px"
+            },
+            "color": {
+              "value": "{color.border.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile header lite image border color - neutral/gray-100 - #f2f4f7"
+            }
+          },
+          "color": {
+            "background": {
+              "value": "{color.background.neutral.base}",
+              "type": "color",
+              "description": "Mobile header lite image background - neutral/white - #ffffff"
+            }
+          }
+        },
+        "icon": {
+          "$comment": "Icon tokens - optional icon displayed in content group",
+          "size": {
+            "value": "{size.icon.lg}",
+            "type": "dimension",
+            "description": "Mobile header lite content group icon size - 24px"
+          },
+          "color": {
+            "default": {
+              "value": "{color.icon.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile header lite content group icon default color - neutral/gray-600 - #475467"
+            }
+          }
+        },
+        "title-section": {
+          "$comment": "Title section tokens - title text with optional info and error icons",
+          "gap": {
+            "elements": {
+              "value": "{gap.3xs}",
+              "type": "dimension",
+              "description": "Mobile header lite gap between title section elements (title text, info icon, error icon) - 4px"
+            }
+          },
+          "title": {
+            "$comment": "Title text tokens",
+            "typography": {
+              "value": "{font.body.semibold.lg}",
+              "type": "typography",
+              "description": "Mobile header lite title typography - 14px semibold, 20px line height"
+            },
+            "color": {
+              "default": {
+                "value": "{color.text.neutral.title.1}",
+                "type": "color",
+                "description": "Mobile header lite title default color - neutral/gray-900 - #101828"
+              }
+            }
+          },
+          "info-icon": {
+            "$comment": "Info icon tokens - optional information icon",
+            "size": {
+              "value": "{size.icon.xs}",
+              "type": "dimension",
+              "description": "Mobile header lite title info icon size - 16px"
+            },
+            "color": {
+              "default": {
+                "value": "{color.icon.neutral.moderate.2}",
+                "type": "color",
+                "description": "Mobile header lite title info icon default color - neutral/gray-600 - #475467"
+              }
+            }
+          },
+          "error-icon": {
+            "$comment": "Error icon tokens - optional error/warning icon",
+            "size": {
+              "value": "{size.icon.xs}",
+              "type": "dimension",
+              "description": "Mobile header lite title error icon size - 16px"
+            },
+            "color": {
+              "default": {
+                "value": "{color.icon.error.moderate}",
+                "type": "color",
+                "description": "Mobile header lite title error icon default color - error/red-600 - #d92d20"
+              }
+            }
+          }
+        },
+        "subtitle": {
+          "$comment": "Subtitle text tokens",
+          "typography": {
+            "value": "{font.body.regular.sm}",
+            "type": "typography",
+            "description": "Mobile header lite subtitle typography - 12px regular, 17px line height"
+          },
+          "color": {
+            "default": {
+              "value": "{color.text.neutral.subtitle.1}",
+              "type": "color",
+              "description": "Mobile header lite subtitle default color - neutral/gray-500 - #667085"
+            }
+          }
+        }
+      }
+    },
+    "right": {
+      "$comment": "Right section tokens - optional trailing end icon",
+      "end-icon": {
+        "$comment": "End icon tokens - optional trailing icon (chevron-down)",
+        "size": {
+          "value": "{size.icon.lg}",
+          "type": "dimension",
+          "description": "Mobile header lite end icon size - 24px"
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile header lite end icon default color - neutral/gray-600 - #475467"
+          }
+        }
+      }
+    }
+  }
+}
