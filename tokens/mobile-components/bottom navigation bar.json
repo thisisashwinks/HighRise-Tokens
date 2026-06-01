@@ -3,22 +3,22 @@
   "$description": "Component tokens for Mobile Navigation Bar component that groups multiple menu items together in a horizontal navigation bar. Supports platform-specific variants (iOS/Android), configurable menu item counts (2, 3, 4, or 5 blocks), optional gesture bar, and various selection styles. References menu-item-navbar component for individual menu items. Figma Reference: Node ID 71-5094",
   "$component": {
     "name": "Navigation",
-    "description": "A mobile navigation bar component that contains multiple menu items arranged horizontally. Supports platform-specific designs (iOS and Android), configurable number of menu items (2-5 blocks), optional gesture bar for iOS-style navigation, top border separator, and equal distribution of menu items across the container width. Used as the primary bottom navigation bar in mobile apps.",
-    "structure": "Container with top border, background, and flex layout. Contains horizontal flex row with multiple menu-item-navbar components (equal distribution with basis-0 and grow). Optional gesture bar at bottom (iOS platform) with handle indicator. Menu items reference menu-item-navbar component tokens.",
+    "description": "A mobile navigation bar component that contains multiple menu items arranged horizontally. Supports platform-specific designs (iOS and Android), configurable number of menu items (2-5 blocks), optional gesture bar for Android platform, top border separator for Android, and equal distribution of menu items across the container width. Used as the primary bottom navigation bar in mobile apps.",
+    "structure": "Container with flex layout. Android: transparent background, top border, equal-grow menu items (flex-1), gesture bar at bottom. iOS: pill-shaped container (100px radius), gray-100 background, 4px padding, justify-between menu items with negative overlap margin (-18.75px). Menu items reference menu-item-navbar component tokens.",
     "sizes": {
       "with-labels": {
-        "ios": "79px height - iOS platform with labels and gesture bar",
+        "ios": "79px height - iOS platform with labels",
         "android": "95px height - Android platform with labels"
       },
       "without-labels": {
-        "ios": "56px height - iOS platform without labels and gesture bar",
+        "ios": "56px height - iOS platform without labels",
         "android": "72px height - Android platform without labels"
       }
     },
     "variants": {
       "platform": {
-        "ios": "iOS platform design with pill-shaped menu items, optional gesture bar at bottom, 79px height (with labels) / 56px height (without labels)",
-        "android": "Android platform design with square menu items, no gesture bar, 95px height (with labels) / 72px height (without labels)"
+        "ios": "iOS platform design with pill-shaped container (100px radius), gray-100 background, 4px padding, 79px height (with labels) / 56px height (without labels)",
+        "android": "Android platform design with square menu items, transparent container background, top border, gesture bar at bottom, 95px height (with labels) / 72px height (without labels)"
       },
       "menu-item-count": {
         "2": "Two menu items in navigation bar",
@@ -42,7 +42,7 @@
     },
     "usage": {
       "contexts": "Mobile app bottom navigation bars, primary navigation menus, tab bars, mobile app navigation containers",
-      "features": "Platform-specific designs (iOS/Android), Configurable menu item count (2-5), Equal distribution layout, Optional gesture bar (iOS), Top border separator, References menu-item-navbar component, Flexible selection styles"
+      "features": "Platform-specific designs (iOS/Android), Configurable menu item count (2-5), Equal distribution layout (Android) / justify-between with overlap (iOS), Optional gesture bar (Android), Top border separator (Android), References menu-item-navbar component, Flexible selection styles"
     }
   },
   "navigation": {
@@ -51,9 +51,9 @@
       "color": {
         "background": {
           "android": {
-            "value": "{color.background.neutral.base}",
+            "value": "{color.background.transparent}",
             "type": "color",
-            "description": "Mobile navigation bar container background - neutral/white - #ffffff"
+            "description": "Mobile navigation bar Android container background - transparent (background is applied at individual menu item level)"
           },
           "ios": {
             "value": "{color.background.neutral.subtle.1}",
@@ -64,22 +64,63 @@
       },
       "border": {
         "top": {
-          "color": {
-            "value": "{color.border.neutral.subtle.1}",
-            "type": "color",
-            "description": "Mobile navigation bar top border color - neutral/gray-100 - #f2f4f7"
-          },
-          "width": {
-            "value": "{border.width.default}",
+          "android": {
+            "color": {
+              "value": "{color.border.neutral.subtle.1}",
+              "type": "color",
+              "description": "Mobile navigation bar Android top border color - neutral/gray-100 - #f2f4f7"
+            },
+            "width": {
+              "value": "{border.width.default}",
+              "type": "dimension",
+              "description": "Mobile navigation bar Android top border width - 1px"
+            }
+          }
+        },
+        "radius": {
+          "ios": {
+            "value": "{border.radius.full}",
             "type": "dimension",
-            "description": "Mobile navigation bar top border width - 1px"
+            "description": "Mobile navigation bar iOS container border radius - 100px (pill shape)"
+          },
+          "android": {
+            "value": "{border.radius.none}",
+            "type": "dimension",
+            "description": "Mobile navigation bar Android container border radius - 0px (no radius)"
           }
         }
       },
       "shadow": {
-        "value": "boxShadow.outer.sm",
+        "value": "{boxShadow.outer.sm}",
         "type": "boxShadow",
-        "description": "Mobile navigation bar shadow - outer sm"
+        "description": "Mobile navigation bar shadow - outer sm (both platforms)"
+      },
+      "padding": {
+        "$comment": "Container padding tokens - iOS only. Android has no container padding.",
+        "ios": {
+          "x": {
+            "value": "{padding.x.5xs}",
+            "type": "dimension",
+            "description": "Mobile navigation bar iOS container horizontal padding - 4px"
+          },
+          "y": {
+            "value": "{padding.y.5xs}",
+            "type": "dimension",
+            "description": "Mobile navigation bar iOS container vertical padding - 4px"
+          }
+        }
+      },
+      "width": {
+        "android": {
+          "value": "{size.width.93[75]}",
+          "type": "dimension",
+          "description": "Mobile navigation bar Android container width - 375px (standard Android viewport)"
+        },
+        "ios": {
+          "value": "{size.width.98[25]}",
+          "type": "dimension",
+          "description": "Mobile navigation bar iOS container width - 393px (standard iOS viewport)"
+        }
       }
     },
     "menu-items": {
@@ -98,7 +139,7 @@
       }
     },
     "gesture-bar": {
-      "$comment": "Gesture bar tokens for iOS platform - optional bottom gesture indicator",
+      "$comment": "Gesture bar tokens for Android platform - optional bottom gesture indicator",
       "container": {
         "background": {
           "value": "{color.background.neutral.base}",
@@ -142,12 +183,12 @@
         "with-labels": {
           "value": "{size.height.20}",
           "type": "dimension",
-          "description": "Mobile navigation bar iOS height with labels - 80px (closest token to 79px design value, includes gesture bar)"
+          "description": "Mobile navigation bar iOS height with labels - 80px (closest token to 79px design value)"
         },
         "without-labels": {
           "value": "{size.height.14}",
           "type": "dimension",
-          "description": "Mobile navigation bar iOS height without labels - 56px (includes gesture bar)"
+          "description": "Mobile navigation bar iOS height without labels - 56px"
         }
       },
       "android": {
