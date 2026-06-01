@@ -7,7 +7,7 @@
     "structure": "Container with background, shadow, and padding. Contains leading section (optional icon + avatar), center section (title with optional icon + subtitle with optional tags), trailing section (action group). Optional tabs section below main header. Layout adapts based on type variant (horizontal for Default/Default Left, vertical for Large Title).",
     "sizes": {
       "default": "70px height (iOS) / 70px height (Android) - Standard header without tabs",
-      "with-tabs": "106px height (iOS) / 112px height (Android) - Header with tabs below",
+      "with-tabs": "112px height (iOS and Android) - Header with tabs below",
       "large-title": "118px height (iOS/Android) - Large title variant without tabs",
       "large-title-with-tabs": "174px height (iOS/Android) - Large title variant with tabs"
     },
@@ -80,9 +80,9 @@
         }
       },
       "shadow": {
-        "value": "boxShadow.outer.sm",
+        "value": "{boxShadow.outer.sm}",
         "type": "boxShadow",
-        "description": "Mobile header shadow - outer sm"
+        "description": "Mobile header shadow - outer sm (both platforms)"
       },
       "gap": {
         "content": {
@@ -101,6 +101,11 @@
     },
     "leading": {
       "$comment": "Leading section tokens - optional back icon and avatar/leading icon",
+      "gap": {
+        "value": "{gap.2}",
+        "type": "dimension",
+        "description": "Mobile header gap between back/leading icon and avatar in the leading section - 8px"
+      },
       "icon": {
         "size": {
           "value": "{size.icon.2xl}",
@@ -118,7 +123,7 @@
           "default": {
             "value": "{size.md}",
             "type": "dimension",
-            "description": "Mobile header avatar/leading icon default size - 20px"
+            "description": "Mobile header avatar/leading icon default size - 40px (Figma: size-[40px])"
           },
           "large-title": {
             "value": "{size.2xl}",
@@ -211,26 +216,31 @@
       }
     },
     "height": {
-      "$comment": "Height tokens for mobile header across different variants",
+      "$comment": "Height tokens for mobile header across different variants (both platforms unless noted)",
       "default": {
         "value": "{size.height.17[5]}",
         "type": "dimension",
-        "description": "Mobile header iOS default height - 70px"
+        "description": "Mobile header default height - 70px (iOS and Android)"
       },
       "with-tabs": {
         "value": "{size.height.28}",
         "type": "dimension",
-        "description": "Mobile header iOS height with tabs - 112px"
+        "description": "Mobile header Default/Default Left height with tabs - 112px (iOS and Android)"
+      },
+      "compact-large-with-tabs": {
+        "value": "{size.height.31[5]}",
+        "type": "dimension",
+        "description": "Mobile header Compact Large height with tabs - 126px (Figma: 126px; 126 / 4 = 31.5, using {size.height.31[5]})"
       },
       "large-title": {
         "value": "{size.height.29[5]}",
         "type": "dimension",
-        "description": "Mobile header iOS large title height - 118px"
+        "description": "Mobile header Large Title height - 118px (iOS and Android)"
       },
       "large-title-with-tabs": {
         "value": "{size.height.43[5]}",
         "type": "dimension",
-        "description": "Mobile header iOS large title height with tabs - 174px"
+        "description": "Mobile header Large Title height with tabs - 174px (iOS and Android)"
       }
     }
   }

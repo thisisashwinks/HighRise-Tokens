@@ -6,12 +6,12 @@
     "description": "A mobile form component that combines label, input field, hint text, and optional action button into a cohesive form structure. Provides complete form field styling with validation states, spacing, and typography for mobile interfaces. Supports multiple semantic states for different types of feedback.",
     "structure": "Vertical container with label at top, input field in middle, hint text below, and optional action button aligned with label",
     "sizes": {
-      "3xs": "Extra small size for compact mobile interfaces - typically 8px-9px",
-      "2xs": "Extra small size for compact mobile interfaces - typically 10px-11px",
-      "xs": "Small size for compact mobile interfaces - typically 12px-13px",
-      "sm": "Small size for compact mobile interfaces - typically 12px-13px",
-      "md": "Medium size (commonly used default for mobile) - typically 13px-14px",
-      "lg": "Large size for prominent mobile forms - typically 14px-16px"
+      "3xs": "Extra small size - input slot 24px, label 11px (font/size/xs)",
+      "2xs": "Extra small size - input slot 28px, label 12px (font/size/sm)",
+      "xs": "Small size - input slot 32px, label 13px (font/size/md)",
+      "sm": "Small size - input slot 36px, label 14px (font/size/lg)",
+      "md": "Medium size - input slot 40px, label 16px (font/size/2xl)",
+      "lg": "Large size - input slot 44px, label 16px (font/size/2xl)"
     },
     "variants": {
       "default": "Neutral form with gray colors for standard data entry",
@@ -69,10 +69,50 @@
         },
         "color": {
           "default": {
-            "value": "{color.text.neutral.body.2}",
+            "value": "{color.text.neutral.body.1}",
             "type": "color",
-            "description": "Mobile input form label default text color - gray/600 - #475467"
+            "description": "Mobile input form label default text color - gray/700 - #344054"
+          },
+          "mandatory": {
+            "value": "{color.text.error.intense}",
+            "type": "color",
+            "description": "Mobile input form mandatory asterisk color - error/600 - #d92d20"
           }
+        }
+      }
+    },
+    "info-icon": {
+      "$comment": "Info icon size tokens for mobile input form label - icon sizes vary by form size",
+      "size": {
+        "3xs": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for 3xs and 2xs - 10px"
+        },
+        "2xs": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for 2xs - 10px (same as 3xs)"
+        },
+        "xs": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for xs and sm - 12px"
+        },
+        "sm": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for sm - 12px (same as xs)"
+        },
+        "md": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for md - 12px (same as xs/sm)"
+        },
+        "lg": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for lg - 14px"
         }
       }
     },
@@ -109,6 +149,14 @@
           "type": "dimension",
           "description": "Mobile input form input height for lg size - 44px"
         }
+      }
+    },
+    "action-button": {
+      "$comment": "Action button tokens for Action-Top and Action-Bottom label type variants",
+      "color": {
+        "value": "{color.text.primary.body.1}",
+        "type": "color",
+        "description": "Mobile input form action button CTA text color - primary/blue-700 - #004eeb (all sizes)"
       }
     }
   }

@@ -76,7 +76,7 @@
       "container": {
         "value": "{gap.2xl}",
         "type": "dimension",
-        "description": "Mobile list item gap between main sections (leading, content, trailing) - 12px"
+        "description": "Mobile list item outer flex-col gap between content row and divider - 12px"
       },
       "content": {
         "value": "{gap.auto}",
@@ -187,9 +187,14 @@
           "description": "Mobile list item leading avatar size - 48px"
         },
         "icon": {
-          "value": "{size.icon.2xl}",
+          "value": "{size.icon.lg}",
           "type": "dimension",
-          "description": "Mobile list item leading icon size - 32px"
+          "description": "Mobile list item leading icon size - 24px"
+        },
+        "radio": {
+          "value": "{size.3xs}",
+          "type": "dimension",
+          "description": "Mobile list item leading radio size - 24px"
         },
         "featured-icon": {
           "container": {
@@ -223,9 +228,9 @@
       },
       "trailing": {
         "icon": {
-          "value": "{size.icon.xl}",
+          "value": "{size.icon.lg}",
           "type": "dimension",
-          "description": "Mobile list item trailing icon size - 28px"
+          "description": "Mobile list item trailing icon size - 24px"
         },
         "chevron": {
           "value": "{size.icon.xl}",
@@ -261,9 +266,9 @@
         },
         "height": {
           "button": {
-            "value": "{size.height.xl}",
+            "value": "{size.height.8}",
             "type": "dimension",
-            "description": "Mobile list item trailing button(md) height - 48px"
+            "description": "Mobile list item trailing button height - 32px (Figma: Single Action/None = 45px total; 45 − 12px gap − 1px divider = 32px content area)"
           },
           "toggle-ios": {
             "value": "{size.height.2xs}",

@@ -6,12 +6,12 @@
     "description": "A mobile form component that displays helpful text, instructions, or validation messages below input fields. Provides contextual guidance to users about input requirements, format expectations, or validation status. Supports multiple semantic states for different types of feedback.",
     "structure": "Text element positioned below input field with appropriate spacing, supporting multiple semantic color variants",
     "sizes": {
-      "3xs": "Extra small size for compact mobile interfaces - typically 8px-9px",
-      "2xs": "Extra small size for compact mobile interfaces - typically 10px-11px",
-      "xs": "Small size for compact mobile interfaces - typically 12px-13px",
-      "sm": "Small size for compact mobile interfaces - typically 12px-13px",
-      "md": "Medium size (commonly used default for mobile) - typically 13px-14px",
-      "lg": "Large size for prominent mobile forms - typically 14px-16px"
+      "3xs": "Extra small size - hint text 10px (font/size/2xs), input slot 24px",
+      "2xs": "Extra small size - hint text 11px (font/size/xs), input slot 28px",
+      "xs": "Small size - hint text 12px (font/size/sm), input slot 32px",
+      "sm": "Small size - hint text 13px (font/size/md), input slot 36px",
+      "md": "Medium size - hint text 14px (font/size/lg), input slot 40px",
+      "lg": "Large size - hint text 14px (font/size/lg), input slot 44px"
     },
     "variants": {
       "default": "Neutral hint text with gray colors for standard guidance and instructions",

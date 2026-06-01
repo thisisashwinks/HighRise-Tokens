@@ -40,15 +40,18 @@
           "type": "dimension",
           "description": "Mobile header action group gap between icon and button - 10px"
         }
-      }
-    },
-    "button": {
-      "$comment": "Button tokens for mobile header action group - primary subtle style buttons",
-      "size": {
-        "height": {
-          "value": "{size.height.xs}",
-          "type": "dimension",
-          "description": "Mobile header action group button height (sm) - 32px"
+      },
+      "alignment": {
+        "$comment": "Container alignment tokens - varies by variant type",
+        "button": {
+          "value": "flex-start",
+          "type": "string",
+          "description": "Mobile header action group alignment for button-only variants (Single Button, Double Button) - items-start"
+        },
+        "icon": {
+          "value": "center",
+          "type": "string",
+          "description": "Mobile header action group alignment for icon and mixed variants (Single icon, Double icon, Triple icon, Icon + Button) - items-center"
         }
       }
     },
