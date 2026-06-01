@@ -6,9 +6,9 @@
     "description": "A circular loading indicator component that displays an animated spinner ring. Used to indicate loading states in mobile interfaces. Features a circular ring with an animated segment that rotates continuously. Supports multiple sizes and theme variants for different contexts.",
     "structure": "Circular ring shape with animated segment that rotates around the circumference. The ring consists of a track (base ring) and an active segment (highlighted portion).",
     "sizes": {
-      "sm": "Small size for compact mobile interfaces - typically 18px-20px",
-      "md": "Medium size (commonly used default for mobile) - typically 20px-24px",
-      "lg": "Large size for prominent mobile loading indicators - typically 24px-28px"
+      "xs": "Extra small size - 12px diameter (Figma: XS)",
+      "sm": "Small size - 16px diameter (Figma: Small)",
+      "md": "Medium size - 18px diameter (Figma: Big)"
     },
     "variants": {
       "light": "Light theme variant with white/light grey colors for use on dark backgrounds",
@@ -23,38 +23,38 @@
     "$comment": "Tag Loader component tokens - circular loading indicator with animated segment",
     "size": {
       "$comment": "Size tokens for tag loader - defines the diameter of the circular loader",
-      "sm": {
-        "value": "{size.icon.md}",
+      "xs": {
+        "value": "{size.icon.3xs}",
         "type": "dimension",
-        "description": "Mobile tag loader size for sm - 20px diameter"
+        "description": "Mobile tag loader size for xs - 12px diameter (Figma: XS)"
+      },
+      "sm": {
+        "value": "{size.icon.xs}",
+        "type": "dimension",
+        "description": "Mobile tag loader size for sm - 16px diameter (Figma: Small)"
       },
       "md": {
-        "value": "{size.icon.lg}",
+        "value": "{size.icon.sm}",
         "type": "dimension",
-        "description": "Mobile tag loader size for md - 24px diameter"
-      },
-      "lg": {
-        "value": "{size.icon.xl}",
-        "type": "dimension",
-        "description": "Mobile tag loader size for lg - 28px diameter"
+        "description": "Mobile tag loader size for md - 18px diameter (Figma: Big)"
       }
     },
     "stroke-width": {
       "$comment": "Stroke width tokens for tag loader ring - defines the thickness of the circular ring",
+      "xs": {
+        "value": "1.5px",
+        "type": "dimension",
+        "description": "Mobile tag loader stroke width for xs - 1.5px ring thickness"
+      },
       "sm": {
         "value": "2px",
         "type": "dimension",
         "description": "Mobile tag loader stroke width for sm - 2px ring thickness"
       },
       "md": {
-        "value": "2.5px",
+        "value": "2px",
         "type": "dimension",
-        "description": "Mobile tag loader stroke width for md - 2.5px ring thickness"
-      },
-      "lg": {
-        "value": "3px",
-        "type": "dimension",
-        "description": "Mobile tag loader stroke width for lg - 3px ring thickness"
+        "description": "Mobile tag loader stroke width for md - 2px ring thickness"
       }
     },
     "color": {

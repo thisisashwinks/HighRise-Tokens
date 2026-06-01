@@ -159,24 +159,24 @@
     "height": {
       "$comment": "Height tokens for tag component - defines the vertical size of the tag",
       "xs": {
-        "value": "{size.4[5]}",
+        "value": "{size.5}",
         "type": "dimension",
-        "description": "Mobile tag height for xs size - 18px"
+        "description": "Mobile tag height for xs size - 20px"
       },
       "sm": {
-        "value": "{size.5[5]}",
-        "type": "dimension",
-        "description": "Mobile tag height for sm size - 22px"
-      },
-      "md": {
         "value": "{size.6}",
         "type": "dimension",
-        "description": "Mobile tag height for md size - 24px"
+        "description": "Mobile tag height for sm size - 24px"
+      },
+      "md": {
+        "value": "{size.8}",
+        "type": "dimension",
+        "description": "Mobile tag height for md size - 32px"
       },
       "lg": {
-        "value": "{size.7}",
+        "value": "{size.10}",
         "type": "dimension",
-        "description": "Mobile tag height for lg size - 28px"
+        "description": "Mobile tag height for lg size - 40px"
       }
     },
     "variants": {
@@ -1702,6 +1702,702 @@
                 "type": "color",
                 "description": "Mobile warning tag filled tag-count focused text - orange/800 - #93370d"
               }
+            }
+          }
+        }
+      },
+      "blue-gray": {
+        "$comment": "Blue Gray color variant - blue-gray/slate color scheme",
+        "outline": {
+          "$comment": "Blue Gray outline style - colored border with light background",
+          "background": {
+            "default": { "value": "#ffffff", "type": "color", "description": "Mobile blue-gray tag outline default background - white" },
+            "hover": { "value": "#eaecf5", "type": "color", "description": "Mobile blue-gray tag outline hover background - blue-gray/100" },
+            "active": { "value": "#c8cce4", "type": "color", "description": "Mobile blue-gray tag outline active background - blue-gray/200" },
+            "focused": { "value": "#eaecf5", "type": "color", "description": "Mobile blue-gray tag outline focused background - blue-gray/100" },
+            "disabled": { "value": "{color.background.neutral.subtle.1}", "type": "color", "description": "Mobile blue-gray tag outline disabled background - gray/100 - #f2f4f7" }
+          },
+          "border": {
+            "default": { "value": "#3e4784", "type": "color", "description": "Mobile blue-gray tag outline default border - blue-gray/600" },
+            "hover": { "value": "#363f72", "type": "color", "description": "Mobile blue-gray tag outline hover border - blue-gray/700" },
+            "active": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag outline active border - blue-gray/800" },
+            "focused": { "value": "#9ea5d1", "type": "color", "description": "Mobile blue-gray tag outline focused border - blue-gray/300" },
+            "disabled": { "value": "#c8cce4", "type": "color", "description": "Mobile blue-gray tag outline disabled border - blue-gray/200" }
+          },
+          "text": {
+            "default": { "value": "#363f72", "type": "color", "description": "Mobile blue-gray tag outline default text - blue-gray/700" },
+            "hover": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag outline hover text - blue-gray/800" },
+            "active": { "value": "#101323", "type": "color", "description": "Mobile blue-gray tag outline active text - blue-gray/900" },
+            "focused": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag outline focused text - blue-gray/800" },
+            "disabled": { "value": "#717bbc", "type": "color", "description": "Mobile blue-gray tag outline disabled text - blue-gray/400" }
+          },
+          "focus": { "$comment": "Focus ring for blue-gray outline tag", "ring": { "value": "#9ea5d1", "type": "color", "description": "Mobile blue-gray tag outline focus ring - blue-gray/300" } },
+          "icon": {
+            "default": { "value": "#363f72", "type": "color", "description": "Mobile blue-gray tag outline default icon - blue-gray/700" },
+            "hover": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag outline hover icon - blue-gray/800" },
+            "active": { "value": "#101323", "type": "color", "description": "Mobile blue-gray tag outline active icon - blue-gray/900" },
+            "focused": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag outline focused icon - blue-gray/800" },
+            "disabled": { "value": "#c8cce4", "type": "color", "description": "Mobile blue-gray tag outline disabled icon - blue-gray/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for blue-gray outline tag",
+            "background": { "default": { "value": "#fcfcfd", "type": "color", "description": "Mobile blue-gray tag outline tag-count background - blue-gray/25" } },
+            "text": {
+              "default": { "value": "#363f72", "type": "color", "description": "Mobile blue-gray tag outline tag-count text - blue-gray/700" },
+              "hover": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag outline tag-count hover text - blue-gray/800" },
+              "active": { "value": "#101323", "type": "color", "description": "Mobile blue-gray tag outline tag-count active text - blue-gray/900" },
+              "focused": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag outline tag-count focused text - blue-gray/800" }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Blue Gray filled style - solid blue-gray background",
+          "background": {
+            "default": { "value": "#f8f9fc", "type": "color", "description": "Mobile blue-gray tag filled default background - blue-gray/50" },
+            "hover": { "value": "#eaecf5", "type": "color", "description": "Mobile blue-gray tag filled hover background - blue-gray/100" },
+            "active": { "value": "#c8cce4", "type": "color", "description": "Mobile blue-gray tag filled active background - blue-gray/200" },
+            "focused": { "value": "#eaecf5", "type": "color", "description": "Mobile blue-gray tag filled focused background - blue-gray/100" },
+            "disabled": { "value": "#c8cce4", "type": "color", "description": "Mobile blue-gray tag filled disabled background - blue-gray/200" }
+          },
+          "border": {
+            "default": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile blue-gray tag filled default border - transparent" },
+            "hover": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile blue-gray tag filled hover border - transparent" },
+            "active": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag filled active border - blue-gray/800" },
+            "focused": { "value": "#9ea5d1", "type": "color", "description": "Mobile blue-gray tag filled focused border - blue-gray/300" },
+            "disabled": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile blue-gray tag filled disabled border - transparent" }
+          },
+          "text": {
+            "default": { "value": "#363f72", "type": "color", "description": "Mobile blue-gray tag filled default text - blue-gray/700" },
+            "hover": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag filled hover text - blue-gray/800" },
+            "active": { "value": "#101323", "type": "color", "description": "Mobile blue-gray tag filled active text - blue-gray/900" },
+            "focused": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag filled focused text - blue-gray/800" },
+            "disabled": { "value": "#717bbc", "type": "color", "description": "Mobile blue-gray tag filled disabled text - blue-gray/400" }
+          },
+          "focus": { "$comment": "Focus ring for blue-gray filled tag", "ring": { "value": "#9ea5d1", "type": "color", "description": "Mobile blue-gray tag filled focus ring - blue-gray/300" } },
+          "icon": {
+            "default": { "value": "#363f72", "type": "color", "description": "Mobile blue-gray tag filled default icon - blue-gray/700" },
+            "hover": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag filled hover icon - blue-gray/800" },
+            "active": { "value": "#101323", "type": "color", "description": "Mobile blue-gray tag filled active icon - blue-gray/900" },
+            "focused": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag filled focused icon - blue-gray/800" },
+            "disabled": { "value": "#c8cce4", "type": "color", "description": "Mobile blue-gray tag filled disabled icon - blue-gray/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for blue-gray filled tag",
+            "background": { "default": { "value": "#fcfcfd", "type": "color", "description": "Mobile blue-gray tag filled tag-count background - blue-gray/25" } },
+            "text": {
+              "default": { "value": "#363f72", "type": "color", "description": "Mobile blue-gray tag filled tag-count text - blue-gray/700" },
+              "hover": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag filled tag-count hover text - blue-gray/800" },
+              "active": { "value": "#101323", "type": "color", "description": "Mobile blue-gray tag filled tag-count active text - blue-gray/900" },
+              "focused": { "value": "#293056", "type": "color", "description": "Mobile blue-gray tag filled tag-count focused text - blue-gray/800" }
+            }
+          }
+        }
+      },
+      "blue-light": {
+        "$comment": "Blue Light color variant - sky blue color scheme",
+        "outline": {
+          "$comment": "Blue Light outline style - colored border with light background",
+          "background": {
+            "default": { "value": "#ffffff", "type": "color", "description": "Mobile blue-light tag outline default background - white" },
+            "hover": { "value": "#e0f2fe", "type": "color", "description": "Mobile blue-light tag outline hover background - blue-light/100" },
+            "active": { "value": "#b9e6fe", "type": "color", "description": "Mobile blue-light tag outline active background - blue-light/200" },
+            "focused": { "value": "#e0f2fe", "type": "color", "description": "Mobile blue-light tag outline focused background - blue-light/100" },
+            "disabled": { "value": "{color.background.neutral.subtle.1}", "type": "color", "description": "Mobile blue-light tag outline disabled background - gray/100 - #f2f4f7" }
+          },
+          "border": {
+            "default": { "value": "#0086c9", "type": "color", "description": "Mobile blue-light tag outline default border - blue-light/600" },
+            "hover": { "value": "#026aa2", "type": "color", "description": "Mobile blue-light tag outline hover border - blue-light/700" },
+            "active": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag outline active border - blue-light/800" },
+            "focused": { "value": "#7cd4fd", "type": "color", "description": "Mobile blue-light tag outline focused border - blue-light/300" },
+            "disabled": { "value": "#b9e6fe", "type": "color", "description": "Mobile blue-light tag outline disabled border - blue-light/200" }
+          },
+          "text": {
+            "default": { "value": "#026aa2", "type": "color", "description": "Mobile blue-light tag outline default text - blue-light/700" },
+            "hover": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag outline hover text - blue-light/800" },
+            "active": { "value": "#0b4a6f", "type": "color", "description": "Mobile blue-light tag outline active text - blue-light/900" },
+            "focused": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag outline focused text - blue-light/800" },
+            "disabled": { "value": "#36bffa", "type": "color", "description": "Mobile blue-light tag outline disabled text - blue-light/400" }
+          },
+          "focus": { "$comment": "Focus ring for blue-light outline tag", "ring": { "value": "#7cd4fd", "type": "color", "description": "Mobile blue-light tag outline focus ring - blue-light/300" } },
+          "icon": {
+            "default": { "value": "#026aa2", "type": "color", "description": "Mobile blue-light tag outline default icon - blue-light/700" },
+            "hover": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag outline hover icon - blue-light/800" },
+            "active": { "value": "#0b4a6f", "type": "color", "description": "Mobile blue-light tag outline active icon - blue-light/900" },
+            "focused": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag outline focused icon - blue-light/800" },
+            "disabled": { "value": "#b9e6fe", "type": "color", "description": "Mobile blue-light tag outline disabled icon - blue-light/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for blue-light outline tag",
+            "background": { "default": { "value": "#f5fbff", "type": "color", "description": "Mobile blue-light tag outline tag-count background - blue-light/25" } },
+            "text": {
+              "default": { "value": "#026aa2", "type": "color", "description": "Mobile blue-light tag outline tag-count text - blue-light/700" },
+              "hover": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag outline tag-count hover text - blue-light/800" },
+              "active": { "value": "#0b4a6f", "type": "color", "description": "Mobile blue-light tag outline tag-count active text - blue-light/900" },
+              "focused": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag outline tag-count focused text - blue-light/800" }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Blue Light filled style - solid sky-blue background",
+          "background": {
+            "default": { "value": "#f0f9ff", "type": "color", "description": "Mobile blue-light tag filled default background - blue-light/50" },
+            "hover": { "value": "#e0f2fe", "type": "color", "description": "Mobile blue-light tag filled hover background - blue-light/100" },
+            "active": { "value": "#b9e6fe", "type": "color", "description": "Mobile blue-light tag filled active background - blue-light/200" },
+            "focused": { "value": "#e0f2fe", "type": "color", "description": "Mobile blue-light tag filled focused background - blue-light/100" },
+            "disabled": { "value": "#b9e6fe", "type": "color", "description": "Mobile blue-light tag filled disabled background - blue-light/200" }
+          },
+          "border": {
+            "default": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile blue-light tag filled default border - transparent" },
+            "hover": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile blue-light tag filled hover border - transparent" },
+            "active": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag filled active border - blue-light/800" },
+            "focused": { "value": "#7cd4fd", "type": "color", "description": "Mobile blue-light tag filled focused border - blue-light/300" },
+            "disabled": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile blue-light tag filled disabled border - transparent" }
+          },
+          "text": {
+            "default": { "value": "#026aa2", "type": "color", "description": "Mobile blue-light tag filled default text - blue-light/700" },
+            "hover": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag filled hover text - blue-light/800" },
+            "active": { "value": "#0b4a6f", "type": "color", "description": "Mobile blue-light tag filled active text - blue-light/900" },
+            "focused": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag filled focused text - blue-light/800" },
+            "disabled": { "value": "#36bffa", "type": "color", "description": "Mobile blue-light tag filled disabled text - blue-light/400" }
+          },
+          "focus": { "$comment": "Focus ring for blue-light filled tag", "ring": { "value": "#7cd4fd", "type": "color", "description": "Mobile blue-light tag filled focus ring - blue-light/300" } },
+          "icon": {
+            "default": { "value": "#026aa2", "type": "color", "description": "Mobile blue-light tag filled default icon - blue-light/700" },
+            "hover": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag filled hover icon - blue-light/800" },
+            "active": { "value": "#0b4a6f", "type": "color", "description": "Mobile blue-light tag filled active icon - blue-light/900" },
+            "focused": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag filled focused icon - blue-light/800" },
+            "disabled": { "value": "#b9e6fe", "type": "color", "description": "Mobile blue-light tag filled disabled icon - blue-light/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for blue-light filled tag",
+            "background": { "default": { "value": "#f5fbff", "type": "color", "description": "Mobile blue-light tag filled tag-count background - blue-light/25" } },
+            "text": {
+              "default": { "value": "#026aa2", "type": "color", "description": "Mobile blue-light tag filled tag-count text - blue-light/700" },
+              "hover": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag filled tag-count hover text - blue-light/800" },
+              "active": { "value": "#0b4a6f", "type": "color", "description": "Mobile blue-light tag filled tag-count active text - blue-light/900" },
+              "focused": { "value": "#065986", "type": "color", "description": "Mobile blue-light tag filled tag-count focused text - blue-light/800" }
+            }
+          }
+        }
+      },
+      "blue": {
+        "$comment": "Blue color variant - medium blue color scheme",
+        "outline": {
+          "$comment": "Blue outline style - colored border with light background",
+          "background": {
+            "default": { "value": "#ffffff", "type": "color", "description": "Mobile blue tag outline default background - white" },
+            "hover": { "value": "#d1e0ff", "type": "color", "description": "Mobile blue tag outline hover background - blue/100" },
+            "active": { "value": "#b2ccff", "type": "color", "description": "Mobile blue tag outline active background - blue/200" },
+            "focused": { "value": "#d1e0ff", "type": "color", "description": "Mobile blue tag outline focused background - blue/100" },
+            "disabled": { "value": "{color.background.neutral.subtle.1}", "type": "color", "description": "Mobile blue tag outline disabled background - gray/100 - #f2f4f7" }
+          },
+          "border": {
+            "default": { "value": "#1570ef", "type": "color", "description": "Mobile blue tag outline default border - blue/600" },
+            "hover": { "value": "#175cd3", "type": "color", "description": "Mobile blue tag outline hover border - blue/700" },
+            "active": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag outline active border - blue/800" },
+            "focused": { "value": "#84adff", "type": "color", "description": "Mobile blue tag outline focused border - blue/300" },
+            "disabled": { "value": "#b2ccff", "type": "color", "description": "Mobile blue tag outline disabled border - blue/200" }
+          },
+          "text": {
+            "default": { "value": "#175cd3", "type": "color", "description": "Mobile blue tag outline default text - blue/700" },
+            "hover": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag outline hover text - blue/800" },
+            "active": { "value": "#194185", "type": "color", "description": "Mobile blue tag outline active text - blue/900" },
+            "focused": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag outline focused text - blue/800" },
+            "disabled": { "value": "#528bff", "type": "color", "description": "Mobile blue tag outline disabled text - blue/400" }
+          },
+          "focus": { "$comment": "Focus ring for blue outline tag", "ring": { "value": "#84adff", "type": "color", "description": "Mobile blue tag outline focus ring - blue/300" } },
+          "icon": {
+            "default": { "value": "#175cd3", "type": "color", "description": "Mobile blue tag outline default icon - blue/700" },
+            "hover": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag outline hover icon - blue/800" },
+            "active": { "value": "#194185", "type": "color", "description": "Mobile blue tag outline active icon - blue/900" },
+            "focused": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag outline focused icon - blue/800" },
+            "disabled": { "value": "#b2ccff", "type": "color", "description": "Mobile blue tag outline disabled icon - blue/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for blue outline tag",
+            "background": { "default": { "value": "#f5f8ff", "type": "color", "description": "Mobile blue tag outline tag-count background - blue/25" } },
+            "text": {
+              "default": { "value": "#175cd3", "type": "color", "description": "Mobile blue tag outline tag-count text - blue/700" },
+              "hover": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag outline tag-count hover text - blue/800" },
+              "active": { "value": "#194185", "type": "color", "description": "Mobile blue tag outline tag-count active text - blue/900" },
+              "focused": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag outline tag-count focused text - blue/800" }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Blue filled style - solid blue background",
+          "background": {
+            "default": { "value": "#eff4ff", "type": "color", "description": "Mobile blue tag filled default background - blue/50" },
+            "hover": { "value": "#d1e0ff", "type": "color", "description": "Mobile blue tag filled hover background - blue/100" },
+            "active": { "value": "#b2ccff", "type": "color", "description": "Mobile blue tag filled active background - blue/200" },
+            "focused": { "value": "#d1e0ff", "type": "color", "description": "Mobile blue tag filled focused background - blue/100" },
+            "disabled": { "value": "#b2ccff", "type": "color", "description": "Mobile blue tag filled disabled background - blue/200" }
+          },
+          "border": {
+            "default": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile blue tag filled default border - transparent" },
+            "hover": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile blue tag filled hover border - transparent" },
+            "active": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag filled active border - blue/800" },
+            "focused": { "value": "#84adff", "type": "color", "description": "Mobile blue tag filled focused border - blue/300" },
+            "disabled": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile blue tag filled disabled border - transparent" }
+          },
+          "text": {
+            "default": { "value": "#175cd3", "type": "color", "description": "Mobile blue tag filled default text - blue/700" },
+            "hover": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag filled hover text - blue/800" },
+            "active": { "value": "#194185", "type": "color", "description": "Mobile blue tag filled active text - blue/900" },
+            "focused": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag filled focused text - blue/800" },
+            "disabled": { "value": "#528bff", "type": "color", "description": "Mobile blue tag filled disabled text - blue/400" }
+          },
+          "focus": { "$comment": "Focus ring for blue filled tag", "ring": { "value": "#84adff", "type": "color", "description": "Mobile blue tag filled focus ring - blue/300" } },
+          "icon": {
+            "default": { "value": "#175cd3", "type": "color", "description": "Mobile blue tag filled default icon - blue/700" },
+            "hover": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag filled hover icon - blue/800" },
+            "active": { "value": "#194185", "type": "color", "description": "Mobile blue tag filled active icon - blue/900" },
+            "focused": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag filled focused icon - blue/800" },
+            "disabled": { "value": "#b2ccff", "type": "color", "description": "Mobile blue tag filled disabled icon - blue/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for blue filled tag",
+            "background": { "default": { "value": "#f5f8ff", "type": "color", "description": "Mobile blue tag filled tag-count background - blue/25" } },
+            "text": {
+              "default": { "value": "#175cd3", "type": "color", "description": "Mobile blue tag filled tag-count text - blue/700" },
+              "hover": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag filled tag-count hover text - blue/800" },
+              "active": { "value": "#194185", "type": "color", "description": "Mobile blue tag filled tag-count active text - blue/900" },
+              "focused": { "value": "#1849a9", "type": "color", "description": "Mobile blue tag filled tag-count focused text - blue/800" }
+            }
+          }
+        }
+      },
+      "indigo": {
+        "$comment": "Indigo color variant - indigo/violet-blue color scheme",
+        "outline": {
+          "$comment": "Indigo outline style - colored border with light background",
+          "background": {
+            "default": { "value": "#ffffff", "type": "color", "description": "Mobile indigo tag outline default background - white" },
+            "hover": { "value": "#e0eaff", "type": "color", "description": "Mobile indigo tag outline hover background - indigo/100" },
+            "active": { "value": "#c7d7fe", "type": "color", "description": "Mobile indigo tag outline active background - indigo/200" },
+            "focused": { "value": "#e0eaff", "type": "color", "description": "Mobile indigo tag outline focused background - indigo/100" },
+            "disabled": { "value": "{color.background.neutral.subtle.1}", "type": "color", "description": "Mobile indigo tag outline disabled background - gray/100 - #f2f4f7" }
+          },
+          "border": {
+            "default": { "value": "#444ce7", "type": "color", "description": "Mobile indigo tag outline default border - indigo/600" },
+            "hover": { "value": "#3538cd", "type": "color", "description": "Mobile indigo tag outline hover border - indigo/700" },
+            "active": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag outline active border - indigo/800" },
+            "focused": { "value": "#a4bcfd", "type": "color", "description": "Mobile indigo tag outline focused border - indigo/300" },
+            "disabled": { "value": "#c7d7fe", "type": "color", "description": "Mobile indigo tag outline disabled border - indigo/200" }
+          },
+          "text": {
+            "default": { "value": "#3538cd", "type": "color", "description": "Mobile indigo tag outline default text - indigo/700" },
+            "hover": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag outline hover text - indigo/800" },
+            "active": { "value": "#2d3282", "type": "color", "description": "Mobile indigo tag outline active text - indigo/900" },
+            "focused": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag outline focused text - indigo/800" },
+            "disabled": { "value": "#8098f9", "type": "color", "description": "Mobile indigo tag outline disabled text - indigo/400" }
+          },
+          "focus": { "$comment": "Focus ring for indigo outline tag", "ring": { "value": "#a4bcfd", "type": "color", "description": "Mobile indigo tag outline focus ring - indigo/300" } },
+          "icon": {
+            "default": { "value": "#3538cd", "type": "color", "description": "Mobile indigo tag outline default icon - indigo/700" },
+            "hover": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag outline hover icon - indigo/800" },
+            "active": { "value": "#2d3282", "type": "color", "description": "Mobile indigo tag outline active icon - indigo/900" },
+            "focused": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag outline focused icon - indigo/800" },
+            "disabled": { "value": "#c7d7fe", "type": "color", "description": "Mobile indigo tag outline disabled icon - indigo/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for indigo outline tag",
+            "background": { "default": { "value": "#f5f8ff", "type": "color", "description": "Mobile indigo tag outline tag-count background - indigo/25" } },
+            "text": {
+              "default": { "value": "#3538cd", "type": "color", "description": "Mobile indigo tag outline tag-count text - indigo/700" },
+              "hover": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag outline tag-count hover text - indigo/800" },
+              "active": { "value": "#2d3282", "type": "color", "description": "Mobile indigo tag outline tag-count active text - indigo/900" },
+              "focused": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag outline tag-count focused text - indigo/800" }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Indigo filled style - solid indigo background",
+          "background": {
+            "default": { "value": "#eef4ff", "type": "color", "description": "Mobile indigo tag filled default background - indigo/50" },
+            "hover": { "value": "#e0eaff", "type": "color", "description": "Mobile indigo tag filled hover background - indigo/100" },
+            "active": { "value": "#c7d7fe", "type": "color", "description": "Mobile indigo tag filled active background - indigo/200" },
+            "focused": { "value": "#e0eaff", "type": "color", "description": "Mobile indigo tag filled focused background - indigo/100" },
+            "disabled": { "value": "#c7d7fe", "type": "color", "description": "Mobile indigo tag filled disabled background - indigo/200" }
+          },
+          "border": {
+            "default": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile indigo tag filled default border - transparent" },
+            "hover": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile indigo tag filled hover border - transparent" },
+            "active": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag filled active border - indigo/800" },
+            "focused": { "value": "#a4bcfd", "type": "color", "description": "Mobile indigo tag filled focused border - indigo/300" },
+            "disabled": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile indigo tag filled disabled border - transparent" }
+          },
+          "text": {
+            "default": { "value": "#3538cd", "type": "color", "description": "Mobile indigo tag filled default text - indigo/700" },
+            "hover": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag filled hover text - indigo/800" },
+            "active": { "value": "#2d3282", "type": "color", "description": "Mobile indigo tag filled active text - indigo/900" },
+            "focused": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag filled focused text - indigo/800" },
+            "disabled": { "value": "#8098f9", "type": "color", "description": "Mobile indigo tag filled disabled text - indigo/400" }
+          },
+          "focus": { "$comment": "Focus ring for indigo filled tag", "ring": { "value": "#a4bcfd", "type": "color", "description": "Mobile indigo tag filled focus ring - indigo/300" } },
+          "icon": {
+            "default": { "value": "#3538cd", "type": "color", "description": "Mobile indigo tag filled default icon - indigo/700" },
+            "hover": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag filled hover icon - indigo/800" },
+            "active": { "value": "#2d3282", "type": "color", "description": "Mobile indigo tag filled active icon - indigo/900" },
+            "focused": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag filled focused icon - indigo/800" },
+            "disabled": { "value": "#c7d7fe", "type": "color", "description": "Mobile indigo tag filled disabled icon - indigo/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for indigo filled tag",
+            "background": { "default": { "value": "#f5f8ff", "type": "color", "description": "Mobile indigo tag filled tag-count background - indigo/25" } },
+            "text": {
+              "default": { "value": "#3538cd", "type": "color", "description": "Mobile indigo tag filled tag-count text - indigo/700" },
+              "hover": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag filled tag-count hover text - indigo/800" },
+              "active": { "value": "#2d3282", "type": "color", "description": "Mobile indigo tag filled tag-count active text - indigo/900" },
+              "focused": { "value": "#2d31a6", "type": "color", "description": "Mobile indigo tag filled tag-count focused text - indigo/800" }
+            }
+          }
+        }
+      },
+      "purple": {
+        "$comment": "Purple color variant - purple color scheme",
+        "outline": {
+          "$comment": "Purple outline style - colored border with light background",
+          "background": {
+            "default": { "value": "#ffffff", "type": "color", "description": "Mobile purple tag outline default background - white" },
+            "hover": { "value": "#ebe9fe", "type": "color", "description": "Mobile purple tag outline hover background - purple/100" },
+            "active": { "value": "#d9d6fe", "type": "color", "description": "Mobile purple tag outline active background - purple/200" },
+            "focused": { "value": "#ebe9fe", "type": "color", "description": "Mobile purple tag outline focused background - purple/100" },
+            "disabled": { "value": "{color.background.neutral.subtle.1}", "type": "color", "description": "Mobile purple tag outline disabled background - gray/100 - #f2f4f7" }
+          },
+          "border": {
+            "default": { "value": "#6938ef", "type": "color", "description": "Mobile purple tag outline default border - purple/600" },
+            "hover": { "value": "#5925dc", "type": "color", "description": "Mobile purple tag outline hover border - purple/700" },
+            "active": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag outline active border - purple/800" },
+            "focused": { "value": "#bdb4fe", "type": "color", "description": "Mobile purple tag outline focused border - purple/300" },
+            "disabled": { "value": "#d9d6fe", "type": "color", "description": "Mobile purple tag outline disabled border - purple/200" }
+          },
+          "text": {
+            "default": { "value": "#5925dc", "type": "color", "description": "Mobile purple tag outline default text - purple/700" },
+            "hover": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag outline hover text - purple/800" },
+            "active": { "value": "#3e1c96", "type": "color", "description": "Mobile purple tag outline active text - purple/900" },
+            "focused": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag outline focused text - purple/800" },
+            "disabled": { "value": "#9b8afb", "type": "color", "description": "Mobile purple tag outline disabled text - purple/400" }
+          },
+          "focus": { "$comment": "Focus ring for purple outline tag", "ring": { "value": "#bdb4fe", "type": "color", "description": "Mobile purple tag outline focus ring - purple/300" } },
+          "icon": {
+            "default": { "value": "#5925dc", "type": "color", "description": "Mobile purple tag outline default icon - purple/700" },
+            "hover": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag outline hover icon - purple/800" },
+            "active": { "value": "#3e1c96", "type": "color", "description": "Mobile purple tag outline active icon - purple/900" },
+            "focused": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag outline focused icon - purple/800" },
+            "disabled": { "value": "#d9d6fe", "type": "color", "description": "Mobile purple tag outline disabled icon - purple/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for purple outline tag",
+            "background": { "default": { "value": "#fafaff", "type": "color", "description": "Mobile purple tag outline tag-count background - purple/25" } },
+            "text": {
+              "default": { "value": "#5925dc", "type": "color", "description": "Mobile purple tag outline tag-count text - purple/700" },
+              "hover": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag outline tag-count hover text - purple/800" },
+              "active": { "value": "#3e1c96", "type": "color", "description": "Mobile purple tag outline tag-count active text - purple/900" },
+              "focused": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag outline tag-count focused text - purple/800" }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Purple filled style - solid purple background",
+          "background": {
+            "default": { "value": "#f4f3ff", "type": "color", "description": "Mobile purple tag filled default background - purple/50" },
+            "hover": { "value": "#ebe9fe", "type": "color", "description": "Mobile purple tag filled hover background - purple/100" },
+            "active": { "value": "#d9d6fe", "type": "color", "description": "Mobile purple tag filled active background - purple/200" },
+            "focused": { "value": "#ebe9fe", "type": "color", "description": "Mobile purple tag filled focused background - purple/100" },
+            "disabled": { "value": "#d9d6fe", "type": "color", "description": "Mobile purple tag filled disabled background - purple/200" }
+          },
+          "border": {
+            "default": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile purple tag filled default border - transparent" },
+            "hover": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile purple tag filled hover border - transparent" },
+            "active": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag filled active border - purple/800" },
+            "focused": { "value": "#bdb4fe", "type": "color", "description": "Mobile purple tag filled focused border - purple/300" },
+            "disabled": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile purple tag filled disabled border - transparent" }
+          },
+          "text": {
+            "default": { "value": "#5925dc", "type": "color", "description": "Mobile purple tag filled default text - purple/700" },
+            "hover": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag filled hover text - purple/800" },
+            "active": { "value": "#3e1c96", "type": "color", "description": "Mobile purple tag filled active text - purple/900" },
+            "focused": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag filled focused text - purple/800" },
+            "disabled": { "value": "#9b8afb", "type": "color", "description": "Mobile purple tag filled disabled text - purple/400" }
+          },
+          "focus": { "$comment": "Focus ring for purple filled tag", "ring": { "value": "#bdb4fe", "type": "color", "description": "Mobile purple tag filled focus ring - purple/300" } },
+          "icon": {
+            "default": { "value": "#5925dc", "type": "color", "description": "Mobile purple tag filled default icon - purple/700" },
+            "hover": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag filled hover icon - purple/800" },
+            "active": { "value": "#3e1c96", "type": "color", "description": "Mobile purple tag filled active icon - purple/900" },
+            "focused": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag filled focused icon - purple/800" },
+            "disabled": { "value": "#d9d6fe", "type": "color", "description": "Mobile purple tag filled disabled icon - purple/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for purple filled tag",
+            "background": { "default": { "value": "#fafaff", "type": "color", "description": "Mobile purple tag filled tag-count background - purple/25" } },
+            "text": {
+              "default": { "value": "#5925dc", "type": "color", "description": "Mobile purple tag filled tag-count text - purple/700" },
+              "hover": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag filled tag-count hover text - purple/800" },
+              "active": { "value": "#3e1c96", "type": "color", "description": "Mobile purple tag filled tag-count active text - purple/900" },
+              "focused": { "value": "#4a1fb8", "type": "color", "description": "Mobile purple tag filled tag-count focused text - purple/800" }
+            }
+          }
+        }
+      },
+      "pink": {
+        "$comment": "Pink color variant - pink/magenta color scheme",
+        "outline": {
+          "$comment": "Pink outline style - colored border with light background",
+          "background": {
+            "default": { "value": "#ffffff", "type": "color", "description": "Mobile pink tag outline default background - white" },
+            "hover": { "value": "#fce7f6", "type": "color", "description": "Mobile pink tag outline hover background - pink/100" },
+            "active": { "value": "#fcceee", "type": "color", "description": "Mobile pink tag outline active background - pink/200" },
+            "focused": { "value": "#fce7f6", "type": "color", "description": "Mobile pink tag outline focused background - pink/100" },
+            "disabled": { "value": "{color.background.neutral.subtle.1}", "type": "color", "description": "Mobile pink tag outline disabled background - gray/100 - #f2f4f7" }
+          },
+          "border": {
+            "default": { "value": "#dd2590", "type": "color", "description": "Mobile pink tag outline default border - pink/600" },
+            "hover": { "value": "#c11574", "type": "color", "description": "Mobile pink tag outline hover border - pink/700" },
+            "active": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag outline active border - pink/800" },
+            "focused": { "value": "#faa7e0", "type": "color", "description": "Mobile pink tag outline focused border - pink/300" },
+            "disabled": { "value": "#fcceee", "type": "color", "description": "Mobile pink tag outline disabled border - pink/200" }
+          },
+          "text": {
+            "default": { "value": "#c11574", "type": "color", "description": "Mobile pink tag outline default text - pink/700" },
+            "hover": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag outline hover text - pink/800" },
+            "active": { "value": "#851651", "type": "color", "description": "Mobile pink tag outline active text - pink/900" },
+            "focused": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag outline focused text - pink/800" },
+            "disabled": { "value": "#f670c7", "type": "color", "description": "Mobile pink tag outline disabled text - pink/400" }
+          },
+          "focus": { "$comment": "Focus ring for pink outline tag", "ring": { "value": "#faa7e0", "type": "color", "description": "Mobile pink tag outline focus ring - pink/300" } },
+          "icon": {
+            "default": { "value": "#c11574", "type": "color", "description": "Mobile pink tag outline default icon - pink/700" },
+            "hover": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag outline hover icon - pink/800" },
+            "active": { "value": "#851651", "type": "color", "description": "Mobile pink tag outline active icon - pink/900" },
+            "focused": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag outline focused icon - pink/800" },
+            "disabled": { "value": "#fcceee", "type": "color", "description": "Mobile pink tag outline disabled icon - pink/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for pink outline tag",
+            "background": { "default": { "value": "#fef6fb", "type": "color", "description": "Mobile pink tag outline tag-count background - pink/25" } },
+            "text": {
+              "default": { "value": "#c11574", "type": "color", "description": "Mobile pink tag outline tag-count text - pink/700" },
+              "hover": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag outline tag-count hover text - pink/800" },
+              "active": { "value": "#851651", "type": "color", "description": "Mobile pink tag outline tag-count active text - pink/900" },
+              "focused": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag outline tag-count focused text - pink/800" }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Pink filled style - solid pink background",
+          "background": {
+            "default": { "value": "#fdf2fa", "type": "color", "description": "Mobile pink tag filled default background - pink/50" },
+            "hover": { "value": "#fce7f6", "type": "color", "description": "Mobile pink tag filled hover background - pink/100" },
+            "active": { "value": "#fcceee", "type": "color", "description": "Mobile pink tag filled active background - pink/200" },
+            "focused": { "value": "#fce7f6", "type": "color", "description": "Mobile pink tag filled focused background - pink/100" },
+            "disabled": { "value": "#fcceee", "type": "color", "description": "Mobile pink tag filled disabled background - pink/200" }
+          },
+          "border": {
+            "default": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile pink tag filled default border - transparent" },
+            "hover": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile pink tag filled hover border - transparent" },
+            "active": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag filled active border - pink/800" },
+            "focused": { "value": "#faa7e0", "type": "color", "description": "Mobile pink tag filled focused border - pink/300" },
+            "disabled": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile pink tag filled disabled border - transparent" }
+          },
+          "text": {
+            "default": { "value": "#c11574", "type": "color", "description": "Mobile pink tag filled default text - pink/700" },
+            "hover": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag filled hover text - pink/800" },
+            "active": { "value": "#851651", "type": "color", "description": "Mobile pink tag filled active text - pink/900" },
+            "focused": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag filled focused text - pink/800" },
+            "disabled": { "value": "#f670c7", "type": "color", "description": "Mobile pink tag filled disabled text - pink/400" }
+          },
+          "focus": { "$comment": "Focus ring for pink filled tag", "ring": { "value": "#faa7e0", "type": "color", "description": "Mobile pink tag filled focus ring - pink/300" } },
+          "icon": {
+            "default": { "value": "#c11574", "type": "color", "description": "Mobile pink tag filled default icon - pink/700" },
+            "hover": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag filled hover icon - pink/800" },
+            "active": { "value": "#851651", "type": "color", "description": "Mobile pink tag filled active icon - pink/900" },
+            "focused": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag filled focused icon - pink/800" },
+            "disabled": { "value": "#fcceee", "type": "color", "description": "Mobile pink tag filled disabled icon - pink/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for pink filled tag",
+            "background": { "default": { "value": "#fef6fb", "type": "color", "description": "Mobile pink tag filled tag-count background - pink/25" } },
+            "text": {
+              "default": { "value": "#c11574", "type": "color", "description": "Mobile pink tag filled tag-count text - pink/700" },
+              "hover": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag filled tag-count hover text - pink/800" },
+              "active": { "value": "#851651", "type": "color", "description": "Mobile pink tag filled tag-count active text - pink/900" },
+              "focused": { "value": "#9e165f", "type": "color", "description": "Mobile pink tag filled tag-count focused text - pink/800" }
+            }
+          }
+        }
+      },
+      "rose": {
+        "$comment": "Rosé color variant - rose/crimson color scheme",
+        "outline": {
+          "$comment": "Rosé outline style - colored border with light background",
+          "background": {
+            "default": { "value": "#ffffff", "type": "color", "description": "Mobile rose tag outline default background - white" },
+            "hover": { "value": "#ffe4e8", "type": "color", "description": "Mobile rose tag outline hover background - rose/100" },
+            "active": { "value": "#fecdd6", "type": "color", "description": "Mobile rose tag outline active background - rose/200" },
+            "focused": { "value": "#ffe4e8", "type": "color", "description": "Mobile rose tag outline focused background - rose/100" },
+            "disabled": { "value": "{color.background.neutral.subtle.1}", "type": "color", "description": "Mobile rose tag outline disabled background - gray/100 - #f2f4f7" }
+          },
+          "border": {
+            "default": { "value": "#e31b54", "type": "color", "description": "Mobile rose tag outline default border - rose/600" },
+            "hover": { "value": "#c01048", "type": "color", "description": "Mobile rose tag outline hover border - rose/700" },
+            "active": { "value": "#a11043", "type": "color", "description": "Mobile rose tag outline active border - rose/800" },
+            "focused": { "value": "#fea3b4", "type": "color", "description": "Mobile rose tag outline focused border - rose/300" },
+            "disabled": { "value": "#fecdd6", "type": "color", "description": "Mobile rose tag outline disabled border - rose/200" }
+          },
+          "text": {
+            "default": { "value": "#c01048", "type": "color", "description": "Mobile rose tag outline default text - rose/700" },
+            "hover": { "value": "#a11043", "type": "color", "description": "Mobile rose tag outline hover text - rose/800" },
+            "active": { "value": "#89123e", "type": "color", "description": "Mobile rose tag outline active text - rose/900" },
+            "focused": { "value": "#a11043", "type": "color", "description": "Mobile rose tag outline focused text - rose/800" },
+            "disabled": { "value": "#fd6f8e", "type": "color", "description": "Mobile rose tag outline disabled text - rose/400" }
+          },
+          "focus": { "$comment": "Focus ring for rose outline tag", "ring": { "value": "#fea3b4", "type": "color", "description": "Mobile rose tag outline focus ring - rose/300" } },
+          "icon": {
+            "default": { "value": "#c01048", "type": "color", "description": "Mobile rose tag outline default icon - rose/700" },
+            "hover": { "value": "#a11043", "type": "color", "description": "Mobile rose tag outline hover icon - rose/800" },
+            "active": { "value": "#89123e", "type": "color", "description": "Mobile rose tag outline active icon - rose/900" },
+            "focused": { "value": "#a11043", "type": "color", "description": "Mobile rose tag outline focused icon - rose/800" },
+            "disabled": { "value": "#fecdd6", "type": "color", "description": "Mobile rose tag outline disabled icon - rose/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for rose outline tag",
+            "background": { "default": { "value": "#fff5f6", "type": "color", "description": "Mobile rose tag outline tag-count background - rose/25" } },
+            "text": {
+              "default": { "value": "#c01048", "type": "color", "description": "Mobile rose tag outline tag-count text - rose/700" },
+              "hover": { "value": "#a11043", "type": "color", "description": "Mobile rose tag outline tag-count hover text - rose/800" },
+              "active": { "value": "#89123e", "type": "color", "description": "Mobile rose tag outline tag-count active text - rose/900" },
+              "focused": { "value": "#a11043", "type": "color", "description": "Mobile rose tag outline tag-count focused text - rose/800" }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Rosé filled style - solid rose background",
+          "background": {
+            "default": { "value": "#fff1f3", "type": "color", "description": "Mobile rose tag filled default background - rose/50" },
+            "hover": { "value": "#ffe4e8", "type": "color", "description": "Mobile rose tag filled hover background - rose/100" },
+            "active": { "value": "#fecdd6", "type": "color", "description": "Mobile rose tag filled active background - rose/200" },
+            "focused": { "value": "#ffe4e8", "type": "color", "description": "Mobile rose tag filled focused background - rose/100" },
+            "disabled": { "value": "#fecdd6", "type": "color", "description": "Mobile rose tag filled disabled background - rose/200" }
+          },
+          "border": {
+            "default": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile rose tag filled default border - transparent" },
+            "hover": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile rose tag filled hover border - transparent" },
+            "active": { "value": "#a11043", "type": "color", "description": "Mobile rose tag filled active border - rose/800" },
+            "focused": { "value": "#fea3b4", "type": "color", "description": "Mobile rose tag filled focused border - rose/300" },
+            "disabled": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile rose tag filled disabled border - transparent" }
+          },
+          "text": {
+            "default": { "value": "#c01048", "type": "color", "description": "Mobile rose tag filled default text - rose/700" },
+            "hover": { "value": "#a11043", "type": "color", "description": "Mobile rose tag filled hover text - rose/800" },
+            "active": { "value": "#89123e", "type": "color", "description": "Mobile rose tag filled active text - rose/900" },
+            "focused": { "value": "#a11043", "type": "color", "description": "Mobile rose tag filled focused text - rose/800" },
+            "disabled": { "value": "#fd6f8e", "type": "color", "description": "Mobile rose tag filled disabled text - rose/400" }
+          },
+          "focus": { "$comment": "Focus ring for rose filled tag", "ring": { "value": "#fea3b4", "type": "color", "description": "Mobile rose tag filled focus ring - rose/300" } },
+          "icon": {
+            "default": { "value": "#c01048", "type": "color", "description": "Mobile rose tag filled default icon - rose/700" },
+            "hover": { "value": "#a11043", "type": "color", "description": "Mobile rose tag filled hover icon - rose/800" },
+            "active": { "value": "#89123e", "type": "color", "description": "Mobile rose tag filled active icon - rose/900" },
+            "focused": { "value": "#a11043", "type": "color", "description": "Mobile rose tag filled focused icon - rose/800" },
+            "disabled": { "value": "#fecdd6", "type": "color", "description": "Mobile rose tag filled disabled icon - rose/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for rose filled tag",
+            "background": { "default": { "value": "#fff5f6", "type": "color", "description": "Mobile rose tag filled tag-count background - rose/25" } },
+            "text": {
+              "default": { "value": "#c01048", "type": "color", "description": "Mobile rose tag filled tag-count text - rose/700" },
+              "hover": { "value": "#a11043", "type": "color", "description": "Mobile rose tag filled tag-count hover text - rose/800" },
+              "active": { "value": "#89123e", "type": "color", "description": "Mobile rose tag filled tag-count active text - rose/900" },
+              "focused": { "value": "#a11043", "type": "color", "description": "Mobile rose tag filled tag-count focused text - rose/800" }
+            }
+          }
+        }
+      },
+      "orange-dark": {
+        "$comment": "Orange Dark color variant - deep orange/vermilion color scheme",
+        "outline": {
+          "$comment": "Orange Dark outline style - colored border with light background",
+          "background": {
+            "default": { "value": "#ffffff", "type": "color", "description": "Mobile orange-dark tag outline default background - white" },
+            "hover": { "value": "#ffe6d5", "type": "color", "description": "Mobile orange-dark tag outline hover background - orange-dark/100" },
+            "active": { "value": "#ffd6ae", "type": "color", "description": "Mobile orange-dark tag outline active background - orange-dark/200" },
+            "focused": { "value": "#ffe6d5", "type": "color", "description": "Mobile orange-dark tag outline focused background - orange-dark/100" },
+            "disabled": { "value": "{color.background.neutral.subtle.1}", "type": "color", "description": "Mobile orange-dark tag outline disabled background - gray/100 - #f2f4f7" }
+          },
+          "border": {
+            "default": { "value": "#e62e05", "type": "color", "description": "Mobile orange-dark tag outline default border - orange-dark/600" },
+            "hover": { "value": "#bc1b06", "type": "color", "description": "Mobile orange-dark tag outline hover border - orange-dark/700" },
+            "active": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag outline active border - orange-dark/800" },
+            "focused": { "value": "#ff9c66", "type": "color", "description": "Mobile orange-dark tag outline focused border - orange-dark/300" },
+            "disabled": { "value": "#ffd6ae", "type": "color", "description": "Mobile orange-dark tag outline disabled border - orange-dark/200" }
+          },
+          "text": {
+            "default": { "value": "#bc1b06", "type": "color", "description": "Mobile orange-dark tag outline default text - orange-dark/700" },
+            "hover": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag outline hover text - orange-dark/800" },
+            "active": { "value": "#771a0d", "type": "color", "description": "Mobile orange-dark tag outline active text - orange-dark/900" },
+            "focused": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag outline focused text - orange-dark/800" },
+            "disabled": { "value": "#ff692e", "type": "color", "description": "Mobile orange-dark tag outline disabled text - orange-dark/400" }
+          },
+          "focus": { "$comment": "Focus ring for orange-dark outline tag", "ring": { "value": "#ff9c66", "type": "color", "description": "Mobile orange-dark tag outline focus ring - orange-dark/300" } },
+          "icon": {
+            "default": { "value": "#bc1b06", "type": "color", "description": "Mobile orange-dark tag outline default icon - orange-dark/700" },
+            "hover": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag outline hover icon - orange-dark/800" },
+            "active": { "value": "#771a0d", "type": "color", "description": "Mobile orange-dark tag outline active icon - orange-dark/900" },
+            "focused": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag outline focused icon - orange-dark/800" },
+            "disabled": { "value": "#ffd6ae", "type": "color", "description": "Mobile orange-dark tag outline disabled icon - orange-dark/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for orange-dark outline tag",
+            "background": { "default": { "value": "#fff4ed", "type": "color", "description": "Mobile orange-dark tag outline tag-count background - orange-dark/25" } },
+            "text": {
+              "default": { "value": "#bc1b06", "type": "color", "description": "Mobile orange-dark tag outline tag-count text - orange-dark/700" },
+              "hover": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag outline tag-count hover text - orange-dark/800" },
+              "active": { "value": "#771a0d", "type": "color", "description": "Mobile orange-dark tag outline tag-count active text - orange-dark/900" },
+              "focused": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag outline tag-count focused text - orange-dark/800" }
+            }
+          }
+        },
+        "filled": {
+          "$comment": "Orange Dark filled style - solid deep-orange background",
+          "background": {
+            "default": { "value": "#fff4ed", "type": "color", "description": "Mobile orange-dark tag filled default background - orange-dark/50" },
+            "hover": { "value": "#ffe6d5", "type": "color", "description": "Mobile orange-dark tag filled hover background - orange-dark/100" },
+            "active": { "value": "#ffd6ae", "type": "color", "description": "Mobile orange-dark tag filled active background - orange-dark/200" },
+            "focused": { "value": "#ffe6d5", "type": "color", "description": "Mobile orange-dark tag filled focused background - orange-dark/100" },
+            "disabled": { "value": "#ffd6ae", "type": "color", "description": "Mobile orange-dark tag filled disabled background - orange-dark/200" }
+          },
+          "border": {
+            "default": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile orange-dark tag filled default border - transparent" },
+            "hover": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile orange-dark tag filled hover border - transparent" },
+            "active": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag filled active border - orange-dark/800" },
+            "focused": { "value": "#ff9c66", "type": "color", "description": "Mobile orange-dark tag filled focused border - orange-dark/300" },
+            "disabled": { "value": "{color.border.transparent}", "type": "color", "description": "Mobile orange-dark tag filled disabled border - transparent" }
+          },
+          "text": {
+            "default": { "value": "#bc1b06", "type": "color", "description": "Mobile orange-dark tag filled default text - orange-dark/700" },
+            "hover": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag filled hover text - orange-dark/800" },
+            "active": { "value": "#771a0d", "type": "color", "description": "Mobile orange-dark tag filled active text - orange-dark/900" },
+            "focused": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag filled focused text - orange-dark/800" },
+            "disabled": { "value": "#ff692e", "type": "color", "description": "Mobile orange-dark tag filled disabled text - orange-dark/400" }
+          },
+          "focus": { "$comment": "Focus ring for orange-dark filled tag", "ring": { "value": "#ff9c66", "type": "color", "description": "Mobile orange-dark tag filled focus ring - orange-dark/300" } },
+          "icon": {
+            "default": { "value": "#bc1b06", "type": "color", "description": "Mobile orange-dark tag filled default icon - orange-dark/700" },
+            "hover": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag filled hover icon - orange-dark/800" },
+            "active": { "value": "#771a0d", "type": "color", "description": "Mobile orange-dark tag filled active icon - orange-dark/900" },
+            "focused": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag filled focused icon - orange-dark/800" },
+            "disabled": { "value": "#ffd6ae", "type": "color", "description": "Mobile orange-dark tag filled disabled icon - orange-dark/200" }
+          },
+          "tag-count": {
+            "$comment": "Tag count badge tokens for orange-dark filled tag",
+            "background": { "default": { "value": "#fff4ed", "type": "color", "description": "Mobile orange-dark tag filled tag-count background - orange-dark/25" } },
+            "text": {
+              "default": { "value": "#bc1b06", "type": "color", "description": "Mobile orange-dark tag filled tag-count text - orange-dark/700" },
+              "hover": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag filled tag-count hover text - orange-dark/800" },
+              "active": { "value": "#771a0d", "type": "color", "description": "Mobile orange-dark tag filled tag-count active text - orange-dark/900" },
+              "focused": { "value": "#97180c", "type": "color", "description": "Mobile orange-dark tag filled tag-count focused text - orange-dark/800" }
             }
           }
         }

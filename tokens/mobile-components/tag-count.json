@@ -144,7 +144,7 @@
           "xs": {
             "value": "{font.body.medium.2xs}",
             "type": "typography",
-            "description": "Mobile tag count text typography for xs size - Medium 10px/14px (compact font for small badges)"
+            "description": "Mobile tag count text typography for xs size - Medium 10px/15px (compact font for small badges)"
           },
           "sm": {
             "value": "{font.body.medium.xs}",
