@@ -1,5 +1,5 @@
 {
-  "$comment": "Mobile Checkbox Component Tokens",
+  "$comment": "Mobile Checkbox Component Tokens (MAIN)",
   "$description": "Component tokens for Mobile Checkbox component with unchecked, checked, and indeterminate states. Supports default, hover, pressed, focused, disabled, and error states. Includes icon tokens for checkmark and indeterminate (minus) icons. Figma Reference: Node ID 126-27150",
   "$component": {
     "name": "Checkbox",
