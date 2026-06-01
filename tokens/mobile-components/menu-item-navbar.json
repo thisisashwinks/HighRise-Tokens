@@ -132,6 +132,11 @@
           "type": "position",
           "description": "Mobile menu item navbar badge horizontal position - 14px"
         },
+        "x-ios-without-bg": {
+          "value": "{position.x.3[375]}",
+          "type": "position",
+          "description": "Mobile menu item navbar badge horizontal position for iOS without-background variant - 13.5px"
+        },
         "y": {
           "value": "{position.y.0}",
           "type": "position",
@@ -179,18 +184,6 @@
           "type": "dimension",
           "description": "Mobile menu item navbar container vertical padding - 8px"
         }
-      },
-      "icon-with-bg": {
-        "x": {
-          "value": "{padding.x.5xs}",
-          "type": "dimension",
-          "description": "Mobile menu item navbar icon with background horizontal padding - 4px"
-        },
-        "y": {
-          "value": "{padding.y.1}",
-          "type": "dimension",
-          "description": "Mobile menu item navbar icon with background vertical padding - 4px"
-        }
       }
     },
     "gap": {
@@ -214,9 +207,23 @@
         }
       },
       "height": {
-        "value": "{size.height.17[75]}",
-        "type": "dimension",
-        "description": "Mobile menu item navbar container height - 71px"
+        "ios": {
+          "value": "{size.height.17[75]}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar iOS container height - 71px (fixed). Android height is content-driven with no fixed height."
+        }
+      },
+      "width": {
+        "ios": {
+          "value": "{size.width.23}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar iOS container width - 92px"
+        },
+        "android": {
+          "value": "{size.width.18[25]}",
+          "type": "dimension",
+          "description": "Mobile menu item navbar Android container width - 73px"
+        }
       }
     },
     "typography": {
