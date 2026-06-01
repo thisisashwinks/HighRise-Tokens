@@ -1,0 +1,140 @@
+{
+  "$comment": "Mobile Modal Footer Component Tokens",
+  "$description": "Component tokens for Mobile Modal Footer component - the footer section of mobile modal dialogs and bottom sheets. Contains divider, spacing, button group gaps, and optional iOS home indicator. Supports two form variants (Bottom Sheet and Dialogue) with different padding and structure. Note: Button color tokens for each modal type (Default, Info, Success, Warning, Destructive, Custom) belong in the Button component token file.",
+  "$component": {
+    "name": "Modal Footer",
+    "description": "The footer section of a mobile modal component. Provides structural tokens for divider, padding, button group gaps, and the optional iOS home indicator for bottom sheets. Renders below the modal body with a top divider separator and horizontal button action groups. Layout and padding differ between Dialogue and Bottom Sheet form variants.",
+    "structure": "Vertical flex container with divider at top, 12px spacer, then horizontal button body with 16px side padding. Bottom sheet variant has 32px bottom padding (home indicator area); Dialogue variant has 12px bottom padding. Button groups use 16px gap between groups, 12px gap within a group.",
+    "variants": {
+      "form": {
+        "dialogue": "Centered dialogue footer - 12px bottom padding, 16px horizontal padding",
+        "bottom-sheet": "Slide-up bottom sheet footer - 32px bottom padding (home indicator area), 16px horizontal padding"
+      }
+    },
+    "usage": {
+      "contexts": "Mobile modal dialogs, confirmation dialogs, alert dialogs, action sheets, bottom sheets, slide-up panels",
+      "features": "Top divider separator, Configurable padding per form variant, Button group gap tokens, Optional iOS home indicator for bottom sheets"
+    }
+  },
+  "modal-footer": {
+    "color": {
+      "$comment": "Color tokens for mobile modal footer - background and divider colors",
+      "background": {
+        "default": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile modal footer default background - neutral/white - #ffffff"
+        }
+      },
+      "border": {
+        "divider": {
+          "value": "{color.border.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile modal footer divider border color - neutral/gray-200 - #eaecf0"
+        }
+      }
+    },
+    "border": {
+      "divider": {
+        "width": {
+          "top": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Mobile modal footer divider top border width - 1px"
+          }
+        }
+      }
+    },
+    "padding": {
+      "dialogue": {
+        "top": {
+          "value": "{padding.0}",
+          "type": "dimension",
+          "description": "Mobile modal footer dialogue top padding - 0px"
+        },
+        "bottom": {
+          "value": "{padding.3}",
+          "type": "dimension",
+          "description": "Mobile modal footer dialogue bottom padding - 12px"
+        },
+        "x": {
+          "value": "{padding.4}",
+          "type": "dimension",
+          "description": "Mobile modal footer dialogue horizontal padding - 16px"
+        }
+      },
+      "bottom-sheet": {
+        "top": {
+          "value": "{padding.0}",
+          "type": "dimension",
+          "description": "Mobile modal footer bottom sheet top padding - 0px (12px gap after divider is from gap.divider-top)"
+        },
+        "bottom": {
+          "value": "{padding.8}",
+          "type": "dimension",
+          "description": "Mobile modal footer bottom sheet bottom padding - 32px (home indicator area)"
+        },
+        "x": {
+          "value": "{padding.4}",
+          "type": "dimension",
+          "description": "Mobile modal footer bottom sheet horizontal padding - 16px"
+        }
+      }
+    },
+    "gap": {
+      "divider-top": {
+        "value": "{gap.3}",
+        "type": "dimension",
+        "description": "Mobile modal footer gap between divider and button content - 12px"
+      },
+      "buttons": {
+        "default": {
+          "value": "{gap.4}",
+          "type": "dimension",
+          "description": "Mobile modal footer gap between button groups (left actions vs right actions) - 16px"
+        },
+        "within-group": {
+          "value": "{gap.3}",
+          "type": "dimension",
+          "description": "Mobile modal footer gap between buttons within a group - 12px"
+        }
+      }
+    },
+    "home-indicator": {
+      "$comment": "Home indicator tokens - iOS home indicator for bottom sheets",
+      "size": {
+        "height": {
+          "value": "{size.height.8}",
+          "type": "dimension",
+          "description": "Mobile modal footer home indicator height - 32px (closest to 34px design spec)"
+        },
+        "grabber": {
+          "width": {
+            "value": "{size.width.32}",
+            "type": "dimension",
+            "description": "Mobile modal footer home indicator grabber width - 128px (closest to 134px design spec)"
+          },
+          "height": {
+            "value": "{size.height.1}",
+            "type": "dimension",
+            "description": "Mobile modal footer home indicator grabber height - 4px (closest to 5px design spec)"
+          }
+        }
+      },
+      "position": {
+        "bottom": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Mobile modal footer home indicator bottom offset - 8px"
+        }
+      },
+      "color": {
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile modal footer home indicator background - neutral/white - #ffffff"
+        }
+      }
+    }
+  }
+}

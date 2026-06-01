@@ -175,9 +175,9 @@
       "title": {
         "$comment": "Title text tokens",
         "typography": {
-          "value": "{font.body.semibold.2xl}",
+          "value": "{font.heading.bold.h6}",
           "type": "typography",
-          "description": "Mobile modal header title typography - 16px semibold, 24px line height"
+          "description": "Mobile modal header title typography - 20px bold, 30px line height"
         },
         "color": {
           "default": {
@@ -190,9 +190,9 @@
       "subtext": {
         "$comment": "Subtext tokens - optional text displayed below title",
         "typography": {
-          "value": "{font.body.regular.base}",
+          "value": "{font.body.regular.2xl}",
           "type": "typography",
-          "description": "Mobile modal header subtext typography - 14px regular, 20px line height"
+          "description": "Mobile modal header subtext typography - 16px regular, 24px line height"
         },
         "color": {
           "default": {
