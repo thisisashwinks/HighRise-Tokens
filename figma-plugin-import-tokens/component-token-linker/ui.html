@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Import Tokens</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f2f2f2;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .field-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 4px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 130px;
+    border: 1px solid #d4d4d4;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    background: #fff;
+    resize: none;
+    color: #222;
+    transition: border-color .15s;
+  }
+  textarea:focus {
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, .12);
+  }
+
+  input[type="text"] {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #d4d4d4;
+    border-radius: 6px;
+    padding: 0 10px;
+    font-family: inherit;
+    font-size: 13px;
+    background: #fff;
+    color: #222;
+    transition: border-color .15s;
+  }
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, .12);
+  }
+  input[type="text"]::placeholder { color: #aaa; }
+
+  .controls-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .dry-run-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    cursor: pointer;
+    user-select: none;
+  }
+  .dry-run-wrap input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    accent-color: #0066ff;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .dry-run-wrap span {
+    font-size: 12px;
+    color: #444;
+  }
+
+  button#runBtn {
+    flex-shrink: 0;
+    height: 32px;
+    padding: 0 20px;
+    background: #0066ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .15s;
+    white-space: nowrap;
+  }
+  button#runBtn:hover:not(:disabled) { background: #0052cc; }
+  button#runBtn:active:not(:disabled) { background: #003d99; }
+  button#runBtn:disabled { background: #b0c8f0; cursor: not-allowed; }
+
+  button#clearBtn {
+    flex-shrink: 0;
+    height: 26px;
+    padding: 0 10px;
+    background: transparent;
+    color: #777;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  button#clearBtn:hover { background: #e8e8e8; color: #333; }
+
+  .log-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .log-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  #log {
+    flex: 1;
+    background: #1a1a1a;
+    color: #ccc;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
+    font-size: 11px;
+    line-height: 1.65;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+    border: 1px solid #2a2a2a;
+  }
+
+  /* Log color classes */
+  .c-dim    { color: #666; }
+  .c-info   { color: #60a5fa; }
+  .c-ok     { color: #4ade80; }
+  .c-warn   { color: #fbbf24; }
+  .c-err    { color: #f87171; }
+  .c-head   { color: #e2e8f0; font-weight: bold; }
+  .c-muted  { color: #888; }
+  .c-ref    { color: #a78bfa; }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- JSON input -->
+<div>
+  <label class="field-label" for="jsonInput">Component token JSON</label>
+  <textarea
+    id="jsonInput"
+    spellcheck="false"
+    placeholder='Paste the contents of a component token file here, e.g. menu-item-navbar.json …'
+  ></textarea>
+</div>
+
+<!-- Collection name -->
+<div>
+  <label class="field-label" for="collName">Collection name in Figma</label>
+  <input
+    type="text"
+    id="collName"
+    placeholder='Auto-filled from $component.name when JSON is pasted'
+  >
+</div>
+
+<!-- Controls row -->
+<div class="controls-row">
+  <label class="dry-run-wrap">
+    <input type="checkbox" id="dryRun" checked>
+    <span>Dry run — preview resolution only, write nothing</span>
+  </label>
+  <button id="runBtn">Run</button>
+</div>
+
+<hr class="divider">
+
+<!-- Log -->
+<div class="log-header">
+  <span class="log-title">Output</span>
+  <button id="clearBtn">Clear</button>
+</div>
+<div id="log"><span class="c-dim">Paste a JSON and click Run…</span></div>
+
+<script>
+// ─── DOM refs ────────────────────────────────────────────────────────────────
+var jsonInput  = document.getElementById('jsonInput');
+var collInput  = document.getElementById('collName');
+var dryRunChk  = document.getElementById('dryRun');
+var runBtn     = document.getElementById('runBtn');
+var clearBtn   = document.getElementById('clearBtn');
+var logEl      = document.getElementById('log');
+
+var logCleared = false; // cleared the placeholder on first append
+
+// ─── Auto-fill collection name from $component.name ─────────────────────────
+function tryAutoFill() {
+  var raw = jsonInput.value.trim();
+  if (!raw) return;
+  try {
+    var parsed = JSON.parse(raw);
+    var comp = parsed['$component'];
+    if (comp && comp.name) {
+      collInput.value = comp.name;
+    }
+  } catch (_) {}
+}
+
+jsonInput.addEventListener('input', tryAutoFill);
+jsonInput.addEventListener('paste', function() {
+  // paste fires before value updates
+  setTimeout(tryAutoFill, 20);
+});
+
+// ─── Log helpers ─────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+function appendLog(html) {
+  if (!logCleared) {
+    logEl.innerHTML = '';
+    logCleared = true;
+  }
+  logEl.innerHTML += html + '\n';
+  logEl.scrollTop = logEl.scrollHeight;
+}
+
+function appendText(text, cls) {
+  var span = cls ? '<span class="' + cls + '">' + esc(text) + '</span>' : esc(text);
+  appendLog(span);
+}
+
+clearBtn.addEventListener('click', function() {
+  logEl.innerHTML = '<span class="c-dim">Cleared.</span>';
+  logCleared = true;
+});
+
+// ─── Report formatter ─────────────────────────────────────────────────────────
+function formatReport(data) {
+  var lines = [];
+  var rawCount = (data.rawValues && data.rawValues.length) || data.rawCount || 0;
+
+  lines.push('<span class="c-head">══ ' + esc(data.dryRun ? 'DRY RUN' : 'REPORT') + ': "' + esc(data.collectionName) + '" ══</span>');
+  lines.push(
+    'Total: <span class="c-head">' + data.totalLeaves + '</span>' +
+    '   Aliases: <span class="c-ok">' + data.resolvedCount + '</span>' +
+    '   Raw values: <span class="c-warn">' + rawCount + '</span>'
+  );
+  lines.push('');
+
+  // ── Aliases (library references resolved) ──────────────────────────────────
+  if (data.resolved && data.resolved.length > 0) {
+    lines.push('<span class="c-ok">✓ ALIASES — ' + data.resolved.length + ' cross-file alias(es)</span>');
+
+    var nameW = 4, refW = 7;
+    for (var i = 0; i < data.resolved.length; i++) {
+      if (data.resolved[i].name.length > nameW) nameW = data.resolved[i].name.length;
+      if (data.resolved[i].refName.length > refW) refW = data.resolved[i].refName.length;
+    }
+    nameW = Math.min(nameW, 48); refW = Math.min(refW, 48);
+
+    lines.push('  <span class="c-muted">' + pad('Name', nameW) + '  ' + pad('Library variable', refW) + '  Type      Collection</span>');
+    lines.push('  <span class="c-muted">' + repeat('─', nameW + refW + 28) + '</span>');
+
+    for (var i2 = 0; i2 < data.resolved.length; i2++) {
+      var r = data.resolved[i2];
+      var ci = r.caseFixed ? ' <span class="c-warn">[case]</span>' : '';
+      lines.push(
+        '  <span class="c-ok">~</span> ' +
+        '<span class="c-head">' + esc(truncate(r.name, nameW)) + '</span>' +
+        '  <span class="c-ref">' + esc(truncate(r.refName, refW)) + '</span>' + ci +
+        '  <span class="c-muted">' + esc(pad(r.match.resolvedType, 8)) + '  ' + esc(r.match.libCollectionName) + '</span>'
+      );
+    }
+    lines.push('');
+  }
+
+  // ── Raw values ─────────────────────────────────────────────────────────────
+  if (data.rawValues && data.rawValues.length > 0) {
+    lines.push('<span class="c-warn">◆ RAW VALUES — ' + data.rawValues.length + ' token(s) written as literal value(s)</span>');
+    lines.push('  <span class="c-muted">(literal values or references not found in library)</span>');
+    lines.push('');
+
+    for (var j = 0; j < data.rawValues.length; j++) {
+      var rv = data.rawValues[j];
+      var warn = rv.parsed && rv.parsed.warning ? ' <span class="c-warn">⚠ ' + esc(rv.parsed.warning) + '</span>' : '';
+      var refNote = rv.isRef ? ' <span class="c-muted">[ref not in library]</span>' : '';
+      lines.push(
+        '  <span class="c-warn">◆</span> ' +
+        '<span class="c-head">' + esc(rv.name) + '</span>' + refNote +
+        '\n      value: <span class="c-warn">' + esc(rv.rawStr) + '</span>' +
+        '  type: <span class="c-muted">' + esc((rv.parsed && rv.parsed.figmaType) || rv.tokenType) + '</span>' +
+        warn
+      );
+    }
+    lines.push('');
+  }
+
+  return lines.join('\n');
+}
+
+// ─── String helpers ───────────────────────────────────────────────────────────
+function pad(s, len) {
+  s = String(s);
+  while (s.length < len) s += ' ';
+  return s;
+}
+function truncate(s, len) {
+  if (s.length <= len) return s;
+  return s.slice(0, len - 1) + '…';
+}
+function repeat(ch, n) {
+  var s = '';
+  for (var i = 0; i < n; i++) s += ch;
+  return s;
+}
+
+// ─── Run button ──────────────────────────────────────────────────────────────
+runBtn.addEventListener('click', function() {
+  var json = jsonInput.value.trim();
+  var name = collInput.value.trim();
+  var dr   = dryRunChk.checked;
+
+  if (!json) {
+    appendText('✗  Please paste a component JSON first.', 'c-err');
+    return;
+  }
+  if (!name) {
+    appendText('✗  Please enter a collection name.', 'c-err');
+    return;
+  }
+
+  // Clear log for this run
+  logEl.innerHTML = '';
+  logCleared = true;
+
+  appendLog(
+    '<span class="c-info">━━ ' +
+    esc(dr ? 'DRY RUN' : 'LIVE RUN') +
+    ' — collection: "' + esc(name) + '" ━━</span>'
+  );
+
+  runBtn.disabled = true;
+
+  parent.postMessage({
+    pluginMessage: { type: 'run', json: json, collectionName: name, dryRun: dr }
+  }, '*');
+});
+
+// ─── Plugin message handler ───────────────────────────────────────────────────
+window.addEventListener('message', function(event) {
+  var msg = event.data && event.data.pluginMessage;
+  if (!msg) return;
+
+  switch (msg.type) {
+
+    case 'log':
+      appendText(msg.message, '');
+      break;
+
+    case 'error':
+      appendLog('<span class="c-err">✗ ERROR\n' + esc(msg.message) + '</span>');
+      runBtn.disabled = false;
+      break;
+
+    case 'report':
+      appendLog(formatReport(msg));
+      if (msg.dryRun) {
+        var rawCount = (msg.rawValues && msg.rawValues.length) || msg.rawCount || 0;
+        var go = rawCount === 0
+          ? '<span class="c-ok">Go/no-go: ✓ All tokens resolve to library aliases — safe to run live.</span>'
+          : '<span class="c-warn">Go/no-go: ✓ Safe to run live. ' + rawCount + ' token(s) will be written as raw values (no library alias).</span>';
+        appendLog(go);
+        runBtn.disabled = false;
+      }
+      break;
+
+    case 'done': {
+      var errNote = msg.errors > 0
+        ? ' (' + msg.errors + ' write error(s) — review log above)'
+        : '';
+      appendLog(
+        '<span class="c-ok">━━ DONE ━━\n' +
+        'Collection "' + esc(msg.collectionName) + '"\n' +
+        'Created:  ' + msg.created + ' variable(s)\n' +
+        'Reused:   ' + msg.reused + ' variable(s)\n' +
+        'Total:    ' + msg.total + ' variable(s)' + esc(errNote) + '\n' +
+        (msg.errors === 0 ? '✓ All variables are cross-file aliases to the Foundations library.' : '') +
+        '</span>'
+      );
+      runBtn.disabled = false;
+      break;
+    }
+  }
+});
+</script>
+</body>
+</html>
