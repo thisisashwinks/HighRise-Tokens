@@ -1,0 +1,54 @@
+{
+  "$comment": "Mobile Input Stepper Component Tokens",
+  "$description": "Component tokens for Mobile Input Stepper component - a horizontal number picker consisting of a Decrease button, a numeric value display, and an Increase button. Supports 2 digit display formats (Single/Double) and 5 interaction states. The two circular buttons are StepperAction sub-components. Figma Reference: Node ID 126-25937",
+  "$component": {
+    "name": "Input Stepper",
+    "description": "A horizontal stepper control that lets users increment or decrement a numeric value using circular +/- buttons. Displays the current value as a semibold number between the two buttons. Supports single-digit (0–9) and double-digit (00–99) display modes. The component delegates circular button rendering to the StepperAction sub-component.",
+    "structure": "Horizontal flex row (gap: 16px) containing: StepperAction (Decrease) | value text | StepperAction (Increase). No outer container border or background.",
+    "sizes": {
+      "single": "Single-digit display — value renders as 1 character (e.g. '0', '8')",
+      "double": "Double-digit display — value renders as 2 characters with leading zero (e.g. '00', '08')"
+    },
+    "variants": {
+      "default": "Empty/zero state — both StepperAction buttons are Default (enabled). Value text: gray/600.",
+      "filled": "Non-zero state — both StepperAction buttons are Default (enabled). Value text: gray/600.",
+      "disabled": "Fully disabled — both StepperAction buttons are Disabled. Value text: gray/300.",
+      "add-disabled": "At maximum — Increase (plus) StepperAction is Disabled; Decrease (minus) is Default. Value text: gray/300.",
+      "subtract-disabled": "At minimum — Decrease (minus) StepperAction is Disabled; Increase (plus) is Default. Value text: gray/300."
+    },
+    "usage": {
+      "contexts": "Quantity pickers, time entry fields (hours/minutes), numeric counters, quantity selectors in forms",
+      "features": "Two display digit formats, 5 interaction states, sub-component StepperAction buttons per side"
+    }
+  },
+  "input-stepper": {
+    "container": {
+      "$comment": "Outer horizontal flex row holding [Decrease] [value] [Increase]. No background or border.",
+      "gap": {
+        "value": "{size.4}",
+        "type": "dimension",
+        "description": "Mobile input stepper container gap between Decrease button, value text, and Increase button - 16px"
+      }
+    },
+    "value": {
+      "$comment": "Numeric value text displayed between the two StepperAction buttons",
+      "typography": {
+        "value": "{font.body.semibold.3xl}",
+        "type": "typography",
+        "description": "Mobile input stepper value text typography - 18px Semibold, 28px line-height (font/size/3xl, font/weight/semibold, font/line-height/3xl)"
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Mobile input stepper value text color in Default and Filled states - gray/600 - #475467 (both StepperAction buttons are enabled)"
+        },
+        "disabled": {
+          "value": "{color.text.neutral.inactive}",
+          "type": "color",
+          "description": "Mobile input stepper value text color in Disabled, Add Disabled, and Subtract Disabled states - gray/300 - #d0d5dd (at least one StepperAction button is disabled)"
+        }
+      }
+    }
+  }
+}

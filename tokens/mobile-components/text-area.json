@@ -1,0 +1,258 @@
+{
+  "$comment": "Mobile Text Area Component Tokens",
+  "$description": "Component tokens for Mobile Text Area component - a multiline text input field for longer-form user input. A fixed 240px tall field with uniform 8px padding, optional label above, optional hint text below, and an optional character count displayed inside the field (bottom-right). Supports 4 states: Default, Focused, Success, Disabled. No destructive/error state in this component — error feedback is handled via hint text color change. Figma Reference: Node ID 528-21651",
+  "$component": {
+    "name": "Text Area",
+    "description": "A mobile multiline text input component for longer-form content such as notes, comments, descriptions, or messages. Features a fixed-height scrollable text area with internal character counter, an optional label row above, and optional hint text below. Unlike the single-line Input component, the text area uses uniform padding on all sides and a thicker 3px border ring for focused and success states.",
+    "structure": "Vertical flex container (gap 4px) with: optional Label row at top, text area field (white/gray background with border, 240px height, 8px padding, overflow scroll), hint text below. Character count renders inside the field aligned to bottom-right.",
+    "sizes": {
+      "default": "Single fixed size — 361px wide, 240px tall field. No size variants."
+    },
+    "variants": {
+      "default": "Idle state — white background, gray/300 border (1px), placeholder text gray/500, shadow/xs",
+      "focused": "Active/typing state — white background, primary/blue/600 border (3px), input text gray/900, no shadow",
+      "success": "Validated state — white background, success/600 border (3px), input text gray/900, no shadow",
+      "disabled": "Inactive state — gray/100 background, no border, muted text gray/400, shadow/xs"
+    },
+    "usage": {
+      "contexts": "Comment boxes, notes fields, bio/description forms, message composers, feedback forms, address fields, long-form data entry",
+      "features": "Multiline text input, optional character counter (inside field, bottom-right), 4 interaction states, optional label with mandatory indicator and info icon, optional hint text"
+    }
+  },
+  "text-area": {
+    "container": {
+      "$comment": "Outer wrapper tokens — the vertical stack holding label, field, and hint text",
+      "width": {
+        "value": "361px",
+        "type": "dimension",
+        "description": "Mobile text area container width - 361px fixed"
+      },
+      "gap": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "description": "Mobile text area container gap between label, input field, and hint text - 4px"
+      }
+    },
+    "field": {
+      "$comment": "The multiline text area input field itself — distinct from the single-line Input component in height, padding, and active border width",
+      "height": {
+        "value": "{size.60}",
+        "type": "dimension",
+        "description": "Mobile text area field height - 240px (fixed, scrollable overflow)"
+      },
+      "width": {
+        "value": "100%",
+        "type": "dimension",
+        "description": "Mobile text area field width - full width of container (361px)"
+      },
+      "padding": {
+        "value": "{padding.2}",
+        "type": "dimension",
+        "description": "Mobile text area field padding - 8px all sides (uniform, unlike single-line input)"
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.1[5]}",
+          "type": "dimension",
+          "description": "Mobile text area field border radius - 6px"
+        },
+        "width": {
+          "default": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Mobile text area default/disabled border width - 1px"
+          },
+          "active": {
+            "value": "3px",
+            "type": "dimension",
+            "description": "Mobile text area focused/success border width - 3px (thicker ring to indicate active/validated state)"
+          }
+        }
+      },
+      "shadow": {
+        "default": {
+          "value": "{boxShadow.outer.xs}",
+          "type": "boxShadow",
+          "description": "Mobile text area default and disabled state shadow - shadow/xs - 0px 1px 2px rgba(16,24,40,0.05)"
+        },
+        "active": {
+          "value": "none",
+          "type": "boxShadow",
+          "description": "Mobile text area focused and success state shadow - none (shadow removed when border ring is visible)"
+        }
+      }
+    },
+    "typography": {
+      "$comment": "Typography for text inside the textarea field — same scale as single-line input sm size",
+      "input": {
+        "value": "{font.body.regular.base}",
+        "type": "typography",
+        "description": "Mobile text area input text typography - 14px Regular, 20px line-height (font/size/lg, font/weight/regular)"
+      }
+    },
+    "character-count": {
+      "$comment": "Character count indicator rendered inside the field at bottom-right (e.g. '0/200', '30/200'). Typography matches input text. Color follows input text state.",
+      "typography": {
+        "value": "{font.body.regular.base}",
+        "type": "typography",
+        "description": "Mobile text area character count typography - 14px Regular, 20px line-height (matches input text)"
+      },
+      "alignment": {
+        "value": "right",
+        "type": "string",
+        "description": "Mobile text area character count text alignment - right-aligned within field width"
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.subtitle.1}",
+          "type": "color",
+          "description": "Mobile text area character count color in default state - gray/500 - #667085 (matches placeholder text)"
+        },
+        "focused": {
+          "value": "{color.text.neutral.title.1}",
+          "type": "color",
+          "description": "Mobile text area character count color in focused state - gray/900 - #101828 (matches active input text)"
+        },
+        "success": {
+          "value": "{color.text.neutral.title.1}",
+          "type": "color",
+          "description": "Mobile text area character count color in success state - gray/900 - #101828"
+        },
+        "disabled": {
+          "value": "{color.text.neutral.subtitle.2}",
+          "type": "color",
+          "description": "Mobile text area character count color in disabled state - gray/400 - #98a2b3 (matches disabled input text)"
+        }
+      }
+    },
+    "label": {
+      "$comment": "Label row above the text area field. Consistent with input-form.json md size label tokens.",
+      "height": {
+        "value": "{size.6}",
+        "type": "dimension",
+        "description": "Mobile text area label row height - 24px"
+      },
+      "gap": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "description": "Mobile text area label internal gap between label text, mandatory asterisk, and info icon - 4px"
+      },
+      "text": {
+        "typography": {
+          "value": "{font.body.medium.2xl}",
+          "type": "typography",
+          "description": "Mobile text area label text typography - 16px Medium, 24px line-height (font/size/2xl, font/weight/medium)"
+        },
+        "color": {
+          "default": {
+            "value": "{color.text.neutral.body.1}",
+            "type": "color",
+            "description": "Mobile text area label text color - neutral/gray-700 - #344054"
+          },
+          "mandatory": {
+            "value": "{color.text.error.intense}",
+            "type": "color",
+            "description": "Mobile text area mandatory asterisk (*) color - error/600 - #d92d20"
+          }
+        }
+      },
+      "info-icon": {
+        "size": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Mobile text area label info icon size - 12px"
+        }
+      }
+    },
+    "hint-text": {
+      "$comment": "Hint text below the field — provides guidance or validation feedback. Consistent with input-form-hint-text.json.",
+      "typography": {
+        "value": "{font.body.regular.base}",
+        "type": "typography",
+        "description": "Mobile text area hint text typography - 14px Regular, 20px line-height (font/size/lg, font/weight/regular)"
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Mobile text area hint text default color - neutral/gray-600 - #475467"
+        }
+      }
+    },
+    "color": {
+      "$comment": "Per-state color tokens for the text area field — background, border, and input text. Mirrors the color token structure from input.json for consistency.",
+      "default": {
+        "$comment": "Idle/unfocused state — placeholder-style text, subtle border",
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile text area default background - white - #ffffff"
+        },
+        "border": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "description": "Mobile text area default border color - gray/300 - #d0d5dd"
+        },
+        "text": {
+          "value": "{color.text.neutral.subtitle.1}",
+          "type": "color",
+          "description": "Mobile text area default text color - gray/500 - #667085 (placeholder state)"
+        }
+      },
+      "focused": {
+        "$comment": "Active typing state — primary blue ring, dark text",
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile text area focused background - white - #ffffff"
+        },
+        "border": {
+          "value": "{color.border.primary.default}",
+          "type": "color",
+          "description": "Mobile text area focused border color - primary/blue-600 - #155eef"
+        },
+        "text": {
+          "value": "{color.text.neutral.title.1}",
+          "type": "color",
+          "description": "Mobile text area focused text color - gray/900 - #101828"
+        }
+      },
+      "success": {
+        "$comment": "Validated/confirmed state — green ring, dark text",
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile text area success background - white - #ffffff"
+        },
+        "border": {
+          "value": "{color.border.success.default}",
+          "type": "color",
+          "description": "Mobile text area success border color - success/600 - #039855"
+        },
+        "text": {
+          "value": "{color.text.neutral.title.1}",
+          "type": "color",
+          "description": "Mobile text area success text color - gray/900 - #101828"
+        }
+      },
+      "disabled": {
+        "$comment": "Inactive state — gray background, no border, muted text",
+        "background": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "description": "Mobile text area disabled background - gray/100 - #f2f4f7"
+        },
+        "border": {
+          "value": "{color.border.transparent}",
+          "type": "color",
+          "description": "Mobile text area disabled border - transparent (no visible border in disabled state)"
+        },
+        "text": {
+          "value": "{color.text.neutral.subtitle.2}",
+          "type": "color",
+          "description": "Mobile text area disabled text color - gray/400 - #98a2b3"
+        }
+      }
+    }
+  }
+}

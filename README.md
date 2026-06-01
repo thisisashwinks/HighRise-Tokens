@@ -123,12 +123,19 @@ HighRise-Tokens/
 │   │   ├── button.json
 │   │   ├── input.json
 │   │   └── ...
-│   ├── mobile-components/            # Mobile component-specific tokens
-│   │   ├── button.json
-│   │   ├── input.json
-│   │   ├── tab.json
-│   │   ├── tab-item.json
-│   │   └── ...
+│   ├── mobile-components/            # Mobile component-specific tokens (34 files)
+│   │   ├── button.json               # Core interactive
+│   │   ├── input.json                # Forms
+│   │   ├── text-area.json
+│   │   ├── input-stepper.json
+│   │   ├── modal.json                # Modal system
+│   │   ├── modal-header.json
+│   │   ├── modal-footer.json
+│   │   ├── header.json               # Header system
+│   │   ├── popover.json              # Feedback & overlay
+│   │   ├── alert.json
+│   │   ├── tab.json                  # Navigation
+│   │   └── ...                       # 34 files total
 │   ├── generated-highrise-scales/    # Generated color scales
 │   │   ├── light.json
 │   │   ├── dark.json
@@ -290,15 +297,16 @@ The project uses a **3+ usage rule** for creating semantic tokens:
 
 ### 📈 **Component Status Summary**
 
-#### **Completed Component Token Files (42 Files)**
+#### **Completed Component Token Files (71 Files)**
 
-**Web Components (35 files):**
+**Web Components (37 files):**
 
 **Core Interactive Components:**
 - ✅ `button.json` - Primary button component with all variants
 - ✅ `link-button.json` - Link-styled button component
 - ✅ `action-icon.json` - Icon button component
 - ✅ `icon.json` - Base icon component
+- ✅ `toggle.json` - Toggle switch component
 
 **Form Components:**
 - ✅ `input.json` - Input field component
@@ -335,9 +343,10 @@ The project uses a **3+ usage rule** for creating semantic tokens:
 - ✅ `pagination-item.json` - Pagination item
 - ✅ `pagination-button-group.json` - Pagination button group
 
-**Feedback Components:**
+**Feedback & Overlay Components:**
 - ✅ `alert.json` - Alert/banner component
 - ✅ `tooltip.json` - Tooltip component
+- ✅ `inline-text-container.json` - Inline editor text container
 
 **Other Components:**
 - ✅ `action-group.json` - Action group component
@@ -346,59 +355,109 @@ The project uses a **3+ usage rule** for creating semantic tokens:
 **Template:**
 - ✅ `component-token-template.json` - Standard template for new components
 
-**Mobile Components (7 files):**
+**Mobile Components (34 files):**
+
+**Core Interactive (6):**
 - ✅ `button.json` - Mobile button component
-- ✅ `input.json` - Mobile input field component
-- ✅ `tab.json` - Mobile tab container component
-- ✅ `tab-item.json` - Mobile tab item component
+- ✅ `checkbox.json` - Mobile checkbox component
+- ✅ `radio.json` - Mobile radio button component
+- ✅ `select.json` - Mobile select dropdown
+- ✅ `toggle.json` - Mobile toggle switch
+- ✅ `icon.json` - Mobile icon component
+
+**Form (6):**
+- ✅ `input.json` - Mobile input field
+- ✅ `input-form.json` - Mobile form input wrapper
+- ✅ `input-form-hint-text.json` - Mobile form hint text
+- ✅ `text-area.json` - Mobile multiline text area
+- ✅ `input-stepper.json` - Mobile numeric stepper (− value +)
+- ✅ `stepper-action.json` - Mobile stepper +/− button
+
+**Tags (4):**
+- ✅ `tag.json` - Mobile base tag
+- ✅ `tag-close.json` - Mobile tag close button
+- ✅ `tag-count.json` - Mobile tag count indicator
+- ✅ `tag-loader.json` - Mobile tag loading spinner
+
+**Navigation (7):**
+- ✅ `tab.json` - Mobile tab container
+- ✅ `tab-item.json` - Mobile tab item
 - ✅ `content-switcher.json` - Mobile content switcher container
 - ✅ `content-switcher-item.json` - Mobile content switcher item
+- ✅ `menu-item-navbar.json` - Mobile navbar menu item
 - ✅ `no-badge.json` - Mobile no badge component
+- ✅ `bottom navigation bar.json` - Mobile bottom navigation bar
+
+**Modal (3):**
+- ✅ `modal.json` - Mobile modal container
+- ✅ `modal-header.json` - Mobile modal header
+- ✅ `modal-footer.json` - Mobile modal footer
+
+**Header (4):**
+- ✅ `header.json` - Mobile header
+- ✅ `header-lite.json` - Mobile header lite variant
+- ✅ `header-lite-left.json` - Mobile header lite left panel
+- ✅ `header-action-group.json` - Mobile header action group
+
+**Feedback & Overlay (2):**
+- ✅ `alert.json` - Mobile alert/notification banner
+- ✅ `popover.json` - Mobile popover/onboarding tooltip
+
+**Other (2):**
+- ✅ `list-item.json` - Mobile list item
+- ✅ `empty state.json` - Mobile empty state
 
 #### **Progress Overview:**
 ```
-Component Token Files: 42 completed
-├── Web Components: 35 files
-│   ├── Core Components: 4 files (button, link-button, action-icon, icon)
+Component Token Files: 71 completed
+├── Web Components: 37 files
+│   ├── Core/Interactive: 5 files (button, link-button, action-icon, icon, toggle)
 │   ├── Form Components: 6 files (input, input-form, textarea, select, checkbox, radio)
 │   ├── Avatar System: 7 files (avatar variants, indicators, group)
 │   ├── Tag System: 5 files (tag, close, count, group, badge-group)
 │   ├── Navigation: 9 files (tabs, dropdown, content-switcher, pagination)
-│   ├── Feedback: 2 files (alert, tooltip)
+│   ├── Feedback & Overlay: 3 files (alert, tooltip, inline-text-container)
 │   └── Other: 2 files (action-group, time-picker)
-└── Mobile Components: 7 files
-    ├── Core: 1 file (button)
-    ├── Forms: 1 file (input)
-    ├── Navigation: 4 files (tab, tab-item, content-switcher, content-switcher-item)
-    └── Other: 1 file (no-badge)
+└── Mobile Components: 34 files
+    ├── Core/Interactive: 6 files (button, checkbox, radio, select, toggle, icon)
+    ├── Forms: 6 files (input, input-form, hint-text, text-area, input-stepper, stepper-action)
+    ├── Tags: 4 files (tag, tag-close, tag-count, tag-loader)
+    ├── Navigation: 7 files (tab, tab-item, content-switcher ×2, menu-item-navbar, no-badge, bottom-nav-bar)
+    ├── Modal: 3 files (modal, modal-header, modal-footer)
+    ├── Header: 4 files (header, header-lite, header-lite-left, header-action-group)
+    ├── Feedback & Overlay: 2 files (alert, popover)
+    └── Other: 2 files (list-item, empty-state)
 ```
 
-### 🎯 **Core Component Coverage**
+### 🎯 **Component Coverage**
 
 | Component Category | Web Files | Mobile Files | Total | Status |
 |-------------------|-----------|--------------|-------|---------|
-| **Buttons** | 3 files | 1 file | 4 files | ✅ Complete |
-| **Forms** | 6 files | 1 file | 7 files | ✅ Complete |
-| **Avatars** | 7 files | - | 7 files | ✅ Complete |
-| **Tags** | 5 files | - | 5 files | ✅ Complete |
-| **Navigation** | 9 files | 4 files | 13 files | ✅ Complete |
-| **Icons** | 2 files | - | 2 files | ✅ Complete |
-| **Feedback** | 2 files | - | 2 files | ✅ Complete |
-| **Other** | 1 file | 1 file | 2 files | ✅ Complete |
+| **Core/Interactive** | 5 files | 6 files | 11 files | ✅ Complete |
+| **Forms** | 6 files | 6 files | 12 files | ✅ Complete |
+| **Avatars** | 7 files | - | 7 files | ✅ Web complete |
+| **Tags** | 5 files | 4 files | 9 files | ✅ Complete |
+| **Navigation** | 9 files | 7 files | 16 files | ✅ Complete |
+| **Modal** | - | 3 files | 3 files | ✅ Mobile complete |
+| **Header** | - | 4 files | 4 files | ✅ Mobile complete |
+| **Feedback & Overlay** | 3 files | 2 files | 5 files | ✅ Complete |
+| **Other** | 2 files | 2 files | 4 files | ✅ Complete |
 
 ### 📈 **Progress Metrics**
 - **Primitive Tokens**: 3,140 (Complete) ✅
 - **Semantic Tokens**: 4,508 (Complete) ✅
-- **Component Token Files**: **42 files generated** ✅
-  - Web components: 35 files
-  - Mobile components: 7 files
-  - Button variants: 4 files (3 web + 1 mobile)
-  - Form components: 7 files (6 web + 1 mobile)
+- **Component Token Files**: **71 files generated (~41.8%)** ✅
+  - Web components: 37 files
+  - Mobile components: 34 files
+  - Core/Interactive: 11 files
+  - Form components: 12 files
   - Avatar system: 7 files
-  - Tag system: 5 files
-  - Navigation: 13 files (9 web + 4 mobile)
-  - Feedback: 2 files
-  - Icons: 2 files
+  - Tag system: 9 files
+  - Navigation: 16 files
+  - Modal: 3 files
+  - Header: 4 files
+  - Feedback & overlay: 5 files
+  - Other: 4 files
 
 ### 📋 **Detailed Status Reference**
 For complete component breakdown and detailed tracking, see: [📊 PROJECT_STATUS_TRACKER.md](./PROJECT_STATUS_TRACKER.md)

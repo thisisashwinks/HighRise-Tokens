@@ -1,0 +1,247 @@
+{
+  "$comment": "Mobile Popover Component Tokens",
+  "$description": "Component tokens for Mobile Popover component - a contextual tooltip/onboarding card with a directional arrow pointer. Used to highlight features or guide users through onboarding flows. Supports 4 alignment positions (Top, Bottom, Left, Right), 3 arrow placements (Start, Center, End), and 2 step modes (Default = Done only, Multiple = Previous + Next + step counter). Figma Reference: Node ID 576-5625",
+  "$component": {
+    "name": "Popover",
+    "description": "A mobile popover/onboarding tooltip component that displays a white card with a directional arrow pointer. Contains an optional icon, bold heading, body description text, and an optional footer with action buttons. Used for feature highlights, onboarding tours, and contextual guidance. Fixed width of 266px with layout adapting based on arrow alignment.",
+    "structure": "White rounded card (8px radius) with drop shadow containing: optional icon (36px), heading row with optional close (X) button, body text paragraph, and optional footer with step counter and/or action buttons. A directional arrow pointer attaches to one edge of the card, pointing toward the triggering element.",
+    "variants": {
+      "alignment": {
+        "top": "Arrow points downward from bottom edge of card — card sits above the target",
+        "bottom": "Arrow points upward from top edge of card — card sits below the target",
+        "left": "Arrow points rightward from right edge of card — card sits to the left of the target",
+        "right": "Arrow points leftward from left edge of card — card sits to the right of the target"
+      },
+      "arrow": {
+        "center": "Arrow centered on the aligned edge",
+        "start": "Arrow offset toward the start (left/top) of the aligned edge",
+        "end": "Arrow offset toward the end (right/bottom) of the aligned edge"
+      },
+      "steps": {
+        "default": "Single step — shows Done button only in footer",
+        "multiple": "Multi-step — shows step counter (e.g. 1 of 3) + Previous and Next buttons"
+      }
+    },
+    "usage": {
+      "contexts": "Feature highlights, onboarding tours, contextual tips, guided walkthroughs, product education flows",
+      "features": "Optional icon, optional close button, directional arrow with 12 position combinations, multi-step navigation with progress counter, single-step with Done action"
+    }
+  },
+  "popover": {
+    "container": {
+      "$comment": "Container tokens for the main popover card panel",
+      "width": {
+        "value": "266px",
+        "type": "dimension",
+        "description": "Mobile popover container width - 266px fixed (no size variants)"
+      },
+      "background": {
+        "color": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile popover container background - neutral/white - #ffffff"
+        }
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "Mobile popover container border radius - 8px fully rounded card"
+        }
+      },
+      "padding": {
+        "value": "{padding.4}",
+        "type": "dimension",
+        "description": "Mobile popover container padding - 16px all sides"
+      },
+      "gap": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "Mobile popover container gap between content sections (icon, heading, body, footer) - 8px"
+      },
+      "shadow": {
+        "value": "{boxShadow.outer.lg}",
+        "type": "boxShadow",
+        "description": "Mobile popover container shadow - shadow/lg - 0px 12px 16px -4px rgba(16,24,40,0.08), 0px 4px 6px -2px rgba(16,24,40,0.03)"
+      }
+    },
+    "arrow": {
+      "$comment": "Arrow pointer tokens - the directional triangle that points toward the trigger element. Width varies by alignment position and arrow placement.",
+      "height": {
+        "value": "{size.1[5]}",
+        "type": "dimension",
+        "description": "Mobile popover arrow height - 6px (consistent across all positions)"
+      },
+      "width": {
+        "center": {
+          "value": "{size.4}",
+          "type": "dimension",
+          "description": "Mobile popover arrow width for center placement (top/bottom center) - 16px"
+        },
+        "offset": {
+          "value": "{size.9}",
+          "type": "dimension",
+          "description": "Mobile popover arrow width for start/end placement on top/bottom edges - 36px"
+        },
+        "side": {
+          "value": "{size.8}",
+          "type": "dimension",
+          "description": "Mobile popover arrow width for start/end placement on left/right edges - 32px"
+        }
+      },
+      "color": {
+        "value": "{color.background.neutral.base}",
+        "type": "color",
+        "description": "Mobile popover arrow fill color - white, matches container background - #ffffff"
+      }
+    },
+    "content": {
+      "$comment": "Content area tokens - header row, heading text, and body description",
+      "header": {
+        "$comment": "Header row containing optional icon + heading text on the left, and optional close button on the right",
+        "gap": {
+          "value": "{size.2}",
+          "type": "dimension",
+          "description": "Mobile popover header gap between left content group and close button - 8px"
+        },
+        "icon": {
+          "size": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Mobile popover header icon container size - 36px (square)"
+          }
+        },
+        "close": {
+          "size": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Mobile popover header close (X) button container size - 36px (square)"
+          }
+        }
+      },
+      "heading": {
+        "$comment": "Bold title text at the top of the popover content",
+        "typography": {
+          "value": "{font.heading.bold.h6}",
+          "type": "typography",
+          "description": "Mobile popover heading typography - 20px Bold, 30px line-height (font/size/4xl, font/weight/bold)"
+        },
+        "color": {
+          "value": "{color.text.neutral.title.1}",
+          "type": "color",
+          "description": "Mobile popover heading text color - neutral/gray-900 - #101828"
+        }
+      },
+      "body": {
+        "$comment": "Description paragraph below the heading",
+        "typography": {
+          "value": "{font.body.regular.2xl}",
+          "type": "typography",
+          "description": "Mobile popover body text typography - 16px Regular, 24px line-height (font/size/2xl, font/weight/regular)"
+        },
+        "color": {
+          "value": "{color.text.neutral.subtitle.1}",
+          "type": "color",
+          "description": "Mobile popover body text color - neutral/gray-500 - #667085"
+        }
+      }
+    },
+    "footer": {
+      "$comment": "Footer action area - conditionally shown. Default steps: Done button only. Multiple steps: step counter + Previous + Next buttons.",
+      "gap": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "Mobile popover footer gap between step counter and button group - 8px"
+      },
+      "steps": {
+        "$comment": "Step counter text shown in multiple-step mode (e.g. '1 of 3')",
+        "typography": {
+          "value": "{font.body.semibold.xl}",
+          "type": "typography",
+          "description": "Mobile popover steps counter typography - 15px Semibold, 20px line-height (font/size/xl, font/weight/semibold)"
+        },
+        "color": {
+          "value": "{color.text.neutral.title.1}",
+          "type": "color",
+          "description": "Mobile popover steps counter text color - neutral/gray-900 - #101828"
+        }
+      },
+      "button": {
+        "$comment": "Action button tokens shared across primary (Next/Done) and secondary (Previous) buttons in the popover footer. Buttons use a neutral gray color scheme specific to this component.",
+        "padding": {
+          "horizontal": {
+            "value": "{padding.3[5]}",
+            "type": "dimension",
+            "description": "Mobile popover footer button horizontal padding - 14px"
+          },
+          "vertical": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Mobile popover footer button vertical padding - 8px"
+          }
+        },
+        "border": {
+          "radius": {
+            "value": "{border.radius.md}",
+            "type": "dimension",
+            "description": "Mobile popover footer button border radius - 8px"
+          }
+        },
+        "shadow": {
+          "value": "{boxShadow.outer.xs}",
+          "type": "boxShadow",
+          "description": "Mobile popover footer button shadow - shadow/xs - 0px 1px 2px rgba(16,24,40,0.05)"
+        },
+        "typography": {
+          "value": "{font.body.semibold.base}",
+          "type": "typography",
+          "description": "Mobile popover footer button typography - 14px Semibold, 20px line-height (font/size/lg, font/weight/semibold)"
+        },
+        "primary": {
+          "$comment": "Primary action button - Next (multiple steps) or Done (default step). Uses neutral gray/600 instead of brand primary — specific to popover component.",
+          "background": {
+            "value": "{color.background.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile popover primary button background - neutral/gray-600 - #475467"
+          },
+          "border": {
+            "color": {
+              "value": "{color.border.neutral.moderate.2}",
+              "type": "color",
+              "description": "Mobile popover primary button border color - neutral/gray-600 - #475467"
+            }
+          },
+          "text": {
+            "color": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile popover primary button text color - neutral/white - #ffffff"
+            }
+          }
+        },
+        "secondary": {
+          "$comment": "Secondary action button - Previous (multiple steps only). White background with gray border.",
+          "background": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Mobile popover secondary button background - neutral/white - #ffffff"
+          },
+          "border": {
+            "color": {
+              "value": "{color.border.neutral.moderate.0}",
+              "type": "color",
+              "description": "Mobile popover secondary button border color - neutral/gray-300 - #d0d5dd"
+            }
+          },
+          "text": {
+            "color": {
+              "value": "{color.text.neutral.body.1}",
+              "type": "color",
+              "description": "Mobile popover secondary button text color - neutral/gray-700 - #344054"
+            }
+          }
+        }
+      }
+    }
+  }
+}

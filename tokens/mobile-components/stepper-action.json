@@ -1,0 +1,67 @@
+{
+  "$comment": "Mobile Stepper Action Component Tokens",
+  "$description": "Component tokens for Mobile Stepper Action component - a circular icon button used as the increment/decrement control within an Input Stepper. Supports 2 types (Decrease = minus icon, Increase = plus icon) and 2 states (Default, Disabled). Figma Reference: Node ID 576-15109",
+  "$component": {
+    "name": "Stepper Action",
+    "description": "A standalone circular icon button (48px) rendered as either a minus (Decrease) or plus (Increase) control. Used as a building block inside the Input Stepper component. The container background is always gray/100 regardless of state; the icon color changes to indicate enabled vs disabled status.",
+    "structure": "Circular container (48px × 48px, border-radius: 50%) with a centered icon (32px × 32px). No border. No shadow.",
+    "variants": {
+      "type": {
+        "decrease": "Minus icon — subtracts from the stepper value",
+        "increase": "Plus icon — adds to the stepper value"
+      },
+      "state": {
+        "default": "Active/enabled — icon renders in gray/600",
+        "disabled": "Inactive — icon renders in gray/300 (muted)"
+      }
+    },
+    "usage": {
+      "contexts": "Always used inside an Input Stepper component. Not intended for standalone use.",
+      "features": "Single icon size (32px), circular container (48px), 2 type variants, 2 states"
+    }
+  },
+  "stepper-action": {
+    "container": {
+      "$comment": "Circular container for the stepper action button",
+      "size": {
+        "value": "{size.12}",
+        "type": "dimension",
+        "description": "Mobile stepper action container size - 48px (width and height, square — rendered as circle via border-radius: full)"
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.full}",
+          "type": "dimension",
+          "description": "Mobile stepper action container border radius - fully circular (50% / pill)"
+        }
+      },
+      "background": {
+        "color": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "description": "Mobile stepper action container background - gray/100 - #f2f4f7 (same for both Default and Disabled states)"
+        }
+      }
+    },
+    "icon": {
+      "$comment": "Icon rendered inside the circular container - minus (decrease) or plus (increase)",
+      "size": {
+        "value": "{size.8}",
+        "type": "dimension",
+        "description": "Mobile stepper action icon container size - 32px"
+      },
+      "color": {
+        "default": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile stepper action icon color in default/enabled state - gray/600 - #475467"
+        },
+        "disabled": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile stepper action icon color in disabled state - gray/300 - #d0d5dd (muted to indicate inactivity)"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,788 @@
+{
+  "$comment": "Mobile Alert Component Tokens",
+  "$description": "Component tokens for Mobile Alert component - a contextual notification banner that communicates status, warnings, errors, or feature updates. Supports 5 color variants (Primary, Gray, Error, Warning, Success), 2 emphasis levels (Medium = light background with colored text, High = dark saturated background with white text), 2 layout modes (card = full block, inline = compact row), and 2 action directions (Below = actions stacked below text, Right = actions beside text). Figma Reference: Node ID 429-10491",
+  "$component": {
+    "name": "Alert",
+    "description": "A mobile alert/notification component used to communicate important information, status updates, warnings, or errors. Features a left semantic icon, heading and description text, an optional dismiss button, and optional action buttons (filled primary + outline secondary). Adjusts layout and typography between card (full-width block) and inline (compact row) display modes.",
+    "structure": "Horizontal flex container with optional semantic icon (20px), flex content column (heading + supporting text + optional actions), and optional close/dismiss button. Card mode uses 8px gap; inline mode uses 4px gap. Shadow and 8px rounded corners apply to all variants.",
+    "variants": {
+      "color": {
+        "primary": "Brand blue — feature announcements and primary informational alerts",
+        "gray": "Neutral gray — general information, secondary context, or subtle notices",
+        "error": "Error red — critical issues, failures, or destructive action confirmations",
+        "warning": "Warning orange — cautionary messages, potential issues, degraded states",
+        "success": "Success green — completed actions, confirmations, positive outcomes"
+      },
+      "emphasis": {
+        "medium": "Light background with colored text — subtle, non-intrusive. Default emphasis.",
+        "high": "Dark/saturated background with white text — prominent, attention-demanding"
+      },
+      "layout": {
+        "card": "Full-width block layout — icon + stacked content + optional dismiss. Standard alert treatment.",
+        "inline": "Compact row layout — tighter gaps, smaller typography, 28px buttons. Used inside dense UIs."
+      },
+      "actionDirection": {
+        "below": "Action buttons render below the heading and supporting text",
+        "right": "Action buttons render inline to the right of text content"
+      }
+    },
+    "usage": {
+      "contexts": "Mobile app notifications, form validation feedback, system status messages, onboarding notices, feature announcements, destructive action warnings",
+      "features": "5 semantic color variants, 2 emphasis levels, optional icon, optional dismiss button, optional Learn More link, optional action buttons (filled + outline), card and inline layout modes"
+    }
+  },
+  "alert": {
+    "container": {
+      "$comment": "Outer container tokens — shared across all color variants and emphasis levels",
+      "width": {
+        "value": "361px",
+        "type": "dimension",
+        "description": "Mobile alert container width - 361px fixed"
+      },
+      "padding": {
+        "value": "{padding.2}",
+        "type": "dimension",
+        "description": "Mobile alert container padding - 8px all sides"
+      },
+      "gap": {
+        "card": {
+          "value": "{size.2}",
+          "type": "dimension",
+          "description": "Mobile alert card layout gap between icon, content area, and close button - 8px"
+        },
+        "inline": {
+          "value": "{size.1}",
+          "type": "dimension",
+          "description": "Mobile alert inline layout gap between icon, content area, and close button - 4px (tighter)"
+        }
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "Mobile alert container border radius - 8px"
+        }
+      },
+      "shadow": {
+        "value": "{boxShadow.outer.xs}",
+        "type": "boxShadow",
+        "description": "Mobile alert container shadow - shadow/xs - 0px 1px 2px rgba(16,24,40,0.06)"
+      }
+    },
+    "icon": {
+      "$comment": "Left semantic icon — represents the alert type (info, error, warning, success)",
+      "size": {
+        "value": "{size.5}",
+        "type": "dimension",
+        "description": "Mobile alert semantic icon size - 20px (square)"
+      }
+    },
+    "content": {
+      "$comment": "Content area — heading row and supporting text paragraph",
+      "gap": {
+        "value": "{size.0[5]}",
+        "type": "dimension",
+        "description": "Mobile alert gap between heading and supporting text - 2px"
+      }
+    },
+    "typography": {
+      "$comment": "Typography tokens vary between card (larger) and inline (smaller) layout modes",
+      "heading": {
+        "card": {
+          "value": "{font.body.semibold.base}",
+          "type": "typography",
+          "description": "Mobile alert heading typography for card layout - 14px Semibold, 20px line-height (font/size/lg, font/weight/semibold)"
+        },
+        "inline": {
+          "value": "{font.body.medium.md}",
+          "type": "typography",
+          "description": "Mobile alert heading typography for inline layout - 13px Medium, 18px line-height (font/size/md, font/weight/medium)"
+        }
+      },
+      "supporting-text": {
+        "card": {
+          "value": "{font.body.regular.md}",
+          "type": "typography",
+          "description": "Mobile alert supporting text typography for card layout - 13px Regular, 18px line-height (font/size/md, font/weight/regular)"
+        },
+        "inline": {
+          "value": "{font.body.regular.sm}",
+          "type": "typography",
+          "description": "Mobile alert supporting text typography for inline layout - 12px Regular, 17px line-height (font/size/sm, font/weight/regular)"
+        }
+      }
+    },
+    "close": {
+      "$comment": "Dismiss/close button base tokens. Border and text colors are per-variant (see variants section).",
+      "background": {
+        "value": "{color.background.neutral.base}",
+        "type": "color",
+        "description": "Mobile alert close button background - white - #ffffff (consistent across all variants)"
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "Mobile alert close button border radius - 8px"
+        },
+        "width": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile alert close button border width - 1px"
+        }
+      },
+      "shadow": {
+        "value": "{boxShadow.outer.xs}",
+        "type": "boxShadow",
+        "description": "Mobile alert close button shadow - shadow/xs - 0px 1px 2px rgba(16,24,40,0.05)"
+      },
+      "typography": {
+        "value": "{font.body.semibold.base}",
+        "type": "typography",
+        "description": "Mobile alert close/dismiss button label typography - 14px Semibold, 20px line-height"
+      }
+    },
+    "actions": {
+      "$comment": "Action button area tokens — separate sizes for card (below) and inline (right) layouts",
+      "gap": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "Mobile alert gap between action buttons - 8px"
+      },
+      "button": {
+        "card": {
+          "$comment": "Card layout action buttons (actionDirection=Below) — standard 36px height",
+          "height": {
+            "value": "{size.9}",
+            "type": "dimension",
+            "description": "Mobile alert card action button height - 36px"
+          },
+          "padding": {
+            "horizontal": {
+              "value": "{padding.3[5]}",
+              "type": "dimension",
+              "description": "Mobile alert card action button horizontal padding - 14px"
+            },
+            "vertical": {
+              "value": "{padding.2}",
+              "type": "dimension",
+              "description": "Mobile alert card action button vertical padding - 8px"
+            }
+          },
+          "gap": {
+            "value": "{size.2}",
+            "type": "dimension",
+            "description": "Mobile alert card action button internal gap (between icon and label) - 8px"
+          },
+          "border": {
+            "radius": {
+              "value": "{border.radius.md}",
+              "type": "dimension",
+              "description": "Mobile alert card action button border radius - 8px"
+            }
+          },
+          "typography": {
+            "value": "{font.body.semibold.base}",
+            "type": "typography",
+            "description": "Mobile alert card action button typography - 14px Semibold, 20px line-height"
+          }
+        },
+        "inline": {
+          "$comment": "Inline layout action buttons (actionDirection=Right) — compact 28px height",
+          "height": {
+            "value": "{size.7}",
+            "type": "dimension",
+            "description": "Mobile alert inline action button height - 28px"
+          },
+          "padding": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Mobile alert inline action button padding - 8px all sides"
+          },
+          "gap": {
+            "value": "{size.1[5]}",
+            "type": "dimension",
+            "description": "Mobile alert inline action button internal gap (between icon and label) - 6px"
+          },
+          "border": {
+            "radius": {
+              "value": "{border.radius.xs}",
+              "type": "dimension",
+              "description": "Mobile alert inline action button border radius - 4px (tighter for compact layout)"
+            }
+          },
+          "typography": {
+            "value": "{font.body.semibold.sm}",
+            "type": "typography",
+            "description": "Mobile alert inline action button typography - 12px Semibold, 17px line-height"
+          }
+        }
+      }
+    },
+    "variants": {
+      "$comment": "Per-color-variant tokens. Each variant covers medium/high emphasis container backgrounds, text/icon colors, and action button color pairs (filled = primary action, outline = secondary action). Raw hex values used for semantic color families.",
+      "primary": {
+        "$comment": "Primary (blue) variant — used for feature announcements and informational alerts",
+        "medium": {
+          "$comment": "Light background, blue text — subtle informational treatment",
+          "container": {
+            "background": {
+              "value": "#f5f8ff",
+              "type": "color",
+              "description": "Mobile alert primary medium container background - primary/blue-25 - #f5f8ff"
+            }
+          },
+          "text": {
+            "color": {
+              "value": "#004eeb",
+              "type": "color",
+              "description": "Mobile alert primary medium heading and supporting text color - primary/blue-700 - #004eeb"
+            }
+          },
+          "icon": {
+            "color": {
+              "value": "#004eeb",
+              "type": "color",
+              "description": "Mobile alert primary medium semantic icon color - primary/blue-700 - #004eeb"
+            }
+          },
+          "actions": {
+            "filled": {
+              "background": {
+                "value": "#eff4ff",
+                "type": "color",
+                "description": "Mobile alert primary medium filled action button background - primary/blue-50 - #eff4ff"
+              },
+              "border": {
+                "color": {
+                  "value": "#eff4ff",
+                  "type": "color",
+                  "description": "Mobile alert primary medium filled action button border - primary/blue-50 - #eff4ff (matches background)"
+                }
+              },
+              "text": {
+                "color": {
+                  "value": "#004eeb",
+                  "type": "color",
+                  "description": "Mobile alert primary medium filled action button text - primary/blue-700 - #004eeb"
+                }
+              }
+            },
+            "outline": {
+              "background": {
+                "value": "{color.background.neutral.base}",
+                "type": "color",
+                "description": "Mobile alert primary medium outline action button background - white - #ffffff"
+              },
+              "border": {
+                "color": {
+                  "value": "#84adff",
+                  "type": "color",
+                  "description": "Mobile alert primary medium outline action button border - primary/blue-300 - #84adff"
+                }
+              },
+              "text": {
+                "color": {
+                  "value": "#004eeb",
+                  "type": "color",
+                  "description": "Mobile alert primary medium outline action button text - primary/blue-700 - #004eeb"
+                }
+              }
+            }
+          },
+          "close": {
+            "border": {
+              "color": {
+                "value": "#84adff",
+                "type": "color",
+                "description": "Mobile alert primary medium close/dismiss button border - primary/blue-300 - #84adff"
+              }
+            },
+            "text": {
+              "color": {
+                "value": "#004eeb",
+                "type": "color",
+                "description": "Mobile alert primary medium close/dismiss button text - primary/blue-700 - #004eeb"
+              }
+            }
+          }
+        },
+        "high": {
+          "$comment": "Dark blue background, white text — prominent, attention-demanding treatment",
+          "container": {
+            "background": {
+              "value": "#004eeb",
+              "type": "color",
+              "description": "Mobile alert primary high container background - primary/blue-700 - #004eeb"
+            }
+          },
+          "text": {
+            "color": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile alert primary high text color - white - #ffffff"
+            }
+          },
+          "icon": {
+            "color": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile alert primary high icon color - white - #ffffff"
+            }
+          }
+        }
+      },
+      "gray": {
+        "$comment": "Gray (neutral) variant — general information, secondary context, subtle notices",
+        "medium": {
+          "$comment": "Light gray background, dark gray text — low-priority informational treatment",
+          "container": {
+            "background": {
+              "value": "#fcfcfd",
+              "type": "color",
+              "description": "Mobile alert gray medium container background - neutral/gray-25 - #fcfcfd"
+            }
+          },
+          "text": {
+            "color": {
+              "value": "{color.text.neutral.body.1}",
+              "type": "color",
+              "description": "Mobile alert gray medium text color - neutral/gray-700 - #344054"
+            }
+          },
+          "icon": {
+            "color": {
+              "value": "{color.icon.neutral.body.1}",
+              "type": "color",
+              "description": "Mobile alert gray medium icon color - neutral/gray-700 - #344054"
+            }
+          },
+          "actions": {
+            "filled": {
+              "background": {
+                "value": "#f9fafb",
+                "type": "color",
+                "description": "Mobile alert gray medium filled action button background - neutral/gray-50 - #f9fafb"
+              },
+              "border": {
+                "color": {
+                  "value": "#f9fafb",
+                  "type": "color",
+                  "description": "Mobile alert gray medium filled action button border - neutral/gray-50 - #f9fafb (matches background)"
+                }
+              },
+              "text": {
+                "color": {
+                  "value": "{color.text.neutral.body.1}",
+                  "type": "color",
+                  "description": "Mobile alert gray medium filled action button text - neutral/gray-700 - #344054"
+                }
+              }
+            },
+            "outline": {
+              "background": {
+                "value": "{color.background.neutral.base}",
+                "type": "color",
+                "description": "Mobile alert gray medium outline action button background - white - #ffffff"
+              },
+              "border": {
+                "color": {
+                  "value": "{color.border.neutral.moderate.0}",
+                  "type": "color",
+                  "description": "Mobile alert gray medium outline action button border - neutral/gray-300 - #d0d5dd"
+                }
+              },
+              "text": {
+                "color": {
+                  "value": "{color.text.neutral.body.1}",
+                  "type": "color",
+                  "description": "Mobile alert gray medium outline action button text - neutral/gray-700 - #344054"
+                }
+              }
+            }
+          },
+          "close": {
+            "border": {
+              "color": {
+                "value": "{color.border.neutral.moderate.0}",
+                "type": "color",
+                "description": "Mobile alert gray medium close/dismiss button border - neutral/gray-300 - #d0d5dd"
+              }
+            },
+            "text": {
+              "color": {
+                "value": "{color.text.neutral.body.1}",
+                "type": "color",
+                "description": "Mobile alert gray medium close/dismiss button text - neutral/gray-700 - #344054"
+              }
+            }
+          }
+        },
+        "high": {
+          "$comment": "Dark gray background, white text — neutral but prominent",
+          "container": {
+            "background": {
+              "value": "{color.background.neutral.moderate.1}",
+              "type": "color",
+              "description": "Mobile alert gray high container background - neutral/gray-500 - #667085"
+            }
+          },
+          "text": {
+            "color": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile alert gray high text color - white - #ffffff"
+            }
+          },
+          "icon": {
+            "color": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile alert gray high icon color - white - #ffffff"
+            }
+          }
+        }
+      },
+      "error": {
+        "$comment": "Error (red) variant — critical issues, failures, destructive actions. Note: inline medium background differs from card medium background (Figma design decision).",
+        "medium": {
+          "$comment": "Light background, red text — non-blocking error notification",
+          "container": {
+            "background": {
+              "card": {
+                "value": "#fffbfa",
+                "type": "color",
+                "description": "Mobile alert error medium container background (card layout) - secondary/error-25 - #fffbfa"
+              },
+              "inline": {
+                "value": "#fcfcfd",
+                "type": "color",
+                "description": "Mobile alert error medium container background (inline layout) - neutral/gray-modern-25 - #fcfcfd (Figma uses neutral bg for inline error medium)"
+              }
+            }
+          },
+          "text": {
+            "color": {
+              "value": "#b42318",
+              "type": "color",
+              "description": "Mobile alert error medium heading and supporting text color - secondary/error-700 - #b42318"
+            }
+          },
+          "icon": {
+            "color": {
+              "value": "#b42318",
+              "type": "color",
+              "description": "Mobile alert error medium semantic icon color - secondary/error-700 - #b42318"
+            }
+          },
+          "actions": {
+            "filled": {
+              "background": {
+                "value": "#fef3f2",
+                "type": "color",
+                "description": "Mobile alert error medium filled action button background - secondary/error-50 - #fef3f2"
+              },
+              "border": {
+                "color": {
+                  "value": "#fef3f2",
+                  "type": "color",
+                  "description": "Mobile alert error medium filled action button border - secondary/error-50 - #fef3f2 (matches background)"
+                }
+              },
+              "text": {
+                "color": {
+                  "value": "#b42318",
+                  "type": "color",
+                  "description": "Mobile alert error medium filled action button text - secondary/error-700 - #b42318"
+                }
+              }
+            },
+            "outline": {
+              "background": {
+                "value": "{color.background.neutral.base}",
+                "type": "color",
+                "description": "Mobile alert error medium outline action button background - white - #ffffff"
+              },
+              "border": {
+                "color": {
+                  "value": "#fda29b",
+                  "type": "color",
+                  "description": "Mobile alert error medium outline action button border - secondary/error-300 - #fda29b"
+                }
+              },
+              "text": {
+                "color": {
+                  "value": "{color.text.neutral.body.1}",
+                  "type": "color",
+                  "description": "Mobile alert error medium outline action button text - neutral/gray-700 - #344054 (Figma uses neutral text on outline, not error color)"
+                }
+              }
+            }
+          },
+          "close": {
+            "border": {
+              "color": {
+                "value": "#fda29b",
+                "type": "color",
+                "description": "Mobile alert error medium close/dismiss button border - secondary/error-300 - #fda29b"
+              }
+            },
+            "text": {
+              "color": {
+                "value": "#b42318",
+                "type": "color",
+                "description": "Mobile alert error medium close/dismiss button text - secondary/error-700 - #b42318"
+              }
+            }
+          }
+        },
+        "high": {
+          "$comment": "Dark red background, white text — critical, blocking error treatment",
+          "container": {
+            "background": {
+              "value": "#b42318",
+              "type": "color",
+              "description": "Mobile alert error high container background - secondary/error-700 - #b42318"
+            }
+          },
+          "text": {
+            "color": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile alert error high text color - white - #ffffff"
+            }
+          },
+          "icon": {
+            "color": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile alert error high icon color - white - #ffffff"
+            }
+          }
+        }
+      },
+      "warning": {
+        "$comment": "Warning (orange) variant — cautionary messages, potential issues, degraded states",
+        "medium": {
+          "$comment": "Light orange background, dark orange text — soft cautionary treatment",
+          "container": {
+            "background": {
+              "value": "#fffcf5",
+              "type": "color",
+              "description": "Mobile alert warning medium container background - secondary/warning-25 - #fffcf5"
+            }
+          },
+          "text": {
+            "color": {
+              "value": "#b54708",
+              "type": "color",
+              "description": "Mobile alert warning medium text color - secondary/warning-700 - #b54708"
+            }
+          },
+          "icon": {
+            "color": {
+              "value": "#b54708",
+              "type": "color",
+              "description": "Mobile alert warning medium icon color - secondary/warning-700 - #b54708"
+            }
+          },
+          "actions": {
+            "filled": {
+              "background": {
+                "value": "#fffaeb",
+                "type": "color",
+                "description": "Mobile alert warning medium filled action button background - secondary/warning-50 - #fffaeb"
+              },
+              "border": {
+                "color": {
+                  "value": "#fffaeb",
+                  "type": "color",
+                  "description": "Mobile alert warning medium filled action button border - secondary/warning-50 - #fffaeb (matches background)"
+                }
+              },
+              "text": {
+                "color": {
+                  "value": "#b54708",
+                  "type": "color",
+                  "description": "Mobile alert warning medium filled action button text - secondary/warning-700 - #b54708"
+                }
+              }
+            },
+            "outline": {
+              "background": {
+                "value": "{color.background.neutral.base}",
+                "type": "color",
+                "description": "Mobile alert warning medium outline action button background - white - #ffffff"
+              },
+              "border": {
+                "color": {
+                  "value": "#fec84b",
+                  "type": "color",
+                  "description": "Mobile alert warning medium outline action button border - secondary/warning-300 - #fec84b"
+                }
+              },
+              "text": {
+                "color": {
+                  "value": "#b54708",
+                  "type": "color",
+                  "description": "Mobile alert warning medium outline action button text - secondary/warning-700 - #b54708"
+                }
+              }
+            }
+          },
+          "close": {
+            "border": {
+              "color": {
+                "value": "#fec84b",
+                "type": "color",
+                "description": "Mobile alert warning medium close/dismiss button border - secondary/warning-300 - #fec84b"
+              }
+            },
+            "text": {
+              "color": {
+                "value": "#b54708",
+                "type": "color",
+                "description": "Mobile alert warning medium close/dismiss button text - secondary/warning-700 - #b54708"
+              }
+            }
+          }
+        },
+        "high": {
+          "$comment": "Dark orange background, white text — urgent warning treatment",
+          "container": {
+            "background": {
+              "value": "#dc6803",
+              "type": "color",
+              "description": "Mobile alert warning high container background - secondary/warning-600 - #dc6803"
+            }
+          },
+          "text": {
+            "color": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile alert warning high text color - white - #ffffff"
+            }
+          },
+          "icon": {
+            "color": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile alert warning high icon color - white - #ffffff"
+            }
+          }
+        }
+      },
+      "success": {
+        "$comment": "Success (green) variant — completed actions, confirmations, positive outcomes",
+        "medium": {
+          "$comment": "Light green background, dark green text — positive confirmation treatment",
+          "container": {
+            "background": {
+              "value": "#f6fef9",
+              "type": "color",
+              "description": "Mobile alert success medium container background - secondary/success-25 - #f6fef9"
+            }
+          },
+          "text": {
+            "color": {
+              "value": "#027a48",
+              "type": "color",
+              "description": "Mobile alert success medium text color - secondary/success-700 - #027a48"
+            }
+          },
+          "icon": {
+            "color": {
+              "value": "#027a48",
+              "type": "color",
+              "description": "Mobile alert success medium icon color - secondary/success-700 - #027a48"
+            }
+          },
+          "actions": {
+            "filled": {
+              "background": {
+                "value": "#d1fadf",
+                "type": "color",
+                "description": "Mobile alert success medium filled action button background - secondary/success-50 - #d1fadf"
+              },
+              "border": {
+                "color": {
+                  "value": "#d1fadf",
+                  "type": "color",
+                  "description": "Mobile alert success medium filled action button border - secondary/success-50 - #d1fadf (matches background)"
+                }
+              },
+              "text": {
+                "color": {
+                  "value": "#027a48",
+                  "type": "color",
+                  "description": "Mobile alert success medium filled action button text - secondary/success-700 - #027a48"
+                }
+              }
+            },
+            "outline": {
+              "background": {
+                "value": "{color.background.neutral.base}",
+                "type": "color",
+                "description": "Mobile alert success medium outline action button background - white - #ffffff"
+              },
+              "border": {
+                "color": {
+                  "value": "{color.border.neutral.moderate.0}",
+                  "type": "color",
+                  "description": "Mobile alert success medium outline action button border - neutral/gray-300 - #d0d5dd (success/300 not defined; uses neutral border)"
+                }
+              },
+              "text": {
+                "color": {
+                  "value": "#027a48",
+                  "type": "color",
+                  "description": "Mobile alert success medium outline action button text - secondary/success-700 - #027a48"
+                }
+              }
+            }
+          },
+          "close": {
+            "border": {
+              "color": {
+                "value": "{color.border.neutral.moderate.0}",
+                "type": "color",
+                "description": "Mobile alert success medium close/dismiss button border - neutral/gray-300 - #d0d5dd (success/300 not defined; uses neutral border)"
+              }
+            },
+            "text": {
+              "color": {
+                "value": "#027a48",
+                "type": "color",
+                "description": "Mobile alert success medium close/dismiss button text - secondary/success-700 - #027a48"
+              }
+            }
+          }
+        },
+        "high": {
+          "$comment": "Dark green background, white text — prominent success confirmation",
+          "container": {
+            "background": {
+              "value": "#039855",
+              "type": "color",
+              "description": "Mobile alert success high container background - secondary/success-600 - #039855"
+            }
+          },
+          "text": {
+            "color": {
+              "value": "{color.text.neutral.base}",
+              "type": "color",
+              "description": "Mobile alert success high text color - white - #ffffff"
+            }
+          },
+          "icon": {
+            "color": {
+              "value": "{color.icon.neutral.base}",
+              "type": "color",
+              "description": "Mobile alert success high icon color - white - #ffffff"
+            }
+          }
+        }
+      }
+    }
+  }
+}
