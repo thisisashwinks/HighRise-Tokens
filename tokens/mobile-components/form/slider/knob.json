@@ -1,0 +1,114 @@
+{
+  "$comment": "Mobile Knob Component Tokens",
+  "$description": "Component tokens for Mobile Knob — the draggable slider handle with optional icon overlay and Default/Disabled states. Extends Knob Container with state-dependent background color and an optional centered icon. iOS renders as a CSS pill; Android uses SVG image assets (one per state). Figma Reference: Node ID 359-20831",
+  "$component": {
+    "name": "Knob",
+    "description": "The interactive drag handle used in all Slider variants. Built on top of Knob Container — adds Default and Disabled states that change the background color, and supports an optional centered icon overlay (18px). In Default state the knob is white; in Disabled state it turns gray/600 (dark). Android uses separate SVG image assets for each state. The Knob carries a drop shadow on its outer wrapper (not on the inner pill element).",
+    "structure": "Outer positioned div (drop-shadow filter). Inner absolute div (the KnobContainer shape: pill/circle with border). Optional centered icon overlay (18px, absolute centered).",
+    "variants": {
+      "property1": {
+        "Default": "White background — active/interactive slider handle",
+        "Disabled": "Gray/600 background — non-interactive, slider is locked"
+      },
+      "property2": {
+        "iOS": "Pill shape (38×24px), CSS-rendered. Shadow applied as drop-shadow filter on outer wrapper.",
+        "Android": "Circle shape (24×24px), SVG image asset per state."
+      },
+      "icon": "boolean — when true, a placeholder icon (18px) is centered inside the knob"
+    },
+    "subComponents": {
+      "knobContainer": "knob-container.json — the base shape, border, and shadow tokens"
+    },
+    "usage": {
+      "contexts": "Used inside Slider (Simple, Range, Segment types) and Icon Knob. Not used standalone.",
+      "features": "2 states, 2 platforms, optional icon overlay, pill (iOS) or circle (Android) shape, drop shadow"
+    }
+  },
+  "knob": {
+    "shadow": {
+      "value": "{shadow.md}",
+      "type": "shadow",
+      "description": "Mobile knob outer wrapper drop shadow - shadow/md: 0px 2px 4px -2px rgba(16,24,40,0.06), 0px 4px 8px -2px rgba(16,24,40,0.10) (applied as CSS drop-shadow filter on the outer knob wrapper)"
+    },
+    "border": {
+      "width": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Mobile knob border width - 1px solid (consistent across both states for iOS)"
+      },
+      "color": {
+        "value": "{color.neutral.gray.400}",
+        "type": "color",
+        "description": "Mobile knob border color - gray/400 - #98a2b3 (same for both Default and Disabled states)"
+      }
+    },
+    "border-radius": {
+      "ios": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile knob iOS border radius - fully rounded pill (rounded-[100px] in Figma; same as Knob Container)"
+      },
+      "android": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile knob Android border radius - full circle (rounded-[300px] in Figma; applied to the SVG container)"
+      }
+    },
+    "size": {
+      "ios": {
+        "width": {
+          "value": "38px",
+          "type": "dimension",
+          "description": "Mobile knob iOS width - 38px"
+        },
+        "height": {
+          "value": "{size.6}",
+          "type": "dimension",
+          "description": "Mobile knob iOS height - 24px"
+        }
+      },
+      "android": {
+        "value": "{size.6}",
+        "type": "dimension",
+        "description": "Mobile knob Android size - 24×24px (square bounding box)"
+      }
+    },
+    "color": {
+      "$comment": "Background color keyed by state. Border color is gray/400 for both states.",
+      "default": {
+        "background": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "Mobile knob Default state background color - white (active/interactive handle)"
+        }
+      },
+      "disabled": {
+        "background": {
+          "value": "{color.neutral.gray.600}",
+          "type": "color",
+          "description": "Mobile knob Disabled state background color - gray/600 - #475467 (iOS only; Android uses a separate SVG asset for the disabled state)"
+        }
+      }
+    },
+    "icon": {
+      "$comment": "Optional placeholder icon centered inside the knob. Not shown in all Slider variants — presence controlled by the 'icon' prop.",
+      "size": {
+        "value": "18px",
+        "type": "dimension",
+        "description": "Mobile knob icon size - 18px (centered inside the 24px or 38×24px knob shell)"
+      },
+      "color": {
+        "default": {
+          "value": "{color.neutral.gray.700}",
+          "type": "color",
+          "description": "Mobile knob icon color for Default state - gray/700 - #344054 (icon shown on white background)"
+        },
+        "disabled": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "Mobile knob icon color for Disabled state - white (icon shown on gray/600 dark background)"
+        }
+      }
+    }
+  }
+}

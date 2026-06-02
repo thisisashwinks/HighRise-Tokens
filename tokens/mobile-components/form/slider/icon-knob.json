@@ -1,0 +1,114 @@
+{
+  "$comment": "Mobile Icon Knob Component Tokens",
+  "$description": "Component tokens for Mobile Icon Knob — a Knob variant where the icon is always visible and the component is icon-forward (not optional). Used in Icon slider mode (Placeholder=Icon). Same shape and state colors as Knob but adds mandatory icon padding and always shows the icon. Figma Reference: Node ID 359-21146",
+  "$component": {
+    "name": "Icon Knob",
+    "description": "A slider drag handle that permanently displays a centered icon. Unlike the standard Knob (where the icon is optional), the Icon Knob always shows the icon as its primary visual element. The icon is centered with 10px padding applied to the container; flex centering handles the actual icon position regardless of the padding math (the effective icon padding is 10px horizontal, ~3px vertical within the 24px tall container). Supports Default (white) and Disabled (gray/600) states across iOS (pill) and Android (circle) platforms.",
+    "structure": "Single div (pill/circle shape with border and drop shadow). Icon (18px) centered absolutely inside using flex layout with 10px padding declaration.",
+    "variants": {
+      "state": {
+        "Default": "White background — active/interactive handle with icon",
+        "Disabled": "Gray/600 background — non-interactive, icon appears muted (white on dark)"
+      },
+      "platform": {
+        "iOS": "Pill shape (38×24px), CSS-rendered, rounded-[100px]",
+        "Android": "Circle shape (24×24px), CSS-rendered, rounded-[300px] — unlike standard Knob, Icon Knob renders via CSS on both platforms"
+      }
+    },
+    "usage": {
+      "contexts": "Used inside Slider when Placeholder=Icon. Replaces the standard Knob when the design calls for an icon on the drag handle.",
+      "features": "Mandatory icon, 2 states, 2 platforms, same shadow and dimensions as Knob"
+    }
+  },
+  "icon-knob": {
+    "shadow": {
+      "value": "{shadow.md}",
+      "type": "shadow",
+      "description": "Mobile icon knob drop shadow - shadow/md: 0px 2px 4px -2px rgba(16,24,40,0.06), 0px 4px 8px -2px rgba(16,24,40,0.10)"
+    },
+    "border": {
+      "width": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Mobile icon knob border width - 1px solid (consistent across both states and platforms)"
+      },
+      "color": {
+        "value": "{color.neutral.gray.400}",
+        "type": "color",
+        "description": "Mobile icon knob border color - gray/400 - #98a2b3 (same for both Default and Disabled)"
+      }
+    },
+    "border-radius": {
+      "ios": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile icon knob iOS border radius - fully rounded pill (rounded-[100px] in Figma)"
+      },
+      "android": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile icon knob Android border radius - full circle (rounded-[300px] in Figma; CSS-rendered on Android unlike the standard Knob which uses SVG)"
+      }
+    },
+    "size": {
+      "ios": {
+        "width": {
+          "value": "38px",
+          "type": "dimension",
+          "description": "Mobile icon knob iOS width - 38px"
+        },
+        "height": {
+          "value": "{size.6}",
+          "type": "dimension",
+          "description": "Mobile icon knob iOS height - 24px"
+        }
+      },
+      "android": {
+        "value": "{size.6}",
+        "type": "dimension",
+        "description": "Mobile icon knob Android size - 24×24px"
+      }
+    },
+    "padding": {
+      "value": "10px",
+      "type": "dimension",
+      "description": "Mobile icon knob padding around icon - 10px (p-[10px] in Figma; works with flex centering — effective visual padding is 10px horizontal and ~3px vertical given the 24px container and 18px icon)"
+    },
+    "color": {
+      "default": {
+        "background": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "Mobile icon knob Default state background - white"
+        }
+      },
+      "disabled": {
+        "background": {
+          "value": "{color.neutral.gray.600}",
+          "type": "color",
+          "description": "Mobile icon knob Disabled state background - gray/600 - #475467 (dark background, icon appears in white)"
+        }
+      }
+    },
+    "icon": {
+      "$comment": "The icon is mandatory in Icon Knob — it is always shown regardless of state or platform.",
+      "size": {
+        "value": "18px",
+        "type": "dimension",
+        "description": "Mobile icon knob icon size - 18px (centered inside the knob shell using flex layout)"
+      },
+      "color": {
+        "default": {
+          "value": "{color.neutral.gray.700}",
+          "type": "color",
+          "description": "Mobile icon knob icon color for Default state - gray/700 - #344054 (icon on white background)"
+        },
+        "disabled": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "Mobile icon knob icon color for Disabled state - white (icon on gray/600 dark background)"
+        }
+      }
+    }
+  }
+}

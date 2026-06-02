@@ -1,0 +1,112 @@
+{
+  "$comment": "Mobile Progress Step Bar Component Tokens",
+  "$description": "Component tokens for Mobile Progress Step Bar — a small pill-shaped colored segment used as both a standalone status indicator and as the connector bar between step dots in a multi-step stepper. Supports 6 states: Upcoming (default gray), Completed (light blue), Current (brand blue with matching border), Error (red-light), Warning (yellow-light), and Disabled (white with gray border). Figma Reference: Node ID 364-4772",
+  "$component": {
+    "name": "Progress Step Bar",
+    "description": "A pill-shaped segment that communicates the state of a step connector or step status in a stepper flow. Used in two contexts: (1) as a standalone status chip (8px × 16px) for component documentation, and (2) as a flex connector bar (4px height) between step indicator dots inside the Single Step and Progress Step components. In the connector role, width stretches flex-1 horizontally or is fixed at 35.5px (then rotated -90°) in vertical orientation.",
+    "structure": "A single div with pill border-radius, background color, and optional border for Current and Disabled states. No internal children.",
+    "variants": {
+      "state": {
+        "Upcoming": "Default — gray/200 background, no border",
+        "Completed": "Light blue (primary/300) — indicates a finished step",
+        "Current": "Brand blue (primary/600) — active step connector; same color used for both background and border",
+        "Error": "Light red (error/300) — step failed or has an error",
+        "Warning": "Light yellow (warning/300) — step has a warning condition",
+        "Disabled": "White background with gray/300 border — step is not interactive"
+      }
+    },
+    "usage": {
+      "contexts": "Used as sub-component inside Single Step (connector bar between dots) and Progress Step (full stepper). Also displayed standalone for state documentation.",
+      "features": "6 semantic states, pill shape, dual-role sizing (standalone 8×16px / connector 4px × flexible)"
+    }
+  },
+  "progress-step-bar": {
+    "standalone": {
+      "$comment": "Dimensions for the standalone component as shown in the component sheet",
+      "height": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "Mobile progress step bar standalone height - 8px (reference component sheet size)"
+      },
+      "width": {
+        "value": "{size.4}",
+        "type": "dimension",
+        "description": "Mobile progress step bar standalone width - 16px (reference component sheet size)"
+      }
+    },
+    "connector": {
+      "$comment": "Dimensions when used as the horizontal or vertical connector bar between step dots inside Single Step / Progress Step",
+      "height": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "description": "Mobile progress step bar connector height - 4px (used when rendering the bar between step dots; thinner than standalone)"
+      },
+      "width": {
+        "vertical": {
+          "value": "35.5px",
+          "type": "dimension",
+          "description": "Mobile progress step bar connector fixed width for vertical orientation - 35.5px (bar is rendered at this width then rotated -90° to create the vertical connector between step dots)"
+        }
+      }
+    },
+    "border-radius": {
+      "value": "{border.radius.full}",
+      "type": "dimension",
+      "description": "Mobile progress step bar border radius - fully circular pill (rounded-[64px] in Figma)"
+    },
+    "border": {
+      "width": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Mobile progress step bar border width - 1px (only applied in Current and Disabled states)"
+      }
+    },
+    "color": {
+      "$comment": "Background and optional border colors keyed by state variant",
+      "upcoming": {
+        "value": "{color.background.neutral.subtle.2}",
+        "type": "color",
+        "description": "Mobile progress step bar color for Upcoming (default) state - gray/200 - #eaecf0 (unfilled/pending step connector)"
+      },
+      "completed": {
+        "value": "{color.primary.300}",
+        "type": "color",
+        "description": "Mobile progress step bar color for Completed state - primary/blue/300 - #84adff (finished step connector, lighter blue than active)"
+      },
+      "current": {
+        "background": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Mobile progress step bar background for Current state - primary/blue/600 - #155eef"
+        },
+        "border": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Mobile progress step bar border for Current state - primary/blue/600 - #155eef (same as background, creates a solid bordered pill effect)"
+        }
+      },
+      "error": {
+        "value": "{color.secondary.error.300}",
+        "type": "color",
+        "description": "Mobile progress step bar color for Error state - error/300 - #fda29b (light red indicating a failed step connector)"
+      },
+      "warning": {
+        "value": "{color.secondary.warning.300}",
+        "type": "color",
+        "description": "Mobile progress step bar color for Warning state - warning/300 - #fec84b (light yellow indicating a step with a warning)"
+      },
+      "disabled": {
+        "background": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "Mobile progress step bar background for Disabled state - white (step connector is inactive/non-interactive)"
+        },
+        "border": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "Mobile progress step bar border for Disabled state - gray/300 - #d0d5dd"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "$comment": "Mobile Single Step Component Tokens",
+  "$description": "Component tokens for Mobile Single Step — one step unit within a multi-step stepper. Each unit shows a circular step indicator dot (with a number or icon inside), a connector bar to the next step, and a text label (title + description). Supports 5 states: Next, Current, Completed, Error, Warning. Supports 2 orientations (Default horizontal / Vertical), 2 indicator modes (number / icon), and 2 container types (Default text label / List item). Figma Reference: Node ID 364-4779",
+  "$component": {
+    "name": "Single Step",
+    "description": "One step in a multi-step progress stepper. The component consists of: (1) an indicator dot showing the step's state via color and icon/number, (2) a connector bar (ProgressStepBar sub-component) that links this step to the next, and (3) a text label block with a bold title and a smaller description line. In Default (horizontal) orientation, the indicator, bar, and label are laid out in a row. In Vertical orientation, the indicator and bar stack vertically on the left with the label text on the right. A 'List item' container variant replaces the text label with a full ListItem row component.",
+    "structure": "Outer flex column (px-4px). Inner flex row: [optional vertical column: [indicator dot + connector bar]] + [label block: [title, description]] OR [List item component]. In Default orientation: [icon placeholder OR step dot] + [text label below] + [connector bar as sibling, flex-1].",
+    "variants": {
+      "state": {
+        "Next": "Upcoming/future step — white dot with gray/300 border, gray/400 number inside",
+        "Current": "Active step — primary/600 dot with matching border; title+description visible",
+        "Completed": "Finished step — primary/600 dot with check-circle icon",
+        "Error": "Failed step — error/100 dot with error/300 border, info icon",
+        "Warning": "Warning step — warning/100 dot with warning/300 border, warning icon; description text turns error/500 red"
+      },
+      "orientation": {
+        "Default": "Horizontal layout — step dot and bar in a row, label below",
+        "Vertical": "Vertical layout — step dot stacked above bar (both in left column), label text to the right"
+      },
+      "icon": {
+        "None": "Step dot shows a step number (e.g., '1', '2') in the center",
+        "True": "Step dot shows a contextual icon (placeholder icon for Current/Next, check for Completed, info for Error, warning for Warning)"
+      },
+      "container": {
+        "Default": "Label block shows title (bold) + description text",
+        "List item": "Label area replaced by a full ListItem row component (avatar, name, email)"
+      }
+    },
+    "subComponents": {
+      "progressStepBar": "progress-step-bar.json — the pill connector bar between step dots; see connector.height and connector.width.vertical"
+    },
+    "usage": {
+      "contexts": "Used as the repeating building block inside Progress Step. Can also be used standalone for custom stepper layouts.",
+      "features": "5 states, 2 orientations, number/icon modes, text or list-item container, full HighRise stepper pattern"
+    }
+  },
+  "single-step": {
+    "indicator": {
+      "$comment": "The circular dot that shows the step's state. Contains either a step number or a contextual icon.",
+      "size": {
+        "value": "{size.5}",
+        "type": "dimension",
+        "description": "Mobile single step indicator dot size - 20px (width and height, circular via border-radius full)"
+      },
+      "border-radius": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile single step indicator dot border radius - fully circular (rounded-[10px] in Figma)"
+      },
+      "border": {
+        "width": {
+          "value": "1px",
+          "type": "dimension",
+          "description": "Mobile single step indicator dot border width - 1px (Figma shows 0.714px — a scaling artifact at mobile density; renders as 1px)"
+        }
+      },
+      "icon-size": {
+        "value": "11.429px",
+        "type": "dimension",
+        "description": "Mobile single step indicator icon/status image size - 11.429px (57.14% of the 20px dot; used for check-circle, info, warning icons inside the dot — does not map to a standard icon token size)"
+      },
+      "color": {
+        "$comment": "Background and border colors for the indicator dot, keyed by state",
+        "next": {
+          "background": {
+            "value": "{color.neutral.white.base}",
+            "type": "color",
+            "description": "Mobile single step indicator background for Next (upcoming) state - white"
+          },
+          "border": {
+            "value": "{color.neutral.gray.300}",
+            "type": "color",
+            "description": "Mobile single step indicator border for Next state - gray/300 - #d0d5dd"
+          }
+        },
+        "current": {
+          "background": {
+            "value": "{color.primary.600}",
+            "type": "color",
+            "description": "Mobile single step indicator background for Current state - primary/blue/600 - #155eef"
+          },
+          "border": {
+            "value": "{color.primary.600}",
+            "type": "color",
+            "description": "Mobile single step indicator border for Current state - primary/blue/600 - #155eef (same as background)"
+          }
+        },
+        "completed": {
+          "background": {
+            "value": "{color.primary.600}",
+            "type": "color",
+            "description": "Mobile single step indicator background for Completed state - primary/blue/600 - #155eef"
+          },
+          "border": {
+            "value": "{color.primary.600}",
+            "type": "color",
+            "description": "Mobile single step indicator border for Completed state - primary/blue/600 - #155eef"
+          }
+        },
+        "error": {
+          "background": {
+            "value": "{color.secondary.error.100}",
+            "type": "color",
+            "description": "Mobile single step indicator background for Error state - error/100 - #fee4e2 (very light red tint)"
+          },
+          "border": {
+            "value": "{color.secondary.error.300}",
+            "type": "color",
+            "description": "Mobile single step indicator border for Error state - error/300 - #fda29b (medium red)"
+          }
+        },
+        "warning": {
+          "background": {
+            "value": "{color.secondary.warning.100}",
+            "type": "color",
+            "description": "Mobile single step indicator background for Warning state - warning/100 - #fef0c7 (very light yellow tint)"
+          },
+          "border": {
+            "value": "{color.secondary.warning.300}",
+            "type": "color",
+            "description": "Mobile single step indicator border for Warning state - warning/300 - #fec84b (medium yellow)"
+          }
+        }
+      },
+      "number": {
+        "$comment": "Step number text shown inside the dot when icon=None mode. Not shown for Completed state (shows check icon instead).",
+        "typography": {
+          "value": "{font.body.semibold.2xs}",
+          "type": "typography",
+          "description": "Mobile single step indicator number typography - 10px Semibold, 15px line-height (Figma shows 10.714px/14.286px — a mobile scaling artifact; {font.body.semibold.2xs} is the nearest token)"
+        },
+        "color": {
+          "next": {
+            "value": "{color.neutral.gray.400}",
+            "type": "color",
+            "description": "Mobile single step indicator number color for Next state - gray/400 - #98a2b3 (muted, indicating the step is not yet active)"
+          },
+          "active": {
+            "value": "{color.neutral.white.base}",
+            "type": "color",
+            "description": "Mobile single step indicator number color for Current state - white (legible against the primary/600 blue background)"
+          }
+        }
+      }
+    },
+    "title": {
+      "$comment": "Bold step title shown in the label block. Visible for Current, Error, and Warning states in Default orientation; for all states in Vertical orientation.",
+      "typography": {
+        "value": "{font.body.semibold.md}",
+        "type": "typography",
+        "description": "Mobile single step title typography - 13px Semibold, 18px line-height (font/size/md, font/weight/semibold, font/line-height/md)"
+      },
+      "color": {
+        "value": "{color.neutral.gray.900}",
+        "type": "color",
+        "description": "Mobile single step title text color - gray/900 - #101828 (darkest gray, high contrast heading)"
+      }
+    },
+    "description": {
+      "$comment": "Secondary step description line below the title. Color turns error/red in Error and Warning states.",
+      "typography": {
+        "value": "{font.body.medium.sm}",
+        "type": "typography",
+        "description": "Mobile single step description typography - 12px Medium, 17px line-height (font/size/sm, font/weight/medium, font/line-height/sm)"
+      },
+      "color": {
+        "default": {
+          "value": "{color.neutral.gray.500}",
+          "type": "color",
+          "description": "Mobile single step description text color (Next/Current/Completed states) - gray/500 - #667085"
+        },
+        "error": {
+          "value": "{color.secondary.error.500}",
+          "type": "color",
+          "description": "Mobile single step description text color (Error and Warning states) - error/500 - #f04438 (reinforces the problem state)"
+        }
+      }
+    },
+    "layout": {
+      "$comment": "Spacing and sizing for the step unit container and internal arrangement",
+      "padding": {
+        "horizontal": {
+          "value": "{size.1}",
+          "type": "dimension",
+          "description": "Mobile single step outer container horizontal padding - 4px (px-[4px] in Figma)"
+        }
+      },
+      "gap": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "Mobile single step gap between indicator dot (or icon) and the label block in Default (horizontal) orientation - 8px (gap-[8px])"
+      },
+      "label-gap": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "description": "Mobile single step gap between title and description within the label block - 4px (gap-[4px])"
+      },
+      "connector": {
+        "$comment": "The ProgressStepBar connector bar dimensions within the step layout",
+        "height": {
+          "value": "{size.1}",
+          "type": "dimension",
+          "description": "Mobile single step connector bar height - 4px (h-[4px] in Figma; thinner than the standalone ProgressStepBar which is 8px)"
+        },
+        "width": {
+          "default": {
+            "value": "flex-1",
+            "type": "string",
+            "description": "Mobile single step connector bar width in Default orientation - stretches to fill remaining row space between indicator and edge"
+          },
+          "vertical": {
+            "value": "35.5px",
+            "type": "dimension",
+            "description": "Mobile single step connector bar width in Vertical orientation - 35.5px fixed (bar is rendered horizontally at this width then rotated -90° to become the vertical connector between step dots)"
+          }
+        }
+      }
+    }
+  }
+}

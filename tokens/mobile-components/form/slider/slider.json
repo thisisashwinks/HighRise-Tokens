@@ -1,0 +1,173 @@
+{
+  "$comment": "Mobile Slider Component Tokens",
+  "$description": "Component tokens for Mobile Slider — a horizontal range input control with a draggable knob on a track. Supports 3 types (Simple, Range, Segment), 5 states (Default, Start, End, Label, Disabled), 2 platforms (Android, iOS), and 2 placeholder modes (Default number / Icon). Figma Reference: Node ID 359-21258",
+  "$component": {
+    "name": "Slider",
+    "description": "A horizontal input control for selecting a value or range from a continuous or discrete set of values. The track shows the total range; the filled indicator shows selected progress from the left edge to the knob (Simple) or between two knobs (Range). In Segment type, the track is divided into 10 discrete equal-width segments. A floating Label variant shows a Tag chip above the knob with the current value. The Disabled state mutes the fill color and swaps the knob to its disabled variant.",
+    "structure": "Container div (full-width, 24px or 56px tall). Track div (6px tall, gray, full-width, absolutely positioned at vertical center). Fill div (same height as track, primary blue, stretches left→knob for Simple, between knobs for Range). Knob component (24px for Android / 38×24px for iOS, absolutely positioned at current value). Optional Label Tag (28px, floats above knob in Label state).",
+    "variants": {
+      "type": {
+        "Simple": "Single knob. Fill grows from left edge to knob position.",
+        "Range": "Two knobs. Fill shows between the two knob positions. Left knob controls minimum, right controls maximum.",
+        "Segment": "Single knob. Track divided into 10 discrete equal-width segments with 2px gaps. Completed segments are primary/blue/700; remaining segments are gray/300."
+      },
+      "state": {
+        "Default": "Knob at midpoint (50%). Normal interactive state.",
+        "Start": "Knob at left edge (0%). No fill shown.",
+        "End": "Knob at right edge (100%). Full fill shown.",
+        "Label": "Knob at midpoint with a floating Tag chip above it showing the current value. Container is taller (56px) to accommodate the label above the track.",
+        "Disabled": "Non-interactive. Fill uses gray/400 instead of primary/700. Knob uses disabled state (gray/600 for iOS, disabled SVG asset for Android)."
+      },
+      "platform": "Android | iOS — affects knob rendering (SVG vs CSS pill)",
+      "placeholder": "Default | Icon — controls whether knob uses standard or icon variant"
+    },
+    "subComponents": {
+      "knob": "knob.json — the default drag handle (used when placeholder=Default)",
+      "iconKnob": "icon-knob.json — the icon-bearing drag handle (used when placeholder=Icon)"
+    },
+    "usage": {
+      "contexts": "Volume controls, price range filters, brightness/speed adjusters, stepped value selectors.",
+      "features": "3 types (Simple/Range/Segment), 5 states, 2 platforms, optional floating label, 10-segment discrete mode, HighRise Tag integration for Label state"
+    }
+  },
+  "slider": {
+    "container": {
+      "$comment": "Outer bounding container. Height varies between default state (24px) and label state (56px).",
+      "height": {
+        "default": {
+          "value": "{size.6}",
+          "type": "dimension",
+          "description": "Mobile slider container height for Default/Start/End/Disabled states - 24px (track and knob fit within this height)"
+        },
+        "label": {
+          "value": "{size.14}",
+          "type": "dimension",
+          "description": "Mobile slider container height for Label state - 56px (extra vertical space accommodates the floating Tag label above the track)"
+        }
+      }
+    },
+    "track": {
+      "$comment": "The full-width background bar representing the total selectable range",
+      "height": {
+        "value": "6px",
+        "type": "dimension",
+        "description": "Mobile slider track height - 6px (positioned at vertical center via 37.5% top/bottom inset on the 24px container: 37.5% × 24 = 9px inset each side, 24 - 18 = 6px)"
+      },
+      "border-radius": {
+        "value": "16px",
+        "type": "dimension",
+        "description": "Mobile slider track border radius - 16px (fully rounded ends; rounded-[16px] in Figma)"
+      },
+      "color": {
+        "value": "{color.neutral.gray.300}",
+        "type": "color",
+        "description": "Mobile slider track background color - gray/300 - #d0d5dd (the unfilled portion of the range)"
+      }
+    },
+    "fill": {
+      "$comment": "The colored indicator that shows the selected portion of the range. Grows from left edge to knob position (Simple) or between two knobs (Range).",
+      "height": {
+        "value": "6px",
+        "type": "dimension",
+        "description": "Mobile slider fill height - 6px (matches track height)"
+      },
+      "border-radius": {
+        "left": {
+          "value": "{border.radius.sm}",
+          "type": "dimension",
+          "description": "Mobile slider fill left border radius - 8px (rounded-bl-[8px] rounded-tl-[8px] in Figma — left end of fill is always rounded)"
+        },
+        "right": {
+          "value": "{border.radius.sm}",
+          "type": "dimension",
+          "description": "Mobile slider fill right border radius - 8px (rounded right end when fill extends to 100%; at partial fill the right edge is flush against the knob)"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.primary.700}",
+          "type": "color",
+          "description": "Mobile slider fill color for Default/Start/End/Label states - primary/blue/700 - #004eeb (active selection indicator)"
+        },
+        "disabled": {
+          "value": "{color.neutral.gray.400}",
+          "type": "color",
+          "description": "Mobile slider fill color for Disabled state - gray/400 - #98a2b3 (muted fill when slider is non-interactive)"
+        }
+      }
+    },
+    "segment": {
+      "$comment": "Properties specific to Segment type — the track divided into 10 discrete equal-width segments with gaps between them",
+      "count": {
+        "value": "10",
+        "type": "number",
+        "description": "Mobile slider segment count for Segment type - 10 discrete equal-width segments (each represents 10% of the total range)"
+      },
+      "gap": {
+        "value": "2px",
+        "type": "dimension",
+        "description": "Mobile slider segment gap - ~2px between each segment (calculated from Figma inset values: 0.55% of 361px reference width ≈ 2px)"
+      },
+      "border-radius": {
+        "value": "{border.radius.sm}",
+        "type": "dimension",
+        "description": "Mobile slider segment border radius - 8px applied to each discrete segment (rounded-[8px] in Figma)"
+      },
+      "color": {
+        "filled": {
+          "value": "{color.primary.700}",
+          "type": "color",
+          "description": "Mobile slider segment fill color for completed/selected segments - primary/blue/700 - #004eeb"
+        },
+        "empty": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "Mobile slider segment fill color for uncompleted/unselected segments - gray/300 - #d0d5dd"
+        }
+      }
+    },
+    "label": {
+      "$comment": "Floating value label shown in the Label state — a Tag chip that appears above the knob showing the current value. Only visible when state=Label.",
+      "height": {
+        "value": "{size.7}",
+        "type": "dimension",
+        "description": "Mobile slider label Tag height - 28px (Tag size lg)"
+      },
+      "typography": {
+        "value": "{font.body.medium.md}",
+        "type": "typography",
+        "description": "Mobile slider label text typography - 13px Medium, 18px line-height (font/size/md, font/weight/medium, font/line-height/md)"
+      },
+      "background": {
+        "value": "{color.primary.50}",
+        "type": "color",
+        "description": "Mobile slider label Tag background color - primary/100 - #eff4ff (tag/primary/background/default in Figma)"
+      },
+      "color": {
+        "value": "{color.primary.700}",
+        "type": "color",
+        "description": "Mobile slider label text color - primary/blue/700 - #004eeb (tag/primary/label-color/default in Figma)"
+      },
+      "border-radius": {
+        "value": "14px",
+        "type": "dimension",
+        "description": "Mobile slider label Tag border radius - 14px (rounded-[14px] in Figma — half of the 28px Tag height for pill shape)"
+      },
+      "padding": {
+        "horizontal": {
+          "value": "{size.2}",
+          "type": "dimension",
+          "description": "Mobile slider label Tag horizontal padding - 8px (px-[8px] in Figma)"
+        }
+      }
+    },
+    "knob": {
+      "$comment": "Layout positioning for the knob within the slider track",
+      "shadow": {
+        "value": "{shadow.md}",
+        "type": "shadow",
+        "description": "Mobile slider knob drop shadow - shadow/md: 0px 2px 4px -2px rgba(16,24,40,0.06), 0px 4px 8px -2px rgba(16,24,40,0.10)"
+      }
+    }
+  }
+}

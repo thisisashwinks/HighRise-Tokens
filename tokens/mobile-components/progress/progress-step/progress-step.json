@@ -1,0 +1,81 @@
+{
+  "$comment": "Mobile Progress Step Component Tokens",
+  "$description": "Component tokens for Mobile Progress Step — a full multi-step stepper composite that chains 3 Single Step units together. Supports Default (horizontal) and Vertical orientations, Default (number) and icon placeholder modes, and Default text-label or List item container content. The active step position (1, 2, or 3) determines which step is Current; all prior steps are Completed and all subsequent are Next. Figma Reference: Node ID 364-4844",
+  "$component": {
+    "name": "Progress Step",
+    "description": "A complete 3-step stepper that shows the user's position in a multi-step flow. Composed of 3 Single Step sub-components chained left-to-right (Default) or top-to-bottom (Vertical). Each Single Step contains its own connector bar, so the composite has no additional inter-step gap. The 'active step' variant determines which step is Current (blue, active state) — all prior steps are Completed (solid blue dot + check icon) and all subsequent are Next (outlined dot + gray number). Supports icon placeholder mode (where each dot shows a zap/placeholder icon instead of a number) and List item container mode (where label text is replaced by a full ListItem component).",
+    "structure": "Flex row (Default) or flex column (Vertical) of 3 Single Step sub-components. Each Single Step contains: indicator dot + connector bar + label. The last step's connector bar is hidden (no step follows it). Container is full-width; no additional padding beyond what Single Step provides.",
+    "dimensions": {
+      "default-height": "77px — height in Default (horizontal) orientation",
+      "vertical-height": "222.5px — height in Vertical orientation (3 steps with 35.5px connectors)"
+    },
+    "variants": {
+      "activeStep": {
+        "1": "Step 1 = Current, Step 2 = Next, Step 3 = Next",
+        "2": "Step 1 = Completed, Step 2 = Current, Step 3 = Next",
+        "3": "Step 1 = Completed, Step 2 = Completed, Step 3 = Current"
+      },
+      "orientation": {
+        "Default": "Horizontal — steps and connector bars arranged left-to-right in a row",
+        "Vertical": "Vertical — each step's dot and bar stacked top-to-bottom; label text appears to the right of the dot column"
+      },
+      "placeholder": {
+        "Default": "Step dots show step numbers (1, 2, 3) for Next state; check-circle for Completed",
+        "icon": "Step dots show a placeholder icon (e.g. zap) for all states; check-circle for Completed"
+      },
+      "container": {
+        "Default": "Label block shows title + description text lines",
+        "List item": "Label area replaced by a full ListItem component (avatar, name, email, divider)"
+      }
+    },
+    "subComponents": {
+      "singleStep": "single-step.json — each of the 3 step units; see indicator, title, description, and layout tokens",
+      "progressStepBar": "progress-step-bar.json — the connector bars embedded within each Single Step"
+    },
+    "usage": {
+      "contexts": "Wizard flows, onboarding sequences, multi-step form completion, checkout flows.",
+      "features": "3-step stepper, 6 variants (active step × 3, orientation × 2, placeholder × 2, container × 2), horizontal and vertical layout, full HighRise stepper pattern"
+    }
+  },
+  "progress-step": {
+    "step-count": {
+      "value": "3",
+      "type": "number",
+      "description": "Mobile progress step total number of steps in the stepper - 3 (the standard step count for this component; each step is a Single Step sub-component)"
+    },
+    "layout": {
+      "$comment": "Container layout properties for the full stepper composite",
+      "orientation": {
+        "default": {
+          "direction": {
+            "value": "row",
+            "type": "string",
+            "description": "Mobile progress step flex direction for Default orientation - row (steps arranged left-to-right)"
+          },
+          "align": {
+            "value": "center",
+            "type": "string",
+            "description": "Mobile progress step alignment for Default orientation - center (step dots and bars vertically centered)"
+          }
+        },
+        "vertical": {
+          "direction": {
+            "value": "column",
+            "type": "string",
+            "description": "Mobile progress step flex direction for Vertical orientation - column (steps stacked top-to-bottom)"
+          },
+          "align": {
+            "value": "start",
+            "type": "string",
+            "description": "Mobile progress step alignment for Vertical orientation - start (step dots and bars left-aligned)"
+          }
+        }
+      },
+      "inter-step-gap": {
+        "value": "0px",
+        "type": "dimension",
+        "description": "Mobile progress step gap between Single Step components - 0px (no additional gap; each Single Step contains its own ProgressStepBar connector that visually fills the space between dots)"
+      }
+    }
+  }
+}

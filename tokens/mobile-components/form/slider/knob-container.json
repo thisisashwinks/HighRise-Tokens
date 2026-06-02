@@ -1,0 +1,79 @@
+{
+  "$comment": "Mobile Knob Container Component Tokens",
+  "$description": "Component tokens for Mobile Knob Container — the platform-specific base shape of the slider handle. No state variants and no icon. iOS renders as a pill-shaped CSS element (white fill, gray border, shadow). Android renders as an SVG image asset. KnobContainer is the structural base referenced by Knob and Icon Knob. Figma Reference: Node ID 350-20781",
+  "$component": {
+    "name": "Knob Container",
+    "description": "The bare container shape for the slider drag handle. Defines the dimensions, border-radius, background, border, and shadow for the knob shell — without any state (default/disabled) or icon overlay. iOS uses a CSS-rendered pill shape; Android uses an SVG image asset due to platform-specific shadow rendering requirements.",
+    "structure": "iOS: a single div with pill border-radius, white background, gray/400 border, and shadow/md. Android: an absolutely-positioned SVG image asset (the circular knob with shadow is baked into the image).",
+    "variants": {
+      "platform": {
+        "iOS": "Pill shape (38×24px). CSS-rendered with white background, gray/400 border, and shadow/md drop shadow.",
+        "Android": "Circle shape (24×24px). SVG image asset — visual shadow and fill are embedded in the image."
+      }
+    },
+    "usage": {
+      "contexts": "Used as the structural base inside Knob and Icon Knob components. Not used standalone.",
+      "features": "Platform-adaptive shape (pill for iOS, circle for Android), white fill with gray border and drop shadow"
+    }
+  },
+  "knob-container": {
+    "ios": {
+      "$comment": "iOS pill-shaped knob container — CSS-rendered",
+      "width": {
+        "value": "38px",
+        "type": "dimension",
+        "description": "Mobile knob container iOS width - 38px (wider than tall, creating the pill/capsule shape)"
+      },
+      "height": {
+        "value": "{size.6}",
+        "type": "dimension",
+        "description": "Mobile knob container iOS height - 24px"
+      },
+      "border-radius": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile knob container iOS border radius - fully rounded pill (rounded-[100px] in Figma)"
+      },
+      "background": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "Mobile knob container iOS background color - white"
+      },
+      "border": {
+        "width": {
+          "value": "1px",
+          "type": "dimension",
+          "description": "Mobile knob container iOS border width - 1px solid"
+        },
+        "color": {
+          "value": "{color.neutral.gray.400}",
+          "type": "color",
+          "description": "Mobile knob container iOS border color - gray/400 - #98a2b3"
+        }
+      },
+      "shadow": {
+        "value": "{shadow.md}",
+        "type": "shadow",
+        "description": "Mobile knob container iOS drop shadow - shadow/md: 0px 2px 4px -2px rgba(16,24,40,0.06), 0px 4px 8px -2px rgba(16,24,40,0.10)"
+      }
+    },
+    "android": {
+      "$comment": "Android circular knob container — SVG image asset, not CSS-rendered",
+      "size": {
+        "value": "{size.6}",
+        "type": "dimension",
+        "description": "Mobile knob container Android size - 24×24px (square bounding box; the circular knob shape and shadow are embedded in the SVG image asset)"
+      },
+      "border-radius": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile knob container Android border radius intent - full circle (rounded-[300px] in Figma; applied to the SVG container div, but the visual circle is in the image asset)"
+      },
+      "rendering": {
+        "value": "svg-asset",
+        "type": "string",
+        "description": "Mobile knob container Android rendering method - SVG image asset (the knob circle, fill color, and shadow are embedded in the platform-specific image; not implemented via CSS)"
+      }
+    }
+  }
+}
