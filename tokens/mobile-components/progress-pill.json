@@ -1,0 +1,87 @@
+{
+  "$comment": "Mobile Progress Pill (Determinate) Component Tokens",
+  "$description": "Component tokens for Mobile Progress Pill Determinate — a pill-shaped circular progress ring with a percentage label centered inside. The ring (track + indicator arc) is rendered as SVG image assets. Supports 3 sizes: sm (24px ring), md (32px ring), lg (40px ring). The label typography scales with ring size. Figma Reference: Node ID 390-51",
+  "$component": {
+    "name": "Progress Pill Determinate",
+    "description": "A pill-shaped (capsule/oval) progress indicator that shows a determinate percentage via a filled arc around the pill ring perimeter. The pill ring and its filled arc are rendered as SVG image assets (Base + Progress layers). The percentage text is centered inside the pill. Three sizes scale both the ring dimensions and the label typography. Used for compact progress displays where a round or pill form factor fits better than a linear bar.",
+    "structure": "Outer bounding container (varies by size). Base SVG image (the pill ring track). Progress SVG image overlay (the filled arc — shifted right of center because the arc starts from the right side of the pill). Centered percentage text label (absolute, vertically centered).",
+    "sizes": {
+      "sm": "Ring 24px tall — compact variant for tight layouts",
+      "md": "Ring 32px tall — standard/default variant",
+      "lg": "Ring 40px tall — prominent variant for featured metrics"
+    },
+    "variants": {
+      "size": "sm | md | lg — scales ring height, ring width, and label typography"
+    },
+    "usage": {
+      "contexts": "Compact progress displays, status badges, task completion chips, achievement indicators. Figma tags: progress, spinner, label inside, pill.",
+      "features": "3 sizes, pill/capsule ring shape, centered percentage label, SVG-rendered ring track and indicator arc"
+    }
+  },
+  "progress-pill": {
+    "ring": {
+      "$comment": "The pill-shaped ring dimensions (the actual SVG rendering area, excluding bounding box padding). Track and indicator are SVG image assets.",
+      "height": {
+        "sm": {
+          "value": "{size.6}",
+          "type": "dimension",
+          "description": "Mobile progress pill ring height for sm size - 24px (the rendered ring SVG height)"
+        },
+        "md": {
+          "value": "{size.8}",
+          "type": "dimension",
+          "description": "Mobile progress pill ring height for md size - 32px"
+        },
+        "lg": {
+          "value": "{size.10}",
+          "type": "dimension",
+          "description": "Mobile progress pill ring height for lg size - 40px"
+        }
+      },
+      "track": {
+        "color": {
+          "value": "{color.background.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile progress pill ring track color - gray/200 - #eaecf0 (the unfilled/remaining portion of the pill ring)"
+        }
+      },
+      "indicator": {
+        "color": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Mobile progress pill ring indicator arc color - primary/blue/600 - #155eef (the filled progress arc)"
+        }
+      }
+    },
+    "label": {
+      "$comment": "Percentage text centered inside the pill ring. Typography and container dimensions scale with ring size.",
+      "typography": {
+        "sm": {
+          "value": "{font.body.medium.lg}",
+          "type": "typography",
+          "description": "Mobile progress pill label typography for sm size - 14px Medium, 20px line-height (font/size/lg, font/weight/medium, font/line-height/lg)"
+        },
+        "md": {
+          "value": "{font.body.medium.2xl}",
+          "type": "typography",
+          "description": "Mobile progress pill label typography for md size - 16px Medium, 24px line-height (font/size/2xl, font/weight/medium, font/line-height/2xl)"
+        },
+        "lg": {
+          "value": "{font.body.medium.3xl}",
+          "type": "typography",
+          "description": "Mobile progress pill label typography for lg size - 18px Medium, 28px line-height (font/size/3xl, font/weight/medium, font/line-height/3xl)"
+        }
+      },
+      "color": {
+        "value": "{color.text.neutral.body.1}",
+        "type": "color",
+        "description": "Mobile progress pill label text color - gray/700 - #344054 (consistent across all sizes)"
+      },
+      "alignment": {
+        "value": "center",
+        "type": "string",
+        "description": "Mobile progress pill label text alignment - center (horizontally and vertically centered within the pill)"
+      }
+    }
+  }
+}

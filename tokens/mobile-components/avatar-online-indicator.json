@@ -1,0 +1,44 @@
+{
+  "$comment": "Mobile Avatar Online Indicator Component Tokens",
+  "$description": "Component tokens for Mobile Avatar Online Indicator — a circular green dot badge displayed at the bottom-right of the avatar container to signal that the user is currently online/active. Appears as a small solid circle with a white border ring that separates it visually from the avatar background. Figma Reference: Node ID 367-5165 (extracted from Avatar component, Status icon=Online indicator)",
+  "$component": {
+    "name": "Avatar Online Indicator",
+    "description": "A small green circular status badge anchored to the bottom-right corner of the avatar. The white border ring (1.5px) creates visual separation between the green dot and any avatar background color. Used exclusively as a sub-component of the Avatar — not rendered standalone.",
+    "structure": "Absolutely positioned square div, border-radius: full (renders as circle). Positioned at right: 0, vertically aligned to bottom-right of avatar container.",
+    "usage": {
+      "contexts": "Used inside Avatar component when statusIcon=Online indicator. Indicates the user is currently active/online.",
+      "features": "Single fixed size (14px), solid green fill, white border ring, absolute bottom-right positioning"
+    }
+  },
+  "avatar-online-indicator": {
+    "size": {
+      "value": "{size.icon.2xs}",
+      "type": "dimension",
+      "description": "Mobile avatar online indicator size - 14px (width and height, rendered as circle via border-radius: full)"
+    },
+    "border": {
+      "radius": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile avatar online indicator border radius - fully circular (7px for 14px element = pill)"
+      },
+      "width": {
+        "value": "1.5px",
+        "type": "dimension",
+        "description": "Mobile avatar online indicator border width - 1.5px white ring that separates the dot from the avatar background"
+      },
+      "color": {
+        "value": "{color.background.neutral.base}",
+        "type": "color",
+        "description": "Mobile avatar online indicator border color - white - #ffffff (creates visual separation from any avatar background)"
+      }
+    },
+    "background": {
+      "color": {
+        "value": "#12b76a",
+        "type": "color",
+        "description": "Mobile avatar online indicator background color - success/500 green - #12b76a (indicates active/online status; raw value as success/500 is not a defined semantic token path)"
+      }
+    }
+  }
+}

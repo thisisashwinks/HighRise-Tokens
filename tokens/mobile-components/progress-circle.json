@@ -1,0 +1,100 @@
+{
+  "$comment": "Mobile Progress Circle Component Tokens",
+  "$description": "Component tokens for Mobile Progress Circle — a circular, half-circle, or quarter-circle ring progress indicator. The ring is rendered as SVG/canvas image assets (not CSS borders). Only one size (xxs = 64px container) is defined. An optional percentage label appears centered inside the ring; an optional sub-label appears below. Figma Reference: Node ID 386-1723",
+  "$component": {
+    "name": "Progress Circle",
+    "description": "A ring-style progress indicator that shows progress as a filled arc around a circular, half-circle, or quarter-circle track. The ring background (track) and filled indicator (progress arc) are rendered as SVG image assets positioned within a 64px container. The filled arc sweeps clockwise from the top. A centered percentage text label overlays the ring interior; an optional descriptive sub-label appears below the ring.",
+    "structure": "Outer container (size varies by shape). Inner 64px Ring div (absolutely positioned, centered) containing: a Background image (the track ring), a Line image (the filled arc at current progress), and optionally a centered label (percentage) and sub-label (description) text.",
+    "sizes": {
+      "xxs": "64px ring container — the only currently defined size"
+    },
+    "variants": {
+      "shape": {
+        "Circle": "Full 360° ring — container is square 64×64px. Ring inset 4.69% on all sides.",
+        "Half circle": "180° ring showing only the top semicircle — container is 64px wide × 36px tall (visible portion). Ring is still 64×64px but bottom half is hidden.",
+        "Quarter": "90° ring showing only the top-right quadrant — container is 64×64px. Arc fills only the first 90° quadrant."
+      },
+      "label": "boolean — show/hide the centered percentage text inside the ring",
+      "subLabel": "boolean — show/hide the descriptive text below the ring (e.g. 'Users')"
+    },
+    "usage": {
+      "contexts": "Dashboard KPI widgets, storage usage indicators, completion metrics, task progress summaries.",
+      "features": "3 ring shapes, centered percentage label, optional sub-label, SVG-rendered ring with track and indicator arc"
+    }
+  },
+  "progress-circle": {
+    "container": {
+      "$comment": "Outer bounding container — size varies by shape variant",
+      "size": {
+        "value": "{size.16}",
+        "type": "dimension",
+        "description": "Mobile progress circle ring container size - 64px (width and height for Circle and Quarter shapes; width only for Half circle which clips the bottom)"
+      },
+      "half-circle": {
+        "height": {
+          "value": "36px",
+          "type": "dimension",
+          "description": "Mobile progress circle Half circle variant visible container height - 36px (top 36px of the 64px ring is shown; bottom half is hidden via overflow/clip)"
+        }
+      }
+    },
+    "ring": {
+      "$comment": "The circular ring track and filled arc — rendered as SVG image assets. Inset defines the ring stroke area.",
+      "inset": {
+        "value": "4.69%",
+        "type": "string",
+        "description": "Mobile progress circle ring inset from container edges - 4.69% (inset: 4.69% in Figma = ~3px inset on each side of a 64px container, defining the ring stroke width area)"
+      },
+      "track": {
+        "color": {
+          "value": "{color.background.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile progress circle ring track color - gray/200 - #eaecf0 (the unfilled portion of the ring arc)"
+        }
+      },
+      "indicator": {
+        "color": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Mobile progress circle ring indicator arc color - primary/blue/600 - #155eef (the filled progress arc)"
+        }
+      }
+    },
+    "label": {
+      "$comment": "Centered percentage label overlaid inside the ring. Positioned at the visual center of the ring container.",
+      "typography": {
+        "value": "{font.body.medium.lg}",
+        "type": "typography",
+        "description": "Mobile progress circle label typography - 14px Medium, 20px line-height (font/size/lg, font/weight/medium, font/line-height/lg)"
+      },
+      "color": {
+        "value": "{color.text.neutral.body.1}",
+        "type": "color",
+        "description": "Mobile progress circle label text color - gray/700 - #344054"
+      },
+      "alignment": {
+        "value": "center",
+        "type": "string",
+        "description": "Mobile progress circle label text alignment - center (horizontally centered within the ring)"
+      }
+    },
+    "sub-label": {
+      "$comment": "Optional descriptive text below the ring container — identifies the metric being shown (e.g. 'Users')",
+      "typography": {
+        "value": "{font.body.medium.sm}",
+        "type": "typography",
+        "description": "Mobile progress circle sub-label typography - 12px Medium, 17px line-height (font/size/sm, font/weight/medium, font/line-height/sm)"
+      },
+      "color": {
+        "value": "{color.text.neutral.body.2}",
+        "type": "color",
+        "description": "Mobile progress circle sub-label text color - gray/600 - #475467 (secondary/descriptive text below the ring)"
+      },
+      "alignment": {
+        "value": "center",
+        "type": "string",
+        "description": "Mobile progress circle sub-label text alignment - center"
+      }
+    }
+  }
+}

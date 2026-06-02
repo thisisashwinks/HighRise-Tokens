@@ -1,0 +1,52 @@
+{
+  "$comment": "Mobile Avatar Company Indicator Component Tokens",
+  "$description": "Component tokens for Mobile Avatar Company Indicator — a rounded-rectangle badge displayed at the bottom-right of the avatar that shows the associated company's logo or icon. Slightly larger than the online indicator (18px vs 14px) to accommodate a legible company logo image. Has a white border ring and extends 2px beyond the avatar edge. Figma Reference: Node ID 367-5165 (extracted from Avatar component, Status icon=Company)",
+  "$component": {
+    "name": "Avatar Company Indicator",
+    "description": "A small rounded-rectangle badge anchored at the bottom-right of the avatar container, displaying the associated company's logo as an image. Unlike the circular Online Indicator, this badge uses a rounded-rectangle shape (12px border-radius) to better frame square or rectangular company logos. The badge slightly extends outside the avatar circle (right: -2px) for visual emphasis.",
+    "structure": "Absolutely positioned square div with rounded-rectangle border-radius. Contains a full-cover company logo image (object-fit: cover) with the same border-radius. Positioned at top: ~40px (for xl avatar), right: -2px — effectively bottom-right of the avatar with a 2px overlap beyond the edge.",
+    "usage": {
+      "contexts": "Used inside Avatar component when statusIcon=Company. Shows which company/organization the user is associated with.",
+      "features": "18px badge, 12px rounded-rectangle (frames company logo), 1.5px white border ring, -2px right offset, company logo image fill"
+    }
+  },
+  "avatar-company-indicator": {
+    "size": {
+      "value": "{size.icon.sm}",
+      "type": "dimension",
+      "description": "Mobile avatar company indicator size - 18px (width and height — larger than online indicator to frame company logo legibly)"
+    },
+    "border": {
+      "radius": {
+        "value": "{border.radius.3xl}",
+        "type": "dimension",
+        "description": "Mobile avatar company indicator border radius - 12px (rounded rectangle — intentionally not fully circular, frames logo better than a circle)"
+      },
+      "width": {
+        "value": "1.5px",
+        "type": "dimension",
+        "description": "Mobile avatar company indicator border width - 1.5px white ring that separates the badge from the avatar background"
+      },
+      "color": {
+        "value": "{color.background.neutral.base}",
+        "type": "color",
+        "description": "Mobile avatar company indicator border color - white - #ffffff (creates visual separation from avatar background)"
+      }
+    },
+    "position": {
+      "right-offset": {
+        "value": "-2px",
+        "type": "dimension",
+        "description": "Mobile avatar company indicator right offset - -2px (badge extends 2px beyond the avatar circle edge for visual prominence; differs from online indicator which sits flush at right: 0)"
+      }
+    },
+    "logo": {
+      "$comment": "The company logo image fills the badge container with object-fit: cover and the same border-radius as the container",
+      "border-radius": {
+        "value": "{border.radius.3xl}",
+        "type": "dimension",
+        "description": "Mobile avatar company indicator logo image border radius - 12px (matches container, clips the logo image to rounded-rectangle shape)"
+      }
+    }
+  }
+}

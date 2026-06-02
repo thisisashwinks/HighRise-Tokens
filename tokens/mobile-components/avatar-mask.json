@@ -1,0 +1,75 @@
+{
+  "$comment": "Mobile Avatar Mask Component Tokens",
+  "$description": "Component tokens for Mobile Avatar Mask — a semi-transparent dark circular overlay rendered on top of the avatar image during interaction (hover state). Provides a dimming effect to signal interactivity and make the action icon legible. Matches the avatar container shape and size exactly. Figma Reference: Node ID 367-6757",
+  "$component": {
+    "name": "Avatar Mask",
+    "description": "A full-coverage circular dark overlay that appears on top of the avatar image when the avatar enters its hover/interactive state. The mask fills the entire avatar container and is applied at 60% opacity, creating a consistent darkening effect regardless of the underlying photo or color. Paired with the Avatar Action Icon which renders above this mask.",
+    "structure": "Single absolutely-positioned div covering the full avatar container (inset: 0). Always circular. Applied as an overlay layer between the avatar image and the action icon.",
+    "sizes": {
+      "xs": "24px — matches avatar xs",
+      "sm": "32px — matches avatar sm",
+      "md": "40px — matches avatar md",
+      "lg": "48px — matches avatar lg",
+      "xl": "56px — matches avatar xl",
+      "2xl": "64px — matches avatar 2xl"
+    },
+    "usage": {
+      "contexts": "Used exclusively inside the Avatar component when state=Hover and actionIcon=True. Not used standalone.",
+      "features": "Full-cover circular overlay, 60% opacity darkening, size matches parent avatar"
+    }
+  },
+  "avatar-mask": {
+    "size": {
+      "$comment": "Mask dimensions per avatar size — width and height are equal (square, rendered circular via border-radius)",
+      "xs": {
+        "value": "{size.6}",
+        "type": "dimension",
+        "description": "Mobile avatar mask size for xs avatar - 24px"
+      },
+      "sm": {
+        "value": "{size.8}",
+        "type": "dimension",
+        "description": "Mobile avatar mask size for sm avatar - 32px"
+      },
+      "md": {
+        "value": "{size.10}",
+        "type": "dimension",
+        "description": "Mobile avatar mask size for md avatar - 40px"
+      },
+      "lg": {
+        "value": "{size.12}",
+        "type": "dimension",
+        "description": "Mobile avatar mask size for lg avatar - 48px"
+      },
+      "xl": {
+        "value": "{size.14}",
+        "type": "dimension",
+        "description": "Mobile avatar mask size for xl avatar - 56px"
+      },
+      "2xl": {
+        "value": "{size.16}",
+        "type": "dimension",
+        "description": "Mobile avatar mask size for 2xl avatar - 64px"
+      }
+    },
+    "border": {
+      "radius": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile avatar mask border radius - fully circular pill at all sizes (matches avatar rounded=True shape)"
+      }
+    },
+    "background": {
+      "color": {
+        "value": "#434343",
+        "type": "color",
+        "description": "Mobile avatar mask overlay color - dark gray #434343 applied at 60% opacity (no semantic token exists for this specific overlay color)"
+      },
+      "opacity": {
+        "value": "0.6",
+        "type": "opacity",
+        "description": "Mobile avatar mask opacity - 60% — dims the avatar image enough to make the action icon visible while still showing the photo beneath"
+      }
+    }
+  }
+}

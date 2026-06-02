@@ -1,0 +1,202 @@
+{
+  "$comment": "Mobile Progress Bar (Determinate) Component Tokens",
+  "$description": "Component tokens for Mobile Progress Bar — a determinate horizontal progress bar that shows a specific percentage of completion. Supports two heights (8px thin / 16px thick with inline label), three progress states (Default/Success/Error), stepper mode (10 discrete segments), and optional inline or external percentage labels. Figma Reference: Node ID 388-1367",
+  "$component": {
+    "name": "Progress Bar",
+    "description": "A determinate progress bar used when total progress is known (0%–100%). The bar has two height modes determined by the label position: thin (8px) when the label appears outside the bar, and thick (16px) when the percentage label is shown inline inside the filled region. In Stepper mode, the bar is divided into 10 discrete equal-width segments with gaps between them. Three semantic fill colors (default blue, success green, error red) communicate outcome state.",
+    "structure": "Container (full-width, pill border-radius) with a filled indicator overlay. Optional external percentage label on the right (32px fixed width). In inline-label mode, the thick track contains the percentage text inside the filled region. In stepper mode, the container holds 10 equally-spaced segment divs instead of a continuous bar.",
+    "variants": {
+      "inlineProgressValue": {
+        "false": "External label: track is 8px tall; percentage text appears to the right of the bar in gray/700 12px Medium",
+        "true": "Inline label: track is 16px tall; percentage text appears inside the filled region in white 10px Semibold"
+      },
+      "stepper": {
+        "false": "Continuous bar: filled region grows smoothly from left as a percentage overlay",
+        "true": "Segmented bar: 10 discrete equal-width segments separated by gaps; completed segments filled, remaining segments gray/200"
+      },
+      "state": {
+        "default": "Blue fill — primary/600 (#155eef)",
+        "success": "Green fill — secondary/success/600 (#039855). Shown at 100%.",
+        "error": "Red fill — secondary/error/500 (#f04438). No external percentage label shown."
+      },
+      "progress": "0%–100% in 10% increments"
+    },
+    "subComponents": {
+      "progressBarIntermediate": "progress-bar-intermediate.json — the indeterminate animated variant used within Progress Indicator"
+    },
+    "usage": {
+      "contexts": "Used standalone or as a sub-component inside Progress Indicator. Suitable for file uploads, onboarding flows, multi-step processes, and download progress.",
+      "features": "11 progress values (0%–100%), 3 semantic states, 2 height modes, 2 layout modes (continuous/stepper), optional inline or external label"
+    }
+  },
+  "progress-bar": {
+    "track": {
+      "$comment": "The background container that represents the total progress range",
+      "height": {
+        "thin": {
+          "value": "{size.2}",
+          "type": "dimension",
+          "description": "Mobile progress bar track height (thin mode) - 8px (used when inline-progress-value=False; label appears outside the bar)"
+        },
+        "thick": {
+          "value": "{size.4}",
+          "type": "dimension",
+          "description": "Mobile progress bar track height (thick mode) - 16px (used when inline-progress-value=True; percentage label rendered inside the filled region)"
+        }
+      },
+      "border-radius": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile progress bar track border radius - fully circular pill (rounded-[64px] in Figma)"
+      },
+      "background": {
+        "color": {
+          "value": "{color.background.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile progress bar track background color - gray/200 - #eaecf0 (the unfilled/remaining portion)"
+        }
+      }
+    },
+    "indicator": {
+      "$comment": "The filled progress overlay — grows from left edge as progress increases",
+      "border-radius": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile progress bar indicator border radius - pill (both left and right ends are fully rounded; at 100% the indicator covers the full track)"
+      },
+      "color": {
+        "default": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Mobile progress bar indicator fill color for Default state - primary/blue/600 - #155eef (active progress, 0%–100%)"
+        },
+        "success": {
+          "value": "{color.secondary.success.600}",
+          "type": "color",
+          "description": "Mobile progress bar indicator fill color for Success state - success/600 - #039855 (shown at 100% when the task has completed successfully)"
+        },
+        "error": {
+          "value": "{color.secondary.error.500}",
+          "type": "color",
+          "description": "Mobile progress bar indicator fill color for Error state - error/500 - #f04438 (shown at 100% when an error occurred; no percentage label shown)"
+        }
+      }
+    },
+    "label": {
+      "$comment": "External percentage label displayed to the right of the bar when inline-progress-value=False",
+      "width": {
+        "value": "32px",
+        "type": "dimension",
+        "description": "Mobile progress bar external label container width - 32px fixed (accommodates up to '100%' text)"
+      },
+      "typography": {
+        "value": "{font.body.medium.sm}",
+        "type": "typography",
+        "description": "Mobile progress bar external label typography - 12px Medium, 17px line-height (font/size/sm, font/weight/medium, font/line-height/sm)"
+      },
+      "color": {
+        "value": "{color.text.neutral.body.1}",
+        "type": "color",
+        "description": "Mobile progress bar external label text color - gray/700 - #344054"
+      },
+      "alignment": {
+        "value": "right",
+        "type": "string",
+        "description": "Mobile progress bar external label text alignment - right-aligned within its 32px container"
+      }
+    },
+    "inline-label": {
+      "$comment": "Percentage label shown inside the filled indicator region when inline-progress-value=True. Only visible when progress > 0%.",
+      "typography": {
+        "value": "{font.body.semibold.2xs}",
+        "type": "typography",
+        "description": "Mobile progress bar inline label typography - 10px Semibold, 15px line-height (font/size/2xs, font/weight/semibold, font/line-height/2xs)"
+      },
+      "color": {
+        "on-fill": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "Mobile progress bar inline label color when on filled region - white (visible against the primary/success/error fill color)"
+        },
+        "empty": {
+          "value": "{color.text.neutral.body.1}",
+          "type": "color",
+          "description": "Mobile progress bar inline label color at 0% (no fill) - gray/700 - #344054 (label appears on the gray track with no fill behind it)"
+        }
+      },
+      "padding": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "description": "Mobile progress bar inline label horizontal padding - 4px (px-[4px] from the right edge of the filled indicator)"
+      }
+    },
+    "stepper": {
+      "$comment": "Properties specific to stepper=True mode — the bar divided into 10 discrete equal-width segments",
+      "count": {
+        "value": "10",
+        "type": "number",
+        "description": "Mobile progress bar stepper segment count - 10 equal segments (each representing 10% increment)"
+      },
+      "gap": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "description": "Mobile progress bar stepper segment gap - 4px (gap between each of the 10 segments in default/external-label mode)"
+      },
+      "segment": {
+        "border-radius": {
+          "outer": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Mobile progress bar stepper outer segment border radius - pill (first-left and last-right segment ends are fully rounded)"
+          },
+          "inner": {
+            "value": "0px",
+            "type": "dimension",
+            "description": "Mobile progress bar stepper inner segment border radius - 0px (middle segments have square internal edges; outer edges are also square, only outermost ends are rounded)"
+          }
+        }
+      },
+      "inline": {
+        "$comment": "Inline-label stepper variant — a bordered container holds 10 segments with smaller gaps",
+        "gap": {
+          "value": "2px",
+          "type": "dimension",
+          "description": "Mobile progress bar inline stepper segment gap - 2px (tighter than default 4px gap; fits within the thick 16px container with border)"
+        },
+        "container": {
+          "background": {
+            "color": {
+              "value": "{color.neutral.white.base}",
+              "type": "color",
+              "description": "Mobile progress bar inline stepper container background color - white (outer wrapper has white background with a gray border)"
+            }
+          },
+          "border": {
+            "width": {
+              "value": "1px",
+              "type": "dimension",
+              "description": "Mobile progress bar inline stepper container border width - 1px (solid border that frames the segmented track)"
+            },
+            "color": {
+              "value": "{color.background.neutral.subtle.2}",
+              "type": "color",
+              "description": "Mobile progress bar inline stepper container border color - gray/200 - #eaecf0"
+            }
+          },
+          "padding": {
+            "value": "2px",
+            "type": "dimension",
+            "description": "Mobile progress bar inline stepper container padding - 2px (inner padding between the border and the segments)"
+          }
+        },
+        "segment": {
+          "border-radius": {
+            "value": "2px",
+            "type": "dimension",
+            "description": "Mobile progress bar inline stepper middle segment border radius - 2px (inner segments use a small 2px radius; only the first-left and last-right outer ends use the full pill radius from the container border-radius)"
+          }
+        }
+      }
+    }
+  }
+}

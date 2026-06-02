@@ -1,0 +1,133 @@
+{
+  "$comment": "Mobile Avatar Component Tokens",
+  "$description": "Component tokens for Mobile Avatar — a circular or rounded-square user representation component. Displays either a photo, initials text, or a placeholder icon. Supports 6 sizes, 2 shape variants (rounded pill vs square), 2 states (Default, Hover), and optional sub-components: online indicator, company indicator, action icon, and loader. Sub-component tokens are defined in their own files: avatar-mask.json, avatar-action-icon.json, avatar-online-indicator.json, avatar-company-indicator.json. Figma Reference: Node ID 367-5165",
+  "$component": {
+    "name": "Avatar",
+    "description": "A mobile avatar component that represents a user or entity. Renders as a circle (rounded=True) or rounded square (rounded=False). Content can be a photo (placeholder=False), initials text (text=True), or a placeholder icon. On hover (state=Hover), an action icon can appear centered on the avatar (with an optional mask overlay behind it). Status badges (online indicator dot or company logo) can appear at the bottom-right.",
+    "structure": "Single container (circle or rounded-square) with: optional photo image filling the container, optional initials text centered, optional Avatar Mask overlay on hover, optional Avatar Action Icon in top-right on hover, optional status badge (online/company) at bottom-right.",
+    "sizes": {
+      "xs": "24px container",
+      "sm": "32px container",
+      "md": "40px container",
+      "lg": "48px container",
+      "xl": "56px container",
+      "2xl": "64px container"
+    },
+    "variants": {
+      "rounded": {
+        "true": "Fully circular pill (rounded-[200px]) — the standard avatar shape",
+        "false": "Rounded square (8px border-radius) — for grid/list layouts"
+      },
+      "state": {
+        "default": "Static avatar — photo or initials only, no overlay",
+        "hover": "Interactive state — Avatar Mask overlay appears, Action Icon renders on top"
+      },
+      "statusIcon": {
+        "false": "No status badge",
+        "online": "Avatar Online Indicator (green dot) at bottom-right — see avatar-online-indicator.json",
+        "company": "Avatar Company Indicator (company logo badge) at bottom-right — see avatar-company-indicator.json"
+      },
+      "placeholder": {
+        "false": "Has a photo — image fills the circular container",
+        "true": "No photo — shows initials or placeholder icon on gray/100 background"
+      }
+    },
+    "subComponents": {
+      "avatarMask": "avatar-mask.json — hover overlay that dims photo",
+      "avatarActionIcon": "avatar-action-icon.json — touchable icon on hover",
+      "avatarOnlineIndicator": "avatar-online-indicator.json — green online status dot",
+      "avatarCompanyIndicator": "avatar-company-indicator.json — company logo badge"
+    },
+    "usage": {
+      "contexts": "User profile displays, contact lists, chat interfaces, comment threads, team member cards, navigation user menus",
+      "features": "6 sizes, circular and rounded-square shapes, photo or initials content, hover action icon, online/company status badges, loader state"
+    }
+  },
+  "avatar": {
+    "container": {
+      "$comment": "Avatar container — always square dimensions, shape determined by border-radius variant",
+      "size": {
+        "xs": {
+          "value": "{size.6}",
+          "type": "dimension",
+          "description": "Mobile avatar container size for xs - 24px"
+        },
+        "sm": {
+          "value": "{size.8}",
+          "type": "dimension",
+          "description": "Mobile avatar container size for sm - 32px"
+        },
+        "md": {
+          "value": "{size.10}",
+          "type": "dimension",
+          "description": "Mobile avatar container size for md - 40px"
+        },
+        "lg": {
+          "value": "{size.12}",
+          "type": "dimension",
+          "description": "Mobile avatar container size for lg - 48px"
+        },
+        "xl": {
+          "value": "{size.14}",
+          "type": "dimension",
+          "description": "Mobile avatar container size for xl - 56px"
+        },
+        "2xl": {
+          "value": "{size.16}",
+          "type": "dimension",
+          "description": "Mobile avatar container size for 2xl - 64px"
+        }
+      },
+      "border-radius": {
+        "rounded": {
+          "value": "{border.radius.full}",
+          "type": "dimension",
+          "description": "Mobile avatar container border radius for rounded=True - fully circular pill (rendered via rounded-[200px] in Figma — effectively 50%)"
+        },
+        "square": {
+          "value": "{border.radius.sm}",
+          "type": "dimension",
+          "description": "Mobile avatar container border radius for rounded=False - 8px (rounded square for grid/list contexts)"
+        }
+      },
+      "background": {
+        "color": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "description": "Mobile avatar container background color - gray/100 - #f2f4f7 (used when displaying initials or placeholder; hidden when a photo fills the container)"
+        }
+      }
+    },
+    "text": {
+      "$comment": "Initials text displayed when placeholder=False and text=True. Typography scales with avatar size — xl documented here as reference.",
+      "color": {
+        "value": "{color.text.neutral.body.2}",
+        "type": "color",
+        "description": "Mobile avatar initials text color - gray/600 - #475467 (consistent across all sizes and states)"
+      },
+      "typography": {
+        "$comment": "Typography at xl size (56px container). Scales proportionally at other sizes.",
+        "xl": {
+          "value": "{font.body.regular.4xl}",
+          "type": "typography",
+          "description": "Mobile avatar initials text typography at xl size - 20px Regular, 30px line-height (font/size/4xl, font/weight/regular, font/line-height/4xl). Scales with avatar size."
+        }
+      }
+    },
+    "action-icon": {
+      "$comment": "Action icon that appears on the avatar in hover state — positioned top-right, centered on the avatar circle edge. Full token details in avatar-action-icon.json.",
+      "background": {
+        "color": {
+          "value": "#f9fafb",
+          "type": "color",
+          "description": "Mobile avatar action icon default/neutral circular background on hover - gray/50 - #f9fafb (see avatar-action-icon.json for full scenario color set)"
+        },
+        "border-radius": {
+          "value": "{border.radius.full}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon circular background shape - pill (BG=Circular variant; see avatar-action-icon.json for BG=Default 4px variant)"
+        }
+      }
+    }
+  }
+}

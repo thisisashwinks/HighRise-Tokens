@@ -1,0 +1,181 @@
+{
+  "$comment": "Mobile Avatar Action Icon Component Tokens",
+  "$description": "Component tokens for Mobile Avatar Action Icon — a small interactive icon that appears on top of the avatar during hover state. Supports 11 sizes (4xs–4xl), 5 color scenarios (Neutral/Primary/Success/Error/Warning), 2 background shapes (Default = rounded-rect, Circular = pill), and 4 interaction states. In Default and Disabled states the background is transparent — the colored badge only appears in Hover and Clicked states. Figma Reference: Node ID 367-6096",
+  "$component": {
+    "name": "Avatar Action Icon",
+    "description": "A small touchable icon rendered on the avatar in hover/interactive state. The icon itself is provided as a slot (defaults to chevron-down in Figma). The component's visual identity is its colored badge background: a rounded-rectangle (bg=Default) or pill (bg=Circular) shape in one of 5 scenario colors. In the Default and Disabled states, no background is shown — the icon appears bare.",
+    "structure": "Flex container (sizing wraps icon). Background badge appears in Hover and Clicked states only. Icon fills container.",
+    "sizes": {
+      "4xs": "10px icon",
+      "3xs": "12px icon",
+      "2xs": "14px icon",
+      "xs": "16px icon",
+      "sm": "18px icon",
+      "md": "20px icon",
+      "lg": "24px icon",
+      "xl": "28px icon",
+      "2xl": "32px icon",
+      "3xl": "36px icon",
+      "4xl": "40px icon"
+    },
+    "variants": {
+      "scenario": {
+        "neutral": "Gray/50 background — used for general-purpose avatar actions",
+        "primary": "Primary/100 background — used for primary/recommended actions",
+        "success": "Success/100 background — used for positive/confirm actions",
+        "error": "Error/100 background — used for destructive/delete actions",
+        "warning": "Warning/100 background — used for caution actions"
+      },
+      "bg": {
+        "default": "Rounded rectangle background (border-radius: 4px) — square badge shape",
+        "circular": "Pill background (border-radius: full) — circular badge shape"
+      },
+      "state": {
+        "default": "No background — icon is bare",
+        "hover": "Colored background visible (scenario color applied)",
+        "clicked": "Colored background visible (same scenario color as hover)",
+        "disabled": "No background — icon is bare and visually muted"
+      }
+    },
+    "usage": {
+      "contexts": "Rendered on the Avatar component when state=Hover or state=Clicked and actionIcon=True. Also used for the Middle Action variant. Not used standalone.",
+      "features": "11 icon sizes, 5 scenario colors, 2 background shapes, state-conditional background"
+    }
+  },
+  "avatar-action-icon": {
+    "icon": {
+      "$comment": "Icon container sizes per scale — matches the icon size token scale",
+      "size": {
+        "4xs": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon size for 4xs - 10px"
+        },
+        "3xs": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon size for 3xs - 12px"
+        },
+        "2xs": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon size for 2xs - 14px"
+        },
+        "xs": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon size for xs - 16px"
+        },
+        "sm": {
+          "value": "{size.icon.sm}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon size for sm - 18px"
+        },
+        "md": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon size for md - 20px"
+        },
+        "lg": {
+          "value": "{size.icon.lg}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon size for lg - 24px"
+        },
+        "xl": {
+          "value": "{size.icon.xl}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon size for xl - 28px"
+        },
+        "2xl": {
+          "value": "{size.icon.2xl}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon size for 2xl - 32px"
+        },
+        "3xl": {
+          "value": "{size.icon.3xl}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon size for 3xl - 36px"
+        },
+        "4xl": {
+          "value": "{size.icon.4xl}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon size for 4xl - 40px"
+        }
+      }
+    },
+    "background": {
+      "$comment": "Badge background properties — background only visible in Hover and Clicked states",
+      "border-radius": {
+        "default": {
+          "value": "{border.radius.xs}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon background border radius for BG=Default - 4px (rounded rectangle badge)"
+        },
+        "circular": {
+          "value": "{border.radius.full}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon background border radius for BG=Circular - pill (fully rounded, functionally circular)"
+        }
+      },
+      "color": {
+        "$comment": "Background color per scenario — applied in Hover and Clicked states. All colors are /100 tints of their respective palettes.",
+        "neutral": {
+          "value": "#f9fafb",
+          "type": "color",
+          "description": "Mobile avatar action icon neutral scenario background - gray/50 - #f9fafb (lightest gray tint)"
+        },
+        "primary": {
+          "value": "#d1e0ff",
+          "type": "color",
+          "description": "Mobile avatar action icon primary scenario background - primary/100 - #d1e0ff"
+        },
+        "success": {
+          "value": "#d1fadf",
+          "type": "color",
+          "description": "Mobile avatar action icon success scenario background - success/100 - #d1fadf"
+        },
+        "error": {
+          "value": "#fee4e2",
+          "type": "color",
+          "description": "Mobile avatar action icon error scenario background - error/100 - #fee4e2"
+        },
+        "warning": {
+          "value": "#fef0c7",
+          "type": "color",
+          "description": "Mobile avatar action icon warning scenario background - warning/100 - #fef0c7"
+        }
+      }
+    },
+    "state": {
+      "$comment": "State-conditional background visibility",
+      "default": {
+        "background": {
+          "value": "transparent",
+          "type": "color",
+          "description": "Mobile avatar action icon default state background - transparent (no badge visible, bare icon only)"
+        }
+      },
+      "hover": {
+        "background": {
+          "value": "visible",
+          "type": "string",
+          "description": "Mobile avatar action icon hover state - badge background visible with scenario color applied"
+        }
+      },
+      "clicked": {
+        "background": {
+          "value": "visible",
+          "type": "string",
+          "description": "Mobile avatar action icon clicked/pressed state - badge background visible with scenario color applied (same as hover)"
+        }
+      },
+      "disabled": {
+        "background": {
+          "value": "transparent",
+          "type": "color",
+          "description": "Mobile avatar action icon disabled state background - transparent (no badge, icon visually muted)"
+        }
+      }
+    }
+  }
+}

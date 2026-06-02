@@ -1,0 +1,100 @@
+{
+  "$comment": "Mobile Progress Indicator Component Tokens",
+  "$description": "Component tokens for Mobile Progress Indicator — a composite component wrapping the Progress Bar with an optional label row (text + icon) above and optional helper text below. Supports 4 states: Default (active/in-progress), Success (complete), Error (failed), and Indeterminate (unknown progress). Figma Reference: Node ID 386-1891",
+  "$component": {
+    "name": "Progress Indicator",
+    "description": "A full-featured progress feedback component. Wraps a Progress Bar with a labeled header row and an optional helper text row beneath. The label row shows a text label plus a contextual icon (hourglass for active/indeterminate, check-circle for success, info-circle for error). The helper text row changes color to error/red in the Error state. Supports both stepper and continuous bar modes via the underlying Progress Bar sub-component.",
+    "structure": "Vertical flex column (gap: 4px) with: optional label row (text + icon, flex row), a Progress Bar sub-component, and optional helper text (single line below). Label row and helper text are individually togglable.",
+    "variants": {
+      "state": {
+        "Default": "Active/in-progress — hourglass icon, primary/blue fill bar at 40%, gray/600 helper text",
+        "Success": "Complete — check-circle icon, success/green fill bar at 100%, gray/600 helper text",
+        "Error": "Failed — info-circle icon, error/red fill bar at 100%, error/red helper text",
+        "Indeterminate": "Unknown progress — hourglass icon, animated shimmer bar (progress-bar-intermediate.json), gray/600 helper text. Only available in non-stepper mode."
+      },
+      "stepper": {
+        "false": "Continuous bar. All 4 states supported.",
+        "true": "Segmented stepper bar. Supported for Default, Success, and Error states only (Indeterminate has no stepper variant)."
+      },
+      "label": "boolean — show/hide the label + icon row above the bar",
+      "helperText": "boolean — show/hide the helper text row below the bar"
+    },
+    "subComponents": {
+      "progressBar": "progress-bar.json — the determinate bar sub-component used in Default/Success/Error states",
+      "progressBarIntermediate": "progress-bar-intermediate.json — the indeterminate animated bar used in Indeterminate state"
+    },
+    "usage": {
+      "contexts": "File uploads, task processing, wizard completion, onboarding flows, form submission status.",
+      "features": "4 semantic states, label + icon header, helper text, stepper and continuous bar variants, full HighRise design system component"
+    }
+  },
+  "progress-indicator": {
+    "container": {
+      "gap": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "description": "Mobile progress indicator container vertical gap - 4px (between label row, bar, and helper text row)"
+      }
+    },
+    "label": {
+      "$comment": "Header row — shows a text label and a contextual icon to the left. Row uses flex layout with 4px gap.",
+      "gap": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "description": "Mobile progress indicator label row gap - 4px (between the label text and the icon)"
+      },
+      "typography": {
+        "value": "{font.body.medium.lg}",
+        "type": "typography",
+        "description": "Mobile progress indicator label text typography - 14px Medium, 20px line-height (font/size/lg, font/weight/medium, font/line-height/lg)"
+      },
+      "color": {
+        "value": "{color.text.neutral.body.1}",
+        "type": "color",
+        "description": "Mobile progress indicator label text color - gray/700 - #344054 (consistent across all states)"
+      },
+      "icon": {
+        "size": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Mobile progress indicator label icon size - 16px (hourglass-02, check-circle, or info-circle depending on state)"
+        },
+        "default": {
+          "value": "hourglass-02",
+          "type": "string",
+          "description": "Mobile progress indicator label icon for Default and Indeterminate states - hourglass-02 (indicates active or pending progress)"
+        },
+        "success": {
+          "value": "check-circle",
+          "type": "string",
+          "description": "Mobile progress indicator label icon for Success state - check-circle (indicates completed/successful)"
+        },
+        "error": {
+          "value": "info-circle",
+          "type": "string",
+          "description": "Mobile progress indicator label icon for Error state - info-circle (indicates a problem requiring attention)"
+        }
+      }
+    },
+    "helper-text": {
+      "$comment": "Optional single line of descriptive text below the bar. Color changes to error/red in Error state.",
+      "typography": {
+        "value": "{font.body.regular.sm}",
+        "type": "typography",
+        "description": "Mobile progress indicator helper text typography - 12px Regular, 17px line-height (font/size/sm, font/weight/regular, font/line-height/sm)"
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Mobile progress indicator helper text color (Default/Success/Indeterminate states) - gray/600 - #475467"
+        },
+        "error": {
+          "value": "{color.secondary.error.500}",
+          "type": "color",
+          "description": "Mobile progress indicator helper text color (Error state) - error/500 - #f04438 (helper text turns red to reinforce the error state)"
+        }
+      }
+    }
+  }
+}

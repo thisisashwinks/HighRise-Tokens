@@ -1,0 +1,95 @@
+{
+  "$comment": "Mobile Progress Bar Intermediate (Indeterminate) Component Tokens",
+  "$description": "Component tokens for Mobile Progress Bar Intermediate — an animated indeterminate progress bar used when the total progress is unknown. Displays a sliding or shimmering indicator segment over a static track. Figma Reference: Node ID 388-1757",
+  "$component": {
+    "name": "Progress Bar Intermediate",
+    "description": "An indeterminate progress bar used when total progress cannot be determined. The indicator animates continuously (left-to-right sweep or shimmer gradient) over a static gray track. Used as a sub-component inside Progress Indicator when state=Indeterminate.",
+    "structure": "Single track container (overflow-clip, pill border-radius) with an absolutely positioned animated indicator segment. The indicator is narrower than the track and moves either from left-to-right or displays a center-gradient shimmer.",
+    "variants": {
+      "property1": {
+        "Default": "Indicator sweeps from left: starts at left: -110px, animating right across the track",
+        "Variant2": "Indicator sweeps from right: starts at right: -118px, animating left across the track",
+        "Variant3": "Shimmer gradient: centered gradient from gray/200 to primary/600 to gray/200 (shimmer effect)"
+      }
+    },
+    "usage": {
+      "contexts": "Used as a sub-component of Progress Indicator when state=Indeterminate. Also usable standalone for loading states where total progress is unknown.",
+      "features": "Continuous animation, 3 animation variants (sweep-left, sweep-right, shimmer), single fixed height, overflow clipping"
+    }
+  },
+  "progress-bar-intermediate": {
+    "track": {
+      "$comment": "The static container that the animated indicator moves within",
+      "height": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "Mobile indeterminate progress bar track height - 8px (matches determinate progress bar thin height)"
+      },
+      "border-radius": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile indeterminate progress bar track border radius - fully circular pill (rounded-[64px] in Figma)"
+      },
+      "background": {
+        "color": {
+          "value": "{color.background.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile indeterminate progress bar track background color - gray/200 - #eaecf0 (the unfilled portion of the bar)"
+        }
+      },
+      "overflow": {
+        "value": "clip",
+        "type": "string",
+        "description": "Mobile indeterminate progress bar track overflow - clip (prevents the animated indicator segment from showing outside the track bounds)"
+      }
+    },
+    "indicator": {
+      "$comment": "The animated segment that moves across the track — narrower than track width",
+      "height": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "Mobile indeterminate progress bar indicator height - 8px (matches track height)"
+      },
+      "width": {
+        "value": "110px",
+        "type": "dimension",
+        "description": "Mobile indeterminate progress bar indicator width - 110px (~34% of 320px reference container). This is the sliding segment size for Default and Variant2 animation modes."
+      },
+      "border-radius": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile indeterminate progress bar indicator border radius - fully circular pill (matches track shape)"
+      },
+      "color": {
+        "value": "{color.primary.600}",
+        "type": "color",
+        "description": "Mobile indeterminate progress bar indicator color - primary/blue/600 - #155eef (the solid fill used in Default and Variant2 sweep animations)"
+      }
+    },
+    "shimmer": {
+      "$comment": "Gradient properties for Variant3 (shimmer/pulse animation) — a gradient that sweeps across center",
+      "width": {
+        "value": "160px",
+        "type": "dimension",
+        "description": "Mobile indeterminate progress bar shimmer gradient width - 160px (50% of 320px reference container)"
+      },
+      "gradient": {
+        "from": {
+          "value": "{color.background.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile indeterminate progress bar shimmer gradient start color - gray/200 - #eaecf0 (matches track, fades in from left)"
+        },
+        "via": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Mobile indeterminate progress bar shimmer gradient center color - primary/blue/600 - #155eef at 53.85% position (the bright shimmer peak)"
+        },
+        "to": {
+          "value": "{color.background.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile indeterminate progress bar shimmer gradient end color - gray/200 - #eaecf0 (matches track, fades out to right)"
+        }
+      }
+    }
+  }
+}
