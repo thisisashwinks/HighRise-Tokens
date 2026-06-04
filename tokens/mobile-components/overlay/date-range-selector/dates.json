@@ -1,0 +1,110 @@
+{
+  "$comment": "Design token file for the Date Picker Dates component",
+  "$description": "Individual date cell in the calendar grid. Has three primary states (Default, Selected, Disabled) and range-specific variants (Range middle, Range Start, Range End). Selected state renders as a filled circle. Range-mode fills the cell background and adds a half-pill connector on start/end edges.",
+  "$component": {
+    "name": "Date Picker Dates",
+    "figmaNodeId": "309:25959",
+    "states": ["default", "selected", "disabled", "range", "range-start", "range-end"]
+  },
+  "dates": {
+    "size": {
+      "value": "{size.11}",
+      "type": "dimension",
+      "description": "44px — fixed width and height for every date cell"
+    },
+    "border-radius": {
+      "default": {
+        "value": "{border.radius.xs}",
+        "type": "borderRadius",
+        "description": "4px — rounded square for default and disabled states"
+      },
+      "selected": {
+        "value": "{border.radius.full}",
+        "type": "borderRadius",
+        "description": "Fully circular pill for the selected state circle"
+      }
+    },
+    "background": {
+      "default": {
+        "value": "{color.neutral.gray.100}",
+        "type": "color",
+        "description": "#f2f4f7 — light gray background for unselected interactive dates"
+      },
+      "selected": {
+        "value": "{color.primary.blue.900}",
+        "type": "color",
+        "description": "#00359e — dark primary blue fill for the selected date circle"
+      },
+      "range": {
+        "value": "{color.primary.blue.100}",
+        "type": "color",
+        "description": "#d1e0ff — light blue fill for dates that fall within a selected range"
+      },
+      "disabled": {
+        "value": "transparent",
+        "type": "color",
+        "description": "No background for disabled/out-of-month dates"
+      }
+    },
+    "label": {
+      "typography": {
+        "value": "{font.body.medium.md}",
+        "type": "typography",
+        "description": "13px Medium, 18px line-height — date number inside the cell"
+      },
+      "color": {
+        "default": {
+          "value": "{color.neutral.gray.600}",
+          "type": "color",
+          "description": "#475467 — default date number color"
+        },
+        "selected": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White date number on the dark selected circle"
+        },
+        "range": {
+          "value": "{color.neutral.gray.600}",
+          "type": "color",
+          "description": "#475467 — date number color for in-range dates"
+        },
+        "disabled": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "#d0d5dd — muted color for disabled and out-of-month dates"
+        }
+      }
+    },
+    "today-indicator": {
+      "size": {
+        "value": "8px",
+        "type": "dimension",
+        "description": "Diameter of the small dot marking today's date"
+      },
+      "color": {
+        "default": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "#155eef — blue dot shown at top-right of today's cell in default state"
+        },
+        "selected": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White dot shown above the selected circle when today is selected"
+        }
+      },
+      "offset": {
+        "value": "2px",
+        "type": "dimension",
+        "description": "Inset from top and right edges for the today dot in default state"
+      }
+    },
+    "range-connector": {
+      "background": {
+        "value": "{color.primary.blue.100}",
+        "type": "color",
+        "description": "#d1e0ff — half-pill shown behind the selected circle at range start (left-open) and range end (right-open) to visually connect to the range band"
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "$comment": "Design token file for the Date Time Range Picker component",
+  "$description": "Pair of date input fields displayed side by side. Each field shows a calendar icon followed by a MM / DD / YYYY placeholder in segmented format. Used as the trigger / manual-entry zone at the top of the Date Range Selector body. Width fits within the 393px sheet body (16px padding each side = 361px usable).",
+  "$component": {
+    "name": "Date Time Range Picker",
+    "figmaNodeId": "311:15651",
+    "subComponents": ["Input (HighRise)"]
+  },
+  "date-time-range-picker": {
+    "width": {
+      "value": "361px",
+      "type": "dimension",
+      "description": "Total width of the two-field row (393px sheet minus 16px padding each side)"
+    },
+    "input": {
+      "height": {
+        "value": "{size.12}",
+        "type": "dimension",
+        "description": "48px — taller than the standard 36px control height to accommodate date segments"
+      },
+      "background": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "White input field background"
+      },
+      "border": {
+        "width": {
+          "value": "1px",
+          "type": "dimension",
+          "description": "Input border width"
+        },
+        "color": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "#d0d5dd — default input border color"
+        },
+        "radius": {
+          "value": "{border.radius.sm}",
+          "type": "borderRadius",
+          "description": "8px — matches HighRise input/border/radius/md"
+        }
+      },
+      "shadow": {
+        "value": "{shadow.xs}",
+        "type": "shadow",
+        "description": "0px 1px 2px 0px rgba(16,24,40,0.05)"
+      },
+      "padding": {
+        "horizontal": {
+          "value": "{size.3}",
+          "type": "dimension",
+          "description": "12px left and right inset — matches HighRise input/padding/x/md"
+        }
+      },
+      "gap": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "8px gap between the calendar icon and the date text segments — matches HighRise input/gap"
+      }
+    },
+    "calendar-icon": {
+      "size": {
+        "value": "{size.5}",
+        "type": "dimension",
+        "description": "20px — calendar icon preceding the date segments"
+      },
+      "name": {
+        "value": "calendar",
+        "type": "string",
+        "description": "GHL icon name for the date input leading icon"
+      }
+    },
+    "placeholder": {
+      "typography": {
+        "value": "{font.body.regular.2xl}",
+        "type": "typography",
+        "description": "16px Regular, 24px line-height — format hint text (MM / DD / YYYY)"
+      },
+      "color": {
+        "value": "{color.neutral.gray.500}",
+        "type": "color",
+        "description": "#667085 — muted placeholder text color matching HighRise input/color/default/text/default"
+      },
+      "segment-gap": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "description": "4px gap between individual date segments (DD, /, MM, /, YYYY)"
+      }
+    }
+  }
+}

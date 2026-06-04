@@ -1,0 +1,184 @@
+{
+  "$comment": "Design token file for the Accordion component",
+  "$description": "A collapsible panel component. The header row contains optional artwork (icon or custom slot), a title with optional inline Tag and info icon, an optional subtitle, and a chevron toggle. When expanded, a Custom Slot content area is revealed below the header. Supports two states (Collapsed, Expanded), two artwork types (Icon, Custom), and a disabled state.",
+  "$component": {
+    "name": "Accordion",
+    "figmaNodeId": "419:17412",
+    "states": ["collapsed", "expanded", "disabled"],
+    "artworkVariants": ["icon", "custom"],
+    "subComponents": [
+      "Custom Slot (custom-slot.json)",
+      "Tag (HighRise design system — see tag/tag.json)",
+      "info-circle icon (GHL icon library)"
+    ]
+  },
+  "accordion": {
+    "background": {
+      "value": "{color.neutral.white.base}",
+      "type": "color",
+      "description": "White background for the accordion container"
+    },
+    "gap": {
+      "value": "{size.3}",
+      "type": "dimension",
+      "description": "12px vertical gap between header, divider, and content sections"
+    },
+    "header": {
+      "gap": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "8px horizontal gap between the artwork (icon or custom) and the text column"
+      },
+      "title-row": {
+        "gap": {
+          "value": "{size.2}",
+          "type": "dimension",
+          "description": "8px gap between title text, inline Tag badge, and info icon"
+        }
+      },
+      "artwork": {
+        "icon": {
+          "size": {
+            "value": "{size.7}",
+            "type": "dimension",
+            "description": "28px square container for the icon artwork variant"
+          },
+          "color": {
+            "default": {
+              "value": "{color.neutral.gray.600}",
+              "type": "color",
+              "description": "#475467 — icon stroke color in default/enabled state"
+            },
+            "disabled": {
+              "value": "{color.neutral.gray.300}",
+              "type": "color",
+              "description": "#d0d5dd — icon stroke color in disabled state"
+            }
+          }
+        },
+        "custom": {
+          "size": {
+            "value": "37px",
+            "type": "dimension",
+            "description": "37px square for the custom artwork placeholder (non-standard size, matches Figma spec)"
+          },
+          "background": {
+            "value": "{color.neutral.gray.200}",
+            "type": "color",
+            "description": "#eaecf0 — fill for the custom artwork slot"
+          },
+          "border-radius": {
+            "value": "{border.radius.sm}",
+            "type": "borderRadius",
+            "description": "8px rounded corners on the custom artwork container"
+          },
+          "label": {
+            "typography": {
+              "value": "{font.body.medium.xs}",
+              "type": "typography",
+              "description": "11px Medium, 16px line-height — placeholder label inside the custom artwork slot"
+            },
+            "color": {
+              "value": "{color.neutral.gray.600}",
+              "type": "color",
+              "description": "#475467 — placeholder label color"
+            }
+          }
+        }
+      },
+      "title": {
+        "typography": {
+          "value": "{font.body.semibold.lg}",
+          "type": "typography",
+          "description": "14px Semibold, 20px line-height"
+        },
+        "color": {
+          "default": {
+            "value": "{color.neutral.gray.700}",
+            "type": "color",
+            "description": "#344054 — title text in default/enabled state"
+          },
+          "disabled": {
+            "value": "{color.neutral.gray.300}",
+            "type": "color",
+            "description": "#d0d5dd — title text in disabled state"
+          }
+        }
+      },
+      "info-icon": {
+        "size": {
+          "value": "{size.icon.sm}",
+          "type": "dimension",
+          "description": "18px — info-circle icon displayed inline next to the title"
+        },
+        "name": {
+          "value": "info-circle",
+          "type": "string",
+          "description": "GHL icon name for the optional informational icon"
+        }
+      },
+      "subtitle": {
+        "typography": {
+          "value": "{font.body.regular.sm}",
+          "type": "typography",
+          "description": "12px Regular, 17px line-height — secondary line below the title"
+        },
+        "color": {
+          "default": {
+            "value": "{color.neutral.gray.600}",
+            "type": "color",
+            "description": "#475467 — subtitle text in default/enabled state"
+          },
+          "disabled": {
+            "value": "{color.neutral.gray.300}",
+            "type": "color",
+            "description": "#d0d5dd — subtitle text in disabled state"
+          }
+        }
+      },
+      "chevron": {
+        "size": {
+          "value": "{size.7}",
+          "type": "dimension",
+          "description": "28px square for the chevron toggle icon"
+        },
+        "icon": {
+          "collapsed": {
+            "value": "chevron-down",
+            "type": "string",
+            "description": "GHL icon name shown when the accordion is collapsed"
+          },
+          "expanded": {
+            "value": "chevron-up",
+            "type": "string",
+            "description": "GHL icon name shown when the accordion is expanded"
+          }
+        },
+        "color": {
+          "default": {
+            "value": "{color.neutral.gray.700}",
+            "type": "color",
+            "description": "#344054 — chevron icon color in default/enabled state"
+          },
+          "disabled": {
+            "value": "{color.neutral.gray.300}",
+            "type": "color",
+            "description": "#d0d5dd — chevron icon color in disabled state"
+          }
+        }
+      }
+    },
+    "divider": {
+      "height": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Hairline divider shown below the header row (collapsed) and below content (expanded)"
+      },
+      "color": {
+        "value": "{color.neutral.gray.200}",
+        "type": "color",
+        "description": "#eaecf0 — divider line color"
+      }
+    }
+  }
+}

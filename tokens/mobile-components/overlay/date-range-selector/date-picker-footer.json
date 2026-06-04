@@ -1,0 +1,165 @@
+{
+  "$comment": "Design token file for the Date Picker Footer component",
+  "$description": "Footer bar of the Date Range Selector bottom sheet. Contains a horizontal divider, then a row with Cancel (ghost) and Done (primary) action buttons. The Done button is visually disabled (primary/blue/200) until a date selection is made, then switches to primary/600.",
+  "$component": {
+    "name": "Date Picker Footer",
+    "figmaNodeId": "309:36874",
+    "subComponents": ["Button (HighRise)"]
+  },
+  "date-picker-footer": {
+    "width": {
+      "value": "393px",
+      "type": "dimension",
+      "description": "Full mobile viewport width"
+    },
+    "padding": {
+      "horizontal": {
+        "value": "{size.4}",
+        "type": "dimension",
+        "description": "16px left and right inset"
+      },
+      "top": {
+        "value": "18px",
+        "type": "dimension",
+        "description": "Gap between the divider line and the button row"
+      },
+      "bottom": {
+        "value": "{size.8}",
+        "type": "dimension",
+        "description": "32px bottom safe-area padding"
+      }
+    },
+    "divider": {
+      "width": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Horizontal rule height above the footer buttons"
+      },
+      "color": {
+        "value": "{color.neutral.gray.200}",
+        "type": "color",
+        "description": "#eaecf0 — separator between calendar body and footer"
+      }
+    },
+    "button-gap": {
+      "value": "{size.4}",
+      "type": "dimension",
+      "description": "16px gap between Cancel and Done buttons"
+    },
+    "cancel-button": {
+      "background": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "White ghost button background"
+      },
+      "border": {
+        "width": {
+          "value": "1px",
+          "type": "dimension",
+          "description": "Button border width"
+        },
+        "color": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "#d0d5dd — subtle border on the ghost Cancel button"
+        }
+      },
+      "border-radius": {
+        "value": "{border.radius.sm}",
+        "type": "borderRadius",
+        "description": "8px button corner radius"
+      },
+      "shadow": {
+        "value": "{shadow.xs}",
+        "type": "shadow",
+        "description": "0px 1px 2px 0px rgba(16,24,40,0.05)"
+      },
+      "padding": {
+        "horizontal": {
+          "value": "20px",
+          "type": "dimension",
+          "description": "Left and right button padding"
+        },
+        "vertical": {
+          "value": "12px",
+          "type": "dimension",
+          "description": "Top and bottom button padding"
+        }
+      },
+      "label": {
+        "typography": {
+          "value": "{font.body.semibold.2xl}",
+          "type": "typography",
+          "description": "16px Semibold, 24px line-height"
+        },
+        "color": {
+          "value": "{color.neutral.gray.700}",
+          "type": "color",
+          "description": "#344054 — Cancel button label color"
+        }
+      }
+    },
+    "done-button": {
+      "background": {
+        "inactive": {
+          "value": "{color.primary.blue.200}",
+          "type": "color",
+          "description": "#b2ccff — light blue shown when no date range is selected yet (disabled appearance)"
+        },
+        "active": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "#155eef — full primary blue once a date range is confirmed"
+        }
+      },
+      "border": {
+        "width": {
+          "value": "1px",
+          "type": "dimension",
+          "description": "Button border width"
+        },
+        "color": {
+          "inactive": {
+            "value": "{color.primary.blue.200}",
+            "type": "color",
+            "description": "#b2ccff — matches inactive background"
+          },
+          "active": {
+            "value": "{color.primary.600}",
+            "type": "color",
+            "description": "#155eef — matches active background"
+          }
+        }
+      },
+      "border-radius": {
+        "value": "{border.radius.sm}",
+        "type": "borderRadius",
+        "description": "8px button corner radius"
+      },
+      "padding": {
+        "horizontal": {
+          "value": "20px",
+          "type": "dimension",
+          "description": "Left and right button padding"
+        },
+        "vertical": {
+          "value": "12px",
+          "type": "dimension",
+          "description": "Top and bottom button padding"
+        }
+      },
+      "label": {
+        "typography": {
+          "value": "{font.body.semibold.2xl}",
+          "type": "typography",
+          "description": "16px Semibold, 24px line-height"
+        },
+        "color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White label on both inactive and active Done button"
+        }
+      }
+    }
+  }
+}

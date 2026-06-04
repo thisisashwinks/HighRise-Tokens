@@ -1,0 +1,33 @@
+{
+  "$comment": "Design token file for the Date Picker Gap component",
+  "$description": "Thin spacer element placed between each date cell in the calendar grid row. In default mode it is transparent white. In range mode it fills with the range highlight color to visually connect consecutive in-range dates into a continuous band.",
+  "$component": {
+    "name": "Date Picker Gap",
+    "figmaNodeId": "309:25981",
+    "states": ["default", "range"]
+  },
+  "dates-gap": {
+    "width": {
+      "value": "6px",
+      "type": "dimension",
+      "description": "Fixed gap width between adjacent date cells"
+    },
+    "height": {
+      "value": "{size.11}",
+      "type": "dimension",
+      "description": "44px — matches the height of the Dates cell so the range band is flush"
+    },
+    "background": {
+      "default": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "White — invisible spacer in default (no selection) mode"
+      },
+      "range": {
+        "value": "{color.primary.blue.100}",
+        "type": "color",
+        "description": "#d1e0ff — light blue fill connecting in-range date cells into a continuous highlight band"
+      }
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "$comment": "Design token file for the Date Range Selector component",
+  "$description": "Full-width mobile bottom sheet for selecting a date range. Composed of a modal header (title + close), a body with Date Time Range Picker input fields and a scrollable calendar picker menu (day headers + date grid), and a footer (Cancel + Done). Supports two calendar months visible simultaneously in the Default state. Width matches standard mobile viewport (393px).",
+  "$component": {
+    "name": "Date Range Selector",
+    "figmaNodeId": "309:25390",
+    "states": ["default", "single-selected", "single-month", "multiple-month"],
+    "subComponents": [
+      "Date Picker Dates (dates.json)",
+      "Date Picker Gap (dates-gap.json)",
+      "Date Picker Footer (date-picker-footer.json)",
+      "Date Time Range Picker (date-time-range-picker.json)",
+      "Header Lite (HighRise)",
+      "Button (HighRise)"
+    ]
+  },
+  "date-range-selector": {
+    "width": {
+      "value": "393px",
+      "type": "dimension",
+      "description": "Full mobile viewport width"
+    },
+    "background": {
+      "value": "{color.neutral.white.base}",
+      "type": "color",
+      "description": "Sheet background"
+    },
+    "border": {
+      "width": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Outer sheet border"
+      },
+      "color": {
+        "value": "{color.neutral.gray.100}",
+        "type": "color",
+        "description": "#f2f4f7 — very subtle border on the bottom sheet container"
+      }
+    },
+    "border-radius": {
+      "top": {
+        "value": "{border.radius.sm}",
+        "type": "borderRadius",
+        "description": "8px — top-left and top-right corners only; bottom corners are square (sheet anchors to screen bottom)"
+      }
+    },
+    "shadow": {
+      "value": "{shadow.xl}",
+      "type": "shadow",
+      "description": "0px 20px 24px -4px rgba(16,24,40,0.08), 0px 8px 8px -4px rgba(16,24,40,0.03)"
+    },
+    "header": {
+      "padding": {
+        "top": {
+          "value": "12px",
+          "type": "dimension",
+          "description": "Top inset above header contents"
+        },
+        "horizontal": {
+          "value": "{size.4}",
+          "type": "dimension",
+          "description": "16px left and right inset"
+        }
+      },
+      "title": {
+        "typography": {
+          "value": "{font.body.semibold.lg}",
+          "type": "typography",
+          "description": "14px Semibold, 20px line-height — sheet title text"
+        },
+        "color": {
+          "value": "{color.neutral.gray.900}",
+          "type": "color",
+          "description": "#101828 — sheet title color"
+        }
+      },
+      "close-button": {
+        "size": {
+          "value": "{size.9}",
+          "type": "dimension",
+          "description": "36px — width and height of the close icon button"
+        },
+        "icon": {
+          "name": {
+            "value": "x",
+            "type": "string",
+            "description": "GHL icon name for the close/dismiss action"
+          }
+        }
+      }
+    },
+    "body": {
+      "background": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "Body section background"
+      },
+      "padding": {
+        "value": "{size.4}",
+        "type": "dimension",
+        "description": "16px padding around body contents"
+      },
+      "gap": {
+        "value": "{size.4}",
+        "type": "dimension",
+        "description": "16px vertical gap between the Date Time Range Picker inputs and the picker menu card"
+      }
+    },
+    "picker-menu": {
+      "background": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "Calendar card background"
+      },
+      "border": {
+        "width": {
+          "value": "1px",
+          "type": "dimension",
+          "description": "Calendar card border"
+        },
+        "color": {
+          "value": "{color.neutral.gray.100}",
+          "type": "color",
+          "description": "#f2f4f7 — subtle card border"
+        }
+      },
+      "border-radius": {
+        "value": "{border.radius.sm}",
+        "type": "borderRadius",
+        "description": "8px corner radius on the calendar card"
+      },
+      "shadow": {
+        "value": "{shadow.md}",
+        "type": "shadow",
+        "description": "0px 4px 8px -2px rgba(16,24,40,0.10), 0px 2px 4px -2px rgba(16,24,40,0.06) — card elevation"
+      },
+      "padding": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "8px inner padding around the calendar contents"
+      },
+      "gap": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "8px vertical gap between day-header row, each month section, and between week rows"
+      },
+      "day-headers": {
+        "height": {
+          "value": "{size.6}",
+          "type": "dimension",
+          "description": "24px — row height for the Sun Mon Tue Wed Thu Fri Sat header"
+        },
+        "cell-width": {
+          "value": "{size.11}",
+          "type": "dimension",
+          "description": "44px — matches date cell width for alignment"
+        },
+        "typography": {
+          "value": "{font.body.semibold.lg}",
+          "type": "typography",
+          "description": "14px Semibold, 20px line-height — day-of-week labels"
+        },
+        "color": {
+          "value": "{color.neutral.gray.400}",
+          "type": "color",
+          "description": "#98a2b3 — muted day-of-week header text"
+        },
+        "divider": {
+          "width": {
+            "value": "1px",
+            "type": "dimension",
+            "description": "Bottom border separating day headers from the date grid"
+          },
+          "color": {
+            "value": "{color.neutral.gray.100}",
+            "type": "color",
+            "description": "#f2f4f7 — subtle divider below day headers"
+          }
+        }
+      },
+      "month-label": {
+        "typography": {
+          "value": "{font.body.semibold.lg}",
+          "type": "typography",
+          "description": "14px Semibold, 20px line-height — month name and year label (e.g., Oct 2024)"
+        },
+        "color": {
+          "value": "{color.neutral.gray.800}",
+          "type": "color",
+          "description": "#1d2939 — month/year label text"
+        },
+        "gap": {
+          "value": "2px",
+          "type": "dimension",
+          "description": "Gap between the month name token and the year token within the label row"
+        },
+        "cell-height": {
+          "value": "{size.6}",
+          "type": "dimension",
+          "description": "24px — height of each month/year label chip"
+        }
+      },
+      "calendar-grid": {
+        "row-gap": {
+          "value": "{size.2}",
+          "type": "dimension",
+          "description": "8px vertical gap between week rows in the date grid"
+        }
+      }
+    }
+  }
+}

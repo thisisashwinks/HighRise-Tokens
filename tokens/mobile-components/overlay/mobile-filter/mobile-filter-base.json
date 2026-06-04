@@ -1,0 +1,42 @@
+{
+  "$comment": "Design token file for the Mobile Filter Base component",
+  "$description": "The two-column panel that houses filter categories and their sub-options. Left column (189px) stacks Filter Items; right column (172px) stacks Filter Sub Items. Acts as a container — all internal row tokens are defined in filter-item.json and filter-sub-item.json.",
+  "$component": {
+    "name": "Mobile Filter Base",
+    "figmaNodeId": "396:62596",
+    "subComponents": ["Filter Item (filter-item.json)", "Filter Sub Item (filter-sub-item.json)"]
+  },
+  "mobile-filter-base": {
+    "border": {
+      "width": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Outer border around the two-column panel"
+      },
+      "color": {
+        "value": "{color.neutral.gray.200}",
+        "type": "color",
+        "description": "#eaecf0 — panel border color"
+      }
+    },
+    "border-radius": {
+      "value": "{border.radius.md}",
+      "type": "borderRadius",
+      "description": "12px — rounded corners on the filter panel container"
+    },
+    "left-column": {
+      "width": {
+        "value": "189px",
+        "type": "dimension",
+        "description": "Fixed width for the Filter Item (category) column"
+      }
+    },
+    "right-column": {
+      "width": {
+        "value": "172px",
+        "type": "dimension",
+        "description": "Fixed width for the Filter Sub Item (options) column"
+      }
+    }
+  }
+}
