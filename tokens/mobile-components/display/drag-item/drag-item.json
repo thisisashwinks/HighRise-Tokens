@@ -1,0 +1,184 @@
+{
+  "$comment": "Design token file for the Drag Item component",
+  "$description": "A sortable row used in reorderable lists. Contains a drag handle icon (drag_indicator) and a Custom Slot content area. The handle can be positioned on any of the four sides (Left, Right, Top, Bottom). For Top/Bottom positions the handle is rotated -90deg and the layout direction becomes vertical. Has 5 states: Default (idle gray), Pressed (darker gray + soft shadow), Dragging (blue tint + thick border + elevated shadow), Disabled (no background/shadow), and Empty (transparent with a dashed border placeholder).",
+  "$component": {
+    "name": "Drag Item",
+    "figmaNodeId": "438:19628",
+    "states": ["default", "pressed", "dragging", "disabled", "empty"],
+    "positions": ["left", "right", "top", "bottom"]
+  },
+  "drag-item": {
+    "width": {
+      "value": "361px",
+      "type": "dimension",
+      "description": "Standard content width inside a 393px mobile viewport with 16px padding each side"
+    },
+    "padding": {
+      "value": "{size.1}",
+      "type": "dimension",
+      "description": "4px inset on all sides"
+    },
+    "gap": {
+      "value": "{size.1}",
+      "type": "dimension",
+      "description": "4px gap between the drag handle and the content slot"
+    },
+    "border-radius": {
+      "value": "{border.radius.xs}",
+      "type": "borderRadius",
+      "description": "4px corner radius on the outer container"
+    },
+    "background": {
+      "default": {
+        "value": "{color.neutral.gray.100}",
+        "type": "color",
+        "description": "#f2f4f7 — idle background in Default state"
+      },
+      "pressed": {
+        "value": "{color.neutral.gray.200}",
+        "type": "color",
+        "description": "#eaecf0 — slightly darker background when the item is actively pressed"
+      },
+      "dragging": {
+        "value": "{color.accent.blue-light.50}",
+        "type": "color",
+        "description": "#f0f9ff — light blue tint applied while the item is being dragged"
+      },
+      "disabled": {
+        "value": "transparent",
+        "type": "color",
+        "description": "No background in Disabled state"
+      },
+      "empty": {
+        "value": "transparent",
+        "type": "color",
+        "description": "No background in Empty state (dashed border only)"
+      }
+    },
+    "border": {
+      "width": {
+        "dragging": {
+          "value": "3px",
+          "type": "dimension",
+          "description": "Thick solid ring shown while the item is being dragged"
+        },
+        "empty": {
+          "value": "1px",
+          "type": "dimension",
+          "description": "Thin dashed border indicating an empty drop target"
+        }
+      },
+      "style": {
+        "dragging": {
+          "value": "solid",
+          "type": "string",
+          "description": "Solid border in Dragging state"
+        },
+        "empty": {
+          "value": "dashed",
+          "type": "string",
+          "description": "Dashed border in Empty state to signal an available slot"
+        }
+      },
+      "color": {
+        "dragging": {
+          "value": "{color.primary.blue.400}",
+          "type": "color",
+          "description": "#528bff — primary blue ring in Dragging state"
+        },
+        "empty": {
+          "value": "{color.primary.blue.400}",
+          "type": "color",
+          "description": "#528bff — same primary blue for the dashed empty slot border"
+        }
+      }
+    },
+    "shadow": {
+      "pressed": {
+        "value": "{shadow.sm}",
+        "type": "shadow",
+        "description": "0px 1px 3px 0px rgba(16,24,40,0.10), 0px 1px 2px 0px rgba(16,24,40,0.06) — subtle lift on press"
+      },
+      "dragging": {
+        "value": "{shadow.lg}",
+        "type": "shadow",
+        "description": "0px 12px 16px -4px rgba(16,24,40,0.08), 0px 4px 6px -2px rgba(16,24,40,0.03) — elevated floating shadow while dragging"
+      }
+    },
+    "drag-handle": {
+      "size": {
+        "value": "{size.5}",
+        "type": "dimension",
+        "description": "20px — width and height of the drag_indicator icon"
+      },
+      "icon-name": {
+        "value": "drag_indicator",
+        "type": "string",
+        "description": "GHL icon name for the drag affordance (six-dot grid pattern)"
+      },
+      "rotation": {
+        "left-right": {
+          "value": "0deg",
+          "type": "string",
+          "description": "Handle renders upright when positioned on the left or right side"
+        },
+        "top-bottom": {
+          "value": "-90deg",
+          "type": "string",
+          "description": "Handle rotated -90deg when positioned on the top or bottom edge so the dots run horizontally"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.neutral.gray.400}",
+          "type": "color",
+          "description": "#98a2b3 — muted handle color in idle Default state"
+        },
+        "pressed": {
+          "value": "{color.neutral.gray.600}",
+          "type": "color",
+          "description": "#475467 — darker handle when item is being pressed"
+        },
+        "dragging": {
+          "value": "{color.primary.blue.400}",
+          "type": "color",
+          "description": "#528bff — handle adopts the primary blue tint while being dragged, matching the border"
+        },
+        "disabled": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "#d0d5dd — washed-out handle in Disabled state"
+        },
+        "empty": {
+          "value": "transparent",
+          "type": "color",
+          "description": "Handle is invisible (opacity 0) in Empty state — space is reserved but icon is hidden"
+        }
+      }
+    },
+    "slot": {
+      "padding-vertical": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "8px top and bottom padding inside the Custom Slot content area"
+      },
+      "border-radius": {
+        "value": "{border.radius.xs}",
+        "type": "borderRadius",
+        "description": "4px corner radius on the content slot container"
+      },
+      "label": {
+        "typography": {
+          "value": "{font.body.semibold.md}",
+          "type": "typography",
+          "description": "13px Semibold, 18px line-height — placeholder label shown when the slot has no content"
+        },
+        "color": {
+          "value": "{color.neutral.gray.400}",
+          "type": "color",
+          "description": "#98a2b3 — muted gray for the 'Custom Slot' placeholder text"
+        }
+      }
+    }
+  }
+}

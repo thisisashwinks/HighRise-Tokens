@@ -1,0 +1,105 @@
+{
+  "$comment": "Mobile Tooltip Component Tokens",
+  "$description": "Component tokens for Mobile Tooltip component - a compact dark callout with a directional pointer. Supports 2 types (Simple = text only, Action = text + close icon) and 4 pointer directions (Top, Bottom, Left, Right). Figma Reference: Node ID 533-3474",
+  "$component": {
+    "name": "Tooltip",
+    "description": "A mobile tooltip component that displays a short label in a dark container with a directional arrow pointer. The simple type shows text only; the action type adds a close (X) icon button. Pointer direction (top/bottom/left/right) determines which edge the arrow attaches to and the visual reading order of the component.",
+    "structure": "Outer wrapper (drop shadow) containing: a dark rounded container (gray-800 background, 8px radius, 16px padding) with a text label, and a directional arrow pointer (8px × 32px) attached to one edge. The action type adds a 24px close icon to the right of the label.",
+    "variants": {
+      "type": {
+        "simple": "Text label only — no trailing icon",
+        "action": "Text label with a close (X) icon button on the trailing end"
+      },
+      "direction": {
+        "top": "Arrow points downward from bottom edge — tooltip sits above the target",
+        "bottom": "Arrow points upward from top edge — tooltip sits below the target",
+        "left": "Arrow points rightward from right edge — tooltip sits to the left of the target",
+        "right": "Arrow points leftward from left edge — tooltip sits to the right of the target"
+      }
+    },
+    "usage": {
+      "contexts": "In-context helper labels, icon hints, action confirmations, short descriptive callouts on mobile screens",
+      "features": "Dark background for high contrast, directional arrow with 4 positions, optional close icon (action type), drop shadow for elevation"
+    }
+  },
+  "tooltip": {
+    "container": {
+      "$comment": "Container tokens for the tooltip body — dark rounded box holding the label and optional icon",
+      "color": {
+        "background": {
+          "value": "{color.background.neutral.intense.2}",
+          "type": "color",
+          "description": "Mobile tooltip container background - neutral/gray-800 - #1d2939"
+        }
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "Mobile tooltip container border radius - 8px"
+        }
+      },
+      "padding": {
+        "horizontal": {
+          "value": "{padding.4}",
+          "type": "dimension",
+          "description": "Mobile tooltip container horizontal padding - 16px"
+        },
+        "vertical": {
+          "value": "{padding.4}",
+          "type": "dimension",
+          "description": "Mobile tooltip container vertical padding - 16px"
+        }
+      },
+      "shadow": {
+        "value": "{boxShadow.outer.md}",
+        "type": "boxShadow",
+        "description": "Mobile tooltip container drop shadow - shadow/md - 0px 4px 8px -2px rgba(16,24,40,0.1), 0px 2px 4px -2px rgba(16,24,40,0.06)"
+      }
+    },
+    "arrow": {
+      "$comment": "Arrow/pointer tokens — the directional triangle that points toward the triggering element. Always matches the container background color.",
+      "color": {
+        "value": "{color.background.neutral.intense.2}",
+        "type": "color",
+        "description": "Mobile tooltip arrow fill color - matches container background - neutral/gray-800 - #1d2939"
+      },
+      "height": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "Mobile tooltip arrow height (perpendicular depth) - 8px — consistent across all 4 directions"
+      },
+      "width": {
+        "value": "{size.8}",
+        "type": "dimension",
+        "description": "Mobile tooltip arrow width (span along the container edge) - 32px — consistent across all 4 directions"
+      }
+    },
+    "label": {
+      "$comment": "Label text tokens — the primary text content inside the tooltip container",
+      "typography": {
+        "value": "{font.body.regular.base}",
+        "type": "typography",
+        "description": "Mobile tooltip label typography - Inter Regular, 14px, 20px line-height (font/size/lg, font/weight/regular)"
+      },
+      "color": {
+        "value": "{color.text.neutral.base}",
+        "type": "color",
+        "description": "Mobile tooltip label text color - neutral/white - #ffffff"
+      }
+    },
+    "icon": {
+      "$comment": "Close icon tokens — used only in the Action type variant. Displayed to the trailing end of the label.",
+      "size": {
+        "value": "{size.icon.lg}",
+        "type": "dimension",
+        "description": "Mobile tooltip action close icon size - 24px (square)"
+      },
+      "color": {
+        "value": "{color.icon.neutral.base}",
+        "type": "color",
+        "description": "Mobile tooltip action close icon color - neutral/white - #ffffff"
+      }
+    }
+  }
+}

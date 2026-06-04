@@ -2817,18 +2817,6 @@
           "type": "dimension",
           "description": "0px border width for mobile link buttons"
         }
-      },
-      "ghost": {
-        "radius": {
-          "value": "{border.radius.none}",
-          "type": "dimension",
-          "description": "0px border radius for mobile ghost buttons"
-        },
-        "width": {
-          "value": "{border.width.none}",
-          "type": "dimension",
-          "description": "0px border width for mobile ghost buttons"
-        }
       }
     },
     "effects": {

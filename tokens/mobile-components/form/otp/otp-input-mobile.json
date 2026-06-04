@@ -1,0 +1,137 @@
+{
+  "$comment": "Design token file for the OTP Input Mobile component",
+  "$description": "Full OTP entry field group for mobile screens. Composes a label, a row of OTP Input Field cells (4 or 6 digits), and a hint text row. Supports three sizes (xs, sm, md), two digit counts (4, 6), and five states (default, error, disabled, loading, success). Loading state shows the OTP Loader spinner inline with hint text. Success state shows a check-circle icon inline with green hint text.",
+  "$component": {
+    "name": "OTP Input Mobile",
+    "figmaNodeId": "421:25195",
+    "states": ["default", "error", "disabled", "loading", "success"],
+    "sizes": ["xs", "sm", "md"],
+    "digits": ["4", "6"],
+    "subComponents": [
+      "OTP Input Field (otp-input-field.json)",
+      "OTP Loader (otp-loader.json)"
+    ]
+  },
+  "otp-input-mobile": {
+    "gap": {
+      "value": "{size.1}",
+      "type": "dimension",
+      "description": "4px vertical gap between label, input row, and hint text row"
+    },
+    "label": {
+      "color": {
+        "value": "{color.neutral.gray.700}",
+        "type": "color",
+        "description": "#344054 — label text color for all sizes and states"
+      },
+      "typography": {
+        "xs": {
+          "value": "{font.body.medium.md}",
+          "type": "typography",
+          "description": "13px Medium, 18px line-height — label at xs size"
+        },
+        "sm": {
+          "value": "{font.body.medium.lg}",
+          "type": "typography",
+          "description": "14px Medium, 20px line-height — label at sm size"
+        },
+        "md": {
+          "value": "{font.body.medium.2xl}",
+          "type": "typography",
+          "description": "16px Medium, 24px line-height — label at md size"
+        }
+      }
+    },
+    "input-row": {
+      "gap": {
+        "xs": {
+          "value": "{size.2}",
+          "type": "dimension",
+          "description": "8px gap between digit cells at xs size"
+        },
+        "sm": {
+          "value": "{size.2}",
+          "type": "dimension",
+          "description": "8px gap between digit cells at sm size"
+        },
+        "md": {
+          "value": "12px",
+          "type": "dimension",
+          "description": "12px gap between digit cells at md size — wider spacing for larger cells"
+        }
+      }
+    },
+    "hint-text": {
+      "typography": {
+        "xs": {
+          "value": "{font.body.regular.sm}",
+          "type": "typography",
+          "description": "12px Regular, 17px line-height — hint at xs size"
+        },
+        "sm": {
+          "value": "{font.body.regular.md}",
+          "type": "typography",
+          "description": "13px Regular, 18px line-height — hint at sm size"
+        },
+        "md": {
+          "value": "{font.body.regular.lg}",
+          "type": "typography",
+          "description": "14px Regular, 20px line-height — hint at md size"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.neutral.gray.600}",
+          "type": "color",
+          "description": "#475467 — hint text in default and loading states"
+        },
+        "error": {
+          "value": "{color.secondary.error.500}",
+          "type": "color",
+          "description": "#f04438 — hint text in error state"
+        },
+        "success": {
+          "value": "{color.secondary.success.600}",
+          "type": "color",
+          "description": "#039855 — hint text in success state"
+        }
+      }
+    },
+    "loading-row": {
+      "gap": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "description": "4px gap between the OTP Loader spinner and the hint text in loading state"
+      }
+    },
+    "success-icon": {
+      "name": {
+        "value": "check-circle",
+        "type": "string",
+        "description": "GHL icon name shown inline with hint text on successful OTP verification"
+      },
+      "size": {
+        "xs": {
+          "value": "16px",
+          "type": "dimension",
+          "description": "Icon size at xs size"
+        },
+        "sm": {
+          "value": "16px",
+          "type": "dimension",
+          "description": "Icon size at sm size"
+        },
+        "md": {
+          "value": "20px",
+          "type": "dimension",
+          "description": "Icon size at md size"
+        }
+      },
+      "color": {
+        "value": "{color.secondary.success.600}",
+        "type": "color",
+        "description": "#039855 — check-circle icon color matches success hint text"
+      }
+    }
+  }
+}

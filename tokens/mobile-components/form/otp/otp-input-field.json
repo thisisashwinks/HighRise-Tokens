@@ -1,0 +1,171 @@
+{
+  "$comment": "Design token file for the OTP Input Field component",
+  "$description": "Single digit cell in an OTP input row. All 4 sizes are square (equal width and height). Border width encodes the interaction state: 1px for idle, 3px for focused/error/success rings. Shadow is removed in the Active state when the focus ring is present. The digit placeholder (0) uses display-scale typography to fill the cell visually.",
+  "$component": {
+    "name": "OTP Input Field",
+    "figmaNodeId": "421:25138",
+    "states": ["default", "filled", "active", "success", "error", "disabled"],
+    "sizes": ["xs", "sm", "md", "lg"]
+  },
+  "otp-input-field": {
+    "border-radius": {
+      "value": "{border.radius.sm}",
+      "type": "borderRadius",
+      "description": "8px corner radius applied to all sizes and states"
+    },
+    "padding": {
+      "horizontal": {
+        "value": "8px",
+        "type": "dimension",
+        "description": "Left and right inset — consistent across all sizes"
+      }
+    },
+    "background": {
+      "default": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "White background for Default, Filled, Active, Success, Error states"
+      },
+      "disabled": {
+        "value": "{color.neutral.gray.100}",
+        "type": "color",
+        "description": "#f2f4f7 — muted background for Disabled state"
+      }
+    },
+    "border": {
+      "width": {
+        "idle": {
+          "value": "1px",
+          "type": "dimension",
+          "description": "Border width for Default, Filled, and Disabled states"
+        },
+        "active": {
+          "value": "3px",
+          "type": "dimension",
+          "description": "Thicker focus ring for Active, Success, and all Error states"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "#d0d5dd — idle border for Default and Filled states"
+        },
+        "active": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "#155eef — focus ring color in Active state (no error)"
+        },
+        "success": {
+          "value": "{color.accent.green.600}",
+          "type": "color",
+          "description": "#099250 — green ring when all digits are verified successfully"
+        },
+        "error-passive": {
+          "value": "{color.secondary.error.300}",
+          "type": "color",
+          "description": "#fda29b — light red ring in Default+Error and Filled+Error states (unfocused error)"
+        },
+        "error-active": {
+          "value": "{color.secondary.error.600}",
+          "type": "color",
+          "description": "#d92d20 — bright red ring in Active+Error state (focused with error)"
+        },
+        "disabled": {
+          "value": "none",
+          "type": "color",
+          "description": "No border in Disabled state"
+        }
+      }
+    },
+    "shadow": {
+      "value": "{shadow.xs}",
+      "type": "shadow",
+      "description": "0px 1px 2px 0px rgba(16,24,40,0.05) — applied to Default, Filled, Disabled, and passive Error states. Removed in Active state (focus ring replaces it)"
+    },
+    "digit": {
+      "color": {
+        "empty": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "#d0d5dd — placeholder digit color in Default and Disabled states"
+        },
+        "filled": {
+          "value": "{color.neutral.gray.700}",
+          "type": "color",
+          "description": "#344054 — digit color when a value is entered (Filled, Active, Success states)"
+        }
+      }
+    },
+    "size": {
+      "xs": {
+        "box": {
+          "value": "48px",
+          "type": "dimension",
+          "description": "Width and height — smallest size, square"
+        },
+        "padding-vertical": {
+          "value": "2px",
+          "type": "dimension",
+          "description": "Top and bottom inset"
+        },
+        "digit-typography": {
+          "value": "{font.display.medium.sm}",
+          "type": "typography",
+          "description": "30px Medium, 38px line-height, 0px letter-spacing"
+        }
+      },
+      "sm": {
+        "box": {
+          "value": "56px",
+          "type": "dimension",
+          "description": "Width and height — square"
+        },
+        "padding-vertical": {
+          "value": "2px",
+          "type": "dimension",
+          "description": "Top and bottom inset"
+        },
+        "digit-typography": {
+          "value": "{font.display.medium.md}",
+          "type": "typography",
+          "description": "36px Medium, 44px line-height, -0.72px letter-spacing"
+        }
+      },
+      "md": {
+        "box": {
+          "value": "64px",
+          "type": "dimension",
+          "description": "Width and height — square"
+        },
+        "padding-vertical": {
+          "value": "2px",
+          "type": "dimension",
+          "description": "Top and bottom inset"
+        },
+        "digit-typography": {
+          "value": "{font.display.medium.lg}",
+          "type": "typography",
+          "description": "48px Medium, 60px line-height, -0.96px letter-spacing"
+        }
+      },
+      "lg": {
+        "box": {
+          "value": "80px",
+          "type": "dimension",
+          "description": "Width and height — largest size, square"
+        },
+        "padding-vertical": {
+          "value": "10px",
+          "type": "dimension",
+          "description": "Top and bottom inset — larger than other sizes"
+        },
+        "digit-typography": {
+          "value": "{font.display.medium.lg}",
+          "type": "typography",
+          "description": "48px Medium, 60px line-height, -0.96px letter-spacing — same font scale as md but in a larger box"
+        }
+      }
+    }
+  }
+}

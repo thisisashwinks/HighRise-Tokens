@@ -1,0 +1,233 @@
+{
+  "$comment": "Mobile Snackbar Component Tokens",
+  "$description": "Component tokens for Mobile Snackbar component — a transient feedback notification displayed at the bottom of the screen. Supports 4 type variants (Default = text only, icon = with leading icon, image = with leading thumbnail, Loader = with leading spinner). Optional action button (right-aligned CTA) and optional dismiss button (X icon). Figma Reference: Node ID 531-54277",
+  "$component": {
+    "name": "Snackbar",
+    "description": "A mobile snackbar (toast) component used to display brief, contextual feedback messages. Appears as a dark pill-shaped card with near-white body text. Supports an optional inline action button (white bg, blue border) and an optional dismiss icon. Leading content can be an icon, thumbnail image, or loading spinner. Typically dismisses automatically after a timeout.",
+    "structure": "Dark container (gray.800 bg, 12px radius, 16px padding). Single horizontal content row with 16px gap containing: optional leading content (icon 32px | image 24px | loader 32px), flex-grow message text, optional action button (32px height, white bg, blue border), optional dismiss icon button (32px container).",
+    "variants": {
+      "type": {
+        "Default": "Text only — no leading content",
+        "icon": "Leading icon (32px container) — used for contextual or categorical iconography",
+        "image": "Leading thumbnail image (24px, 4px radius, 0.5px gray.300 border) — used when showing a preview or avatar",
+        "Loader": "Leading spinner (32px) — used to indicate an ongoing background action"
+      },
+      "action": {
+        "true": "Shows the inline action button (white bg, blue.300 border, blue.700 text, 32px height)",
+        "false": "No action button — message only"
+      },
+      "dismiss": {
+        "true": "Shows the X dismiss icon button (32px container, white icon)",
+        "false": "No dismiss button — auto-dismiss only"
+      }
+    },
+    "usage": {
+      "contexts": "Transient system feedback, background action progress, undo prompts, success/info/error confirmations, file upload status",
+      "features": "4 leading content types (none, icon, image, loader), optional action CTA, optional dismiss, fixed 361px width, auto-dismiss support"
+    }
+  },
+  "snackbar": {
+    "container": {
+      "$comment": "Outer container — dark background pill with padding, radius, and shadow",
+      "width": {
+        "value": "361px",
+        "type": "dimension",
+        "description": "Mobile snackbar container fixed width - 361px"
+      },
+      "padding": {
+        "value": "{padding.4}",
+        "type": "dimension",
+        "description": "Mobile snackbar container padding on all sides - 16px"
+      },
+      "gap": {
+        "value": "{gap.2}",
+        "type": "dimension",
+        "description": "Mobile snackbar container flex-col gap (between content row and any future stacked content) - 8px"
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.3xl}",
+          "type": "dimension",
+          "description": "Mobile snackbar container border radius - 12px"
+        },
+        "width": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile snackbar container border width - 1px (matches background, creates a seamless inset)"
+        }
+      },
+      "color": {
+        "background": {
+          "value": "{color.background.neutral.intense.1}",
+          "type": "color",
+          "description": "Mobile snackbar container background - neutral/gray.800 - #1d2939"
+        },
+        "border": {
+          "value": "{color.background.neutral.intense.1}",
+          "type": "color",
+          "description": "Mobile snackbar container border color - neutral/gray.800 - #1d2939 (same as background, visually seamless)"
+        }
+      },
+      "shadow": {
+        "value": "{boxShadow.outer.sm}",
+        "type": "boxShadow",
+        "description": "Mobile snackbar container shadow - shadow/sm - 0px 1px 3px rgba(16,24,40,0.10), 0px 1px 2px rgba(16,24,40,0.06)"
+      }
+    },
+    "content": {
+      "$comment": "Horizontal content row — gap between all children (leading, text, action, dismiss)",
+      "gap": {
+        "value": "{gap.4}",
+        "type": "dimension",
+        "description": "Mobile snackbar content row horizontal gap between leading content, message text, action button, and dismiss icon - 16px"
+      }
+    },
+    "message": {
+      "$comment": "Body text — near-white on dark background",
+      "color": {
+        "text": {
+          "value": "{color.neutral.gray.25}",
+          "type": "color",
+          "description": "Mobile snackbar message text color - neutral/gray.25 - #fcfcfd (near-white for dark background)"
+        }
+      },
+      "typography": {
+        "value": "{font.body.regular.base}",
+        "type": "typography",
+        "description": "Mobile snackbar message text typography - Inter Regular 14px, 20px line-height"
+      }
+    },
+    "action": {
+      "$comment": "Optional inline action button — white background with blue border and text",
+      "height": {
+        "value": "{size.height.8}",
+        "type": "dimension",
+        "description": "Mobile snackbar action button height - 32px"
+      },
+      "padding": {
+        "horizontal": {
+          "value": "{padding.4[5]}",
+          "type": "dimension",
+          "description": "Mobile snackbar action button horizontal padding (each side) - 18px"
+        },
+        "vertical": {
+          "value": "{padding.2[5]}",
+          "type": "dimension",
+          "description": "Mobile snackbar action button vertical padding (each side) - 10px"
+        }
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "Mobile snackbar action button border radius - 8px"
+        },
+        "width": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile snackbar action button border width - 1px"
+        }
+      },
+      "color": {
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile snackbar action button background - white - #ffffff"
+        },
+        "border": {
+          "value": "{color.border.primary.subtle.2}",
+          "type": "color",
+          "description": "Mobile snackbar action button border color - primary/blue.300 - #84adff"
+        },
+        "text": {
+          "value": "{color.text.primary.body.1}",
+          "type": "color",
+          "description": "Mobile snackbar action button label text color - primary/blue.700 - #004eeb"
+        }
+      },
+      "shadow": {
+        "value": "{boxShadow.outer.xs}",
+        "type": "boxShadow",
+        "description": "Mobile snackbar action button shadow - shadow/xs - 0px 1px 2px rgba(16,24,40,0.05)"
+      },
+      "typography": {
+        "value": "{font.body.semibold.2xl}",
+        "type": "typography",
+        "description": "Mobile snackbar action button label typography - Inter Semi Bold 16px, 24px line-height"
+      }
+    },
+    "dismiss": {
+      "$comment": "Optional dismiss (X) icon button — 32px touch target, white icon",
+      "size": {
+        "container": {
+          "value": "{size.xs}",
+          "type": "dimension",
+          "description": "Mobile snackbar dismiss icon button touch target size - 32px"
+        },
+        "icon": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Mobile snackbar dismiss X icon size - 16px (centered within 32px container via 25% inset)"
+        }
+      },
+      "color": {
+        "icon": {
+          "value": "{color.icon.neutral.base}",
+          "type": "color",
+          "description": "Mobile snackbar dismiss icon color - white - #ffffff (on dark gray.800 background)"
+        }
+      }
+    },
+    "leading": {
+      "$comment": "Leading content area — conditionally rendered based on type variant (icon | image | loader)",
+      "icon": {
+        "$comment": "type=icon — leading icon in 32px touch container",
+        "size": {
+          "container": {
+            "value": "{size.xs}",
+            "type": "dimension",
+            "description": "Mobile snackbar leading icon container size - 32px"
+          }
+        },
+        "color": {
+          "value": "{color.icon.neutral.base}",
+          "type": "color",
+          "description": "Mobile snackbar leading icon color - white - #ffffff (on dark gray.800 background)"
+        }
+      },
+      "image": {
+        "$comment": "type=image — leading thumbnail in 24px container with subtle border",
+        "size": {
+          "value": "{size.3xs}",
+          "type": "dimension",
+          "description": "Mobile snackbar leading image container size - 24px"
+        },
+        "border": {
+          "radius": {
+            "value": "{border.radius.1}",
+            "type": "dimension",
+            "description": "Mobile snackbar leading image border radius - 4px"
+          },
+          "width": {
+            "value": "{border.width.xs}",
+            "type": "dimension",
+            "description": "Mobile snackbar leading image border width - 0.5px"
+          },
+          "color": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Mobile snackbar leading image border color - neutral/gray.300 - #d0d5dd"
+          }
+        }
+      },
+      "loader": {
+        "$comment": "type=Loader — spinner occupying 32px to match icon and dismiss button height",
+        "size": {
+          "value": "{size.xs}",
+          "type": "dimension",
+          "description": "Mobile snackbar leading loader size - 32px (matches icon container and dismiss button)"
+        }
+      }
+    }
+  }
+}

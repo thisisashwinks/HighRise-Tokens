@@ -1,0 +1,29 @@
+{
+  "$comment": "Design token file for the OTP Loader component",
+  "$description": "Circular spinner shown inline with the OTP hint text row while an OTP code is being verified or sent. Composed of a static track ring and an animated arc. Rendered as a CSS/SVG animation.",
+  "$component": {
+    "name": "OTP Loader",
+    "figmaNodeId": "695:33375"
+  },
+  "otp-loader": {
+    "size": {
+      "value": "18px",
+      "type": "dimension",
+      "description": "Width and height of the spinner — appears inline with hint text"
+    },
+    "track": {
+      "color": {
+        "value": "{color.neutral.gray.200}",
+        "type": "color",
+        "description": "#eaecf0 — static background ring of the spinner"
+      }
+    },
+    "arc": {
+      "color": {
+        "value": "{color.primary.600}",
+        "type": "color",
+        "description": "#155eef — animated foreground arc that rotates around the track"
+      }
+    }
+  }
+}

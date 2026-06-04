@@ -1,0 +1,373 @@
+{
+  "$comment": "Design token file for the Notification component",
+  "$description": "Full-width mobile notification row (393px). Renders a contact avatar on the left and a content column on the right. Four content types each render different body structures: Conversation shows a preview message with no container; Custom shows a body-text card with white background; Task shows only the title + location row with no body card; Appointment shows a bordered card with a date chip, appointment title, and time range. All types share the same header row (mixed-weight title, dots menu, unread dot) and timestamp. Unread rows have a light blue tint background; Read rows are white. Hover and Pressed states exist for all variants (exact background values require per-state verification).",
+  "$component": {
+    "name": "Notification",
+    "figmaNodeId": "436:15495",
+    "types": ["Conversation", "Custom", "Task", "Appointment"],
+    "statuses": ["Unread", "Read"],
+    "states": ["Default", "Hover", "Pressed"],
+    "bodyTextBg": ["True", "False", "NA"],
+    "subComponents": [
+      "Notification Action (notification-action.json)",
+      "Avatar (HighRise)",
+      "Button (HighRise)"
+    ]
+  },
+  "notification": {
+    "width": {
+      "value": "393px",
+      "type": "dimension",
+      "description": "Full mobile viewport width"
+    },
+    "padding": {
+      "value": "{size.4}",
+      "type": "dimension",
+      "description": "16px inset on all sides"
+    },
+    "gap": {
+      "value": "{size.2}",
+      "type": "dimension",
+      "description": "8px horizontal gap between the avatar column and the content column"
+    },
+    "border-bottom": {
+      "width": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Separator line below each notification row"
+      },
+      "color": {
+        "value": "{color.neutral.gray.200}",
+        "type": "color",
+        "description": "#eaecf0 — subtle divider between notification rows"
+      }
+    },
+    "background": {
+      "unread": {
+        "value": "{color.primary.25}",
+        "type": "color",
+        "description": "#f5f8ff — very light primary blue tint applied to unread notification rows"
+      },
+      "read": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "White background for read notification rows"
+      }
+    },
+    "avatar": {
+      "size": {
+        "value": "{size.10}",
+        "type": "dimension",
+        "description": "40px — width and height of the circular avatar"
+      },
+      "border-radius": {
+        "value": "{border.radius.full}",
+        "type": "borderRadius",
+        "description": "Fully circular avatar"
+      },
+      "left-padding": {
+        "value": "2px",
+        "type": "dimension",
+        "description": "Slight left inset on the avatar column to visually align with content"
+      },
+      "badge": {
+        "conversation": {
+          "description": "Company logo badge shown at the bottom-right of the avatar for Conversation-type notifications",
+          "size": {
+            "value": "14px",
+            "type": "dimension",
+            "description": "Width and height of the company logo badge"
+          },
+          "border-radius": {
+            "value": "7px",
+            "type": "dimension",
+            "description": "Half of badge size — fully rounded square"
+          },
+          "background": {
+            "value": "{color.neutral.white.base}",
+            "type": "color",
+            "description": "White background behind the company logo icon"
+          }
+        },
+        "other-types": {
+          "description": "Small icon badge at the bottom-right of the avatar for Custom, Task, and Appointment notifications",
+          "size": {
+            "value": "10px",
+            "type": "dimension",
+            "description": "Width and height of the type icon badge"
+          },
+          "border-radius": {
+            "value": "{border.radius.full}",
+            "type": "borderRadius",
+            "description": "Fully circular badge"
+          },
+          "background": {
+            "value": "{color.neutral.gray.100}",
+            "type": "color",
+            "description": "#f2f4f7 — muted background for the icon badge"
+          },
+          "icon-size": {
+            "value": "10px",
+            "type": "dimension",
+            "description": "Icon fills the full badge area"
+          }
+        }
+      }
+    },
+    "content": {
+      "gap": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "8px vertical gap between header row, body section, location row, action row, and timestamp"
+      },
+      "header": {
+        "title-width": {
+          "value": "234px",
+          "type": "dimension",
+          "description": "Fixed width for the title text block — leaves 35px for the dots menu + unread dot on the right"
+        },
+        "title": {
+          "typography": {
+            "value": "{font.body.regular.lg}",
+            "type": "typography",
+            "description": "14px Regular base — action/event text in the title. Name runs are rendered as inline Semibold spans"
+          },
+          "name-color": {
+            "value": "{color.primary.blue.700}",
+            "type": "color",
+            "description": "#004eeb — contact name highlighted in primary blue within the title"
+          },
+          "action-text-color": {
+            "value": "{color.neutral.gray.600}",
+            "type": "color",
+            "description": "#475467 — remaining action/event description text in the title"
+          }
+        },
+        "dots-menu": {
+          "icon-size": {
+            "value": "16px",
+            "type": "dimension",
+            "description": "Width and height of the three-dots overflow menu icon"
+          },
+          "icon-name": {
+            "value": "dots-horizontal",
+            "type": "string",
+            "description": "GHL icon name for the notification overflow menu"
+          }
+        },
+        "unread-dot": {
+          "size": {
+            "value": "12px",
+            "type": "dimension",
+            "description": "Outer container size for the unread status indicator"
+          },
+          "inner-size": {
+            "value": "9.6px",
+            "type": "dimension",
+            "description": "Filled dot size inside the 12px container (offset 1.2px from edge)"
+          },
+          "color": {
+            "value": "{color.primary.600}",
+            "type": "color",
+            "description": "#155eef — primary blue fill for the unread dot; hidden when status is Read"
+          }
+        }
+      },
+      "body": {
+        "conversation": {
+          "description": "Conversation-type body: plain preview text with no container background",
+          "typography": {
+            "value": "{font.body.medium.lg}",
+            "type": "typography",
+            "description": "14px Medium, 20px line-height — notification preview message"
+          },
+          "color": {
+            "value": "{color.neutral.gray.600}",
+            "type": "color",
+            "description": "#475467 — preview message text color"
+          }
+        },
+        "with-background": {
+          "description": "Custom-type body: preview text inside a white rounded card",
+          "background": {
+            "value": "{color.neutral.white.base}",
+            "type": "color",
+            "description": "White card background for Custom-type body text"
+          },
+          "border-radius": {
+            "value": "{border.radius.sm}",
+            "type": "borderRadius",
+            "description": "8px corner radius on the body text card"
+          },
+          "padding": {
+            "value": "{size.2}",
+            "type": "dimension",
+            "description": "8px inset on all sides of the body text card"
+          },
+          "typography": {
+            "value": "{font.body.medium.lg}",
+            "type": "typography",
+            "description": "14px Medium, 20px line-height — body text inside the card"
+          },
+          "color": {
+            "value": "{color.neutral.gray.600}",
+            "type": "color",
+            "description": "#475467 — body text color inside the card"
+          }
+        },
+        "appointment": {
+          "description": "Appointment-type body: bordered card with a date chip on the left and appointment details on the right",
+          "background": {
+            "value": "{color.neutral.white.base}",
+            "type": "color",
+            "description": "White card background for the appointment body"
+          },
+          "border": {
+            "width": {
+              "value": "1px",
+              "type": "dimension",
+              "description": "Appointment card border width"
+            },
+            "color": {
+              "value": "{color.primary.600}",
+              "type": "color",
+              "description": "#155eef — primary blue border highlights the appointment card"
+            }
+          },
+          "border-radius": {
+            "value": "{border.radius.sm}",
+            "type": "borderRadius",
+            "description": "8px corner radius on the appointment card"
+          },
+          "padding": {
+            "value": "{size.2}",
+            "type": "dimension",
+            "description": "8px inset on all sides of the appointment card"
+          },
+          "gap": {
+            "value": "10px",
+            "type": "dimension",
+            "description": "Gap between the date chip and the appointment details text column"
+          },
+          "date-chip": {
+            "background": {
+              "value": "{color.neutral.gray.200}",
+              "type": "color",
+              "description": "#eaecf0 — muted gray background for the date chip"
+            },
+            "border-radius": {
+              "value": "{border.radius.sm}",
+              "type": "borderRadius",
+              "description": "8px corner radius on the date chip"
+            },
+            "padding": {
+              "value": "{size.1}",
+              "type": "dimension",
+              "description": "4px inset on all sides of the date chip"
+            },
+            "month": {
+              "typography": {
+                "value": "{font.body.semibold.sm}",
+                "type": "typography",
+                "description": "12px Semibold, 17px line-height — month abbreviation (e.g. OCT)"
+              },
+              "color": {
+                "value": "{color.neutral.gray.600}",
+                "type": "color",
+                "description": "#475467 — month label text color"
+              }
+            },
+            "day": {
+              "typography": {
+                "value": "{font.body.medium.lg}",
+                "type": "typography",
+                "description": "14px Medium, 20px line-height — day number (e.g. 10)"
+              },
+              "color": {
+                "value": "{color.neutral.gray.600}",
+                "type": "color",
+                "description": "#475467 — day number text color"
+              }
+            }
+          },
+          "details": {
+            "typography": {
+              "value": "{font.body.medium.lg}",
+              "type": "typography",
+              "description": "14px Medium, 20px line-height — appointment title and time range text"
+            },
+            "color": {
+              "value": "{color.neutral.gray.600}",
+              "type": "color",
+              "description": "#475467 — appointment details text color"
+            }
+          }
+        }
+      },
+      "location-row": {
+        "description": "Appears below the body on Custom, Task, and Appointment types. Shows a 'Location :' label and the location/pipeline value.",
+        "gap": {
+          "value": "{size.2}",
+          "type": "dimension",
+          "description": "8px gap between the label and the value"
+        },
+        "label": {
+          "typography": {
+            "value": "{font.body.semibold.sm}",
+            "type": "typography",
+            "description": "12px Semibold, 17px line-height — 'Location :' label text"
+          },
+          "color": {
+            "value": "{color.neutral.gray.600}",
+            "type": "color",
+            "description": "#475467 — label text color"
+          }
+        },
+        "value": {
+          "typography": {
+            "value": "{font.body.medium.sm}",
+            "type": "typography",
+            "description": "12px Medium, 17px line-height — location or pipeline name"
+          },
+          "color": {
+            "value": "{color.neutral.gray.400}",
+            "type": "color",
+            "description": "#98a2b3 — muted gray for the location value"
+          }
+        }
+      },
+      "subtext": {
+        "description": "Bottom text line in Conversation-type notifications — shows the contact's company or pipeline context (e.g. 'Product @ Highlevel')",
+        "typography": {
+          "value": "{font.body.medium.sm}",
+          "type": "typography",
+          "description": "12px Medium, 17px line-height"
+        },
+        "color": {
+          "value": "{color.neutral.gray.400}",
+          "type": "color",
+          "description": "#98a2b3 — muted subtext color"
+        }
+      },
+      "timestamp": {
+        "typography": {
+          "value": "{font.body.regular.sm}",
+          "type": "typography",
+          "description": "12px Regular, 17px line-height — relative time ago (e.g. '2s', '45m')"
+        },
+        "color": {
+          "conversation": {
+            "value": "{color.primary.blue.700}",
+            "type": "color",
+            "description": "#004eeb — timestamp shown in primary blue for Conversation-type unread notifications"
+          },
+          "default": {
+            "value": "{color.neutral.gray.500}",
+            "type": "color",
+            "description": "#667085 — timestamp color for Custom, Task, and Appointment types"
+          }
+        }
+      }
+    }
+  }
+}
