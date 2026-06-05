@@ -85,7 +85,7 @@
     "label": {
       "$comment": "External percentage label displayed to the right of the bar when inline-progress-value=False",
       "width": {
-        "value": "32px",
+        "value": "{size.width.8}",
         "type": "dimension",
         "description": "Mobile progress bar external label container width - 32px fixed (accommodates up to '100%' text)"
       },

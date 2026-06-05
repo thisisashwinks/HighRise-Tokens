@@ -1,0 +1,148 @@
+{
+  "$comment": "Design token file for the Carousel Dot Indicator component",
+  "$description": "A single position indicator pip for a carousel. Comes in two styles (Dot — a square pip, Line — a wide pill), three sizes (sm/md/lg), three colour themes (Primary/Secondary/Tertiary), and two states (current = active slide, inactive = all other slides). The Primary inactive state uses mix-blend-multiply so the pip blends correctly when rendered over a photographic slide image. Used individually or composed into a Carousel Dot Group.",
+  "$component": {
+    "name": "Carousel Dot Indicator",
+    "figmaNodeId": "737:11231",
+    "styles": ["Dot", "Line"],
+    "sizes": ["sm", "md", "lg"],
+    "colors": ["Primary", "Secondary", "Tertiary"],
+    "states": ["current", "inactive"]
+  },
+  "carousel-dot-indicator": {
+    "dot": {
+      "sm": {
+        "size": {
+          "value": "4px",
+          "type": "dimension",
+          "description": "Width and height of the sm dot pip"
+        },
+        "border-radius": {
+          "value": "4px",
+          "type": "dimension",
+          "description": "Fully rounded sm dot"
+        }
+      },
+      "md": {
+        "size": {
+          "value": "8px",
+          "type": "dimension",
+          "description": "Width and height of the md dot pip"
+        },
+        "border-radius": {
+          "value": "4px",
+          "type": "dimension",
+          "description": "Fully rounded md dot"
+        }
+      },
+      "lg": {
+        "size": {
+          "value": "12px",
+          "type": "dimension",
+          "description": "Width and height of the lg dot pip"
+        },
+        "border-radius": {
+          "value": "6px",
+          "type": "dimension",
+          "description": "Fully rounded lg dot"
+        }
+      }
+    },
+    "line": {
+      "sm": {
+        "width": {
+          "value": "16px",
+          "type": "dimension",
+          "description": "Width of the sm line pip"
+        },
+        "height": {
+          "value": "4px",
+          "type": "dimension",
+          "description": "Height of the sm line pip"
+        },
+        "border-radius": {
+          "value": "3px",
+          "type": "dimension",
+          "description": "Rounded ends on the sm line pip"
+        }
+      },
+      "md": {
+        "width": {
+          "value": "24px",
+          "type": "dimension",
+          "description": "Width of the md line pip"
+        },
+        "height": {
+          "value": "8px",
+          "type": "dimension",
+          "description": "Height of the md line pip"
+        },
+        "border-radius": {
+          "value": "4px",
+          "type": "dimension",
+          "description": "Rounded ends on the md line pip"
+        }
+      },
+      "lg": {
+        "width": {
+          "value": "32px",
+          "type": "dimension",
+          "description": "Width of the lg line pip"
+        },
+        "height": {
+          "value": "12px",
+          "type": "dimension",
+          "description": "Height of the lg line pip"
+        },
+        "border-radius": {
+          "value": "6px",
+          "type": "dimension",
+          "description": "Rounded ends on the lg line pip"
+        }
+      }
+    },
+    "color": {
+      "primary": {
+        "current": {
+          "value": "{color.primary.blue.700}",
+          "type": "color",
+          "description": "#004eeb — deep primary blue fill for the active slide indicator"
+        },
+        "inactive": {
+          "value": "{color.neutral.gray.100}",
+          "type": "color",
+          "description": "#f2f4f7 — very light gray for inactive pips; apply mix-blend-multiply so the pip blends over photographic slide backgrounds"
+        },
+        "inactive-blend-mode": {
+          "value": "multiply",
+          "type": "string",
+          "description": "CSS mix-blend-mode applied to Primary inactive pips only — allows pips to remain visible when overlaid on coloured or photographic content"
+        }
+      },
+      "secondary": {
+        "current": {
+          "value": "{color.neutral.gray.600}",
+          "type": "color",
+          "description": "#475467 — dark gray fill for the active indicator in Secondary theme"
+        },
+        "inactive": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "#d0d5dd — light gray for inactive pips in Secondary theme"
+        }
+      },
+      "tertiary": {
+        "current": {
+          "value": "{color.neutral.gray.400}",
+          "type": "color",
+          "description": "#98a2b3 — mid gray fill for the active indicator in Tertiary theme"
+        },
+        "inactive": {
+          "value": "{color.neutral.gray.100}",
+          "type": "color",
+          "description": "#f2f4f7 — very light gray for inactive pips in Tertiary theme (no blend-mode required)"
+        }
+      }
+    }
+  }
+}

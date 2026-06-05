@@ -1,0 +1,73 @@
+{
+  "$comment": "Design token file for the Pin Wheel Time Picker component",
+  "$description": "Scroll-drum (drum-roll) time picker column. Renders 5 stacked rows at a time. Three column types: Hour (1–12), Minute (00–55 in 5-step increments), and AM-PM. The centre row is always the selected value; the rows immediately above/below are 'close' (slightly dimmer) and the outermost rows are 'far' (near-invisible). A horizontal selection band (top + bottom border) frames the selected row. For the AM-PM column only two real values exist (AM/PM); the remaining three slot positions are rendered as opacity-0 spacers to preserve the 5-row layout.",
+  "$component": {
+    "name": "Pin Wheel Time Picker",
+    "figmaNodeId": "470:12187",
+    "columnTypes": ["Hour", "Minute", "AM-PM"],
+    "itemStates": ["far", "close", "selected"]
+  },
+  "pin-wheel-time-picker": {
+    "column": {
+      "width": {
+        "value": "89px",
+        "type": "dimension",
+        "description": "Fixed width for each picker column (Hour, Minute, or AM-PM)"
+      }
+    },
+    "item": {
+      "padding": {
+        "value": "10px",
+        "type": "dimension",
+        "description": "Uniform 10px inset on all sides of each row cell"
+      },
+      "background": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "White background for every row cell regardless of state"
+      },
+      "typography": {
+        "value": "{font.body.semibold.lg}",
+        "type": "typography",
+        "description": "14px Semibold, 20px line-height — used for all row values"
+      },
+      "text-color": {
+        "far": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "#d0d5dd — near-invisible text for rows 2 positions away from the selection (top and bottom rows)"
+        },
+        "close": {
+          "value": "{color.neutral.gray.500}",
+          "type": "color",
+          "description": "#667085 — dimmed text for the rows immediately adjacent to the selected row"
+        },
+        "selected": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "#155eef — primary blue text on the active selected row"
+        }
+      }
+    },
+    "selection-band": {
+      "description": "Horizontal band that frames the selected middle row — rendered as a top and bottom border on that cell only",
+      "border-width": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Thickness of the top and bottom selection border"
+      },
+      "border-color": {
+        "value": "{color.neutral.gray.300}",
+        "type": "color",
+        "description": "#d0d5dd — subtle gray border that delineates the selected row"
+      }
+    },
+    "am-pm-column": {
+      "hidden-slot-opacity": {
+        "value": "0",
+        "type": "number",
+        "description": "Opacity for spacer slots in the AM-PM column — 3 of the 5 rows are invisible (opacity 0) to keep the column height consistent with Hour and Minute columns while only exposing AM and PM as real values"
+      }
+    }
+  }
+}

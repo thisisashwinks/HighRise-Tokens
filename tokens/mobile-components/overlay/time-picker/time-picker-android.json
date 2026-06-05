@@ -1,0 +1,266 @@
+{
+  "$comment": "Design token file for the Time Picker Android component",
+  "$description": "Android-style time picker with two modes: Dial (analogue clock face with a draggable hand) and Input (text-field entry). Both modes share the same header row (hour field + colon + minute field + AM/PM switcher) and footer row (mode-toggle icon + Cancel/OK buttons). The Dial mode additionally renders a 280px circular clock face. Width is fixed at 280px. The Input Field and Content Switcher Mobile sub-components are from the same Figma file and have their own token files — only container-level and unique element tokens are captured here.",
+  "$component": {
+    "name": "Time Picker Android",
+    "figmaNodeId": "471:32816",
+    "modes": ["Dial", "Input"],
+    "subComponents": [
+      "Input Field (same file — mobile-components)",
+      "Content Switcher Mobile (same file — mobile-components)",
+      "Button (HighRise)"
+    ]
+  },
+  "time-picker-android": {
+    "width": {
+      "value": "280px",
+      "type": "dimension",
+      "description": "Fixed component width"
+    },
+    "gap": {
+      "value": "{size.4}",
+      "type": "dimension",
+      "description": "16px vertical gap between the header row, the clock face (Dial mode), and the footer row"
+    },
+    "header": {
+      "gap": {
+        "value": "{size.4}",
+        "type": "dimension",
+        "description": "16px horizontal gap between the inputs group (hour + colon + minute) and the AM/PM Content Switcher"
+      },
+      "inputs-group": {
+        "gap": {
+          "value": "{size.2}",
+          "type": "dimension",
+          "description": "8px horizontal gap between the hour input field, the colon separator, and the minute input field"
+        }
+      },
+      "colon": {
+        "typography": {
+          "value": "{font.body.regular.3xl}",
+          "type": "typography",
+          "description": "18px Regular, 28px line-height — colon separator between hour and minute fields"
+        },
+        "color": {
+          "value": "{color.neutral.gray.500}",
+          "type": "color",
+          "description": "#667085 — muted gray for the ':' separator"
+        }
+      }
+    },
+    "clock": {
+      "description": "Analogue clock face rendered only in Dial mode",
+      "size": {
+        "value": "280px",
+        "type": "dimension",
+        "description": "Equal width and height — fills the full component width"
+      },
+      "border-radius": {
+        "value": "154px",
+        "type": "dimension",
+        "description": "Greater than half the size — renders as a perfect circle"
+      },
+      "background": {
+        "value": "{color.neutral.gray.200}",
+        "type": "color",
+        "description": "#eaecf0 — light gray face of the clock dial"
+      },
+      "shadow": {
+        "value": "0px 10px 7.5px 0px rgba(0,0,0,0.10), 0px 4px 3px 0px rgba(0,0,0,0.10)",
+        "type": "shadow",
+        "description": "Two-layer drop shadow giving the clock face depth and lift"
+      },
+      "hour-label": {
+        "font-size": {
+          "value": "16px",
+          "type": "dimension",
+          "description": "Font size for each hour number (12, 1 … 11) around the dial"
+        },
+        "line-height": {
+          "value": "24px",
+          "type": "dimension",
+          "description": "Line height for hour number labels"
+        },
+        "letter-spacing": {
+          "value": "-0.3125px",
+          "type": "dimension",
+          "description": "Tight letter spacing on the clock number labels"
+        },
+        "color": {
+          "value": "{color.neutral.gray.800}",
+          "type": "color",
+          "description": "#1d2939 — dark text for unselected hour numbers around the dial"
+        }
+      },
+      "selection-bubble": {
+        "description": "Filled circle that highlights the currently selected hour on the dial",
+        "size": {
+          "value": "31px",
+          "type": "dimension",
+          "description": "Width and height of the selection bubble"
+        },
+        "border-radius": {
+          "value": "{border.radius.full}",
+          "type": "borderRadius",
+          "description": "Fully circular selection indicator"
+        },
+        "background": {
+          "value": "{color.primary.blue.700}",
+          "type": "color",
+          "description": "#004eeb — deep primary blue fill on the selected hour bubble"
+        },
+        "text-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White numeral inside the selection bubble"
+        },
+        "font-size": {
+          "value": "16px",
+          "type": "dimension",
+          "description": "Font size for the numeral inside the selection bubble"
+        },
+        "line-height": {
+          "value": "24px",
+          "type": "dimension",
+          "description": "Line height for the numeral inside the selection bubble"
+        }
+      },
+      "center-dot": {
+        "size": {
+          "value": "12px",
+          "type": "dimension",
+          "description": "Width and height of the pivot dot at the centre of the clock face"
+        }
+      }
+    },
+    "footer": {
+      "gap": {
+        "value": "32px",
+        "type": "dimension",
+        "description": "Horizontal gap between the mode-toggle icon and the Cancel/OK button group"
+      },
+      "mode-icon": {
+        "size": {
+          "value": "{size.9}",
+          "type": "dimension",
+          "description": "36px — width and height of the mode-toggle icon button"
+        },
+        "dial-mode-icon": {
+          "value": "keyboard",
+          "type": "string",
+          "description": "Icon shown in Dial mode — tapping it switches to Input (text-field) mode"
+        },
+        "input-mode-icon": {
+          "value": "clock",
+          "type": "string",
+          "description": "Icon shown in Input mode — tapping it switches back to Dial mode"
+        }
+      },
+      "button-group": {
+        "gap": {
+          "value": "{size.4}",
+          "type": "dimension",
+          "description": "16px gap between Cancel and OK buttons"
+        },
+        "cancel": {
+          "background": {
+            "value": "{color.neutral.white.base}",
+            "type": "color",
+            "description": "White background for the ghost Cancel button"
+          },
+          "border": {
+            "width": {
+              "value": "1px",
+              "type": "dimension"
+            },
+            "color": {
+              "value": "{color.primary.blue.300}",
+              "type": "color",
+              "description": "#84adff — light primary blue outline on the Cancel button"
+            }
+          },
+          "text-color": {
+            "value": "{color.primary.blue.700}",
+            "type": "color",
+            "description": "#004eeb — primary blue label on the Cancel button"
+          },
+          "border-radius": {
+            "value": "{border.radius.sm}",
+            "type": "borderRadius",
+            "description": "8px corner radius"
+          },
+          "padding": {
+            "horizontal": {
+              "value": "20px",
+              "type": "dimension",
+              "description": "Left and right inset"
+            },
+            "vertical": {
+              "value": "12px",
+              "type": "dimension",
+              "description": "Top and bottom inset"
+            }
+          },
+          "typography": {
+            "value": "{font.body.semibold.2xl}",
+            "type": "typography",
+            "description": "16px Semibold, 24px line-height"
+          },
+          "shadow": {
+            "value": "{shadow.xs}",
+            "type": "shadow"
+          }
+        },
+        "ok": {
+          "background": {
+            "value": "{color.primary.600}",
+            "type": "color",
+            "description": "#155eef — filled primary blue background for the OK button"
+          },
+          "border": {
+            "width": {
+              "value": "1px",
+              "type": "dimension"
+            },
+            "color": {
+              "value": "{color.primary.600}",
+              "type": "color",
+              "description": "#155eef — border matches fill"
+            }
+          },
+          "text-color": {
+            "value": "{color.neutral.white.base}",
+            "type": "color",
+            "description": "White label on the filled OK button"
+          },
+          "border-radius": {
+            "value": "{border.radius.sm}",
+            "type": "borderRadius",
+            "description": "8px corner radius"
+          },
+          "padding": {
+            "horizontal": {
+              "value": "20px",
+              "type": "dimension",
+              "description": "Left and right inset"
+            },
+            "vertical": {
+              "value": "12px",
+              "type": "dimension",
+              "description": "Top and bottom inset"
+            }
+          },
+          "typography": {
+            "value": "{font.body.semibold.2xl}",
+            "type": "typography",
+            "description": "16px Semibold, 24px line-height"
+          },
+          "shadow": {
+            "value": "{shadow.xs}",
+            "type": "shadow"
+          }
+        }
+      }
+    }
+  }
+}

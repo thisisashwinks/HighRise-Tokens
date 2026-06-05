@@ -1,0 +1,155 @@
+{
+  "$comment": "Mobile Sliding Button Component Tokens",
+  "$description": "Component tokens for Mobile Sliding Button component — a swipe-to-confirm interaction control. The user drags a handle from left to right across a track to trigger an action. Supports 5 states: Enabled (idle, ready to slide), on Drag (mid-swipe), Complete (action confirmed), Disabled (non-interactive), and Loading (async action in progress). Figma Reference: Node ID 635-19960",
+  "$component": {
+    "name": "Sliding Button",
+    "description": "A mobile swipe-to-confirm component consisting of a square sliding handle on the left and a label track on the right. The user drags the handle across the track to confirm an action. On completion the handle expands to fill the full width. The loading state replaces the handle content with a spinner (nested component). The arrow-right icon inside the handle is a nested component with its own tokens.",
+    "structure": "Outer wrapper (border, 8px radius, 361px fixed width) containing: a square handle (56×56px, primary-600 background, 8px radius, drop shadow, 16px padding) and a track area (56px height, primary-100 background, 10px padding, trailing-corner radius). The handle overlaps the track's leading edge. In the Complete state the handle expands to full component width with a white label. In the Disabled state both handle and track use lighter primary shades.",
+    "variants": {
+      "state": {
+        "enabled": "Handle is at rest on the leading edge. Primary-600 handle, primary-100 track, primary-700 label text.",
+        "on-drag": "Handle is being dragged rightward. Same colors as enabled; handle position changes dynamically.",
+        "complete": "Handle has expanded to fill the full component width. Primary-600 fill, white label text. No track visible.",
+        "disabled": "Non-interactive. Primary-200 handle (muted), primary-50 track, primary-200 label text.",
+        "loading": "Async action is in progress after confirmation. Primary-600 full-width fill with a spinner (nested). No label visible."
+      }
+    },
+    "usage": {
+      "contexts": "Swipe-to-confirm actions, irreversible mobile actions, payment confirmations, send/submit flows",
+      "features": "5 interactive states, animated handle drag, loading spinner integration, disabled guard, full-width complete feedback"
+    }
+  },
+  "sliding-button": {
+    "wrapper": {
+      "$comment": "Outer wrapper tokens — the full-width container that bounds both the handle and track",
+      "width": {
+        "value": "361px",
+        "type": "dimension",
+        "description": "Mobile sliding button fixed component width - 361px"
+      },
+      "border": {
+        "color": {
+          "value": "{color.border.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile sliding button wrapper border color - neutral/gray-200 - #eaecf0"
+        },
+        "radius": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "Mobile sliding button wrapper border radius - 8px"
+        }
+      }
+    },
+    "handle": {
+      "$comment": "Handle tokens — the sliding element that the user drags. Square in Enabled/Disabled/on Drag; expands to full width in Complete and Loading states.",
+      "size": {
+        "value": "{size.2xl}",
+        "type": "dimension",
+        "description": "Mobile sliding button handle size (width and height) in Enabled/Disabled/on Drag states - 56px"
+      },
+      "padding": {
+        "value": "{padding.4}",
+        "type": "dimension",
+        "description": "Mobile sliding button handle padding (all sides) - 16px"
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "Mobile sliding button handle border radius - 8px"
+        }
+      },
+      "shadow": {
+        "value": "{boxShadow.outer.xs}",
+        "type": "boxShadow",
+        "description": "Mobile sliding button handle drop shadow - shadow/xs - 0px 1px 2px rgba(16,24,40,0.05)"
+      },
+      "color": {
+        "$comment": "Handle background and border colors per state. Border always matches background.",
+        "background": {
+          "default": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Mobile sliding button handle background — Enabled, on Drag, Complete, Loading states - primary-600 - #155eef"
+          },
+          "disabled": {
+            "value": "{color.background.primary.subtle.2}",
+            "type": "color",
+            "description": "Mobile sliding button handle background — Disabled state - primary-200 - #b2ccff"
+          }
+        },
+        "border": {
+          "default": {
+            "value": "{color.background.primary.default}",
+            "type": "color",
+            "description": "Mobile sliding button handle border — Enabled, on Drag, Complete, Loading states - primary-600 - #155eef (matches background)"
+          },
+          "disabled": {
+            "value": "{color.background.primary.subtle.2}",
+            "type": "color",
+            "description": "Mobile sliding button handle border — Disabled state - primary-200 - #b2ccff (matches background)"
+          }
+        }
+      }
+    },
+    "track": {
+      "$comment": "Track tokens — the label container to the right of the handle. Hidden in Complete and Loading states.",
+      "height": {
+        "value": "{size.2xl}",
+        "type": "dimension",
+        "description": "Mobile sliding button track height - 56px (matches handle height)"
+      },
+      "padding": {
+        "value": "{padding.2[5]}",
+        "type": "dimension",
+        "description": "Mobile sliding button track padding (all sides) - 10px"
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "Mobile sliding button track border radius - 8px (applied to trailing corners)"
+        }
+      },
+      "color": {
+        "background": {
+          "default": {
+            "value": "{color.background.primary.subtle.1}",
+            "type": "color",
+            "description": "Mobile sliding button track background — Enabled and on Drag states - primary-100 - #d1e0ff"
+          },
+          "disabled": {
+            "value": "{color.background.primary.subtle.0}",
+            "type": "color",
+            "description": "Mobile sliding button track background — Disabled state - primary-50 - #eff4ff"
+          }
+        }
+      }
+    },
+    "label": {
+      "$comment": "Label text tokens — displayed in the track (Enabled/on Drag/Disabled) and on the handle in the Complete state.",
+      "typography": {
+        "value": "{font.body.semibold.3xl}",
+        "type": "typography",
+        "description": "Mobile sliding button label typography - Inter Semi Bold, 18px, 28px line-height (font/size/3xl, font/weight/semibold)"
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.primary.body.1}",
+          "type": "color",
+          "description": "Mobile sliding button label text color — Enabled and on Drag states (in track) - primary-700 - #004eeb"
+        },
+        "complete": {
+          "value": "{color.text.neutral.base}",
+          "type": "color",
+          "description": "Mobile sliding button label text color — Complete state (on expanded handle) - white - #ffffff"
+        },
+        "disabled": {
+          "value": "{color.text.primary.inactive.2}",
+          "type": "color",
+          "description": "Mobile sliding button label text color — Disabled state (in track) - primary-200 - #b2ccff"
+        }
+      }
+    }
+  }
+}

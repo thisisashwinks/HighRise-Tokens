@@ -1,0 +1,36 @@
+{
+  "$comment": "Design token file for the Carousel component",
+  "$description": "Full-featured image/content carousel. A fixed-size viewport (361×400px in Figma reference frames) that overlays navigation arrows and a position indicator on top of a content slot. All sub-components — Empty Container (content placeholder), Dot Indicator, Dot Group, Number Indicator, and Arrow — are from the same Figma file and have their own token files. This file captures only the container dimensions and the 45-variant combination matrix. Layout behaviour: the content slot fills the entire viewport; arrows and the indicator group are absolutely positioned within the carousel bounds at positions defined by the variant (Centre, Top Left, Top Right, Bottom Left, Bottom Right).",
+  "$component": {
+    "name": "Carousel",
+    "figmaNodeId": "737:9875",
+    "themes": ["Primary", "Secondary", "Tertiary"],
+    "arrowPositions": ["Centre", "Top Left", "Top Right", "Bottom Left", "Bottom Right"],
+    "indicatorPositions": ["Centre", "Top Right", "Top Left", "Bottom Right", "Bottom Left"],
+    "indicatorTypes": ["Dot", "Line", "Number"],
+    "subComponents": [
+      "Carousel Empty Container (same file — mobile-components, node 742:27043)",
+      "Carousel Dot Indicator (same file — mobile-components, node 737:11231)",
+      "Carousel Dot Group (same file — mobile-components, node 737:11306)",
+      "Carousel Number Indicator (same file — mobile-components, node 755:5947)",
+      "Carousel Arrow (same file — mobile-components, node 737:11013)"
+    ]
+  },
+  "carousel": {
+    "width": {
+      "value": "361px",
+      "type": "dimension",
+      "description": "Reference viewport width used in Figma — implementations may use a fluid/percentage width instead"
+    },
+    "height": {
+      "value": "400px",
+      "type": "dimension",
+      "description": "Reference viewport height — the content slot and all overlaid controls fit within this height"
+    },
+    "overlay-padding": {
+      "value": "12px",
+      "type": "dimension",
+      "description": "Inset from the carousel edge at which arrows and the indicator group are placed when in a corner/edge position variant"
+    }
+  }
+}

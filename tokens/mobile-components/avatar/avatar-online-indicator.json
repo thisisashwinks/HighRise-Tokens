@@ -12,9 +12,36 @@
   },
   "avatar-online-indicator": {
     "size": {
-      "value": "{size.icon.2xs}",
-      "type": "dimension",
-      "description": "Mobile avatar online indicator size - 14px (width and height, rendered as circle via border-radius: full)"
+      "xs": {
+        "value": "{size.icon.6xs}",
+        "type": "dimension",
+        "description": "Mobile avatar online indicator size - 6px (width and height, rendered as circle via border-radius: full)"
+      },
+      "sm": {
+        "value": "{size.icon.5xs}",
+        "type": "dimension",
+        "description": "Mobile avatar online indicator size - 8px (width and height, rendered as circle via border-radius: full)"
+      },
+      "md": {
+        "value": "{size.icon.4xs}",
+        "type": "dimension",
+        "description": "Mobile avatar online indicator size - 10px (width and height, rendered as circle via border-radius: full)"
+      },
+      "lg": {
+        "value": "{size.icon.3xs}",
+        "type": "dimension",
+        "description": "Mobile avatar online indicator size - 12px (width and height, rendered as circle via border-radius: full)"
+      },
+      "xl": {
+        "value": "{size.icon.2xs}",
+        "type": "dimension",
+        "description": "Mobile avatar online indicator size - 14px (width and height, rendered as circle via border-radius: full)"
+      },
+      "2xl": {
+        "value": "{size.icon.xs}",
+        "type": "dimension",
+        "description": "Mobile avatar online indicator size - 16px (width and height, rendered as circle via border-radius: full)"
+      }
     },
     "border": {
       "radius": {
@@ -23,7 +50,7 @@
         "description": "Mobile avatar online indicator border radius - fully circular (7px for 14px element = pill)"
       },
       "width": {
-        "value": "1.5px",
+        "value": "{border.width.0[375]}",
         "type": "dimension",
         "description": "Mobile avatar online indicator border width - 1.5px white ring that separates the dot from the avatar background"
       },
@@ -34,10 +61,18 @@
       }
     },
     "background": {
+      "$comment": "Background color per scenario — applied in Hover and Clicked states. All colors are /100 tints of their respective palettes.",
       "color": {
-        "value": "#12b76a",
+        "online": {
+        "value": "{color.background.success.default}",
         "type": "color",
         "description": "Mobile avatar online indicator background color - success/500 green - #12b76a (indicates active/online status; raw value as success/500 is not a defined semantic token path)"
+      },
+      "offline": {
+        "value": "{color.background.neutral.moderate.0}",
+        "type": "color",
+        "description": "Mobile avatar online indicator background color - neutral/moderate/0 - #d0d5dd (indicates inactive/offline status)"
+      }
       }
     }
   }

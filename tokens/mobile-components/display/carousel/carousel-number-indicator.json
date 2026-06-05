@@ -1,0 +1,97 @@
+{
+  "$comment": "Design token file for the Carousel Number Indicator component",
+  "$description": "A pill-shaped counter showing current slide position as 'N/Total' (e.g. '1/9'). Three colour themes: Primary (filled blue), Secondary (white with blue border and text), Tertiary (white with gray border). All themes share the same container shape, padding, shadow, and typography — only background, border colour, and text colour differ.",
+  "$component": {
+    "name": "Carousel Number Indicator",
+    "figmaNodeId": "755:5947",
+    "themes": ["Primary", "Secondary", "Tertiary"]
+  },
+  "carousel-number-indicator": {
+    "border-radius": {
+      "value": "36px",
+      "type": "dimension",
+      "description": "Fully pill-shaped container (36px radius on a ~28px-tall element renders as a capsule)"
+    },
+    "border-width": {
+      "value": "1px",
+      "type": "dimension",
+      "description": "Uniform border on all themes"
+    },
+    "padding": {
+      "horizontal": {
+        "value": "10px",
+        "type": "dimension",
+        "description": "Left and right inset inside the pill"
+      },
+      "vertical": {
+        "value": "4px",
+        "type": "dimension",
+        "description": "Top and bottom inset inside the pill"
+      }
+    },
+    "shadow": {
+      "value": "{shadow.sm}",
+      "type": "shadow",
+      "description": "Subtle elevation — two-layer drop shadow (0px 1px 2px rgba(16,24,40,0.05) + 0px 1px 3px rgba(16,24,40,0.10))"
+    },
+    "typography": {
+      "value": "{font.body.medium.lg}",
+      "type": "typography",
+      "description": "14px Medium, 20px line-height — slide count text (e.g. '1/9')"
+    },
+    "primary": {
+      "description": "Filled blue pill — highest visual prominence, used on dark or image backgrounds",
+      "background": {
+        "value": "{color.primary.blue.700}",
+        "type": "color",
+        "description": "#004eeb — solid primary blue background"
+      },
+      "border-color": {
+        "value": "{color.neutral.gray.200}",
+        "type": "color",
+        "description": "#eaecf0 — border matches the lighter surround rather than the fill"
+      },
+      "text-color": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "White numeral text on the blue background"
+      }
+    },
+    "secondary": {
+      "description": "White pill with blue border and blue text — medium prominence",
+      "background": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "White background"
+      },
+      "border-color": {
+        "value": "{color.primary.blue.700}",
+        "type": "color",
+        "description": "#004eeb — primary blue outline"
+      },
+      "text-color": {
+        "value": "{color.primary.blue.700}",
+        "type": "color",
+        "description": "#004eeb — primary blue numeral matching the border"
+      }
+    },
+    "tertiary": {
+      "description": "White pill with gray border and gray text — lowest prominence, for use on light backgrounds",
+      "background": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "White background"
+      },
+      "border-color": {
+        "value": "{color.neutral.gray.200}",
+        "type": "color",
+        "description": "#eaecf0 — subtle gray outline"
+      },
+      "text-color": {
+        "value": "{color.neutral.gray.700}",
+        "type": "color",
+        "description": "#344054 — dark gray numeral text"
+      }
+    }
+  }
+}

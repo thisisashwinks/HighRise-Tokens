@@ -101,8 +101,71 @@
           "type": "dimension",
           "description": "Mobile avatar action icon size for 4xl - 40px"
         }
+      },
+      "color": {
+        "$comment": "Icon color per scenario — applied in Hover and Clicked states. All colors are /100 tints of their respective palettes.",
+        "neutral": {
+        "default": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile avatar action icon default state icon color - neutral/50 - #667085"
+        },
+        "disabled": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile avatar action icon disabled state icon color - neutral/50 - #667085"
+        }
+      },
+      "primary": {
+        "default": {
+          "value": "{color.icon.primary.default}",
+          "type": "color",
+          "description": "Mobile avatar action icon default state icon color - primary/100 - #004eeb"
+        },
+        "disabled": {
+          "value": "{color.icon.primary.subtle.0}",
+          "type": "color",
+          "description": "Mobile avatar action icon disabled state icon color - primary/100 - #004eeb"
+        }
+      },
+      "success": {
+        "default": {
+          "value": "{color.icon.success.default}",
+          "type": "color",
+          "description": "Mobile avatar action icon default state icon color - success/100 - #004eeb"
+        },
+        "disabled": {
+          "value": "{color.icon.success.inactive}",
+          "type": "color",
+          "description": "Mobile avatar action icon disabled state icon color - success/100 - #004eeb"
+        }
+      },
+      "error": {
+        "default": {
+          "value": "{color.icon.error.default}",
+          "type": "color",
+          "description": "Mobile avatar action icon default state icon color - error/100 - #004eeb"
+        },
+        "disabled": {
+          "value": "{color.icon.error.inactive}",
+          "type": "color",
+          "description": "Mobile avatar action icon disabled state icon color - error/100 - #004eeb"
+        }
+      },
+      "warning": {
+        "default": {
+          "value": "{color.icon.warning.default}",
+          "type": "color",
+          "description": "Mobile avatar action icon default state icon color - warning/100 - #004eeb"
+        },
+        "disabled": {
+          "value": "{color.icon.warning.inactive}",
+          "type": "color",
+          "description": "Mobile avatar action icon disabled state icon color - warning/100 - #004eeb"
+        }
       }
-    },
+    }
+  },
     "background": {
       "$comment": "Badge background properties — background only visible in Hover and Clicked states",
       "border-radius": {
@@ -120,27 +183,27 @@
       "color": {
         "$comment": "Background color per scenario — applied in Hover and Clicked states. All colors are /100 tints of their respective palettes.",
         "neutral": {
-          "value": "#f9fafb",
+          "value": "{color.background.neutral.subtle.0}",
           "type": "color",
           "description": "Mobile avatar action icon neutral scenario background - gray/50 - #f9fafb (lightest gray tint)"
         },
         "primary": {
-          "value": "#d1e0ff",
+          "value": "{color.background.primary.subtle.1}",
           "type": "color",
           "description": "Mobile avatar action icon primary scenario background - primary/100 - #d1e0ff"
         },
         "success": {
-          "value": "#d1fadf",
+          "value": "{color.background.success.subtle.1}",
           "type": "color",
           "description": "Mobile avatar action icon success scenario background - success/100 - #d1fadf"
         },
         "error": {
-          "value": "#fee4e2",
+          "value": "{color.background.error.subtle.1}",
           "type": "color",
           "description": "Mobile avatar action icon error scenario background - error/100 - #fee4e2"
         },
         "warning": {
-          "value": "#fef0c7",
+          "value": "{color.background.warning.subtle.1}",
           "type": "color",
           "description": "Mobile avatar action icon warning scenario background - warning/100 - #fef0c7"
         }
@@ -150,7 +213,7 @@
       "$comment": "State-conditional background visibility",
       "default": {
         "background": {
-          "value": "transparent",
+          "value": "{color.background.transparent}",
           "type": "color",
           "description": "Mobile avatar action icon default state background - transparent (no badge visible, bare icon only)"
         }

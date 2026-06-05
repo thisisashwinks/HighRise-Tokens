@@ -116,7 +116,12 @@
             "value": "{color.icon.neutral.subtle.2}",
             "type": "color",
             "description": "Mobile icon neutral disabled stroke color - gray/300 - #d0d5dd"
-          }
+          },
+          "white": {
+          "value": "{color.icon.neutral.base}",
+          "type": "color",
+          "description": "Mobile icon white stroke color - white - #ffffff"
+        }
         },
         "primary": {
           "default": {

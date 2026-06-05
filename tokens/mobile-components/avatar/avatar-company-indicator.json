@@ -12,9 +12,36 @@
   },
   "avatar-company-indicator": {
     "size": {
-      "value": "{size.icon.sm}",
-      "type": "dimension",
-      "description": "Mobile avatar company indicator size - 18px (width and height — larger than online indicator to frame company logo legibly)"
+      "xs": {
+        "value": "{size.icon.4xs}",
+        "type": "dimension",
+        "description": "Mobile avatar company indicator size - 10px (width and height — larger than online indicator to frame company logo legibly)"
+      },
+      "sm": {
+        "value": "{size.icon.3xs}",
+        "type": "dimension",
+        "description": "Mobile avatar company indicator size - 12px (width and height — larger than online indicator to frame company logo legibly)"
+      },
+      "md": {
+        "value": "{size.icon.2xs}",
+        "type": "dimension",
+        "description": "Mobile avatar company indicator size - 14px (width and height — larger than online indicator to frame company logo legibly)"
+      },
+      "lg": {
+        "value": "{size.icon.xs}",
+        "type": "dimension",
+        "description": "Mobile avatar company indicator size - 16px (width and height — larger than online indicator to frame company logo legibly)"
+      },
+      "xl": {
+        "value": "{size.icon.sm}",
+        "type": "dimension",
+        "description": "Mobile avatar company indicator size - 18px (width and height — larger than online indicator to frame company logo legibly)"
+      },
+      "2xl": {
+        "value": "{size.icon.md}",
+        "type": "dimension",
+        "description": "Mobile avatar company indicator size - 20px (width and height — larger than online indicator to frame company logo legibly)"
+      }
     },
     "border": {
       "radius": {
@@ -23,7 +50,7 @@
         "description": "Mobile avatar company indicator border radius - 12px (rounded rectangle — intentionally not fully circular, frames logo better than a circle)"
       },
       "width": {
-        "value": "1.5px",
+        "value": "{border.width.0[375]}",
         "type": "dimension",
         "description": "Mobile avatar company indicator border width - 1.5px white ring that separates the badge from the avatar background"
       },
@@ -31,13 +58,6 @@
         "value": "{color.background.neutral.base}",
         "type": "color",
         "description": "Mobile avatar company indicator border color - white - #ffffff (creates visual separation from avatar background)"
-      }
-    },
-    "position": {
-      "right-offset": {
-        "value": "-2px",
-        "type": "dimension",
-        "description": "Mobile avatar company indicator right offset - -2px (badge extends 2px beyond the avatar circle edge for visual prominence; differs from online indicator which sits flush at right: 0)"
       }
     },
     "logo": {

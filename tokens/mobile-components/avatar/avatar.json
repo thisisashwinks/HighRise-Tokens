@@ -85,9 +85,36 @@
           "description": "Mobile avatar container border radius for rounded=True - fully circular pill (rendered via rounded-[200px] in Figma — effectively 50%)"
         },
         "square": {
-          "value": "{border.radius.sm}",
-          "type": "dimension",
-          "description": "Mobile avatar container border radius for rounded=False - 8px (rounded square for grid/list contexts)"
+          "xs": {
+            "value": "{border.radius.3xs}",
+            "type": "dimension",
+            "description": "Mobile avatar container border radius for rounded=False - 4px (rounded square for grid/list contexts)"
+          },
+          "sm": {
+            "value": "{border.radius.1[5]}",
+            "type": "dimension",
+            "description": "Mobile avatar container border radius for rounded=False - 6px (rounded square for grid/list contexts)"
+          },
+          "md": {
+            "value": "{border.radius.sm}",
+            "type": "dimension",
+            "description": "Mobile avatar container border radius for rounded=False - 8px (rounded square for grid/list contexts)"
+          },
+          "lg": {
+            "value": "{border.radius.md}",
+            "type": "dimension",
+            "description": "Mobile avatar container border radius for rounded=False - 8px (rounded square for grid/list contexts)"
+          },
+          "xl": {
+            "value": "{border.radius.lg}",
+            "type": "dimension",
+            "description": "Mobile avatar container border radius for rounded=False - 8px (rounded square for grid/list contexts)"
+          },
+          "2xl": {
+            "value": "{border.radius.xl}",
+            "type": "dimension",
+            "description": "Mobile avatar container border radius for rounded=False - 8px (rounded square for grid/list contexts)"
+          }
         }
       },
       "background": {

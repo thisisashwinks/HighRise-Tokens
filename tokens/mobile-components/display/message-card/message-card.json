@@ -1,0 +1,172 @@
+{
+  "$comment": "Mobile Message Card Component Tokens",
+  "$description": "Component tokens for Mobile Message Card — a promotional/informational card component with a heading, optional paragraph, optional CTA button, and artwork. Supports 3 artwork types (illustration = 97px square decorative graphic at right; Image Left = 102px-wide photo strip at left edge; Image top = full-width photo banner above content), 2 layout modes (Heading = title + CTA only; Heading + Para = title + supporting text + CTA), and 3 button types (None = text only; Ghost = full-width link-style CTA using the Button component; Tertiary = pill-style CTA using the Button component). Ghost and Tertiary buttons are nested Button components from the same file — their internal tokens (bg, text color, border, typography, height, padding) are defined in the Button component and are excluded here. Figma Reference: Node ID 622-13407",
+  "$component": {
+    "name": "Message Card",
+    "description": "A mobile card component used to surface promotional content, feature announcements, or contextual callouts. Combines a text content section (heading + optional supporting paragraph) with one of three artwork presentations and an optional CTA. White card surface with gray border and sm shadow. Fixed 361px width.",
+    "structure": "White bordered card (8px radius, 361px wide). Layout direction depends on artwork: illustration and Image Left use a horizontal flex row (content left, artwork right); Image top uses a vertical flex column (image banner top, content below). Content section contains heading text, optional paragraph, and optional Button component (Ghost or Tertiary).",
+    "variants": {
+      "artwork": {
+        "illustration": "97×97px decorative illustration at the right end of the card, vertically centered",
+        "Image Left": "102px-wide full-height photo strip flush with the left edge of the card, content to the right",
+        "Image top": "Full-width photo banner at the top of the card; content stacks below. Banner height varies by layout and button presence (102px, 118px, or 158px)"
+      },
+      "layout": {
+        "Heading": "Heading text + optional CTA button only",
+        "Heading + Para": "Heading text + supporting paragraph + optional CTA button"
+      },
+      "button": {
+        "None": "No CTA — text content only",
+        "Ghost": "Full-width ghost link button (Button component, w-full). Shows label + arrow-right icon.",
+        "Tertiary": "Compact pill-shaped tertiary button (Button component, intrinsic width). Shows label only."
+      }
+    },
+    "nested-components": {
+      "Button": "Node IDs 1:864 (Ghost) and 1:824 (Tertiary) — Button component from the same file. Internal button tokens (background, text color, border, typography, height, padding, border-radius) are defined in the Button component's own tokens and are intentionally excluded from this file."
+    },
+    "usage": {
+      "contexts": "Feature announcements, onboarding callouts, promotional cards, content teasers, empty-state promotions, upsell surfaces",
+      "features": "3 artwork types (illustration, left image, top image), 2 text layouts (heading-only, heading+paragraph), 3 button options (none, ghost, tertiary), fixed 361px width, shadow/sm depth"
+    }
+  },
+  "message-card": {
+    "container": {
+      "$comment": "Outer card container — white surface, gray border, 8px radius, shadow/sm",
+      "width": {
+        "value": "361px",
+        "type": "dimension",
+        "description": "Mobile message card container fixed width - 361px"
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.md}",
+          "type": "dimension",
+          "description": "Mobile message card container border radius - 8px"
+        },
+        "width": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile message card container border width - 1px"
+        }
+      },
+      "color": {
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile message card container background - white - #ffffff"
+        },
+        "border": {
+          "value": "{color.border.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile message card container border color - neutral/gray.200 - #eaecf0"
+        }
+      },
+      "shadow": {
+        "value": "{boxShadow.outer.sm}",
+        "type": "boxShadow",
+        "description": "Mobile message card container shadow - shadow/sm - 0px 1px 3px rgba(16,24,40,0.10), 0px 1px 2px rgba(16,24,40,0.06)"
+      }
+    },
+    "content": {
+      "$comment": "Text+button content section — left column in illustration/image-left layouts; bottom section in image-top layout",
+      "padding": {
+        "left": {
+          "value": "{padding.4}",
+          "type": "dimension",
+          "description": "Mobile message card content section left padding - 16px (right side left open for artwork or image)"
+        },
+        "vertical": {
+          "value": "{padding.4}",
+          "type": "dimension",
+          "description": "Mobile message card content section top and bottom padding - 16px"
+        }
+      },
+      "gap": {
+        "value": "{gap.2}",
+        "type": "dimension",
+        "description": "Mobile message card content section vertical gap between heading, paragraph, and button - 8px"
+      },
+      "width": {
+        "fixed": {
+          "value": "153px",
+          "type": "dimension",
+          "description": "Mobile message card content section fixed width for heading-only layout variants (illustration and Image Left artwork, Image top heading-only). Heading + Para variants use flex-1 (remaining width)."
+        }
+      }
+    },
+    "heading": {
+      "$comment": "Primary heading text — displayed in all layout variants",
+      "color": {
+        "text": {
+          "value": "{color.text.neutral.title.1}",
+          "type": "color",
+          "description": "Mobile message card heading text color - neutral/gray.900 - #101828"
+        }
+      },
+      "typography": {
+        "value": "{font.heading.bold.h6}",
+        "type": "typography",
+        "description": "Mobile message card heading typography - Inter Bold 20px, 30px line-height (font/size/4xl, font/line-height/4xl)"
+      }
+    },
+    "paragraph": {
+      "$comment": "Supporting paragraph text — only shown in 'Heading + Para' layout variant",
+      "color": {
+        "text": {
+          "value": "{color.text.neutral.subtitle.1}",
+          "type": "color",
+          "description": "Mobile message card paragraph text color - neutral/gray.500 - #667085"
+        }
+      },
+      "typography": {
+        "value": "{font.body.regular.2xl}",
+        "type": "typography",
+        "description": "Mobile message card paragraph typography - Inter Regular 16px, 24px line-height (font/size/2xl, font/line-height/2xl)"
+      }
+    },
+    "artwork": {
+      "$comment": "Artwork area — conditionally rendered based on the artwork variant",
+      "illustration": {
+        "$comment": "artwork=illustration — 97px square decorative graphic, right-aligned, vertically centered",
+        "size": {
+          "value": "97px",
+          "type": "dimension",
+          "description": "Mobile message card illustration artwork size (width and height) - 97px square"
+        }
+      },
+      "image-left": {
+        "$comment": "artwork=Image Left — full-height photo strip flush with the left card edge",
+        "width": {
+          "value": "102px",
+          "type": "dimension",
+          "description": "Mobile message card image-left artwork width - 102px (full card height, object-cover)"
+        }
+      },
+      "image-top": {
+        "$comment": "artwork=Image top — full-width photo banner above the content section. Height varies by layout+button combination.",
+        "width": {
+          "value": "100%",
+          "type": "dimension",
+          "description": "Mobile message card image-top artwork width - 100% of card width"
+        },
+        "height": {
+          "heading": {
+            "value": "102px",
+            "type": "dimension",
+            "description": "Mobile message card image-top height for Heading-only layout (Ghost or Tertiary button) - 102px"
+          },
+          "heading-para": {
+            "value": "158px",
+            "type": "dimension",
+            "description": "Mobile message card image-top height for Heading + Para layout with Ghost or Tertiary button - 158px"
+          },
+          "none": {
+            "value": "118px",
+            "type": "dimension",
+            "description": "Mobile message card image-top height for Heading + Para layout with no button (button=None) - 118px"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$comment": "Design token file for the Stepper Time Picker component",
+  "$description": "Duration input control using increment/decrement stepper buttons flanking a text display. The layout is: [+] [0 h 00 m] [−] arranged in a single horizontal row. Intended for setting a duration (hours + minutes) rather than an absolute clock time. The step buttons are fully circular icon-only buttons. The display uses a large Semibold typography to make the current value clearly readable.",
+  "$component": {
+    "name": "Stepper Time Picker",
+    "figmaNodeId": "471:12332"
+  },
+  "stepper-time-picker": {
+    "gap": {
+      "value": "{size.4}",
+      "type": "dimension",
+      "description": "16px gap between the + button, the display text, and the − button"
+    },
+    "step-button": {
+      "size": {
+        "value": "{size.12}",
+        "type": "dimension",
+        "description": "48px — equal width and height; the button is a perfect circle"
+      },
+      "border-radius": {
+        "value": "{border.radius.full}",
+        "type": "borderRadius",
+        "description": "Fully circular button"
+      },
+      "background": {
+        "value": "{color.neutral.gray.100}",
+        "type": "color",
+        "description": "#f2f4f7 — muted gray background for both + and − buttons"
+      },
+      "icon": {
+        "size": {
+          "value": "{size.8}",
+          "type": "dimension",
+          "description": "32px icon centered within the 48px button"
+        },
+        "increment": {
+          "value": "plus",
+          "type": "string",
+          "description": "GHL icon name for the increment button"
+        },
+        "decrement": {
+          "value": "minus",
+          "type": "string",
+          "description": "GHL icon name for the decrement button"
+        }
+      }
+    },
+    "display": {
+      "typography": {
+        "value": "{font.body.semibold.3xl}",
+        "type": "typography",
+        "description": "18px Semibold, 28px line-height — large readable display for the duration value (e.g. '0 h 00 m')"
+      },
+      "color": {
+        "value": "{color.neutral.gray.600}",
+        "type": "color",
+        "description": "#475467 — medium gray for the duration display text"
+      }
+    }
+  }
+}

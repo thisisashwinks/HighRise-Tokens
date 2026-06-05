@@ -1,0 +1,84 @@
+{
+  "$comment": "Design token file for the Mobile Footer component",
+  "$description": "Full-width action bar anchored to the bottom of a mobile screen. Stacks 2, 3, or 4 full-width buttons vertically. Buttons are always ordered from least-to-most prominent top-to-bottom: secondary (ghost) buttons fill the upper slots, the primary (most important) action sits second-to-last, and the tertiary button (Cancel/dismiss) is always last. On iOS a home indicator bar is appended below the button area; Android omits it. The Button sub-component (node 3029:4311, same Figma file) handles all button-level tokens — this file captures only the container layout and the iOS home indicator.",
+  "$component": {
+    "name": "Mobile Footer",
+    "figmaNodeId": "456:7821",
+    "platforms": ["ios", "android"],
+    "buttonCounts": ["2 Buttons", "3 Buttons", "4 Button"],
+    "subComponents": [
+      "Button (same file — mobile-components, node 3029:4311)"
+    ]
+  },
+  "mobile-footer": {
+    "width": {
+      "value": "393px",
+      "type": "dimension",
+      "description": "Full mobile viewport width"
+    },
+    "background": {
+      "value": "{color.neutral.white.base}",
+      "type": "color",
+      "description": "White background for the footer container"
+    },
+    "border-top": {
+      "width": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Top border that visually separates the footer from the scrollable content above"
+      },
+      "color": {
+        "value": "{color.neutral.gray.200}",
+        "type": "color",
+        "description": "#eaecf0 — subtle gray separator line at the top edge of the footer"
+      }
+    },
+    "padding": {
+      "value": "{size.4}",
+      "type": "dimension",
+      "description": "16px inset on all sides of the footer container"
+    },
+    "button-area": {
+      "gap": {
+        "value": "{size.4}",
+        "type": "dimension",
+        "description": "16px vertical gap between each stacked button"
+      },
+      "button-width": {
+        "value": "100%",
+        "type": "dimension",
+        "description": "Every button stretches to fill the full available width inside the footer padding"
+      }
+    },
+    "home-indicator": {
+      "description": "iOS-only safe-area bar appended below the button area. Not rendered on Android.",
+      "height": {
+        "value": "34px",
+        "type": "dimension",
+        "description": "Standard iOS home indicator height"
+      },
+      "background": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "White background matching the footer — the indicator sits flush against the footer"
+      },
+      "grabber": {
+        "width": {
+          "value": "134px",
+          "type": "dimension",
+          "description": "Width of the home gesture grabber pill"
+        },
+        "height": {
+          "value": "5px",
+          "type": "dimension",
+          "description": "Height of the home gesture grabber pill"
+        },
+        "bottom-offset": {
+          "value": "8px",
+          "type": "dimension",
+          "description": "Distance from the bottom edge of the indicator area to the grabber pill"
+        }
+      }
+    }
+  }
+}
