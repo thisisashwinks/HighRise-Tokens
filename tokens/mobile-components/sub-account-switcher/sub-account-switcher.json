@@ -1,0 +1,41 @@
+{
+  "$comment": "Design token file for the Sub Account Switcher component",
+  "$description": "Scrollable account-selection panel composed of a search input, a 'Current' account row, and grouped lists of recent and all sub-accounts separated by labeled section dividers. Width is 361px — standard mobile viewport minus horizontal padding. All row-level styling (input, list item, avatar, tag, radio, divider) belongs to their respective nested component token files.",
+  "$component": {
+    "name": "Sub Account Switcher",
+    "figmaNodeId": "536:20751",
+    "figmaFile": "Mobile Components V2 Exp 2",
+    "subComponents": [
+      "Input Field (same file — own tokens)",
+      "List Item (same file — own tokens)",
+      "Avatar (same file — own tokens)",
+      "Tag (same file — own tokens)",
+      "Radio (same file — own tokens)",
+      "Divider (same file — own tokens)"
+    ]
+  },
+  "sub-account-switcher": {
+    "width": {
+      "value": "361px",
+      "type": "dimension",
+      "description": "Component width — standard mobile viewport (393px) minus 16px horizontal padding on each side"
+    },
+    "gap": {
+      "value": "16px",
+      "type": "dimension",
+      "description": "Vertical gap between the search input field and the account list group below it"
+    },
+    "list-group": {
+      "background": {
+        "value": "{color.neutral.white.base}",
+        "type": "color",
+        "description": "White background behind the stacked account rows and section dividers"
+      },
+      "gap": {
+        "value": "8px",
+        "type": "dimension",
+        "description": "Vertical gap between each list item and each labeled section divider (Recent, All) within the group"
+      }
+    }
+  }
+}

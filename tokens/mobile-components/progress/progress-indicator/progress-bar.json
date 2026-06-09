@@ -66,9 +66,9 @@
       },
       "color": {
         "default": {
-          "value": "{color.primary.600}",
+          "value": "{color.background.primary.default}",
           "type": "color",
-          "description": "Mobile progress bar indicator fill color for Default state - primary/blue/600 - #155eef (active progress, 0%–100%)"
+          "description": "Mobile progress bar indicator fill color for Default state - background/primary/default - #155eef (active progress, 0%–100%)"
         },
         "success": {
           "value": "{color.secondary.success.600}",

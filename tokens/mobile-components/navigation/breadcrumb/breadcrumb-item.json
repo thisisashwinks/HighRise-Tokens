@@ -1,0 +1,77 @@
+{
+  "$comment": "Design token file for the Breadcrumb Item component",
+  "$description": "A single step in a breadcrumb trail. Renders a leading icon (home or dots), a text label, and a trailing chevron separator. Two types: Default (icon + label) and Overflow (dots icon representing collapsed items). Two states: default (gray, regular weight) and Selected (blue, semibold — marks the active/current page). Chevron color is always gray regardless of state.",
+  "$component": {
+    "name": "Breadcrumb Item",
+    "figmaNodeId": "915:35116",
+    "figmaFile": "HighRise Mobile Components",
+    "variants": {
+      "type": ["Default", "Overflow"],
+      "state": ["default", "Selected"]
+    }
+  },
+  "breadcrumb-item": {
+    "gap": {
+      "value": "6px",
+      "type": "dimension",
+      "description": "Horizontal gap between the leading icon, label text, and trailing chevron"
+    },
+    "label": {
+      "typography": {
+        "default": {
+          "value": "{font.body.regular.lg}",
+          "type": "typography",
+          "description": "14px Regular, 20px line-height — ancestor steps that are navigable but not the current page"
+        },
+        "selected": {
+          "value": "{font.body.semibold.lg}",
+          "type": "typography",
+          "description": "14px SemiBold, 20px line-height — the current/active page, visually distinct from ancestor steps"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.neutral.gray.800}",
+          "type": "color",
+          "description": "#1d2939 — muted label for navigable ancestor steps"
+        },
+        "selected": {
+          "value": "{color.primary.700}",
+          "type": "color",
+          "description": "#004eeb — blue label highlighting the currently active breadcrumb step"
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "value": "24px",
+        "type": "dimension",
+        "description": "Width and height of the leading icon — home-02 for Default type, dots-horizontal for Overflow type"
+      },
+      "color": {
+        "default": {
+          "value": "{color.neutral.gray.800}",
+          "type": "color",
+          "description": "#1d2939 — matches default label color"
+        },
+        "selected": {
+          "value": "{color.primary.700}",
+          "type": "color",
+          "description": "#004eeb — matches selected label color"
+        }
+      }
+    },
+    "chevron": {
+      "size": {
+        "value": "18px",
+        "type": "dimension",
+        "description": "Width and height of the chevron-right separator icon"
+      },
+      "color": {
+        "value": "{color.neutral.gray.800}",
+        "type": "color",
+        "description": "#1d2939 — always gray regardless of the item's state; the chevron is a separator, not a state indicator"
+      }
+    }
+  }
+}

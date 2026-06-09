@@ -1,0 +1,233 @@
+{
+  "$comment": "Design token file for the Empty State component",
+  "$description": "Full-screen centered feedback state shown when no content is available. Supports two container types (illustration or icon) and three sizes (Small, Medium, Large). Composed of an illustration or icon container, a content block (title + optional sub-text), and an optional actions row (primary + secondary buttons). Width matches standard mobile viewport (393px).",
+  "$component": {
+    "name": "Empty State",
+    "figmaNodeId": "526:8112",
+    "figmaFile": "Mobile Components V2 Exp 2",
+    "subComponents": ["Button (HighRise)"]
+  },
+  "empty-state": {
+    "background": {
+      "value": "{color.neutral.white.base}",
+      "type": "color",
+      "description": "Container background — white screen behind all content"
+    },
+    "gap": {
+      "value": "12px",
+      "type": "dimension",
+      "description": "Vertical gap between the illustration/icon, content block, and actions row"
+    },
+    "illustration": {
+      "size": {
+        "small": {
+          "value": "128px",
+          "type": "dimension",
+          "description": "Illustration container width and height for the Small size variant"
+        },
+        "medium": {
+          "value": "192px",
+          "type": "dimension",
+          "description": "Illustration container width and height for the Medium size variant"
+        },
+        "large": {
+          "value": "240px",
+          "type": "dimension",
+          "description": "Illustration container width and height for the Large size variant"
+        }
+      }
+    },
+    "icon-container": {
+      "background": {
+        "value": "{color.neutral.gray.100}",
+        "type": "color",
+        "description": "#f2f4f7 — muted gray background behind the placeholder icon"
+      },
+      "border-radius": {
+        "value": "{border.radius.sm}",
+        "type": "borderRadius",
+        "description": "8px — rounded square shape for the icon container"
+      },
+      "size": {
+        "small": {
+          "value": "48px",
+          "type": "dimension",
+          "description": "Icon container width and height for the Small size variant"
+        },
+        "medium": {
+          "value": "56px",
+          "type": "dimension",
+          "description": "Icon container width and height for the Medium size variant"
+        },
+        "large": {
+          "value": "64px",
+          "type": "dimension",
+          "description": "Icon container width and height for the Large size variant"
+        }
+      },
+      "icon": {
+        "size": {
+          "small": {
+            "value": "32px",
+            "type": "dimension",
+            "description": "Icon width and height inside the Small container"
+          },
+          "medium": {
+            "value": "36px",
+            "type": "dimension",
+            "description": "Icon width and height inside the Medium container"
+          },
+          "large": {
+            "value": "40px",
+            "type": "dimension",
+            "description": "Icon width and height inside the Large container"
+          }
+        }
+      }
+    },
+    "content": {
+      "gap": {
+        "value": "4px",
+        "type": "dimension",
+        "description": "Vertical gap between the title and the sub-text"
+      },
+      "title": {
+        "typography": {
+          "value": "{font.heading.semibold.2xl}",
+          "type": "typography",
+          "description": "16px Semibold, 24px line-height — primary heading communicating the empty state reason"
+        },
+        "color": {
+          "value": "{color.neutral.gray.900}",
+          "type": "color",
+          "description": "#101828 — high-emphasis title text"
+        }
+      },
+      "sub-text": {
+        "typography": {
+          "value": "{font.body.regular.lg}",
+          "type": "typography",
+          "description": "14px Regular, 20px line-height — supporting description below the title"
+        },
+        "color": {
+          "value": "{color.neutral.gray.600}",
+          "type": "color",
+          "description": "#475467 — muted secondary text"
+        }
+      }
+    },
+    "actions": {
+      "gap": {
+        "value": "12px",
+        "type": "dimension",
+        "description": "Horizontal gap between the secondary and primary action buttons"
+      },
+      "primary-button": {
+        "background": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "#155eef — filled primary action background"
+        },
+        "border": {
+          "width": {
+            "value": "1px",
+            "type": "dimension",
+            "description": "Button border width"
+          },
+          "color": {
+            "value": "{color.primary.600}",
+            "type": "color",
+            "description": "#155eef — matches background for seamless filled appearance"
+          }
+        },
+        "border-radius": {
+          "value": "{border.radius.sm}",
+          "type": "borderRadius",
+          "description": "8px button corner radius"
+        },
+        "shadow": {
+          "value": "{shadow.xs}",
+          "type": "shadow",
+          "description": "0px 1px 2px 0px rgba(16,24,40,0.05)"
+        },
+        "padding": {
+          "horizontal": {
+            "value": "20px",
+            "type": "dimension",
+            "description": "Left and right button padding"
+          },
+          "vertical": {
+            "value": "12px",
+            "type": "dimension",
+            "description": "Top and bottom button padding"
+          }
+        },
+        "label": {
+          "typography": {
+            "value": "{font.heading.semibold.2xl}",
+            "type": "typography",
+            "description": "16px Semibold, 24px line-height"
+          },
+          "color": {
+            "value": "{color.neutral.white.base}",
+            "type": "color",
+            "description": "White label on filled primary button"
+          }
+        }
+      },
+      "secondary-button": {
+        "background": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White background for the outlined secondary action"
+        },
+        "border": {
+          "width": {
+            "value": "1px",
+            "type": "dimension",
+            "description": "Button border width"
+          },
+          "color": {
+            "value": "{color.primary.300}",
+            "type": "color",
+            "description": "#84adff — light blue border distinguishing the secondary action from a ghost button"
+          }
+        },
+        "border-radius": {
+          "value": "{border.radius.sm}",
+          "type": "borderRadius",
+          "description": "8px button corner radius"
+        },
+        "shadow": {
+          "value": "{shadow.xs}",
+          "type": "shadow",
+          "description": "0px 1px 2px 0px rgba(16,24,40,0.05)"
+        },
+        "padding": {
+          "horizontal": {
+            "value": "20px",
+            "type": "dimension",
+            "description": "Left and right button padding"
+          },
+          "vertical": {
+            "value": "12px",
+            "type": "dimension",
+            "description": "Top and bottom button padding"
+          }
+        },
+        "label": {
+          "typography": {
+            "value": "{font.heading.semibold.2xl}",
+            "type": "typography",
+            "description": "16px Semibold, 24px line-height"
+          },
+          "color": {
+            "value": "{color.primary.700}",
+            "type": "color",
+            "description": "#004eeb — dark primary blue for legibility on white background"
+          }
+        }
+      }
+    }
+  }
+}

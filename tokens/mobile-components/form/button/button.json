@@ -9,11 +9,6 @@
               "type": "color",
               "description": "Mobile primary button default background"
             },
-            "hover": {
-              "value": "{color.background.primary.intense.1}",
-              "type": "color",
-              "description": "Mobile primary button hover background"
-            },
             "active": {
               "value": "{color.background.primary.intense.2}",
               "type": "color",
@@ -35,11 +30,6 @@
               "value": "{color.border.primary.default}",
               "type": "color",
               "description": "Mobile primary button default border"
-            },
-            "hover": {
-              "value": "{color.border.primary.intense.0}",
-              "type": "color",
-              "description": "Mobile primary button hover border"
             },
             "active": {
               "value": "{color.border.primary.default}",
@@ -63,11 +53,6 @@
               "type": "color",
               "description": "Mobile primary button default text color"
             },
-            "hover": {
-              "value": "{color.text.neutral.base}",
-              "type": "color",
-              "description": "Mobile primary button hover text color"
-            },
             "active": {
               "value": "{color.text.neutral.base}",
               "type": "color",
@@ -89,11 +74,6 @@
               "value": "{color.icon.neutral.base}",
               "type": "color",
               "description": "Mobile primary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.neutral.base}",
-              "type": "color",
-              "description": "Mobile primary button hover icon color"
             },
             "active": {
               "value": "{color.icon.neutral.base}",
@@ -119,11 +99,6 @@
               "type": "color",
               "description": "Mobile secondary button default background"
             },
-            "hover": {
-              "value": "{color.background.primary.subtle.0}",
-              "type": "color",
-              "description": "Mobile secondary button hover background"
-            },
             "active": {
               "value": "{color.background.primary.subtle.1}",
               "type": "color",
@@ -145,11 +120,6 @@
               "value": "{color.border.primary.subtle.2}",
               "type": "color",
               "description": "Mobile secondary button default border"
-            },
-            "hover": {
-              "value": "{color.border.primary.subtle.2}",
-              "type": "color",
-              "description": "Mobile secondary button hover border"
             },
             "active": {
               "value": "{color.border.primary.subtle.2}",
@@ -173,11 +143,6 @@
               "type": "color",
               "description": "Mobile secondary button default text color"
             },
-            "hover": {
-              "value": "{color.text.primary.title.2}",
-              "type": "color",
-              "description": "Mobile secondary button hover text color"
-            },
             "active": {
               "value": "{color.text.primary.title.1}",
               "type": "color",
@@ -199,11 +164,6 @@
               "value": "{color.icon.primary.default}",
               "type": "color",
               "description": "Mobile secondary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.primary.default}",
-              "type": "color",
-              "description": "Mobile secondary button hover icon color"
             },
             "active": {
               "value": "{color.icon.primary.default}",
@@ -229,11 +189,6 @@
               "type": "color",
               "description": "Mobile tertiary button default background"
             },
-            "hover": {
-              "value": "{color.background.primary.subtle.1}",
-              "type": "color",
-              "description": "Mobile tertiary button hover background"
-            },
             "active": {
               "value": "{color.background.primary.subtle.2}",
               "type": "color",
@@ -255,11 +210,6 @@
               "value": "{color.border.primary.subtle.0}",
               "type": "color",
               "description": "Mobile tertiary button default border"
-            },
-            "hover": {
-              "value": "{color.border.primary.subtle.1}",
-              "type": "color",
-              "description": "Mobile tertiary button hover border"
             },
             "active": {
               "value": "{color.border.primary.subtle.2}",
@@ -283,11 +233,6 @@
               "type": "color",
               "description": "Mobile tertiary button default text color"
             },
-            "hover": {
-              "value": "{color.text.primary.title.2}",
-              "type": "color",
-              "description": "Mobile tertiary button hover text color"
-            },
             "active": {
               "value": "{color.text.primary.title.1}",
               "type": "color",
@@ -309,11 +254,6 @@
               "value": "{color.icon.primary.default}",
               "type": "color",
               "description": "Mobile tertiary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.primary.default}",
-              "type": "color",
-              "description": "Mobile tertiary button hover icon color"
             },
             "active": {
               "value": "{color.icon.primary.default}",
@@ -339,11 +279,6 @@
               "type": "color",
               "description": "Mobile ghost button default background"
             },
-            "hover": {
-              "value": "{color.background.primary.subtle.1}",
-              "type": "color",
-              "description": "Mobile ghost button hover background"
-            },
             "active": {
               "value": "{color.background.primary.subtle.2}",
               "type": "color",
@@ -365,11 +300,6 @@
               "value": "{color.border.transparent}",
               "type": "color",
               "description": "Mobile ghost button default border"
-            },
-            "hover": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile ghost button hover border"
             },
             "active": {
               "value": "{color.border.transparent}",
@@ -393,11 +323,6 @@
               "type": "color",
               "description": "Mobile ghost button default text color"
             },
-            "hover": {
-              "value": "{color.text.primary.title.2}",
-              "type": "color",
-              "description": "Mobile ghost button hover text color"
-            },
             "active": {
               "value": "{color.text.primary.title.1}",
               "type": "color",
@@ -419,11 +344,6 @@
               "value": "{color.icon.primary.default}",
               "type": "color",
               "description": "Mobile ghost button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.primary.default}",
-              "type": "color",
-              "description": "Mobile ghost button hover icon color"
             },
             "active": {
               "value": "{color.icon.primary.default}",
@@ -449,11 +369,6 @@
               "type": "color",
               "description": "Mobile link button default background"
             },
-            "hover": {
-              "value": "{color.background.transparent}",
-              "type": "color",
-              "description": "Mobile link button hover background"
-            },
             "active": {
               "value": "{color.background.transparent}",
               "type": "color",
@@ -475,11 +390,6 @@
               "value": "{color.border.transparent}",
               "type": "color",
               "description": "Mobile link button default border"
-            },
-            "hover": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile link button hover border"
             },
             "active": {
               "value": "{color.border.transparent}",
@@ -503,11 +413,6 @@
               "type": "color",
               "description": "Mobile link button default text color"
             },
-            "hover": {
-              "value": "{color.text.primary.title.2}",
-              "type": "color",
-              "description": "Mobile link button hover text color"
-            },
             "active": {
               "value": "{color.text.primary.title.1}",
               "type": "color",
@@ -529,11 +434,6 @@
               "value": "{color.icon.primary.default}",
               "type": "color",
               "description": "Mobile link button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.primary.default}",
-              "type": "color",
-              "description": "Mobile link button hover icon color"
             },
             "active": {
               "value": "{color.icon.primary.default}",
@@ -561,11 +461,6 @@
               "type": "color",
               "description": "Mobile error primary button default background"
             },
-            "hover": {
-              "value": "{color.background.error.intense.0}",
-              "type": "color",
-              "description": "Mobile error primary button hover background"
-            },
             "active": {
               "value": "{color.background.error.intense.1}",
               "type": "color",
@@ -587,11 +482,6 @@
               "value": "{color.border.error.default}",
               "type": "color",
               "description": "Mobile error primary button default border"
-            },
-            "hover": {
-              "value": "{color.border.error.intense.0}",
-              "type": "color",
-              "description": "Mobile error primary button hover border"
             },
             "active": {
               "value": "{color.border.error.intense.2}",
@@ -615,11 +505,6 @@
               "type": "color",
               "description": "Mobile error primary button default text color"
             },
-            "hover": {
-              "value": "{color.text.neutral.base}",
-              "type": "color",
-              "description": "Mobile error primary button hover text color"
-            },
             "active": {
               "value": "{color.text.neutral.base}",
               "type": "color",
@@ -641,11 +526,6 @@
               "value": "{color.icon.neutral.base}",
               "type": "color",
               "description": "Mobile error primary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.neutral.base}",
-              "type": "color",
-              "description": "Mobile error primary button hover icon color"
             },
             "active": {
               "value": "{color.icon.neutral.base}",
@@ -671,11 +551,6 @@
               "type": "color",
               "description": "Mobile error secondary button default background"
             },
-            "hover": {
-              "value": "{color.background.error.subtle.0}",
-              "type": "color",
-              "description": "Mobile error secondary button hover background"
-            },
             "active": {
               "value": "{color.background.error.subtle.1}",
               "type": "color",
@@ -697,11 +572,6 @@
               "value": "{color.border.error.moderate.0}",
               "type": "color",
               "description": "Mobile error secondary button default border"
-            },
-            "hover": {
-              "value": "{color.border.error.moderate.0}",
-              "type": "color",
-              "description": "Mobile error secondary button hover border"
             },
             "active": {
               "value": "{color.border.error.moderate.0}",
@@ -725,11 +595,6 @@
               "type": "color",
               "description": "Mobile error secondary button default text color"
             },
-            "hover": {
-              "value": "{color.text.error.title.2}",
-              "type": "color",
-              "description": "Mobile error secondary button hover text color"
-            },
             "active": {
               "value": "{color.text.error.title.1}",
               "type": "color",
@@ -751,11 +616,6 @@
               "value": "{color.icon.error.moderate}",
               "type": "color",
               "description": "Mobile error secondary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.error.moderate}",
-              "type": "color",
-              "description": "Mobile error secondary button hover icon color"
             },
             "active": {
               "value": "{color.icon.error.moderate}",
@@ -781,11 +641,6 @@
               "type": "color",
               "description": "Mobile error tertiary button default background"
             },
-            "hover": {
-              "value": "{color.background.error.subtle.1}",
-              "type": "color",
-              "description": "Mobile error tertiary button hover background"
-            },
             "active": {
               "value": "{color.background.error.subtle.2}",
               "type": "color",
@@ -807,11 +662,6 @@
               "value": "{color.border.error.subtle.0}",
               "type": "color",
               "description": "Mobile error tertiary button default border"
-            },
-            "hover": {
-              "value": "{color.border.error.subtle.1}",
-              "type": "color",
-              "description": "Mobile error tertiary button hover border"
             },
             "active": {
               "value": "{color.border.error.subtle.0}",
@@ -835,11 +685,6 @@
               "type": "color",
               "description": "Mobile error tertiary button default text color"
             },
-            "hover": {
-              "value": "{color.text.error.title.2}",
-              "type": "color",
-              "description": "Mobile error tertiary button hover text color"
-            },
             "active": {
               "value": "{color.text.error.title.1}",
               "type": "color",
@@ -861,11 +706,6 @@
               "value": "{color.icon.error.moderate}",
               "type": "color",
               "description": "Mobile error tertiary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.error.moderate}",
-              "type": "color",
-              "description": "Mobile error tertiary button hover icon color"
             },
             "active": {
               "value": "{color.icon.error.moderate}",
@@ -891,11 +731,6 @@
               "type": "color",
               "description": "Mobile error ghost button default background"
             },
-            "hover": {
-              "value": "{color.background.error.subtle.0}",
-              "type": "color",
-              "description": "Mobile error ghost button hover background"
-            },
             "active": {
               "value": "{color.background.error.subtle.1}",
               "type": "color",
@@ -917,11 +752,6 @@
               "value": "{color.border.transparent}",
               "type": "color",
               "description": "Mobile error ghost button default border"
-            },
-            "hover": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile error ghost button hover border"
             },
             "active": {
               "value": "{color.border.transparent}",
@@ -945,11 +775,6 @@
               "type": "color",
               "description": "Mobile error ghost button default text color"
             },
-            "hover": {
-              "value": "{color.text.error.title.2}",
-              "type": "color",
-              "description": "Mobile error ghost button hover text color"
-            },
             "active": {
               "value": "{color.text.error.title.1}",
               "type": "color",
@@ -971,11 +796,6 @@
               "value": "{color.icon.error.moderate}",
               "type": "color",
               "description": "Mobile error ghost button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.error.moderate}",
-              "type": "color",
-              "description": "Mobile error ghost button hover icon color"
             },
             "active": {
               "value": "{color.icon.error.moderate}",
@@ -1001,11 +821,6 @@
               "type": "color",
               "description": "Mobile error link button default background"
             },
-            "hover": {
-              "value": "{color.background.transparent}",
-              "type": "color",
-              "description": "Mobile error link button hover background"
-            },
             "active": {
               "value": "{color.background.transparent}",
               "type": "color",
@@ -1027,11 +842,6 @@
               "value": "{color.border.transparent}",
               "type": "color",
               "description": "Mobile error link button default border"
-            },
-            "hover": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile error link button hover border"
             },
             "active": {
               "value": "{color.border.transparent}",
@@ -1055,11 +865,6 @@
               "type": "color",
               "description": "Mobile error link button default text color"
             },
-            "hover": {
-              "value": "{color.text.error.title.2}",
-              "type": "color",
-              "description": "Mobile error link button hover text color"
-            },
             "active": {
               "value": "{color.text.error.title.1}",
               "type": "color",
@@ -1081,11 +886,6 @@
               "value": "{color.icon.error.moderate}",
               "type": "color",
               "description": "Mobile error link button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.error.moderate}",
-              "type": "color",
-              "description": "Mobile error link button hover icon color"
             },
             "active": {
               "value": "{color.icon.error.moderate}",
@@ -1113,11 +913,6 @@
               "type": "color",
               "description": "Mobile neutral primary button default background"
             },
-            "hover": {
-              "value": "{color.background.neutral.intense.0}",
-              "type": "color",
-              "description": "Mobile neutral primary button hover background"
-            },
             "active": {
               "value": "{color.background.neutral.intense.2}",
               "type": "color",
@@ -1139,11 +934,6 @@
               "value": "{color.border.neutral.default}",
               "type": "color",
               "description": "Mobile neutral primary button default border"
-            },
-            "hover": {
-              "value": "{color.border.neutral.intense.0}",
-              "type": "color",
-              "description": "Mobile neutral primary button hover border"
             },
             "active": {
               "value": "{color.border.neutral.intense.1}",
@@ -1167,11 +957,6 @@
               "type": "color",
               "description": "Mobile neutral primary button default text color"
             },
-            "hover": {
-              "value": "{color.text.neutral.base}",
-              "type": "color",
-              "description": "Mobile neutral primary button hover text color"
-            },
             "active": {
               "value": "{color.text.neutral.base}",
               "type": "color",
@@ -1193,11 +978,6 @@
               "value": "{color.icon.neutral.base}",
               "type": "color",
               "description": "Mobile neutral primary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.neutral.base}",
-              "type": "color",
-              "description": "Mobile neutral primary button hover icon color"
             },
             "active": {
               "value": "{color.icon.neutral.base}",
@@ -1223,11 +1003,6 @@
               "type": "color",
               "description": "Mobile neutral secondary button default background"
             },
-            "hover": {
-              "value": "{color.background.neutral.subtle.0}",
-              "type": "color",
-              "description": "Mobile neutral secondary button hover background"
-            },
             "active": {
               "value": "{color.background.neutral.subtle.1}",
               "type": "color",
@@ -1249,11 +1024,6 @@
               "value": "{color.border.neutral.default}",
               "type": "color",
               "description": "Mobile neutral secondary button default border"
-            },
-            "hover": {
-              "value": "{color.border.neutral.default}",
-              "type": "color",
-              "description": "Mobile neutral secondary button hover border"
             },
             "active": {
               "value": "{color.border.neutral.default}",
@@ -1277,11 +1047,6 @@
               "type": "color",
               "description": "Mobile neutral secondary button default text color"
             },
-            "hover": {
-              "value": "{color.text.neutral.title.2}",
-              "type": "color",
-              "description": "Mobile neutral secondary button hover text color"
-            },
             "active": {
               "value": "{color.text.neutral.title.1}",
               "type": "color",
@@ -1303,11 +1068,6 @@
               "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Mobile neutral secondary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.neutral.moderate.2}",
-              "type": "color",
-              "description": "Mobile neutral secondary button hover icon color"
             },
             "active": {
               "value": "{color.icon.neutral.moderate.2}",
@@ -1333,11 +1093,6 @@
               "type": "color",
               "description": "Mobile neutral tertiary button default background"
             },
-            "hover": {
-              "value": "{color.background.neutral.subtle.1}",
-              "type": "color",
-              "description": "Mobile neutral tertiary button hover background"
-            },
             "active": {
               "value": "{color.background.neutral.subtle.2}",
               "type": "color",
@@ -1359,11 +1114,6 @@
               "value": "{color.border.neutral.subtle.0}",
               "type": "color",
               "description": "Mobile neutral tertiary button default border"
-            },
-            "hover": {
-              "value": "{color.border.neutral.subtle.2}",
-              "type": "color",
-              "description": "Mobile neutral tertiary button hover border"
             },
             "active": {
               "value": "{color.border.neutral.default}",
@@ -1387,11 +1137,6 @@
               "type": "color",
               "description": "Mobile neutral tertiary button default text color"
             },
-            "hover": {
-              "value": "{color.text.neutral.title.2}",
-              "type": "color",
-              "description": "Mobile neutral tertiary button hover text color"
-            },
             "active": {
               "value": "{color.text.neutral.title.1}",
               "type": "color",
@@ -1413,11 +1158,6 @@
               "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Mobile neutral tertiary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.neutral.moderate.2}",
-              "type": "color",
-              "description": "Mobile neutral tertiary button hover icon color"
             },
             "active": {
               "value": "{color.icon.neutral.moderate.2}",
@@ -1443,11 +1183,6 @@
               "type": "color",
               "description": "Mobile neutral ghost button default background"
             },
-            "hover": {
-              "value": "{color.background.neutral.subtle.0}",
-              "type": "color",
-              "description": "Mobile neutral ghost button hover background"
-            },
             "active": {
               "value": "{color.background.neutral.subtle.1}",
               "type": "color",
@@ -1469,11 +1204,6 @@
               "value": "{color.border.transparent}",
               "type": "color",
               "description": "Mobile neutral ghost button default border"
-            },
-            "hover": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile neutral ghost button hover border"
             },
             "active": {
               "value": "{color.border.transparent}",
@@ -1497,11 +1227,6 @@
               "type": "color",
               "description": "Mobile neutral ghost button default text color"
             },
-            "hover": {
-              "value": "{color.text.neutral.title.2}",
-              "type": "color",
-              "description": "Mobile neutral ghost button hover text color"
-            },
             "active": {
               "value": "{color.text.neutral.title.1}",
               "type": "color",
@@ -1523,11 +1248,6 @@
               "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Mobile neutral ghost button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.neutral.moderate.2}",
-              "type": "color",
-              "description": "Mobile neutral ghost button hover icon color"
             },
             "active": {
               "value": "{color.icon.neutral.moderate.2}",
@@ -1580,11 +1300,6 @@
               "type": "color",
               "description": "Mobile neutral link button default border"
             },
-            "hover": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile neutral link button hover border"
-            },
             "active": {
               "value": "{color.border.transparent}",
               "type": "color",
@@ -1607,11 +1322,6 @@
               "type": "color",
               "description": "Mobile neutral link button default text color"
             },
-            "hover": {
-              "value": "{color.text.neutral.title.2}",
-              "type": "color",
-              "description": "Mobile neutral link button hover text color"
-            },
             "active": {
               "value": "{color.text.neutral.title.1}",
               "type": "color",
@@ -1633,11 +1343,6 @@
               "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
               "description": "Mobile neutral link button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.neutral.moderate.2}",
-              "type": "color",
-              "description": "Mobile neutral link button hover icon color"
             },
             "active": {
               "value": "{color.icon.neutral.moderate.2}",
@@ -1665,11 +1370,6 @@
               "type": "color",
               "description": "Mobile warning primary button default background"
             },
-            "hover": {
-              "value": "{color.background.warning.intense.0}",
-              "type": "color",
-              "description": "Mobile warning primary button hover background"
-            },
             "active": {
               "value": "{color.background.warning.intense.1}",
               "type": "color",
@@ -1691,11 +1391,6 @@
               "value": "{color.border.warning.default}",
               "type": "color",
               "description": "Mobile warning primary button default border"
-            },
-            "hover": {
-              "value": "{color.border.warning.intense.0}",
-              "type": "color",
-              "description": "Mobile warning primary button hover border"
             },
             "active": {
               "value": "{color.border.warning.intense.2}",
@@ -1719,11 +1414,6 @@
               "type": "color",
               "description": "Mobile warning primary button default text color"
             },
-            "hover": {
-              "value": "{color.text.neutral.base}",
-              "type": "color",
-              "description": "Mobile warning primary button hover text color"
-            },
             "active": {
               "value": "{color.text.neutral.base}",
               "type": "color",
@@ -1745,11 +1435,6 @@
               "value": "{color.icon.neutral.base}",
               "type": "color",
               "description": "Mobile warning primary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.neutral.base}",
-              "type": "color",
-              "description": "Mobile warning primary button hover icon color"
             },
             "active": {
               "value": "{color.icon.neutral.base}",
@@ -1775,11 +1460,6 @@
               "type": "color",
               "description": "Mobile warning secondary button default background"
             },
-            "hover": {
-              "value": "{color.background.warning.subtle.0}",
-              "type": "color",
-              "description": "Mobile warning secondary button hover background"
-            },
             "active": {
               "value": "{color.background.warning.subtle.1}",
               "type": "color",
@@ -1801,11 +1481,6 @@
               "value": "{color.border.warning.moderate.0}",
               "type": "color",
               "description": "Mobile warning secondary button default border"
-            },
-            "hover": {
-              "value": "{color.border.warning.moderate.0}",
-              "type": "color",
-              "description": "Mobile warning secondary button hover border"
             },
             "active": {
               "value": "{color.border.warning.moderate.0}",
@@ -1829,11 +1504,6 @@
               "type": "color",
               "description": "Mobile warning secondary button default text color"
             },
-            "hover": {
-              "value": "{color.text.warning.title.2}",
-              "type": "color",
-              "description": "Mobile warning secondary button hover text color"
-            },
             "active": {
               "value": "{color.text.warning.title.1}",
               "type": "color",
@@ -1855,11 +1525,6 @@
               "value": "{color.icon.warning.default}",
               "type": "color",
               "description": "Mobile warning secondary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.warning.default}",
-              "type": "color",
-              "description": "Mobile warning secondary button hover icon color"
             },
             "active": {
               "value": "{color.icon.warning.default}",
@@ -1885,11 +1550,6 @@
               "type": "color",
               "description": "Mobile warning tertiary button default background"
             },
-            "hover": {
-              "value": "{color.background.warning.subtle.1}",
-              "type": "color",
-              "description": "Mobile warning tertiary button hover background"
-            },
             "active": {
               "value": "{color.background.warning.subtle.2}",
               "type": "color",
@@ -1911,11 +1571,6 @@
               "value": "{color.border.warning.subtle.0}",
               "type": "color",
               "description": "Mobile warning tertiary button default border"
-            },
-            "hover": {
-              "value": "{color.border.warning.subtle.1}",
-              "type": "color",
-              "description": "Mobile warning tertiary button hover border"
             },
             "active": {
               "value": "{color.border.warning.subtle.0}",
@@ -1939,11 +1594,6 @@
               "type": "color",
               "description": "Mobile warning tertiary button default text color"
             },
-            "hover": {
-              "value": "{color.text.warning.title.2}",
-              "type": "color",
-              "description": "Mobile warning tertiary button hover text color"
-            },
             "active": {
               "value": "{color.text.warning.title.1}",
               "type": "color",
@@ -1965,11 +1615,6 @@
               "value": "{color.icon.warning.default}",
               "type": "color",
               "description": "Mobile warning tertiary button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.warning.default}",
-              "type": "color",
-              "description": "Mobile warning tertiary button hover icon color"
             },
             "active": {
               "value": "{color.icon.warning.default}",
@@ -1995,11 +1640,6 @@
               "type": "color",
               "description": "Mobile warning ghost button default background"
             },
-            "hover": {
-              "value": "{color.background.warning.subtle.0}",
-              "type": "color",
-              "description": "Mobile warning ghost button hover background"
-            },
             "active": {
               "value": "{color.background.warning.subtle.1}",
               "type": "color",
@@ -2021,11 +1661,6 @@
               "value": "{color.border.transparent}",
               "type": "color",
               "description": "Mobile warning ghost button default border"
-            },
-            "hover": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile warning ghost button hover border"
             },
             "active": {
               "value": "{color.border.transparent}",
@@ -2049,11 +1684,6 @@
               "type": "color",
               "description": "Mobile warning ghost button default text color"
             },
-            "hover": {
-              "value": "{color.text.warning.title.2}",
-              "type": "color",
-              "description": "Mobile warning ghost button hover text color"
-            },
             "active": {
               "value": "{color.text.warning.title.1}",
               "type": "color",
@@ -2075,11 +1705,6 @@
               "value": "{color.icon.warning.default}",
               "type": "color",
               "description": "Mobile warning ghost button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.warning.default}",
-              "type": "color",
-              "description": "Mobile warning ghost button hover icon color"
             },
             "active": {
               "value": "{color.icon.warning.default}",
@@ -2105,11 +1730,6 @@
               "type": "color",
               "description": "Mobile warning link button default background"
             },
-            "hover": {
-              "value": "{color.background.transparent}",
-              "type": "color",
-              "description": "Mobile warning link button hover background"
-            },
             "active": {
               "value": "{color.background.transparent}",
               "type": "color",
@@ -2131,11 +1751,6 @@
               "value": "{color.border.transparent}",
               "type": "color",
               "description": "Mobile warning link button default border"
-            },
-            "hover": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile warning link button hover border"
             },
             "active": {
               "value": "{color.border.transparent}",
@@ -2159,11 +1774,6 @@
               "type": "color",
               "description": "Mobile warning link button default text color"
             },
-            "hover": {
-              "value": "{color.text.warning.title.2}",
-              "type": "color",
-              "description": "Mobile warning link button hover text color"
-            },
             "active": {
               "value": "{color.text.warning.title.1}",
               "type": "color",
@@ -2185,11 +1795,6 @@
               "value": "{color.icon.warning.default}",
               "type": "color",
               "description": "Mobile warning link button default icon color"
-            },
-            "hover": {
-              "value": "{color.icon.warning.default}",
-              "type": "color",
-              "description": "Mobile warning link button hover icon color"
             },
             "active": {
               "value": "{color.icon.warning.moderate}",
@@ -2217,11 +1822,6 @@
               "type": "color",
               "description": "Mobile success primary button default background"
             },
-            "hover": {
-              "value": "{color.background.success.intense.0}",
-              "type": "color",
-              "description": "Mobile success primary button hover background"
-            },
             "active": {
               "value": "{color.background.success.intense.1}",
               "type": "color",
@@ -2243,11 +1843,6 @@
               "value": "{color.border.success.default}",
               "type": "color",
               "description": "Mobile success primary button default border"
-            },
-            "hover": {
-              "value": "{color.border.success.intense.0}",
-              "type": "color",
-              "description": "Mobile success primary button hover border"
             },
             "active": {
               "value": "{color.border.success.intense.2}",
@@ -2271,11 +1866,6 @@
               "type": "color",
               "description": "Mobile success primary button default text"
             },
-            "hover": {
-              "value": "{color.text.neutral.base}",
-              "type": "color",
-              "description": "Mobile success primary button hover text"
-            },
             "active": {
               "value": "{color.text.neutral.base}",
               "type": "color",
@@ -2297,11 +1887,6 @@
               "value": "{color.icon.neutral.base}",
               "type": "color",
               "description": "Mobile success primary button default icon"
-            },
-            "hover": {
-              "value": "{color.icon.neutral.base}",
-              "type": "color",
-              "description": "Mobile success primary button hover icon"
             },
             "active": {
               "value": "{color.icon.neutral.base}",
@@ -2327,11 +1912,6 @@
               "type": "color",
               "description": "Mobile success secondary button default background"
             },
-            "hover": {
-              "value": "{color.background.success.subtle.0}",
-              "type": "color",
-              "description": "Mobile success secondary button hover background"
-            },
             "active": {
               "value": "{color.background.success.subtle.1}",
               "type": "color",
@@ -2353,11 +1933,6 @@
               "value": "{color.border.success.moderate.0}",
               "type": "color",
               "description": "Mobile success secondary button default border"
-            },
-            "hover": {
-              "value": "{color.border.success.moderate.0}",
-              "type": "color",
-              "description": "Mobile success secondary button hover border"
             },
             "active": {
               "value": "{color.border.success.moderate.0}",
@@ -2381,11 +1956,6 @@
               "type": "color",
               "description": "Mobile success secondary button default text"
             },
-            "hover": {
-              "value": "{color.text.success.title.2}",
-              "type": "color",
-              "description": "Mobile success secondary button hover text"
-            },
             "active": {
               "value": "{color.text.success.title.1}",
               "type": "color",
@@ -2407,11 +1977,6 @@
               "value": "{color.icon.success.default}",
               "type": "color",
               "description": "Mobile success secondary button default icon"
-            },
-            "hover": {
-              "value": "{color.icon.success.default}",
-              "type": "color",
-              "description": "Mobile success secondary button hover icon"
             },
             "active": {
               "value": "{color.icon.success.default}",
@@ -2437,11 +2002,6 @@
               "type": "color",
               "description": "Mobile success tertiary button default background"
             },
-            "hover": {
-              "value": "{color.background.success.subtle.1}",
-              "type": "color",
-              "description": "Mobile success tertiary button hover background"
-            },
             "active": {
               "value": "{color.background.success.subtle.2}",
               "type": "color",
@@ -2463,11 +2023,6 @@
               "value": "{color.border.success.subtle.0}",
               "type": "color",
               "description": "Mobile success tertiary button default border"
-            },
-            "hover": {
-              "value": "{color.border.success.subtle.1}",
-              "type": "color",
-              "description": "Mobile success tertiary button hover border"
             },
             "active": {
               "value": "{color.border.success.subtle.0}",
@@ -2491,11 +2046,6 @@
               "type": "color",
               "description": "Mobile success tertiary button default text"
             },
-            "hover": {
-              "value": "{color.text.success.title.2}",
-              "type": "color",
-              "description": "Mobile success tertiary button hover text"
-            },
             "active": {
               "value": "{color.text.success.title.1}",
               "type": "color",
@@ -2517,11 +2067,6 @@
               "value": "{color.icon.success.default}",
               "type": "color",
               "description": "Mobile success tertiary button default icon"
-            },
-            "hover": {
-              "value": "{color.icon.success.default}",
-              "type": "color",
-              "description": "Mobile success tertiary button hover icon"
             },
             "active": {
               "value": "{color.icon.success.default}",
@@ -2547,11 +2092,6 @@
               "type": "color",
               "description": "Mobile success ghost button default background"
             },
-            "hover": {
-              "value": "{color.background.success.subtle.0}",
-              "type": "color",
-              "description": "Mobile success ghost button hover background"
-            },
             "active": {
               "value": "{color.background.success.subtle.1}",
               "type": "color",
@@ -2573,11 +2113,6 @@
               "value": "{color.border.transparent}",
               "type": "color",
               "description": "Mobile success ghost button default border"
-            },
-            "hover": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile success ghost button hover border"
             },
             "active": {
               "value": "{color.border.transparent}",
@@ -2601,11 +2136,6 @@
               "type": "color",
               "description": "Mobile success ghost button default text"
             },
-            "hover": {
-              "value": "{color.text.success.title.2}",
-              "type": "color",
-              "description": "Mobile success ghost button hover text"
-            },
             "active": {
               "value": "{color.text.success.title.1}",
               "type": "color",
@@ -2627,11 +2157,6 @@
               "value": "{color.icon.success.default}",
               "type": "color",
               "description": "Mobile success ghost button default icon"
-            },
-            "hover": {
-              "value": "{color.icon.success.default}",
-              "type": "color",
-              "description": "Mobile success ghost button hover icon"
             },
             "active": {
               "value": "{color.icon.success.default}",
@@ -2657,11 +2182,6 @@
               "type": "color",
               "description": "Mobile success link button default background"
             },
-            "hover": {
-              "value": "{color.background.transparent}",
-              "type": "color",
-              "description": "Mobile success link button hover background"
-            },
             "active": {
               "value": "{color.background.transparent}",
               "type": "color",
@@ -2683,11 +2203,6 @@
               "value": "{color.border.transparent}",
               "type": "color",
               "description": "Mobile success link button default border"
-            },
-            "hover": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile success link button hover border"
             },
             "active": {
               "value": "{color.border.transparent}",
@@ -2711,11 +2226,6 @@
               "type": "color",
               "description": "Mobile success link button default text"
             },
-            "hover": {
-              "value": "{color.text.success.title.2}",
-              "type": "color",
-              "description": "Mobile success link button hover text"
-            },
             "active": {
               "value": "{color.text.success.title.1}",
               "type": "color",
@@ -2737,11 +2247,6 @@
               "value": "{color.icon.success.default}",
               "type": "color",
               "description": "Mobile success link button default icon"
-            },
-            "hover": {
-              "value": "{color.icon.success.default}",
-              "type": "color",
-              "description": "Mobile success link button hover icon"
             },
             "active": {
               "value": "{color.icon.success.default}",

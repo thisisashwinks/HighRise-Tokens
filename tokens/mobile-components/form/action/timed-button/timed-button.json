@@ -1,0 +1,292 @@
+{
+  "$comment": "Design token file for the Timed Button component",
+  "$description": "Full-width button with a timed progress fill that grows from the left edge to represent elapsed time. Three types: Primary (filled blue), Secondary (outlined), Tertiary (ghost). Four states: Enabled, Pressed, Disabled, Loading. The progress fill overlay is the defining unique element — it sits absolutely positioned behind the label and is clipped by the button's overflow:hidden. Icon color always matches label-color for the same state. Width is 361px — standard mobile viewport minus horizontal padding.",
+  "$component": {
+    "name": "Timed Button",
+    "figmaNodeId": "645:7452",
+    "figmaFile": "HighRise Mobile Components",
+    "subComponents": ["Loader (same file — own tokens)"],
+    "variants": {
+      "type": ["Primary", "Secondary", "Tertiary"],
+      "state": ["Enabled", "Pressed", "Disabled", "Loading"]
+    }
+  },
+  "timed-button": {
+    "width": {
+      "value": "361px",
+      "type": "dimension",
+      "description": "Full component width — standard mobile viewport (393px) minus 16px horizontal padding on each side"
+    },
+    "height": {
+      "value": "56px",
+      "type": "dimension",
+      "description": "Fixed button height across all types and states"
+    },
+    "border-radius": {
+      "value": "{border.radius.sm}",
+      "type": "borderRadius",
+      "description": "8px corner radius applied to all button types"
+    },
+    "border-width": {
+      "value": "1px",
+      "type": "dimension",
+      "description": "Border width applied to all button types"
+    },
+    "padding-horizontal": {
+      "value": "28px",
+      "type": "dimension",
+      "description": "Left and right inset padding inside the button"
+    },
+    "padding-vertical": {
+      "value": "16px",
+      "type": "dimension",
+      "description": "Top and bottom inset padding inside the button"
+    },
+    "gap": {
+      "value": "12px",
+      "type": "dimension",
+      "description": "Horizontal gap between leading icon, label text, and trailing icon"
+    },
+    "label": {
+      "typography": {
+        "value": "{font.heading.semibold.3xl}",
+        "type": "typography",
+        "description": "18px SemiBold, 28px line-height — larger than a standard button to reflect the prominent timed CTA treatment"
+      }
+    },
+    "icon": {
+      "size": {
+        "value": "24px",
+        "type": "dimension",
+        "description": "Width and height of the leading and trailing icon placeholders"
+      }
+    },
+    "progress-fill": {
+      "height": {
+        "value": "56px",
+        "type": "dimension",
+        "description": "Height of the absolute-positioned fill overlay — matches the button height to span the full vertical area"
+      },
+      "offset": {
+        "value": "-1px",
+        "type": "dimension",
+        "description": "Left and top offset to bleed the fill behind the border, preventing a 1px gap between fill and button edge"
+      }
+    },
+    "primary": {
+      "shadow": {
+        "value": "{shadow.xs}",
+        "type": "shadow",
+        "description": "0px 1px 2px 0px rgba(16,24,40,0.05) — applied to all Primary states"
+      },
+      "enabled": {
+        "background": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "#155eef — solid blue fill for the default active state"
+        },
+        "border-color": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Matches background — seamless filled appearance"
+        },
+        "label-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White label and icon on blue background"
+        },
+        "progress-fill-background": {
+          "value": "{color.primary.800}",
+          "type": "color",
+          "description": "#0040c1 — darker blue overlay that grows from the left to show elapsed time on a Primary button"
+        }
+      },
+      "pressed": {
+        "background": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Same as Enabled — no background change on press for Primary"
+        },
+        "border-color": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Matches background"
+        },
+        "label-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White label and icon"
+        }
+      },
+      "disabled": {
+        "background": {
+          "value": "{color.primary.200}",
+          "type": "color",
+          "description": "#b2ccff — washed-out blue indicating the button is not yet interactive"
+        },
+        "border-color": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Full-strength blue border contrasts with the muted background to signal the locked state"
+        },
+        "label-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White label and icon — readable against the muted blue background"
+        }
+      },
+      "loading": {
+        "background": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Same as Enabled — spinner replaces content while background stays the same"
+        },
+        "border-color": {
+          "value": "{color.primary.600}",
+          "type": "color",
+          "description": "Matches background"
+        }
+      }
+    },
+    "secondary": {
+      "shadow": {
+        "value": "{shadow.xs}",
+        "type": "shadow",
+        "description": "0px 1px 2px 0px rgba(16,24,40,0.05) — applied to all Secondary states"
+      },
+      "enabled": {
+        "background": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White background for the outlined secondary treatment"
+        },
+        "border-color": {
+          "value": "{color.primary.300}",
+          "type": "color",
+          "description": "#84adff — light blue border defining the secondary button boundary"
+        },
+        "label-color": {
+          "value": "{color.primary.700}",
+          "type": "color",
+          "description": "#004eeb — dark blue label and icon on white background"
+        },
+        "progress-fill-background": {
+          "value": "{color.primary.200}",
+          "type": "color",
+          "description": "#b2ccff — soft blue fill overlay that grows from the left to show elapsed time on a Secondary button"
+        }
+      },
+      "pressed": {
+        "background": {
+          "value": "{color.primary.50}",
+          "type": "color",
+          "description": "#eff4ff — tinted background on press"
+        },
+        "border-color": {
+          "value": "{color.primary.300}",
+          "type": "color",
+          "description": "Same border as Enabled"
+        },
+        "label-color": {
+          "value": "{color.primary.700}",
+          "type": "color",
+          "description": "Same dark blue label as Enabled"
+        }
+      },
+      "disabled": {
+        "background": {
+          "value": "{color.primary.50}",
+          "type": "color",
+          "description": "#eff4ff — same tinted background as Pressed, indicating the button is locked"
+        },
+        "border-color": {
+          "value": "{color.primary.300}",
+          "type": "color",
+          "description": "Same border throughout Secondary states"
+        },
+        "label-color": {
+          "value": "{color.primary.200}",
+          "type": "color",
+          "description": "#b2ccff — muted blue label and icon to reinforce the disabled state"
+        }
+      },
+      "loading": {
+        "background": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "Returns to white background while spinner is active"
+        },
+        "border-color": {
+          "value": "{color.primary.300}",
+          "type": "color",
+          "description": "Same border throughout Secondary states"
+        }
+      }
+    },
+    "tertiary": {
+      "enabled": {
+        "background": {
+          "value": "{color.primary.50}",
+          "type": "color",
+          "description": "#eff4ff — very light blue ghost background"
+        },
+        "border-color": {
+          "value": "{color.primary.50}",
+          "type": "color",
+          "description": "Matches background — borderless appearance"
+        },
+        "label-color": {
+          "value": "{color.primary.700}",
+          "type": "color",
+          "description": "#004eeb — dark blue label and icon"
+        }
+      },
+      "pressed": {
+        "background": {
+          "value": "{color.primary.100}",
+          "type": "color",
+          "description": "#d1e0ff — slightly deeper blue on press"
+        },
+        "border-color": {
+          "value": "{color.primary.50}",
+          "type": "color",
+          "description": "Lighter than background — retains the borderless feel while adding depth"
+        },
+        "label-color": {
+          "value": "{color.primary.700}",
+          "type": "color",
+          "description": "Same dark blue label as Enabled"
+        }
+      },
+      "disabled": {
+        "background": {
+          "value": "{color.primary.100}",
+          "type": "color",
+          "description": "Same as Pressed background — locked state reuses the deeper tint"
+        },
+        "border-color": {
+          "value": "{color.primary.50}",
+          "type": "color",
+          "description": "Same lighter border as Pressed"
+        },
+        "label-color": {
+          "value": "{color.primary.200}",
+          "type": "color",
+          "description": "#b2ccff — muted blue label and icon for the disabled state"
+        }
+      },
+      "loading": {
+        "background": {
+          "value": "{color.primary.50}",
+          "type": "color",
+          "description": "Returns to the lightest ghost tint while spinner is active"
+        },
+        "border-color": {
+          "value": "{color.primary.50}",
+          "type": "color",
+          "description": "Matches background — borderless appearance during loading"
+        }
+      }
+    }
+  }
+}

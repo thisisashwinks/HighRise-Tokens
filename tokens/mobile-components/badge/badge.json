@@ -1,0 +1,149 @@
+{
+  "$comment": "Design token file for the Badge component",
+  "$description": "Small status indicator overlaid on icons, avatars, or nav items. Three types: Hint (solid dot), Label (numeric count), and icon (zap icon). Two sizes: md and sm. Four themes: Primary (blue), Success (green), Warning (yellow), Error (red). No nested components from the same file — fully self-contained.",
+  "$component": {
+    "name": "Badge",
+    "figmaNodeId": "587:24997",
+    "figmaFile": "HighRise Mobile Components",
+    "variants": {
+      "type": ["Hint", "Label", "icon"],
+      "size": ["md", "sm"],
+      "theme": ["Primary", "Success", "Warning", "Error"]
+    }
+  },
+  "badge": {
+    "border-radius": {
+      "value": "20px",
+      "type": "borderRadius",
+      "description": "Fully rounded pill/circle shape applied to all badge types"
+    },
+    "theme": {
+      "primary": {
+        "background": {
+          "value": "{color.primary.500}",
+          "type": "color",
+          "description": "#2970ff — blue background for primary-theme Label and icon badges"
+        },
+        "foreground": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White icon and label text on blue background"
+        }
+      },
+      "success": {
+        "background": {
+          "value": "{color.secondary.success.700}",
+          "type": "color",
+          "description": "#027a48 — dark green background for success-theme Label and icon badges"
+        },
+        "foreground": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White icon and label text on dark green background"
+        }
+      },
+      "warning": {
+        "background": {
+          "value": "{color.secondary.warning.300}",
+          "type": "color",
+          "description": "#fec84b — yellow background for warning-theme Label and icon badges"
+        },
+        "foreground": {
+          "value": "{color.neutral.gray.900}",
+          "type": "color",
+          "description": "#101828 — dark text and icon on yellow background for sufficient contrast"
+        }
+      },
+      "error": {
+        "background": {
+          "value": "{color.secondary.error.600}",
+          "type": "color",
+          "description": "#d92d20 — red background for error-theme Label and icon badges"
+        },
+        "foreground": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White icon and label text on red background"
+        }
+      }
+    },
+    "hint": {
+      "size": {
+        "md": {
+          "value": "12px",
+          "type": "dimension",
+          "description": "Width and height of the medium dot indicator"
+        },
+        "sm": {
+          "value": "8px",
+          "type": "dimension",
+          "description": "Width and height of the small dot indicator"
+        }
+      }
+    },
+    "label": {
+      "typography": {
+        "value": "{font.body.medium.sm}",
+        "type": "typography",
+        "description": "12px Medium, 17px line-height — numeric count inside the badge"
+      },
+      "size": {
+        "md": {
+          "height": {
+            "value": "20px",
+            "type": "dimension",
+            "description": "Fixed height of the medium label badge"
+          },
+          "padding-horizontal": {
+            "value": "8px",
+            "type": "dimension",
+            "description": "Left and right padding inside the medium label badge"
+          },
+          "padding-vertical": {
+            "value": "2px",
+            "type": "dimension",
+            "description": "Top and bottom padding inside the medium label badge"
+          }
+        },
+        "sm": {
+          "height": {
+            "value": "16px",
+            "type": "dimension",
+            "description": "Fixed height of the small label badge"
+          },
+          "padding-horizontal": {
+            "value": "4px",
+            "type": "dimension",
+            "description": "Left and right padding inside the small label badge"
+          }
+        }
+      }
+    },
+    "icon": {
+      "padding": {
+        "md": {
+          "value": "4px",
+          "type": "dimension",
+          "description": "Inset padding around the icon inside the medium icon badge"
+        },
+        "sm": {
+          "value": "3px",
+          "type": "dimension",
+          "description": "Inset padding around the icon inside the small icon badge"
+        }
+      },
+      "size": {
+        "md": {
+          "value": "12px",
+          "type": "dimension",
+          "description": "Width and height of the icon inside the medium icon badge"
+        },
+        "sm": {
+          "value": "10px",
+          "type": "dimension",
+          "description": "Width and height of the icon inside the small icon badge"
+        }
+      }
+    }
+  }
+}
