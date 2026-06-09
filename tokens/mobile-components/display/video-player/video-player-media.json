@@ -1,0 +1,102 @@
+{
+  "$comment": "Mobile Video Player Media Component Tokens",
+  "$description": "Component tokens for the Video Player Media component — the video frame area with state-based overlays. Supports 4 property1 states: default (video thumbnail only), buffering (video + centered spinner control), replay (video + centered replay control), and Error (video + 50% black scrim + centered warning icon + error description pill). The Control component (node 928:2150) rendered inside buffering, replay, and Error states is a nested same-file component — its internal tokens are excluded here. Figma Reference: Node ID 928-1814",
+  "$component": {
+    "name": "Video Player Media",
+    "description": "The video frame component used inside the Video Player. Renders a 361×233px cropped video thumbnail with overflow-clip. Conditionally layers state overlays: a buffering spinner or replay button centered in the frame; or an error state with a full-frame dark scrim, a centered warning icon, and a bottom-center error description pill.",
+    "structure": "Fixed 361×233px container with overflow-clip. Background is the video poster image (object-cover). State overlays are absolutely positioned within this frame.",
+    "variants": {
+      "property1": {
+        "default": "Video poster only — no overlay controls",
+        "buffering": "Video poster + centered buffering spinner (Control, same file)",
+        "replay": "Video poster + centered replay button (Control, same file)",
+        "Error": "Video poster + full-frame 50% black scrim + centered warning icon (Control, same file) + bottom-center error description pill (Control, same file)"
+      }
+    },
+    "nested-components": {
+      "Control": "Node ID 928:2150 — Video Player Controls component from the same file. Rendered in buffering (Buffering icon), replay (replay icon), and Error (warning icon + time/error pill) states. Internal tokens are defined in video-player-controls.json and excluded here."
+    },
+    "usage": {
+      "contexts": "Used as the media area inside the Video Player composite component",
+      "features": "4 visual states (default, buffering, replay, error), full-frame error scrim, centered state control overlays"
+    }
+  },
+  "media": {
+    "container": {
+      "$comment": "Outer video frame — fixed size, clips video poster to fill",
+      "width": {
+        "value": "361px",
+        "type": "dimension",
+        "description": "Video player media container width - 361px"
+      },
+      "height": {
+        "value": "233px",
+        "type": "dimension",
+        "description": "Video player media container height - 233px"
+      }
+    },
+    "error": {
+      "$comment": "Error state overlays — scrim and repositioned nested controls (Control component, excluded)",
+      "overlay": {
+        "color": {
+          "background": {
+            "value": "rgba(0,0,0,0.5)",
+            "type": "color",
+            "description": "Video player media error state full-frame scrim background - 50% opacity black - rgba(0,0,0,0.5). Covers the full 361×233px frame to dim the video poster."
+          }
+        }
+      },
+      "label": {
+        "$comment": "Error description pill — centered horizontally at top:123px. This is an inline label element, not a Control instance.",
+        "height": {
+          "value": "{size.height.3xs}",
+          "type": "dimension",
+          "description": "Video player media error label pill height - 24px"
+        },
+        "border": {
+          "radius": {
+            "value": "11px",
+            "type": "dimension",
+            "description": "Video player media error label pill border radius - 11px (near-full round for 24px height)"
+          }
+        },
+        "padding": {
+          "horizontal": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Video player media error label pill horizontal padding - 8px"
+          }
+        },
+        "gap": {
+          "value": "{gap.0[5]}",
+          "type": "dimension",
+          "description": "Video player media error label pill gap between elements - 2px"
+        },
+        "color": {
+          "background": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Video player media error label pill background (Android) - neutral/gray.100 - #f2f4f7"
+          },
+          "text": {
+            "value": "{color.text.neutral.body.1}",
+            "type": "color",
+            "description": "Video player media error label pill text color (Android) - neutral/gray.700 - #344054"
+          }
+        },
+        "typography": {
+          "value": "{font.body.medium.sm}",
+          "type": "typography",
+          "description": "Video player media error label typography - Inter Medium 12px, 17px line-height"
+        },
+        "position": {
+          "top": {
+            "value": "123px",
+            "type": "dimension",
+            "description": "Video player media error label pill top offset from container - 123px (within 233px frame, approximately 53% down)"
+          }
+        }
+      }
+    }
+  }
+}

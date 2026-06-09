@@ -1,0 +1,147 @@
+{
+  "$comment": "Mobile Video Player Component Tokens",
+  "$description": "Component tokens for the Video Player composite component — the full player combining Media (video frame) and Controls (icon buttons, progress bar, time pill). Supports 2 platforms (Android, iOS) and 7 states: Default (centered play button), Playing (progress overlay + corner controls + time), Paused (same layout as Playing but with backward/forward controls replacing caption), buffering/Buffering (buffering spinner overlay), Error (error scrim), and Replay (replay button overlay). Media (928:1814) and Control (928:2150) are nested same-file components — their internal tokens are excluded here. This file only defines VideoPlayer-specific layout values: container, progress overlay positioning/sizing (which differs from the standalone Controls progress variant), corner control insets, and state-specific platform overrides. Figma Reference: Node ID 928-2452",
+  "$component": {
+    "name": "Video Player",
+    "description": "Full mobile video player composing Video Player Media (video frame) and Video Player Controls (icon buttons, progress, time). Fixed 361×233px container. Controls are absolutely positioned at specific insets within the frame depending on state and platform.",
+    "structure": "Fixed 361×233px container, overflow-clip. Video Player Media fills the frame. Control elements are absolutely positioned as overlays: a centered play/pause button, a bottom progress bar overlay (playing/paused), corner icon buttons (top-right and bottom-right), and a bottom-left time display.",
+    "variants": {
+      "platform": {
+        "Android": "Opaque control surfaces. Progress overlay: white bg with drop-shadow. Corner icon buttons: gray.100 opaque.",
+        "iOS": "Translucent control surfaces over dark video. Progress overlay: 10% white. Corner icon buttons: 20% gray.100."
+      },
+      "state": {
+        "Default": "Centered play button only (no progress bar or corner controls)",
+        "Playing": "Progress overlay (bottom) + center pause + corner controls (top-right: caption/setting, bottom-right: fullscreen) + time pill (bottom-left)",
+        "Paused": "Progress overlay (bottom) + center play + corner controls (left/center/right: backward/play/forward) + fullscreen (bottom-right) + setting (top-right) + caption (top-right) + time pill (bottom-left)",
+        "buffering": "Buffering spinner centered (Media handles the overlay)",
+        "Buffering": "Same as buffering",
+        "Error": "Error scrim + warning icon + error description pill (Media handles the overlay)",
+        "Replay": "Replay button centered (Media handles the overlay)"
+      }
+    },
+    "nested-components": {
+      "Media": "Node ID 928:1814 — Video Player Media from the same file. Fills the frame; handles buffering/replay/error overlays. Internal tokens in video-player-media.json, excluded here.",
+      "Control": "Node ID 928:2150 — Video Player Controls from the same file. All icon buttons, progress, and time pill. Internal tokens in video-player-controls.json, excluded here."
+    },
+    "usage": {
+      "contexts": "Inline video playback in mobile feeds, courses, media library, story previews",
+      "features": "7 playback states, Android/iOS platform splits, bottom progress overlay, corner control layout, center play/pause overlay"
+    }
+  },
+  "video-player": {
+    "container": {
+      "$comment": "Outer player container — same dimensions as Media, clips all overlay controls",
+      "width": {
+        "value": "361px",
+        "type": "dimension",
+        "description": "Video player container width - 361px"
+      },
+      "height": {
+        "value": "233px",
+        "type": "dimension",
+        "description": "Video player container height - 233px"
+      }
+    },
+    "progress-overlay": {
+      "$comment": "Bottom progress bar overlay shown in Playing and Paused states. Wraps the Controls 'progress' variant. Width and iOS opacity differ from the standalone Controls progress variant (320px / 20%) — these are VideoPlayer-specific overrides.",
+      "width": {
+        "value": "345px",
+        "type": "dimension",
+        "description": "Video player progress overlay width in Playing/Paused states - 345px (= container 361px − 8px left inset − 8px right inset). This overrides the standalone Controls progress width of 320px."
+      },
+      "padding": {
+        "horizontal": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Video player progress overlay horizontal padding - 8px (matches Controls progress variant)"
+        },
+        "vertical": {
+          "value": "{padding.1}",
+          "type": "dimension",
+          "description": "Video player progress overlay vertical padding - 4px (matches Controls progress variant)"
+        }
+      },
+      "border": {
+        "radius": {
+          "value": "16px",
+          "type": "dimension",
+          "description": "Video player progress overlay border radius - 16px (matches Controls progress variant)"
+        }
+      },
+      "position": {
+        "bottom": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Video player progress overlay bottom inset from container edge - 8px"
+        },
+        "left": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Video player progress overlay left inset from container edge - 8px"
+        }
+      },
+      "color": {
+        "background": {
+          "android": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Video player progress overlay background for Android - white - #ffffff (opaque)"
+          },
+          "ios": {
+            "value": "rgba(255,255,255,0.1)",
+            "type": "color",
+            "description": "Video player progress overlay background for iOS - 10% white - rgba(255,255,255,0.1). More subtle than the standalone Controls progress (20%) as it sits over the live video frame."
+          }
+        }
+      },
+      "shadow": {
+        "android": {
+          "value": "0px 4px 2px rgba(0,0,0,0.25)",
+          "type": "boxShadow",
+          "description": "Video player progress overlay shadow for Android - 0px 4px 2px rgba(0,0,0,0.25). No matching semantic token. iOS has no shadow."
+        }
+      }
+    },
+    "controls": {
+      "$comment": "Positional layout tokens for the absolutely-positioned Control overlays within the Video Player frame. Control internal styling is defined in video-player-controls.json.",
+      "inset": {
+        "edge": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Video player controls edge inset from container top and right edges - 8px. Used for all corner-anchored control buttons (top-right setting, caption, etc.)."
+        }
+      },
+      "center": {
+        "$comment": "Center play/pause button — positioned at 50% / 50% of the container in Default, Playing, Paused states",
+        "position": {
+          "horizontal": {
+            "value": "50%",
+            "type": "dimension",
+            "description": "Video player center control horizontal position - 50% of container width (translate -50%)"
+          },
+          "vertical": {
+            "value": "50%",
+            "type": "dimension",
+            "description": "Video player center control vertical position - 50% of container height (translate -50%)"
+          }
+        }
+      },
+      "time": {
+        "$comment": "Time display pill position in Playing/Paused states — bottom-left anchor",
+        "position": {
+          "left": {
+            "value": "{padding.2}",
+            "type": "dimension",
+            "description": "Video player time pill left inset - 8px (bottom-left corner)"
+          },
+          "top": {
+            "value": "169px",
+            "type": "dimension",
+            "description": "Video player time pill top offset - 169px (= container 233px − 24px pill height − 8px bottom inset − ~32px gap from progress bar bottom)"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "$comment": "Design token file for the System Alert component",
+  "$description": "Full-width banner alert anchored to the top or bottom of the mobile viewport (393px wide). Used for system-level status messages such as connectivity, success confirmations, warnings, and errors. Two priority levels: High (solid filled background, white/near-white text — maximum urgency) and Medium (light tinted background, semantic-colour text — passive status). Two variants: Default (trailing x-close dismiss icon) and Action (trailing chevron-right navigate icon). Subtext is optional. Five semantic states: Primary, Warning, Success, Error, Neutral. Note: Error Medium uses the warning/700 colour token for title and subtext text — this is faithfully captured from the Figma source.",
+  "$component": {
+    "name": "System Alert",
+    "figmaNodeId": "607:53228",
+    "states": ["Primary", "Warning", "Success", "Error", "Neutral"],
+    "priorities": ["High", "Medium"],
+    "variants": ["Default", "Action"],
+    "booleans": ["dismiss", "subtext"]
+  },
+  "system-alert": {
+    "width": {
+      "value": "393px",
+      "type": "dimension",
+      "description": "Full mobile viewport width"
+    },
+    "padding": {
+      "value": "{size.4}",
+      "type": "dimension",
+      "description": "16px inset on all sides"
+    },
+    "gap": {
+      "value": "{size.2}",
+      "type": "dimension",
+      "description": "8px horizontal gap between the leading icon, the content column, and the trailing icon"
+    },
+    "content": {
+      "gap": {
+        "value": "{size.1}",
+        "type": "dimension",
+        "description": "4px vertical gap between the title row and the subtext row"
+      },
+      "title": {
+        "typography": {
+          "value": "{font.body.medium.md}",
+          "type": "typography",
+          "description": "13px Medium, 18px line-height — primary message text"
+        }
+      },
+      "subtext": {
+        "typography": {
+          "value": "{font.body.regular.sm}",
+          "type": "typography",
+          "description": "12px Regular, 17px line-height — optional supporting detail text, truncated to available width"
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "value": "20px",
+        "type": "dimension",
+        "description": "Width and height for both the leading semantic icon and the trailing action/dismiss icon"
+      },
+      "trailing": {
+        "default": {
+          "value": "x-close",
+          "type": "string",
+          "description": "GHL icon name for the dismiss button in the Default variant"
+        },
+        "action": {
+          "value": "chevron-right",
+          "type": "string",
+          "description": "GHL icon name for the navigate/action button in the Action variant"
+        }
+      }
+    },
+    "primary": {
+      "high": {
+        "background": {
+          "value": "{color.primary.blue.700}",
+          "type": "color",
+          "description": "#004eeb — solid primary blue background at High priority"
+        },
+        "title-color": {
+          "value": "{color.neutral.gray.25}",
+          "type": "color",
+          "description": "#fcfcfd — near-white title text on the blue background"
+        },
+        "subtext-color": {
+          "value": "{color.neutral.gray.25}",
+          "type": "color",
+          "description": "#fcfcfd — near-white subtext on the blue background"
+        },
+        "icon-color": {
+          "value": "{color.neutral.gray.25}",
+          "type": "color",
+          "description": "#fcfcfd — near-white icons on the blue background"
+        }
+      },
+      "medium": {
+        "background": {
+          "value": "{color.primary.blue.25}",
+          "type": "color",
+          "description": "#f5f8ff — very light blue tint at Medium priority"
+        },
+        "title-color": {
+          "value": "{color.primary.blue.700}",
+          "type": "color",
+          "description": "#004eeb — primary blue title text on the light tinted background"
+        },
+        "subtext-color": {
+          "value": "{color.primary.blue.700}",
+          "type": "color",
+          "description": "#004eeb — primary blue subtext matching the title"
+        },
+        "icon-color": {
+          "value": "{color.primary.blue.700}",
+          "type": "color",
+          "description": "#004eeb — primary blue icons matching the text"
+        }
+      }
+    },
+    "warning": {
+      "high": {
+        "background": {
+          "value": "{color.secondary.warning.600}",
+          "type": "color",
+          "description": "#dc6803 — solid amber/orange background at High priority"
+        },
+        "title-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White title text on the amber background"
+        },
+        "subtext-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White subtext on the amber background"
+        },
+        "icon-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White icons on the amber background"
+        }
+      },
+      "medium": {
+        "background": {
+          "value": "{color.secondary.warning.25}",
+          "type": "color",
+          "description": "#fffcf5 — very light warm cream tint at Medium priority"
+        },
+        "title-color": {
+          "value": "{color.secondary.warning.700}",
+          "type": "color",
+          "description": "#b54708 — dark amber title text on the cream background"
+        },
+        "subtext-color": {
+          "value": "{color.secondary.warning.700}",
+          "type": "color",
+          "description": "#b54708 — dark amber subtext matching the title"
+        },
+        "icon-color": {
+          "value": "{color.secondary.warning.700}",
+          "type": "color",
+          "description": "#b54708 — dark amber icons matching the text"
+        }
+      }
+    },
+    "success": {
+      "high": {
+        "background": {
+          "value": "{color.secondary.success.600}",
+          "type": "color",
+          "description": "#039855 — solid green background at High priority"
+        },
+        "title-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White title text on the green background"
+        },
+        "subtext-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White subtext on the green background"
+        },
+        "icon-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White icons on the green background"
+        }
+      },
+      "medium": {
+        "background": {
+          "value": "{color.secondary.success.50}",
+          "type": "color",
+          "description": "#ecfdf3 — very light green tint at Medium priority"
+        },
+        "title-color": {
+          "value": "{color.secondary.success.700}",
+          "type": "color",
+          "description": "#027a48 — dark green title text on the light tinted background"
+        },
+        "subtext-color": {
+          "value": "{color.secondary.success.700}",
+          "type": "color",
+          "description": "#027a48 — dark green subtext matching the title"
+        },
+        "icon-color": {
+          "value": "{color.secondary.success.700}",
+          "type": "color",
+          "description": "#027a48 — dark green icons matching the text"
+        }
+      }
+    },
+    "error": {
+      "high": {
+        "background": {
+          "value": "{color.secondary.error.700}",
+          "type": "color",
+          "description": "#b42318 — solid deep red background at High priority"
+        },
+        "title-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White title text on the red background"
+        },
+        "subtext-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White subtext on the red background"
+        },
+        "icon-color": {
+          "value": "{color.neutral.white.base}",
+          "type": "color",
+          "description": "White icons on the red background"
+        }
+      },
+      "medium": {
+        "background": {
+          "value": "{color.secondary.error.50}",
+          "type": "color",
+          "description": "#fef3f2 — very light pink tint at Medium priority"
+        },
+        "title-color": {
+          "value": "{color.secondary.warning.700}",
+          "type": "color",
+          "description": "#b54708 — Figma source uses warning/700 (amber) for Error Medium text; captured faithfully"
+        },
+        "subtext-color": {
+          "value": "{color.secondary.warning.700}",
+          "type": "color",
+          "description": "#b54708 — matches title-color per Figma source"
+        },
+        "icon-color": {
+          "value": "{color.secondary.warning.700}",
+          "type": "color",
+          "description": "#b54708 — matches text per Figma source"
+        }
+      }
+    },
+    "neutral": {
+      "high": {
+        "background": {
+          "value": "{color.neutral.gray.500}",
+          "type": "color",
+          "description": "#667085 — solid medium gray background at High priority"
+        },
+        "title-color": {
+          "value": "{color.neutral.gray.25}",
+          "type": "color",
+          "description": "#fcfcfd — near-white title text on the gray background"
+        },
+        "subtext-color": {
+          "value": "{color.neutral.gray.25}",
+          "type": "color",
+          "description": "#fcfcfd — near-white subtext on the gray background"
+        },
+        "icon-color": {
+          "value": "{color.neutral.gray.25}",
+          "type": "color",
+          "description": "#fcfcfd — near-white icons on the gray background"
+        }
+      },
+      "medium": {
+        "background": {
+          "value": "{color.neutral.gray.50}",
+          "type": "color",
+          "description": "#f9fafb — near-white light gray tint at Medium priority"
+        },
+        "title-color": {
+          "value": "{color.neutral.gray.700}",
+          "type": "color",
+          "description": "#344054 — dark gray title text on the light background"
+        },
+        "subtext-color": {
+          "value": "{color.neutral.gray.600}",
+          "type": "color",
+          "description": "#475467 — slightly lighter gray for subtext, one step below the title"
+        },
+        "icon-color": {
+          "value": "{color.neutral.gray.700}",
+          "type": "color",
+          "description": "#344054 — dark gray icons matching the title"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "$comment": "Mobile Video Player Controls Component Tokens",
+  "$description": "Component tokens for the Video Player Controls atomic component — the individual interactive controls rendered inside a video player. Supports 2 platforms (Android, iOS) and 12 property1 variants: icon-button group (caption, setting, fullscreen, forward, backward, play, pause, replay, warning, Buffering), a progress bar container (progress), and a time display pill (time). ProgressBar (node 388:1598) is a nested component from the same file — its internal tokens are excluded here. Figma Reference: Node ID 928-2150",
+  "$component": {
+    "name": "Video Player Controls",
+    "description": "Atomic control elements for a mobile video player. Renders as one of three visual forms depending on the property1 variant: (1) icon-button — a 28px circular button containing an 18px icon; (2) progress — a wide pill container wrapping a ProgressBar component; (3) time — a compact pill label showing elapsed/total time. Each form has distinct Android (opaque, on-light) and iOS (translucent, on-dark video) color treatments.",
+    "structure": "Single element. Icon-button: 28px circle with centered 18px icon. Progress: wide pill (320px) with 8px/4px padding wrapping the ProgressBar nested component. Time: 24px-tall pill (8px H-padding) with timecode text.",
+    "variants": {
+      "platform": {
+        "Android": "Opaque backgrounds — gray.100 for icon-buttons and time pill; white for progress container",
+        "iOS": "Translucent backgrounds overlaid on dark video — 20% gray.100 for icon-buttons and time pill; 20% white for progress container"
+      },
+      "property1": {
+        "caption": "Closed-caption icon button",
+        "setting": "Settings gear icon button",
+        "fullscreen": "Expand/fullscreen icon button",
+        "forward": "Skip-forward icon button",
+        "backward": "Skip-back icon button",
+        "play": "Play icon button",
+        "pause": "Pause-circle icon button",
+        "replay": "Replay/repeat icon button",
+        "warning": "Alert-triangle icon button — shown on error state",
+        "Buffering": "Loading spinner icon button — shown during buffering",
+        "progress": "Wide pill container wrapping the ProgressBar component (nested, same file)",
+        "time": "Compact pill displaying elapsed/total time e.g. 0:00/01:16"
+      }
+    },
+    "nested-components": {
+      "ProgressBar": "Node ID 388:1598 — ProgressBar component from the same file. Used inside the progress variant. Internal tokens (track bg, indicator color, border-radius, label color) are defined in the ProgressBar component and excluded here."
+    },
+    "usage": {
+      "contexts": "Rendered inside Video Player Media and Video Player composite components as overlaid interactive controls",
+      "features": "12 control types, 2 platform color treatments (opaque Android / translucent iOS), 28px touch target for all icon buttons, progress and time variants use pill containers"
+    }
+  },
+  "controls": {
+    "icon-button": {
+      "$comment": "Icon button variants — caption, setting, fullscreen, forward, backward, play, pause, replay, warning, Buffering. All share the same container and icon sizing; only bg color differs by platform.",
+      "size": {
+        "value": "{size.2xs}",
+        "type": "dimension",
+        "description": "Video player control icon-button container size (width and height) - 28px"
+      },
+      "border": {
+        "radius": {
+          "value": "16px",
+          "type": "dimension",
+          "description": "Video player control icon-button border radius - 16px (circular pill for 28px container)"
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{size.icon.sm}",
+          "type": "dimension",
+          "description": "Video player control icon size within button - 18px"
+        }
+      },
+      "color": {
+        "background": {
+          "android": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Video player control icon-button background for Android - neutral/gray.100 - #f2f4f7 (opaque, for light/dark surfaces)"
+          },
+          "ios": {
+            "value": "rgba(242,244,247,0.2)",
+            "type": "color",
+            "description": "Video player control icon-button background for iOS - 20% opacity gray.100 - rgba(242,244,247,0.2) (translucent overlay on dark video)"
+          }
+        }
+      }
+    },
+    "progress": {
+      "$comment": "Progress bar container variant — wraps the ProgressBar nested component. Platform-split background and shadow.",
+      "width": {
+        "value": "320px",
+        "type": "dimension",
+        "description": "Video player controls progress container width (standalone) - 320px. Note: overridden to 345px when used inside the full Video Player component."
+      },
+      "padding": {
+        "horizontal": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Video player controls progress container horizontal padding - 8px"
+        },
+        "vertical": {
+          "value": "{padding.1}",
+          "type": "dimension",
+          "description": "Video player controls progress container vertical padding - 4px"
+        }
+      },
+      "gap": {
+        "value": "{gap.1}",
+        "type": "dimension",
+        "description": "Video player controls progress container gap between progress bar and label - 4px"
+      },
+      "border": {
+        "radius": {
+          "value": "16px",
+          "type": "dimension",
+          "description": "Video player controls progress container border radius - 16px"
+        }
+      },
+      "color": {
+        "background": {
+          "android": {
+            "value": "{color.background.neutral.base}",
+            "type": "color",
+            "description": "Video player controls progress container background for Android - white - #ffffff (opaque)"
+          },
+          "ios": {
+            "value": "rgba(255,255,255,0.2)",
+            "type": "color",
+            "description": "Video player controls progress container background for iOS - 20% white - rgba(255,255,255,0.2) (translucent overlay on dark video)"
+          }
+        }
+      },
+      "shadow": {
+        "android": {
+          "value": "0px 4px 2px rgba(0,0,0,0.25)",
+          "type": "boxShadow",
+          "description": "Video player controls progress container shadow for Android - 0px 4px 2px rgba(0,0,0,0.25). No matching semantic token; iOS has no shadow (translucent bg blends into video)."
+        }
+      }
+    },
+    "time": {
+      "$comment": "Time display pill — shows elapsed/total timecode e.g. '0:00/01:16'. Pill shape with platform-split background and text color.",
+      "height": {
+        "value": "{size.height.3xs}",
+        "type": "dimension",
+        "description": "Video player controls time pill height - 24px"
+      },
+      "border": {
+        "radius": {
+          "value": "11px",
+          "type": "dimension",
+          "description": "Video player controls time pill border radius - 11px (near-full round for 24px height pill)"
+        }
+      },
+      "padding": {
+        "horizontal": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Video player controls time pill horizontal padding - 8px"
+        }
+      },
+      "gap": {
+        "value": "{gap.0[5]}",
+        "type": "dimension",
+        "description": "Video player controls time pill gap between internal elements - 2px"
+      },
+      "color": {
+        "background": {
+          "android": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Video player controls time pill background for Android - neutral/gray.100 - #f2f4f7 (opaque)"
+          },
+          "ios": {
+            "value": "rgba(242,244,247,0.2)",
+            "type": "color",
+            "description": "Video player controls time pill background for iOS - 20% opacity gray.100 (translucent on dark video)"
+          }
+        },
+        "text": {
+          "android": {
+            "value": "{color.text.neutral.body.1}",
+            "type": "color",
+            "description": "Video player controls time pill text color for Android - neutral/gray.700 - #344054"
+          },
+          "ios": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Video player controls time pill text color for iOS - neutral/gray.100 - #f2f4f7 (near-white text on dark video backdrop)"
+          }
+        }
+      },
+      "typography": {
+        "value": "{font.body.medium.sm}",
+        "type": "typography",
+        "description": "Video player controls time pill typography - Inter Medium 12px, 17px line-height"
+      }
+    }
+  }
+}

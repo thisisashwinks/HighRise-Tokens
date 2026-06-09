@@ -1,0 +1,153 @@
+{
+  "$comment": "Design token file for the Tile component",
+  "$description": "A 173px-wide card tile used for dashboard stats, selection controls, and navigation. Five types: Stats (metric + tag, auto height), Radio (radio button right), Checkbox (checkbox right), Navigate (chevron-right right), Toggle (toggle switch right). Control types (Radio/Checkbox/Navigate/Toggle) have a fixed 86px height. All types share the same container shell (white background, 12px radius, sm shadow, 12px padding). State drives the border: Default = 1px gray/200, Selected = 3px primary blue (the thicker border gives a strong selection ring). Radio, Checkbox, Toggle, and Tag sub-components are from the HighRise component library.",
+  "$component": {
+    "name": "Tile",
+    "figmaNodeId": "544:21294",
+    "types": ["Stats", "Radio", "Checkbox", "Navigate", "Toggle"],
+    "states": ["Default", "Selected"],
+    "booleans": ["label", "rightContainer"],
+    "subComponents": [
+      "Radio (HighRise)",
+      "Checkbox (HighRise)",
+      "Toggle (HighRise)",
+      "Tag (HighRise)"
+    ]
+  },
+  "tile": {
+    "width": {
+      "value": "173px",
+      "type": "dimension",
+      "description": "Fixed width for all tile types"
+    },
+    "background": {
+      "value": "{color.neutral.white.base}",
+      "type": "color",
+      "description": "White card background for all types and states"
+    },
+    "padding": {
+      "value": "{size.3}",
+      "type": "dimension",
+      "description": "12px inset on all sides of the tile"
+    },
+    "gap": {
+      "value": "{size.2}",
+      "type": "dimension",
+      "description": "8px vertical gap between the main content area and any secondary row within the tile"
+    },
+    "border-radius": {
+      "value": "{border.radius.md}",
+      "type": "borderRadius",
+      "description": "12px corner radius on the tile card"
+    },
+    "shadow": {
+      "value": "{shadow.sm}",
+      "type": "shadow",
+      "description": "Subtle elevation — two-layer drop shadow (0px 1px 2px rgba(16,24,40,0.05) + 0px 1px 3px rgba(16,24,40,0.10))"
+    },
+    "border": {
+      "default": {
+        "width": {
+          "value": "1px",
+          "type": "dimension",
+          "description": "Border thickness in Default state"
+        },
+        "color": {
+          "value": "{color.neutral.gray.200}",
+          "type": "color",
+          "description": "#eaecf0 — subtle gray border in unselected Default state"
+        }
+      },
+      "selected": {
+        "width": {
+          "value": "3px",
+          "type": "dimension",
+          "description": "Thicker border in Selected state — gives a strong visual selection ring"
+        },
+        "color": {
+          "value": "{color.primary.blue.700}",
+          "type": "color",
+          "description": "#004eeb — primary blue selection ring"
+        }
+      }
+    },
+    "label": {
+      "typography": {
+        "value": "{font.body.semibold.xl}",
+        "type": "typography",
+        "description": "15px Semibold, 20px line-height — tile heading/label text (new xl size in the body scale)"
+      },
+      "color": {
+        "value": "{color.neutral.gray.900}",
+        "type": "color",
+        "description": "#101828 — near-black label text"
+      },
+      "row-height": {
+        "value": "24px",
+        "type": "dimension",
+        "description": "Fixed height of the label row container"
+      },
+      "row-gap": {
+        "value": "4px",
+        "type": "dimension",
+        "description": "Gap between inline elements within the label row (e.g. label text and a badge)"
+      }
+    },
+    "description": {
+      "description": "Optional body text shown below the label in control-type tiles (Radio/Checkbox/Navigate/Toggle)",
+      "typography": {
+        "value": "{font.body.regular.md}",
+        "type": "typography",
+        "description": "13px Regular, 18px line-height — secondary description text"
+      },
+      "color": {
+        "value": "{color.neutral.gray.900}",
+        "type": "color",
+        "description": "#101828 — same color as label; weight difference (Regular vs Semibold) creates hierarchy"
+      },
+      "height": {
+        "value": "38px",
+        "type": "dimension",
+        "description": "Fixed container height for the description text block — constrains multi-line overflow"
+      }
+    },
+    "control-tile": {
+      "description": "Layout constraints applied to the four control types: Radio, Checkbox, Navigate, Toggle",
+      "height": {
+        "value": "86px",
+        "type": "dimension",
+        "description": "Fixed height for all control-type tiles (Radio/Checkbox/Navigate/Toggle); Stats type uses auto height"
+      },
+      "right-icon-size": {
+        "value": "24px",
+        "type": "dimension",
+        "description": "Width and height of the right-side icon area for Navigate, Checkbox, and Radio types"
+      },
+      "navigate-icon": {
+        "value": "chevron-right",
+        "type": "string",
+        "description": "GHL icon name for the Navigate type trailing indicator"
+      }
+    },
+    "stats": {
+      "description": "Stats-type specific tokens. Height is auto/content-driven. Top row shows a label and a 24px icon; bottom row shows a large numeric stat and a Tag.",
+      "top-row-icon-size": {
+        "value": "24px",
+        "type": "dimension",
+        "description": "Width and height of the optional icon displayed in the top-right of the stats tile"
+      },
+      "stat-value": {
+        "typography": {
+          "value": "{font.display.semibold.xs}",
+          "type": "typography",
+          "description": "24px Semibold, 32px line-height — large numeric display value (e.g. '12')"
+        },
+        "color": {
+          "value": "{color.neutral.gray.900}",
+          "type": "color",
+          "description": "#101828 — near-black stat number"
+        }
+      }
+    }
+  }
+}

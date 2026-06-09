@@ -146,14 +146,14 @@
           "description": "Mobile tag close icon default color - gray/600 - #475467"
         },
         "hover": {
-          "value": "{color.icon.neutral.title.1}",
+          "value": "{color.icon.neutral.moderate.2}",
           "type": "color",
-          "description": "Mobile tag close icon hover color - gray/900 - #101828"
+          "description": "Mobile tag close icon hover color - gray/600 - #475467"
         },
         "pressed": {
-          "value": "{color.icon.neutral.title.1}",
+          "value": "{color.icon.neutral.moderate.2}",
           "type": "color",
-          "description": "Mobile tag close icon pressed/active color - gray/900 - #101828"
+          "description": "Mobile tag close icon pressed/active color - gray/600 - #475467"
         },
         "focused": {
           "value": "{color.icon.neutral.moderate.2}",

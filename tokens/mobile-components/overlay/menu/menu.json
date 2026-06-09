@@ -1,0 +1,57 @@
+{
+  "$comment": "Design token file for the Menu component",
+  "$description": "A floating context menu that stacks 2 to 5 Menu Items vertically inside a bordered, rounded, shadowed container. The container clips its children so the first and last items respect the 8px border radius. Dividers between items are inset by 8px on each side within the menu container. The Menu Item sub-component is from the same Figma file and owns its own token file — this file captures only the container shell.",
+  "$component": {
+    "name": "Menu",
+    "figmaNodeId": "883:42994",
+    "itemCounts": ["2", "3", "4", "5"],
+    "booleans": ["leadingIcon", "trailingAction"],
+    "subComponents": [
+      "Menu Item (same file — mobile-components, node 883:42663 / 1006:25749)"
+    ]
+  },
+  "menu": {
+    "width": {
+      "value": "187px",
+      "type": "dimension",
+      "description": "Fixed width of the menu container — all Menu Item rows fill this width"
+    },
+    "background": {
+      "value": "{color.neutral.white.base}",
+      "type": "color",
+      "description": "White background behind all stacked items"
+    },
+    "border": {
+      "width": {
+        "value": "1px",
+        "type": "dimension",
+        "description": "Container border thickness"
+      },
+      "color": {
+        "value": "{color.neutral.gray.200}",
+        "type": "color",
+        "description": "#eaecf0 — subtle gray border around the menu container"
+      }
+    },
+    "border-radius": {
+      "value": "{border.radius.sm}",
+      "type": "borderRadius",
+      "description": "8px corner radius — children are clipped to this radius via overflow:hidden"
+    },
+    "shadow": {
+      "value": "{shadow.sm}",
+      "type": "shadow",
+      "description": "Two-layer drop shadow giving the floating menu elevation: 0px 1px 2px rgba(16,24,40,0.05) + 0px 1px 3px rgba(16,24,40,0.10)"
+    },
+    "overflow": {
+      "value": "hidden",
+      "type": "string",
+      "description": "Clips item content to the container border-radius — required so first/last rows don't bleed outside the rounded corners"
+    },
+    "divider-inset": {
+      "value": "8px",
+      "type": "dimension",
+      "description": "Horizontal padding applied to the divider wrapper inside the menu container — insets the 1px separator line from the left and right container edges"
+    }
+  }
+}
