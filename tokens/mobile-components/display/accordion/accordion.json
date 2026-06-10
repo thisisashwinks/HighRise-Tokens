@@ -45,14 +45,14 @@
           },
           "color": {
             "default": {
-              "value": "{color.neutral.gray.600}",
+              "value": "{color.icon.neutral.moderate.2}",
               "type": "color",
-              "description": "#475467 — icon stroke color in default/enabled state"
+              "description": "Mobile icon neutral moderate stroke color - gray/600 - #475467"
             },
             "disabled": {
-              "value": "{color.neutral.gray.300}",
+              "value": "{color.icon.neutral.subtle.2}",
               "type": "color",
-              "description": "#d0d5dd — icon stroke color in disabled state"
+              "description": "Mobile icon neutral subtle stroke color - gray/300 - #d0d5dd"
             }
           }
         },

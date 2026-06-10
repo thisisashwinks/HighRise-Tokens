@@ -1593,20 +1593,25 @@
         "type": "dimension",
         "description": "Padding (vertical): 0px"
       },
-      "5xs": {
+      "6xs": {
         "value": "{padding.0[25]",
         "type": "dimension",
         "description": "Padding (vertical): 1px"
       },
+      "5xs": {
+        "value": "{padding.0[5]}",
+        "type": "dimension",
+        "description": "Padding (vertical): 2px"
+      },
       "4xs": {
+        "value": "{padding.1}",
+        "type": "dimension",
+        "description": "Padding (vertical): 4px"
+      },
+      "3xs": {
         "value": "{padding.1[5]}",
         "type": "dimension",
         "description": "Padding (vertical): 6px"
-      },
-      "3xs": {
-        "value": "{padding.2}",
-        "type": "dimension",
-        "description": "Padding (vertical): 8px"
       },
       "2xs": {
         "value": "{padding.2}",
@@ -1614,34 +1619,34 @@
         "description": "Padding (vertical): 8px"
       },
       "xs": {
-        "value": "{padding.2}",
+        "value": "{padding.2[5]}",
         "type": "dimension",
-        "description": "Padding (vertical): 8px"
+        "description": "Padding (vertical): 10px"
       },
       "sm": {
-        "value": "{padding.2}",
-        "type": "dimension",
-        "description": "Padding (vertical): 8px"
-      },
-      "md": {
-        "value": "{padding.2[5]}",
-        "type": "dimension",
-        "description": "Padding (vertical): 10px"
-      },
-      "lg": {
-        "value": "{padding.2[5]}",
-        "type": "dimension",
-        "description": "Padding (vertical): 10px"
-      },
-      "xl": {
         "value": "{padding.3}",
         "type": "dimension",
         "description": "Padding (vertical): 12px"
       },
-      "2xl": {
+      "md": {
+        "value": "{padding.3[5]}",
+        "type": "dimension",
+        "description": "Padding (vertical): 14px"
+      },
+      "lg": {
         "value": "{padding.4}",
         "type": "dimension",
         "description": "Padding (vertical): 16px"
+      },
+      "xl": {
+        "value": "{padding.4[5]}",
+        "type": "dimension",
+        "description": "Padding (vertical): 18px"
+      },
+      "2xl": {
+        "value": "{padding.5}",
+        "type": "dimension",
+        "description": "Padding (vertical): 20px"
       }
     },
     "top": {
@@ -3649,29 +3654,24 @@
       "description": "Gap: 8px"
     },
     "sm": {
-      "value": "{gap.2}",
+      "value": "{gap.2[5]}",
       "type": "dimension",
-      "description": "Gap: 8px"
+      "description": "Gap: 10px"
     },
     "md": {
-      "value": "{gap.2}",
-      "type": "dimension",
-      "description": "Gap: 8px"
-    },
-    "lg": {
-      "value": "{gap.2}",
-      "type": "dimension",
-      "description": "Gap: 8px"
-    },
-    "xl": {
-      "value": "{gap.2}",
-      "type": "dimension",
-      "description": "Gap: 8px"
-    },
-    "2xl": {
       "value": "{gap.3}",
       "type": "dimension",
       "description": "Gap: 12px"
+    },
+    "lg": {
+      "value": "{gap.3[5]}",
+      "type": "dimension",
+      "description": "Gap: 14px"
+    },
+    "xl": {
+      "value": "{gap.4}",
+      "type": "dimension",
+      "description": "Gap: 16px"
     },
     "x": {
       "0": {
@@ -3880,30 +3880,26 @@
         "description": "Gap (horizontal): 8px"
       },
       "sm": {
-        "value": "{gap.2}",
+        "value": "{gap.2[5]}",
         "type": "dimension",
-        "description": "Gap (horizontal): 8px"
+        "description": "Gap (horizontal): 10px"
       },
       "md": {
-        "value": "{gap.2}",
-        "type": "dimension",
-        "description": "Gap (horizontal): 8px"
-      },
-      "lg": {
-        "value": "{gap.2}",
-        "type": "dimension",
-        "description": "Gap (horizontal): 8px"
-      },
-      "xl": {
-        "value": "{gap.2}",
-        "type": "dimension",
-        "description": "Gap (horizontal): 8px"
-      },
-      "2xl": {
         "value": "{gap.3}",
         "type": "dimension",
         "description": "Gap (horizontal): 12px"
       },
+      "lg": {
+        "value": "{gap.3[5]}",
+        "type": "dimension",
+        "description": "Gap (horizontal): 14px"
+      },
+      "xl": {
+        "value": "{gap.4}",
+        "type": "dimension",
+        "description": "Gap (horizontal): 16px"
+      }
+    },
       "between": {
         "3xs": {
           "value": "{gap.1}",
@@ -3921,31 +3917,25 @@
           "description": "Gap (horizontal): 8px"
         },
         "sm": {
-          "value": "{gap.2}",
+          "value": "{gap.2[5]}",
           "type": "dimension",
-          "description": "Gap (horizontal): 8px"
+          "description": "Gap (horizontal): 10px"
         },
         "md": {
-          "value": "{gap.2}",
-          "type": "dimension",
-          "description": "Gap (horizontal): 8px"
-        },
-        "lg": {
-          "value": "{gap.2}",
-          "type": "dimension",
-          "description": "Gap (horizontal): 8px"
-        },
-        "xl": {
-          "value": "{gap.2}",
-          "type": "dimension",
-          "description": "Gap (horizontal): 8px"
-        },
-        "2xl": {
           "value": "{gap.3}",
           "type": "dimension",
           "description": "Gap (horizontal): 12px"
+        },
+        "lg": {
+          "value": "{gap.3[5]}",
+          "type": "dimension",
+          "description": "Gap (horizontal): 14px"
+        },
+        "xl": {
+          "value": "{gap.4}",
+          "type": "dimension",
+          "description": "Gap (horizontal): 16px"
         }
-      }
     },
     "y": {
       "0": {
@@ -4154,29 +4144,24 @@
         "description": "Gap (vertical): 8px"
       },
       "sm": {
-        "value": "{gap.2}",
+        "value": "{gap.2[5]}",
         "type": "dimension",
-        "description": "Gap (vertical): 8px"
+        "description": "Gap (vertical): 10px"
       },
       "md": {
-        "value": "{gap.2}",
-        "type": "dimension",
-        "description": "Gap (vertical): 8px"
-      },
-      "lg": {
-        "value": "{gap.2}",
-        "type": "dimension",
-        "description": "Gap (vertical): 8px"
-      },
-      "xl": {
-        "value": "{gap.2}",
-        "type": "dimension",
-        "description": "Gap (vertical): 8px"
-      },
-      "2xl": {
         "value": "{gap.3}",
         "type": "dimension",
         "description": "Gap (vertical): 12px"
+      },
+      "lg": {
+        "value": "{gap.3[5]}",
+        "type": "dimension",
+        "description": "Gap (vertical): 14px"
+      },
+      "xl": {
+        "value": "{gap.4}",
+        "type": "dimension",
+        "description": "Gap (vertical): 16px"
       }
     }
   },
@@ -4797,15 +4782,10 @@
         "type": "dimension",
         "description": "Border radius: 0px"
       },
-      "3xs": {
-        "value": "{border.radius.1}",
-        "type": "dimension",
-        "description": "Border radius: 4px"
-      },
       "2xs": {
-        "value": "{border.radius.1}",
+        "value": "{border.radius.0[5]}",
         "type": "dimension",
-        "description": "Border radius: 4px"
+        "description": "Border radius: 2px"
       },
       "xs": {
         "value": "{border.radius.1}",
@@ -4813,9 +4793,9 @@
         "description": "Border radius: 4px"
       },
       "sm": {
-        "value": "{border.radius.2}",
+        "value": "{border.radius.1[5]}",
         "type": "dimension",
-        "description": "Border radius: 8px"
+        "description": "Border radius: 6px"
       },
       "md": {
         "value": "{border.radius.2}",
@@ -4823,34 +4803,14 @@
         "description": "Border radius: 8px"
       },
       "lg": {
-        "value": "{border.radius.2}",
+        "value": "{border.radius.2[5]}",
         "type": "dimension",
-        "description": "Border radius: 8px"
+        "description": "Border radius: 10px"
       },
       "xl": {
-        "value": "{border.radius.2}",
-        "type": "dimension",
-        "description": "Border radius: 8px"
-      },
-      "2xl": {
-        "value": "{border.radius.2}",
-        "type": "dimension",
-        "description": "Border radius: 8px"
-      },
-      "3xl": {
         "value": "{border.radius.3}",
         "type": "dimension",
         "description": "Border radius: 12px"
-      },
-      "0[5]": {
-        "value": "{border.radius.0[5]}",
-        "type": "dimension",
-        "description": "Border radius: 2px"
-      },
-      "1[5]": {
-        "value": "{border.radius.1[5]}",
-        "type": "dimension",
-        "description": "Border radius: 6px"
       },
       "full": {
         "value": "{border.radius.250}",
