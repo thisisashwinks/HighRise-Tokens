@@ -1594,7 +1594,7 @@
         "description": "Padding (vertical): 0px"
       },
       "5xs": {
-        "value": "{padding.1",
+        "value": "{padding.0[25]",
         "type": "dimension",
         "description": "Padding (vertical): 1px"
       },
@@ -4841,6 +4841,11 @@
         "value": "{border.radius.3}",
         "type": "dimension",
         "description": "Border radius: 12px"
+      },
+      "0[5]": {
+        "value": "{border.radius.0[5]}",
+        "type": "dimension",
+        "description": "Border radius: 2px"
       },
       "1[5]": {
         "value": "{border.radius.1[5]}",

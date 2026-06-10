@@ -375,7 +375,7 @@
               "description": "Mobile link button active background"
             },
             "focused": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.neutral.base}",
               "type": "color",
               "description": "Mobile link button focused background"
             },
@@ -827,7 +827,7 @@
               "description": "Mobile error link button active background"
             },
             "focused": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.neutral.base}",
               "type": "color",
               "description": "Mobile error link button focused background"
             },
@@ -1284,7 +1284,7 @@
               "description": "Mobile neutral link button active background"
             },
             "focused": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.neutral.base}",
               "type": "color",
               "description": "Mobile neutral link button focused background"
             },
@@ -1736,7 +1736,7 @@
               "description": "Mobile warning link button active background"
             },
             "focused": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.neutral.base}",
               "type": "color",
               "description": "Mobile warning link button focused background"
             },
@@ -2188,7 +2188,7 @@
               "description": "Mobile success link button active background"
             },
             "focused": {
-              "value": "{color.background.transparent}",
+              "value": "{color.background.neutral.base}",
               "type": "color",
               "description": "Mobile success link button focused background"
             },
@@ -2313,9 +2313,16 @@
       },
       "link": {
         "radius": {
+          "default": {
           "value": "{border.radius.none}",
           "type": "dimension",
           "description": "0px border radius for mobile link buttons"
+          },
+          "focused": {
+            "value": "{border.radius.xs}",
+            "type": "dimension",
+            "description": "4px border radius for mobile link buttons"
+          }
         },
         "width": {
           "value": "{border.width.none}",

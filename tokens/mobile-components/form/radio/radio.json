@@ -21,9 +21,26 @@
     "container": {
       "$comment": "Container size and border properties for mobile radio button",
       "size": {
-        "value": "{size.5}",
-        "type": "dimension",
-        "description": "Mobile radio button container size - 20px diameter (circular)"
+        "xs": {
+          "value": "{size.6xs}",
+          "type": "dimension",
+          "description": "Mobile radio button container size for xs variant - 12px"
+        },
+        "sm": {
+          "value": "{size.5xs}",
+          "type": "dimension",
+          "description": "Mobile radio button container size for sm variant - 16px"
+        },
+        "md": {
+          "value": "{size.4xs}",
+          "type": "dimension",
+          "description": "Mobile radio button container size for md variant - 20px"
+        },
+        "lg": {
+          "value": "{size.3xs}",
+          "type": "dimension",
+          "description": "Mobile radio button container size for lg variant - 24px"
+        }
       },
       "border": {
         "radius": {
@@ -38,14 +55,6 @@
         }
       }
     },
-    "check": {
-      "$comment": "Inner dot (check mark) size for selected mobile radio button",
-      "size": {
-        "value": "{size.2}",
-        "type": "dimension",
-        "description": "Mobile radio button inner check dot size - 8px diameter (circular, centered within 20px container)"
-      }
-    },
     "background": {
       "$comment": "Background colors for mobile radio button in unselected and selected states",
       "unselected": {
@@ -53,11 +62,6 @@
           "value": "{color.background.neutral.base}",
           "type": "color",
           "description": "Mobile unselected radio default background - neutral/gray-0 - #ffffff (white)"
-        },
-        "hover": {
-          "value": "{color.background.primary.subtle.1}",
-          "type": "color",
-          "description": "Mobile unselected radio hover background - primary/blue-50 - #eff8ff (light blue fill on hover)"
         },
         "focused": {
           "value": "{color.background.neutral.base}",
@@ -75,11 +79,6 @@
           "value": "{color.background.primary.default}",
           "type": "color",
           "description": "Mobile selected radio default background - primary/blue-600 - #155eef (solid blue)"
-        },
-        "hover": {
-          "value": "{color.background.primary.intense.0}",
-          "type": "color",
-          "description": "Mobile selected radio hover background - primary/blue-700 - #004eeb (darker blue on hover)"
         },
         "focused": {
           "value": "{color.background.primary.default}",
@@ -100,11 +99,6 @@
           "value": "{color.border.transparent}",
           "type": "color",
           "description": "Mobile unselected radio default border - transparent - no visible border"
-        },
-        "hover": {
-          "value": "{color.border.primary.default}",
-          "type": "color",
-          "description": "Mobile unselected radio hover border - primary/blue-600 - #155eef (light blue border on hover)"
         },
         "focused": {
           "value": "{color.border.primary.moderate.1}",
@@ -127,11 +121,6 @@
           "value": "{color.border.transparent}",
           "type": "color",
           "description": "Mobile selected radio default border - transparent - no visible border (selection indicated by background color)"
-        },
-        "hover": {
-          "value": "{color.border.primary.moderate.1}",
-          "type": "color",
-          "description": "Mobile selected radio hover border - primary/blue-500 - #2e90fa (light blue border on hover for additional feedback)"
         },
         "focused": {
           "value": "{color.border.primary.moderate.1}",
@@ -157,11 +146,6 @@
           "value": "{color.icon.neutral.base}",
           "type": "color",
           "description": "Mobile selected radio check mark default color - neutral/gray-0 - #ffffff (white dot on blue background)"
-        },
-        "disabled": {
-          "value": "{color.icon.neutral.moderate.0}",
-          "type": "color",
-          "description": "Mobile selected radio check mark disabled color - neutral/gray-400 - #98a2b3 (light gray dot on gray background)"
         }
       }
     },

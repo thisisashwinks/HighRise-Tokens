@@ -22,32 +22,32 @@
     "size": {
       "$comment": "Mask dimensions per avatar size — width and height are equal (square, rendered circular via border-radius)",
       "xs": {
-        "value": "{size.6}",
+        "value": "{size.3xs}",
         "type": "dimension",
         "description": "Mobile avatar mask size for xs avatar - 24px"
       },
       "sm": {
-        "value": "{size.8}",
+        "value": "{size.xs}",
         "type": "dimension",
         "description": "Mobile avatar mask size for sm avatar - 32px"
       },
       "md": {
-        "value": "{size.10}",
+        "value": "{size.md}",
         "type": "dimension",
         "description": "Mobile avatar mask size for md avatar - 40px"
       },
       "lg": {
-        "value": "{size.12}",
+        "value": "{size.xl}",
         "type": "dimension",
         "description": "Mobile avatar mask size for lg avatar - 48px"
       },
       "xl": {
-        "value": "{size.14}",
+        "value": "{size.2xl}",
         "type": "dimension",
         "description": "Mobile avatar mask size for xl avatar - 56px"
       },
       "2xl": {
-        "value": "{size.16}",
+        "value": "{size.3xl}",
         "type": "dimension",
         "description": "Mobile avatar mask size for 2xl avatar - 64px"
       }
