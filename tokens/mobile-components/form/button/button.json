@@ -2440,17 +2440,17 @@
           },
           "y": {
             "sm": {
-              "value": "{padding.y.md}",
+              "value": "{padding.y.xs}",
               "type": "dimension",
               "description": "10px vertical padding for sm mobile buttons"
             },
             "md": {
-              "value": "{padding.y.xl}",
+              "value": "{padding.y.sm}",
               "type": "dimension",
               "description": "12px vertical padding for md mobile buttons"
             },
             "lg": {
-              "value": "{padding.y.2xl}",
+              "value": "{padding.y.lg}",
               "type": "dimension",
               "description": "16px vertical padding for lg mobile buttons"
             }
@@ -2464,17 +2464,17 @@
       },
       "gap": {
         "sm": {
-          "value": "{gap.sm}",
+          "value": "{gap.xs}",
           "type": "dimension",
           "description": "8px gap between text and icon for sm mobile buttons"
         },
         "md": {
-          "value": "{gap.md}",
+          "value": "{gap.xs}",
           "type": "dimension",
           "description": "8px gap between text and icon for md mobile buttons"
         },
         "lg": {
-          "value": "{gap.2xl}",
+          "value": "{gap.md}",
           "type": "dimension",
           "description": "12px gap between text and icon for lg mobile buttons"
         }

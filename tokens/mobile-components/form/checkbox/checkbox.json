@@ -49,17 +49,17 @@
       "$comment": "Border properties for mobile checkbox - radius and width",
       "radius": {
         "xs": {
-          "value": "{border.radius.0[5]}",
+          "value": "{border.radius.2xs}",
           "type": "dimension",
           "description": "Mobile checkbox border radius for xs size - 2px"
         },
         "sm": {
-          "value": "{border.radius.3xs}",
+          "value": "{border.radius.xs}",
           "type": "dimension",
           "description": "Mobile checkbox border radius for sm size - 4px"
         },
         "md": {
-          "value": "{border.radius.2xs}",
+          "value": "{border.radius.xs}",
           "type": "dimension",
           "description": "Mobile checkbox border radius for md size - 4px"
         },

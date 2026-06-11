@@ -43,201 +43,314 @@
     }
   },
   "avatar-action-icon": {
-    "icon": {
-      "$comment": "Icon container sizes per scale — matches the icon size token scale",
-      "size": {
-        "4xs": {
-          "value": "{size.icon.4xs}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon size for 4xs - 10px"
-        },
-        "3xs": {
-          "value": "{size.icon.3xs}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon size for 3xs - 12px"
-        },
-        "2xs": {
-          "value": "{size.icon.2xs}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon size for 2xs - 14px"
-        },
-        "xs": {
-          "value": "{size.icon.xs}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon size for xs - 16px"
-        },
-        "sm": {
-          "value": "{size.icon.sm}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon size for sm - 18px"
-        },
-        "md": {
-          "value": "{size.icon.md}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon size for md - 20px"
-        },
-        "lg": {
-          "value": "{size.icon.lg}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon size for lg - 24px"
-        },
-        "xl": {
-          "value": "{size.icon.xl}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon size for xl - 28px"
-        },
-        "2xl": {
-          "value": "{size.icon.2xl}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon size for 2xl - 32px"
-        },
-        "3xl": {
-          "value": "{size.icon.3xl}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon size for 3xl - 36px"
-        },
-        "4xl": {
-          "value": "{size.icon.4xl}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon size for 4xl - 40px"
-        }
+    "$comment": "Icon container sizes per scale — matches the icon size token scale",
+    "size": {
+      "4xs": {
+        "value": "{size.icon.4xs}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon size for 4xs - 10px"
       },
-      "color": {
-        "$comment": "Icon color per scenario — applied in Hover and Clicked states. All colors are /100 tints of their respective palettes.",
-        "neutral": {
-        "default": {
-          "value": "{color.icon.neutral.moderate.2}",
-          "type": "color",
-          "description": "Mobile avatar action icon default state icon color - neutral/50 - #667085"
-        },
-        "disabled": {
-          "value": "{color.icon.neutral.subtle.2}",
-          "type": "color",
-          "description": "Mobile avatar action icon disabled state icon color - neutral/50 - #667085"
-        }
+      "3xs": {
+        "value": "{size.icon.3xs}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon size for 3xs - 12px"
       },
-      "primary": {
-        "default": {
-          "value": "{color.icon.primary.default}",
-          "type": "color",
-          "description": "Mobile avatar action icon default state icon color - primary/100 - #004eeb"
-        },
-        "disabled": {
-          "value": "{color.icon.primary.subtle.0}",
-          "type": "color",
-          "description": "Mobile avatar action icon disabled state icon color - primary/100 - #004eeb"
-        }
+      "2xs": {
+        "value": "{size.icon.2xs}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon size for 2xs - 14px"
       },
-      "success": {
-        "default": {
-          "value": "{color.icon.success.default}",
-          "type": "color",
-          "description": "Mobile avatar action icon default state icon color - success/100 - #004eeb"
-        },
-        "disabled": {
-          "value": "{color.icon.success.inactive}",
-          "type": "color",
-          "description": "Mobile avatar action icon disabled state icon color - success/100 - #004eeb"
-        }
+      "xs": {
+        "value": "{size.icon.xs}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon size for xs - 16px"
       },
-      "error": {
-        "default": {
-          "value": "{color.icon.error.default}",
-          "type": "color",
-          "description": "Mobile avatar action icon default state icon color - error/100 - #004eeb"
-        },
-        "disabled": {
-          "value": "{color.icon.error.inactive}",
-          "type": "color",
-          "description": "Mobile avatar action icon disabled state icon color - error/100 - #004eeb"
-        }
+      "sm": {
+        "value": "{size.icon.sm}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon size for sm - 18px"
       },
-      "warning": {
-        "default": {
-          "value": "{color.icon.warning.default}",
-          "type": "color",
-          "description": "Mobile avatar action icon default state icon color - warning/100 - #004eeb"
-        },
-        "disabled": {
-          "value": "{color.icon.warning.inactive}",
-          "type": "color",
-          "description": "Mobile avatar action icon disabled state icon color - warning/100 - #004eeb"
-        }
+      "md": {
+        "value": "{size.icon.md}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon size for md - 20px"
+      },
+      "lg": {
+        "value": "{size.icon.lg}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon size for lg - 24px"
+      },
+      "xl": {
+        "value": "{size.icon.xl}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon size for xl - 28px"
+      },
+      "2xl": {
+        "value": "{size.icon.2xl}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon size for 2xl - 32px"
+      },
+      "3xl": {
+        "value": "{size.icon.3xl}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon size for 3xl - 36px"
+      },
+      "4xl": {
+        "value": "{size.icon.4xl}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon size for 4xl - 40px"
       }
-    }
-  },
-    "background": {
-      "$comment": "Badge background properties — background only visible in Hover and Clicked states",
-      "border-radius": {
-        "default": {
-          "value": "{border.radius.xs}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon background border radius for BG=Default - 4px (rounded rectangle badge)"
-        },
-        "circular": {
-          "value": "{border.radius.full}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon background border radius for BG=Circular - pill (fully rounded, functionally circular)"
-        }
-      },
-      "color": {
-        "$comment": "Background color per scenario — applied in Hover and Clicked states. All colors are /100 tints of their respective palettes.",
+    },
+    "color": {
+      "background": {
+        "$comment": "Badge background properties — background only visible in Hover and Clicked states",
         "neutral": {
-          "value": "{color.background.neutral.subtle.0}",
-          "type": "color",
-          "description": "Mobile avatar action icon neutral scenario background - gray/50 - #f9fafb (lightest gray tint)"
+          "default": {
+            "value": "{color.background.neutral.subtle.0}",
+            "type": "color",
+            "description": "Mobile avatar action icon background default state - gray/50 - #f9fafb"
+          },
+          "clicked": {
+            "value": "{color.background.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile avatar action icon background clicked state - gray/100 - #f2f4f7"
+          },
+          "disabled": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Mobile avatar action icon background disabled state - transparent - transparent"
+          }
         },
         "primary": {
-          "value": "{color.background.primary.subtle.1}",
-          "type": "color",
-          "description": "Mobile avatar action icon primary scenario background - primary/100 - #d1e0ff"
+          "default": {
+            "value": "{color.background.primary.subtle.1}",
+            "type": "color",
+            "description": "Mobile avatar action icon background default state - primary/100 - #d1e0ff"
+          },
+          "clicked": {
+            "value": "{color.background.primary.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon background clicked state - primary/200 - #b2ccff"
+          },
+          "disabled": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Mobile avatar action icon background disabled state - transparent - transparent"
+          }
         },
         "success": {
-          "value": "{color.background.success.subtle.1}",
-          "type": "color",
-          "description": "Mobile avatar action icon success scenario background - success/100 - #d1fadf"
+          "default": {
+            "value": "{color.background.success.subtle.1}",
+            "type": "color",
+            "description": "Mobile avatar action icon background default state - success/100 - #b2ccff"
+          },
+          "clicked": {
+            "value": "{color.background.success.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon background clicked state - success/200 - #b2ccff"
+          },
+          "disabled": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Mobile avatar action icon background disabled state - transparent - transparent"
+          }
         },
         "error": {
-          "value": "{color.background.error.subtle.1}",
-          "type": "color",
-          "description": "Mobile avatar action icon error scenario background - error/100 - #fee4e2"
+          "default": {
+            "value": "{color.background.error.subtle.1}",
+            "type": "color",
+            "description": "Mobile avatar action icon background default state - error/100 - #fee4e2"
+          },
+          "clicked": {
+            "value": "{color.background.error.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon background clicked state - error/200 - #b2ccff"
+          },
+          "disabled": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Mobile avatar action icon background disabled state - transparent - transparent"
+          }
         },
         "warning": {
-          "value": "{color.background.warning.subtle.1}",
-          "type": "color",
-          "description": "Mobile avatar action icon warning scenario background - warning/100 - #fef0c7"
+          "default": {
+            "value": "{color.background.warning.subtle.1}",
+            "type": "color",
+            "description": "Mobile avatar action icon background default state - warning/100 - #ffeeb1"
+          },
+          "clicked": {
+            "value": "{color.background.warning.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon background clicked state - warning/200 - #b2ccff"
+          },
+          "disabled": {
+            "value": "{color.background.transparent}",
+            "type": "color",
+            "description": "Mobile avatar action icon background disabled state - transparent - transparent"
+          }
+        }
+      },
+      "border": {
+        "neutral": {
+          "default": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color default - gray/300 - #d0d5dd"
+          },
+          "clicked": {
+            "value": "{color.border.neutral.default}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color clicked - gray/300 - #d0d5dd"
+          },
+          "disabled": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color disabled - transparent - transparent"
+          }
+        },
+        "primary": {
+          "default": {
+            "value": "{color.border.primary.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color default - primary/300 - #84adff"
+          },
+          "clicked": {
+            "value": "{color.border.primary.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color clicked - primary/300 - #84adff"
+          },
+          "disabled": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color disabled - transparent - transparent"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "{color.border.success.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color default - success/300 - #84adff"
+          },
+          "clicked": {
+            "value": "{color.border.success.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color clicked - success/300 - #84adff"
+          },
+          "disabled": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color disabled - transparent - transparent"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "{color.border.error.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color default - error/300 - #84adff"
+          },
+          "clicked": {
+            "value": "{color.border.error.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color clicked - error/300 - #84adff"
+          },
+          "disabled": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color disabled - transparent - transparent"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{color.border.warning.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color default - warning/300 - #84adff"
+          },
+          "clicked": {
+            "value": "{color.border.warning.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color clicked - warning/300 - #84adff"
+          },
+          "disabled": {
+            "value": "{color.border.transparent}",
+            "type": "color",
+            "description": "Mobile avatar action icon border color disabled - transparent - transparent"
+          }
+        }
+      },
+      "icon": {
+        "$comment": "Icon color per scenario — applied in Hover and Clicked states. All colors are /100 tints of their respective palettes.",
+        "neutral": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon default state icon color - neutral/50 - #667085"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile avatar action icon disabled state icon color - neutral/50 - #667085"
+          }
+        },
+        "primary": {
+          "default": {
+            "value": "{color.icon.primary.default}",
+            "type": "color",
+            "description": "Mobile avatar action icon default state icon color - primary/100 - #004eeb"
+          },
+          "disabled": {
+            "value": "{color.icon.primary.subtle.0}",
+            "type": "color",
+            "description": "Mobile avatar action icon disabled state icon color - primary/100 - #004eeb"
+          }
+        },
+        "success": {
+          "default": {
+            "value": "{color.icon.success.default}",
+            "type": "color",
+            "description": "Mobile avatar action icon default state icon color - success/100 - #004eeb"
+          },
+          "disabled": {
+            "value": "{color.icon.success.inactive}",
+            "type": "color",
+            "description": "Mobile avatar action icon disabled state icon color - success/100 - #004eeb"
+          }
+        },
+        "error": {
+          "default": {
+            "value": "{color.icon.error.default}",
+            "type": "color",
+            "description": "Mobile avatar action icon default state icon color - error/100 - #004eeb"
+          },
+          "disabled": {
+            "value": "{color.icon.error.inactive}",
+            "type": "color",
+            "description": "Mobile avatar action icon disabled state icon color - error/100 - #004eeb"
+          }
+        },
+        "warning": {
+          "default": {
+            "value": "{color.icon.warning.default}",
+            "type": "color",
+            "description": "Mobile avatar action icon default state icon color - warning/100 - #004eeb"
+          },
+          "disabled": {
+            "value": "{color.icon.warning.inactive}",
+            "type": "color",
+            "description": "Mobile avatar action icon disabled state icon color - warning/100 - #004eeb"
+          }
         }
       }
     },
-    "state": {
-      "$comment": "State-conditional background visibility",
-      "default": {
-        "background": {
-          "value": "{color.background.transparent}",
-          "type": "color",
-          "description": "Mobile avatar action icon default state background - transparent (no badge visible, bare icon only)"
-        }
+    "border": {
+      "radius": {
+          "value": "{border.radius.full}",
+          "type": "dimension",
+          "description": "Mobile avatar action icon border radius - full (pill badge)"
       },
-      "hover": {
-        "background": {
-          "value": "visible",
-          "type": "string",
-          "description": "Mobile avatar action icon hover state - badge background visible with scenario color applied"
-        }
-      },
-      "clicked": {
-        "background": {
-          "value": "visible",
-          "type": "string",
-          "description": "Mobile avatar action icon clicked/pressed state - badge background visible with scenario color applied (same as hover)"
-        }
-      },
-      "disabled": {
-        "background": {
-          "value": "transparent",
-          "type": "color",
-          "description": "Mobile avatar action icon disabled state background - transparent (no badge, icon visually muted)"
-        }
+      "width": {
+        "value": "{border.width.default}",
+        "type": "dimension",
+        "description": "Mobile avatar action icon border width - 1px"
       }
     }
   }
