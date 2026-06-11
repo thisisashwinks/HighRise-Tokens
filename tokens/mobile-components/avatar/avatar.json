@@ -47,33 +47,43 @@
     "container": {
       "$comment": "Avatar container — always square dimensions, shape determined by border-radius variant",
       "size": {
+        "3xs": {
+          "value": "{size.6xs}",
+          "type": "dimension",
+          "description": "Mobile avatar container size for 3xs - 12px"
+        },
+        "2xs": {
+          "value": "{size.5xs}",
+          "type": "dimension",
+          "description": "Mobile avatar container size for 2xs - 16px"
+        },
         "xs": {
-          "value": "{size.6}",
+          "value": "{size.3xs}",
           "type": "dimension",
           "description": "Mobile avatar container size for xs - 24px"
         },
         "sm": {
-          "value": "{size.8}",
+          "value": "{size.xs}",
           "type": "dimension",
           "description": "Mobile avatar container size for sm - 32px"
         },
         "md": {
-          "value": "{size.10}",
+          "value": "{size.md}",
           "type": "dimension",
           "description": "Mobile avatar container size for md - 40px"
         },
         "lg": {
-          "value": "{size.12}",
+          "value": "{size.xl}",
           "type": "dimension",
           "description": "Mobile avatar container size for lg - 48px"
         },
         "xl": {
-          "value": "{size.14}",
+          "value": "{size.2xl}",
           "type": "dimension",
           "description": "Mobile avatar container size for xl - 56px"
         },
         "2xl": {
-          "value": "{size.16}",
+          "value": "{size.3xl}",
           "type": "dimension",
           "description": "Mobile avatar container size for 2xl - 64px"
         }
@@ -86,17 +96,17 @@
         },
         "square": {
           "xs": {
-            "value": "{border.radius.3xs}",
+            "value": "{border.radius.xs}",
             "type": "dimension",
             "description": "Mobile avatar container border radius for rounded=False - 4px (rounded square for grid/list contexts)"
           },
           "sm": {
-            "value": "{border.radius.1[5]}",
+            "value": "{border.radius.sm}",
             "type": "dimension",
             "description": "Mobile avatar container border radius for rounded=False - 6px (rounded square for grid/list contexts)"
           },
           "md": {
-            "value": "{border.radius.sm}",
+            "value": "{border.radius.md}",
             "type": "dimension",
             "description": "Mobile avatar container border radius for rounded=False - 8px (rounded square for grid/list contexts)"
           },
@@ -106,12 +116,12 @@
             "description": "Mobile avatar container border radius for rounded=False - 8px (rounded square for grid/list contexts)"
           },
           "xl": {
-            "value": "{border.radius.lg}",
+            "value": "{border.radius.md}",
             "type": "dimension",
             "description": "Mobile avatar container border radius for rounded=False - 8px (rounded square for grid/list contexts)"
           },
           "2xl": {
-            "value": "{border.radius.xl}",
+            "value": "{border.radius.md}",
             "type": "dimension",
             "description": "Mobile avatar container border radius for rounded=False - 8px (rounded square for grid/list contexts)"
           }
@@ -138,21 +148,6 @@
           "value": "{font.body.regular.4xl}",
           "type": "typography",
           "description": "Mobile avatar initials text typography at xl size - 20px Regular, 30px line-height (font/size/4xl, font/weight/regular, font/line-height/4xl). Scales with avatar size."
-        }
-      }
-    },
-    "action-icon": {
-      "$comment": "Action icon that appears on the avatar in hover state — positioned top-right, centered on the avatar circle edge. Full token details in avatar-action-icon.json.",
-      "background": {
-        "color": {
-          "value": "#f9fafb",
-          "type": "color",
-          "description": "Mobile avatar action icon default/neutral circular background on hover - gray/50 - #f9fafb (see avatar-action-icon.json for full scenario color set)"
-        },
-        "border-radius": {
-          "value": "{border.radius.full}",
-          "type": "dimension",
-          "description": "Mobile avatar action icon circular background shape - pill (BG=Circular variant; see avatar-action-icon.json for BG=Default 4px variant)"
         }
       }
     }

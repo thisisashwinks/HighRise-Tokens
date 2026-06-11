@@ -50,7 +50,7 @@
         "description": "Mobile avatar company indicator border radius - 12px (rounded rectangle — intentionally not fully circular, frames logo better than a circle)"
       },
       "width": {
-        "value": "{border.width.0[375]}",
+        "value": "{border.width.sm}",
         "type": "dimension",
         "description": "Mobile avatar company indicator border width - 1.5px white ring that separates the badge from the avatar background"
       },
