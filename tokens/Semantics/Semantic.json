@@ -1371,6 +1371,11 @@
         "type": "dimension",
         "description": "Padding (horizontal): 0px"
       },
+      "6xs": {
+        "value": "{padding.0[5]}",
+        "type": "dimension",
+        "description": "Padding (horizontal): 2px"
+      },
       "5xs": {
         "value": "{padding.1}",
         "type": "dimension",

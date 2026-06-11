@@ -34,70 +34,53 @@
       "border": {
         "$comment": "Border radius for mobile tag count component - creates rounded pill shape",
         "radius": {
-          "xs": {
-            "value": "{border.radius.0[5]}",
+            "value": "{border.radius.2xs}",
             "type": "dimension",
-            "description": "Mobile tag count border radius for xs size - 2px (slightly rounded corners)"
-          },
-          "sm": {
-            "value": "{border.radius.0[5]}",
-            "type": "dimension",
-            "description": "Mobile tag count border radius for sm size - 2px (slightly rounded corners)"
-          },
-          "md": {
-            "value": "{border.radius.0[5]}",
-            "type": "dimension",
-            "description": "Mobile tag count border radius for md size - 2px (slightly rounded corners)"
-          },
-          "lg": {
-            "value": "{border.radius.1}",
-            "type": "dimension",
-            "description": "Mobile tag count border radius for lg size - 4px (more rounded corners for larger size)"
-          }
+            "description": "Mobile tag count border radius - 2px (slightly rounded corners)"
         }
       },
       "padding": {
         "$comment": "Internal padding for mobile tag count component - horizontal (x) and vertical (y) spacing around text",
         "horizontal": {
           "xs": {
-            "value": "{padding.0[5]}",
+            "value": "{padding.x.6xs}",
             "type": "dimension",
             "description": "Mobile tag count horizontal padding for xs size - 2px (minimal padding for compact size)"
           },
           "sm": {
-            "value": "{padding.1}",
+            "value": "{padding.x.5xs}",
             "type": "dimension",
             "description": "Mobile tag count horizontal padding for sm size - 4px (standard padding)"
           },
           "md": {
-            "value": "{padding.1[25]}",
+            "value": "{padding.x.1[25]}",
             "type": "dimension",
             "description": "Mobile tag count horizontal padding for md size - 5px (slightly more padding for medium size)"
           },
           "lg": {
-            "value": "{padding.1[5]}",
+            "value": "{padding.x.1[25]}",
             "type": "dimension",
-            "description": "Mobile tag count horizontal padding for lg size - 6px (more padding for larger size)"
+            "description": "Mobile tag count horizontal padding for lg size - 5px (more padding for larger size)"
           }
         },
         "vertical": {
           "xs": {
-            "value": "{padding.0}",
+            "value": "{padding.y.none}",
             "type": "dimension",
             "description": "Mobile tag count vertical padding for xs size - 0px (no vertical padding, height determined by font size)"
           },
           "sm": {
-            "value": "{padding.0}",
+            "value": "{padding.y.none}",
             "type": "dimension",
             "description": "Mobile tag count vertical padding for sm size - 0px (no vertical padding, height determined by font size)"
           },
           "md": {
-            "value": "{padding.0}",
+            "value": "{padding.y.none}",
             "type": "dimension",
             "description": "Mobile tag count vertical padding for md size - 0px (no vertical padding, height determined by font size)"
           },
           "lg": {
-            "value": "{padding.0}",
+            "value": "{padding.y.none}",
             "type": "dimension",
             "description": "Mobile tag count vertical padding for lg size - 0px (no vertical padding, height determined by font size)"
           }
