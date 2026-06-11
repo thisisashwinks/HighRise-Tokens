@@ -2440,9 +2440,9 @@
           },
           "y": {
             "sm": {
-              "value": "{padding.y.xs}",
+              "value": "{padding.y.4xs}",
               "type": "dimension",
-              "description": "10px vertical padding for sm mobile buttons"
+              "description": "4px vertical padding for sm mobile buttons"
             },
             "md": {
               "value": "{padding.y.sm}",
@@ -2450,9 +2450,9 @@
               "description": "12px vertical padding for md mobile buttons"
             },
             "lg": {
-              "value": "{padding.y.lg}",
+              "value": "{padding.y.md}",
               "type": "dimension",
-              "description": "16px vertical padding for lg mobile buttons"
+              "description": "14px vertical padding for lg mobile buttons"
             }
           }
         },

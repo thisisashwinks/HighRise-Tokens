@@ -37,24 +37,11 @@
         "value": "{size.icon.sm}",
         "type": "dimension",
         "description": "Mobile tag loader size for md - 18px diameter (Figma: Big)"
-      }
-    },
-    "stroke-width": {
-      "$comment": "Stroke width tokens for tag loader ring - defines the thickness of the circular ring",
-      "xs": {
-        "value": "1.5px",
-        "type": "dimension",
-        "description": "Mobile tag loader stroke width for xs - 1.5px ring thickness"
       },
-      "sm": {
-        "value": "2px",
+      "lg": {
+        "value": "{size.icon.md}",
         "type": "dimension",
-        "description": "Mobile tag loader stroke width for sm - 2px ring thickness"
-      },
-      "md": {
-        "value": "2px",
-        "type": "dimension",
-        "description": "Mobile tag loader stroke width for md - 2px ring thickness"
+        "description": "Mobile tag loader size for lg - 20px diameter (Figma: Large)"
       }
     },
     "color": {

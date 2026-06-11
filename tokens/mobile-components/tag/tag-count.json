@@ -107,12 +107,12 @@
         "$comment": "Height dimensions for mobile tag count component - determines overall component height for each size variant",
         "height": {
           "xs": {
-            "value": "{size.height.3}",
+            "value": "{size.height.6xs}",
             "type": "dimension",
             "description": "Mobile tag count height for xs size - 12px (compact height for small badges)"
           },
           "sm": {
-            "value": "{size.height.4}",
+            "value": "{size.height.5xs}",
             "type": "dimension",
             "description": "Mobile tag count height for sm size - 16px (standard height for mobile badges)"
           },
@@ -122,7 +122,7 @@
             "description": "Mobile tag count height for md size - 18px (medium height for prominent badges)"
           },
           "lg": {
-            "value": "{size.height.4[5]}",
+            "value": "{size.height.4xs}",
             "type": "dimension",
             "description": "Mobile tag count height for lg size - 18px (larger height for emphasized badges)"
           }

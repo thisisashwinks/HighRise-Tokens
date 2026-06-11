@@ -648,6 +648,11 @@
         "type": "dimension",
         "description": "Size (height): 174px"
       },
+      "6xs": {
+        "value": "{size.3}",
+        "type": "dimension",
+        "description": "Size (height): 12px"
+      },
       "5xs": {
         "value": "{size.4}",
         "type": "dimension",
