@@ -57,9 +57,9 @@
         "background": {
           "$comment": "Background colors for circular container variants (bold and thin)",
           "default": {
-            "value": "{color.border.subtle.1}",
+            "value": "{color.border.subtle.2}",
             "type": "color",
-            "description": "Mobile tag close container default background - gray/100 - #f2f4f7"
+            "description": "Mobile tag close container default background - gray/200 - #eaecf0"
           },
           "focused": {
             "value": "{color.background.neutral.base}",

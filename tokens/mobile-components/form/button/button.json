@@ -2338,11 +2338,6 @@
           "type": "boxShadow",
           "description": "Default mobile button shadow - For only Primary & Secondary buttons"
         },
-        "hover": {
-          "value": "boxShadow.outer.xs",
-          "type": "boxShadow",
-          "description": "Hover mobile button shadow - For only Primary & Secondary buttons"
-        },
         "active": {
           "value": "boxShadow.none",
           "type": "boxShadow",
