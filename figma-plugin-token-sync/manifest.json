@@ -1,0 +1,14 @@
+{
+  "name": "HighRise Token Sync",
+  "id": "highrise-token-sync-112358",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["https://api.github.com"],
+    "reasoning": "Reads and writes design-token JSON files in the team's GitHub repository to keep Figma variables and code tokens in sync."
+  },
+  "permissions": ["teamlibrary"]
+}

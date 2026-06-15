@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+.env
+.env*.local
+.DS_Store
+# generated at build from ../tokens
+src/data/graph.json
+next-env.d.ts

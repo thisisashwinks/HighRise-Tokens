@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  :root { --hl:#155EEF; --hl-dark:#0042A8; --hl-sub:#EEF4FF; --ok:#0a5c36; --okbg:#d1fae5; --warn:#92400e; --warnbg:#fef3c7; --bad:#7c2d12; --badbg:#fee2e2; --line:#e6e9ef; }
+  * { box-sizing:border-box; }
+  body { font-family:Inter,-apple-system,system-ui,sans-serif; font-size:13px; color:#1a1a2e; margin:0; background:#f8f9fc; }
+  h1,h2,h3,h4 { margin:0; }
+  button { font-family:inherit; cursor:pointer; border:1px solid var(--line); background:#fff; border-radius:6px; padding:6px 12px; font-size:12px; }
+  button:hover { border-color:var(--hl); color:var(--hl); }
+  button.primary { background:var(--hl); border-color:var(--hl); color:#fff; }
+  button.primary:hover { background:var(--hl-dark); border-color:var(--hl-dark); color:#fff; }
+  button.danger:hover { border-color:#dc2626; color:#dc2626; }
+  button:disabled { opacity:.45; cursor:not-allowed; }
+  input, select, textarea { font-family:inherit; font-size:12px; border:1px solid var(--line); border-radius:6px; padding:6px 8px; width:100%; }
+  textarea { resize:vertical; }
+  label { font-size:11px; font-weight:600; color:#475467; display:block; margin:8px 0 3px; }
+  .row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .muted { color:#667085; }
+  code { background:#f0f2f5; color:#c7254e; padding:1px 4px; border-radius:4px; font-size:11px; }
+  .pill { display:inline-block; border-radius:12px; padding:1px 8px; font-size:10px; font-weight:700; }
+  .pill.same { background:#eef2f6; color:#667085; }
+  .pill.figma { background:var(--hl-sub); color:var(--hl); }
+  .pill.git { background:#ecfdf5; color:var(--ok); }
+  .pill.conflict { background:var(--badbg); color:var(--bad); }
+  .pill.missing { background:var(--warnbg); color:var(--warn); }
+  .swatch { display:inline-block; width:13px; height:13px; border-radius:3px; border:1px solid rgba(0,0,0,.15); vertical-align:-2px; margin-right:5px; }
+
+  /* layout */
+  header { background:linear-gradient(135deg,#0a2463,var(--hl)); color:#fff; padding:12px 16px; }
+  header h1 { font-size:15px; font-weight:700; }
+  header .sub { font-size:11px; opacity:.8; }
+  .tabs { display:flex; gap:2px; padding:0 12px; background:#fff; border-bottom:1px solid var(--line); }
+  .tab { padding:9px 14px; font-size:12px; font-weight:600; color:#667085; border-bottom:2px solid transparent; }
+  .tab.active { color:var(--hl); border-bottom-color:var(--hl); }
+  .panel { display:none; padding:14px 16px; }
+  .panel.active { display:block; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:8px; padding:12px; margin-bottom:12px; }
+  .toolbar { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+
+  table { width:100%; border-collapse:collapse; font-size:11.5px; }
+  th { text-align:left; background:#f0f4ff; padding:6px 8px; position:sticky; top:0; font-weight:600; }
+  td { padding:5px 8px; border-top:1px solid var(--line); vertical-align:top; }
+  .scroll { max-height:340px; overflow:auto; border:1px solid var(--line); border-radius:8px; }
+  .mono { font-family:ui-monospace,Menlo,monospace; font-size:11px; }
+
+  /* inspector chain */
+  .chain { display:flex; flex-direction:column; gap:6px; }
+  .chain-step { display:flex; align-items:center; gap:8px; padding:8px 10px; border:1px solid var(--line); border-radius:8px; background:#fff; }
+  .chain-step .lvl { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:#98a2b3; width:64px; }
+  .chain-step.raw { border-color:#10b981; background:#ecfdf5; }
+  .chain-arrow { text-align:center; color:#cbd5e1; font-size:14px; line-height:0; }
+
+  #log { font-family:ui-monospace,Menlo,monospace; font-size:11px; white-space:pre-wrap; background:#1e1e2e; color:#cdd6f4; border-radius:8px; padding:10px; height:520px; overflow:auto; }
+  .hint { font-size:11px; color:#667085; margin:4px 0 0; }
+  .banner { padding:8px 10px; border-radius:8px; font-size:11.5px; margin-bottom:10px; }
+  .banner.warn { background:var(--warnbg); color:var(--warn); }
+  .banner.bad { background:var(--badbg); color:var(--bad); }
+  .banner.ok { background:var(--okbg); color:var(--ok); }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; }
+  .collrow { display:flex; align-items:center; gap:8px; padding:4px 0; }
+  .collrow input[type=text] { flex:1; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>HighRise Token Sync</h1>
+  <div class="sub" id="fileName">Two-way sync · JSON ⇄ Figma Variables · visualize &amp; fix alias chains</div>
+</header>
+
+<div class="tabs">
+  <div class="tab active" data-tab="sync">Sync</div>
+  <div class="tab" data-tab="inspect">Inspector</div>
+  <div class="tab" data-tab="settings">Settings</div>
+  <div class="tab" data-tab="log">Log</div>
+</div>
+
+<!-- ───────────────── SYNC ───────────────── -->
+<div class="panel active" id="panel-sync">
+  <div id="syncBanner"></div>
+  <div class="card">
+    <div class="row" style="justify-content:space-between;">
+      <strong>Collections in this file</strong>
+      <div class="row">
+        <button onclick="refreshSnapshot()">↻ Refresh</button>
+        <button onclick="scanDiff()" class="primary">Scan &amp; diff</button>
+      </div>
+    </div>
+    <p class="hint">Tick the collections to sync. Each is mapped to a JSON file in the repo (set mappings in Settings).</p>
+    <div id="collList"></div>
+  </div>
+
+  <div class="toolbar">
+    <button onclick="pullToPR()">⬆ Pull → open PR (Figma → JSON)</button>
+    <button onclick="pushFromJson()">⬇ Push ← JSON (JSON → Figma)</button>
+    <button onclick="applyResolutions()">Apply resolutions</button>
+    <button onclick="saveBaseline()" title="Record current state as the last-synced baseline so future diffs are 3-way">⚑ Save baseline</button>
+  </div>
+
+  <div class="card" id="diffCard" style="display:none;">
+    <div class="row" style="justify-content:space-between;">
+      <strong>Diff</strong>
+      <span class="muted" id="diffSummary"></span>
+    </div>
+    <div class="scroll" style="margin-top:8px;">
+      <table id="diffTable"><thead><tr>
+        <th>Collection</th><th>Token path</th><th>Figma</th><th>JSON (Git)</th><th>Status</th><th>Resolve</th>
+      </tr></thead><tbody></tbody></table>
+    </div>
+  </div>
+</div>
+
+<!-- ───────────────── INSPECTOR ───────────────── -->
+<div class="panel" id="panel-inspect">
+  <div class="banner ok">Select a token to see its full chain (component → semantic → primitive → value) and reassign its alias — no file-hopping or memorizing.</div>
+  <div class="grid2">
+    <div>
+      <label>Collection</label>
+      <select id="insColl" onchange="renderInsVars()"></select>
+      <label>Mode</label>
+      <select id="insMode"></select>
+      <label>Filter tokens</label>
+      <input type="text" id="insFilter" placeholder="type to filter…" oninput="renderInsVars()" />
+      <div class="scroll" style="margin-top:8px; max-height:380px;">
+        <table id="insTable"><thead><tr><th>Token</th><th>Resolves to</th></tr></thead><tbody></tbody></table>
+      </div>
+    </div>
+    <div>
+      <label>Resolved chain</label>
+      <div id="chainView" class="card" style="min-height:120px;"><span class="muted">Select a token on the left.</span></div>
+
+      <div class="card" id="reassignCard" style="display:none;">
+        <strong style="font-size:12px;">Reassign alias</strong>
+        <p class="hint">Search a semantic or primitive variable to point this token at. Applies to the selected mode.</p>
+        <input type="text" id="reTargetSearch" placeholder="search target variable…" oninput="renderReTargets()" />
+        <div class="scroll" style="max-height:160px; margin-top:6px;">
+          <table id="reTargetTable"><tbody></tbody></table>
+        </div>
+        <hr style="border:none; border-top:1px solid var(--line); margin:10px 0;" />
+        <strong style="font-size:12px;">Or set a raw value</strong>
+        <div class="row" style="margin-top:6px;">
+          <input type="text" id="rawValueInput" placeholder="#1c6dff or 16" style="flex:1;" />
+          <button onclick="applyRawValue()">Set raw</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ───────────────── SETTINGS ───────────────── -->
+<div class="panel" id="panel-settings">
+  <div class="card">
+    <strong>GitHub connection</strong>
+    <p class="hint">Stored only on your machine (Figma clientStorage) — never committed. Use a fine-scoped PAT with <code>repo</code> (or contents read/write) access.</p>
+    <div class="grid2">
+      <div><label>Personal access token</label><input type="password" id="sPat" placeholder="ghp_… / github_pat_…" /></div>
+      <div><label>Default branch (base)</label><input type="text" id="sBase" placeholder="main" /></div>
+      <div><label>Owner (user or org)</label><input type="text" id="sOwner" placeholder="gohighlevel" /></div>
+      <div><label>Repository</label><input type="text" id="sRepo" placeholder="highrise-tokens" /></div>
+      <div><label>Tokens directory</label><input type="text" id="sDir" placeholder="tokens" /></div>
+      <div><label>Sync branch prefix</label><input type="text" id="sPrefix" placeholder="tokens/figma-sync" /></div>
+      <div><label>Baseline path</label><input type="text" id="sBaseline" placeholder="tokens/.sync/baseline.json" /></div>
+    </div>
+    <div class="row" style="margin-top:10px;">
+      <button class="primary" onclick="saveSettings()">Save settings</button>
+      <button onclick="testGithub()">Test connection</button>
+      <span id="settingsStatus" class="muted"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row" style="justify-content:space-between;">
+      <strong>Collection → JSON file mapping</strong>
+      <button onclick="autoMap()">Auto-map from repo</button>
+    </div>
+    <p class="hint">One row per local collection in this file. Map each to its JSON file path in the repo. Auto-map lists <code>.json</code> under the tokens dir and fuzzy-matches by name.</p>
+    <div id="mapList"></div>
+  </div>
+</div>
+
+<!-- ───────────────── LOG ───────────────── -->
+<div class="panel" id="panel-log">
+  <div class="toolbar"><button onclick="document.getElementById('log').textContent=''">Clear</button></div>
+  <div id="log"></div>
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════════════════════
+//  STATE
+// ════════════════════════════════════════════════════════════════════════════
+let SETTINGS = { pat:'', owner:'', repo:'', base:'main', dir:'tokens',
+                 prefix:'tokens/figma-sync', baseline:'tokens/.sync/baseline.json', mappings:{} };
+let SNAP = null;                 // figma snapshot from main thread
+let LAST_DIFF = [];              // array of diff rows
+let RESOLUTIONS = {};            // key -> 'figma' | 'git'
+let INS_SELECTED = null;         // {variableId, modeId, name}
+
+// ════════════════════════════════════════════════════════════════════════════
+//  PLUMBING
+// ════════════════════════════════════════════════════════════════════════════
+function post(type, payload) { parent.postMessage({ pluginMessage: Object.assign({ type:type }, payload||{}) }, '*'); }
+function logln(s) { const el=document.getElementById('log'); el.textContent += s + '\n'; el.scrollTop = el.scrollHeight; }
+function setBanner(id, cls, html) { const el=document.getElementById(id); if(!html){el.innerHTML='';return;} el.innerHTML = '<div class="banner '+cls+'">'+html+'</div>'; }
+
+document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  document.getElementById('panel-'+t.dataset.tab).classList.add('active');
+});
+
+// ════════════════════════════════════════════════════════════════════════════
+//  TOKEN VALUE HELPERS (mirror main thread)
+// ════════════════════════════════════════════════════════════════════════════
+function figmaTypeToTokenType(rt){ if(rt==='COLOR')return 'color'; if(rt==='FLOAT')return 'dimension'; if(rt==='BOOLEAN')return 'boolean'; return 'string'; }
+function varNameToRef(name){ return '{' + String(name).replace(/\//g,'.') + '}'; }
+function isRef(v){ return typeof v==='string' && /^\{.+\}$/.test(v); }
+
+function normColor(hex){
+  if(typeof hex!=='string') return hex;
+  let h = hex.replace(/^#/,'').toLowerCase();
+  if(h.length===3) h=h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
+  if(h.length===6) h=h+'ff';
+  return '#'+h;
+}
+function normalizeValue(v, type){
+  if(v===undefined||v===null) return '';
+  if(isRef(v)) return v.replace(/\s/g,'');
+  const t=(type||'').toLowerCase();
+  if(t==='color') return normColor(String(v));
+  if(['dimension','number','spacing','sizing','float','padding','gap','size','opacity','borderradius','borderwidth'].indexOf(t)!==-1){
+    const n=parseFloat(String(v).replace(/[a-z%]+$/i,'')); return isNaN(n)?String(v):String(n);
+  }
+  return String(v);
+}
+
+// figma snapshot collection -> nested JSON token tree (default mode)
+function collectionToTree(coll){
+  const modeId = coll.defaultModeId;
+  const root = {};
+  for(const v of coll.variables){
+    let slot = v.valuesByMode[modeId];
+    if(!slot){ const k=Object.keys(v.valuesByMode)[0]; slot = v.valuesByMode[k]; }
+    const leaf = { value: slot.alias ? varNameToRef(slot.targetName) : slot.value,
+                   type: figmaTypeToTokenType(v.resolvedType) };
+    if(v.description) leaf.description = v.description;
+    const parts = v.name.split('/');
+    let node = root;
+    for(let i=0;i<parts.length-1;i++){ node[parts[i]] = node[parts[i]]||{}; node=node[parts[i]]; }
+    node[parts[parts.length-1]] = leaf;
+  }
+  return root;
+}
+
+// flatten a JSON token tree -> Map(path -> {value,type,description})
+function flattenTree(obj, prefix, out){
+  out = out||{}; prefix = prefix||'';
+  for(const k of Object.keys(obj)){
+    if(k.charAt(0)==='$') continue;
+    const val = obj[k];
+    if(!val || typeof val!=='object') continue;
+    const path = prefix ? prefix+'/'+k : k;
+    if(typeof val.value!=='undefined'){
+      out[path] = { value: val.value, type: val.type||'unknown', description: val.description||'' };
+    } else {
+      flattenTree(val, path, out);
+    }
+  }
+  return out;
+}
+
+// merge figma leaves into an existing JSON tree (preserve metadata & untouched leaves)
+function mergeFigmaIntoTree(existing, coll){
+  const tree = existing ? JSON.parse(JSON.stringify(existing)) : {};
+  const modeId = coll.defaultModeId;
+  for(const v of coll.variables){
+    let slot = v.valuesByMode[modeId]; if(!slot){ slot = v.valuesByMode[Object.keys(v.valuesByMode)[0]]; }
+    const parts = v.name.split('/');
+    let node = tree;
+    for(let i=0;i<parts.length-1;i++){ if(!node[parts[i]]||typeof node[parts[i]]!=='object'||typeof node[parts[i]].value!=='undefined') node[parts[i]]={}; node=node[parts[i]]; }
+    const leafKey = parts[parts.length-1];
+    const prev = (node[leafKey] && typeof node[leafKey]==='object') ? node[leafKey] : {};
+    const leaf = {
+      value: slot.alias ? varNameToRef(slot.targetName) : slot.value,
+      type: figmaTypeToTokenType(v.resolvedType),
+      description: v.description || prev.description || ''
+    };
+    if(!leaf.description) delete leaf.description;
+    node[leafKey] = leaf;
+  }
+  return tree;
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+//  GITHUB
+// ════════════════════════════════════════════════════════════════════════════
+function gh(path, opts){
+  opts = opts||{};
+  const url = 'https://api.github.com' + path;
+  const headers = { 'Authorization':'token '+SETTINGS.pat, 'Accept':'application/vnd.github+json', 'Content-Type':'application/json' };
+  return fetch(url, { method: opts.method||'GET', headers: headers, body: opts.body?JSON.stringify(opts.body):undefined })
+    .then(async r => {
+      const text = await r.text();
+      let json = null; try { json = text?JSON.parse(text):null; } catch(e){}
+      if(!r.ok){ const m = (json&&json.message)?json.message:('HTTP '+r.status); throw new Error(m+' ('+path+')'); }
+      return json;
+    });
+}
+function b64encodeUtf8(str){ return btoa(unescape(encodeURIComponent(str))); }
+function b64decodeUtf8(b64){ return decodeURIComponent(escape(atob(b64.replace(/\n/g,'')))); }
+function repoBase(){ return '/repos/'+SETTINGS.owner+'/'+SETTINGS.repo; }
+
+async function ghGetFile(path, ref){
+  try {
+    const r = await gh(repoBase()+'/contents/'+encodeURIComponent(path).replace(/%2F/g,'/')+'?ref='+encodeURIComponent(ref));
+    return { content: b64decodeUtf8(r.content), sha: r.sha };
+  } catch(e){ if(/not found/i.test(e.message)||/HTTP 404/.test(e.message)) return null; throw e; }
+}
+async function ghListJsonUnderDir(){
+  const r = await gh(repoBase()+'/git/trees/'+encodeURIComponent(SETTINGS.base)+'?recursive=1');
+  const dir = SETTINGS.dir.replace(/\/$/,'');
+  return (r.tree||[]).filter(n => n.type==='blob' && n.path.indexOf(dir+'/')===0 && /\.json$/i.test(n.path)).map(n=>n.path);
+}
+// commit multiple files to a new branch, return branch name
+async function ghCommitFilesToBranch(files, branch, message){
+  // base sha
+  const ref = await gh(repoBase()+'/git/ref/heads/'+encodeURIComponent(SETTINGS.base));
+  const baseSha = ref.object.sha;
+  // create branch (ignore if exists)
+  try { await gh(repoBase()+'/git/refs', { method:'POST', body:{ ref:'refs/heads/'+branch, sha:baseSha } }); }
+  catch(e){ if(!/reference already exists/i.test(e.message)) throw e; }
+  const baseCommit = await gh(repoBase()+'/git/commits/'+baseSha);
+  const baseTree = baseCommit.tree.sha;
+  // blobs
+  const tree = [];
+  for(const f of files){
+    const blob = await gh(repoBase()+'/git/blobs', { method:'POST', body:{ content:f.content, encoding:'utf-8' } });
+    tree.push({ path:f.path, mode:'100644', type:'blob', sha:blob.sha });
+  }
+  const newTree = await gh(repoBase()+'/git/trees', { method:'POST', body:{ base_tree:baseTree, tree:tree } });
+  const commit = await gh(repoBase()+'/git/commits', { method:'POST', body:{ message:message, tree:newTree.sha, parents:[baseSha] } });
+  await gh(repoBase()+'/git/refs/heads/'+branch, { method:'PATCH', body:{ sha:commit.sha, force:true } });
+  return branch;
+}
+async function ghOpenPR(branch, title, body){
+  return gh(repoBase()+'/pulls', { method:'POST', body:{ title:title, head:branch, base:SETTINGS.base, body:body } });
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+//  SETTINGS UI
+// ════════════════════════════════════════════════════════════════════════════
+function fillSettings(){
+  sPat.value=SETTINGS.pat||''; sOwner.value=SETTINGS.owner||''; sRepo.value=SETTINGS.repo||'';
+  sBase.value=SETTINGS.base||'main'; sDir.value=SETTINGS.dir||'tokens';
+  sPrefix.value=SETTINGS.prefix||'tokens/figma-sync'; sBaseline.value=SETTINGS.baseline||'tokens/.sync/baseline.json';
+  renderMapList();
+}
+function readSettingsFromUI(){
+  SETTINGS.pat=sPat.value.trim(); SETTINGS.owner=sOwner.value.trim(); SETTINGS.repo=sRepo.value.trim();
+  SETTINGS.base=sBase.value.trim()||'main'; SETTINGS.dir=sDir.value.trim()||'tokens';
+  SETTINGS.prefix=sPrefix.value.trim()||'tokens/figma-sync'; SETTINGS.baseline=sBaseline.value.trim()||'tokens/.sync/baseline.json';
+  // read mappings
+  const m={}; document.querySelectorAll('#mapList .collrow').forEach(r=>{
+    const name=r.dataset.coll; const path=r.querySelector('input').value.trim(); if(path) m[name]=path;
+  });
+  SETTINGS.mappings=m;
+}
+function saveSettings(){ readSettingsFromUI(); post('save-settings',{settings:SETTINGS}); document.getElementById('settingsStatus').textContent='Saving…'; }
+async function testGithub(){
+  readSettingsFromUI();
+  document.getElementById('settingsStatus').textContent='Testing…';
+  try { const r=await gh(repoBase()); document.getElementById('settingsStatus').textContent='✓ Connected to '+r.full_name+' (default '+r.default_branch+')'; logln('GitHub OK: '+r.full_name); }
+  catch(e){ document.getElementById('settingsStatus').textContent='✗ '+e.message; logln('GitHub test failed: '+e.message); }
+}
+function renderMapList(){
+  const wrap=document.getElementById('mapList'); wrap.innerHTML='';
+  const colls = SNAP ? SNAP.collections : [];
+  if(!colls.length){ wrap.innerHTML='<p class="hint">No local collections found yet — open in a file with variables, or hit Refresh.</p>'; return; }
+  colls.forEach(c=>{
+    const div=document.createElement('div'); div.className='collrow'; div.dataset.coll=c.name;
+    const guess = SETTINGS.mappings[c.name] || '';
+    div.innerHTML='<span style="width:200px; font-weight:600;">'+escapeHtml(c.name)+'</span><input type="text" value="'+escapeHtml(guess)+'" placeholder="'+escapeHtml(SETTINGS.dir+'/'+slug(c.name)+'.json')+'" />';
+    wrap.appendChild(div);
+  });
+}
+async function autoMap(){
+  readSettingsFromUI();
+  if(!SETTINGS.pat||!SETTINGS.owner||!SETTINGS.repo){ alert('Set PAT, owner and repo first.'); return; }
+  try {
+    logln('Listing JSON files under '+SETTINGS.dir+'…');
+    const files = await ghListJsonUnderDir();
+    logln('Found '+files.length+' JSON files.');
+    SNAP.collections.forEach(c=>{
+      const target = slug(c.name);
+      let best=null, bestScore=-1;
+      files.forEach(f=>{
+        const base=f.split('/').pop().replace(/\.json$/i,'');
+        const s = similarity(slug(base), target);
+        if(s>bestScore){ bestScore=s; best=f; }
+      });
+      if(best && bestScore>0.5){ SETTINGS.mappings[c.name]=best; }
+    });
+    renderMapList();
+    logln('Auto-map done. Review and Save settings.');
+  } catch(e){ logln('Auto-map failed: '+e.message); alert(e.message); }
+}
+function slug(s){ return String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
+function similarity(a,b){ if(a===b) return 1; if(a.indexOf(b)!==-1||b.indexOf(a)!==-1) return 0.8; // token overlap
+  const sa=new Set(a.split('-')), sb=new Set(b.split('-')); let inter=0; sa.forEach(x=>{ if(sb.has(x)) inter++; });
+  return inter/Math.max(sa.size,sb.size,1); }
+function escapeHtml(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+// ════════════════════════════════════════════════════════════════════════════
+//  SYNC: collection list + diff + pull + push
+// ════════════════════════════════════════════════════════════════════════════
+function renderCollList(){
+  const wrap=document.getElementById('collList'); wrap.innerHTML='';
+  if(!SNAP||!SNAP.collections.length){ wrap.innerHTML='<p class="hint">No local variable collections in this file.</p>'; return; }
+  SNAP.collections.forEach(c=>{
+    const mapped = SETTINGS.mappings[c.name];
+    const div=document.createElement('div'); div.className='collrow';
+    div.innerHTML='<label style="margin:0;"><input type="checkbox" class="collChk" value="'+escapeHtml(c.name)+'" '+(mapped?'checked':'')+' /> '+escapeHtml(c.name)+'</label>'+
+      '<span class="muted" style="font-size:11px;">'+c.variables.length+' vars · '+c.modes.length+' mode(s) → '+(mapped?'<code>'+escapeHtml(mapped)+'</code>':'<span class="pill missing">unmapped</span>')+'</span>';
+    wrap.appendChild(div);
+  });
+}
+function selectedCollections(){ return Array.from(document.querySelectorAll('.collChk:checked')).map(c=>c.value); }
+
+async function loadBaseline(){
+  try { const f=await ghGetFile(SETTINGS.baseline, SETTINGS.base); return f?JSON.parse(f.content):{}; }
+  catch(e){ logln('Baseline read note: '+e.message); return {}; }
+}
+
+async function scanDiff(){
+  if(!ensureGit()) return;
+  const colls = selectedCollections();
+  if(!colls.length){ alert('Select at least one mapped collection.'); return; }
+  setBanner('syncBanner','', null);
+  logln('── Scan & diff ──');
+  const baseline = await loadBaseline();
+  LAST_DIFF=[]; RESOLUTIONS={};
+  for(const cname of colls){
+    const coll = SNAP.collections.find(c=>c.name===cname);
+    const path = SETTINGS.mappings[cname];
+    if(!path){ logln('  ⚠ '+cname+': no mapping, skipped.'); continue; }
+    if(coll.modes.length>1) logln('  ⚠ '+cname+': '+coll.modes.length+' modes — diff uses the DEFAULT mode only (multi-mode JSON round-trip is a follow-up).');
+    let gitTree={}; const gf=await ghGetFile(path, SETTINGS.base);
+    if(gf){ try{ gitTree=JSON.parse(gf.content); }catch(e){ logln('  ✗ '+path+': JSON parse error'); continue; } }
+    else logln('  · '+path+' not in repo yet (treated as empty).');
+    const figFlat = flattenTree(collectionToTree(coll));
+    const gitFlat = flattenTree(gitTree);
+    const baseFlat = baseline[cname] || {};
+    const allPaths = new Set([...Object.keys(figFlat), ...Object.keys(gitFlat)]);
+    allPaths.forEach(p=>{
+      const f=figFlat[p], g=gitFlat[p];
+      const fv = f?normalizeValue(f.value,f.type):undefined;
+      const gv = g?normalizeValue(g.value,g.type):undefined;
+      const bv = baseFlat[p];
+      let status;
+      if(fv===gv) status='same';
+      else if(f && !g) status='figma-add';
+      else if(!f && g) status='git-add';
+      else { // both exist, differ
+        const fChanged = (bv===undefined) ? true : (fv!==bv);
+        const gChanged = (bv===undefined) ? true : (gv!==bv);
+        if(fChanged && gChanged) status='conflict';
+        else if(fChanged) status='figma';
+        else status='git';
+      }
+      if(status!=='same'){
+        LAST_DIFF.push({ collection:cname, path:p, figma:f?f.value:'(none)', git:g?g.value:'(none)',
+                         figmaType:f?f.type:(g?g.type:'unknown'), status:status });
+      }
+    });
+  }
+  renderDiff();
+}
+
+function renderDiff(){
+  const card=document.getElementById('diffCard'); card.style.display='block';
+  const tb=document.querySelector('#diffTable tbody'); tb.innerHTML='';
+  const counts={};
+  LAST_DIFF.forEach((d,i)=>{
+    counts[d.status]=(counts[d.status]||0)+1;
+    const tr=document.createElement('tr');
+    const resolve = d.status==='conflict'
+      ? '<button onclick="resolveRow('+i+',\'figma\')" id="rf'+i+'">Keep Figma</button> <button onclick="resolveRow('+i+',\'git\')" id="rg'+i+'">Keep Git</button>'
+      : '';
+    tr.innerHTML='<td>'+escapeHtml(d.collection)+'</td><td class="mono">'+escapeHtml(d.path)+'</td>'+
+      '<td>'+valCell(d.figma,d.figmaType)+'</td><td>'+valCell(d.git,d.figmaType)+'</td>'+
+      '<td><span class="pill '+pillClass(d.status)+'">'+d.status+(RESOLUTIONS[d.collection+'|'+d.path]?(' → '+RESOLUTIONS[d.collection+'|'+d.path]):'')+'</span></td><td>'+resolve+'</td>';
+    tb.appendChild(tr);
+  });
+  document.getElementById('diffSummary').textContent =
+    LAST_DIFF.length+' difference(s): '+Object.keys(counts).map(k=>counts[k]+' '+k).join(', ');
+  const nConf = (counts['conflict']||0);
+  if(nConf>0) setBanner('syncBanner','bad', '<b>'+nConf+' conflict(s)</b> — same token changed on both sides. Resolve each before pulling/pushing, or they will be skipped.');
+  else if(LAST_DIFF.length===0) setBanner('syncBanner','ok','In sync — no differences on the selected collections.');
+  else setBanner('syncBanner','warn', LAST_DIFF.length+' non-conflicting difference(s). Pull (Figma→JSON) and/or Push (JSON→Figma) to reconcile.');
+}
+function pillClass(s){ if(s==='conflict')return 'conflict'; if(s==='figma'||s==='figma-add')return 'figma'; if(s==='git'||s==='git-add')return 'git'; return 'missing'; }
+function valCell(v,type){
+  if(v===undefined||v==='(none)') return '<span class="muted">(none)</span>';
+  if((type||'').toLowerCase()==='color' && /^#/.test(String(v))) return '<span class="swatch" style="background:'+escapeHtml(v)+'"></span><span class="mono">'+escapeHtml(v)+'</span>';
+  return '<span class="mono">'+escapeHtml(String(v))+'</span>';
+}
+function resolveRow(i,side){ const d=LAST_DIFF[i]; RESOLUTIONS[d.collection+'|'+d.path]=side; renderDiff(); }
+
+function ensureGit(){
+  if(!SETTINGS.pat||!SETTINGS.owner||!SETTINGS.repo){ alert('Configure GitHub (PAT, owner, repo) in Settings first.'); return false; }
+  return true;
+}
+
+// PULL: write current Figma state → JSON files on a new branch + open a PR
+async function pullToPR(){
+  if(!ensureGit()) return;
+  const colls = selectedCollections().filter(c=>SETTINGS.mappings[c]);
+  if(!colls.length){ alert('Select at least one mapped collection.'); return; }
+  logln('── Pull → PR ──');
+  try {
+    const files=[]; let changed=0;
+    for(const cname of colls){
+      const coll=SNAP.collections.find(c=>c.name===cname);
+      const path=SETTINGS.mappings[cname];
+      const gf=await ghGetFile(path, SETTINGS.base);
+      let existing=null; if(gf){ try{ existing=JSON.parse(gf.content); }catch(e){} }
+      // honor conflict resolutions: only overwrite git where resolution!=='git'
+      const merged=mergeFigmaIntoTree(existing, coll);
+      // revert any tokens the user chose "Keep Git" for
+      LAST_DIFF.filter(d=>d.collection===cname && RESOLUTIONS[d.collection+'|'+d.path]==='git').forEach(d=>{
+        setLeafValue(merged, d.path, d.git);
+      });
+      const newStr=JSON.stringify(merged,null,2)+'\n';
+      const oldStr=gf?gf.content:null;
+      if(newStr!==oldStr){ files.push({path:path, content:newStr}); changed++; }
+      else logln('  · '+cname+': no change.');
+    }
+    if(!files.length){ logln('Nothing to pull — JSON already matches Figma.'); setBanner('syncBanner','ok','Nothing to pull — JSON already matches Figma.'); return; }
+    const branch=SETTINGS.prefix+'-'+stamp();
+    logln('  Committing '+files.length+' file(s) to branch '+branch+'…');
+    await ghCommitFilesToBranch(files, branch, 'tokens: sync from Figma ('+files.length+' file(s))');
+    const pr=await ghOpenPR(branch, 'Token sync from Figma', 'Automated by HighRise Token Sync.\n\nCollections: '+colls.join(', ')+'\n\nReview the value changes before merging.');
+    logln('  ✓ PR opened: '+pr.html_url);
+    setBanner('syncBanner','ok','Pull done — PR opened: <a href="'+pr.html_url+'" target="_blank">'+pr.html_url+'</a>');
+    post('notify',{message:'Pull complete — PR opened.'});
+  } catch(e){ logln('  ✗ Pull failed: '+e.message); setBanner('syncBanner','bad','Pull failed: '+escapeHtml(e.message)); }
+}
+function setLeafValue(tree, path, value){
+  const parts=path.split('/'); let n=tree;
+  for(let i=0;i<parts.length-1;i++){ if(!n[parts[i]])return; n=n[parts[i]]; }
+  if(n[parts[parts.length-1]]) n[parts[parts.length-1]].value=value;
+}
+
+// PUSH: read JSON files → apply to Figma variables (via main thread)
+async function pushFromJson(){
+  if(!ensureGit()) return;
+  const colls = selectedCollections().filter(c=>SETTINGS.mappings[c]);
+  if(!colls.length){ alert('Select at least one mapped collection.'); return; }
+  logln('── Push ← JSON ──');
+  try {
+    const plan=[];
+    for(const cname of colls){
+      const path=SETTINGS.mappings[cname];
+      const gf=await ghGetFile(path, SETTINGS.base);
+      if(!gf){ logln('  ⚠ '+cname+': '+path+' not found, skipped.'); continue; }
+      let tree; try{ tree=JSON.parse(gf.content); }catch(e){ logln('  ✗ '+path+': parse error'); continue; }
+      let flat=flattenTree(tree);
+      // honor resolutions: skip tokens the user chose "Keep Figma" for (don't overwrite Figma)
+      const tokens=[];
+      Object.keys(flat).forEach(p=>{
+        if(RESOLUTIONS[cname+'|'+p]==='figma') return;
+        const leaf=flat[p];
+        tokens.push({ path:p, type:leaf.type, isRef:isRef(leaf.value), ref:isRef(leaf.value)?leaf.value:undefined, value:leaf.value, description:leaf.description });
+      });
+      plan.push({ collectionName:cname, tokens:tokens });
+      logln('  '+cname+': '+tokens.length+' token(s) queued.');
+    }
+    if(!plan.length){ logln('Nothing to push.'); return; }
+    post('apply-push',{ plan:plan });
+    logln('  Sent to Figma — applying…');
+  } catch(e){ logln('  ✗ Push failed: '+e.message); setBanner('syncBanner','bad','Push failed: '+escapeHtml(e.message)); }
+}
+
+// APPLY RESOLUTIONS: push the "Keep Git" winners to Figma AND pull the "Keep Figma" winners to JSON
+async function applyResolutions(){
+  const keys=Object.keys(RESOLUTIONS);
+  if(!keys.length){ alert('No resolutions chosen. Use Scan & diff, then Keep Figma / Keep Git on conflicts.'); return; }
+  logln('── Apply resolutions ('+keys.length+') ──');
+  await pushFromJson();   // applies Keep-Git winners (skips Keep-Figma)
+  await pullToPR();       // writes Keep-Figma winners to JSON (reverts Keep-Git in the file)
+}
+
+// SAVE BASELINE: store normalized current state so future diffs are 3-way
+async function saveBaseline(){
+  if(!ensureGit()) return;
+  logln('── Save baseline ──');
+  try {
+    const baseline={};
+    for(const coll of SNAP.collections){
+      const path=SETTINGS.mappings[coll.name]; if(!path) continue;
+      const flat=flattenTree(collectionToTree(coll)); const m={};
+      Object.keys(flat).forEach(p=>{ m[p]=normalizeValue(flat[p].value, flat[p].type); });
+      baseline[coll.name]=m;
+    }
+    const content=JSON.stringify(baseline,null,2)+'\n';
+    const branch=SETTINGS.prefix+'-baseline-'+stamp();
+    await ghCommitFilesToBranch([{path:SETTINGS.baseline, content:content}], branch, 'tokens: update sync baseline');
+    const pr=await ghOpenPR(branch, 'Update token sync baseline', 'Snapshot of the converged token state for 3-way diffing.');
+    logln('  ✓ Baseline PR: '+pr.html_url);
+    setBanner('syncBanner','ok','Baseline PR opened: <a href="'+pr.html_url+'" target="_blank">'+pr.html_url+'</a> (merge it to enable 3-way conflict detection).');
+  } catch(e){ logln('  ✗ Baseline failed: '+e.message); setBanner('syncBanner','bad','Baseline failed: '+escapeHtml(e.message)); }
+}
+function stamp(){ const d=new Date(); const p=n=>('0'+n).slice(-2); return d.getFullYear()+p(d.getMonth()+1)+p(d.getDate())+'-'+p(d.getHours())+p(d.getMinutes())+p(d.getSeconds()); }
+
+// ════════════════════════════════════════════════════════════════════════════
+//  INSPECTOR
+// ════════════════════════════════════════════════════════════════════════════
+function renderInspector(){
+  const sel=document.getElementById('insColl'); sel.innerHTML='';
+  (SNAP?SNAP.collections:[]).forEach(c=>{ const o=document.createElement('option'); o.value=c.id; o.textContent=c.name+' ('+c.variables.length+')'; sel.appendChild(o); });
+  renderInsModes(); renderInsVars();
+}
+function curInsColl(){ const id=document.getElementById('insColl').value; return SNAP.collections.find(c=>c.id===id); }
+function renderInsModes(){
+  const c=curInsColl(); const sel=document.getElementById('insMode'); sel.innerHTML='';
+  if(!c) return; c.modes.forEach(m=>{ const o=document.createElement('option'); o.value=m.modeId; o.textContent=m.name; sel.appendChild(o); });
+  sel.value=c.defaultModeId;
+}
+function renderInsVars(){
+  const c=curInsColl(); const tb=document.querySelector('#insTable tbody'); tb.innerHTML='';
+  if(!c) return;
+  const f=document.getElementById('insFilter').value.toLowerCase();
+  const modeId=document.getElementById('insMode').value||c.defaultModeId;
+  c.variables.filter(v=>v.name.toLowerCase().indexOf(f)!==-1).forEach(v=>{
+    const slot=v.valuesByMode[modeId]||v.valuesByMode[Object.keys(v.valuesByMode)[0]];
+    let resolves;
+    if(slot.alias) resolves='<span class="pill figma">alias</span> '+escapeHtml(slot.targetName||'')+' <span class="muted">('+escapeHtml(slot.targetCollection||'')+')</span>';
+    else resolves=valCell(slot.value, figmaTypeToTokenType(v.resolvedType));
+    const tr=document.createElement('tr'); tr.style.cursor='pointer';
+    tr.onclick=()=>selectIns(v.id, modeId, v.name);
+    tr.innerHTML='<td class="mono">'+escapeHtml(v.name)+'</td><td>'+resolves+'</td>';
+    tb.appendChild(tr);
+  });
+}
+function selectIns(variableId, modeId, name){
+  INS_SELECTED={variableId:variableId, modeId:modeId, name:name};
+  document.getElementById('chainView').innerHTML='<span class="muted">Resolving chain…</span>';
+  document.getElementById('reassignCard').style.display='block';
+  document.getElementById('reTargetSearch').value='';
+  renderReTargets();
+  post('resolve-chain',{variableId:variableId, modeId:modeId});
+}
+function renderChain(steps){
+  const wrap=document.getElementById('chainView');
+  if(!steps||!steps.length){ wrap.innerHTML='<span class="muted">No chain.</span>'; return; }
+  let html='<div class="chain">';
+  steps.forEach((s,i)=>{
+    const lvl = (i===0)?'token':(s.kind==='raw'?'value':'alias→');
+    let right;
+    if(s.kind==='raw'){
+      const isColor=(s.type==='COLOR');
+      right=(isColor&&/^#/.test(String(s.value))?'<span class="swatch" style="background:'+escapeHtml(s.value)+'"></span>':'')+'<span class="mono">'+escapeHtml(String(s.value))+'</span>';
+    } else if(s.kind==='broken'){ right='<span class="pill conflict">broken</span> '+escapeHtml(s.note||''); }
+    else right='<span class="mono">'+escapeHtml(s.name)+'</span>';
+    html+='<div class="chain-step '+(s.kind==='raw'?'raw':'')+'"><span class="lvl">'+lvl+'</span><div style="flex:1;">'+right+'<div class="muted" style="font-size:10px;">'+escapeHtml(s.collection||'')+(s.type?(' · '+s.type):'')+'</div></div></div>';
+    if(i<steps.length-1) html+='<div class="chain-arrow">↓</div>';
+  });
+  html+='</div>';
+  wrap.innerHTML=html;
+}
+function allTargetVars(){
+  // local vars + library vars, as {name, collection, key?}
+  const list=[];
+  (SNAP?SNAP.collections:[]).forEach(c=> c.variables.forEach(v=> list.push({name:v.name, collection:c.name, local:true})));
+  (SNAP?SNAP.libraryCollections:[]).forEach(lc=> lc.variables.forEach(v=> list.push({name:v.name, collection:lc.name, key:v.key})));
+  return list;
+}
+function renderReTargets(){
+  const q=document.getElementById('reTargetSearch').value.toLowerCase();
+  const tb=document.querySelector('#reTargetTable tbody')||document.getElementById('reTargetTable');
+  const rows=allTargetVars().filter(t=>t.name.toLowerCase().indexOf(q)!==-1).slice(0,60);
+  tb.innerHTML='';
+  rows.forEach(t=>{
+    const tr=document.createElement('tr'); tr.style.cursor='pointer';
+    tr.onclick=()=>applyReassign(t);
+    tr.innerHTML='<td class="mono">'+escapeHtml(t.name)+'</td><td class="muted">'+escapeHtml(t.collection)+(t.local?' · local':'')+'</td>';
+    tb.appendChild(tr);
+  });
+  if(!rows.length) tb.innerHTML='<tr><td class="muted">No matches.</td></tr>';
+}
+function applyReassign(t){
+  if(!INS_SELECTED) return;
+  if(!confirm('Point "'+INS_SELECTED.name+'" at "'+t.name+'"?')) return;
+  logln('Reassign '+INS_SELECTED.name+' → '+t.name);
+  post('reassign-alias',{ variableId:INS_SELECTED.variableId, modeId:INS_SELECTED.modeId, targetName:t.name, targetKey:t.key });
+}
+function applyRawValue(){
+  if(!INS_SELECTED) return;
+  const v=document.getElementById('rawValueInput').value.trim(); if(!v) return;
+  logln('Set raw '+INS_SELECTED.name+' = '+v);
+  post('set-raw',{ variableId:INS_SELECTED.variableId, modeId:INS_SELECTED.modeId, rawValue:v });
+}
+
+// ════════════════════════════════════════════════════════════════════════════
+//  MESSAGES FROM MAIN
+// ════════════════════════════════════════════════════════════════════════════
+window.onmessage = (e)=>{
+  const msg=e.data.pluginMessage; if(!msg) return;
+  switch(msg.type){
+    case 'settings':
+      if(msg.settings) SETTINGS=Object.assign(SETTINGS, msg.settings);
+      fillSettings();
+      break;
+    case 'settings-saved':
+      document.getElementById('settingsStatus').textContent = msg.ok?'✓ Saved.':'✗ Save failed.';
+      renderCollList();
+      break;
+    case 'snapshot':
+      SNAP=msg.snapshot;
+      document.getElementById('fileName').textContent='File: '+SNAP.fileName+' · '+SNAP.collections.length+' local collection(s)';
+      if(SNAP.libraryWarning) logln('⚠ '+SNAP.libraryWarning);
+      renderCollList(); renderMapList(); renderInspector();
+      break;
+    case 'chain':
+      renderChain(msg.steps);
+      break;
+    case 'push-done': {
+      const s=msg.summary;
+      logln('✓ Push applied: +'+s.totalCreated+' created, '+s.totalReused+' reused, '+s.totalErrors+' error(s).');
+      s.collections.forEach(c=>{ if(c.errors.length) c.errors.forEach(er=>logln('    ⚠ '+c.name+': '+er)); });
+      if(s.warnings) s.warnings.forEach(w=>logln('    ⚠ '+w));
+      setBanner('syncBanner', s.totalErrors?'warn':'ok', 'Push applied: +'+s.totalCreated+' created, '+s.totalReused+' reused'+(s.totalErrors?(', '+s.totalErrors+' error(s) — see Log'):'')+'.');
+      break;
+    }
+    case 'edit-done':
+      logln('✓ '+(msg.result.name)+' → '+(msg.result.target||msg.result.value)+(msg.result.warning?(' ⚠ '+msg.result.warning):''));
+      post('notify',{message:'Updated '+msg.result.name});
+      break;
+    case 'log':
+      logln(msg.message);
+      break;
+    case 'error':
+      logln('✗ ERROR: '+msg.message+(msg.stack?('\n'+msg.stack):''));
+      setBanner('syncBanner','bad','Error: '+escapeHtml(msg.message));
+      break;
+  }
+};
+
+post('ui-ready');
+</script>
+</body>
+</html>
