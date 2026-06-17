@@ -16,107 +16,150 @@
       "border": {
         "radius": {
           "rounded": {
-            "3xs": {
-              "value": "{border.radius.full}",
-              "type": "dimension"
-            },
-            "2xs": {
-              "value": "{border.radius.full}",
-              "type": "dimension"
-            },
-            "xs": {
-              "value": "{border.radius.full}",
-              "type": "dimension"
-            },
-            "sm": {
-              "value": "{border.radius.full}",
-              "type": "dimension"
-            },
-            "md": {
-              "value": "{border.radius.full}",
-              "type": "dimension"
-            },
-            "lg": {
-              "value": "{border.radius.full}",
-              "type": "dimension"
-            },
-            "xl": {
-              "value": "{border.radius.full}",
-              "type": "dimension"
-            },
-            "2xl": {
-              "value": "{border.radius.full}",
-              "type": "dimension"
-            }
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Avatar container border radius for rounded=True - fully circular pill (rendered via rounded-[200px] in Figma — effectively 50%)"
           },
           "square": {
             "3xs": {
-              "value": "{border.radius.0[25]}",
-              "type": "dimension"
+              "value": "{border.radius.2xs}",
+              "type": "dimension",
+              "description": "Avatar container border radius for square=True - 2px (rounded square for grid/list contexts)"
             },
             "2xs": {
-              "value": "{border.radius.0[5]}",
-              "type": "dimension"
+              "value": "{border.radius.2xs}",
+              "type": "dimension",
+              "description": "Avatar container border radius for square=True - 2px (rounded square for grid/list contexts)"
             },
             "xs": {
-              "value": "{border.radius.1}",
-              "type": "dimension"
+              "value": "{border.radius.xs}",
+              "type": "dimension",
+              "description": "Avatar container border radius for square=True - 4px (rounded square for grid/list contexts)"
             },
             "sm": {
-              "value": "{border.radius.1[5]}",
-              "type": "dimension"
+              "value": "{border.radius.sm}",
+              "type": "dimension",
+              "description": "Avatar container border radius for square=True - 6px (rounded square for grid/list contexts)"
             },
             "md": {
-              "value": "{border.radius.2}",
-              "type": "dimension"
+              "value": "{border.radius.md}",
+              "type": "dimension",
+              "description": "Avatar container border radius for square=True - 8px (rounded square for grid/list contexts)"
             },
             "lg": {
-              "value": "{border.radius.2}",
-              "type": "dimension"
+              "value": "{border.radius.md}",
+              "type": "dimension",
+              "description": "Avatar container border radius for square=True - 8px (rounded square for grid/list contexts)"
             },
             "xl": {
-              "value": "{border.radius.2}",
-              "type": "dimension"
+              "value": "{border.radius.md}",
+              "type": "dimension",
+              "description": "Avatar container border radius for square=True - 8px (rounded square for grid/list contexts)"
             },
             "2xl": {
-              "value": "{border.radius.2}",
-              "type": "dimension"
+              "value": "{border.radius.md}",
+              "type": "dimension",
+              "description": "Avatar container border radius for square=True - 8px (rounded square for grid/list contexts)"
             }
           }
         }
       },
       "size": {
         "3xs": {
-          "value": "{size.2[5]}",
-          "type": "dimension"
+          "value": "{size.6xs}",
+          "type": "dimension",
+          "description": "Avatar size for 3xs variant - 12px"
         },
         "2xs": {
-          "value": "{size.4}",
-          "type": "dimension"
+          "value": "{size.5xs}",
+          "type": "dimension",
+          "description": "Avatar size for 2xs variant - 16px"
         },
         "xs": {
-          "value": "{size.6}",
-          "type": "dimension"
+          "value": "{size.3xs}",
+          "type": "dimension",
+          "description": "Avatar size for xs variant - 24px"
         },
         "sm": {
-          "value": "{size.8}",
-          "type": "dimension"
+          "value": "{size.xs}",
+          "type": "dimension",
+          "description": "Avatar size for sm variant - 32px"
         },
         "md": {
-          "value": "{size.10}",
-          "type": "dimension"
+          "value": "{size.md}",
+          "type": "dimension",
+          "description": "Avatar size for md variant - 40px"
         },
         "lg": {
-          "value": "{size.12}",
-          "type": "dimension"
+          "value": "{size.xl}",
+          "type": "dimension",
+          "description": "Avatar size for lg variant - 48px"
         },
         "xl": {
-          "value": "{size.14}",
-          "type": "dimension"
+          "value": "{size.2xl}",
+          "type": "dimension",
+          "description": "Avatar size for xl variant - 56px"
         },
         "2xl": {
-          "value": "{size.16}",
-          "type": "dimension"
+          "value": "{size.3xl}",
+          "type": "dimension",
+          "description": "Avatar size for 2xl variant - 64px"
+        }
+      },
+      "loader": {
+        "color": {
+          "track": {
+            "value": "{color.icon.primary.subtle.0}",
+            "type": "color",
+            "description": "Avatar loader track color - primary/200 - #b2ccff"
+          },
+          "active": {
+            "value": "{color.icon.primary.default}",
+            "type": "color",
+            "description": "Avatar loader active color - primary/700 - #004eeb"
+          }
+        },
+        "size": {
+          "3xs": {
+            "value": "{size.icon.2xs}",
+            "type": "dimension",
+            "description": "Avatar loader size for 3xs variant - 14px"
+          },
+          "2xs": {
+            "value": "{size.icon.sm}",
+            "type": "dimension",
+            "description": "Avatar loader size for 2xs variant - 18px"
+          },
+          "xs": {
+            "value": "{size.icon.xl}",
+            "type": "dimension",
+            "description": "Avatar loader size for xs variant - 28px"
+          },
+          "sm": {
+            "value": "{size.icon.3xl}",
+            "type": "dimension",
+            "description": "Avatar loader size for sm variant - 36px"
+          },
+          "md": {
+            "value": "{size.icon.11}",
+            "type": "dimension",
+            "description": "Avatar loader size for md variant - 44px"
+          },
+          "lg": {
+            "value": "{size.icon.13}",
+            "type": "dimension",
+            "description": "Avatar loader size for lg variant - 52px"
+          },
+          "xl": {
+            "value": "{size.icon.15}",
+            "type": "dimension",
+            "description": "Avatar loader size for xl variant - 60px"
+          },
+          "2xl": {
+            "value": "{size.icon.17}",
+            "type": "dimension",
+            "description": "Avatar loader size for 2xl variant - 68px"
+          }
         }
       }
     },
@@ -160,43 +203,119 @@
         }
       }
     },
-    "icon": {
+    "custom-icon": {
       "color": {
         "value": "{color.icon.neutral.moderate.2}",
         "type": "color"
       },
       "size": {
+        "md": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "Avatar custom icon size for md variant - 10px"
+        },
+        "lg": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Avatar custom icon size for lg variant - 12px"
+        },
+        "xl": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Avatar custom icon size for xl variant - 14px"
+        },
+        "2xl": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Avatar custom icon size for 2xl variant - 16px"
+        }
+      }
+    },
+    "middle-icon": {
+      "color": {
+        "value": "{color.icon.neutral.base}",
+        "type": "color",
+        "description": "Avatar middle icon color - gray/0 - #ffffff"
+      },
+      "size": {
+        "xs": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "Avatar middle icon size for xs variant - 10px"
+        },
+        "sm": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "Avatar middle icon size for sm variant - 10px"
+        },
+        "md": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Avatar middle icon size for md variant - 16px"
+        },
+        "lg": {
+          "value": "{size.icon.xs}",
+          "type": "dimension",
+          "description": "Avatar middle icon size for lg variant - 16px"
+        },
+        "xl": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Avatar middle icon size for xl variant - 20px"
+        },
+        "2xl": {
+          "value": "{size.icon.lg}",
+          "type": "dimension",
+          "description": "Avatar middle icon size for 2xl variant - 24px"
+        }
+      }
+    },
+    "placeholder-icon": {
+      "color": {
+        "value": "{color.icon.neutral.moderate.2}",
+        "type": "color",
+        "description": "Avatar placeholder icon color - gray/600 - #475467"
+      },
+      "size": {
         "3xs": {
-          "value": "{size.icon.6xs}",
-          "type": "dimension"
+          "value": "{size.icon.5xs}",
+          "type": "dimension",
+          "description": "Avatar placeholder icon size for 3xs variant - 8px"
         },
         "2xs": {
           "value": "{size.icon.4xs}",
-          "type": "dimension"
+          "type": "dimension",
+          "description": "Avatar placeholder icon size for 2xs variant - 10px"
         },
         "xs": {
           "value": "{size.icon.xs}",
-          "type": "dimension"
+          "type": "dimension",
+          "description": "Avatar placeholder icon size for xs variant - 16px"
         },
         "sm": {
           "value": "{size.icon.md}",
-          "type": "dimension"
+          "type": "dimension",
+          "description": "Avatar placeholder icon size for sm variant - 20px"
         },
         "md": {
           "value": "{size.icon.lg}",
-          "type": "dimension"
+          "type": "dimension",
+          "description": "Avatar placeholder icon size for md variant - 24px"
         },
         "lg": {
           "value": "{size.icon.xl}",
-          "type": "dimension"
+          "type": "dimension",
+          "description": "Avatar placeholder icon size for lg variant - 28px"
         },
         "xl": {
-        "value": "{size.icon.2xl}",
-        "type": "dimension"
+          "value": "{size.icon.2xl}",
+          "type": "dimension",
+          "description": "Avatar placeholder icon size for xl variant - 32px"
         },
         "2xl": {
           "value": "{size.icon.2xl}",
-          "type": "dimension"
+          "type": "dimension",
+          "description": "Avatar placeholder icon size for 2xl variant - 32px"
         }
       }
     },
@@ -335,4 +454,4 @@
       }
     }
   }
-} 
+}
