@@ -35,12 +35,12 @@
         "description": "Mobile snackbar container fixed width - 361px"
       },
       "padding": {
-        "value": "{padding.4}",
+        "value": "{padding.lg}",
         "type": "dimension",
         "description": "Mobile snackbar container padding on all sides - 16px"
       },
       "gap": {
-        "value": "{gap.2}",
+        "value": "{gap.xs}",
         "type": "dimension",
         "description": "Mobile snackbar container flex-col gap (between content row and any future stacked content) - 8px"
       },
@@ -77,7 +77,7 @@
     "content": {
       "$comment": "Horizontal content row — gap between all children (leading, text, action, dismiss)",
       "gap": {
-        "value": "{gap.4}",
+        "value": "{gap.xl}",
         "type": "dimension",
         "description": "Mobile snackbar content row horizontal gap between leading content, message text, action button, and dismiss icon - 16px"
       }
@@ -86,9 +86,9 @@
       "$comment": "Body text — near-white on dark background",
       "color": {
         "text": {
-          "value": "{color.neutral.gray.25}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "Mobile snackbar message text color - neutral/gray.25 - #fcfcfd (near-white for dark background)"
+          "description": "Mobile snackbar message text color - neutral/base - #ffffff"
         }
       },
       "typography": {

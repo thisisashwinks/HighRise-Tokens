@@ -185,16 +185,18 @@
         "$comment": "Primary color variant - blue color scheme for primary actions",
         "outline": {
           "$comment": "Primary outline style - colored border with light background",
+          "tag-loader": {
+            "background": {
+              "value": "{color.background.primary.default}",
+              "type": "color",
+              "description": "Mobile primary tag label background - blue/600 - #155eef"
+            }
+          },
           "background": {
             "default": {
-              "value": "{color.background.neutral.base}",
+              "value": "{color.background.primary.intense.0}",
               "type": "color",
-              "description": "Mobile primary tag outline default background - white/base - #ffffff"
-            },
-            "hover": {
-              "value": "{color.background.primary.subtle.1}",
-              "type": "color",
-              "description": "Mobile primary tag outline hover background - blue/100 - #eef4ff"
+              "description": "Mobile primary tag outline default background - blue/700 - #004eeb"
             },
             "active": {
               "value": "{color.background.primary.subtle.2}",
@@ -205,11 +207,6 @@
               "value": "{color.background.primary.subtle.1}",
               "type": "color",
               "description": "Mobile primary tag outline focused background - blue/100 - #eef4ff"
-            },
-            "disabled": {
-              "value": "{color.background.neutral.subtle.1}",
-              "type": "color",
-              "description": "Mobile primary tag outline disabled background - gray/100 - #f2f4f7"
             }
           },
           "border": {
@@ -217,11 +214,6 @@
               "value": "{color.border.primary.default}",
               "type": "color",
               "description": "Mobile primary tag outline default border - blue/600 - #155eef"
-            },
-            "hover": {
-              "value": "{color.border.primary.intense.0}",
-              "type": "color",
-              "description": "Mobile primary tag outline hover border - blue/700 - #004eeb"
             },
             "active": {
               "value": "{color.border.primary.intense.1}",
@@ -232,11 +224,6 @@
               "value": "{color.border.primary.subtle.2}",
               "type": "color",
               "description": "Mobile primary tag outline focused border - blue/300 - #84adff"
-            },
-            "disabled": {
-              "value": "{color.border.primary.subtle.1}",
-              "type": "color",
-              "description": "Mobile primary tag outline disabled border - blue/200 - #d1e0ff"
             }
           },
           "text": {
@@ -244,11 +231,6 @@
               "value": "{color.text.primary.body.1}",
               "type": "color",
               "description": "Mobile primary tag outline default text - blue/700 - #004eeb"
-            },
-            "hover": {
-              "value": "{color.text.primary.title.2}",
-              "type": "color",
-              "description": "Mobile primary tag outline hover text - blue/800 - #0040c1"
             },
             "active": {
               "value": "{color.text.primary.title.1}",
@@ -259,19 +241,6 @@
               "value": "{color.text.primary.title.2}",
               "type": "color",
               "description": "Mobile primary tag outline focused text - blue/800 - #0040c1"
-            },
-            "disabled": {
-              "value": "{color.text.primary.inactive.1}",
-              "type": "color",
-              "description": "Mobile primary tag outline disabled text - blue/400 - #528bff"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring color for primary outline tag",
-            "ring": {
-              "value": "{color.border.primary.subtle.2}",
-              "type": "color",
-              "description": "Mobile primary tag outline focus ring - blue/300 - #84adff"
             }
           },
           "icon": {
@@ -279,11 +248,6 @@
               "value": "{color.icon.primary.default}",
               "type": "color",
               "description": "Mobile primary tag outline default icon - blue/700 - #004eeb"
-            },
-            "hover": {
-              "value": "{color.icon.primary.intense.0}",
-              "type": "color",
-              "description": "Mobile primary tag outline hover icon - blue/800 - #0040c1"
             },
             "active": {
               "value": "{color.icon.primary.intense.1}",
@@ -294,11 +258,6 @@
               "value": "{color.icon.primary.intense.0}",
               "type": "color",
               "description": "Mobile primary tag outline focused icon - blue/800 - #0040c1"
-            },
-            "disabled": {
-              "value": "{color.icon.primary.subtle.0}",
-              "type": "color",
-              "description": "Mobile primary tag outline disabled icon - blue/200 - #d1e0ff"
             }
           },
           "tag-count": {
@@ -316,11 +275,6 @@
                 "type": "color",
                 "description": "Mobile primary tag outline tag-count text - blue/700 - #004eeb"
               },
-              "hover": {
-                "value": "{color.text.primary.title.2}",
-                "type": "color",
-                "description": "Mobile primary tag outline tag-count hover text - blue/800 - #0040c1"
-              },
               "active": {
                 "value": "{color.text.primary.title.1}",
                 "type": "color",
@@ -336,28 +290,35 @@
         },
         "filled": {
           "$comment": "Primary filled style - solid colored background",
+          "tag-loader": {
+            "background": {
+              "value": "{color.background.primary.moderate.0}",
+              "type": "color",
+              "description": "Mobile primary tag label background - blue/300 - #84adff"
+            }
+          },
           "background": {
             "default": {
-              "value": "{color.background.primary.subtle.0}",
+              "value": "{color.background.primary.intense.0}",
               "type": "color",
-              "description": "Mobile primary tag filled default background - blue/50 - #eff8ff"
+              "description": "Mobile primary tag filled default background - blue/700 - #004eeb"
             },
             "active": {
-              "value": "{color.background.primary.subtle.2}",
+              "value": "{color.background.primary.intense.1}",
               "type": "color",
-              "description": "Mobile primary tag filled active background - blue/200 - #d1e0ff"
+              "description": "Mobile primary tag filled active background - blue/800 - #0040c1"
             },
             "focused": {
-              "value": "{color.background.primary.subtle.1}",
+              "value": "{color.background.primary.intense.0}",
               "type": "color",
-              "description": "Mobile primary tag filled focused background - blue/100 - #eef4ff"
+              "description": "Mobile primary tag filled focused background - blue/700 - #004eeb"
             }
           },
           "border": {
             "default": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.neutral.base}",
               "type": "color",
-              "description": "Mobile primary tag filled default border - transparent - #FFFFFF00"
+              "description": "Mobile primary tag filled default border - gray/0 - #ffffff"
             },
             "active": {
               "value": "{color.border.primary.intense.1}",
@@ -372,54 +333,36 @@
           },
           "text": {
             "default": {
-              "value": "{color.text.primary.body.1}",
+              "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Mobile primary tag filled default text - blue/700 - #004eeb"
+              "description": "Mobile primary tag filled default text - gray/0 - #ffffff"
             },
             "active": {
-              "value": "{color.text.primary.title.1}",
+              "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Mobile primary tag filled active text - blue/900 - #00359e"
+              "description": "Mobile primary tag filled active text - gray/0 - #ffffff"
             },
             "focused": {
-              "value": "{color.text.primary.title.2}",
+              "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Mobile primary tag filled focused text - blue/800 - #0040c1"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring color for primary filled tag",
-            "ring": {
-              "value": "{color.border.primary.subtle.2}",
-              "type": "color",
-              "description": "Mobile primary tag filled focus ring - blue/300 - #84adff"
+              "description": "Mobile primary tag filled focused text - gray/0 - #ffffff"
             }
           },
           "icon": {
             "default": {
-              "value": "{color.icon.primary.default}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile primary tag filled default icon - blue/700 - #004eeb"
-            },
-            "hover": {
-              "value": "{color.icon.primary.intense.0}",
-              "type": "color",
-              "description": "Mobile primary tag filled hover icon - blue/800 - #0040c1"
+              "description": "Mobile primary tag filled default icon - gray/0 - #ffffff"
             },
             "active": {
-              "value": "{color.icon.primary.intense.1}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile primary tag filled active icon - blue/900 - #00359e"
+              "description": "Mobile primary tag filled active icon - gray/0 - #ffffff"
             },
             "focused": {
-              "value": "{color.icon.primary.intense.0}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile primary tag filled focused icon - blue/800 - #0040c1"
-            },
-            "disabled": {
-              "value": "{color.icon.primary.subtle.0}",
-              "type": "color",
-              "description": "Mobile primary tag filled disabled icon - blue/200 - #d1e0ff"
+              "description": "Mobile primary tag filled focused icon - gray/0 - #ffffff"
             }
           },
           "tag-count": {
@@ -436,11 +379,6 @@
                 "value": "{color.text.primary.body.1}",
                 "type": "color",
                 "description": "Mobile primary tag filled tag-count text - blue/700 - #004eeb"
-              },
-              "hover": {
-                "value": "{color.text.primary.title.2}",
-                "type": "color",
-                "description": "Mobile primary tag filled tag-count hover text - blue/800 - #0040c1"
               },
               "active": {
                 "value": "{color.text.primary.title.1}",
@@ -682,16 +620,18 @@
         "$comment": "Success color variant - green color scheme for success states",
         "outline": {
           "$comment": "Success outline style - green border with light background",
+          "tag-loader": {
+            "background": {
+              "value": "{color.background.success.default}",
+              "type": "color",
+              "description": "Mobile success tag label background - green/600 - #027a48"
+            }
+          },
           "background": {
             "default": {
               "value": "{color.background.neutral.base}",
               "type": "color",
               "description": "Mobile success tag outline default background - white/base - #ffffff"
-            },
-            "hover": {
-              "value": "{color.background.success.subtle.1}",
-              "type": "color",
-              "description": "Mobile success tag outline hover background - green/100 - #d1fadf"
             },
             "active": {
               "value": "{color.background.success.subtle.2}",
@@ -702,11 +642,6 @@
               "value": "{color.background.success.subtle.1}",
               "type": "color",
               "description": "Mobile success tag outline focused background - green/100 - #d1fadf"
-            },
-            "disabled": {
-              "value": "{color.background.success.subtle.2}",
-              "type": "color",
-              "description": "Mobile success tag outline disabled background - green/200 - #a6f4c5"
             }
           },
           "border": {
@@ -741,14 +676,6 @@
               "value": "{color.text.success.title.2}",
               "type": "color",
               "description": "Mobile success tag outline focused text - green/800 - #05603a"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring color for success outline tag",
-            "ring": {
-              "value": "{color.border.success.subtle.2}",
-              "type": "color",
-              "description": "Mobile success tag outline focus ring - green/300 - #6ce9a6"
             }
           },
           "icon": {
@@ -798,28 +725,35 @@
         },
         "filled": {
           "$comment": "Success filled style - solid green background",
-          "background": {
-            "default": {
-              "value": "{color.background.success.subtle.0}",
-              "type": "color",
-              "description": "Mobile success tag filled default background - green/50 - #ecfdf3"
-            },
-            "active": {
+          "tag-loader": {
+            "background": {
               "value": "{color.background.success.subtle.2}",
               "type": "color",
-              "description": "Mobile success tag filled active background - green/200 - #a6f4c5"
+              "description": "Mobile success tag loader background - green/200 - #a6f4c5"
+            }
+          },
+          "background": {
+            "default": {
+              "value": "{color.background.success.intense.0}",
+              "type": "color",
+              "description": "Mobile success tag filled default background - green/700 - #027a48"
+            },
+            "active": {
+              "value": "{color.background.success.intense.1}",
+              "type": "color",
+              "description": "Mobile success tag filled active background - green/800 - #05603a"
             },
             "focused": {
-              "value": "{color.background.success.subtle.1}",
+              "value": "{color.background.success.intense.0}",
               "type": "color",
-              "description": "Mobile success tag filled focused background - green/100 - #d1fadf"
+              "description": "Mobile success tag filled focused background - green/700 - #027a48"
             }
           },
           "border": {
             "default": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.neutral.base}",
               "type": "color",
-              "description": "Mobile success tag filled default border - transparent - #FFFFFF00"
+              "description": "Mobile success tag filled default border - gray/0 - #ffffff"
             },
             "active": {
               "value": "{color.border.success.intense.1}",
@@ -834,44 +768,36 @@
           },
           "text": {
             "default": {
-              "value": "{color.text.success.body.1}",
+              "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Mobile success tag filled default text - green/700 - #027a48"
+              "description": "Mobile success tag filled default text - gray/0 - #ffffff"
             },
             "active": {
-              "value": "{color.text.success.title.1}",
+              "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Mobile success tag filled active text - green/900 - #054f31"
+              "description": "Mobile success tag filled active text - gray/0 - #ffffff"
             },
             "focused": {
-              "value": "{color.text.success.title.2}",
+              "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Mobile success tag filled focused text - green/800 - #05603a"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring color for success filled tag",
-            "ring": {
-              "value": "{color.border.success.subtle.2}",
-              "type": "color",
-              "description": "Mobile success tag filled focus ring - green/300 - #6ce9a6"
+              "description": "Mobile success tag filled focused text - gray/0 - #ffffff"
             }
           },
           "icon": {
             "default": {
-              "value": "{color.icon.success.moderate}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile success tag filled default icon - green/600 - #039855"
+              "description": "Mobile success tag filled default icon - gray/0 - #ffffff"
             },
             "active": {
-              "value": "{color.icon.success.intense.1}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile success tag filled active icon - green/900 - #054f31"
+              "description": "Mobile success tag filled active icon - gray/0 - #ffffff"
             },
             "focused": {
-              "value": "{color.icon.success.intense.0}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile success tag filled focused icon - green/800 - #05603a"
+              "description": "Mobile success tag filled focused icon - gray/0 - #ffffff"
             }
           },
           "tag-count": {
@@ -907,6 +833,13 @@
         "$comment": "Error color variant - red color scheme for error and destructive states",
         "outline": {
           "$comment": "Error outline style - red border with light background",
+          "tag-loader": {
+            "background": {
+              "value": "{color.background.error.default}",
+              "type": "color",
+              "description": "Mobile error tag label background - red/600 - #d92d20"
+            }
+          },
           "background": {
             "default": {
               "value": "{color.background.neutral.base}",
@@ -958,14 +891,6 @@
               "description": "Mobile error tag outline focused text - red/800 - #912018"
             }
           },
-          "focus": {
-            "$comment": "Focus ring color for error outline tag",
-            "ring": {
-              "value": "{color.border.error.subtle.2}",
-              "type": "color",
-              "description": "Mobile error tag outline focus ring - red/300 - #fda29b"
-            }
-          },
           "icon": {
             "default": {
               "value": "{color.icon.error.default}",
@@ -1013,28 +938,35 @@
         },
         "filled": {
           "$comment": "Error filled style - solid red background",
-          "background": {
-            "default": {
-              "value": "{color.background.error.subtle.0}",
-              "type": "color",
-              "description": "Mobile error tag filled default background - red/50 - #fef3f2"
-            },
-            "active": {
+          "tag-loader": {
+            "background": {
               "value": "{color.background.error.subtle.2}",
               "type": "color",
-              "description": "Mobile error tag filled active background - red/200 - #fecdca"
+              "description": "Mobile error tag loader background - red/200 - #fecdca"
+            }
+          },
+          "background": {
+            "default": {
+              "value": "{color.background.error.intense.0}",
+              "type": "color",
+              "description": "Mobile error tag filled default background - red/700 - #b42318"
+            },
+            "active": {
+              "value": "{color.background.error.intense.1}",
+              "type": "color",
+              "description": "Mobile error tag filled active background - red/800 - #912018"
             },
             "focused": {
-              "value": "{color.background.error.subtle.1}",
+              "value": "{color.background.error.intense.0}",
               "type": "color",
-              "description": "Mobile error tag filled focused background - red/100 - #fee4e2"
+              "description": "Mobile error tag filled focused background - red/700 - #b42318"
             }
           },
           "border": {
             "default": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.neutral.base}",
               "type": "color",
-              "description": "Mobile error tag filled default border - transparent - #FFFFFF00"
+              "description": "Mobile error tag filled default border - gray/0 - #ffffff"
             },
             "active": {
               "value": "{color.border.error.intense.1}",
@@ -1049,44 +981,36 @@
           },
           "text": {
             "default": {
-              "value": "{color.text.error.body.1}",
+              "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Mobile error tag filled default text - red/700 - #b42318"
+              "description": "Mobile error tag filled default text - gray/0 - #ffffff"
             },
             "active": {
-              "value": "{color.text.error.title.1}",
+              "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Mobile error tag filled active text - red/900 - #7a271a"
+              "description": "Mobile error tag filled active text - gray/0 - #ffffff"
             },
             "focused": {
-              "value": "{color.text.error.title.2}",
+              "value": "{color.text.neutral.base}",
               "type": "color",
-              "description": "Mobile error tag filled focused text - red/800 - #912018"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring color for error filled tag",
-            "ring": {
-              "value": "{color.border.error.subtle.2}",
-              "type": "color",
-              "description": "Mobile error tag filled focus ring - red/300 - #fda29b"
+              "description": "Mobile error tag filled focused text - gray/0 - #ffffff"
             }
           },
           "icon": {
             "default": {
-              "value": "{color.icon.error.moderate}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile error tag filled default icon - red/600 - #d92d20"
+              "description": "Mobile error tag filled default icon - gray/0 - #ffffff"
             },
             "active": {
-              "value": "{color.icon.error.intense.1}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile error tag filled active icon - red/900 - #7a271a"
+              "description": "Mobile error tag filled active icon - gray/0 - #ffffff"
             },
             "focused": {
-              "value": "{color.icon.error.intense.0}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile error tag filled focused icon - red/800 - #912018"
+              "description": "Mobile error tag filled focused icon - gray/0 - #ffffff"
             }
           },
           "tag-count": {
@@ -1122,6 +1046,13 @@
         "$comment": "Warning color variant - orange/yellow color scheme for warning states",
         "outline": {
           "$comment": "Warning outline style - orange border with light background",
+          "tag-loader": {
+            "background": {
+              "value": "{color.background.warning.default}",
+              "type": "color",
+              "description": "Mobile warning tag label background - orange/600 - #dc6803"
+            }
+          },
           "background": {
             "default": {
               "value": "{color.background.neutral.base}",
@@ -1173,14 +1104,6 @@
               "description": "Mobile warning tag outline focused text - orange/800 - #93370d"
             }
           },
-          "focus": {
-            "$comment": "Focus ring color for warning outline tag",
-            "ring": {
-              "value": "{color.border.warning.subtle.2}",
-              "type": "color",
-              "description": "Mobile warning tag outline focus ring - orange/300 - #fec84b"
-            }
-          },
           "icon": {
             "default": {
               "value": "{color.icon.warning.default}",
@@ -1228,38 +1151,45 @@
         },
         "filled": {
           "$comment": "Warning filled style - solid orange background",
-          "background": {
-            "default": {
-              "value": "{color.background.warning.subtle.0}",
-              "type": "color",
-              "description": "Mobile warning tag filled default background - orange/50 - #fffaeb"
-            },
-            "active": {
+          "tag-loader": {
+            "background": {
               "value": "{color.background.warning.subtle.2}",
               "type": "color",
-              "description": "Mobile warning tag filled active background - orange/200 - #fde68a"
+              "description": "Mobile warning tag loader background - warning/200 - #fde68a"
+            }
+          },
+          "background": {
+            "default": {
+              "value": "{color.background.warning.intense.0}",
+              "type": "color",
+              "description": "Mobile warning tag filled default background - warning/700 - #b54708"
+            },
+            "active": {
+              "value": "{color.background.warning.intense.1}",
+              "type": "color",
+              "description": "Mobile warning tag filled active background - warning/800 - #93370d"
             },
             "focused": {
-              "value": "{color.background.warning.subtle.1}",
+              "value": "{color.background.warning.intense.0}",
               "type": "color",
-              "description": "Mobile warning tag filled focused background - orange/100 - #fef0c7"
+              "description": "Mobile warning tag filled focused background - warning/700 - #b54708"
             }
           },
           "border": {
             "default": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.neutral.base}",
               "type": "color",
-              "description": "Mobile warning tag filled default border - transparent - #FFFFFF00"
+              "description": "Mobile warning tag filled default border - gray/0 - #ffffff"
             },
             "active": {
               "value": "{color.border.warning.intense.1}",
               "type": "color",
-              "description": "Mobile warning tag filled active border - orange/800 - #93370d"
+              "description": "Mobile warning tag filled active border - warning/800 - #93370d"
             },
             "focused": {
               "value": "{color.border.warning.moderate.0}",
               "type": "color",
-              "description": "Mobile warning tag filled focused border - orange/300 - #fec84b"
+              "description": "Mobile warning tag filled focused border - warning/300 - #fec84b"
             }
           },
           "text": {
@@ -1279,29 +1209,21 @@
               "description": "Mobile warning tag filled focused text - orange/800 - #93370d"
             }
           },
-          "focus": {
-            "$comment": "Focus ring color for warning filled tag",
-            "ring": {
-              "value": "{color.border.warning.subtle.2}",
-              "type": "color",
-              "description": "Mobile warning tag filled focus ring - orange/300 - #fec84b"
-            }
-          },
           "icon": {
             "default": {
-              "value": "{color.icon.warning.moderate}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile warning tag filled default icon - orange/600 - #dc6803"
+              "description": "Mobile warning tag filled default icon - gray/0 - #ffffff"
             },
             "active": {
-              "value": "{color.icon.warning.intense.1}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile warning tag filled active icon - orange/900 - #7a2e0e"
+              "description": "Mobile warning tag filled active icon - gray/0 - #ffffff"
             },
             "focused": {
-              "value": "{color.icon.warning.intense.0}",
+              "value": "{color.icon.neutral.base}",
               "type": "color",
-              "description": "Mobile warning tag filled focused icon - orange/800 - #93370d"
+              "description": "Mobile warning tag filled focused icon - gray/0 - #ffffff"
             }
           },
           "tag-count": {
@@ -1310,24 +1232,24 @@
               "default": {
                 "value": "{color.background.warning.inactive}",
                 "type": "color",
-                "description": "Mobile warning tag filled tag-count background - orange/50 - #fffaeb"
+                "description": "Mobile warning tag filled tag-count background - warning/50 - #fffaeb"
               }
             },
             "text": {
               "default": {
                 "value": "{color.text.warning.body.1}",
                 "type": "color",
-                "description": "Mobile warning tag filled tag-count text - orange/700 - #b54708"
+                "description": "Mobile warning tag filled tag-count text - warning/700 - #b54708"
               },
               "active": {
                 "value": "{color.text.warning.title.1}",
                 "type": "color",
-                "description": "Mobile warning tag filled tag-count active text - orange/900 - #7a2e0e"
+                "description": "Mobile warning tag filled tag-count active text - warning/900 - #7a2e0e"
               },
               "focused": {
                 "value": "{color.text.warning.title.2}",
                 "type": "color",
-                "description": "Mobile warning tag filled tag-count focused text - orange/800 - #93370d"
+                "description": "Mobile warning tag filled tag-count focused text - warning/800 - #93370d"
               }
             }
           }
@@ -1337,6 +1259,13 @@
         "$comment": "Blue Gray color variant - blue-gray/slate color scheme",
         "outline": {
           "$comment": "Blue Gray outline style - colored border with light background",
+          "tag-loader": {
+            "background": {
+              "value": "{color.background.neutral.gray-blue.600}",
+              "type": "color",
+              "description": "Mobile blue-gray tag loader background - blue-gray/600 - #475569"
+            }
+          },
           "background": {
             "default": {
               "value": "{color.background.neutral.base}",
@@ -1388,14 +1317,6 @@
               "description": "Mobile blue-gray tag outline focused text - blue-gray/800"
             }
           },
-          "focus": {
-            "$comment": "Focus ring for blue-gray outline tag",
-            "ring": {
-              "value": "{color.neutral.gray-blue.300}",
-              "type": "color",
-              "description": "Mobile blue-gray tag outline focus ring - blue-gray/300"
-            }
-          },
           "icon": {
             "default": {
               "value": "{color.neutral.gray-blue.700}",
@@ -1443,28 +1364,35 @@
         },
         "filled": {
           "$comment": "Blue Gray filled style - solid blue-gray background",
+          "tag-loader": {
+            "background": {
+              "value": "{color.background.neutral.gray-blue.300}",
+              "type": "color",
+              "description": "Mobile blue-gray tag loader background - blue-gray/300 - #d5d9eb"
+            }
+          },
           "background": {
             "default": {
-              "value": "{color.neutral.gray-blue.50}",
+              "value": "{color.neutral.gray-blue.700}",
               "type": "color",
-              "description": "Mobile blue-gray tag filled default background - blue-gray/50"
+              "description": "Mobile blue-gray tag filled default background - blue-gray/700"
             },
             "active": {
-              "value": "{color.neutral.gray-blue.200}",
+              "value": "{color.neutral.gray-blue.800}",
               "type": "color",
-              "description": "Mobile blue-gray tag filled active background - blue-gray/200"
+              "description": "Mobile blue-gray tag filled active background - blue-gray/800"
             },
             "focused": {
-              "value": "{color.neutral.gray-blue.100}",
+              "value": "{color.neutral.gray-blue.700}",
               "type": "color",
-              "description": "Mobile blue-gray tag filled focused background - blue-gray/100"
+              "description": "Mobile blue-gray tag filled focused background - blue-gray/700"
             }
           },
           "border": {
             "default": {
-              "value": "{color.border.transparent}",
+              "value": "{color.border.neutral.base}",
               "type": "color",
-              "description": "Mobile blue-gray tag filled default border - transparent"
+              "description": "Mobile blue-gray tag filled default border - gray/0 - #ffffff"
             },
             "active": {
               "value": "{color.neutral.gray-blue.800}",
@@ -1479,44 +1407,36 @@
           },
           "text": {
             "default": {
-              "value": "{color.neutral.gray-blue.700}",
+              "value": "{color.neutral.text.base}",
               "type": "color",
-              "description": "Mobile blue-gray tag filled default text - blue-gray/700"
+              "description": "Mobile blue-gray tag filled default text - gray/0 - #ffffff"
             },
             "active": {
-              "value": "{color.neutral.gray-blue.900}",
+              "value": "{color.neutral.text.base}",
               "type": "color",
-              "description": "Mobile blue-gray tag filled active text - blue-gray/900"
+              "description": "Mobile blue-gray tag filled active text - gray/0 - #ffffff"
             },
             "focused": {
-              "value": "{color.neutral.gray-blue.800}",
+              "value": "{color.neutral.text.base}",
               "type": "color",
-              "description": "Mobile blue-gray tag filled focused text - blue-gray/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for blue-gray filled tag",
-            "ring": {
-              "value": "{color.neutral.gray-blue.300}",
-              "type": "color",
-              "description": "Mobile blue-gray tag filled focus ring - blue-gray/300"
+              "description": "Mobile blue-gray tag filled focused text - gray/0 - #ffffff"
             }
           },
           "icon": {
             "default": {
-              "value": "{color.neutral.gray-blue.700}",
+              "value": "{color.neutral.icon.base}",
               "type": "color",
-              "description": "Mobile blue-gray tag filled default icon - blue-gray/700"
+              "description": "Mobile blue-gray tag filled default icon - gray/0 - #ffffff"
             },
             "active": {
-              "value": "{color.neutral.gray-blue.900}",
+              "value": "{color.neutral.icon.base}",
               "type": "color",
-              "description": "Mobile blue-gray tag filled active icon - blue-gray/900"
+              "description": "Mobile blue-gray tag filled active icon - gray/0 - #ffffff"
             },
             "focused": {
-              "value": "{color.neutral.gray-blue.800}",
+              "value": "{color.neutral.icon.base}",
               "type": "color",
-              "description": "Mobile blue-gray tag filled focused icon - blue-gray/800"
+              "description": "Mobile blue-gray tag filled focused icon - gray/0 - #ffffff"
             }
           },
           "tag-count": {
@@ -1552,6 +1472,13 @@
         "$comment": "Blue Light color variant - sky blue color scheme",
         "outline": {
           "$comment": "Blue Light outline style - colored border with light background",
+          "tag-loader": {
+            "background": {
+              "value": "{color.background.accent.blue-light.600}",
+              "type": "color",
+              "description": "Mobile blue-light tag loader background - blue-light/600 - #3b82f6"
+            }
+          },
           "background": {
             "default": {
               "value": "{color.background.neutral.base}",
@@ -1584,1510 +1511,1497 @@
               "value": "{color.accent.blue-light.300}",
               "type": "color",
               "description": "Mobile blue-light tag outline focused border - blue-light/300"
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.blue-light.700}",
-              "type": "color",
-              "description": "Mobile blue-light tag outline default text - blue-light/700"
-            },
-            "active": {
-              "value": "{color.accent.blue-light.900}",
-              "type": "color",
-              "description": "Mobile blue-light tag outline active text - blue-light/900"
-            },
-            "focused": {
-              "value": "{color.accent.blue-light.800}",
-              "type": "color",
-              "description": "Mobile blue-light tag outline focused text - blue-light/800"
-          },
-          "focus": {
-            "$comment": "Focus ring for blue-light outline tag",
-            "ring": {
-              "value": "{color.accent.blue-light.300}",
-              "type": "color",
-              "description": "Mobile blue-light tag outline focus ring - blue-light/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.blue-light.700}",
-              "type": "color",
-              "description": "Mobile blue-light tag outline default icon - blue-light/700"
-            },
-            "active": {
-              "value": "{color.accent.blue-light.900}",
-              "type": "color",
-              "description": "Mobile blue-light tag outline active icon - blue-light/900"
-            },
-            "focused": {
-              "value": "{color.accent.blue-light.800}",
-              "type": "color",
-              "description": "Mobile blue-light tag outline focused icon - blue-light/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for blue-light outline tag",
-            "background": {
-              "default": {
-                "value": "{color.accent.blue-light.25}",
-                "type": "color",
-                "description": "Mobile blue-light tag outline tag-count background - blue-light/25"
-              }
             },
             "text": {
               "default": {
                 "value": "{color.accent.blue-light.700}",
                 "type": "color",
-                "description": "Mobile blue-light tag outline tag-count text - blue-light/700"
+                "description": "Mobile blue-light tag outline default text - blue-light/700"
               },
               "active": {
                 "value": "{color.accent.blue-light.900}",
                 "type": "color",
-                "description": "Mobile blue-light tag outline tag-count active text - blue-light/900"
-              }
-            }
-          }
-        },
-        "filled": {
-          "$comment": "Blue Light filled style - solid sky-blue background",
-          "background": {
-            "default": {
-              "value": "{color.accent.blue-light.50}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled default background - blue-light/50"
-            },
-            "active": {
-              "value": "{color.accent.blue-light.200}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled active background - blue-light/200"
-            },
-            "focused": {
-              "value": "{color.accent.blue-light.100}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled focused background - blue-light/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled default border - transparent"
-            },
-            "active": {
-              "value": "{color.accent.blue-light.800}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled active border - blue-light/800"
-            },
-            "focused": {
-              "value": "{color.accent.blue-light.300}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled focused border - blue-light/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.blue-light.700}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled default text - blue-light/700"
-            },
-            "active": {
-              "value": "{color.accent.blue-light.900}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled active text - blue-light/900"
-            },
-            "focused": {
-              "value": "{color.accent.blue-light.800}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled focused text - blue-light/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for blue-light filled tag",
-            "ring": {
-              "value": "{color.accent.blue-light.300}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled focus ring - blue-light/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.blue-light.700}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled default icon - blue-light/700"
-            },
-            "active": {
-              "value": "{color.accent.blue-light.900}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled active icon - blue-light/900"
-            },
-            "focused": {
-              "value": "{color.accent.blue-light.800}",
-              "type": "color",
-              "description": "Mobile blue-light tag filled focused icon - blue-light/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for blue-light filled tag",
-            "background": {
-              "default": {
-                "value": "{color.accent.blue-light.25}",
-                "type": "color",
-                "description": "Mobile blue-light tag filled tag-count background - blue-light/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.blue-light.700}",
-                "type": "color",
-                "description": "Mobile blue-light tag filled tag-count text - blue-light/700"
-              },
-              "active": {
-                "value": "{color.accent.blue-light.900}",
-                "type": "color",
-                "description": "Mobile blue-light tag filled tag-count active text - blue-light/900"
-              }
-            }
-          }
-        }
-      },
-      "blue": {
-        "$comment": "Blue color variant - medium blue color scheme",
-        "outline": {
-          "$comment": "Blue outline style - colored border with light background",
-          "background": {
-            "default": {
-              "value": "{color.background.neutral.base}",
-              "type": "color",
-              "description": "Mobile blue tag outline default background - white"
-            },
-            "active": {
-              "value": "{color.primary.blue.200}",
-              "type": "color",
-              "description": "Mobile blue tag outline active background - blue/200"
-            },
-            "focused": {
-              "value": "{color.primary.blue.100}",
-              "type": "color",
-              "description": "Mobile blue tag outline focused background - blue/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.accent.blue.600}",
-              "type": "color",
-              "description": "Mobile blue tag outline default border - blue/600"
-            },
-            "active": {
-              "value": "{color.accent.blue.800}",
-              "type": "color",
-              "description": "Mobile blue tag outline active border - blue/800"
-            },
-            "focused": {
-              "value": "{color.primary.blue.300}",
-              "type": "color",
-              "description": "Mobile blue tag outline focused border - blue/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.blue.700}",
-              "type": "color",
-              "description": "Mobile blue tag outline default text - blue/700"
-            },
-            "active": {
-              "value": "{color.accent.blue.900}",
-              "type": "color",
-              "description": "Mobile blue tag outline active text - blue/900"
-            },
-            "focused": {
-              "value": "{color.accent.blue.800}",
-              "type": "color",
-              "description": "Mobile blue tag outline focused text - blue/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for blue outline tag",
-            "ring": {
-              "value": "{color.primary.blue.300}",
-              "type": "color",
-              "description": "Mobile blue tag outline focus ring - blue/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.blue.700}",
-              "type": "color",
-              "description": "Mobile blue tag outline default icon - blue/700"
-            },
-            "active": {
-              "value": "{color.accent.blue.900}",
-              "type": "color",
-              "description": "Mobile blue tag outline active icon - blue/900"
-            },
-            "focused": {
-              "value": "{color.accent.blue.800}",
-              "type": "color",
-              "description": "Mobile blue tag outline focused icon - blue/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for blue outline tag",
-            "background": {
-              "default": {
-                "value": "{color.primary.blue.25}",
-                "type": "color",
-                "description": "Mobile blue tag outline tag-count background - blue/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.blue.700}",
-                "type": "color",
-                "description": "Mobile blue tag outline tag-count text - blue/700"
-              },
-              "active": {
-                "value": "{color.accent.blue.900}",
-                "type": "color",
-                "description": "Mobile blue tag outline tag-count active text - blue/900"
+                "description": "Mobile blue-light tag outline active text - blue-light/900"
               },
               "focused": {
-                "value": "{color.accent.blue.800}",
+                "value": "{color.accent.blue-light.800}",
                 "type": "color",
-                "description": "Mobile blue tag outline tag-count focused text - blue/800"
+                "description": "Mobile blue-light tag outline focused text - blue-light/800"
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.accent.blue-light.700}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag outline default icon - blue-light/700"
+                },
+                "active": {
+                  "value": "{color.accent.blue-light.900}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag outline active icon - blue-light/900"
+                },
+                "focused": {
+                  "value": "{color.accent.blue-light.800}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag outline focused icon - blue-light/800"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for blue-light outline tag",
+                "background": {
+                  "default": {
+                    "value": "{color.accent.blue-light.25}",
+                    "type": "color",
+                    "description": "Mobile blue-light tag outline tag-count background - blue-light/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.blue-light.700}",
+                    "type": "color",
+                    "description": "Mobile blue-light tag outline tag-count text - blue-light/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.blue-light.900}",
+                    "type": "color",
+                    "description": "Mobile blue-light tag outline tag-count active text - blue-light/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.blue-light.800}",
+                    "type": "color",
+                    "description": "Mobile blue-light tag outline tag-count focused text - blue-light/800"
+                  }
+                }
+              }
+            },
+            "filled": {
+              "$comment": "Blue Light filled style - solid sky-blue background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.accent.blue-light.300}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag loader background - blue-light/300 - #e2e8f0"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.accent.blue-light.700}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled default background - blue-light/700"
+                },
+                "active": {
+                  "value": "{color.accent.blue-light.800}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled active background - blue-light/800"
+                },
+                "focused": {
+                  "value": "{color.accent.blue-light.700}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled focused background - blue-light/700"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.border.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled default border - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.accent.blue-light.800}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled active border - blue-light/800"
+                },
+                "focused": {
+                  "value": "{color.accent.blue-light.300}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled focused border - blue-light/300"
+                }
+              },
+              "text": {
+                "default": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled default text - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled active text - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled focused text - gray/0 - #ffffff"
+                }
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled default icon - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled active icon - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile blue-light tag filled focused icon - gray/0 - #ffffff"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for blue-light filled tag",
+                "background": {
+                  "default": {
+                    "value": "{color.accent.blue-light.25}",
+                    "type": "color",
+                    "description": "Mobile blue-light tag filled tag-count background - blue-light/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.blue-light.700}",
+                    "type": "color",
+                    "description": "Mobile blue-light tag filled tag-count text - blue-light/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.blue-light.900}",
+                    "type": "color",
+                    "description": "Mobile blue-light tag filled tag-count active text - blue-light/900"
+                  }
+                }
+              }
+            }
+          },
+          "blue": {
+            "$comment": "Blue color variant - medium blue color scheme",
+            "outline": {
+              "$comment": "Blue outline style - colored border with light background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.primary.blue.600}",
+                  "type": "color",
+                  "description": "Mobile blue tag loader background - blue/600 - #155eef"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.background.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline default background - white"
+                },
+                "active": {
+                  "value": "{color.primary.blue.200}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline active background - blue/200"
+                },
+                "focused": {
+                  "value": "{color.primary.blue.100}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline focused background - blue/100"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.accent.blue.600}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline default border - blue/600"
+                },
+                "active": {
+                  "value": "{color.accent.blue.800}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline active border - blue/800"
+                },
+                "focused": {
+                  "value": "{color.primary.blue.300}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline focused border - blue/300"
+                }
+              },
+              "text": {
+                "default": {
+                  "value": "{color.accent.blue.700}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline default text - blue/700"
+                },
+                "active": {
+                  "value": "{color.accent.blue.900}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline active text - blue/900"
+                },
+                "focused": {
+                  "value": "{color.accent.blue.800}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline focused text - blue/800"
+                }
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.accent.blue.700}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline default icon - blue/700"
+                },
+                "active": {
+                  "value": "{color.accent.blue.900}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline active icon - blue/900"
+                },
+                "focused": {
+                  "value": "{color.accent.blue.800}",
+                  "type": "color",
+                  "description": "Mobile blue tag outline focused icon - blue/800"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for blue outline tag",
+                "background": {
+                  "default": {
+                    "value": "{color.primary.blue.25}",
+                    "type": "color",
+                    "description": "Mobile blue tag outline tag-count background - blue/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.blue.700}",
+                    "type": "color",
+                    "description": "Mobile blue tag outline tag-count text - blue/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.blue.900}",
+                    "type": "color",
+                    "description": "Mobile blue tag outline tag-count active text - blue/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.blue.800}",
+                    "type": "color",
+                    "description": "Mobile blue tag outline tag-count focused text - blue/800"
+                  }
+                }
+              }
+            },
+            "filled": {
+              "$comment": "Blue filled style - solid blue background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.primary.blue.300}",
+                  "type": "color",
+                  "description": "Mobile blue tag loader background - blue/300 - #e2e8f0"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.primary.blue.700}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled default background - blue/700"
+                },
+                "active": {
+                  "value": "{color.primary.blue.800}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled active background - blue/800"
+                },
+                "focused": {
+                  "value": "{color.primary.blue.700}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled focused background - blue/700"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.border.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled default border - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.accent.blue.800}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled active border - blue/800"
+                },
+                "focused": {
+                  "value": "{color.primary.blue.300}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled focused border - blue/300"
+                }
+              },
+              "text": {
+                "default": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled default text - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled active text - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled focused text - gray/0 - #ffffff"
+                }
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled default icon - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled active icon - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile blue tag filled focused icon - gray/0 - #ffffff"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for blue filled tag",
+                "background": {
+                  "default": {
+                    "value": "{color.primary.blue.25}",
+                    "type": "color",
+                    "description": "Mobile blue tag filled tag-count background - blue/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.blue.700}",
+                    "type": "color",
+                    "description": "Mobile blue tag filled tag-count text - blue/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.blue.900}",
+                    "type": "color",
+                    "description": "Mobile blue tag filled tag-count active text - blue/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.blue.800}",
+                    "type": "color",
+                    "description": "Mobile blue tag filled tag-count focused text - blue/800"
+                  }
+                }
+              }
+            }
+          },
+          "indigo": {
+            "$comment": "Indigo color variant - indigo/violet-blue color scheme",
+            "outline": {
+              "$comment": "Indigo outline style - colored border with light background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.accent.indigo.600}",
+                  "type": "color",
+                  "description": "Mobile indigo tag loader background - indigo/600 - #4f46e5"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.background.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline default background - white"
+                },
+                "active": {
+                  "value": "{color.accent.indigo.200}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline active background - indigo/200"
+                },
+                "focused": {
+                  "value": "{color.accent.indigo.100}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline focused background - indigo/100"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.accent.indigo.600}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline default border - indigo/600"
+                },
+                "active": {
+                  "value": "{color.accent.indigo.800}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline active border - indigo/800"
+                },
+                "focused": {
+                  "value": "{color.accent.indigo.300}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline focused border - indigo/300"
+                }
+              },
+              "text": {
+                "default": {
+                  "value": "{color.accent.indigo.700}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline default text - indigo/700"
+                },
+                "active": {
+                  "value": "{color.accent.indigo.900}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline active text - indigo/900"
+                },
+                "focused": {
+                  "value": "{color.accent.indigo.800}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline focused text - indigo/800"
+                }
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.accent.indigo.700}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline default icon - indigo/700"
+                },
+                "active": {
+                  "value": "{color.accent.indigo.900}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline active icon - indigo/900"
+                },
+                "focused": {
+                  "value": "{color.accent.indigo.800}",
+                  "type": "color",
+                  "description": "Mobile indigo tag outline focused icon - indigo/800"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for indigo outline tag",
+                "background": {
+                  "default": {
+                    "value": "{color.primary.blue.25}",
+                    "type": "color",
+                    "description": "Mobile indigo tag outline tag-count background - indigo/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.indigo.700}",
+                    "type": "color",
+                    "description": "Mobile indigo tag outline tag-count text - indigo/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.indigo.900}",
+                    "type": "color",
+                    "description": "Mobile indigo tag outline tag-count active text - indigo/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.indigo.800}",
+                    "type": "color",
+                    "description": "Mobile indigo tag outline tag-count focused text - indigo/800"
+                  }
+                }
+              }
+            },
+            "filled": {
+              "$comment": "Indigo filled style - solid indigo background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.accent.indigo.300}",
+                  "type": "color",
+                  "description": "Mobile indigo tag loader background - indigo/300 - #e2e8f0"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.accent.indigo.700}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled default background - indigo/700"
+                },
+                "active": {
+                  "value": "{color.accent.indigo.800}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled active background - indigo/800"
+                },
+                "focused": {
+                  "value": "{color.accent.indigo.700}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled focused background - indigo/700"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.border.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled default border - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.accent.indigo.800}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled active border - indigo/800"
+                },
+                "focused": {
+                  "value": "{color.accent.indigo.300}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled focused border - indigo/300"
+                }
+              },
+              "text": {
+                "default": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled default text - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled active text - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled focused text - gray/0 - #ffffff"
+                }
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled default icon - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled active icon - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile indigo tag filled focused icon - gray/0 - #ffffff"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for indigo filled tag",
+                "background": {
+                  "default": {
+                    "value": "{color.primary.blue.25}",
+                    "type": "color",
+                    "description": "Mobile indigo tag filled tag-count background - indigo/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.indigo.700}",
+                    "type": "color",
+                    "description": "Mobile indigo tag filled tag-count text - indigo/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.indigo.900}",
+                    "type": "color",
+                    "description": "Mobile indigo tag filled tag-count active text - indigo/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.indigo.800}",
+                    "type": "color",
+                    "description": "Mobile indigo tag filled tag-count focused text - indigo/800"
+                  }
+                }
+              }
+            }
+          },
+          "purple": {
+            "$comment": "Purple color variant - purple color scheme",
+            "outline": {
+              "$comment": "Purple outline style - colored border with light background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.accent.purple.600}",
+                  "type": "color",
+                  "description": "Mobile purple tag loader background - purple/600 - #7e3af2"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.background.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline default background - white"
+                },
+                "active": {
+                  "value": "{color.accent.purple.200}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline active background - purple/200"
+                },
+                "focused": {
+                  "value": "{color.accent.purple.100}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline focused background - purple/100"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.accent.purple.600}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline default border - purple/600"
+                },
+                "active": {
+                  "value": "{color.accent.purple.800}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline active border - purple/800"
+                },
+                "focused": {
+                  "value": "{color.accent.purple.300}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline focused border - purple/300"
+                }
+              },
+              "text": {
+                "default": {
+                  "value": "{color.accent.purple.700}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline default text - purple/700"
+                },
+                "active": {
+                  "value": "{color.accent.purple.900}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline active text - purple/900"
+                },
+                "focused": {
+                  "value": "{color.accent.purple.800}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline focused text - purple/800"
+                }
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.accent.purple.700}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline default icon - purple/700"
+                },
+                "active": {
+                  "value": "{color.accent.purple.900}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline active icon - purple/900"
+                },
+                "focused": {
+                  "value": "{color.accent.purple.800}",
+                  "type": "color",
+                  "description": "Mobile purple tag outline focused icon - purple/800"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for purple outline tag",
+                "background": {
+                  "default": {
+                    "value": "{color.accent.purple.25}",
+                    "type": "color",
+                    "description": "Mobile purple tag outline tag-count background - purple/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.purple.700}",
+                    "type": "color",
+                    "description": "Mobile purple tag outline tag-count text - purple/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.purple.900}",
+                    "type": "color",
+                    "description": "Mobile purple tag outline tag-count active text - purple/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.purple.800}",
+                    "type": "color",
+                    "description": "Mobile purple tag outline tag-count focused text - purple/800"
+                  }
+                }
+              }
+            },
+            "filled": {
+              "$comment": "Purple filled style - solid purple background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.accent.purple.300}",
+                  "type": "color",
+                  "description": "Mobile purple tag loader background - purple/300 - #e2e8f0"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.accent.purple.700}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled default background - purple/700"
+                },
+                "active": {
+                  "value": "{color.accent.purple.800}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled active background - purple/800"
+                },
+                "focused": {
+                  "value": "{color.accent.purple.700}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled focused background - purple/700"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.border.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled default border - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.accent.purple.800}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled active border - purple/800"
+                },
+                "focused": {
+                  "value": "{color.accent.purple.300}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled focused border - purple/300"
+                }
+              },
+              "text": {
+                "default": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled default text - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled active text - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled focused text - gray/0 - #ffffff"
+                }
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled default icon - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled active icon - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile purple tag filled focused icon - gray/0 - #ffffff"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for purple filled tag",
+                "background": {
+                  "default": {
+                    "value": "{color.accent.purple.25}",
+                    "type": "color",
+                    "description": "Mobile purple tag filled tag-count background - purple/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.purple.700}",
+                    "type": "color",
+                    "description": "Mobile purple tag filled tag-count text - purple/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.purple.900}",
+                    "type": "color",
+                    "description": "Mobile purple tag filled tag-count active text - purple/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.purple.800}",
+                    "type": "color",
+                    "description": "Mobile purple tag filled tag-count focused text - purple/800"
+                  }
+                }
+              }
+            }
+          },
+          "pink": {
+            "$comment": "Pink color variant - pink/magenta color scheme",
+            "outline": {
+              "$comment": "Pink outline style - colored border with light background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.accent.pink.600}",
+                  "type": "color",
+                  "description": "Mobile pink tag loader background - pink/600 - #dd2590"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.background.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile pink tag outline default background - white"
+                },
+                "active": {
+                  "value": "{color.accent.pink.200}",
+                  "type": "color",
+                  "description": "Mobile pink tag outline active background - pink/200"
+                },
+                "focused": {
+                  "value": "{color.accent.pink.100}",
+                  "type": "color",
+                  "description": "Mobile pink tag outline focused background - pink/100"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.accent.pink.600}",
+                  "type": "color",
+                  "description": "Mobile pink tag outline default border - pink/600"
+                },
+                "active": {
+                  "value": "{color.accent.pink.800}",
+                  "type": "color",
+                  "description": "Mobile pink tag outline active border - pink/800"
+                },
+                "focused": {
+                  "value": "{color.accent.pink.300}",
+                  "type": "color",
+                  "description": "Mobile pink tag outline focused border - pink/300"
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.pink.700}",
+                    "type": "color",
+                    "description": "Mobile pink tag outline default text - pink/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.pink.900}",
+                    "type": "color",
+                    "description": "Mobile pink tag outline active text - pink/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.pink.800}",
+                    "type": "color",
+                    "description": "Mobile pink tag outline focused text - pink/800"
+                  }
+                },
+                "icon": {
+                  "default": {
+                    "value": "{color.accent.pink.700}",
+                    "type": "color",
+                    "description": "Mobile pink tag outline default icon - pink/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.pink.900}",
+                    "type": "color",
+                    "description": "Mobile pink tag outline active icon - pink/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.pink.800}",
+                    "type": "color",
+                    "description": "Mobile pink tag outline focused icon - pink/800"
+                  }
+                },
+                "tag-count": {
+                  "$comment": "Tag count badge tokens for pink outline tag",
+                  "background": {
+                    "default": {
+                      "value": "{color.accent.pink.25}",
+                      "type": "color",
+                      "description": "Mobile pink tag outline tag-count background - pink/25"
+                    }
+                  },
+                  "text": {
+                    "default": {
+                      "value": "{color.accent.pink.700}",
+                      "type": "color",
+                      "description": "Mobile pink tag outline tag-count text - pink/700"
+                    },
+                    "active": {
+                      "value": "{color.accent.pink.900}",
+                      "type": "color",
+                      "description": "Mobile pink tag outline tag-count active text - pink/900"
+                    },
+                    "focused": {
+                      "value": "{color.accent.pink.800}",
+                      "type": "color",
+                      "description": "Mobile pink tag outline tag-count focused text - pink/800"
+                    }
+                  }
+                }
+              },
+              "filled": {
+                "$comment": "Pink filled style - solid pink background",
+                "tag-loader": {
+                  "background": {
+                    "value": "{color.background.accent.pink.300}",
+                    "type": "color",
+                    "description": "Mobile pink tag loader background - pink/300 - #e2e8f0"
+                  }
+                },
+                "background": {
+                  "default": {
+                    "value": "{color.accent.pink.700}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled default background - pink/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.pink.800}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled active background - pink/800"
+                  },
+                  "focused": {
+                    "value": "{color.accent.pink.700}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled focused background - pink/700"
+                  }
+                },
+                "border": {
+                  "default": {
+                    "value": "{color.border.neutral.base}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled default border - gray/0 - #ffffff"
+                  },
+                  "active": {
+                    "value": "{color.accent.pink.800}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled active border - pink/800"
+                  },
+                  "focused": {
+                    "value": "{color.accent.pink.300}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled focused border - pink/300"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.neutral.text.base}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled default text - gray/0 - #ffffff"
+                  },
+                  "active": {
+                    "value": "{color.neutral.text.base}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled active text - gray/0 - #ffffff"
+                  },
+                  "focused": {
+                    "value": "{color.neutral.text.base}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled focused text - gray/0 - #ffffff"
+                  }
+                },
+                "icon": {
+                  "default": {
+                    "value": "{color.neutral.icon.base}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled default icon - gray/0 - #ffffff"
+                  },
+                  "active": {
+                    "value": "{color.neutral.icon.base}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled active icon - gray/0 - #ffffff"
+                  },
+                  "focused": {
+                    "value": "{color.neutral.icon.base}",
+                    "type": "color",
+                    "description": "Mobile pink tag filled focused icon - gray/0 - #ffffff"
+                  }
+                },
+                "tag-count": {
+                  "$comment": "Tag count badge tokens for pink filled tag",
+                  "background": {
+                    "default": {
+                      "value": "{color.accent.pink.25}",
+                      "type": "color",
+                      "description": "Mobile pink tag filled tag-count background - pink/25"
+                    }
+                  },
+                  "text": {
+                    "default": {
+                      "value": "{color.accent.pink.700}",
+                      "type": "color",
+                      "description": "Mobile pink tag filled tag-count text - pink/700"
+                    },
+                    "active": {
+                      "value": "{color.accent.pink.900}",
+                      "type": "color",
+                      "description": "Mobile pink tag filled tag-count active text - pink/900"
+                    },
+                    "focused": {
+                      "value": "{color.accent.pink.800}",
+                      "type": "color",
+                      "description": "Mobile pink tag filled tag-count focused text - pink/800"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "rose": {
+            "$comment": "Rosé color variant - rose/crimson color scheme",
+            "outline": {
+              "$comment": "Rosé outline style - colored border with light background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.accent.rose.600}",
+                  "type": "color",
+                  "description": "Mobile rose tag loader background - rose/600 - #c2410c"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.background.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline default background - white"
+                },
+                "active": {
+                  "value": "{color.accent.rose.200}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline active background - rose/200"
+                },
+                "focused": {
+                  "value": "{color.accent.rose.100}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline focused background - rose/100"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.accent.rose.600}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline default border - rose/600"
+                },
+                "active": {
+                  "value": "{color.accent.rose.800}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline active border - rose/800"
+                },
+                "focused": {
+                  "value": "{color.accent.rose.300}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline focused border - rose/300"
+                }
+              },
+              "text": {
+                "default": {
+                  "value": "{color.accent.rose.700}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline default text - rose/700"
+                },
+                "active": {
+                  "value": "{color.accent.rose.900}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline active text - rose/900"
+                },
+                "focused": {
+                  "value": "{color.accent.rose.800}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline focused text - rose/800"
+                }
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.accent.rose.700}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline default icon - rose/700"
+                },
+                "active": {
+                  "value": "{color.accent.rose.900}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline active icon - rose/900"
+                },
+                "focused": {
+                  "value": "{color.accent.rose.800}",
+                  "type": "color",
+                  "description": "Mobile rose tag outline focused icon - rose/800"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for rose outline tag",
+                "background": {
+                  "default": {
+                    "value": "{color.accent.rose.25}",
+                    "type": "color",
+                    "description": "Mobile rose tag outline tag-count background - rose/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.rose.700}",
+                    "type": "color",
+                    "description": "Mobile rose tag outline tag-count text - rose/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.rose.900}",
+                    "type": "color",
+                    "description": "Mobile rose tag outline tag-count active text - rose/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.rose.800}",
+                    "type": "color",
+                    "description": "Mobile rose tag outline tag-count focused text - rose/800"
+                  }
+                }
+              }
+            },
+            "filled": {
+              "$comment": "Rosé filled style - solid rose background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.accent.rose.300}",
+                  "type": "color",
+                  "description": "Mobile rose tag loader background - rose/300 - #e2e8f0"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.accent.rose.700}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled default background - rose/700"
+                },
+                "active": {
+                  "value": "{color.accent.rose.800}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled active background - rose/800"
+                },
+                "focused": {
+                  "value": "{color.accent.rose.700}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled focused background - rose/700"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.border.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled default border - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.accent.rose.800}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled active border - rose/800"
+                },
+                "focused": {
+                  "value": "{color.accent.rose.300}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled focused border - rose/300"
+                }
+              },
+              "text": {
+                "default": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled default text - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled active text - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled focused text - gray/0 - #ffffff"
+                }
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled default icon - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled active icon - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile rose tag filled focused icon - gray/0 - #ffffff"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for rose filled tag",
+                "background": {
+                  "default": {
+                    "value": "{color.accent.rose.25}",
+                    "type": "color",
+                    "description": "Mobile rose tag filled tag-count background - rose/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.rose.700}",
+                    "type": "color",
+                    "description": "Mobile rose tag filled tag-count text - rose/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.rose.900}",
+                    "type": "color",
+                    "description": "Mobile rose tag filled tag-count active text - rose/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.rose.800}",
+                    "type": "color",
+                    "description": "Mobile rose tag filled tag-count focused text - rose/800"
+                  }
+                }
+              }
+            }
+          },
+          "orange-dark": {
+            "$comment": "Orange Dark color variant - deep orange/vermilion color scheme",
+            "outline": {
+              "$comment": "Orange Dark outline style - colored border with light background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.accent.orange-dark.600}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag loader background - orange-dark/600 - #c2410c"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.background.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline default background - white"
+                },
+                "active": {
+                  "value": "{color.accent.orange-dark.200}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline active background - orange-dark/200"
+                },
+                "focused": {
+                  "value": "{color.accent.orange-dark.100}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline focused background - orange-dark/100"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.accent.orange-dark.600}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline default border - orange-dark/600"
+                },
+                "active": {
+                  "value": "{color.accent.orange-dark.800}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline active border - orange-dark/800"
+                },
+                "focused": {
+                  "value": "{color.accent.orange-dark.300}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline focused border - orange-dark/300"
+                }
+              },
+              "text": {
+                "default": {
+                  "value": "{color.accent.orange-dark.700}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline default text - orange-dark/700"
+                },
+                "active": {
+                  "value": "{color.accent.orange-dark.900}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline active text - orange-dark/900"
+                },
+                "focused": {
+                  "value": "{color.accent.orange-dark.800}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline focused text - orange-dark/800"
+                }
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.accent.orange-dark.700}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline default icon - orange-dark/700"
+                },
+                "active": {
+                  "value": "{color.accent.orange-dark.900}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline active icon - orange-dark/900"
+                },
+                "focused": {
+                  "value": "{color.accent.orange-dark.800}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag outline focused icon - orange-dark/800"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for orange-dark outline tag",
+                "background": {
+                  "default": {
+                    "value": "{color.accent.orange-dark.25}",
+                    "type": "color",
+                    "description": "Mobile orange-dark tag outline tag-count background - orange-dark/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.orange-dark.700}",
+                    "type": "color",
+                    "description": "Mobile orange-dark tag outline tag-count text - orange-dark/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.orange-dark.900}",
+                    "type": "color",
+                    "description": "Mobile orange-dark tag outline tag-count active text - orange-dark/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.orange-dark.800}",
+                    "type": "color",
+                    "description": "Mobile orange-dark tag outline tag-count focused text - orange-dark/800"
+                  }
+                }
+              }
+              },
+            "filled": {
+              "$comment": "Orange Dark filled style - solid deep-orange background",
+              "tag-loader": {
+                "background": {
+                  "value": "{color.background.accent.orange-dark.300}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag loader background - orange-dark/300 - #fde68a"
+                }
+              },
+              "background": {
+                "default": {
+                  "value": "{color.accent.orange-dark.700}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled default background - orange-dark/700"
+                },
+                "active": {
+                  "value": "{color.accent.orange-dark.800}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled active background - orange-dark/800"
+                },
+                "focused": {
+                  "value": "{color.accent.orange-dark.700}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled focused background - orange-dark/700"
+                }
+              },
+              "border": {
+                "default": {
+                  "value": "{color.border.neutral.base}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled default border - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.accent.orange-dark.800}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled active border - orange-dark/800"
+                },
+                "focused": {
+                  "value": "{color.accent.orange-dark.300}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled focused border - orange-dark/300"
+                }
+              },
+              "text": {
+                "default": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled default text - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled active text - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.text.base}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled focused text - gray/0 - #ffffff"
+                }
+              },
+              "icon": {
+                "default": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled default icon - gray/0 - #ffffff"
+                },
+                "active": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled active icon - gray/0 - #ffffff"
+                },
+                "focused": {
+                  "value": "{color.neutral.icon.base}",
+                  "type": "color",
+                  "description": "Mobile orange-dark tag filled focused icon - gray/0 - #ffffff"
+                }
+              },
+              "tag-count": {
+                "$comment": "Tag count badge tokens for orange-dark filled tag",
+                "background": {
+                  "default": {
+                    "value": "{color.accent.orange-dark.25}",
+                    "type": "color",
+                    "description": "Mobile orange-dark tag filled tag-count background - orange-dark/25"
+                  }
+                },
+                "text": {
+                  "default": {
+                    "value": "{color.accent.orange-dark.700}",
+                    "type": "color",
+                    "description": "Mobile orange-dark tag filled tag-count text - orange-dark/700"
+                  },
+                  "active": {
+                    "value": "{color.accent.orange-dark.900}",
+                    "type": "color",
+                    "description": "Mobile orange-dark tag filled tag-count active text - orange-dark/900"
+                  },
+                  "focused": {
+                    "value": "{color.accent.orange-dark.800}",
+                    "type": "color",
+                    "description": "Mobile orange-dark tag filled tag-count focused text - orange-dark/800"
+                  }
+                }
               }
             }
           }
         },
-        "filled": {
-          "$comment": "Blue filled style - solid blue background",
-          "background": {
-            "default": {
-              "value": "{color.primary.blue.50}",
-              "type": "color",
-              "description": "Mobile blue tag filled default background - blue/50"
+        "text": {
+          "$comment": "Typography tokens for tag component - text label typography for each size",
+          "typography": {
+            "xs": {
+              "value": "{font.body.medium.xs}",
+              "type": "typography",
+              "description": "Mobile tag text typography for xs size - Medium 11px/16px"
             },
-            "active": {
-              "value": "{color.primary.blue.200}",
-              "type": "color",
-              "description": "Mobile blue tag filled active background - blue/200"
+            "sm": {
+              "value": "{font.body.medium.sm}",
+              "type": "typography",
+              "description": "Mobile tag text typography for sm size - Medium 12px/17px"
             },
-            "focused": {
-              "value": "{color.primary.blue.100}",
-              "type": "color",
-              "description": "Mobile blue tag filled focused background - blue/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile blue tag filled default border - transparent"
+            "md": {
+              "value": "{font.body.medium.md}",
+              "type": "typography",
+              "description": "Mobile tag text typography for md size - Medium 13px/18px"
             },
-            "active": {
-              "value": "{color.accent.blue.800}",
-              "type": "color",
-              "description": "Mobile blue tag filled active border - blue/800"
-            },
-            "focused": {
-              "value": "{color.primary.blue.300}",
-              "type": "color",
-              "description": "Mobile blue tag filled focused border - blue/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.blue.700}",
-              "type": "color",
-              "description": "Mobile blue tag filled default text - blue/700"
-            },
-            "active": {
-              "value": "{color.accent.blue.900}",
-              "type": "color",
-              "description": "Mobile blue tag filled active text - blue/900"
-            },
-            "focused": {
-              "value": "{color.accent.blue.800}",
-              "type": "color",
-              "description": "Mobile blue tag filled focused text - blue/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for blue filled tag",
-            "ring": {
-              "value": "{color.primary.blue.300}",
-              "type": "color",
-              "description": "Mobile blue tag filled focus ring - blue/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.blue.700}",
-              "type": "color",
-              "description": "Mobile blue tag filled default icon - blue/700"
-            },
-            "active": {
-              "value": "{color.accent.blue.900}",
-              "type": "color",
-              "description": "Mobile blue tag filled active icon - blue/900"
-            },
-            "focused": {
-              "value": "{color.accent.blue.800}",
-              "type": "color",
-              "description": "Mobile blue tag filled focused icon - blue/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for blue filled tag",
-            "background": {
-              "default": {
-                "value": "{color.primary.blue.25}",
-                "type": "color",
-                "description": "Mobile blue tag filled tag-count background - blue/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.blue.700}",
-                "type": "color",
-                "description": "Mobile blue tag filled tag-count text - blue/700"
-              },
-              "active": {
-                "value": "{color.accent.blue.900}",
-                "type": "color",
-                "description": "Mobile blue tag filled tag-count active text - blue/900"
-              },
-              "focused": {
-                "value": "{color.accent.blue.800}",
-                "type": "color",
-                "description": "Mobile blue tag filled tag-count focused text - blue/800"
-              }
-            }
-          }
-        }
-      },
-      "indigo": {
-        "$comment": "Indigo color variant - indigo/violet-blue color scheme",
-        "outline": {
-          "$comment": "Indigo outline style - colored border with light background",
-          "background": {
-            "default": {
-              "value": "{color.background.neutral.base}",
-              "type": "color",
-              "description": "Mobile indigo tag outline default background - white"
-            },
-            "active": {
-              "value": "{color.accent.indigo.200}",
-              "type": "color",
-              "description": "Mobile indigo tag outline active background - indigo/200"
-            },
-            "focused": {
-              "value": "{color.accent.indigo.100}",
-              "type": "color",
-              "description": "Mobile indigo tag outline focused background - indigo/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.accent.indigo.600}",
-              "type": "color",
-              "description": "Mobile indigo tag outline default border - indigo/600"
-            },  
-            "active": {
-              "value": "{color.accent.indigo.800}",
-              "type": "color",
-              "description": "Mobile indigo tag outline active border - indigo/800"
-            },
-            "focused": {
-              "value": "{color.accent.indigo.300}",
-              "type": "color",
-              "description": "Mobile indigo tag outline focused border - indigo/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.indigo.700}",
-              "type": "color",
-              "description": "Mobile indigo tag outline default text - indigo/700"
-            },
-            "active": {
-              "value": "{color.accent.indigo.900}",
-              "type": "color",
-              "description": "Mobile indigo tag outline active text - indigo/900"
-            },
-            "focused": {
-              "value": "{color.accent.indigo.800}",
-              "type": "color",
-              "description": "Mobile indigo tag outline focused text - indigo/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for indigo outline tag",
-            "ring": {
-              "value": "{color.accent.indigo.300}",
-              "type": "color",
-              "description": "Mobile indigo tag outline focus ring - indigo/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.indigo.700}",
-              "type": "color",
-              "description": "Mobile indigo tag outline default icon - indigo/700"
-            },
-            "active": {
-              "value": "{color.accent.indigo.900}",
-              "type": "color",
-              "description": "Mobile indigo tag outline active icon - indigo/900"
-            },
-            "focused": {
-              "value": "{color.accent.indigo.800}",
-              "type": "color",
-              "description": "Mobile indigo tag outline focused icon - indigo/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for indigo outline tag",
-            "background": {
-              "default": {
-                "value": "{color.primary.blue.25}",
-                "type": "color",
-                "description": "Mobile indigo tag outline tag-count background - indigo/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.indigo.700}",
-                "type": "color",
-                "description": "Mobile indigo tag outline tag-count text - indigo/700"
-              },
-              "active": {
-                "value": "{color.accent.indigo.900}",
-                "type": "color",
-                "description": "Mobile indigo tag outline tag-count active text - indigo/900"
-              },
-              "focused": {
-                "value": "{color.accent.indigo.800}",
-                "type": "color",
-                "description": "Mobile indigo tag outline tag-count focused text - indigo/800"
-              }
+            "lg": {
+              "value": "{font.body.medium.md}",
+              "type": "typography",
+              "description": "Mobile tag text typography for lg size - Medium 13px/18px"
             }
           }
         },
-        "filled": {
-          "$comment": "Indigo filled style - solid indigo background",
-          "background": {
-            "default": {
-              "value": "{color.accent.indigo.50}",
-              "type": "color",
-              "description": "Mobile indigo tag filled default background - indigo/50"
+        "icon": {
+          "$comment": "Icon size tokens for tag component - close icon and other icon sizes",
+          "size": {
+            "xs": {
+              "value": "{size.icon.3xs}",
+              "type": "dimension",
+              "description": "Mobile tag icon size for xs size - 12px"
             },
-            "active": {
-              "value": "{color.accent.indigo.200}",
-              "type": "color",
-              "description": "Mobile indigo tag filled active background - indigo/200"
+            "sm": {
+              "value": "{size.icon.2xs}",
+              "type": "dimension",
+              "description": "Mobile tag icon size for sm size - 14px"
             },
-            "focused": {
-              "value": "{color.accent.indigo.100}",
-              "type": "color",
-              "description": "Mobile indigo tag filled focused background - indigo/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile indigo tag filled default border - transparent"
+            "md": {
+              "value": "{size.icon.xs}",
+              "type": "dimension",
+              "description": "Mobile tag icon size for md size - 16px"
             },
-            "active": {
-              "value": "{color.accent.indigo.800}",
-              "type": "color",
-              "description": "Mobile indigo tag filled active border - indigo/800"
-            },
-            "focused": {
-              "value": "{color.accent.indigo.300}",
-              "type": "color",
-              "description": "Mobile indigo tag filled focused border - indigo/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.indigo.700}",
-              "type": "color",
-              "description": "Mobile indigo tag filled default text - indigo/700"
-            },
-            "active": {
-              "value": "{color.accent.indigo.900}",
-              "type": "color",
-              "description": "Mobile indigo tag filled active text - indigo/900"
-            },
-            "focused": {
-              "value": "{color.accent.indigo.800}",
-              "type": "color",
-              "description": "Mobile indigo tag filled focused text - indigo/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for indigo filled tag",
-            "ring": {
-              "value": "{color.accent.indigo.300}",
-              "type": "color",
-              "description": "Mobile indigo tag filled focus ring - indigo/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.indigo.700}",
-              "type": "color",
-              "description": "Mobile indigo tag filled default icon - indigo/700"
-            },
-            "active": {
-              "value": "{color.accent.indigo.900}",
-              "type": "color",
-              "description": "Mobile indigo tag filled active icon - indigo/900"
-            },
-            "focused": {
-              "value": "{color.accent.indigo.800}",
-              "type": "color",
-              "description": "Mobile indigo tag filled focused icon - indigo/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for indigo filled tag",
-            "background": {
-              "default": {
-                "value": "{color.primary.blue.25}",
-                "type": "color",
-                "description": "Mobile indigo tag filled tag-count background - indigo/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.indigo.700}",
-                "type": "color",
-                "description": "Mobile indigo tag filled tag-count text - indigo/700"
-              },
-              "active": {
-                "value": "{color.accent.indigo.900}",
-                "type": "color",
-                "description": "Mobile indigo tag filled tag-count active text - indigo/900"
-              },
-              "focused": {
-                "value": "{color.accent.indigo.800}",
-                "type": "color",
-                "description": "Mobile indigo tag filled tag-count focused text - indigo/800"
-              }
+            "lg": {
+              "value": "{size.icon.md}",
+              "type": "dimension",
+              "description": "Mobile tag icon size for lg size - 20px"
             }
           }
-        }
-      },
-      "purple": {
-        "$comment": "Purple color variant - purple color scheme",
-        "outline": {
-          "$comment": "Purple outline style - colored border with light background",
-          "background": {
-            "default": {
-              "value": "{color.background.neutral.base}",
-              "type": "color",
-              "description": "Mobile purple tag outline default background - white"
-            },
-            "active": {
-              "value": "{color.accent.purple.200}",
-              "type": "color",
-              "description": "Mobile purple tag outline active background - purple/200"
-            },
-            "focused": {
-              "value": "{color.accent.purple.100}",
-              "type": "color",
-              "description": "Mobile purple tag outline focused background - purple/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.accent.purple.600}",
-              "type": "color",
-              "description": "Mobile purple tag outline default border - purple/600"
-            },  
-            "active": {
-              "value": "{color.accent.purple.800}",
-              "type": "color",
-              "description": "Mobile purple tag outline active border - purple/800"
-            },
-            "focused": {
-              "value": "{color.accent.purple.300}",
-              "type": "color",
-              "description": "Mobile purple tag outline focused border - purple/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.purple.700}",
-              "type": "color",
-              "description": "Mobile purple tag outline default text - purple/700"
-            },
-            "active": {
-              "value": "{color.accent.purple.900}",
-              "type": "color",
-              "description": "Mobile purple tag outline active text - purple/900"
-            },
-            "focused": {
-              "value": "{color.accent.purple.800}",
-              "type": "color",
-              "description": "Mobile purple tag outline focused text - purple/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for purple outline tag",
-            "ring": {
-              "value": "{color.accent.purple.300}",
-              "type": "color",
-              "description": "Mobile purple tag outline focus ring - purple/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.purple.700}",
-              "type": "color",
-              "description": "Mobile purple tag outline default icon - purple/700"
-            },
-            "active": {
-              "value": "{color.accent.purple.900}",
-              "type": "color",
-              "description": "Mobile purple tag outline active icon - purple/900"
-            },
-            "focused": {
-              "value": "{color.accent.purple.800}",
-              "type": "color",
-              "description": "Mobile purple tag outline focused icon - purple/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for purple outline tag",
-            "background": {
-              "default": {
-                "value": "{color.accent.purple.25}",
-                "type": "color",
-                "description": "Mobile purple tag outline tag-count background - purple/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.purple.700}",
-                "type": "color",
-                "description": "Mobile purple tag outline tag-count text - purple/700"
-              },
-              "active": {
-                "value": "{color.accent.purple.900}",
-                "type": "color",
-                "description": "Mobile purple tag outline tag-count active text - purple/900"
-              },
-              "focused": {
-                "value": "{color.accent.purple.800}",
-                "type": "color",
-                "description": "Mobile purple tag outline tag-count focused text - purple/800"
-              }
-            }
-          }
-        },
-        "filled": {
-          "$comment": "Purple filled style - solid purple background",
-          "background": {
-            "default": {
-              "value": "{color.accent.purple.50}",
-              "type": "color",
-              "description": "Mobile purple tag filled default background - purple/50"
-            },
-            "active": {
-              "value": "{color.accent.purple.200}",
-              "type": "color",
-              "description": "Mobile purple tag filled active background - purple/200"
-            },
-            "focused": {
-              "value": "{color.accent.purple.100}",
-              "type": "color",
-              "description": "Mobile purple tag filled focused background - purple/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile purple tag filled default border - transparent"
-            },
-            "active": {
-              "value": "{color.accent.purple.800}",
-              "type": "color",
-              "description": "Mobile purple tag filled active border - purple/800"
-            },
-            "focused": {
-              "value": "{color.accent.purple.300}",
-              "type": "color",
-              "description": "Mobile purple tag filled focused border - purple/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.purple.700}",
-              "type": "color",
-              "description": "Mobile purple tag filled default text - purple/700"
-            },
-            "active": {
-              "value": "{color.accent.purple.900}",
-              "type": "color",
-              "description": "Mobile purple tag filled active text - purple/900"
-            },
-            "focused": {
-              "value": "{color.accent.purple.800}",
-              "type": "color",
-              "description": "Mobile purple tag filled focused text - purple/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for purple filled tag",
-            "ring": {
-              "value": "{color.accent.purple.300}",
-              "type": "color",
-              "description": "Mobile purple tag filled focus ring - purple/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.purple.700}",
-              "type": "color",
-              "description": "Mobile purple tag filled default icon - purple/700"
-            },
-            "active": {
-              "value": "{color.accent.purple.900}",
-              "type": "color",
-              "description": "Mobile purple tag filled active icon - purple/900"
-            },
-            "focused": {
-              "value": "{color.accent.purple.800}",
-              "type": "color",
-              "description": "Mobile purple tag filled focused icon - purple/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for purple filled tag",
-            "background": {
-              "default": {
-                "value": "{color.accent.purple.25}",
-                "type": "color",
-                "description": "Mobile purple tag filled tag-count background - purple/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.purple.700}",
-                "type": "color",
-                "description": "Mobile purple tag filled tag-count text - purple/700"
-              },
-              "active": {
-                "value": "{color.accent.purple.900}",
-                "type": "color",
-                "description": "Mobile purple tag filled tag-count active text - purple/900"
-              },
-              "focused": {
-                "value": "{color.accent.purple.800}",
-                "type": "color",
-                "description": "Mobile purple tag filled tag-count focused text - purple/800"
-              }
-            }
-          }
-        }
-      },
-      "pink": {
-        "$comment": "Pink color variant - pink/magenta color scheme",
-        "outline": {
-          "$comment": "Pink outline style - colored border with light background",
-          "background": {
-            "default": {
-              "value": "{color.background.neutral.base}",
-              "type": "color",
-              "description": "Mobile pink tag outline default background - white"
-            },
-            "active": {
-              "value": "{color.accent.pink.200}",
-              "type": "color",
-              "description": "Mobile pink tag outline active background - pink/200"
-            },
-            "focused": {
-              "value": "{color.accent.pink.100}",
-              "type": "color",
-              "description": "Mobile pink tag outline focused background - pink/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.accent.pink.600}",
-              "type": "color",
-              "description": "Mobile pink tag outline default border - pink/600"
-            },
-            "active": {
-              "value": "{color.accent.pink.800}",
-              "type": "color",
-              "description": "Mobile pink tag outline active border - pink/800"
-            },
-            "focused": {
-              "value": "{color.accent.pink.300}",
-              "type": "color",
-              "description": "Mobile pink tag outline focused border - pink/300"
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.pink.700}",
-              "type": "color",
-              "description": "Mobile pink tag outline default text - pink/700"
-            },
-            "active": {
-              "value": "{color.accent.pink.900}",
-              "type": "color",
-              "description": "Mobile pink tag outline active text - pink/900"
-            },
-            "focused": {
-              "value": "{color.accent.pink.800}",
-              "type": "color",
-              "description": "Mobile pink tag outline focused text - pink/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for pink outline tag",
-            "ring": {
-              "value": "{color.accent.pink.300}",
-              "type": "color",
-              "description": "Mobile pink tag outline focus ring - pink/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.pink.700}",
-              "type": "color",
-              "description": "Mobile pink tag outline default icon - pink/700"
-            },
-            "active": {
-              "value": "{color.accent.pink.900}",
-              "type": "color",
-              "description": "Mobile pink tag outline active icon - pink/900"
-            },
-            "focused": {
-              "value": "{color.accent.pink.800}",
-              "type": "color",
-              "description": "Mobile pink tag outline focused icon - pink/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for pink outline tag",
-            "background": {
-              "default": {
-                "value": "{color.accent.pink.25}",
-                "type": "color",
-                "description": "Mobile pink tag outline tag-count background - pink/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.pink.700}",
-                "type": "color",
-                "description": "Mobile pink tag outline tag-count text - pink/700"
-              },
-              "active": {
-                "value": "{color.accent.pink.900}",
-                "type": "color",
-                "description": "Mobile pink tag outline tag-count active text - pink/900"
-              },
-              "focused": {
-                "value": "{color.accent.pink.800}",
-                "type": "color",
-                "description": "Mobile pink tag outline tag-count focused text - pink/800"
-              }
-            }
-          }
-        },
-        "filled": {
-          "$comment": "Pink filled style - solid pink background",
-          "background": {
-            "default": {
-              "value": "{color.accent.pink.50}",
-              "type": "color",
-              "description": "Mobile pink tag filled default background - pink/50"
-            },
-            "active": {
-              "value": "{color.accent.pink.200}",
-              "type": "color",
-              "description": "Mobile pink tag filled active background - pink/200"
-            },
-            "focused": {
-              "value": "{color.accent.pink.100}",
-              "type": "color",
-              "description": "Mobile pink tag filled focused background - pink/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile pink tag filled default border - transparent"
-            },
-            "active": {
-              "value": "{color.accent.pink.800}",
-              "type": "color",
-              "description": "Mobile pink tag filled active border - pink/800"
-            },
-            "focused": {
-              "value": "{color.accent.pink.300}",
-              "type": "color",
-              "description": "Mobile pink tag filled focused border - pink/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.pink.700}",
-              "type": "color",
-              "description": "Mobile pink tag filled default text - pink/700"
-            },
-            "active": {
-              "value": "{color.accent.pink.900}",
-              "type": "color",
-              "description": "Mobile pink tag filled active text - pink/900"
-            },
-            "focused": {
-              "value": "{color.accent.pink.800}",
-              "type": "color",  
-              "description": "Mobile pink tag filled focused text - pink/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for pink filled tag",
-            "ring": {
-              "value": "{color.accent.pink.300}",
-              "type": "color",
-              "description": "Mobile pink tag filled focus ring - pink/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.pink.700}",
-              "type": "color",
-              "description": "Mobile pink tag filled default icon - pink/700"
-            },
-            "active": {
-              "value": "{color.accent.pink.900}",
-              "type": "color",
-              "description": "Mobile pink tag filled active icon - pink/900"
-            },
-            "focused": {
-              "value": "{color.accent.pink.800}",
-              "type": "color",
-              "description": "Mobile pink tag filled focused icon - pink/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for pink filled tag",
-            "background": {
-              "default": {
-                "value": "{color.accent.pink.25}",
-                "type": "color",
-                "description": "Mobile pink tag filled tag-count background - pink/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.pink.700}",
-                "type": "color",
-                "description": "Mobile pink tag filled tag-count text - pink/700"
-              },
-              "active": {
-                "value": "{color.accent.pink.900}",
-                "type": "color",
-                "description": "Mobile pink tag filled tag-count active text - pink/900"
-              },
-              "focused": {
-                "value": "{color.accent.pink.800}",
-                "type": "color",
-                "description": "Mobile pink tag filled tag-count focused text - pink/800"
-              }
-            }
-          }
-        }
-      },
-      "rose": {
-        "$comment": "Rosé color variant - rose/crimson color scheme",
-        "outline": {
-          "$comment": "Rosé outline style - colored border with light background",
-          "background": {
-            "default": {
-              "value": "{color.background.neutral.base}",
-              "type": "color",
-              "description": "Mobile rose tag outline default background - white"
-            },
-            "active": {
-              "value": "{color.accent.rose.200}",
-              "type": "color",
-              "description": "Mobile rose tag outline active background - rose/200"
-            },
-            "focused": {
-              "value": "{color.accent.rose.100}",
-              "type": "color",
-              "description": "Mobile rose tag outline focused background - rose/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.accent.rose.600}",
-              "type": "color",
-              "description": "Mobile rose tag outline default border - rose/600"
-            },
-            "active": {
-              "value": "{color.accent.rose.800}",
-              "type": "color",
-              "description": "Mobile rose tag outline active border - rose/800"
-            },
-            "focused": {
-              "value": "{color.accent.rose.300}",
-              "type": "color",
-              "description": "Mobile rose tag outline focused border - rose/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.rose.700}",
-              "type": "color",
-              "description": "Mobile rose tag outline default text - rose/700"
-            },
-            "active": {
-              "value": "{color.accent.rose.900}",
-              "type": "color",
-              "description": "Mobile rose tag outline active text - rose/900"
-            },
-            "focused": {
-              "value": "{color.accent.rose.800}",
-              "type": "color",
-              "description": "Mobile rose tag outline focused text - rose/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for rose outline tag",
-            "ring": {
-              "value": "{color.accent.rose.300}",
-              "type": "color",
-              "description": "Mobile rose tag outline focus ring - rose/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.rose.700}",
-              "type": "color",
-              "description": "Mobile rose tag outline default icon - rose/700"
-            },
-            "active": {
-              "value": "{color.accent.rose.900}",
-              "type": "color",
-              "description": "Mobile rose tag outline active icon - rose/900"
-            },
-            "focused": {
-              "value": "{color.accent.rose.800}",
-              "type": "color",
-              "description": "Mobile rose tag outline focused icon - rose/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for rose outline tag",
-            "background": {
-              "default": {
-                "value": "{color.accent.rose.25}",
-                "type": "color",
-                "description": "Mobile rose tag outline tag-count background - rose/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.rose.700}",
-                "type": "color",
-                "description": "Mobile rose tag outline tag-count text - rose/700"
-              },
-              "active": {
-                "value": "{color.accent.rose.900}",
-                "type": "color",
-                "description": "Mobile rose tag outline tag-count active text - rose/900"
-              },
-              "focused": {
-                "value": "{color.accent.rose.800}",
-                "type": "color",
-                "description": "Mobile rose tag outline tag-count focused text - rose/800"
-              }
-            }
-          }
-        },
-        "filled": {
-          "$comment": "Rosé filled style - solid rose background",
-          "background": {
-            "default": {
-              "value": "{color.accent.rose.50}",
-              "type": "color",
-              "description": "Mobile rose tag filled default background - rose/50"
-            },
-            "active": {
-              "value": "{color.accent.rose.200}",
-              "type": "color",
-              "description": "Mobile rose tag filled active background - rose/200"
-            },
-            "focused": {
-              "value": "{color.accent.rose.100}",
-              "type": "color",
-              "description": "Mobile rose tag filled focused background - rose/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile rose tag filled default border - transparent"
-            },
-            "active": {
-              "value": "{color.accent.rose.800}",
-              "type": "color",
-              "description": "Mobile rose tag filled active border - rose/800"
-            },
-            "focused": {
-              "value": "{color.accent.rose.300}",
-              "type": "color",
-              "description": "Mobile rose tag filled focused border - rose/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.rose.700}",
-              "type": "color",
-              "description": "Mobile rose tag filled default text - rose/700"
-            },
-            "active": {
-              "value": "{color.accent.rose.900}",
-              "type": "color",
-              "description": "Mobile rose tag filled active text - rose/900"
-            },
-            "focused": {
-              "value": "{color.accent.rose.800}",
-              "type": "color",
-              "description": "Mobile rose tag filled focused text - rose/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for rose filled tag",
-            "ring": {
-              "value": "{color.accent.rose.300}",
-              "type": "color",
-              "description": "Mobile rose tag filled focus ring - rose/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.rose.700}",
-              "type": "color",
-              "description": "Mobile rose tag filled default icon - rose/700"
-            },
-            "active": {
-              "value": "{color.accent.rose.900}",
-              "type": "color",
-              "description": "Mobile rose tag filled active icon - rose/900"
-            },
-            "focused": {
-              "value": "{color.accent.rose.800}",
-              "type": "color",
-              "description": "Mobile rose tag filled focused icon - rose/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for rose filled tag",
-            "background": {
-              "default": {
-                "value": "{color.accent.rose.25}",
-                "type": "color",
-                "description": "Mobile rose tag filled tag-count background - rose/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.rose.700}",
-                "type": "color",
-                "description": "Mobile rose tag filled tag-count text - rose/700"
-              },
-              "active": {
-                "value": "{color.accent.rose.900}",
-                "type": "color",
-                "description": "Mobile rose tag filled tag-count active text - rose/900"
-              },
-              "focused": {
-                "value": "{color.accent.rose.800}",
-                "type": "color",
-                "description": "Mobile rose tag filled tag-count focused text - rose/800"
-              }
-            }
-          }
-        }
-      },
-      "orange-dark": {
-        "$comment": "Orange Dark color variant - deep orange/vermilion color scheme",
-        "outline": {
-          "$comment": "Orange Dark outline style - colored border with light background",
-          "background": {
-            "default": {
-              "value": "{color.background.neutral.base}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline default background - white"
-            },
-            "active": {
-              "value": "{color.accent.orange-dark.200}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline active background - orange-dark/200"
-            },
-            "focused": {
-              "value": "{color.accent.orange-dark.100}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline focused background - orange-dark/100"  
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.accent.orange-dark.600}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline default border - orange-dark/600"
-            },
-            "active": {
-              "value": "{color.accent.orange-dark.800}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline active border - orange-dark/800"
-            },
-            "focused": {
-              "value": "{color.accent.orange-dark.300}",
-              "type": "color",  
-              "description": "Mobile orange-dark tag outline focused border - orange-dark/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.orange-dark.700}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline default text - orange-dark/700"
-            },
-            "active": {
-              "value": "{color.accent.orange-dark.900}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline active text - orange-dark/900"
-            },
-            "focused": {
-              "value": "{color.accent.orange-dark.800}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline focused text - orange-dark/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for orange-dark outline tag",
-            "ring": {
-              "value": "{color.accent.orange-dark.300}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline focus ring - orange-dark/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.orange-dark.700}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline default icon - orange-dark/700"
-            },
-            "active": {
-              "value": "{color.accent.orange-dark.900}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline active icon - orange-dark/900"
-            },
-            "focused": {
-              "value": "{color.accent.orange-dark.800}",
-              "type": "color",
-              "description": "Mobile orange-dark tag outline focused icon - orange-dark/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for orange-dark outline tag",
-            "background": {
-              "default": {
-                "value": "{color.accent.orange-dark.50}",
-                "type": "color",
-                "description": "Mobile orange-dark tag outline tag-count background - orange-dark/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.orange-dark.700}",
-                "type": "color",
-                "description": "Mobile orange-dark tag outline tag-count text - orange-dark/700"
-              },
-              "active": {
-                "value": "{color.accent.orange-dark.900}",
-                "type": "color",
-                "description": "Mobile orange-dark tag outline tag-count active text - orange-dark/900"
-              },
-              "focused": {
-                "value": "{color.accent.orange-dark.800}",
-                "type": "color",
-                "description": "Mobile orange-dark tag outline tag-count focused text - orange-dark/800"
-              }
-            }
-          }
-        },
-        "filled": {
-          "$comment": "Orange Dark filled style - solid deep-orange background",
-          "background": {
-            "default": {
-              "value": "{color.accent.orange-dark.50}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled default background - orange-dark/50"
-            },
-            "active": {
-              "value": "{color.accent.orange-dark.200}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled active background - orange-dark/200"
-            },
-            "focused": {
-              "value": "{color.accent.orange-dark.100}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled focused background - orange-dark/100"
-            }
-          },
-          "border": {
-            "default": {
-              "value": "{color.border.transparent}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled default border - transparent"
-            },
-            "active": {
-              "value": "{color.accent.orange-dark.800}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled active border - orange-dark/800"
-            },
-            "focused": {
-              "value": "{color.accent.orange-dark.300}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled focused border - orange-dark/300"
-            }
-          },
-          "text": {
-            "default": {
-              "value": "{color.accent.orange-dark.700}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled default text - orange-dark/700"
-            },
-            "active": {
-              "value": "{color.accent.orange-dark.900}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled active text - orange-dark/900"
-            },
-            "focused": {
-              "value": "{color.accent.orange-dark.800}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled focused text - orange-dark/800"
-            }
-          },
-          "focus": {
-            "$comment": "Focus ring for orange-dark filled tag",
-            "ring": {
-              "value": "{color.accent.orange-dark.300}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled focus ring - orange-dark/300"
-            }
-          },
-          "icon": {
-            "default": {
-              "value": "{color.accent.orange-dark.700}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled default icon - orange-dark/700"
-            },
-            "active": {
-              "value": "{color.accent.orange-dark.900}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled active icon - orange-dark/900"
-            },
-            "focused": {
-              "value": "{color.accent.orange-dark.800}",
-              "type": "color",
-              "description": "Mobile orange-dark tag filled focused icon - orange-dark/800"
-            }
-          },
-          "tag-count": {
-            "$comment": "Tag count badge tokens for orange-dark filled tag",
-            "background": {
-              "default": {
-                "value": "{color.accent.orange-dark.50}",
-                "type": "color",
-                "description": "Mobile orange-dark tag filled tag-count background - orange-dark/25"
-              }
-            },
-            "text": {
-              "default": {
-                "value": "{color.accent.orange-dark.700}",
-                "type": "color",
-                "description": "Mobile orange-dark tag filled tag-count text - orange-dark/700"
-              },
-              "active": {
-                "value": "{color.accent.orange-dark.900}",
-                "type": "color",
-                "description": "Mobile orange-dark tag filled tag-count active text - orange-dark/900"
-              },
-              "focused": {
-                "value": "{color.accent.orange-dark.800}",
-                "type": "color",
-                "description": "Mobile orange-dark tag filled tag-count focused text - orange-dark/800"
-              }
-            }
-          }
-        }
-      }
-    },
-    "text": {
-      "$comment": "Typography tokens for tag component - text label typography for each size",
-      "typography": {
-        "xs": {
-          "value": "{font.body.medium.xs}",
-          "type": "typography",
-          "description": "Mobile tag text typography for xs size - Medium 11px/16px"
-        },
-        "sm": {
-          "value": "{font.body.medium.sm}",
-          "type": "typography",
-          "description": "Mobile tag text typography for sm size - Medium 12px/17px"
-        },
-        "md": {
-          "value": "{font.body.medium.md}",
-          "type": "typography",
-          "description": "Mobile tag text typography for md size - Medium 13px/18px"
-        },
-        "lg": {
-          "value": "{font.body.medium.md}",
-          "type": "typography",
-          "description": "Mobile tag text typography for lg size - Medium 13px/18px"
-        }
-      }
-    },
-    "icon": {
-      "$comment": "Icon size tokens for tag component - close icon and other icon sizes",
-      "size": {
-        "xs": {
-          "value": "{size.icon.3xs}",
-          "type": "dimension",
-          "description": "Mobile tag icon size for xs size - 12px"
-        },
-        "sm": {
-          "value": "{size.icon.2xs}",
-          "type": "dimension",
-          "description": "Mobile tag icon size for sm size - 14px"
-        },
-        "md": {
-          "value": "{size.icon.xs}",
-          "type": "dimension",
-          "description": "Mobile tag icon size for md size - 16px"
-        },
-        "lg": {
-          "value": "{size.icon.md}",
-          "type": "dimension",
-          "description": "Mobile tag icon size for lg size - 20px"
         }
       }
     }
