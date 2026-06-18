@@ -77,179 +77,178 @@
         }
       }
     },
-      "color": {
-        "check": {
-          "$comment": "Checkmark icon color tokens - white on blue background for checked state, grey for disabled",
-          "default": {
-            "value": "{color.icon.neutral.base}",
-            "type": "color",
-            "description": "Mobile checkbox checkmark icon default color - white/base - #ffffff"
-          },
-          "disabled": {
-            "value": "{color.icon.neutral.subtle.2}",
-            "type": "color",
-            "description": "Mobile checkbox checkmark icon disabled color - gray/200 - #eaecf0"
-          }
-        },
-        "indeterminate": {
-          "$comment": "Indeterminate (minus) icon color tokens - white on blue background for indeterminate state, grey for disabled",
-          "default": {
-            "value": "{color.icon.neutral.base}",
-            "type": "color",
-            "description": "Mobile checkbox indeterminate (minus) icon default color - white/base - #ffffff"
-          },
-          "disabled": {
-            "value": "{color.icon.neutral.subtle.2}",
-            "type": "color",
-            "description": "Mobile checkbox indeterminate (minus) icon disabled color - gray/200 - #eaecf0"
-          }
-        }
-      }
-    },
     "color": {
-      "$comment": "Color tokens for mobile checkbox states - includes unchecked, checked, and indeterminate variants with interaction states",
-      "unchecked": {
-        "$comment": "Unchecked state colors - empty checkbox with border",
-        "background": {
-          "default": {
-            "value": "{color.background.neutral.base}",
-            "type": "color",
-            "description": "Mobile checkbox unchecked default background - white/base - #ffffff"
-          },
-          "focused": {
-            "value": "{color.background.neutral.base}",
-            "type": "color",
-            "description": "Mobile checkbox unchecked focused background - white/base - #ffffff"
-          },
-          "disabled": {
-            "value": "{color.background.neutral.subtle.1}",
-            "type": "color",
-            "description": "Mobile checkbox unchecked disabled background - gray/100 - #f2f4f7"
-          }
+      "check": {
+        "$comment": "Checkmark icon color tokens - white on blue background for checked state, grey for disabled",
+        "default": {
+          "value": "{color.icon.neutral.base}",
+          "type": "color",
+          "description": "Mobile checkbox checkmark icon default color - white/base - #ffffff"
         },
-        "border": {
-          "default": {
-            "value": "{color.border.neutral.moderate.0}",
-            "type": "color",
-            "description": "Mobile checkbox unchecked default border - gray/300 - #d0d5dd"
-          },
-          "focused": {
-            "value": "{color.border.primary.subtle.2}",
-            "type": "color",
-            "description": "Mobile checkbox unchecked focused border - blue/200 - #b2ddff"
-          },
-          "disabled": {
-            "value": "{color.border.neutral.default}",
-            "type": "color",
-            "description": "Mobile checkbox unchecked disabled border - gray/300 - #d0d5dd"
-          },
-          "error": {
-            "value": "{color.border.error.moderate.1}",
-            "type": "color",
-            "description": "Mobile checkbox unchecked error border - red/600 - #d92d20"
-          }
-        }
-      },
-      "checked": {
-        "$comment": "Checked state colors - filled checkbox with checkmark icon",
-        "background": {
-          "default": {
-            "value": "{color.background.primary.default}",
-            "type": "color",
-            "description": "Mobile checkbox checked default background - blue/600 - #155eef"
-          },
-          "focused": {
-            "value": "{color.background.primary.default}",
-            "type": "color",
-            "description": "Mobile checkbox checked focused background - blue/600 - #155eef"
-          },
-          "disabled": {
-            "value": "{color.background.neutral.subtle.1}",
-            "type": "color",
-            "description": "Mobile checkbox checked disabled background - gray/100 - #f2f4f7"
-          }
-        },
-        "border": {
-          "default": {
-            "value": "{color.border.primary.default}",
-            "type": "color",
-            "description": "Mobile checkbox checked default border - blue/600 - #155eef"
-          },
-          "focused": {
-            "value": "{color.border.primary.subtle.2}",
-            "type": "color",
-            "description": "Mobile checkbox checked focused border - blue/200 - #b2ddff"
-          },
-          "disabled": {
-            "value": "{color.border.neutral.default}",
-            "type": "color",
-            "description": "Mobile checkbox checked disabled border - gray/300 - #d0d5dd"
-          },
-          "error": {
-            "value": "{color.border.error.moderate.1}",
-            "type": "color",
-            "description": "Mobile checkbox checked error border - red/600 - #d92d20"
-          }
+        "disabled": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile checkbox checkmark icon disabled color - gray/200 - #eaecf0"
         }
       },
       "indeterminate": {
-        "$comment": "Indeterminate state colors - filled checkbox with minus icon",
-        "background": {
-          "default": {
-            "value": "{color.background.primary.default}",
-            "type": "color",
-            "description": "Mobile checkbox indeterminate default background - blue/600 - #155eef"
-          },
-          "focused": {
-            "value": "{color.background.primary.default}",
-            "type": "color",
-            "description": "Mobile checkbox indeterminate focused background - blue/600 - #155eef"
-          },
-          "disabled": {
-            "value": "{color.background.neutral.subtle.1}",
-            "type": "color",
-            "description": "Mobile checkbox indeterminate disabled background - gray/100 - #f2f4f7"
-          }
+        "$comment": "Indeterminate (minus) icon color tokens - white on blue background for indeterminate state, grey for disabled",
+        "default": {
+          "value": "{color.icon.neutral.base}",
+          "type": "color",
+          "description": "Mobile checkbox indeterminate (minus) icon default color - white/base - #ffffff"
         },
-        "border": {
-          "default": {
-            "value": "{color.border.primary.default}",
-            "type": "color",
-            "description": "Mobile checkbox indeterminate default border - blue/600 - #155eef"
-          }, 
-          "focused": {
-            "value": "{color.border.primary.subtle.2}",
-            "type": "color",
-            "description": "Mobile checkbox indeterminate focused border - blue/200 - #b2ddff"
-          },
-          "disabled": {
-            "value": "{color.border.neutral.default}",
-            "type": "color",
-            "description": "Mobile checkbox indeterminate disabled border - gray/300 - #d0d5dd"
-          },
-          "error": {
-            "value": "{color.border.error.moderate.1}",
-            "type": "color",
-            "description": "Mobile checkbox indeterminate error border - red/600 - #d92d20"
-          }
+        "disabled": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile checkbox indeterminate (minus) icon disabled color - gray/200 - #eaecf0"
+        }
+      }
+    }
+  },
+  "color": {
+    "$comment": "Color tokens for mobile checkbox states - includes unchecked, checked, and indeterminate variants with interaction states",
+    "unchecked": {
+      "$comment": "Unchecked state colors - empty checkbox with border",
+      "background": {
+        "default": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile checkbox unchecked default background - white/base - #ffffff"
+        },
+        "focused": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile checkbox unchecked focused background - white/base - #ffffff"
+        },
+        "disabled": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "description": "Mobile checkbox unchecked disabled background - gray/100 - #f2f4f7"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{color.border.neutral.moderate.0}",
+          "type": "color",
+          "description": "Mobile checkbox unchecked default border - gray/300 - #d0d5dd"
+        },
+        "focused": {
+          "value": "{color.border.primary.subtle.2}",
+          "type": "color",
+          "description": "Mobile checkbox unchecked focused border - blue/200 - #b2ddff"
+        },
+        "disabled": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "description": "Mobile checkbox unchecked disabled border - gray/300 - #d0d5dd"
+        },
+        "error": {
+          "value": "{color.border.error.moderate.1}",
+          "type": "color",
+          "description": "Mobile checkbox unchecked error border - red/600 - #d92d20"
         }
       }
     },
-    "effects": {
-      "$comment": "Visual effects for mobile checkbox - focus outline and shadows",
-      "outline": {
+    "checked": {
+      "$comment": "Checked state colors - filled checkbox with checkmark icon",
+      "background": {
+        "default": {
+          "value": "{color.background.primary.default}",
+          "type": "color",
+          "description": "Mobile checkbox checked default background - blue/600 - #155eef"
+        },
         "focused": {
-          "value": "{outline.focus.primary}",
-          "type": "outline",
-          "description": "Mobile checkbox focus outline - primary blue outline for accessibility"
+          "value": "{color.background.primary.default}",
+          "type": "color",
+          "description": "Mobile checkbox checked focused background - blue/600 - #155eef"
+        },
+        "disabled": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "description": "Mobile checkbox checked disabled background - gray/100 - #f2f4f7"
         }
       },
-      "shadow": {
+      "border": {
+        "default": {
+          "value": "{color.border.primary.default}",
+          "type": "color",
+          "description": "Mobile checkbox checked default border - blue/600 - #155eef"
+        },
         "focused": {
-          "value": "boxShadow.focus.2xs.primary.100",
-          "type": "boxShadow",
-          "description": "Mobile checkbox focus shadow - focus 2xs primary 100 for visual focus indicator"
+          "value": "{color.border.primary.subtle.2}",
+          "type": "color",
+          "description": "Mobile checkbox checked focused border - blue/200 - #b2ddff"
+        },
+        "disabled": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "description": "Mobile checkbox checked disabled border - gray/300 - #d0d5dd"
+        },
+        "error": {
+          "value": "{color.border.error.moderate.1}",
+          "type": "color",
+          "description": "Mobile checkbox checked error border - red/600 - #d92d20"
         }
+      }
+    },
+    "indeterminate": {
+      "$comment": "Indeterminate state colors - filled checkbox with minus icon",
+      "background": {
+        "default": {
+          "value": "{color.background.primary.default}",
+          "type": "color",
+          "description": "Mobile checkbox indeterminate default background - blue/600 - #155eef"
+        },
+        "focused": {
+          "value": "{color.background.primary.default}",
+          "type": "color",
+          "description": "Mobile checkbox indeterminate focused background - blue/600 - #155eef"
+        },
+        "disabled": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "description": "Mobile checkbox indeterminate disabled background - gray/100 - #f2f4f7"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{color.border.primary.default}",
+          "type": "color",
+          "description": "Mobile checkbox indeterminate default border - blue/600 - #155eef"
+        },
+        "focused": {
+          "value": "{color.border.primary.subtle.2}",
+          "type": "color",
+          "description": "Mobile checkbox indeterminate focused border - blue/200 - #b2ddff"
+        },
+        "disabled": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "description": "Mobile checkbox indeterminate disabled border - gray/300 - #d0d5dd"
+        },
+        "error": {
+          "value": "{color.border.error.moderate.1}",
+          "type": "color",
+          "description": "Mobile checkbox indeterminate error border - red/600 - #d92d20"
+        }
+      }
+    }
+  },
+  "effects": {
+    "$comment": "Visual effects for mobile checkbox - focus outline and shadows",
+    "outline": {
+      "focused": {
+        "value": "{outline.focus.primary}",
+        "type": "outline",
+        "description": "Mobile checkbox focus outline - primary blue outline for accessibility"
+      }
+    },
+    "shadow": {
+      "focused": {
+        "value": "boxShadow.focus.2xs.primary.100",
+        "type": "boxShadow",
+        "description": "Mobile checkbox focus shadow - focus 2xs primary 100 for visual focus indicator"
       }
     }
   }
