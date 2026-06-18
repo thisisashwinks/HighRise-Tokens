@@ -19,29 +19,29 @@
       "description": "White background for the accordion container"
     },
     "gap": {
-      "value": "{size.3}",
+      "value": "{gap.xs}",
       "type": "dimension",
-      "description": "12px vertical gap between header, divider, and content sections"
+      "description": "Mobile accordion gap - 8px"
     },
     "header": {
       "gap": {
-        "value": "{size.2}",
+        "value": "{gap.xs}",
         "type": "dimension",
-        "description": "8px horizontal gap between the artwork (icon or custom) and the text column"
+        "description": "Mobile accordion header gap - 8px"
       },
       "title-row": {
         "gap": {
-          "value": "{size.2}",
+          "value": "{gap.xs}",
           "type": "dimension",
-          "description": "8px gap between title text, inline Tag badge, and info icon"
+          "description": "Mobile accordion title row gap - 8px"
         }
       },
       "artwork": {
         "icon": {
           "size": {
-            "value": "{size.7}",
+            "value": "{size.icon.xl}",
             "type": "dimension",
-            "description": "28px square container for the icon artwork variant"
+            "description": "Mobile accordion icon size - 28px"
           },
           "color": {
             "default": {
@@ -63,9 +63,9 @@
             "description": "37px square for the custom artwork placeholder (non-standard size, matches Figma spec)"
           },
           "background": {
-            "value": "{color.neutral.gray.200}",
+            "value": "{color.background.neutral.subtle.2}",
             "type": "color",
-            "description": "#eaecf0 — fill for the custom artwork slot"
+            "description": "Mobile accordion custom artwork background - neutral/200 - #eaecf0"
           },
           "border-radius": {
             "value": "{border.radius.sm}",
@@ -79,9 +79,9 @@
               "description": "11px Medium, 16px line-height — placeholder label inside the custom artwork slot"
             },
             "color": {
-              "value": "{color.neutral.gray.600}",
+              "value": "{color.text.neutral.body.2}",
               "type": "color",
-              "description": "#475467 — placeholder label color"
+              "description": "Mobile accordion custom artwork label color - gray/600 - #475467"
             }
           }
         }
@@ -94,14 +94,14 @@
         },
         "color": {
           "default": {
-            "value": "{color.neutral.gray.700}",
+            "value": "{color.text.neutral.body.1}",
             "type": "color",
-            "description": "#344054 — title text in default/enabled state"
+            "description": "Mobile accordion title text color - gray/700 - #344054"
           },
           "disabled": {
-            "value": "{color.neutral.gray.300}",
+            "value": "{color.text.neutral.inactive}",
             "type": "color",
-            "description": "#d0d5dd — title text in disabled state"
+            "description": "Mobile accordion title text color - gray/300 - #d0d5dd"
           }
         }
       },
@@ -125,22 +125,22 @@
         },
         "color": {
           "default": {
-            "value": "{color.neutral.gray.600}",
+            "value": "{color.text.neutral.body.2}",
             "type": "color",
-            "description": "#475467 — subtitle text in default/enabled state"
+            "description": "Mobile accordion subtitle text color - gray/600 - #475467"
           },
           "disabled": {
-            "value": "{color.neutral.gray.300}",
+            "value": "{color.text.neutral.inactive}",
             "type": "color",
-            "description": "#d0d5dd — subtitle text in disabled state"
+            "description": "Mobile accordion subtitle text color - gray/300 - #d0d5dd"
           }
         }
       },
       "chevron": {
         "size": {
-          "value": "{size.7}",
+          "value": "{size.icon.xl}",
           "type": "dimension",
-          "description": "28px square for the chevron toggle icon"
+          "description": "Mobile accordion chevron size - 28px"
         },
         "icon": {
           "collapsed": {
@@ -156,14 +156,14 @@
         },
         "color": {
           "default": {
-            "value": "{color.neutral.gray.700}",
+            "value": "{color.icon.neutral.default}",
             "type": "color",
-            "description": "#344054 — chevron icon color in default/enabled state"
+            "description": "Mobile accordion chevron icon color - gray/700 - #344054"
           },
           "disabled": {
-            "value": "{color.neutral.gray.300}",
+            "value": "{color.icon.neutral.subtle.2}",
             "type": "color",
-            "description": "#d0d5dd — chevron icon color in disabled state"
+            "description": "Mobile accordion chevron icon color - gray/300 - #d0d5dd"
           }
         }
       }
@@ -175,9 +175,9 @@
         "description": "Hairline divider shown below the header row (collapsed) and below content (expanded)"
       },
       "color": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.border.neutral.subtle.2}",
         "type": "color",
-        "description": "#eaecf0 — divider line color"
+        "description": "Mobile accordion divider color - neutral/200 - #eaecf0"
       }
     }
   }
