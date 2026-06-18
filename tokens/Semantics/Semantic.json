@@ -4847,6 +4847,16 @@
         "type": "dimension",
         "description": "Border radius: 12px"
       },
+      "2xl": {
+        "value": "{border.radius.4}",
+        "type": "dimension",
+        "description": "Border radius: 16px"
+      },
+      "3xl": {
+        "value": "{border.radius.5}",
+        "type": "dimension",
+        "description": "Border radius: 20px"
+      },
       "full": {
         "value": "{border.radius.250}",
         "type": "dimension",

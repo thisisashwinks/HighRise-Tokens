@@ -82,28 +82,33 @@
         "description": "Mobile content switcher item horizontal padding - 16px"
       },
       "vertical": {
-        "value": "{padding.y.sm}",
+        "value": "{padding.y.2xs}",
         "type": "dimension",
         "description": "Mobile content switcher item vertical padding - 8px"
       }
     },
     "gap": {
       "content": {
-        "value": "{gap.sm}",
+        "value": "{gap.xs}",
         "type": "dimension",
         "description": "Mobile content switcher item content gap - 8px between icon, label, badge, and subtext"
       },
-      "horizontal": {
-        "value": "{gap.sm}",
+      "container": {
+        "value": "{gap.xs}",
         "type": "dimension",
-        "description": "Mobile content switcher item horizontal gap - 8px between icon, label, and badge on the same row"
+        "description": "Mobile content switcher item container gap - 8px between icon, label, and badge on the same row"
       }
     },
-    "border": {
-      "radius": {
-        "value": "{border.radius.sm}",
+    "border-radius": {
+      "default": {
+        "value": "{border.radius.md}",
         "type": "dimension",
         "description": "Mobile content switcher item border radius - 8px"
+      },
+      "rounded": {
+        "value": "{border.radius.3xl}",
+        "type": "dimension",
+        "description": "Mobile content switcher item rounded border radius - 20px"
       }
     },
     "shadow": {
@@ -113,14 +118,9 @@
     },
     "sizing": {
       "icon": {
-        "value": "{size.icon.sm}",
+        "value": "{size.icon.lg}",
         "type": "dimension",
-        "description": "Mobile content switcher item icon size - 18px"
-      },
-      "badge": {
-        "value": "{size.5xs}",
-        "type": "dimension",
-        "description": "Mobile content switcher item badge size - 16px"
+        "description": "Mobile content switcher item icon size - 24px"
       }
     }
   }
