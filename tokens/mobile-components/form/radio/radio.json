@@ -118,9 +118,9 @@
       },
       "selected": {
         "default": {
-          "value": "{color.border.transparent}",
+          "value": "{color.border.neutral.base}",
           "type": "color",
-          "description": "Mobile selected radio default border - transparent - no visible border (selection indicated by background color)"
+          "description": "Mobile selected radio default border - neutral/gray-0 - #ffffff (white border)"
         },
         "focused": {
           "value": "{color.border.primary.moderate.1}",
