@@ -27,7 +27,7 @@
       "$comment": "Container tokens for the tooltip body — dark rounded box holding the label and optional icon",
       "color": {
         "background": {
-          "value": "{color.background.neutral.intense.2}",
+          "value": "{color.background.neutral.intense.1}",
           "type": "color",
           "description": "Mobile tooltip container background - neutral/gray-800 - #1d2939"
         }
@@ -41,12 +41,12 @@
       },
       "padding": {
         "horizontal": {
-          "value": "{padding.4}",
+          "value": "{padding.x.md}",
           "type": "dimension",
           "description": "Mobile tooltip container horizontal padding - 16px"
         },
         "vertical": {
-          "value": "{padding.4}",
+          "value": "{padding.y.lg}",
           "type": "dimension",
           "description": "Mobile tooltip container vertical padding - 16px"
         }
@@ -60,17 +60,17 @@
     "arrow": {
       "$comment": "Arrow/pointer tokens — the directional triangle that points toward the triggering element. Always matches the container background color.",
       "color": {
-        "value": "{color.background.neutral.intense.2}",
+        "value": "{color.background.neutral.intense.1}",
         "type": "color",
         "description": "Mobile tooltip arrow fill color - matches container background - neutral/gray-800 - #1d2939"
       },
       "height": {
-        "value": "{size.2}",
+        "value": "{size.icon.5xs}",
         "type": "dimension",
         "description": "Mobile tooltip arrow height (perpendicular depth) - 8px — consistent across all 4 directions"
       },
       "width": {
-        "value": "{size.8}",
+        "value": "{size.icon.2xl}",
         "type": "dimension",
         "description": "Mobile tooltip arrow width (span along the container edge) - 32px — consistent across all 4 directions"
       }
