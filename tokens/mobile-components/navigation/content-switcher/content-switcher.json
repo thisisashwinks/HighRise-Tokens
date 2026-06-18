@@ -18,15 +18,20 @@
         "description": "Mobile content switcher container padding - 8px"
       },
       "gap": {
-        "value": "{gap.sm}",
+        "value": "{gap.xs}",
         "type": "dimension",
         "description": "Mobile content switcher gap between items - 8px"
       },
-    "border": {
-      "radius": {
-        "value": "{border.radius.3xl}",
+    "border-radius": {
+      "default": {
+        "value": "{border.radius.md}",
         "type": "dimension",
-        "description": "Mobile content switcher border radius - 12px"
+        "description": "Mobile content switcher default border radius - 8px"
+      },
+      "rounded": {
+        "value": "{border.radius.full}",
+        "type": "dimension",
+        "description": "Mobile content switcher rounded border radius - 100%"
       }
     }
   }

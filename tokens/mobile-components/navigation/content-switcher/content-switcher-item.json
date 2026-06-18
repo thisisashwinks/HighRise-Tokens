@@ -106,9 +106,9 @@
         "description": "Mobile content switcher item border radius - 8px"
       },
       "rounded": {
-        "value": "{border.radius.3xl}",
+        "value": "{border.radius.full}",
         "type": "dimension",
-        "description": "Mobile content switcher item rounded border radius - 20px"
+        "description": "Mobile content switcher item rounded border radius - 100%"
       }
     },
     "shadow": {
