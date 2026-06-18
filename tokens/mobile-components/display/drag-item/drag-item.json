@@ -14,12 +14,12 @@
       "description": "Standard content width inside a 393px mobile viewport with 16px padding each side"
     },
     "padding": {
-      "value": "{size.1}",
+      "value": "{padding.4xs}",
       "type": "dimension",
       "description": "4px inset on all sides"
     },
     "gap": {
-      "value": "{size.1}",
+      "value": "{gap.3xs}",
       "type": "dimension",
       "description": "4px gap between the drag handle and the content slot"
     },
@@ -30,14 +30,14 @@
     },
     "background": {
       "default": {
-        "value": "{color.neutral.gray.100}",
+        "value": "{color.background.neutral.subtle.1}",
         "type": "color",
-        "description": "#f2f4f7 — idle background in Default state"
+        "description": "Mobile drag item default background - neutral/100 - #f2f4f7"
       },
       "pressed": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.background.neutral.subtle.2}",
         "type": "color",
-        "description": "#eaecf0 — slightly darker background when the item is actively pressed"
+        "description": "Mobile drag item pressed background - neutral/200 - #eaecf0"
       },
       "dragging": {
         "value": "{color.accent.blue-light.50}",
@@ -45,27 +45,27 @@
         "description": "#f0f9ff — light blue tint applied while the item is being dragged"
       },
       "disabled": {
-        "value": "transparent",
+        "value": "{color.background.transparent}",
         "type": "color",
-        "description": "No background in Disabled state"
+        "description": "Mobile drag item disabled background - transparent - #FFFFFF00"
       },
       "empty": {
-        "value": "transparent",
+        "value": "{color.background.transparent}",
         "type": "color",
-        "description": "No background in Empty state (dashed border only)"
+        "description": "Mobile drag item empty background - transparent - #FFFFFF00"
       }
     },
     "border": {
       "width": {
         "dragging": {
-          "value": "3px",
+          "value": "border.width.0[75]",
           "type": "dimension",
-          "description": "Thick solid ring shown while the item is being dragged"
+          "description": "Mobile drag item dragging border width - 3px"
         },
         "empty": {
-          "value": "1px",
+          "value": "border.width.default",
           "type": "dimension",
-          "description": "Thin dashed border indicating an empty drop target"
+          "description": "Mobile drag item empty border width - 1px"
         }
       },
       "style": {
@@ -82,14 +82,14 @@
       },
       "color": {
         "dragging": {
-          "value": "{color.primary.blue.400}",
+          "value": "{color.border.primary.moderate.0}",
           "type": "color",
-          "description": "#528bff — primary blue ring in Dragging state"
+          "description": "Mobile drag item dragging border color - gray/400 - #98a2b3"
         },
         "empty": {
-          "value": "{color.primary.blue.400}",
+          "value": "{color.border.primary.moderate.0}",
           "type": "color",
-          "description": "#528bff — same primary blue for the dashed empty slot border"
+          "description": "Mobile drag item empty border color - gray/400 - #98a2b3"
         }
       }
     },
@@ -107,14 +107,14 @@
     },
     "drag-handle": {
       "size": {
-        "value": "{size.5}",
+        "value": "{size.4xs}",
         "type": "dimension",
-        "description": "20px — width and height of the drag_indicator icon"
+        "description": "Mobile drag item handle size - 20px"
       },
       "icon-name": {
         "value": "drag_indicator",
         "type": "string",
-        "description": "GHL icon name for the drag affordance (six-dot grid pattern)"
+        "description": "Mobile drag item handle icon name - drag_indicator"
       },
       "rotation": {
         "left-right": {
@@ -130,37 +130,37 @@
       },
       "color": {
         "default": {
-          "value": "{color.neutral.gray.400}",
+          "value": "{color.background.neutral.moderate.1}",
           "type": "color",
-          "description": "#98a2b3 — muted handle color in idle Default state"
+          "description": "Mobile drag item handle default background - gray/400 - #98a2b3"
         },
         "pressed": {
-          "value": "{color.neutral.gray.600}",
+          "value": "{color.background.neutral.moderate.3}",
           "type": "color",
-          "description": "#475467 — darker handle when item is being pressed"
+          "description": "Mobile drag item handle pressed background - gray/600 - #475467"
         },
         "dragging": {
-          "value": "{color.primary.blue.400}",
+          "value": "{color.background.primary.moderate.0}",
           "type": "color",
-          "description": "#528bff — handle adopts the primary blue tint while being dragged, matching the border"
+          "description": "Mobile drag item handle dragging background - blue/400 - #528bff"
         },
         "disabled": {
-          "value": "{color.neutral.gray.300}",
+          "value": "{color.background.neutral.moderate.0}",
           "type": "color",
-          "description": "#d0d5dd — washed-out handle in Disabled state"
+          "description": "Mobile drag item handle disabled background - gray/300 - #d0d5dd"
         },
         "empty": {
-          "value": "transparent",
+          "value": "{color.background.transparent}",
           "type": "color",
-          "description": "Handle is invisible (opacity 0) in Empty state — space is reserved but icon is hidden"
+          "description": "Mobile drag item handle empty background - transparent - #FFFFFF00"
         }
       }
     },
     "slot": {
       "padding-vertical": {
-        "value": "{size.2}",
+        "value": "{padding.y.2xs}",
         "type": "dimension",
-        "description": "8px top and bottom padding inside the Custom Slot content area"
+        "description": "Mobile drag item slot vertical padding - 8px"
       },
       "border-radius": {
         "value": "{border.radius.xs}",
@@ -174,9 +174,9 @@
           "description": "13px Semibold, 18px line-height — placeholder label shown when the slot has no content"
         },
         "color": {
-          "value": "{color.neutral.gray.400}",
+          "value": "{color.background.neutral.moderate.1}",
           "type": "color",
-          "description": "#98a2b3 — muted gray for the 'Custom Slot' placeholder text"
+          "description": "Mobile drag item slot label color - gray/400 - #98a2b3"
         }
       }
     }

@@ -2333,6 +2333,11 @@
         "type": "number",
         "description": "Border width: 2px"
       },
+      "0[75]": {
+        "value": 3,
+        "type": "number",
+        "description": "Border width: 3px"
+      },
       "1[5]": {
         "value": 6,
         "type": "number",
