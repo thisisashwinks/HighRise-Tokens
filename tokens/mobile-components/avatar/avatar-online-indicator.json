@@ -50,7 +50,7 @@
         "description": "Mobile avatar online indicator border radius - fully circular (7px for 14px element = pill)"
       },
       "width": {
-        "value": "{border.width.s}",
+        "value": "{border.width.sm}",
         "type": "dimension",
         "description": "Mobile avatar online indicator border width - 1.5px white ring that separates the dot from the avatar background"
       },
