@@ -10,26 +10,26 @@
     "booleans": ["dismiss", "subtext"]
   },
   "system-alert": {
-    "width": {
-      "value": "393px",
-      "type": "dimension",
-      "description": "Full mobile viewport width"
-    },
     "padding": {
-      "value": "{size.4}",
+      "value": "{padding.lg}",
       "type": "dimension",
-      "description": "16px inset on all sides"
+      "description": "Mobile system alert padding - 16px"
     },
     "gap": {
-      "value": "{size.2}",
+      "value": "{gap.xs}",
       "type": "dimension",
-      "description": "8px horizontal gap between the leading icon, the content column, and the trailing icon"
+      "description": "Mobile system alert gap - 8px"
+    },
+    "border-radius": {
+      "value": "{border.radius.none}",
+      "type": "dimension",
+      "description": "Mobile system alert border radius - 0px"
     },
     "content": {
       "gap": {
-        "value": "{size.1}",
+        "value": "{gap.3xs}",
         "type": "dimension",
-        "description": "4px vertical gap between the title row and the subtext row"
+        "description": "Mobile system alert content gap - 4px"
       },
       "title": {
         "typography": {
@@ -48,9 +48,9 @@
     },
     "icon": {
       "size": {
-        "value": "20px",
+        "value": "{size.icon.md}",
         "type": "dimension",
-        "description": "Width and height for both the leading semantic icon and the trailing action/dismiss icon"
+        "description": "Mobile system alert icon size - 20px"
       },
       "trailing": {
         "default": {
@@ -68,230 +68,230 @@
     "primary": {
       "high": {
         "background": {
-          "value": "{color.primary.blue.700}",
+          "value": "{color.background.primary.intense.0}",
           "type": "color",
-          "description": "#004eeb — solid primary blue background at High priority"
+          "description": "Mobile system alert primary background - primary/700 - #004eeb"
         },
         "title-color": {
-          "value": "{color.neutral.gray.25}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "#fcfcfd — near-white title text on the blue background"
+          "description": "Mobile system alert primary title text - gray/0 - #ffffff"
         },
         "subtext-color": {
-          "value": "{color.neutral.gray.25}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "#fcfcfd — near-white subtext on the blue background"
+          "description": "Mobile system alert primary subtext text - gray/0 - #ffffff"
         },
         "icon-color": {
-          "value": "{color.neutral.gray.25}",
+          "value": "{color.icon.primary.base}",
           "type": "color",
-          "description": "#fcfcfd — near-white icons on the blue background"
+          "description": "Mobile system alert primary icon color - gray/0 - #ffffff"
         }
       },
       "medium": {
         "background": {
-          "value": "{color.primary.blue.25}",
+          "value": "{color.background.primary.inactive}",
           "type": "color",
-          "description": "#f5f8ff — very light blue tint at Medium priority"
+          "description": "Mobile system alert primary background - gray/25 - #f5f8ff"
         },
         "title-color": {
-          "value": "{color.primary.blue.700}",
+          "value": "{color.text.primary.body.1}",
           "type": "color",
-          "description": "#004eeb — primary blue title text on the light tinted background"
+          "description": "Mobile system alert primary title text - primary/700 - #004eeb"
         },
         "subtext-color": {
-          "value": "{color.primary.blue.700}",
+          "value": "{color.text.primary.body.1}",
           "type": "color",
-          "description": "#004eeb — primary blue subtext matching the title"
+          "description": "Mobile system alert primary subtext text - primary/700 - #004eeb"
         },
         "icon-color": {
-          "value": "{color.primary.blue.700}",
+          "value": "{color.icon.primary.default}",
           "type": "color",
-          "description": "#004eeb — primary blue icons matching the text"
+          "description": "Mobile system alert primary icon color - primary/700 - #004eeb"
         }
       }
     },
     "warning": {
       "high": {
         "background": {
-          "value": "{color.secondary.warning.600}",
+          "value": "{color.background.warning.default}",
           "type": "color",
-          "description": "#dc6803 — solid amber/orange background at High priority"
+          "description": "Mobile system alert warning background - warning/600 - #dc6803"
         },
         "title-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White title text on the amber background"
+          "description": "Mobile system alert warning title text - gray/0 - #ffffff"
         },
         "subtext-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White subtext on the amber background"
+          "description": "Mobile system alert warning subtext text - gray/0 - #ffffff"
         },
         "icon-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.icon.neutral.base}",
           "type": "color",
-          "description": "White icons on the amber background"
+          "description": "Mobile system alert warning icon color - gray/0 - #ffffff"
         }
       },
       "medium": {
         "background": {
-          "value": "{color.secondary.warning.25}",
+          "value": "{color.background.warning.inactive}",
           "type": "color",
-          "description": "#fffcf5 — very light warm cream tint at Medium priority"
+          "description": "Mobile system alert warning background - warning/25 - #fffcf5"
         },
         "title-color": {
-          "value": "{color.secondary.warning.700}",
+          "value": "{color.text.warning.body.1}",
           "type": "color",
-          "description": "#b54708 — dark amber title text on the cream background"
+          "description": "Mobile system alert warning title text - warning/700 - #b54708"
         },
         "subtext-color": {
-          "value": "{color.secondary.warning.700}",
+          "value": "{color.text.warning.body.1}",
           "type": "color",
-          "description": "#b54708 — dark amber subtext matching the title"
+          "description": "Mobile system alert warning subtext text - warning/700 - #b54708"
         },
         "icon-color": {
-          "value": "{color.secondary.warning.700}",
+          "value": "{color.icon.warning.default}",
           "type": "color",
-          "description": "#b54708 — dark amber icons matching the text"
+          "description": "Mobile system alert warning icon color - warning/700 - #b54708"
         }
       }
     },
     "success": {
       "high": {
         "background": {
-          "value": "{color.secondary.success.600}",
+          "value": "{color.background.success.default}",
           "type": "color",
-          "description": "#039855 — solid green background at High priority"
+          "description": "Mobile system alert success background - success/600 - #039855"
         },
         "title-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White title text on the green background"
+          "description": "Mobile system alert success title text - gray/0 - #ffffff"
         },
         "subtext-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White subtext on the green background"
+          "description": "Mobile system alert success subtext text - gray/0 - #ffffff"
         },
         "icon-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.icon.neutral.base}",
           "type": "color",
-          "description": "White icons on the green background"
+          "description": "Mobile system alert success icon color - gray/0 - #ffffff"
         }
       },
       "medium": {
         "background": {
-          "value": "{color.secondary.success.50}",
+          "value": "{color.background.success.subtle.0}",
           "type": "color",
-          "description": "#ecfdf3 — very light green tint at Medium priority"
+          "description": "Mobile system alert success background - success/50 - #ecfdf3"
         },
         "title-color": {
-          "value": "{color.secondary.success.700}",
+          "value": "{color.text.success.body.1}",
           "type": "color",
-          "description": "#027a48 — dark green title text on the light tinted background"
+          "description": "Mobile system alert success title text - success/700 - #027a48"
         },
         "subtext-color": {
-          "value": "{color.secondary.success.700}",
+          "value": "{color.text.success.body.1}",
           "type": "color",
-          "description": "#027a48 — dark green subtext matching the title"
+          "description": "Mobile system alert success subtext text - success/700 - #027a48"
         },
         "icon-color": {
-          "value": "{color.secondary.success.700}",
+          "value": "{color.icon.success.default}",
           "type": "color",
-          "description": "#027a48 — dark green icons matching the text"
+          "description": "Mobile system alert success icon color - success/700 - #027a48"
         }
       }
     },
     "error": {
       "high": {
         "background": {
-          "value": "{color.secondary.error.700}",
+          "value": "{color.background.error.intense.0}",
           "type": "color",
-          "description": "#b42318 — solid deep red background at High priority"
+          "description": "Mobile system alert error background - error/900 - #7a271a"
         },
         "title-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White title text on the red background"
+          "description": "Mobile system alert error title text - gray/0 - #ffffff"
         },
         "subtext-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White subtext on the red background"
+          "description": "Mobile system alert error subtext text - gray/0 - #ffffff"
         },
         "icon-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.icon.neutral.base}",
           "type": "color",
-          "description": "White icons on the red background"
+          "description": "Mobile system alert error icon color - gray/0 - #ffffff"
         }
       },
       "medium": {
         "background": {
-          "value": "{color.secondary.error.50}",
+          "value": "{color.background.error.subtle.0}",
           "type": "color",
-          "description": "#fef3f2 — very light pink tint at Medium priority"
+          "description": "Mobile system alert error background - error/50 - #fef3f2"
         },
         "title-color": {
-          "value": "{color.secondary.warning.700}",
+          "value": "{color.text.error.body.1}",
           "type": "color",
-          "description": "#b54708 — Figma source uses warning/700 (amber) for Error Medium text; captured faithfully"
+          "description": "Mobile system alert error title text - error/700 - #b42318"
         },
         "subtext-color": {
-          "value": "{color.secondary.warning.700}",
+          "value": "{color.text.error.body.1}",
           "type": "color",
-          "description": "#b54708 — matches title-color per Figma source"
+          "description": "Mobile system alert error subtext text - error/700 - #b42318"
         },
         "icon-color": {
-          "value": "{color.secondary.warning.700}",
+          "value": "{color.icon.error.default}",
           "type": "color",
-          "description": "#b54708 — matches text per Figma source"
+          "description": "Mobile system alert error icon color - error/700 - #b42318"
         }
       }
     },
     "neutral": {
       "high": {
         "background": {
-          "value": "{color.neutral.gray.500}",
+          "value": "{color.background.neutral.moderate.2}",
           "type": "color",
-          "description": "#667085 — solid medium gray background at High priority"
+          "description": "Mobile system alert neutral background - gray/500 - #667085"
         },
         "title-color": {
-          "value": "{color.neutral.gray.25}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "#fcfcfd — near-white title text on the gray background"
+          "description": "Mobile system alert neutral title text - gray/0 - #ffffff"
         },
         "subtext-color": {
-          "value": "{color.neutral.gray.25}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "#fcfcfd — near-white subtext on the gray background"
+          "description": "Mobile system alert neutral subtext text - gray/0 - #ffffff"
         },
         "icon-color": {
-          "value": "{color.neutral.gray.25}",
+          "value": "{color.icon.neutral.base}",
           "type": "color",
-          "description": "#fcfcfd — near-white icons on the gray background"
+          "description": "Mobile system alert neutral icon color - gray/0 - #ffffff"
         }
       },
       "medium": {
         "background": {
-          "value": "{color.neutral.gray.50}",
+          "value": "{color.background.neutral.subtle.0}",
           "type": "color",
-          "description": "#f9fafb — near-white light gray tint at Medium priority"
+          "description": "Mobile system alert neutral background - gray/50 - #f9fafb"
         },
         "title-color": {
-          "value": "{color.neutral.gray.700}",
+          "value": "{color.text.neutral.body.1}",
           "type": "color",
-          "description": "#344054 — dark gray title text on the light background"
+          "description": "Mobile system alert neutral title text - gray/700 - #344054"
         },
         "subtext-color": {
-          "value": "{color.neutral.gray.600}",
+          "value": "{color.text.neutral.body.2}",
           "type": "color",
-          "description": "#475467 — slightly lighter gray for subtext, one step below the title"
+          "description": "Mobile system alert neutral subtext text - gray/600 - #475467"
         },
         "icon-color": {
-          "value": "{color.neutral.gray.700}",
+          "value": "{color.icon.neutral.default}",
           "type": "color",
-          "description": "#344054 — dark gray icons matching the title"
+          "description": "Mobile system alert neutral icon color - gray/700 - #344054"
         }
       }
     }
