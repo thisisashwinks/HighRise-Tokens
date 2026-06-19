@@ -1110,6 +1110,11 @@
       "type": "dimension",
       "description": "Padding: 1px"
     },
+    "0[375]": {
+      "value": "{spacing.0[375]}",
+      "type": "dimension",
+      "description": "Padding: 1.5px"
+    },
     "0[5]": {
       "value": "{spacing.0[5]}",
       "type": "dimension",
@@ -1562,6 +1567,11 @@
         "value": "{padding.0[25]}",
         "type": "dimension",
         "description": "Padding (vertical): 1px"
+      },
+      "0[375]": {
+        "value": "{padding.0[375]}",
+        "type": "dimension",
+        "description": "Padding (vertical): 1.5px"
       },
       "0[5]": {
         "value": "{padding.0[5]}",
