@@ -4,8 +4,15 @@
   "$component": {
     "name": "Accordion",
     "figmaNodeId": "419:17412",
-    "states": ["collapsed", "expanded", "disabled"],
-    "artworkVariants": ["icon", "custom"],
+    "states": [
+      "collapsed",
+      "expanded",
+      "disabled"
+    ],
+    "artworkVariants": [
+      "icon",
+      "custom"
+    ],
     "subComponents": [
       "Custom Slot (custom-slot.json)",
       "Tag (HighRise design system — see tag/tag.json)",
@@ -14,16 +21,45 @@
   },
   "accordion": {
     "background": {
-      "value": "{color.neutral.white.base}",
+      "value": "{color.background.neutral.base}",
       "type": "color",
-      "description": "White background for the accordion container"
+      "description": "Mobile accordion background - neutral/base - #ffffff"
     },
     "gap": {
-      "value": "{gap.xs}",
+      "value": "{gap.none}",
       "type": "dimension",
-      "description": "Mobile accordion gap - 8px"
+      "description": "Mobile accordion gap - 0px"
+    },
+    "border": {
+      "radius": {
+        "value": "{border.radius.md}",
+        "type": "dimension",
+        "description": "Mobile accordion border radius - 8px"
+      },
+      "color": {
+        "value": "{color.border.neutral.subtle.2}",
+        "type": "color",
+        "description": "Mobile accordion border color - neutral/200 - #eaecf0"
+      },
+      "width": {
+        "value": "{border.width.default}",
+        "type": "dimension",
+        "description": "Mobile accordion border width - 1px"
+      }
     },
     "header": {
+      "padding": {
+        "x": {
+          "value": "{padding.x.xs}",
+          "type": "dimension",
+          "description": "Mobile accordion header horizontal padding - 12px"
+        },
+        "y": {
+          "value": "{padding.y.2xs}",
+          "type": "dimension",
+          "description": "Mobile accordion header vertical padding - 8px"
+        }
+      },
       "gap": {
         "value": "{gap.xs}",
         "type": "dimension",
@@ -58,9 +94,9 @@
         },
         "custom": {
           "size": {
-            "value": "37px",
+            "value": "{size.sm}",
             "type": "dimension",
-            "description": "37px square for the custom artwork placeholder (non-standard size, matches Figma spec)"
+            "description": "Mobile accordion custom artwork size - 36px"
           },
           "background": {
             "value": "{color.background.neutral.subtle.2}",
@@ -110,6 +146,18 @@
           "value": "{size.icon.sm}",
           "type": "dimension",
           "description": "18px — info-circle icon displayed inline next to the title"
+        },
+        "color": {
+          "default": {
+            "value": "{color.icon.neutral.moderate.2}",
+            "type": "color",
+            "description": "Mobile accordion info icon color - gray-600 - #475467"
+          },
+          "disabled": {
+            "value": "{color.icon.neutral.subtle.2}",
+            "type": "color",
+            "description": "Mobile accordion info icon color - gray/300 - #d0d5dd"
+          }
         },
         "name": {
           "value": "info-circle",
@@ -170,14 +218,21 @@
     },
     "divider": {
       "height": {
-        "value": "1px",
+        "value": "size.0[25]",
         "type": "dimension",
-        "description": "Hairline divider shown below the header row (collapsed) and below content (expanded)"
+        "description": "Mobile accordion divider height - 1px"
       },
       "color": {
         "value": "{color.border.neutral.subtle.2}",
         "type": "color",
         "description": "Mobile accordion divider color - neutral/200 - #eaecf0"
+      }
+    },
+    "content": {
+      "padding": {
+        "value": "{padding.sm}",
+        "type": "dimension",
+        "description": "Mobile accordion content horizontal padding - 12px"
       }
     }
   }

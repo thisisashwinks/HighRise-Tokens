@@ -12,60 +12,55 @@
     }
   },
   "timed-button": {
-    "width": {
-      "value": "361px",
-      "type": "dimension",
-      "description": "Full component width — standard mobile viewport (393px) minus 16px horizontal padding on each side"
-    },
     "height": {
-      "value": "56px",
+      "value": "{size.2xl}",
       "type": "dimension",
-      "description": "Fixed button height across all types and states"
+      "description": "Fixed button height across all types and states - 2xl - 56px"
     },
     "border-radius": {
-      "value": "{border.radius.sm}",
+      "value": "{border.radius.md}",
       "type": "borderRadius",
-      "description": "8px corner radius applied to all button types"
+      "description": "8px corner radius applied to all button types - md - 8px"
     },
     "border-width": {
-      "value": "1px",
+      "value": "{border.width.default}",
       "type": "dimension",
-      "description": "Border width applied to all button types"
+      "description": "Border width applied to all button types - default - 1px"
     },
     "padding-horizontal": {
-      "value": "28px",
+      "value": "{padding.x.2xl}",
       "type": "dimension",
-      "description": "Left and right inset padding inside the button"
+      "description": "Left and right inset padding inside the button - 2xl - 28px"
     },
     "padding-vertical": {
-      "value": "16px",
+      "value": "{padding.y.lg}",
       "type": "dimension",
-      "description": "Top and bottom inset padding inside the button"
+      "description": "Top and bottom inset padding inside the button - lg - 16px"
     },
     "gap": {
-      "value": "12px",
+      "value": "{gap.md}",
       "type": "dimension",
-      "description": "Horizontal gap between leading icon, label text, and trailing icon"
+      "description": "Horizontal gap between leading icon, label text, and trailing icon - md - 8px"
     },
     "label": {
       "typography": {
-        "value": "{font.heading.semibold.3xl}",
+        "value": "{font.heading.semibold.lg}",
         "type": "typography",
         "description": "18px SemiBold, 28px line-height — larger than a standard button to reflect the prominent timed CTA treatment"
       }
     },
     "icon": {
       "size": {
-        "value": "24px",
+        "value": "{size.icon.lg}",
         "type": "dimension",
-        "description": "Width and height of the leading and trailing icon placeholders"
+        "description": "Width and height of the leading and trailing icon placeholders - lg - 24px"
       }
     },
     "progress-fill": {
       "height": {
-        "value": "56px",
+        "value": "{size.2xl}",
         "type": "dimension",
-        "description": "Height of the absolute-positioned fill overlay — matches the button height to span the full vertical area"
+        "description": "Height of the absolute-positioned fill overlay - 2xl - 56px"
       },
       "offset": {
         "value": "-1px",
@@ -81,70 +76,70 @@
       },
       "enabled": {
         "background": {
-          "value": "{color.primary.600}",
+          "value": "{color.background.primary.default}",
           "type": "color",
-          "description": "#155eef — solid blue fill for the default active state"
+          "description": "Primary button default background color - primary/600 - #155eef"
         },
         "border-color": {
-          "value": "{color.primary.600}",
+          "value": "{color.border.primary.default}",
           "type": "color",
-          "description": "Matches background — seamless filled appearance"
+          "description": "Primary button default border color - primary/600 - #155eef"
         },
         "label-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White label and icon on blue background"
+          "description": "Primary button default label color - gray/0 - #ffffff"
         },
         "progress-fill-background": {
-          "value": "{color.primary.800}",
+          "value": "{color.background.primary.intense.1}",
           "type": "color",
-          "description": "#0040c1 — darker blue overlay that grows from the left to show elapsed time on a Primary button"
+          "description": "Primary button active background color - primary/800 - #0042a8"
         }
       },
       "pressed": {
         "background": {
-          "value": "{color.primary.600}",
+          "value": "{color.background.primary.default}",
           "type": "color",
-          "description": "Same as Enabled — no background change on press for Primary"
+          "description": "Primary button pressed background color - primary/600 - #155eef"
         },
         "border-color": {
-          "value": "{color.primary.600}",
+          "value": "{color.border.primary.default}",
           "type": "color",
-          "description": "Matches background"
+          "description": "Primary button pressed border color - primary/600 - #155eef"
         },
         "label-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White label and icon"
+          "description": "Primary button pressed label color - gray/0 - #ffffff"
         }
       },
       "disabled": {
         "background": {
-          "value": "{color.primary.200}",
+          "value": "{color.background.primary.subtle.2}",
           "type": "color",
-          "description": "#b2ccff — washed-out blue indicating the button is not yet interactive"
+          "description": "Primary button disabled background color - primary/200 - #84adff"
         },
         "border-color": {
-          "value": "{color.primary.600}",
+          "value": "{color.border.primary.subtle.2}",
           "type": "color",
-          "description": "Full-strength blue border contrasts with the muted background to signal the locked state"
+          "description": "Primary button disabled border color - primary/subtle/2 - #b2ccff"
         },
         "label-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White label and icon — readable against the muted blue background"
+          "description": "Primary button disabled label color - gray/0 - #ffffff"
         }
       },
       "loading": {
         "background": {
-          "value": "{color.primary.600}",
+          "value": "{color.background.primary.default}",
           "type": "color",
-          "description": "Same as Enabled — spinner replaces content while background stays the same"
+          "description": "Primary button loading background color - primary/600 - #155eef"
         },
         "border-color": {
-          "value": "{color.primary.600}",
+          "value": "{color.border.primary.default}",
           "type": "color",
-          "description": "Matches background"
+          "description": "Primary button loading border color - primary/600 - #155eef"
         }
       }
     },
@@ -156,135 +151,135 @@
       },
       "enabled": {
         "background": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.background.neutral.base}",
           "type": "color",
-          "description": "White background for the outlined secondary treatment"
+          "description": "Secondary button default background color - gray/0 - #ffffff"
         },
         "border-color": {
-          "value": "{color.primary.300}",
+          "value": "{color.border.primary.subtle.2}",
           "type": "color",
-          "description": "#84adff — light blue border defining the secondary button boundary"
+          "description": "Secondary button default border color - primary/300 - #84adff"
         },
         "label-color": {
-          "value": "{color.primary.700}",
+          "value": "{color.text.primary.body.1}",
           "type": "color",
-          "description": "#004eeb — dark blue label and icon on white background"
+          "description": "Secondary button default label color - primary/700 - #101828"
         },
         "progress-fill-background": {
-          "value": "{color.primary.200}",
+          "value": "{color.background.primary.subtle.2}",
           "type": "color",
-          "description": "#b2ccff — soft blue fill overlay that grows from the left to show elapsed time on a Secondary button"
+          "description": "Secondary button active background color - primary/200 - #b2ccff"
         }
       },
       "pressed": {
         "background": {
-          "value": "{color.primary.50}",
+          "value": "{color.background.primary.subtle.0}",
           "type": "color",
-          "description": "#eff4ff — tinted background on press"
+          "description": "Secondary button pressed background color - primary/50 - #eff4ff"
         },
         "border-color": {
-          "value": "{color.primary.300}",
+          "value": "{color.border.primary.subtle.2}",
           "type": "color",
-          "description": "Same border as Enabled"
+          "description": "Same border as Enabled - primary/300 - #84adff"
         },
         "label-color": {
-          "value": "{color.primary.700}",
+          "value": "{color.text.primary.body.1}",
           "type": "color",
-          "description": "Same dark blue label as Enabled"
+          "description": "Secondary button pressed label color - primary/700 - #101828"
         }
       },
       "disabled": {
         "background": {
-          "value": "{color.primary.50}",
+          "value": "{color.background.primary.subtle.0}",
           "type": "color",
-          "description": "#eff4ff — same tinted background as Pressed, indicating the button is locked"
+          "description": "Secondary button disabled background color - primary/50 - #eff4ff"
         },
         "border-color": {
-          "value": "{color.primary.300}",
+          "value": "{color.border.primary.subtle.2}",
           "type": "color",
-          "description": "Same border throughout Secondary states"
+          "description": "Secondary button disabled border color - primary/300 - #84adff"
         },
         "label-color": {
-          "value": "{color.primary.200}",
+          "value": "{color.text.primary.body.1}",
           "type": "color",
-          "description": "#b2ccff — muted blue label and icon to reinforce the disabled state"
+          "description": "Secondary button disabled label color - primary/700 - #101828"
         }
       },
       "loading": {
         "background": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.background.neutral.base}",
           "type": "color",
-          "description": "Returns to white background while spinner is active"
+          "description": "Secondary button loading background color - gray/0 - #ffffff"
         },
         "border-color": {
-          "value": "{color.primary.300}",
+          "value": "{color.border.primary.subtle.2}",
           "type": "color",
-          "description": "Same border throughout Secondary states"
+          "description": "Secondary button loading border color - primary/300 - #84adff"
         }
       }
     },
     "tertiary": {
       "enabled": {
         "background": {
-          "value": "{color.primary.50}",
+          "value": "{color.background.primary.subtle.0}",
           "type": "color",
-          "description": "#eff4ff — very light blue ghost background"
+          "description": "Tertiary button default background color - primary/50 - #eff4ff"
         },
         "border-color": {
-          "value": "{color.primary.50}",
+          "value": "{color.border.primary.subtle.0}",
           "type": "color",
-          "description": "Matches background — borderless appearance"
+          "description": "Tertiary button default border color - primary/50 - #eff4ff"
         },
         "label-color": {
-          "value": "{color.primary.700}",
+          "value": "{color.text.primary.body.1}",
           "type": "color",
-          "description": "#004eeb — dark blue label and icon"
+          "description": "Tertiary button default label color - primary/700 - #101828"
         }
       },
       "pressed": {
         "background": {
-          "value": "{color.primary.100}",
+          "value": "{color.background.primary.subtle.1}",
           "type": "color",
-          "description": "#d1e0ff — slightly deeper blue on press"
+          "description": "Tertiary button pressed background color - primary/100 - #d1e0ff"
         },
         "border-color": {
-          "value": "{color.primary.50}",
+          "value": "{color.border.primary.subtle.0}",
           "type": "color",
-          "description": "Lighter than background — retains the borderless feel while adding depth"
+          "description": "Tertiary button pressed border color - primary/50 - #eff4ff"
         },
         "label-color": {
-          "value": "{color.primary.700}",
+          "value": "{color.text.primary.body.1}",
           "type": "color",
-          "description": "Same dark blue label as Enabled"
+          "description": "Tertiary button pressed label color - primary/700 - #101828"
         }
       },
       "disabled": {
         "background": {
-          "value": "{color.primary.100}",
+          "value": "{color.background.primary.subtle.1}",
           "type": "color",
-          "description": "Same as Pressed background — locked state reuses the deeper tint"
+          "description": "Tertiary button disabled background color - primary/100 - #d1e0ff"
         },
         "border-color": {
-          "value": "{color.primary.50}",
+          "value": "{color.border.primary.subtle.0}",
           "type": "color",
-          "description": "Same lighter border as Pressed"
+          "description": "Tertiary button disabled border color - primary/50 - #eff4ff"
         },
         "label-color": {
-          "value": "{color.primary.200}",
+          "value": "{color.text.primary.inactive.2}",
           "type": "color",
-          "description": "#b2ccff — muted blue label and icon for the disabled state"
+          "description": "Tertiary button disabled label color - primary/200 - #b2ccff"
         }
       },
       "loading": {
         "background": {
-          "value": "{color.primary.50}",
+          "value": "{color.background.primary.subtle.0}",
           "type": "color",
-          "description": "Returns to the lightest ghost tint while spinner is active"
+          "description": "Tertiary button loading background color - primary/50 - #eff4ff"
         },
         "border-color": {
-          "value": "{color.primary.50}",
+          "value": "{color.border.primary.subtle.0}",
           "type": "color",
-          "description": "Matches background — borderless appearance during loading"
+          "description": "Tertiary button loading border color - primary/50 - #eff4ff"
         }
       }
     }

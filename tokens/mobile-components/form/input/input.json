@@ -26,9 +26,9 @@
       "$comment": "Border radius and width for mobile input fields",
       "radius": {
         "sm": {
-          "value": "{border.radius.1[5]}",
+          "value": "{border.radius.sm}",
           "type": "dimension",
-          "description": "Mobile input border radius for sm size - 6px"
+          "description": "Mobile input border radius for sm size - 6px (sm - 6px)"
         },
         "md": {
           "value": "{border.radius.md}",
@@ -148,14 +148,14 @@
           "description": "Mobile input icon size for sm - 16px"
         },
         "md": {
-          "value": "{size.icon.xs}",
+          "value": "{size.icon.md}",
           "type": "dimension",
-          "description": "Mobile input icon size for md - 16px"
+          "description": "Mobile input icon size for md - 20px"
         },
         "lg": {
-          "value": "{size.icon.xs}",
+          "value": "{size.icon.lg}",
           "type": "dimension",
-          "description": "Mobile input icon size for lg - 16px"
+          "description": "Mobile input icon size for lg - 24px"
         }
       }
     },
@@ -448,9 +448,9 @@
             "description": "Mobile dropdown chevron size for md - 20px"
           },
           "lg": {
-            "value": "{size.icon.md}",
+            "value": "{size.icon.lg}",
             "type": "dimension",
-            "description": "Mobile dropdown chevron size for lg - 20px"
+            "description": "Mobile dropdown chevron size for lg - 24px"
           }
         },
         "color": {
@@ -483,9 +483,9 @@
               "description": "Mobile password toggle icon size for md - 20px"
             },
             "lg": {
-              "value": "{size.icon.md}",
+              "value": "{size.icon.lg}",
               "type": "dimension",
-              "description": "Mobile password toggle icon size for lg - 20px"
+              "description": "Mobile password toggle icon size for lg - 24px"
             }
           },
           "color": {
@@ -517,7 +517,7 @@
           "description": "Mobile leading icon size for md - 20px"
         },
         "lg": {
-          "value": "{size.icon.md}",
+          "value": "{size.icon.lg}",
           "type": "dimension",
           "description": "Mobile leading icon size for lg - 20px"
         }
@@ -595,14 +595,14 @@
       "country-code-selector": {
         "size": {
           "sm": {
-            "value": "{size.icon.md}",
+            "value": "{size.icon.xs}",
             "type": "dimension",
-            "description": "Phone number input country code selector size for sm size - 20px"
+            "description": "Phone number input country code selector size for sm size - 16px"
           },
           "md": {
-            "value": "{size.icon.lg}",
+            "value": "{size.icon.md}",
             "type": "dimension",
-            "description": "Phone number input country code selector size for md size - 24px"
+            "description": "Phone number input country code selector size for md size - 20px"
           },
           "lg": {
             "value": "{size.icon.lg}",
@@ -696,14 +696,14 @@
       "icon": {
         "size": {
           "sm": {
-            "value": "{size.icon.md}",
+            "value": "{size.icon.xs}",
             "type": "dimension",
-            "description": "Mobile clear button icon size for sm - 20px"
+            "description": "Mobile clear button icon size for sm - 16px"
           },
           "md": {
-            "value": "{size.icon.lg}",
+            "value": "{size.icon.md}",
             "type": "dimension",
-            "description": "Mobile clear button icon size for md - 24px"
+            "description": "Mobile clear button icon size for md - 20px"
           },
           "lg": {
             "value": "{size.icon.lg}",
@@ -729,14 +729,14 @@
       "$comment": "Loading indicator element - indicator to show that the input is loading",
       "size": {
         "sm": {
-          "value": "{size.icon.md}",
+          "value": "{size.icon.xs}",
           "type": "dimension",
-          "description": "Mobile loading indicator size for sm - 20px"
+          "description": "Mobile loading indicator size for sm - 16px"
         },
         "md": {
-          "value": "{size.icon.lg}",
+          "value": "{size.icon.md}",
           "type": "dimension",
-          "description": "Mobile loading indicator size for md - 24px"
+          "description": "Mobile loading indicator size for md - 20px"
         },
         "lg": {
           "value": "{size.icon.lg}",

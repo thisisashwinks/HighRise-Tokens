@@ -103,10 +103,20 @@
                 "description": "Mobile tab item border radius - none - 0px"
             },
             "width": {
+                "default": {
+                    "value": "{border.width.lg}",
+                    "type": "dimension",
+                    "description": "Mobile tab item border width - lg - 4px"
+                },
                 "active": {
                     "value": "{border.width.lg}",
                     "type": "dimension",
-                    "description": "Mobile tab item active state bottom border width - 4px"
+                    "description": "Mobile tab item active state bottom border width - lg - 4px"
+                },
+                "disabled": {
+                    "value": "{border.width.lg}",
+                    "type": "dimension",
+                    "description": "Mobile tab item border width - lg - 4px"
                 }
             }
         },
@@ -121,9 +131,9 @@
             },
             "y": {
                 "default": {
-                    "value": "{padding.y.5xs}",
+                    "value": "{padding.y.4xs}",
                     "type": "dimension",
-                    "description": "Mobile tab item vertical padding for default variant - 4px"
+                    "description": "Mobile tab item vertical padding for default variant - 4xs - 4px"
                 }
             },
             "icon-top": {

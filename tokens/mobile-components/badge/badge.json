@@ -6,78 +6,129 @@
     "figmaNodeId": "587:24997",
     "figmaFile": "HighRise Mobile Components",
     "variants": {
-      "type": ["Hint", "Label", "icon"],
-      "size": ["md", "sm"],
-      "theme": ["Primary", "Success", "Warning", "Error"]
+      "type": [
+        "Hint",
+        "Label",
+        "icon"
+      ],
+      "size": [
+        "md",
+        "sm"
+      ],
+      "theme": [
+        "Primary",
+        "Success",
+        "Warning",
+        "Error"
+      ]
     }
   },
   "badge": {
-    "border-radius": {
-      "value": "20px",
-      "type": "borderRadius",
-      "description": "Fully rounded pill/circle shape applied to all badge types"
+    "border": {
+      "radius": {
+        "value": "{border.radius.full}",
+        "type": "borderRadius",
+        "description": "Mobile badge border radius - 100%"
+      },
+      "width": {
+        "md": {
+          "value": "{border.width.0[75]}",
+          "type": "borderWidth",
+          "description": "Mobile badge border width - 0[75] - 3px"
+        },
+        "sm": {
+          "value": "{border.width.md}",
+          "type": "borderWidth",
+          "description": "Mobile badge border width - md - 2px"
+        }
+      },
+      "color": {
+        "value": "{color.border.neutral.subtle.1}",
+        "type": "borderColor",
+        "description": "Mobile badge border color - gray/100 - #f2f4f7"
+      }
     },
     "theme": {
       "primary": {
         "background": {
-          "value": "{color.primary.500}",
+          "value": "{color.background.primary.moderate.1}",
           "type": "color",
-          "description": "#2970ff — blue background for primary-theme Label and icon badges"
+          "description": "Mobile badge primary background - primary/500 - #2970ff"
         },
-        "foreground": {
-          "value": "{color.neutral.white.base}",
+        "label": {
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White icon and label text on blue background"
+          "description": "Mobile badge primary label text - gray/0 - #ffffff"
+        },
+        "icon": {
+          "value": "{color.icon.neutral.base}",
+          "type": "color",
+          "description": "Mobile badge primary icon color - gray/0 - #ffffff"
         }
       },
       "success": {
         "background": {
-          "value": "{color.secondary.success.700}",
+          "value": "{color.background.success.intense.0}",
           "type": "color",
-          "description": "#027a48 — dark green background for success-theme Label and icon badges"
+          "description": "Mobile badge success background - success/700 - #027a48"
         },
-        "foreground": {
-          "value": "{color.neutral.white.base}",
+        "label": {
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White icon and label text on dark green background"
+          "description": "Mobile badge success label text - gray/0 - #ffffff"
+        },
+        "icon": {
+          "value": "{color.icon.neutral.base}",
+          "type": "color",
+          "description": "Mobile badge success icon color - gray/0 - #ffffff"
         }
       },
       "warning": {
         "background": {
-          "value": "{color.secondary.warning.300}",
+          "value": "{color.background.warning.moderate.0}",
           "type": "color",
-          "description": "#fec84b — yellow background for warning-theme Label and icon badges"
+          "description": "Mobile badge warning background - warning/300 - #fec84b"
         },
-        "foreground": {
-          "value": "{color.neutral.gray.900}",
+        "label": {
+          "value": "{color.text.neutral.title.1}",
           "type": "color",
-          "description": "#101828 — dark text and icon on yellow background for sufficient contrast"
+          "description": "Mobile badge warning label text - gray/900 - #101828"
+        },
+        "icon": {
+          "value": "{color.icon.neutral.intense.1}",
+          "type": "color",
+          "description": "Mobile badge warning icon color - gray/900 - #101828"
         }
       },
       "error": {
         "background": {
-          "value": "{color.secondary.error.600}",
+          "value": "{color.background.error.default}",
           "type": "color",
-          "description": "#d92d20 — red background for error-theme Label and icon badges"
+          "description": "Mobile badge error background - error/600 - #d92d20"
         },
-        "foreground": {
-          "value": "{color.neutral.white.base}",
+        "label": {
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White icon and label text on red background"
+          "description": "Mobile badge error label text - gray/0 - #ffffff"
+        },
+        "icon": {
+          "value": "{color.icon.neutral.base}",
+          "type": "color",
+          "description": "Mobile badge error icon color - gray/0 - #ffffff"
         }
       }
     },
     "hint": {
       "size": {
         "md": {
-          "value": "12px",
+          "value": "{size.icon.3xs}",
           "type": "dimension",
-          "description": "Width and height of the medium dot indicator"
+          "description": "Mobile badge hint size - 3xs - 12px"
         },
         "sm": {
-          "value": "8px",
+          "value": "{size.icon.5xs}",
           "type": "dimension",
-          "description": "Width and height of the small dot indicator"
+          "description": "Mobile badge hint size - 5xs - 8px"
         }
       }
     },
@@ -87,61 +138,74 @@
         "type": "typography",
         "description": "12px Medium, 17px line-height — numeric count inside the badge"
       },
-      "size": {
-        "md": {
-          "height": {
-            "value": "20px",
-            "type": "dimension",
-            "description": "Fixed height of the medium label badge"
-          },
-          "padding-horizontal": {
-            "value": "8px",
-            "type": "dimension",
-            "description": "Left and right padding inside the medium label badge"
-          },
-          "padding-vertical": {
-            "value": "2px",
-            "type": "dimension",
-            "description": "Top and bottom padding inside the medium label badge"
-          }
+      "md": {
+        "size": {
+          "value": "{size.4xs}",
+          "type": "dimension",
+          "description": "Mobile badge label size - 4xs - 20px"
         },
-        "sm": {
-          "height": {
-            "value": "16px",
-            "type": "dimension",
-            "description": "Fixed height of the small label badge"
-          },
-          "padding-horizontal": {
-            "value": "4px",
-            "type": "dimension",
-            "description": "Left and right padding inside the small label badge"
-          }
+        "padding-x": {
+          "value": "{padding.x.4xs}",
+          "type": "dimension",
+          "description": "Mobile badge label horizontal padding - 4xs - 6px"
+        },
+        "padding-y": {
+          "value": "padding.y.0[375]",
+          "type": "dimension",
+          "description": "Mobile badge label vertical padding - 0[375] - 1.5px"
+        }
+      },
+      "sm": {
+        "size": {
+          "value": "{size.5xs}",
+          "type": "dimension",
+          "description": "Mobile badge label size - 5xs - 16px"
+        },
+        "padding-x": {
+          "value": "{padding.x.4xs}",
+          "type": "dimension",
+          "description": "Mobile badge label horizontal padding - 4xs - 6px"
+        },
+        "padding-y": {
+          "value": "{padding.y.none}",
+          "type": "dimension",
+          "description": "Mobile badge label vertical padding - none - 0px"
         }
       }
     },
     "icon": {
-      "padding": {
-        "md": {
-          "value": "4px",
+      "md": {
+        "padding": {
+          "value": "{padding.4xs}",
           "type": "dimension",
-          "description": "Inset padding around the icon inside the medium icon badge"
+          "description": "Mobile badge icon horizontal padding - 4xs - 6px"
         },
-        "sm": {
-          "value": "3px",
+        "size": {
+          "value": "{size.4xs}",
           "type": "dimension",
-          "description": "Inset padding around the icon inside the small icon badge"
+          "description": "Mobile badge icon size - 4xs - 20px"
+        },
+        "icon-size": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Mobile badge icon size - 3xs - 12px"
         }
       },
-      "size": {
-        "md": {
-          "value": "12px",
+      "sm": {
+        "padding": {
+          "value": "{padding.3xs}",
           "type": "dimension",
-          "description": "Width and height of the icon inside the medium icon badge"
+          "description": "Mobile badge icon horizontal padding - 3xs - 6px"
         },
-        "sm": {
-          "value": "10px",
+        "size": {
+          "value": "{size.5xs}",
           "type": "dimension",
-          "description": "Width and height of the icon inside the small icon badge"
+          "description": "Mobile badge icon size - 5xs - 16px"
+        },
+        "icon-size": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "Mobile badge icon size - 4xs - 10px"
         }
       }
     }

@@ -342,9 +342,9 @@
             }
           },
           "padding": {
-            "value": "{spacing.1}",
+            "value": "{padding.4xs}",
             "type": "dimension",
-            "description": "Mobile Android toggle thumb icon padding from edge - 4px"
+            "description": "Mobile Android toggle thumb icon padding from edge - 4xs - 4px"
           }
         }
       },
@@ -400,9 +400,9 @@
             }
           },
           "padding": {
-            "value": "{spacing.1}",
+            "value": "{padding.4xs}",
             "type": "dimension",
-            "description": "Mobile iOS toggle knob icon padding from edge - 4px"
+            "description": "Mobile iOS toggle knob icon padding from edge - 4xs - 4px"
           }
         }
       }

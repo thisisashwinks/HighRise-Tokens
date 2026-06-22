@@ -118,10 +118,10 @@
             "description": "Mobile icon neutral disabled stroke color - gray/300 - #d0d5dd"
           },
           "white": {
-          "value": "{color.icon.neutral.base}",
-          "type": "color",
-          "description": "Mobile icon white stroke color - white - #ffffff"
-        }
+            "value": "{color.icon.neutral.base}",
+            "type": "color",
+            "description": "Mobile icon white stroke color - white - #ffffff"
+          }
         },
         "primary": {
           "default": {
@@ -273,57 +273,57 @@
         "$comment": "Square background container properties - rounded square background for outlined icons",
         "size": {
           "4xs": {
-            "value": "{size.4}",
+            "value": "{size.5xs}",
             "type": "dimension",
             "description": "Mobile icon square background size for 4xs - 16px"
           },
           "3xs": {
-            "value": "{size.5}",
+            "value": "{size.4xs}",
             "type": "dimension",
             "description": "Mobile icon square background size for 3xs - 20px"
           },
           "2xs": {
-            "value": "{size.6}",
+            "value": "{size.3xs}",
             "type": "dimension",
             "description": "Mobile icon square background size for 2xs - 24px"
           },
           "xs": {
-            "value": "{size.7}",
+            "value": "{size.2xs}",
             "type": "dimension",
             "description": "Mobile icon square background size for xs - 28px"
           },
           "sm": {
-            "value": "{size.8}",
+            "value": "{size.xs}",
             "type": "dimension",
             "description": "Mobile icon square background size for sm - 32px"
           },
           "md": {
-            "value": "{size.9}",
+            "value": "{size.sm}",
             "type": "dimension",
             "description": "Mobile icon square background size for md - 36px"
           },
           "lg": {
-            "value": "{size.10}",
+            "value": "{size.md}",
             "type": "dimension",
             "description": "Mobile icon square background size for lg - 40px"
           },
           "xl": {
-            "value": "{size.11}",
+            "value": "{size.lg}",
             "type": "dimension",
             "description": "Mobile icon square background size for xl - 44px"
           },
           "2xl": {
-            "value": "{size.12}",
+            "value": "{size.xl}",
             "type": "dimension",
             "description": "Mobile icon square background size for 2xl - 48px"
           },
           "3xl": {
-            "value": "{size.14}",
+            "value": "{size.2xl}",
             "type": "dimension",
             "description": "Mobile icon square background size for 3xl - 56px"
           },
           "4xl": {
-            "value": "{size.16}",
+            "value": "{size.3xl}",
             "type": "dimension",
             "description": "Mobile icon square background size for 4xl - 64px"
           }
@@ -331,57 +331,57 @@
         "border": {
           "radius": {
             "4xs": {
-              "value": "{border.radius.1}",
+              "value": "{border.radius.xs}",
               "type": "dimension",
               "description": "Mobile icon square background border radius for 4xs - 4px"
             },
             "3xs": {
-              "value": "{border.radius.1}",
+              "value": "{border.radius.xs}",
               "type": "dimension",
               "description": "Mobile icon square background border radius for 3xs - 4px"
             },
             "2xs": {
-              "value": "{border.radius.1}",
+              "value": "{border.radius.xs}",
               "type": "dimension",
               "description": "Mobile icon square background border radius for 2xs - 4px"
             },
             "xs": {
-              "value": "{border.radius.1[5]}",
+              "value": "{border.radius.sm}",
               "type": "dimension",
               "description": "Mobile icon square background border radius for xs - 6px"
             },
             "sm": {
-              "value": "{border.radius.1[5]}",
+              "value": "{border.radius.sm}",
               "type": "dimension",
               "description": "Mobile icon square background border radius for sm - 6px"
             },
             "md": {
-              "value": "{border.radius.2}",
+              "value": "{border.radius.md}",
               "type": "dimension",
               "description": "Mobile icon square background border radius for md - 8px"
             },
             "lg": {
-              "value": "{border.radius.2}",
+              "value": "{border.radius.md}",
               "type": "dimension",
               "description": "Mobile icon square background border radius for lg - 8px"
             },
             "xl": {
-              "value": "{border.radius.2}",
+              "value": "{border.radius.md}",
               "type": "dimension",
               "description": "Mobile icon square background border radius for xl - 8px"
             },
             "2xl": {
-              "value": "{border.radius.2}",
+              "value": "{border.radius.md}",
               "type": "dimension",
               "description": "Mobile icon square background border radius for 2xl - 8px"
             },
             "3xl": {
-              "value": "{border.radius.2}",
+              "value": "{border.radius.md}",
               "type": "dimension",
               "description": "Mobile icon square background border radius for 3xl - 8px"
             },
             "4xl": {
-              "value": "{border.radius.2}",
+              "value": "{border.radius.md}",
               "type": "dimension",
               "description": "Mobile icon square background border radius for 4xl - 8px"
             }
@@ -508,6 +508,21 @@
             "value": "{padding.3}",
             "type": "dimension",
             "description": "Mobile icon square background padding for 4xl - 12px"
+          }
+        }
+      },
+      "circular-background": {
+        "$comment": "Circular background container properties - circular background container for outlined icons",
+        "border": {
+          "radius": {
+            "value": "{border.radius.full}",
+            "type": "dimension",
+            "description": "Mobile icon circular background border radius - full - 100%"
+          },
+          "width": {
+            "value": "{border.width.default}",
+            "type": "dimension",
+            "description": "Mobile icon circular background border width - default - 1px"
           }
         }
       }

@@ -4,9 +4,21 @@
   "$component": {
     "name": "Tile",
     "figmaNodeId": "544:21294",
-    "types": ["Stats", "Radio", "Checkbox", "Navigate", "Toggle"],
-    "states": ["Default", "Selected"],
-    "booleans": ["label", "rightContainer"],
+    "types": [
+      "Stats",
+      "Radio",
+      "Checkbox",
+      "Navigate",
+      "Toggle"
+    ],
+    "states": [
+      "Default",
+      "Selected"
+    ],
+    "booleans": [
+      "label",
+      "rightContainer"
+    ],
     "subComponents": [
       "Radio (HighRise)",
       "Checkbox (HighRise)",
@@ -15,30 +27,25 @@
     ]
   },
   "tile": {
-    "width": {
-      "value": "173px",
-      "type": "dimension",
-      "description": "Fixed width for all tile types"
-    },
     "background": {
-      "value": "{color.neutral.white.base}",
+      "value": "{color.background.neutral.base}",
       "type": "color",
-      "description": "White card background for all types and states"
+      "description": "Card background for all types and states - gray/0 - #ffffff"
     },
     "padding": {
-      "value": "{size.3}",
+      "value": "{padding.sm}",
       "type": "dimension",
-      "description": "12px inset on all sides of the tile"
+      "description": "Inset padding on all sides of the tile - sm - 12px"
     },
     "gap": {
-      "value": "{size.2}",
+      "value": "{gap.xs}",
       "type": "dimension",
-      "description": "8px vertical gap between the main content area and any secondary row within the tile"
+      "description": "Vertical gap between the main content area and any secondary row within the tile - xs - 8px"
     },
     "border-radius": {
       "value": "{border.radius.md}",
       "type": "borderRadius",
-      "description": "12px corner radius on the tile card"
+      "description": "Corner radius on the tile card - md - 8px"
     },
     "shadow": {
       "value": "{shadow.sm}",
@@ -48,26 +55,26 @@
     "border": {
       "default": {
         "width": {
-          "value": "1px",
+          "value": "{border.width.default}",
           "type": "dimension",
-          "description": "Border thickness in Default state"
+          "description": "Border thickness in Default state - default - 1px"
         },
         "color": {
-          "value": "{color.neutral.gray.200}",
+          "value": "{color.border.neutral.subtle.2}",
           "type": "color",
-          "description": "#eaecf0 — subtle gray border in unselected Default state"
+          "description": "Border color in unselected Default state - gray/200 - #eaecf0"
         }
       },
       "selected": {
         "width": {
-          "value": "3px",
+          "value": "{border.width.0[75]}",
           "type": "dimension",
-          "description": "Thicker border in Selected state — gives a strong visual selection ring"
+          "description": "Thicker border in Selected state - 0[75] - 3px"
         },
         "color": {
-          "value": "{color.primary.blue.700}",
+          "value": "{color.border.primary.intense.0}",
           "type": "color",
-          "description": "#004eeb — primary blue selection ring"
+          "description": "Border color in Selected state - primary/700 - #004eeb"
         }
       }
     },
@@ -75,22 +82,27 @@
       "typography": {
         "value": "{font.body.semibold.xl}",
         "type": "typography",
-        "description": "15px Semibold, 20px line-height — tile heading/label text (new xl size in the body scale)"
+        "description": "Tile heading/label text - semibold/xl - 15px, 20px line-height"
       },
       "color": {
-        "value": "{color.neutral.gray.900}",
+        "value": "{color.text.neutral.title.1}",
         "type": "color",
-        "description": "#101828 — near-black label text"
+        "description": "Label text color - gray/900 - #101828"
+      },
+      "mandatory-color": {
+        "value": "{color.text.error.body.2}",
+        "type": "color",
+        "description": "Mandatory asterisk color - error/600 - #d92d20"
       },
       "row-height": {
-        "value": "24px",
+        "value": "{size.height.3xs}",
         "type": "dimension",
-        "description": "Fixed height of the label row container"
+        "description": "Fixed height of the label row container - 3xs - 24px"
       },
       "row-gap": {
-        "value": "4px",
+        "value": "{gap.3xs}",
         "type": "dimension",
-        "description": "Gap between inline elements within the label row (e.g. label text and a badge)"
+        "description": "Gap between inline elements within the label row (e.g. label text and a badge) - 3xs - 4px"
       }
     },
     "description": {
@@ -101,52 +113,50 @@
         "description": "13px Regular, 18px line-height — secondary description text"
       },
       "color": {
-        "value": "{color.neutral.gray.900}",
+        "value": "{color.text.neutral.title.1}",
         "type": "color",
-        "description": "#101828 — same color as label; weight difference (Regular vs Semibold) creates hierarchy"
-      },
-      "height": {
-        "value": "38px",
-        "type": "dimension",
-        "description": "Fixed container height for the description text block — constrains multi-line overflow"
+        "description": "Description text color - gray/900 - #101828"
       }
     },
-    "control-tile": {
-      "description": "Layout constraints applied to the four control types: Radio, Checkbox, Navigate, Toggle",
-      "height": {
-        "value": "86px",
-        "type": "dimension",
-        "description": "Fixed height for all control-type tiles (Radio/Checkbox/Navigate/Toggle); Stats type uses auto height"
+    "stat-number": {
+      "typography": {
+        "value": "{font.heading.semibold.h5}",
+        "type": "typography",
+        "description": "Stat number typography - semibold/h5 - 24px, 32px line-height"
       },
-      "right-icon-size": {
-        "value": "24px",
-        "type": "dimension",
-        "description": "Width and height of the right-side icon area for Navigate, Checkbox, and Radio types"
+      "color": {
+        "value": "{color.text.neutral.title.1}",
+        "type": "color",
+        "description": "Stat number color - gray/900 - #101828"
+      }
+    },
+    "info-icon": {
+      "color": {
+        "value": "{color.icon.neutral.moderate.2}",
+        "type": "color",
+        "description": "Info icon color - gray/600 - #475467"
       },
-      "navigate-icon": {
-        "value": "chevron-right",
+      "size": {
+        "value": "{size.icon.3xs}",
+        "type": "dimension",
+        "description": "Info icon size - 3xs - 12px"
+      },
+      "name": {
+        "value": "info-circle",
         "type": "string",
-        "description": "GHL icon name for the Navigate type trailing indicator"
+        "description": "GHL icon name for the Info icon"
       }
     },
-    "stats": {
-      "description": "Stats-type specific tokens. Height is auto/content-driven. Top row shows a label and a 24px icon; bottom row shows a large numeric stat and a Tag.",
-      "top-row-icon-size": {
-        "value": "24px",
-        "type": "dimension",
-        "description": "Width and height of the optional icon displayed in the top-right of the stats tile"
+    "right-icon": {
+      "color": {
+        "value": "{color.icon.neutral.moderate.2}",
+        "type": "color",
+        "description": "Right icon color - gray/600 - #475467"
       },
-      "stat-value": {
-        "typography": {
-          "value": "{font.display.semibold.xs}",
-          "type": "typography",
-          "description": "24px Semibold, 32px line-height — large numeric display value (e.g. '12')"
-        },
-        "color": {
-          "value": "{color.neutral.gray.900}",
-          "type": "color",
-          "description": "#101828 — near-black stat number"
-        }
+      "size": {
+        "value": "{size.icon.lg}",
+        "type": "dimension",
+        "description": "Right icon size - lg - 24px"
       }
     }
   }

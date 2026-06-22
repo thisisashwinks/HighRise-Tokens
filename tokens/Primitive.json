@@ -2088,6 +2088,11 @@
       "type": "number",
       "description": "Spacing: 1px"
     },
+    "0[375]": {
+      "value": 1.5,
+      "type": "number",
+      "description": "Spacing: 1.5px"
+    },
     "0[5]": {
       "value": 2,
       "type": "number",

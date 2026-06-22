@@ -22,11 +22,6 @@
   "sliding-button": {
     "wrapper": {
       "$comment": "Outer wrapper tokens — the full-width container that bounds both the handle and track",
-      "width": {
-        "value": "361px",
-        "type": "dimension",
-        "description": "Mobile sliding button fixed component width - 361px"
-      },
       "border": {
         "color": {
           "value": "{color.border.neutral.subtle.2}",
@@ -37,6 +32,11 @@
           "value": "{border.radius.md}",
           "type": "dimension",
           "description": "Mobile sliding button wrapper border radius - 8px"
+        },
+        "width": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile sliding button wrapper border width - default - 1px"
         }
       }
     },
@@ -48,9 +48,9 @@
         "description": "Mobile sliding button handle size (width and height) in Enabled/Disabled/on Drag states - 56px"
       },
       "padding": {
-        "value": "{padding.4}",
+        "value": "{padding.lg}",
         "type": "dimension",
-        "description": "Mobile sliding button handle padding (all sides) - 16px"
+        "description": "Mobile sliding button handle padding (all sides) - lg - 16px"
       },
       "border": {
         "radius": {
@@ -100,9 +100,9 @@
         "description": "Mobile sliding button track height - 56px (matches handle height)"
       },
       "padding": {
-        "value": "{padding.2[5]}",
+        "value": "{padding.xs}",
         "type": "dimension",
-        "description": "Mobile sliding button track padding (all sides) - 10px"
+        "description": "Mobile sliding button track padding (all sides) - xs - 10px"
       },
       "border": {
         "radius": {
