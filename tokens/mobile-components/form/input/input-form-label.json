@@ -1,0 +1,142 @@
+{
+  "$comment": "Mobile Input Form Label Component Tokens",
+  "$description": "Component tokens for Mobile Input Form Label component - the label row that sits above an input field, composed of the label text, an optional mandatory (required) asterisk, and an optional info icon. Supports default and disabled states across 6 sizes (3xs, 2xs, xs, sm, md, lg). Figma Reference: Node ID 5475-99880",
+  "$component": {
+    "name": "Input Form Label",
+    "description": "A mobile form component that labels an input field. Combines the label text with an optional red asterisk for required fields and an optional info icon for contextual help. Renders in a default state and a muted disabled state.",
+    "structure": "Horizontal container with label text, optional mandatory asterisk, and optional info icon, separated by a 4px gap",
+    "sizes": {
+      "3xs": "Extra small size - label 11px (font/size/xs), info icon 10px",
+      "2xs": "Extra small size - label 12px (font/size/sm), info icon 10px",
+      "xs": "Small size - label 13px (font/size/md), info icon 12px",
+      "sm": "Small size - label 14px (font/size/lg), info icon 12px",
+      "md": "Medium size - label 16px (font/size/2xl), info icon 12px",
+      "lg": "Large size - label 16px (font/size/2xl), info icon 14px"
+    },
+    "variants": {
+      "default": "Neutral label with gray text, red mandatory asterisk, and gray info icon",
+      "disabled": "Disabled state with muted gray colors when the form field is disabled"
+    },
+    "usage": {
+      "contexts": "Mobile forms, registration screens, login forms, settings panels, data entry interfaces, profile forms",
+      "features": "Label text, optional required-field asterisk, optional info icon, default and disabled states"
+    }
+  },
+  "input-form-label": {
+    "gap": {
+      "$comment": "Spacing token for mobile input form label - gap between label text, mandatory asterisk, and info icon",
+      "value": "{gap.3xs}",
+      "type": "dimension",
+      "description": "Mobile input form label gap between label text, asterisk, and info icon - 4px"
+    },
+    "text": {
+      "$comment": "Typography and color tokens for the mobile input form label text",
+      "typography": {
+        "3xs": {
+          "value": "{font.body.medium.xs}",
+          "type": "typography",
+          "description": "Mobile input form label typography for 3xs size - Medium 11px/16px"
+        },
+        "2xs": {
+          "value": "{font.body.medium.sm}",
+          "type": "typography",
+          "description": "Mobile input form label typography for 2xs size - Medium 12px/17px"
+        },
+        "xs": {
+          "value": "{font.body.medium.md}",
+          "type": "typography",
+          "description": "Mobile input form label typography for xs size - Medium 13px/18px"
+        },
+        "sm": {
+          "value": "{font.body.medium.base}",
+          "type": "typography",
+          "description": "Mobile input form label typography for sm size - Medium 14px/20px"
+        },
+        "md": {
+          "value": "{font.body.medium.2xl}",
+          "type": "typography",
+          "description": "Mobile input form label typography for md size - Medium 16px/24px"
+        },
+        "lg": {
+          "value": "{font.body.medium.2xl}",
+          "type": "typography",
+          "description": "Mobile input form label typography for lg size - Medium 16px/24px"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.body.1}",
+          "type": "color",
+          "description": "Mobile input form label default text color - gray/700 - #344054"
+        },
+        "disabled": {
+          "value": "{color.text.neutral.subtitle.2}",
+          "type": "color",
+          "description": "Mobile input form label disabled text color - gray/400 - #98a2b3"
+        }
+      }
+    },
+    "mandatory": {
+      "$comment": "Color tokens for the required-field asterisk in the mobile input form label",
+      "color": {
+        "default": {
+          "value": "{color.text.error.body.2}",
+          "type": "color",
+          "description": "Mobile input form label mandatory asterisk default color - error/600 - #d92d20"
+        },
+        "disabled": {
+          "value": "{color.text.neutral.subtitle.2}",
+          "type": "color",
+          "description": "Mobile input form label mandatory asterisk disabled color - gray/400 - #98a2b3"
+        }
+      }
+    },
+    "info-icon": {
+      "$comment": "Size and color tokens for the optional info icon in the mobile input form label",
+      "size": {
+        "3xs": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for 3xs size - 10px"
+        },
+        "2xs": {
+          "value": "{size.icon.4xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for 2xs size - 10px"
+        },
+        "xs": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for xs size - 12px"
+        },
+        "sm": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for sm size - 12px"
+        },
+        "md": {
+          "value": "{size.icon.3xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for md size - 12px"
+        },
+        "lg": {
+          "value": "{size.icon.2xs}",
+          "type": "dimension",
+          "description": "Mobile input form label info icon size for lg size - 14px"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile input form label info icon default color - gray/600 - #475467"
+        },
+        "disabled": {
+          "value": "{color.icon.neutral.subtle.2}",
+          "type": "color",
+          "description": "Mobile input form label info icon disabled color - gray/300 - #d0d5dd"
+        }
+      }
+    }
+  }
+}

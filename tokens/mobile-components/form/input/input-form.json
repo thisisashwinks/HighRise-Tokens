@@ -27,138 +27,17 @@
   },
   "input-form": {
     "gap": {
-      "$comment": "Spacing tokens for mobile input form - defines gaps between label, input field, and hint text",
-      "value": "{gap.3xs}",
-      "type": "dimension",
-      "description": "Mobile input form gap for 3xs size - gap between label, input, and hint text - 4px"
-    },
-    "label": {
-      "$comment": "Label tokens for mobile input form - includes typography, colors, and spacing",
-      "text": {
-        "typography": {
-          "3xs": {
-            "value": "{font.body.medium.xs}",
-            "type": "typography",
-            "description": "Mobile input form label typography for 3xs size - Medium 11px/16px"
-          },
-          "2xs": {
-            "value": "{font.body.medium.sm}",
-            "type": "typography",
-            "description": "Mobile input form label typography for 2xs size - Medium 12px/17px"
-          },
-          "xs": {
-            "value": "{font.body.medium.md}",
-            "type": "typography",
-            "description": "Mobile input form label typography for xs size - Medium 13px/18px"
-          },
-          "sm": {
-            "value": "{font.body.medium.base}",
-            "type": "typography",
-            "description": "Mobile input form label typography for sm size - Medium 14px/20px"
-          },
-          "md": {
-            "value": "{font.body.medium.2xl}",
-            "type": "typography",
-            "description": "Mobile input form label typography for md size - Medium 16px/24px"
-          },
-          "lg": {
-            "value": "{font.body.medium.2xl}",
-            "type": "typography",
-            "description": "Mobile input form label typography for lg size - Medium 16px/24px"
-          }
-        },
-        "color": {
-          "default": {
-            "value": "{color.text.neutral.body.1}",
-            "type": "color",
-            "description": "Mobile input form label default text color - gray/700 - #344054"
-          },
-          "mandatory": {
-            "value": "{color.text.error.intense}",
-            "type": "color",
-            "description": "Mobile input form mandatory asterisk color - error/600 - #d92d20"
-          }
-        }
-      }
-    },
-    "info-icon": {
-      "$comment": "Info icon size tokens for mobile input form label - icon sizes vary by form size",
-      "size": {
-        "3xs": {
-          "value": "{size.icon.4xs}",
-          "type": "dimension",
-          "description": "Mobile input form label info icon size for 3xs and 2xs - 10px"
-        },
-        "2xs": {
-          "value": "{size.icon.4xs}",
-          "type": "dimension",
-          "description": "Mobile input form label info icon size for 2xs - 10px (same as 3xs)"
-        },
-        "xs": {
-          "value": "{size.icon.3xs}",
-          "type": "dimension",
-          "description": "Mobile input form label info icon size for xs and sm - 12px"
-        },
-        "sm": {
-          "value": "{size.icon.3xs}",
-          "type": "dimension",
-          "description": "Mobile input form label info icon size for sm - 12px (same as xs)"
-        },
-        "md": {
-          "value": "{size.icon.3xs}",
-          "type": "dimension",
-          "description": "Mobile input form label info icon size for md - 12px (same as xs/sm)"
-        },
-        "lg": {
-          "value": "{size.icon.2xs}",
-          "type": "dimension",
-          "description": "Mobile input form label info icon size for lg - 14px"
-        }
-      }
-    },
-    "slot-input": {
-      "height": {
-        "$comment": "Mobile input form input field heights for each size variant",
-        "3xs": {
-          "value": "{size.height.3xs}",
-          "type": "dimension",
-          "description": "Mobile input form input height for 3xs size - 24px"
-        },
-        "2xs": {
-          "value": "{size.height.2xs}",
-          "type": "dimension",
-          "description": "Mobile input form input height for 2xs size - 28px"
-        },
-        "xs": {
-          "value": "{size.height.xs}",
-          "type": "dimension",
-          "description": "Mobile input form input height for xs size - 32px"
-        },
-        "sm": {
-          "value": "{size.height.sm}",
-          "type": "dimension",
-          "description": "Mobile input form input height for sm size - 36px"
-        },
-        "md": {
-          "value": "{size.height.md}",
-          "type": "dimension",
-          "description": "Mobile input form input height for md size - 40px"
-        },
-        "lg": {
-          "value": "{size.height.lg}",
-          "type": "dimension",
-          "description": "Mobile input form input height for lg size - 44px"
-        }
-      }
-    },
-    "action-button": {
-      "$comment": "Action button tokens for Action-Top and Action-Bottom label type variants",
-      "color": {
-        "value": "{color.text.primary.body.1}",
-        "type": "color",
-        "description": "Mobile input form action button CTA text color - primary/blue-700 - #004eeb (all sizes)"
+      "default": {
+        "$comment": "Spacing tokens for mobile input form - defines gaps between label, input field, and hint text",
+        "value": "{gap.3xs}",
+        "type": "dimension",
+        "description": "Mobile input form gap for 3xs size - gap between label, input, and hint text - 4px"
+      },
+      "label-row": {
+        "value": "{gap.auto}",
+        "type": "dimension",
+        "description": "Mobile input form label row gap - gap between label and input - auto"
       }
     }
   }
 }
-
