@@ -75,9 +75,9 @@
     },
     "divider": {
       "height": {
-        "value": "1px",
+        "value": "{border.width.xs}",
         "type": "dimension",
-        "description": "Height of the separator line rendered below the row when divider=true"
+        "description": "Height of the separator line rendered below the row when divider=true - 1px"
       },
       "color": {
         "value": "{color.border.neutral.subtle.2}",
