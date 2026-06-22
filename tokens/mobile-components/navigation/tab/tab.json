@@ -25,35 +25,35 @@
     "border": {
       "$comment": "Border tokens for mobile tab container - includes radius",
       "radius": {
-          "value": "{border.radius.none}",
-          "type": "dimension",
-          "description": "Mobile tab container default border radius - none - 0px"
+        "value": "{border.radius.none}",
+        "type": "dimension",
+        "description": "Mobile tab container default border radius - none - 0px"
       }
     },
     "padding": {
       "$comment": "Padding tokens for mobile tab container",
-        "value": "{padding.none}",
-        "type": "dimension",
-        "description": "Mobile tab container default padding - 0px"
+      "value": "{padding.none}",
+      "type": "dimension",
+      "description": "Mobile tab container default padding - 0px"
     },
     "gap": {
       "$comment": "Gap tokens for spacing between mobile tab items",
-          "value": "{gap.none}",
-          "type": "dimension",
-          "description": "Mobile tab container gap between items - 0px"
+      "value": "{gap.none}",
+      "type": "dimension",
+      "description": "Mobile tab container gap between items - 0px"
     },
     "height": {
       "$comment": "Height tokens for mobile tab container across different sizes",
       "default": {
-          "value": "{size.height.2xl}",
-          "type": "dimension",
-          "description": "Mobile tab container height for default variant - 56px"
+        "value": "{size.height.2xl}",
+        "type": "dimension",
+        "description": "Mobile tab container height for default variant - 56px"
       },
       "top-icon": {
-          "value": "{size.height.3xl}",
-          "type": "dimension",
-          "description": "Mobile tab container height for top-icon variant - 64px"
-        }
+        "value": "{size.height.3xl}",
+        "type": "dimension",
+        "description": "Mobile tab container height for top-icon variant - 64px"
+      }
     },
     "variants": {
       "$comment": "Color tokens for mobile tab container variants",
@@ -84,4 +84,3 @@
     }
   }
 }
-

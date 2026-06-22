@@ -35,31 +35,31 @@
       "$comment": "Outer bounding container. Height varies between default state (24px) and label state (56px).",
       "height": {
         "default": {
-          "value": "{size.6}",
+          "value": "{size.height.3xs}",
           "type": "dimension",
-          "description": "Mobile slider container height for Default/Start/End/Disabled states - 24px (track and knob fit within this height)"
+          "description": "Mobile slider container height for Default/Start/End/Disabled states - 24px (3xs - 24px)"
         },
         "label": {
-          "value": "{size.14}",
+          "value": "{size.height.2xl}",
           "type": "dimension",
-          "description": "Mobile slider container height for Label state - 56px (extra vertical space accommodates the floating Tag label above the track)"
+          "description": "Mobile slider container height for Label state - 56px (2xl - 56px)"
         }
       }
     },
     "track": {
       "$comment": "The full-width background bar representing the total selectable range",
       "height": {
-        "value": "6px",
+        "value": "size.height.1[5]",
         "type": "dimension",
-        "description": "Mobile slider track height - 6px (positioned at vertical center via 37.5% top/bottom inset on the 24px container: 37.5% × 24 = 9px inset each side, 24 - 18 = 6px)"
+        "description": "Mobile slider track height - 6px (1[5] - 6px)"
       },
       "border-radius": {
-        "value": "16px",
+        "value": "{border.radius.2xl}",
         "type": "dimension",
-        "description": "Mobile slider track border radius - 16px (fully rounded ends; rounded-[16px] in Figma)"
+        "description": "Mobile slider track border radius - 16px (2xl - 16px)"
       },
       "color": {
-        "value": "{color.neutral.gray.300}",
+        "value": "{color.background.neutral.moderate.0}",
         "type": "color",
         "description": "Mobile slider track background color - gray/300 - #d0d5dd (the unfilled portion of the range)"
       }
@@ -67,30 +67,30 @@
     "fill": {
       "$comment": "The colored indicator that shows the selected portion of the range. Grows from left edge to knob position (Simple) or between two knobs (Range).",
       "height": {
-        "value": "6px",
+        "value": "{size.height.1[5]}",
         "type": "dimension",
-        "description": "Mobile slider fill height - 6px (matches track height)"
+        "description": "Mobile slider fill height - 6px (1[5] - 6px)"
       },
       "border-radius": {
         "left": {
-          "value": "{border.radius.sm}",
+          "value": "{border.radius.md}",
           "type": "dimension",
           "description": "Mobile slider fill left border radius - 8px (rounded-bl-[8px] rounded-tl-[8px] in Figma — left end of fill is always rounded)"
         },
         "right": {
-          "value": "{border.radius.sm}",
+          "value": "{border.radius.md}",
           "type": "dimension",
           "description": "Mobile slider fill right border radius - 8px (rounded right end when fill extends to 100%; at partial fill the right edge is flush against the knob)"
         }
       },
       "color": {
         "default": {
-          "value": "{color.primary.700}",
+          "value": "{color.background.primary.intense.0}",
           "type": "color",
-          "description": "Mobile slider fill color for Default/Start/End/Label states - primary/blue/700 - #004eeb (active selection indicator)"
+          "description": "Mobile slider fill color for Default/Start/End/Label states - primary/blue/700 - #004eeb"
         },
         "disabled": {
-          "value": "{color.neutral.gray.400}",
+          "value": "{color.background.neutral.moderate.1}",
           "type": "color",
           "description": "Mobile slider fill color for Disabled state - gray/400 - #98a2b3 (muted fill when slider is non-interactive)"
         }
