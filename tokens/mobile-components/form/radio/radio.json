@@ -96,9 +96,9 @@
       "$comment": "Border colors for mobile radio button in unselected and selected states",
       "unselected": {
         "default": {
-          "value": "{color.border.transparent}",
+          "value": "{color.border.neutral.moderate.0}",
           "type": "color",
-          "description": "Mobile unselected radio default border - transparent - no visible border"
+          "description": "Mobile unselected radio default border - neutral/gray-400 - #98a2b3"
         },
         "focused": {
           "value": "{color.border.primary.moderate.1}",
@@ -106,9 +106,9 @@
           "description": "Mobile unselected radio focused border - primary/blue-500 - #2e90fa (light blue border for focus indicator)"
         },
         "disabled": {
-          "value": "{color.border.transparent}",
+          "value": "{color.border.neutral.default}",
           "type": "color",
-          "description": "Mobile unselected radio disabled border - transparent - no visible border"
+          "description": "Mobile unselected radio disabled border - neutral/gray-300 - #d0d5dd"
         },
         "error": {
           "value": "{color.border.error.moderate.1}",
