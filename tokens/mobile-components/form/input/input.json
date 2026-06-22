@@ -42,9 +42,16 @@
         }
       },
       "width": {
-        "value": "{border.width.default}",
-        "type": "dimension",
-        "description": "Mobile input border width - 1px"
+        "default": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile input border width - 1px"
+        },
+        "focused": {
+          "value": "{border.width.0[75]}",
+          "type": "dimension",
+          "description": "Mobile input border width for focused state - 3px"
+        }
       }
     },
     "padding": {
@@ -628,14 +635,14 @@
             "description": "Mobile tags size for sm - tag height: 24px"
           },
           "md": {
-            "value": "{size.height.2xs}",
+            "value": "{size.height.xs}",
             "type": "dimension",
-            "description": "Mobile tags size for md - tag height: 28px"
+            "description": "Mobile tags size for md - tag height: 32px"
           },
           "lg": {
-            "value": "{size.height.2xs}",
+            "value": "{size.height.md}",
             "type": "dimension",
-            "description": "Mobile tags size for lg - tag height: 28px"
+            "description": "Mobile tags size for lg - tag height: 40px"
           }
         },
         "gap-between-tags": {

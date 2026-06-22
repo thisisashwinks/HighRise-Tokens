@@ -27,19 +27,19 @@
       "$comment": "Border radius and width for mobile select fields",
       "radius": {
         "3xs": {
-          "value": "{border.radius.xs}",
+          "value": "{border.radius.sm}",
           "type": "dimension",
-          "description": "Mobile select border radius for 3xs size - 4px"
+          "description": "Mobile select border radius for 3xs size - 6px"
         },
         "2xs": {
-          "value": "{border.radius.sm}",
+          "value": "{border.radius.md}",
           "type": "dimension",
           "description": "Mobile select border radius for 2xs size - 8px"
         },
         "xs": {
-          "value": "{border.radius.sm}",
+          "value": "{border.radius.lg}",
           "type": "dimension",
-          "description": "Mobile select border radius for xs size - 8px"
+          "description": "Mobile select border radius for xs size - 10px"
         }
       },
       "width": {
@@ -64,14 +64,14 @@
           "description": "Mobile select horizontal padding for 3xs size - 8px"
         },
         "2xs": {
-          "value": "{padding.x.3xs}",
+          "value": "{padding.x.xs}",
           "type": "dimension",
-          "description": "Mobile select horizontal padding for 2xs size - 8px"
+          "description": "Mobile select horizontal padding for 2xs size - 12px"
         },
         "xs": {
-          "value": "{padding.x.3xs}",
+          "value": "{padding.x.sm}",
           "type": "dimension",
-          "description": "Mobile select horizontal padding for xs size - 8px"
+          "description": "Mobile select horizontal padding for xs size - 14px"
         }
       },
       "y": {
@@ -147,53 +147,53 @@
       "size": {
         "chevron": {
           "3xs": {
-            "value": "{size.icon.3xs}",
+            "value": "{size.icon.xs}",
             "type": "dimension",
-            "description": "Mobile select chevron icon size for 3xs - 12px"
+            "description": "Mobile select chevron icon size for 3xs - 16px"
           },
           "2xs": {
-            "value": "{size.icon.xs}",
+            "value": "{size.icon.md}",
             "type": "dimension",
-            "description": "Mobile select chevron icon size for 2xs - 16px"
+            "description": "Mobile select chevron icon size for 2xs - 20px"
           },
           "xs": {
-            "value": "{size.icon.xs}",
+            "value": "{size.icon.lg}",
             "type": "dimension",
-            "description": "Mobile select chevron icon size for xs - 16px"
+            "description": "Mobile select chevron icon size for xs - 24px"
           }
         },
         "leading": {
           "3xs": {
-            "value": "{size.icon.3xs}",
+            "value": "{size.icon.xs}",
             "type": "dimension",
-            "description": "Mobile select leading icon size for 3xs - 12px"
+            "description": "Mobile select leading icon size for 3xs - 16px"
           },
           "2xs": {
-            "value": "{size.icon.xs}",
+            "value": "{size.icon.md}",
             "type": "dimension",
-            "description": "Mobile select leading icon size for 2xs - 16px"
+            "description": "Mobile select leading icon size for 2xs - 20px"
           },
           "xs": {
-            "value": "{size.icon.xs}",
+            "value": "{size.icon.lg}",
             "type": "dimension",
-            "description": "Mobile select leading icon size for xs - 16px"
+            "description": "Mobile select leading icon size for xs - 24px"
           }
         },
         "search": {
           "3xs": {
-            "value": "{size.icon.3xs}",
+            "value": "{size.icon.xs}",
             "type": "dimension",
-            "description": "Mobile select search icon size for 3xs - 12px"
+            "description": "Mobile select search icon size for 3xs - 16px"
           },
           "2xs": {
-            "value": "{size.icon.xs}",
+            "value": "{size.icon.md}",
             "type": "dimension",
-            "description": "Mobile select search icon size for 2xs - 16px"
+            "description": "Mobile select search icon size for 2xs - 20px"
           },
           "xs": {
-            "value": "{size.icon.xs}",
+            "value": "{size.icon.lg}",
             "type": "dimension",
-            "description": "Mobile select search icon size for xs - 16px"
+            "description": "Mobile select search icon size for xs - 24px"
           }
         }
       }
@@ -202,19 +202,19 @@
       "$comment": "Avatar sizes for avatar-leading variant in mobile select fields",
       "size": {
         "3xs": {
-          "value": "{size.3xs}",
+          "value": "{size.5xs}",
           "type": "dimension",
-          "description": "Mobile select avatar size for 3xs - 24px"
+          "description": "Mobile select avatar size for 3xs - 16px"
         },
         "2xs": {
-          "value": "{size.xs}",
+          "value": "{size.3xs}",
           "type": "dimension",
-          "description": "Mobile select avatar size for 2xs - 32px"
+          "description": "Mobile select avatar size for 2xs - 24px"
         },
         "xs": {
-          "value": "{size.md}",
+          "value": "{size.xs}",
           "type": "dimension",
-          "description": "Mobile select avatar size for xs - 40px"
+          "description": "Mobile select avatar size for xs - 32px"
         }
       }
     },
@@ -367,19 +367,19 @@
       },
       "height": {
         "3xs": {
-          "value": "{size.height.4[5]}",
+          "value": "{size.height.xs}",
           "type": "dimension",
-          "description": "Tag height for 3xs size - 18px"
+          "description": "Tag height for 3xs size - 24px"
         },
         "2xs": {
-          "value": "{size.height.5[5]}",
+          "value": "{size.height.md}",
           "type": "dimension",
-          "description": "Tag height for 2xs size - 22px"
+          "description": "Tag height for 2xs size - 32px"
         },
         "xs": {
-          "value": "{size.height.5[5]}",
+          "value": "{size.height.lg}",
           "type": "dimension",
-          "description": "Tag height for xs size - 22px"
+          "description": "Tag height for xs size - 40px"
         }
       }
     }
