@@ -8,11 +8,6 @@
     "booleans": ["leadingIcon", "trailingIcon", "subtext", "divider"]
   },
   "menu-item": {
-    "width": {
-      "value": "187px",
-      "type": "dimension",
-      "description": "Fixed width of the menu item row — matches the menu container width"
-    },
     "background": {
       "value": "{color.neutral.white.base}",
       "type": "color",
@@ -30,21 +25,21 @@
     },
     "leading-icon": {
       "size": {
-        "value": "20px",
+        "value": "{size.icon.md}",
         "type": "dimension",
-        "description": "Width and height of the optional leading semantic icon"
+        "description": "Width and height of the optional leading semantic icon - 20px"
       }
     },
     "label-row": {
       "height": {
-        "value": "24px",
+        "value": "{size.height.3xs}",
         "type": "dimension",
-        "description": "Fixed height of the label container row"
+        "description": "Fixed height of the label container row - 24px"
       },
       "gap": {
-        "value": "4px",
+        "value": "{gap.3xs}",
         "type": "dimension",
-        "description": "Gap between inline elements within the label row (e.g. label text and a badge)"
+        "description": "Gap between inline elements within the label row (e.g. label text and a badge) - 4px"
       }
     },
     "label": {
@@ -68,9 +63,9 @@
     },
     "trailing-icon": {
       "size": {
-        "value": "24px",
+        "value": "{size.icon.lg}",
         "type": "dimension",
-        "description": "Width and height of the trailing chevron icon"
+        "description": "Width and height of the trailing chevron icon - 24px"
       },
       "name": {
         "value": "chevron-right",
@@ -85,43 +80,43 @@
         "description": "Height of the separator line rendered below the row when divider=true"
       },
       "color": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.border.neutral.subtle.2}",
         "type": "color",
-        "description": "#eaecf0 — subtle gray separator between menu rows"
+        "description": "Subtle gray separator between menu rows - gray/200 - #eaecf0"
       }
     },
     "default": {
       "label-color": {
-        "value": "{color.neutral.gray.900}",
+        "value": "{color.text.neutral.title.1}",
         "type": "color",
-        "description": "#101828 — near-black label text for standard (non-destructive) actions"
+        "description": "Near-black label text for standard (non-destructive) actions - gray/900 - #101828"
       },
       "subtext-color": {
-        "value": "{color.neutral.gray.900}",
+        "value": "{color.text.neutral.title.1}",
         "type": "color",
-        "description": "#101828 — same as label color; subtext uses same hue at lighter weight"
+        "description": "Same as label color; subtext uses same hue at lighter weight - gray/900 - #101828"
       },
       "icon-color": {
-        "value": "{color.neutral.gray.900}",
+        "value": "{color.icon.neutral.intense.1}",
         "type": "color",
-        "description": "#101828 — leading and trailing icons match label color in Default type"
+        "description": "Leading and trailing icons match label color in Default type - gray/900 - #101828"
       }
     },
     "destructive": {
       "label-color": {
-        "value": "{color.secondary.error.600}",
+        "value": "{color.text.error.body.2}",
         "type": "color",
-        "description": "#d92d20 — red label text signalling an irreversible/destructive action"
+        "description": "Red label text signalling an irreversible/destructive action - error/600 - #dc6803"
       },
       "subtext-color": {
-        "value": "{color.secondary.error.600}",
+        "value": "{color.text.error.body.2}",
         "type": "color",
-        "description": "#d92d20 — red subtext matching the label to reinforce the destructive signal"
+        "description": "Red subtext matching the label to reinforce the destructive signal - error/600 - #dc6803"
       },
       "icon-color": {
-        "value": "{color.secondary.error.600}",
+        "value": "{color.icon.error.moderate}",
         "type": "color",
-        "description": "#d92d20 — leading icon rendered in red for Destructive type"
+        "description": "Leading icon rendered in red for Destructive type - error/600 - #d92d20"
       }
     }
   }
