@@ -112,24 +112,24 @@
       },
       "y": {
         "xs": {
-          "value": "{padding.y.none}",
+          "value": "{padding.y.6xs}",
           "type": "dimension",
-          "description": "Mobile tag vertical padding for xs size - 0px"
+          "description": "Mobile tag vertical padding for xs size - 1px"
         },
         "sm": {
-          "value": "{padding.y.none}",
+          "value": "{padding.y.5xs}",
           "type": "dimension",
-          "description": "Mobile tag vertical padding for sm size - 0px"
+          "description": "Mobile tag vertical padding for sm size - 2px"
         },
         "md": {
-          "value": "{padding.y.none}",
+          "value": "{padding.y.3xs}",
           "type": "dimension",
-          "description": "Mobile tag vertical padding for md size - 0px"
+          "description": "Mobile tag vertical padding for md size - 6px"
         },
         "lg": {
-          "value": "{padding.y.none}",
+          "value": "{padding.y.xs}",
           "type": "dimension",
-          "description": "Mobile tag vertical padding for lg size - 0px"
+          "description": "Mobile tag vertical padding for lg size - 10px"
         }
       }
     },
@@ -157,7 +157,7 @@
       }
     },
     "height": {
-      "$comment": "Height tokens for tag component - defines the vertical size of the tag",
+      "$comment": "Minimum outer height tokens for tag component at default text scale (padding + content + border)",
       "xs": {
         "value": "{size.height.4xs}",
         "type": "dimension",
