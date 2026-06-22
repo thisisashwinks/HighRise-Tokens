@@ -109,18 +109,6 @@
             "description": "Mobile navigation bar iOS container vertical padding - 4px"
           }
         }
-      },
-      "width": {
-        "android": {
-          "value": "{size.width.93[75]}",
-          "type": "dimension",
-          "description": "Mobile navigation bar Android container width - 375px (standard Android viewport)"
-        },
-        "ios": {
-          "value": "{size.width.98[25]}",
-          "type": "dimension",
-          "description": "Mobile navigation bar iOS container width - 393px (standard iOS viewport)"
-        }
       }
     },
     "menu-items": {
@@ -174,33 +162,6 @@
             "type": "dimension",
             "description": "Mobile navigation bar gesture bar handle border radius - 12px"
           }
-        }
-      }
-    },
-    "height": {
-      "$comment": "Height tokens for mobile navigation bar across different variants",
-      "ios": {
-        "with-labels": {
-          "value": "{size.height.20}",
-          "type": "dimension",
-          "description": "Mobile navigation bar iOS height with labels - 80px (closest token to 79px design value)"
-        },
-        "without-labels": {
-          "value": "{size.height.14}",
-          "type": "dimension",
-          "description": "Mobile navigation bar iOS height without labels - 56px"
-        }
-      },
-      "android": {
-        "with-labels": {
-          "value": "{size.height.24}",
-          "type": "dimension",
-          "description": "Mobile navigation bar Android height with labels - 96px (closest token to 95px design value)"
-        },
-        "without-labels": {
-          "value": "{size.height.18}",
-          "type": "dimension",
-          "description": "Mobile navigation bar Android height without labels - 72px"
         }
       }
     }

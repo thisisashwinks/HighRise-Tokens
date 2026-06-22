@@ -117,33 +117,6 @@
         }
       }
     },
-    "badge": {
-      "$comment": "Badge tokens for mobile menu item navbar",
-      "size": {
-        "height": {
-          "value": "{size.height.4[5]}",
-          "type": "dimension",
-          "description": "Mobile menu item navbar badge height - 18px"
-        }
-      },
-      "position": {
-        "x": {
-          "value": "{position.x.3[5]}",
-          "type": "position",
-          "description": "Mobile menu item navbar badge horizontal position - 14px"
-        },
-        "x-ios-without-bg": {
-          "value": "{position.x.3[375]}",
-          "type": "position",
-          "description": "Mobile menu item navbar badge horizontal position for iOS without-background variant - 13.5px"
-        },
-        "y": {
-          "value": "{position.y.0}",
-          "type": "position",
-          "description": "Mobile menu item navbar badge vertical position - 0px"
-        }
-      }
-    },
     "border": {
       "$comment": "Border tokens for mobile menu item navbar - includes radius and width",
       "radius": {
@@ -158,7 +131,7 @@
           "description": "Mobile menu item navbar Android container border radius - none - 0px"
         },
         "icon": {
-          "value": "{border.radius.1[5]}",
+          "value": "{border.radius.sm}",
           "type": "dimension",
           "description": "Mobile menu item navbar icon container border radius (for selected with background) - 6px"
         }
@@ -211,18 +184,6 @@
           "value": "{size.height.17[75]}",
           "type": "dimension",
           "description": "Mobile menu item navbar iOS container height - 71px (fixed). Android height is content-driven with no fixed height."
-        }
-      },
-      "width": {
-        "ios": {
-          "value": "{size.width.23}",
-          "type": "dimension",
-          "description": "Mobile menu item navbar iOS container width - 92px"
-        },
-        "android": {
-          "value": "{size.width.18[25]}",
-          "type": "dimension",
-          "description": "Mobile menu item navbar Android container width - 73px"
         }
       }
     },

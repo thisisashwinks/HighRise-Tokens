@@ -7,15 +7,15 @@
   },
   "carousel-empty-container": {
     "background": {
-      "value": "{color.neutral.gray.200}",
+      "value": "{color.background.neutral.subtle.2}",
       "type": "color",
-      "description": "#eaecf0 — muted gray fill used as the empty-state placeholder background"
+      "description": "Mobile carousel empty container background - gray/200 - #eaecf0"
     },
     "padding": {
       "vertical": {
-        "value": "{size.2}",
+        "value": "{padding.y.2xs}",
         "type": "dimension",
-        "description": "8px top and bottom inset inside the empty container"
+        "description": "Mobile carousel empty container vertical padding - 8px"
       }
     },
     "text": {
@@ -25,9 +25,9 @@
         "description": "13px Semibold, 18px line-height — 'Custom Slot' placeholder label"
       },
       "color": {
-        "value": "{color.neutral.gray.300}",
+        "value": "{color.text.neutral.subtitle.1}",
         "type": "color",
-        "description": "#d0d5dd — very light gray for the placeholder label, blending into the gray background"
+        "description": "Mobile carousel empty container text color - gray/300 - #d0d5dd"
       }
     }
   }
