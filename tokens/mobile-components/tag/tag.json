@@ -194,9 +194,9 @@
           },
           "background": {
             "default": {
-              "value": "{color.background.primary.intense.0}",
+              "value": "{color.background.neutral.base}",
               "type": "color",
-              "description": "Mobile primary tag outline default background - blue/700 - #004eeb"
+              "description": "Mobile primary tag outline default background - white/base - #ffffff"
             },
             "active": {
               "value": "{color.background.primary.subtle.2}",
