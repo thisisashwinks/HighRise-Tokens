@@ -28,7 +28,7 @@
         "description": "Mobile text area container width - 361px fixed"
       },
       "gap": {
-        "value": "{size.1}",
+        "value": "{gap.3xs}",
         "type": "dimension",
         "description": "Mobile text area container gap between label, input field, and hint text - 4px"
       }
@@ -46,13 +46,13 @@
         "description": "Mobile text area field width - full width of container (361px)"
       },
       "padding": {
-        "value": "{padding.2}",
+        "value": "{padding.2xs}",
         "type": "dimension",
         "description": "Mobile text area field padding - 8px all sides (uniform, unlike single-line input)"
       },
       "border": {
         "radius": {
-          "value": "{border.radius.1[5]}",
+          "value": "{border.radius.sm}",
           "type": "dimension",
           "description": "Mobile text area field border radius - 6px"
         },
@@ -128,12 +128,12 @@
     "label": {
       "$comment": "Label row above the text area field. Consistent with input-form.json md size label tokens.",
       "height": {
-        "value": "{size.6}",
+        "value": "{size.height.3xs}",
         "type": "dimension",
         "description": "Mobile text area label row height - 24px"
       },
       "gap": {
-        "value": "{size.1}",
+        "value": "{gap.3xs}",
         "type": "dimension",
         "description": "Mobile text area label internal gap between label text, mandatory asterisk, and info icon - 4px"
       },
@@ -150,7 +150,7 @@
             "description": "Mobile text area label text color - neutral/gray-700 - #344054"
           },
           "mandatory": {
-            "value": "{color.text.error.intense}",
+            "value": "{color.text.error.intense}", //
             "type": "color",
             "description": "Mobile text area mandatory asterisk (*) color - error/600 - #d92d20"
           }
