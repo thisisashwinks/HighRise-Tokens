@@ -4,18 +4,18 @@
 **Project**: HighRise Component Tokens Generation  
 **Start Date**: Current  
 **Target Completion**: 4 weeks  
-**Current Phase**: Phase 2 - Component Token Generation (In Progress)  
+**Current Phase**: Phase 3 - Extended Component Token Generation (In Progress)  
 
 ## 🎯 Current Status Summary
 
 ### ✅ Completed (Infrastructure)
 - [x] Project setup and documentation
-- [x] Existing token analysis (3,140 primitive + 4,508 semantic tokens)
+- [x] Existing token analysis (primitive + semantic foundation layers)
 - [x] Component token template structure
 - [x] Token generation automation scripts
 - [x] File organization structure established
 
-### ✅ Component Token Files Generated: **71 Files Complete**
+### ✅ Component Token Files Generated: **133 Files Complete**
 
 **Web Components (37 files):**
 
@@ -73,524 +73,279 @@
 **Template:**
 - ✅ `component-token-template.json` - Standard template for new components
 
-**Mobile Components (34 files):**
+**Mobile Components (96 files — organized into category folders under `tokens/mobile-components/`):**
 
-**Core Interactive (6):**
-- ✅ `button.json` - Mobile button component
-- ✅ `checkbox.json` - Mobile checkbox component
-- ✅ `radio.json` - Mobile radio button component
-- ✅ `select.json` - Mobile select dropdown
-- ✅ `toggle.json` - Mobile toggle switch
-- ✅ `icon.json` - Mobile icon component
+**Avatar (5):**
+- ✅ `avatar.json`, `avatar-action-icon.json`, `avatar-company-indicator.json`, `avatar-mask.json`, `avatar-online-indicator.json`
 
-**Form (6):**
-- ✅ `input.json` - Mobile input field component
-- ✅ `input-form.json` - Mobile form input wrapper
-- ✅ `input-form-hint-text.json` - Mobile form hint text
-- ✅ `text-area.json` - Mobile multiline text input
-- ✅ `input-stepper.json` - Mobile numeric stepper (− value +)
-- ✅ `stepper-action.json` - Mobile stepper +/− button
+**Badge (1):**
+- ✅ `badge.json`
 
-**Tags (4):**
-- ✅ `tag.json` - Mobile base tag
-- ✅ `tag-close.json` - Mobile tag close button
-- ✅ `tag-count.json` - Mobile tag count indicator
-- ✅ `tag-loader.json` - Mobile tag loading spinner
+**Display (22):**
+- ✅ `accordion.json`
+- ✅ Carousel (6): `carousel.json`, `carousel-arrow.json`, `carousel-dot-group.json`, `carousel-dot-indicator.json`, `carousel-number-indicator.json`, `carousel-empty-container.json`
+- ✅ Video player (3): `video-player.json`, `video-player-controls.json`, `video-player-media.json`
+- ✅ Notification (2): `notification.json`, `notification-action.json`
+- ✅ `custom-slot.json`, `drag-item.json`, `empty state.json`, `icon.json`, `list-item.json`, `message-card.json`, `no-badge.json`, `system-alert.json`, `tile.json`, `tooltip.json`
 
-**Navigation (7):**
-- ✅ `tab.json` - Mobile tab container component
-- ✅ `tab-item.json` - Mobile tab item component
-- ✅ `content-switcher.json` - Mobile content switcher container
-- ✅ `content-switcher-item.json` - Mobile content switcher item
-- ✅ `menu-item-navbar.json` - Mobile navbar menu item
-- ✅ `no-badge.json` - Mobile no badge component
-- ✅ `bottom navigation bar.json` - Mobile bottom navigation bar
+**Feedback (1):**
+- ✅ `empty-state.json`
 
-**Modal (3):**
-- ✅ `modal.json` - Mobile modal container
-- ✅ `modal-header.json` - Mobile modal header
-- ✅ `modal-footer.json` - Mobile modal footer
+**Form (22):**
+- ✅ Core: `button.json`, `checkbox.json`, `radio.json`, `select.json`, `toggle.json`, `sliding-button.json`, `timed-button.json`
+- ✅ Input (4): `input.json`, `input-form.json`, `input-form-label.json`, `input-form-hint-text.json`
+- ✅ Stepper (2): `input-stepper.json`, `stepper-action.json`
+- ✅ Slider (4): `slider.json`, `knob.json`, `knob-container.json`, `icon-knob.json`
+- ✅ OTP (3): `otp-input-mobile.json`, `otp-input-field.json`, `otp-loader.json`
+- ✅ `file-upload.json`, `text-area.json`
 
 **Header (4):**
-- ✅ `header.json` - Mobile header component
-- ✅ `header-lite.json` - Mobile header lite variant
-- ✅ `header-lite-left.json` - Mobile header lite left panel
-- ✅ `header-action-group.json` - Mobile header action group
+- ✅ `header.json`, `header-lite.json`, `header-lite-left.json`, `header-action-group.json`
 
-**Feedback & Overlay (2):**
-- ✅ `alert.json` - Mobile alert/notification banner
-- ✅ `popover.json` - Mobile popover/onboarding tooltip
+**Navigation (8):**
+- ✅ Tabs (2): `tab.json`, `tab-item.json`
+- ✅ Content switcher (2): `content-switcher.json`, `content-switcher-item.json`
+- ✅ Bottom nav (2): `bottom navigation bar.json`, `menu-item-navbar.json`
+- ✅ `breadcrumb-item.json`, `mobile-footer.json`
 
-**Other (2):**
-- ✅ `list-item.json` - Mobile list item
-- ✅ `empty state.json` - Mobile empty state component
+**Overlay (20):**
+- ✅ Modal (3): `modal.json`, `modal-header.json`, `modal-footer.json`
+- ✅ Date/time range (5): `date-range-selector.json`, `date-time-range-picker.json`, `date-picker-footer.json`, `dates.json`, `dates-gap.json`
+- ✅ Time picker (3): `pin-wheel-time-picker.json`, `stepper-time-picker.json`, `time-picker-android.json`
+- ✅ Mobile filter (4): `mobile-filter.json`, `mobile-filter-base.json`, `filter-item.json`, `filter-sub-item.json`
+- ✅ Menu (2): `menu.json`, `menu-item.json`
+- ✅ `alert.json`, `popover.json`, `snackbar.json`
 
-### 📊 Remaining Component Status Summary
+**Progress (8):**
+- ✅ Indicator (5): `progress-indicator.json`, `progress-bar.json`, `progress-bar-intermediate.json`, `progress-circle.json`, `progress-pill.json`
+- ✅ Step (3): `progress-step.json`, `progress-step-bar.json`, `single-step.json`
 
-| Component | Sub/Base Components | Status |
-|-----------|-------------------|---------|
-| **Button** | Button | ✅ **Done** |
-| | Link Button | ✅ **Done** |
-| | Action Icon | ✅ **Done** |
-| | Action Group | ⏳ **Not Started** |
-| | | |
-| **Icon** | Icon | ✅ **Done** |
-| | Action Icon | ✅ **Done** |
-| | |
-| **Tag** | Tag | ✅ **Done** |
-| | Tag x close | ✅ **Done** |
-| | Tag count | ✅ **Done** |
-| | Badge group | ⏳ **Not Started** |
-| | Tag Group | ⏳ **Not Started** |
-| | | |
-| **Avatar** | Avatar | ✅ **Done** |
-| | Avatar profile photo | ✅ **Done** |
-| | Avatar online indicator | ✅ **Done** |
-| | Avatar company icon | ✅ **Done** |
-| | Avatar add button | ✅ **Done** |
-| | Avatar with Label | ✅ **Done** |
-| | Avatar colors | ⏳ **Not Started** |
-| | | |
-| **Divider** | Divider | ⏳ **Not Started** |
-| | | |
-| **Tooltip** | Tooltip | ✅ **Done** |
-| | | |
-| **Checkbox** | Checkbox element | ✅ **Done** |
-| | Checkbox Group | ⏳ **Not Started** |
-| | | |
-| **Radio** | Radio | ✅ **Done** |
-| | Radio Group | ⏳ **Not Started** |
-| | | |
-| **Toggle Switch** | Toggle base | ✅ **Done** (Web + Mobile) |
-| | Toggle Switch | ✅ **Done** (Web + Mobile) |
-| | | |
-| **Loader** | Loader | ⏳ **Not Started** |
-| | | |
-| **Input Field** | Input Field | ✅ **Done** |
-| | Input Form | ✅ **Done** |
-| | | |
-| **Text Area** | Textarea input field | ✅ **Done** |
-| | | |
-| **Select** | Select | ✅ **Done** |
-| | | |
-| **Dropdown Menu** | Dropdown Menu | ✅ **Done** |
-| | Dropdown List Item | ✅ **Done** |
-| | Expand Collapse Item | ⏳ **Not Started** |
-| | | |
-| **Avatar Group** | Avatar group | ✅ **Done** |
-| | | |
-| **Alert** | Alert | ✅ **Done** |
-| | | |
-| **Content Switcher** | Content Switcher Item | ✅ **Done** (Web & Mobile) |
-| | Content Switcher | ✅ **Done** (Web & Mobile) |
-| | | |
-| **Checkbox Group** | Checkbox Group | ⏳ **Not Started** |
-| | | |
-| **Checkbox Card Group** | Checkbox Card | ⏳ **Not Started** |
-| | Checkbox Card Group | ⏳ **Not Started** |
-| | | |
-| **Radio Group** | Radio Group | ⏳ **Not Started** |
-| | | |
-| **Radio Card Group** | Radio Card | ⏳ **Not Started** |
-| | Radio Card Group | ⏳ **Not Started** |
-| | | |
-| **Date Picker** | Dates | ⏳ **Not Started** |
-| | Gap | ⏳ **Not Started** |
-| | Picker Menu | ⏳ **Not Started** |
-| | | |
-| **Input Slider** | Control handle | ⏳ **Not Started** |
-| | Slider | ⏳ **Not Started** |
-| | Input Slider | ⏳ **Not Started** |
-| | | |
-| **Toggle Switch Group** | Toggle Switch Group | ⏳ **Not Started** |
-| | | |
-| **File Uploader** | File Upload Icon | ⏳ **Not Started** |
-| | File upload base | ⏳ **Not Started** |
-| | Files | ⏳ **Not Started** |
-| | File Uploader | ⏳ **Not Started** |
-| | | |
-| **Progress Indicator** | Progress bar | ⏳ **Not Started** |
-| | Indeterminate | ⏳ **Not Started** |
-| | Progress Indicator | ⏳ **Not Started** |
-| | Progress circle | ⏳ **Not Started** |
-| | | |
-| **Progress Steps** | Step | ⏳ **Not Started** |
-| | Progress Content | ⏳ **Not Started** |
-| | Progress Step | ⏳ **Not Started** |
-| | Progress Steps | ⏳ **Not Started** |
-| | | |
-| **Input OTP** | OTP Input Field | ⏳ **Not Started** |
-| | OTP Input | ⏳ **Not Started** |
-| | | |
-| **Date & Time Range Picker** | Date Time Range Picker | ⏳ **Not Started** |
-| | Date Time Range Picker | ⏳ **Not Started** |
-| | | |
-| **Time Picker** | Time Picker | ⏳ **Not Started** |
-| | Time Picker Menu | ⏳ **Not Started** |
-| | | |
-| **Inline Editor** | Inline Text Container | ✅ **Done** (Web) |
-| | Inline Editor | ⏳ **Not Started** |
-| | | |
-| **Quick Action Menu** | Quick Actions Menu Item | ⏳ **Not Started** |
-| | Quick Menu Action Icons | ⏳ **Not Started** |
-| | Quick Action Menu | ⏳ **Not Started** |
-| | | |
-| **Pagination** | Pagination button group base | ✅ **Done** |
-| | Pagination Item | ✅ **Done** |
-| | Pagination | ✅ **Done** |
-| | | |
-| **Tabs** | Tab | ✅ **Done** |
-| | Tab Item | ✅ **Done** |
-| | No. badge | ⏳ **Not Started** |
-| | | |
-| **Breadcrumb** | Breadcrumb Separator | ⏳ **Not Started** |
-| | Breadcrumb button base | ⏳ **Not Started** |
-| | Breadcrumb | ⏳ **Not Started** |
-| | | |
-| **Empty State** | Featured icon | ⏳ **Not Started** |
-| | Illustration | ⏳ **Not Started** |
-| | Empty State | ✅ **Done** (Mobile) |
-| | | |
-| **CRUD** | Search, Filter | ⏳ **Not Started** |
-| | Bulk Actions | ⏳ **Not Started** |
-| | Action | ⏳ **Not Started** |
-| | CRUD | ⏳ **Not Started** |
-| | Layout Manager | ⏳ **Not Started** |
-| | Layout Manager Expanded | ⏳ **Not Started** |
-| | | |
-| **Footer** | Footer Actions | ⏳ **Not Started** |
-| | Section Footer | ⏳ **Not Started** |
-| | | |
-| **Header Lite** | Header Lite | ⏳ **Not Started** |
-| | Header Lite Left | ⏳ **Not Started** |
-| | Header Lite Right | ⏳ **Not Started** |
-| | | |
-| **Header** | Header | ✅ **Done** (Mobile: header.json) |
-| | Header Lite | ✅ **Done** (Mobile: header-lite.json, header-lite-left.json) |
-| | Header Action Group | ✅ **Done** (Mobile: header-action-group.json) |
-| | Search | ⏳ **Not Started** |
-| | Header Image | ⏳ **Not Started** |
-| | Search/Phone Header | ⏳ **Not Started** |
-| | Search/Notification Header | ⏳ **Not Started** |
-| | | |
-| **Modal** | Modal | ✅ **Done** (Mobile: modal.json, modal-header.json, modal-footer.json) |
-| | | |
-| **Primary Navigation Toolbar** | Chips | ⏳ **Not Started** |
-| | Primary Navigation Item | ⏳ **Not Started** |
-| | Primary Navigation Toolbar | ⏳ **Not Started** |
-| | | |
-| **Color Picker** | Color Swatch | ⏳ **Not Started** |
-| | Swatch Tile | ⏳ **Not Started** |
-| | Color Picker Menu | ⏳ **Not Started** |
-| | Color Swatch with Label | ⏳ **Not Started** |
-| | Color Selector | ⏳ **Not Started** |
-| | Color Picker Slider | ⏳ **Not Started** |
-| | Color Input | ⏳ **Not Started** |
-| | Color Code | ⏳ **Not Started** |
-| | Color Format | ⏳ **Not Started** |
-| | All Colors | ⏳ **Not Started** |
-| | | |
-| **Input Stepper** | Stepper Action | ✅ **Done** (Mobile) |
-| | Input Stepper | ✅ **Done** (Mobile) |
-| | | |
-| **Popover** | Popover | ✅ **Done** (Mobile) |
-| | | |
-| **Input Form** | Input Form | ✅ **Done** (Web + Mobile) |
-| | Input Form Hint Text | ✅ **Done** (Mobile) |
-| | | |
-| **Table** | Value Selection | ⏳ **Not Started** |
-| | Advanced Conditions | ⏳ **Not Started** |
-| | Multi Condition | ⏳ **Not Started** |
-| | Nested Condition | ⏳ **Not Started** |
-| | Switch | ⏳ **Not Started** |
-| | Condition Switcher | ⏳ **Not Started** |
-| | Operator | ⏳ **Not Started** |
-| | Filter Item | ⏳ **Not Started** |
-| | Advanced Filters | ⏳ **Not Started** |
-| | Conditions | ⏳ **Not Started** |
-| | Select Conditions | ⏳ **Not Started** |
-| | Sort & Filter Menu | ⏳ **Not Started** |
-| | User Driven | ⏳ **Not Started** |
-| | Table with Header | ⏳ **Not Started** |
-| | Table | ⏳ **Not Started** |
-| | Manage Columns Panel | ⏳ **Not Started** |
-| | Manage Columns | ⏳ **Not Started** |
-| | Column Name | ⏳ **Not Started** |
-| | Column Organiser Header | ⏳ **Not Started** |
-| | Column Configurator | ⏳ **Not Started** |
-| | Table Content | ⏳ **Not Started** |
-| | Row Content | ⏳ **Not Started** |
-| | Column | ⏳ **Not Started** |
-| | Column Content | ⏳ **Not Started** |
-| | Cell | ⏳ **Not Started** |
-| | | |
-| **Accordion** | Card Details | ⏳ **Not Started** |
-| | Accordion | ⏳ **Not Started** |
-| | Accordion Header | ⏳ **Not Started** |
-| | Accordion Item | ⏳ **Not Started** |
-| | | |
-| **Switch Sub-account Menu** | Sub-account Menu | ⏳ **Not Started** |
-| | | |
-| **Bottom Navigation Bar** | Bottom Navigation Bar Item | ⏳ **Not Started** |
-| | Bottom Navigation Bar | ✅ **Done** (Mobile) |
-| | | |
-| **Mobile Navigation Bar** | Action group | ⏳ **Not Started** |
-| | Mobile Navigation Bar | ⏳ **Not Started** |
-| | | |
-| **Skeletal Loader** | Skeleton Loader | ⏳ **Not Started** |
-| | | |
-| **Banner** | Banner | ⏳ **Not Started** |
-| | | |
-| **Carousel** | Carousel dot indicator | ⏳ **Not Started** |
-| | Carousel arrow | ⏳ **Not Started** |
-| | Carousel dot group | ⏳ **Not Started** |
-| | Carousel | ⏳ **Not Started** |
-| | | |
-| **Code Editor** | Code Editor | ⏳ **Not Started** |
-| | | |
-| **Side Panel** | Side Panel | ⏳ **Not Started** |
-| | | |
-| **Menu** | Menu | ⏳ **Not Started** |
-| | Level 1 | ⏳ **Not Started** |
-| | Level 2 | ⏳ **Not Started** |
-| | Menu Items | ⏳ **Not Started** |
-| | Multi Level Menu Item | ⏳ **Not Started** |
-| | | |
-| **Drag** | Drag | ⏳ **Not Started** |
-| | | |
-| **Builder Space** | Builder Space Value | ⏳ **Not Started** |
-| | Builder Space | ⏳ **Not Started** |
-| | Builder Space Picker | ⏳ **Not Started** |
-| | | |
-| **Icon Emoji Media Picker** | PickerTable | ⏳ **Not Started** |
-| | Picker Selection | ⏳ **Not Started** |
-| | IconPicker Modal | ⏳ **Not Started** |
-| | Add Icon | ⏳ **Not Started** |
-| | Icon Emoji GIF Picker | ⏳ **Not Started** |
-| | Icon Emoji GIF Picker Swatch with Label | ⏳ **Not Started** |
-| | Icon Emoji GIF Picker Swatch | ⏳ **Not Started** |
-| | | |
-| **Statistic** | Chart | ⏳ **Not Started** |
-| | Trend | ⏳ **Not Started** |
-| | Statistic | ⏳ **Not Started** |
-| | | |
-| **Tile** | Tile | ⏳ **Not Started** |
-| | | |
-| **Icon** | Icon | ✅ **Done** |
-| | Action Icon | ✅ **Done** |
+**Sub-account switcher (1):**
+- ✅ `sub-account-switcher.json`
 
-### 📈 **Status Breakdown:**
-- ✅ **Done**: 71 component token files completed
-  - Web components: 37 files
-  - Mobile components: 34 files
-  - Button & interactive: 7 files (3 web: button, link-button, action-icon + 1 web toggle + 1 mobile button + 1 mobile toggle + 1 mobile icon)
-  - Form components: 12 files (6 web: input, input-form, textarea, select, checkbox-element, radio + 6 mobile: input, input-form, input-form-hint-text, text-area, input-stepper, stepper-action)
-  - Avatar system: 7 files (all web variants)
-  - Tag system: 9 files (5 web: tag, tag-close, tag-count, tag-group, badge-group + 4 mobile: tag, tag-close, tag-count, tag-loader)
-  - Navigation: 16 files (9 web: tabs, dropdown, content-switcher, pagination + 7 mobile: tabs, content-switcher, menu-item-navbar, no-badge, bottom-nav-bar)
-  - Modal: 3 files (mobile: modal, modal-header, modal-footer)
-  - Header: 4 files (mobile: header, header-lite, header-lite-left, header-action-group)
-  - Feedback & overlay: 5 files (web: alert, tooltip, inline-text-container + mobile: alert, popover)
-  - Other: 4 files (web: action-group, time-picker + mobile: list-item, empty-state)
-- ⏳ **Not Started**: ~100 sub-components across 35+ main components
+**Tag (4):**
+- ✅ `tag.json`, `tag-close.json`, `tag-count.json`, `tag-loader.json`
+
+> ⚠️ **Cleanup item:** A stray nested duplicate exists at
+> `tokens/mobile-components/overlay/overlay/mobile-filter/` (4 files duplicating
+> `overlay/mobile-filter/`). It is excluded from the 96-file count and should be removed.
+
+
+### 📊 Master Component Status
+
+Legend: ✅ Done · 🟡 Partial (some sub-components done) · ⏳ Not Started
+
+| Component | Status | Coverage |
+|-----------|--------|----------|
+| **Button** | ✅ Done | Web: button, link-button, action-icon · Mobile: button, sliding-button, timed-button |
+| **Action Group** | ⏳ Not Started | — |
+| **Icon** | ✅ Done | Web: icon, action-icon · Mobile: icon |
+| **Tag** | ✅ Done | Web: tag, tag-close, tag-count, tag-group · Mobile: tag, tag-close, tag-count, tag-loader |
+| **Badge** | 🟡 Partial | Web: badge-group · Mobile: badge, no-badge |
+| **Avatar** | ✅ Done | Web: 7 variants + group · Mobile: avatar, action-icon, company-indicator, mask, online-indicator |
+| **Divider** | ⏳ Not Started | — |
+| **Tooltip** | ✅ Done | Web: tooltip · Mobile: tooltip |
+| **Checkbox** | 🟡 Partial | Web + Mobile: checkbox (Checkbox Group / Card Group ⏳) |
+| **Radio** | 🟡 Partial | Web + Mobile: radio (Radio Group / Card Group ⏳) |
+| **Toggle Switch** | 🟡 Partial | Web + Mobile: toggle (Toggle Switch Group ⏳) |
+| **Loader** | ⏳ Not Started | Generic loader ⏳ (otp-loader, tag-loader exist as component-specific) |
+| **Input Field** | ✅ Done | Web: input, input-form · Mobile: input, input-form, input-form-label, input-form-hint-text |
+| **Text Area** | ✅ Done | Web: textarea · Mobile: text-area |
+| **Select** | ✅ Done | Web: select · Mobile: select |
+| **Dropdown Menu** | 🟡 Partial | Web: dropdown-menu, dropdown-list-item (Expand/Collapse Item ⏳) |
+| **Alert** | ✅ Done | Web: alert · Mobile: alert, system-alert |
+| **Content Switcher** | ✅ Done | Web + Mobile: content-switcher, content-switcher-item |
+| **Date Picker** | ✅ Done (Mobile) | Mobile: dates, dates-gap, date-range-selector, date-picker-footer |
+| **Date & Time Range Picker** | ✅ Done (Mobile) | Mobile: date-time-range-picker |
+| **Time Picker** | ✅ Done | Web: time-picker · Mobile: pin-wheel, stepper, android variants |
+| **Input Slider** | ✅ Done (Mobile) | Mobile: slider, knob, knob-container, icon-knob |
+| **File Uploader** | ✅ Done (Mobile) | Mobile: file-upload |
+| **Input Stepper** | ✅ Done (Mobile) | Mobile: input-stepper, stepper-action |
+| **Input OTP** | ✅ Done (Mobile) | Mobile: otp-input-mobile, otp-input-field, otp-loader |
+| **Progress Indicator** | ✅ Done (Mobile) | Mobile: progress-indicator, progress-bar, progress-bar-intermediate, progress-circle, progress-pill |
+| **Progress Steps** | ✅ Done (Mobile) | Mobile: progress-step, progress-step-bar, single-step |
+| **Pagination** | ✅ Done (Web) | Web: pagination, pagination-item, pagination-button-group |
+| **Tabs** | ✅ Done | Web + Mobile: tab, tab-item |
+| **Breadcrumb** | 🟡 Partial (Mobile) | Mobile: breadcrumb-item (separator/base ⏳) |
+| **Carousel** | ✅ Done (Mobile) | Mobile: carousel + arrow, dot-group, dot-indicator, number-indicator, empty-container |
+| **Video Player** | ✅ Done (Mobile) | Mobile: video-player, video-player-controls, video-player-media |
+| **Notification** | ✅ Done (Mobile) | Mobile: notification, notification-action |
+| **Snackbar** | ✅ Done (Mobile) | Mobile: snackbar |
+| **Message Card** | ✅ Done (Mobile) | Mobile: message-card |
+| **Tile** | ✅ Done (Mobile) | Mobile: tile |
+| **Accordion** | 🟡 Partial (Mobile) | Mobile: accordion (header/item/card-details ⏳) |
+| **Menu** | ✅ Done (Mobile) | Mobile: menu, menu-item |
+| **Drag** | ✅ Done (Mobile) | Mobile: drag-item |
+| **Custom Slot** | ✅ Done (Mobile) | Mobile: custom-slot |
+| **Empty State** | 🟡 Partial (Mobile) | Mobile: empty-state (feedback + display) (featured icon/illustration ⏳) |
+| **Inline Editor** | 🟡 Partial (Web) | Web: inline-text-container (Inline Editor ⏳) |
+| **Modal** | ✅ Done (Mobile) | Mobile: modal, modal-header, modal-footer |
+| **Popover** | ✅ Done (Mobile) | Mobile: popover |
+| **Header** | ✅ Done (Mobile) | Mobile: header, header-lite, header-lite-left, header-action-group |
+| **Mobile Filter** | ✅ Done (Mobile) | Mobile: mobile-filter, mobile-filter-base, filter-item, filter-sub-item |
+| **Footer** | 🟡 Partial (Mobile) | Mobile: mobile-footer (footer-actions/section-footer ⏳) |
+| **Bottom Navigation Bar** | ✅ Done (Mobile) | Mobile: bottom navigation bar, menu-item-navbar |
+| **Sub-account Switcher** | ✅ Done (Mobile) | Mobile: sub-account-switcher |
+| **Quick Action Menu** | ⏳ Not Started | — |
+| **Banner** | ⏳ Not Started | — |
+| **Table / CRUD** | ⏳ Not Started | Large composite system (filters, columns, cells, conditions) |
+| **Color Picker** | ⏳ Not Started | Swatches, sliders, inputs, formats |
+| **Icon Emoji Media Picker** | ⏳ Not Started | Picker table, selection, modal |
+| **Side Panel** | ⏳ Not Started | — |
+| **Skeletal Loader** | ⏳ Not Started | — |
+| **Statistic** | ⏳ Not Started | Chart, trend, statistic |
+| **Code Editor** | ⏳ Not Started | — |
+| **Builder Space** | ⏳ Not Started | — |
+| **Primary Navigation Toolbar** | ⏳ Not Started | Chips, nav item, toolbar |
+| **Mobile Navigation Bar** | 🟡 Partial | Bottom nav done (action group / nav bar shell ⏳) |
+
+### 📈 **Status Breakdown**
+
+- ✅ **Done**: **133 component token files** generated
+  - Web components: **37 files**
+  - Mobile components: **96 files**
+- 🟡 **Partial**: ~10 component groups have base/key sub-components but not full coverage
+  (Badge, Checkbox/Radio/Toggle groups, Dropdown, Breadcrumb, Accordion, Empty State, Inline Editor, Footer, Mobile Nav Bar)
+- ⏳ **Not Started**: Large composite systems and specialized pickers
+  (Table/CRUD, Color Picker, Media Picker, Side Panel, Statistic, Code Editor, Builder Space, Banner, Divider, Loader, Quick Action Menu, Primary Navigation Toolbar)
+
+#### Mobile files by category
+| Category | Files |
+|----------|-------|
+| Avatar | 5 |
+| Badge | 1 |
+| Display | 22 |
+| Feedback | 1 |
+| Form | 22 |
+| Header | 4 |
+| Navigation | 8 |
+| Overlay | 20 |
+| Progress | 8 |
+| Sub-account switcher | 1 |
+| Tag | 4 |
+| **Total** | **96** |
 
 #### **Quick ASCII Progress Bar:**
 ```
-Component Token Files Completed: 71
-Progress Overview (~170 Total Components):
-✅ Done:           ████████████████████████████████████████ (71)  [ 41.8%]
-⏳ Not Started:    ███████████████████████████████████████████████████████ (99) [ 58.2%]
+Component Token Files Completed: 133  (37 web + 96 mobile)
+Coverage of identified component set (~190 leaf components):
+✅ Done:        ███████████████████████████████░░░░░░░░░░░░░  (133)  [~70%]
+🟡/⏳ Remaining: ████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  (~57)  [~30%]
 
-Milestone: Mobile component library now fully underway!
+Milestone: Mobile component library now the largest surface — 96 files across 11 categories.
 ```
 
 ### 📊 **Project Progress Charts**
 
 #### **Status Distribution Overview**
 ```mermaid
-pie title Component Status Distribution
-    "Done" : 71
-    "Not Started" : 99
+pie title Component Token Files by Platform
+    "Mobile" : 96
+    "Web" : 37
 ```
 
-#### **Progress Bar Chart**
+#### **Mobile Coverage by Category**
 ```mermaid
 xychart-beta
-    title "Component Token Files Status"
-    x-axis ["Done", "Not Started"]
-    y-axis "Number of Components" 0 --> 175
-    bar [71, 99]
+    title "Mobile Component Token Files by Category"
+    x-axis ["Display", "Form", "Overlay", "Progress", "Navigation", "Avatar", "Header", "Tag", "Badge", "Feedback", "Sub-acct"]
+    y-axis "Files" 0 --> 25
+    bar [22, 22, 20, 8, 8, 5, 4, 4, 1, 1, 1]
 ```
 
-#### **Component Categories Complete**
+#### **Token Files Overview**
 ```mermaid
 flowchart LR
-    A[Component Tokens<br/>71 Files Done] --> B[Web: 37 ✅]
-    A --> C[Mobile: 34 ✅]
-    B --> D[Core/Interactive: 5]
-    B --> E[Forms: 6]
-    B --> F[Avatars: 7]
-    B --> G[Tags: 5]
-    B --> H[Navigation: 9]
-    B --> I[Feedback: 3]
-    B --> J[Other: 2]
-    C --> K[Core/Interactive: 6]
-    C --> L[Forms: 6]
-    C --> M[Tags: 4]
-    C --> N[Navigation: 7]
-    C --> O[Modal: 3]
-    C --> P[Header: 4]
-    C --> Q[Feedback: 2]
-    C --> R[Other: 2]
-    
+    A[Component Tokens<br/>133 Files] --> B[Web: 37 ✅]
+    A --> C[Mobile: 96 ✅]
+    C --> D[Display: 22]
+    C --> E[Form: 22]
+    C --> F[Overlay: 20]
+    C --> G[Progress: 8]
+    C --> H[Navigation: 8]
+    C --> I[Avatar: 5]
+    C --> J[Header: 4]
+    C --> K[Tag: 4]
+    C --> L[Badge/Feedback/Sub-acct: 3]
+
     style A fill:#ccffcc
     style B fill:#e6f7ff
     style C fill:#fff4e6
 ```
 
-## 🎯 Component Priority Status
-
-### ✅ Critical Priority Components - COMPLETE
-| Component | Status | Files Created | Notes |
-|-----------|---------|---------------|-------|
-| Button | ✅ **DONE** | 3 files | button.json, link-button.json, action-icon.json |
-| Icon | ✅ **DONE** | 2 files | icon.json, action-icon.json |
-| Input Field | ✅ **DONE** | 2 files | input.json, input-form.json |
-| Avatar | ✅ **DONE** | 6 files | All variants completed including add button and with-label |
-
-### ✅ High Priority Components - COMPLETE
-| Component | Status | Files Created | Notes |
-|-----------|---------|---------------|-------|
-| Select | ✅ **DONE** | 1 file | select.json |
-| Alert | ✅ **DONE** | 1 file | alert.json |
-| Dropdown | ✅ **DONE** | 2 files | dropdown-menu.json, dropdown-list-item.json |
-| Form Components | ✅ **DONE** | 4 files | Radio, Checkbox, Textarea complete |
-
-### ✅ Medium Priority Components - COMPLETE
-| Component | Status | Files Created | Notes |
-|-----------|---------|---------------|-------|
-| Tabs | ✅ **DONE** | 2 files | tab.json, tab-item.json |
-| Tooltip | ✅ **DONE** | 1 file | tooltip.json |
-| Tag System | ✅ **DONE** | 3 files | All variants complete |
-| Textarea | ✅ **DONE** | 1 file | textarea.json |
-
 ## 📈 Progress Metrics
 
 ### Token Generation Progress
-- **Primitive Tokens**: 3,140 (Complete) ✅
-- **Semantic Tokens**: 4,508 (Complete) ✅
-- **Component Token Files**: **71 files (~41.8% COMPLETE)** ✅
+- **Primitive Tokens**: foundation layer complete (~3.9k-line source) ✅
+- **Semantic Tokens**: foundation layer complete (~5.4k-line source incl. semantic color scales) ✅
+- **Component Token Files**: **133 files** ✅
   - Web components: 37 files
-  - Mobile components: 34 files
-  - Core/Interactive: 7 files (5 web + 2 mobile)
-  - Form components: 12 files (6 web + 6 mobile)
-  - Avatar system: 7 files (web)
-  - Tag system: 9 files (5 web + 4 mobile)
-  - Navigation: 16 files (9 web + 7 mobile)
-  - Modal: 3 files (mobile)
-  - Header: 4 files (mobile)
-  - Feedback & overlay: 5 files (3 web + 2 mobile)
-  - Other: 4 files (2 web + 2 mobile)
-  - Not Started: ~99 components
+  - Mobile components: 96 files
 
 ### Achievement Milestones
-- **Phase 1 - Infrastructure**: 100% complete ✅
-- **Phase 2 - Core Components**: 71 token files generated ✅
-  - All critical priority components complete ✅
-  - All high priority components complete ✅
-  - All medium priority components complete ✅
-  - Mobile component library substantially built ✅
-  - New components: modal, header, popover, input stepper, text area, toggle, inline text container
-- **Phase 3 - Extended Components**: In progress
-- **Total Coverage**: ~41.8% of all identified components
+- **Phase 1 — Infrastructure**: 100% complete ✅
+- **Phase 2 — Core Components**: complete ✅ (all critical/high/medium priority web + mobile core)
+- **Phase 3 — Extended Components**: in progress 🟡
+  - Mobile library expanded from 34 → 96 files
+  - New families: carousel, video player, slider, OTP, progress (indicator + step), date/time range picker, menu, file upload, accordion, breadcrumb, snackbar, notification, tile, mobile filter, sub-account switcher
+- **Tooling**: 4 Figma plugins + token visualizer + figma-mappings pipeline ✅
 
 ## 🎉 Major Achievements
-
-### ✅ Completed Deliverables
-1. **Core Component Coverage**: All critical, high, and medium priority components complete
-2. **Token File Structure**: 42 comprehensive JSON token files generated (35 web + 7 mobile)
-3. **Consistent Patterns**: Established reusable patterns across all components
-4. **Multi-variant Support**: Complete coverage of component states and variants
-5. **Theme Support**: Light/dark theme tokens in all components
-6. **Platform Separation**: Web and mobile component tokens organized separately
+1. **133 component token files** across web (37) and mobile (96)
+2. **Mobile library** is now the largest surface, organized into 11 category folders
+3. **Complex components** now covered on mobile: date/time range pickers, sliders, OTP, progress, carousel, video player, menu
+4. **Tooling ecosystem**: token-sync, apply-tokens, import-tokens, and semantic-colors Figma plugins plus a Next.js token visualizer
+5. **Theme + platform separation** maintained throughout (light/dark; web vs mobile)
 
 ## 🚀 Next Actions
 
 ### Immediate Priorities
-1. **Extended Components**: Begin work on lower priority components
-   - Toggle Switch, Loader, Divider
-   - Content Switcher, Avatar Group
-   - Progress Indicators
+1. **Remove the duplicate** `overlay/overlay/mobile-filter/` folder (4 stray files)
+2. **Close partial groups**: Checkbox/Radio/Toggle groups, Accordion (header/item), Breadcrumb (base/separator), Footer, Dropdown (expand/collapse)
+3. **Port high-traffic mobile components to web** where web is still missing (modal, header, progress, slider, date picker)
 
 ### Future Phase Planning
-1. **Complex Systems**: Table, CRUD, Menu systems
-2. **Specialized Components**: Color Picker, Date Picker, File Uploader
-3. **Layout Components**: Headers, Footers, Navigation bars
-4. **Pattern Documentation**: Comprehensive usage guides for all completed components
+1. **Large composite systems**: Table / CRUD, Color Picker, Icon/Emoji/Media Picker
+2. **Layout & utility**: Side Panel, Statistic, Code Editor, Builder Space, Banner, Divider, Skeletal Loader
+3. **Documentation**: usage guides + migration guides for implementation teams
 
-## 📊 Success Criteria - **PROGRESS UPDATE**
+## 📊 Success Criteria
 - [x] **Phase 1**: Core infrastructure complete ✅
-- [x] **Phase 2**: 42 essential component token files complete ✅
-  - [x] All critical priority components ✅
-  - [x] All high priority components ✅
-  - [x] All medium priority components ✅
-  - [x] Mobile component support added ✅
-- [ ] **Phase 3**: Extended components (115 remaining)
+- [x] **Phase 2**: Essential web + mobile core component token files complete ✅
+- [ ] **Phase 3**: Extended components (in progress — composite systems remaining)
 - [ ] **Phase 4**: Comprehensive documentation and usage guides
 - [ ] **Phase 5**: Migration guides for implementation teams
 
 ## 📝 Decision Log
 
 ### Confirmed Decisions
-- **File Organization**: ✅ Separate JSON files per component, platform separation (web-components/ and mobile-components/) (Implemented)
-- **Theme Handling**: ✅ Nested light/dark in same file (Implemented)
-- **Semantic Token Rule**: ✅ 3+ usage creates semantic token (Applied)
-- **Responsive Breakpoints**: ✅ Mobile/Tablet/Large defined (Implemented)
-- **Platform Separation**: ✅ Web and mobile components in separate directories (Implemented)
+- **File Organization**: ✅ Separate JSON per component; platform separation (`web-components/`, `mobile-components/`)
+- **Mobile sub-foldering**: ✅ Mobile components grouped into category folders (avatar, display, form, overlay, progress, …)
+- **Theme Handling**: ✅ Nested light/dark in same file
+- **Semantic Token Rule**: ✅ 3+ usage creates a semantic token
+- **Responsive Breakpoints**: ✅ Mobile / Tablet / Large defined
+- **Tooling**: ✅ Figma plugins + token-visualizer + figma-mappings pipeline adopted for code↔design sync
 
 ### Implementation Patterns Established
-- **Shared/Variants Structure**: Consistent across all components
-- **State Management**: Default, hover, active, focused, disabled states
-- **Typography Integration**: Separate typography sections for consistency
-- **Icon Token Organization**: Size and color separation pattern
-- **Focus Ring Integration**: Proper semantic token references
+- **Shared/Variants Structure**: consistent across components
+- **State Management**: default, hover, active, focused, disabled
+- **Typography Integration**: separate typography sections
+- **Icon Token Organization**: size and color separation
+- **Focus Ring Integration**: semantic token references
 
-## 🎯 **PROJECT STATUS: PHASE 2 COMPLETE**
+## 🎯 **PROJECT STATUS: PHASE 3 IN PROGRESS**
 
 **Current Deliverables:**
-- ✅ 3,140 Primitive Tokens
-- ✅ 4,508 Semantic Tokens  
-- ✅ **71 Component Token Files Complete**
-  - Web components: 37 files
-  - Mobile components: 34 files
-  - Core/Interactive: 7 files (5 web + 2 mobile)
-  - Form components: 12 files (6 web + 6 mobile)
-  - Avatar system: 7 files (web)
-  - Tag system: 9 files (5 web + 4 mobile)
-  - Navigation: 16 files (9 web + 7 mobile)
-  - Modal: 3 files (mobile)
-  - Header: 4 files (mobile)
-  - Feedback & overlay: 5 files (3 web + 2 mobile)
-  - Other: 4 files (2 web + 2 mobile)
-- ✅ Automated Generation Scripts
-- ✅ Comprehensive Token Structure
-- ✅ Platform Separation (Web/Mobile)
-
-**Phase 2 Summary:**
-- **Achievement**: All critical, high, and medium priority components complete; mobile library substantially built
-- **Quality**: Consistent patterns established across all components
-- **Coverage**: 71 component token files (~41.8% of total identified components)
-- **Foundation**: Strong base for extended component development
-- **Platform Support**: Full mobile component set growing alongside web
-
-**Next Phase:**
-- **Phase 3**: Extended components development (~99 components remaining)
-- **Focus**: Remaining complex components (date picker, table, color picker, etc.)
-- **Goal**: Expand token coverage across full design system
+- ✅ Primitive + Semantic foundation layers
+- ✅ **133 Component Token Files** (37 web + 96 mobile)
+- ✅ Automated generation scripts
+- ✅ Figma plugin toolchain (sync / apply / import / semantic-colors)
+- ✅ Token visualizer (Next.js)
+- ✅ Platform separation (web / mobile)
 
 ---
 
-**Last Updated**: June 2026  
+**Last Updated**: Jun 23, 2026  
 **Next Review**: Phase 3 Progress Check  
 **Document Owner**: Project Team  
-**Status**: ✅ **71 FILES COMPLETE (41.8%) - MOBILE LIBRARY UNDERWAY - PHASE 3 IN PROGRESS** ✅ 
+**Status**: ✅ **133 FILES COMPLETE (37 web + 96 mobile) — PHASE 3 IN PROGRESS** ✅
