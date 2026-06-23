@@ -9,17 +9,17 @@
   },
   "menu-item": {
     "background": {
-      "value": "{color.neutral.white.base}",
+      "value": "{color.background.neutral.base}",
       "type": "color",
-      "description": "White background for every row regardless of type"
+      "description": "Neutral background for every row regardless of type- gray/0 - #ffffff"
     },
     "padding": {
-      "value": "{size.2}",
+      "value": "{padding.2xs}",
       "type": "dimension",
       "description": "8px inset on all sides of the row"
     },
     "gap": {
-      "value": "{size.2}",
+      "value": "{gap.xs}",
       "type": "dimension",
       "description": "8px horizontal gap between the leading icon and the content column"
     },
@@ -75,7 +75,7 @@
     },
     "divider": {
       "height": {
-        "value": "{border.width.xs}",
+        "value": "{border.width.default}",
         "type": "dimension",
         "description": "Height of the separator line rendered below the row when divider=true - 1px"
       },
