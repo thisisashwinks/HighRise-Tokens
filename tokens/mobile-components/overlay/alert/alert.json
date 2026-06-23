@@ -40,9 +40,9 @@
         "description": "Mobile alert container width - 361px fixed"
       },
       "padding": {
-        "value": "{padding.2}",
+        "value": "{padding.2xs}",
         "type": "dimension",
-        "description": "Mobile alert container padding - 8px all sides"
+        "description": "Mobile alert container padding - 4px all sides"
       },
       "gap": {
         "card": {
