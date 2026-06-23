@@ -17,30 +17,30 @@
       "description": "Full mobile viewport width"
     },
     "background": {
-      "value": "{color.neutral.white.base}",
+      "value": "{color.background.neutral.base}",
       "type": "color",
       "description": "White background for the footer container"
     },
     "border-top": {
       "width": {
-        "value": "1px",
+        "value": "{border.width.default}",
         "type": "dimension",
         "description": "Top border that visually separates the footer from the scrollable content above"
       },
       "color": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.border.neutral.subtle.2}",
         "type": "color",
         "description": "#eaecf0 — subtle gray separator line at the top edge of the footer"
       }
     },
     "padding": {
-      "value": "{size.4}",
+      "value": "{padding.lg}",
       "type": "dimension",
       "description": "16px inset on all sides of the footer container"
     },
     "button-area": {
       "gap": {
-        "value": "{size.4}",
+        "value": "{gap.xl}",
         "type": "dimension",
         "description": "16px vertical gap between each stacked button"
       },
@@ -58,7 +58,7 @@
         "description": "Standard iOS home indicator height"
       },
       "background": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
         "description": "White background matching the footer — the indicator sits flush against the footer"
       },
