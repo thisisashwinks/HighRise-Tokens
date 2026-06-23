@@ -42,16 +42,16 @@
       "padding": {
         "value": "{padding.2xs}",
         "type": "dimension",
-        "description": "Mobile alert container padding - 4px all sides"
+        "description": "Mobile alert container padding - 8px all sides"
       },
       "gap": {
         "card": {
-          "value": "{size.2}",
+          "value": "{gap.xs}",
           "type": "dimension",
           "description": "Mobile alert card layout gap between icon, content area, and close button - 8px"
         },
         "inline": {
-          "value": "{size.1}",
+          "value": "{gap.3xs}",
           "type": "dimension",
           "description": "Mobile alert inline layout gap between icon, content area, and close button - 4px (tighter)"
         }
@@ -72,7 +72,7 @@
     "icon": {
       "$comment": "Left semantic icon — represents the alert type (info, error, warning, success)",
       "size": {
-        "value": "{size.5}",
+        "value": "{size.icon.md}",
         "type": "dimension",
         "description": "Mobile alert semantic icon size - 20px (square)"
       }
@@ -80,7 +80,7 @@
     "content": {
       "$comment": "Content area — heading row and supporting text paragraph",
       "gap": {
-        "value": "{size.0[5]}",
+        "value": "{gap.4xs}",
         "type": "dimension",
         "description": "Mobile alert gap between heading and supporting text - 2px"
       }
@@ -115,7 +115,7 @@
     "close": {
       "$comment": "Dismiss/close button base tokens. Border and text colors are per-variant (see variants section).",
       "background": {
-        "value": "{color.background.neutral.base}",
+        "value": "{color.icon.neutral.base}",
         "type": "color",
         "description": "Mobile alert close button background - white - #ffffff (consistent across all variants)"
       },
@@ -145,7 +145,7 @@
     "actions": {
       "$comment": "Action button area tokens — separate sizes for card (below) and inline (right) layouts",
       "gap": {
-        "value": "{size.2}",
+        "value": "{gap.xs}",
         "type": "dimension",
         "description": "Mobile alert gap between action buttons - 8px"
       },
@@ -153,24 +153,24 @@
         "card": {
           "$comment": "Card layout action buttons (actionDirection=Below) — standard 36px height",
           "height": {
-            "value": "{size.9}",
+            "value": "{size.height.sm}",
             "type": "dimension",
             "description": "Mobile alert card action button height - 36px"
           },
           "padding": {
             "horizontal": {
-              "value": "{padding.3[5]}",
+              "value": "{padding.x.sm}",
               "type": "dimension",
               "description": "Mobile alert card action button horizontal padding - 14px"
             },
             "vertical": {
-              "value": "{padding.2}",
+              "value": "{padding.y.2xs}",
               "type": "dimension",
               "description": "Mobile alert card action button vertical padding - 8px"
             }
           },
           "gap": {
-            "value": "{size.2}",
+            "value": "{gap.xs}",
             "type": "dimension",
             "description": "Mobile alert card action button internal gap (between icon and label) - 8px"
           },
@@ -190,17 +190,17 @@
         "inline": {
           "$comment": "Inline layout action buttons (actionDirection=Right) — compact 28px height",
           "height": {
-            "value": "{size.7}",
+            "value": "{size.height.2xs}",
             "type": "dimension",
             "description": "Mobile alert inline action button height - 28px"
           },
           "padding": {
-            "value": "{padding.2}",
+            "value": "{padding.3xs}",
             "type": "dimension",
-            "description": "Mobile alert inline action button padding - 8px all sides"
+            "description": "Mobile alert inline action button padding - 6px all sides"
           },
           "gap": {
-            "value": "{size.1[5]}",
+            "value": "{gap.2xs}",
             "type": "dimension",
             "description": "Mobile alert inline action button internal gap (between icon and label) - 6px"
           },
@@ -227,21 +227,21 @@
           "$comment": "Light background, blue text — subtle informational treatment",
           "container": {
             "background": {
-              "value": "#f5f8ff",
+              "value": "{color.background.primary.inactive}",
               "type": "color",
               "description": "Mobile alert primary medium container background - primary/blue-25 - #f5f8ff"
             }
           },
           "text": {
             "color": {
-              "value": "#004eeb",
+              "value": "{color.text.primary.body.1}",
               "type": "color",
               "description": "Mobile alert primary medium heading and supporting text color - primary/blue-700 - #004eeb"
             }
           },
           "icon": {
             "color": {
-              "value": "#004eeb",
+              "value": "{color.icon.primary.default}",
               "type": "color",
               "description": "Mobile alert primary medium semantic icon color - primary/blue-700 - #004eeb"
             }
@@ -249,20 +249,20 @@
           "actions": {
             "filled": {
               "background": {
-                "value": "#eff4ff",
+                "value": "{color.background.primary.subtle.0}",
                 "type": "color",
                 "description": "Mobile alert primary medium filled action button background - primary/blue-50 - #eff4ff"
               },
               "border": {
                 "color": {
-                  "value": "#eff4ff",
+                  "value": "{color.border.primary.subtle.0}",
                   "type": "color",
                   "description": "Mobile alert primary medium filled action button border - primary/blue-50 - #eff4ff (matches background)"
                 }
               },
               "text": {
                 "color": {
-                  "value": "#004eeb",
+                  "value": "{color.text.primary.body.1}",
                   "type": "color",
                   "description": "Mobile alert primary medium filled action button text - primary/blue-700 - #004eeb"
                 }
@@ -276,14 +276,14 @@
               },
               "border": {
                 "color": {
-                  "value": "#84adff",
+                  "value": "{color.border.primary.subtle.2}",
                   "type": "color",
                   "description": "Mobile alert primary medium outline action button border - primary/blue-300 - #84adff"
                 }
               },
               "text": {
                 "color": {
-                  "value": "#004eeb",
+                  "value": "{color.text.primary.body.1}",
                   "type": "color",
                   "description": "Mobile alert primary medium outline action button text - primary/blue-700 - #004eeb"
                 }
@@ -293,14 +293,14 @@
           "close": {
             "border": {
               "color": {
-                "value": "#84adff",
+                "value": "{color.border.primary.subtle.2}",
                 "type": "color",
                 "description": "Mobile alert primary medium close/dismiss button border - primary/blue-300 - #84adff"
               }
             },
             "text": {
               "color": {
-                "value": "#004eeb",
+                "value": "{color.text.primary.body.1}",
                 "type": "color",
                 "description": "Mobile alert primary medium close/dismiss button text - primary/blue-700 - #004eeb"
               }
@@ -311,7 +311,7 @@
           "$comment": "Dark blue background, white text — prominent, attention-demanding treatment",
           "container": {
             "background": {
-              "value": "#004eeb",
+              "value": "{color.background.primary.intense.0}",
               "type": "color",
               "description": "Mobile alert primary high container background - primary/blue-700 - #004eeb"
             }
