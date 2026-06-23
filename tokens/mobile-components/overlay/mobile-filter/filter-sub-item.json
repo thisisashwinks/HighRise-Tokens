@@ -9,7 +9,7 @@
   },
   "filter-sub-item": {
     "height": {
-      "value": "{size.14}",
+      "value": "{size.height.2xl}",
       "type": "dimension",
       "description": "56px — fixed row height, matches Filter Item height"
     },
@@ -20,35 +20,35 @@
     },
     "padding": {
       "horizontal": {
-        "value": "14px",
+        "value": "{padding.md}",
         "type": "dimension",
         "description": "Left and right inset"
       },
       "vertical": {
-        "value": "{size.2}",
+        "value": "{padding.2xs}",
         "type": "dimension",
         "description": "8px top and bottom inset"
       }
     },
     "gap": {
-      "value": "{size.2}",
+      "value": "{gap.xs}",
       "type": "dimension",
       "description": "8px gap between children"
     },
     "background": {
-      "value": "{color.neutral.white.base}",
+      "value": "{color.background.neutral.base}",
       "type": "color",
       "description": "White background in both default and selected states"
     },
     "border": {
       "left": {
         "width": {
-          "value": "1px",
+          "value": "{border.width.default}",
           "type": "dimension",
           "description": "Left separator border from the Filter Item column"
         },
         "color": {
-          "value": "{color.neutral.gray.200}",
+          "value": "{color.border.neutral.subtle.2}",
           "type": "color",
           "description": "#eaecf0 — left column divider color"
         }
@@ -61,12 +61,12 @@
     },
     "radio-row": {
       "gap": {
-        "value": "{size.1}",
+        "value": "{gap.3xs}",
         "type": "dimension",
         "description": "4px gap between radio button and label text"
       },
       "height": {
-        "value": "{size.5}",
+        "value": "{size.height.4xs}",
         "type": "dimension",
         "description": "20px — radio+label row height"
       }
@@ -78,7 +78,7 @@
         "description": "14px Regular, 20px line-height"
       },
       "color": {
-        "value": "{color.neutral.gray.900}",
+        "value": "{color.text.neutral.title.1}",
         "type": "color",
         "description": "#101828 — label text color in both states"
       }
