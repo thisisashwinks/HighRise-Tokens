@@ -567,21 +567,21 @@
           "$comment": "Light orange background, dark orange text — soft cautionary treatment",
           "container": {
             "background": {
-              "value": "#fffcf5",
+              "value": "{color.background.warning.inactive}",
               "type": "color",
               "description": "Mobile alert warning medium container background - secondary/warning-25 - #fffcf5"
             }
           },
           "text": {
             "color": {
-              "value": "#b54708",
+              "value": "{color.text.warning.body.1}",
               "type": "color",
               "description": "Mobile alert warning medium text color - secondary/warning-700 - #b54708"
             }
           },
           "icon": {
             "color": {
-              "value": "#b54708",
+              "value": "{color.icon.warning.default}",
               "type": "color",
               "description": "Mobile alert warning medium icon color - secondary/warning-700 - #b54708"
             }
@@ -589,20 +589,20 @@
           "actions": {
             "filled": {
               "background": {
-                "value": "#fffaeb",
+                "value": "{color.background.warning.subtle.0}",
                 "type": "color",
                 "description": "Mobile alert warning medium filled action button background - secondary/warning-50 - #fffaeb"
               },
               "border": {
                 "color": {
-                  "value": "#fffaeb",
+                  "value": "{color.border.warning.subtle.0}",
                   "type": "color",
                   "description": "Mobile alert warning medium filled action button border - secondary/warning-50 - #fffaeb (matches background)"
                 }
               },
               "text": {
                 "color": {
-                  "value": "#b54708",
+                  "value": "{color.text.warning.body.1}",
                   "type": "color",
                   "description": "Mobile alert warning medium filled action button text - secondary/warning-700 - #b54708"
                 }
@@ -616,14 +616,14 @@
               },
               "border": {
                 "color": {
-                  "value": "#fec84b",
+                  "value": "{color.border.warning.moderate.0}",
                   "type": "color",
                   "description": "Mobile alert warning medium outline action button border - secondary/warning-300 - #fec84b"
                 }
               },
               "text": {
                 "color": {
-                  "value": "#b54708",
+                  "value": "{color.text.warning.body.1}",
                   "type": "color",
                   "description": "Mobile alert warning medium outline action button text - secondary/warning-700 - #b54708"
                 }
@@ -633,14 +633,14 @@
           "close": {
             "border": {
               "color": {
-                "value": "#fec84b",
+                "value": "{color.border.warning.moderate.0}",
                 "type": "color",
                 "description": "Mobile alert warning medium close/dismiss button border - secondary/warning-300 - #fec84b"
               }
             },
             "text": {
               "color": {
-                "value": "#b54708",
+                "value": "{color.text.warning.body.1}",
                 "type": "color",
                 "description": "Mobile alert warning medium close/dismiss button text - secondary/warning-700 - #b54708"
               }
@@ -651,7 +651,7 @@
           "$comment": "Dark orange background, white text — urgent warning treatment",
           "container": {
             "background": {
-              "value": "#dc6803",
+              "value": "{color.background.warning.default}",
               "type": "color",
               "description": "Mobile alert warning high container background - secondary/warning-600 - #dc6803"
             }
