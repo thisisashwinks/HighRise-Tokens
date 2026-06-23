@@ -12,7 +12,7 @@
   },
   "breadcrumb-item": {
     "gap": {
-      "value": "6px",
+      "value": "{gap.2xs}",
       "type": "dimension",
       "description": "Horizontal gap between the leading icon, label text, and trailing chevron"
     },
@@ -31,12 +31,12 @@
       },
       "color": {
         "default": {
-          "value": "{color.neutral.gray.800}",
+          "value": "{color.text.neutral.title.2}",
           "type": "color",
           "description": "#1d2939 — muted label for navigable ancestor steps"
         },
         "selected": {
-          "value": "{color.primary.700}",
+          "value": "{color.text.primary.body.1}",
           "type": "color",
           "description": "#004eeb — blue label highlighting the currently active breadcrumb step"
         }
@@ -44,18 +44,18 @@
     },
     "icon": {
       "size": {
-        "value": "24px",
+        "value": "{size.icon.lg}",
         "type": "dimension",
         "description": "Width and height of the leading icon — home-02 for Default type, dots-horizontal for Overflow type"
       },
       "color": {
         "default": {
-          "value": "{color.neutral.gray.800}",
+          "value": "{color.icon.neutral.intense.0}",
           "type": "color",
           "description": "#1d2939 — matches default label color"
         },
         "selected": {
-          "value": "{color.primary.700}",
+          "value": "{color.icon.primary.default}",
           "type": "color",
           "description": "#004eeb — matches selected label color"
         }
@@ -68,7 +68,7 @@
         "description": "Width and height of the chevron-right separator icon"
       },
       "color": {
-        "value": "{color.neutral.gray.800}",
+        "value": "{color.icon.neutral.intense.0}",
         "type": "color",
         "description": "#1d2939 — always gray regardless of the item's state; the chevron is a separator, not a state indicator"
       }
