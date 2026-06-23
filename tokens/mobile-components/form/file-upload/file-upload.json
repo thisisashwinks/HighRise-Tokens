@@ -69,7 +69,7 @@
           "active": {
             "value": "{color.border.primary.default}",
             "type": "color",
-            "description": "Mobile file upload action zone border color for Active and In Progress states - background/primary/default - #155eef (highlights the drop zone while uploading)"
+            "description": "Mobile file upload action zone border color for Active and In Progress states - border/primary/default - #155eef (highlights the drop zone while uploading)"
           }
         }
       },
