@@ -338,7 +338,7 @@
           "$comment": "Light gray background, dark gray text — low-priority informational treatment",
           "container": {
             "background": {
-              "value": "#fcfcfd",
+              "value": "{color.background.neutral.inactive}",
               "type": "color",
               "description": "Mobile alert gray medium container background - neutral/gray-25 - #fcfcfd"
             }
@@ -352,7 +352,7 @@
           },
           "icon": {
             "color": {
-              "value": "{color.icon.neutral.body.1}",
+              "value": "{color.icon.neutral.default}",
               "type": "color",
               "description": "Mobile alert gray medium icon color - neutral/gray-700 - #344054"
             }
@@ -360,13 +360,13 @@
           "actions": {
             "filled": {
               "background": {
-                "value": "#f9fafb",
+                "value": "{color.background.neutral.subtle.0}",
                 "type": "color",
                 "description": "Mobile alert gray medium filled action button background - neutral/gray-50 - #f9fafb"
               },
               "border": {
                 "color": {
-                  "value": "#f9fafb",
+                  "value": "{color.border.neutral.subtle.0}",
                   "type": "color",
                   "description": "Mobile alert gray medium filled action button border - neutral/gray-50 - #f9fafb (matches background)"
                 }
@@ -387,7 +387,7 @@
               },
               "border": {
                 "color": {
-                  "value": "{color.border.neutral.moderate.0}",
+                  "value": "{color.border.neutral.default}",
                   "type": "color",
                   "description": "Mobile alert gray medium outline action button border - neutral/gray-300 - #d0d5dd"
                 }
@@ -404,7 +404,7 @@
           "close": {
             "border": {
               "color": {
-                "value": "{color.border.neutral.moderate.0}",
+                "value": "{color.border.neutral.default}",
                 "type": "color",
                 "description": "Mobile alert gray medium close/dismiss button border - neutral/gray-300 - #d0d5dd"
               }
