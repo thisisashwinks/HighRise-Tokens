@@ -678,21 +678,21 @@
           "$comment": "Light green background, dark green text — positive confirmation treatment",
           "container": {
             "background": {
-              "value": "#f6fef9",
+              "value": "{color.background.success.inactive}",
               "type": "color",
               "description": "Mobile alert success medium container background - secondary/success-25 - #f6fef9"
             }
           },
           "text": {
             "color": {
-              "value": "#027a48",
+              "value": "{color.text.success.body.1}",
               "type": "color",
               "description": "Mobile alert success medium text color - secondary/success-700 - #027a48"
             }
           },
           "icon": {
             "color": {
-              "value": "#027a48",
+              "value": "{color.icon.success.default}",
               "type": "color",
               "description": "Mobile alert success medium icon color - secondary/success-700 - #027a48"
             }
@@ -700,20 +700,20 @@
           "actions": {
             "filled": {
               "background": {
-                "value": "#d1fadf",
+                "value": "{color.background.success.subtle.1}",
                 "type": "color",
                 "description": "Mobile alert success medium filled action button background - secondary/success-50 - #d1fadf"
               },
               "border": {
                 "color": {
-                  "value": "#d1fadf",
+                  "value": "{color.border.success.subtle.1}",
                   "type": "color",
                   "description": "Mobile alert success medium filled action button border - secondary/success-50 - #d1fadf (matches background)"
                 }
               },
               "text": {
                 "color": {
-                  "value": "#027a48",
+                  "value": "{color.text.success.body.1}",
                   "type": "color",
                   "description": "Mobile alert success medium filled action button text - secondary/success-700 - #027a48"
                 }
@@ -727,14 +727,14 @@
               },
               "border": {
                 "color": {
-                  "value": "{color.border.neutral.moderate.0}",
+                  "value": "{color.border.neutral.default}",
                   "type": "color",
                   "description": "Mobile alert success medium outline action button border - neutral/gray-300 - #d0d5dd (success/300 not defined; uses neutral border)"
                 }
               },
               "text": {
                 "color": {
-                  "value": "#027a48",
+                  "value": "{color.text.success.body.1}",
                   "type": "color",
                   "description": "Mobile alert success medium outline action button text - secondary/success-700 - #027a48"
                 }
@@ -744,14 +744,14 @@
           "close": {
             "border": {
               "color": {
-                "value": "{color.border.neutral.moderate.0}",
+                "value": "{color.border.neutral.default}",
                 "type": "color",
                 "description": "Mobile alert success medium close/dismiss button border - neutral/gray-300 - #d0d5dd (success/300 not defined; uses neutral border)"
               }
             },
             "text": {
               "color": {
-                "value": "#027a48",
+                "value": "{color.text.success.body.1}",
                 "type": "color",
                 "description": "Mobile alert success medium close/dismiss button text - secondary/success-700 - #027a48"
               }
@@ -762,7 +762,7 @@
           "$comment": "Dark green background, white text — prominent success confirmation",
           "container": {
             "background": {
-              "value": "#039855",
+              "value": "{color.background.success.default}",
               "type": "color",
               "description": "Mobile alert success high container background - secondary/success-600 - #039855"
             }
