@@ -150,7 +150,7 @@
             "description": "Mobile text area label text color - neutral/gray-700 - #344054"
           },
           "mandatory": {
-            "value": "{color.text.error.intense}", //
+            "value": "{color.text.error.intense}",
             "type": "color",
             "description": "Mobile text area mandatory asterisk (*) color - error/600 - #d92d20"
           }
