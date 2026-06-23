@@ -450,12 +450,12 @@
           "container": {
             "background": {
               "card": {
-                "value": "#fffbfa",
+                "value": "{color.background.error.inactive}",
                 "type": "color",
                 "description": "Mobile alert error medium container background (card layout) - secondary/error-25 - #fffbfa"
               },
               "inline": {
-                "value": "#fcfcfd",
+                "value": "{color.background.neutral.inactive}",
                 "type": "color",
                 "description": "Mobile alert error medium container background (inline layout) - neutral/gray-modern-25 - #fcfcfd (Figma uses neutral bg for inline error medium)"
               }
@@ -463,14 +463,14 @@
           },
           "text": {
             "color": {
-              "value": "#b42318",
+              "value": "{color.text.error.body.1}",
               "type": "color",
               "description": "Mobile alert error medium heading and supporting text color - secondary/error-700 - #b42318"
             }
           },
           "icon": {
             "color": {
-              "value": "#b42318",
+              "value": "{color.icon.error.default}",
               "type": "color",
               "description": "Mobile alert error medium semantic icon color - secondary/error-700 - #b42318"
             }
@@ -478,20 +478,20 @@
           "actions": {
             "filled": {
               "background": {
-                "value": "#fef3f2",
+                "value": "{color.background.error.subtle.0}",
                 "type": "color",
                 "description": "Mobile alert error medium filled action button background - secondary/error-50 - #fef3f2"
               },
               "border": {
                 "color": {
-                  "value": "#fef3f2",
+                  "value": "{color.border.error.subtle.0}",
                   "type": "color",
                   "description": "Mobile alert error medium filled action button border - secondary/error-50 - #fef3f2 (matches background)"
                 }
               },
               "text": {
                 "color": {
-                  "value": "#b42318",
+                  "value": "{color.text.error.body.1}",
                   "type": "color",
                   "description": "Mobile alert error medium filled action button text - secondary/error-700 - #b42318"
                 }
@@ -505,7 +505,7 @@
               },
               "border": {
                 "color": {
-                  "value": "#fda29b",
+                  "value": "{color.border.error.moderate.0}",
                   "type": "color",
                   "description": "Mobile alert error medium outline action button border - secondary/error-300 - #fda29b"
                 }
@@ -522,14 +522,14 @@
           "close": {
             "border": {
               "color": {
-                "value": "#fda29b",
+                "value": "{color.border.error.moderate.0}",
                 "type": "color",
                 "description": "Mobile alert error medium close/dismiss button border - secondary/error-300 - #fda29b"
               }
             },
             "text": {
               "color": {
-                "value": "#b42318",
+                "value": "{color.text.error.body.1}",
                 "type": "color",
                 "description": "Mobile alert error medium close/dismiss button text - secondary/error-700 - #b42318"
               }
@@ -540,7 +540,7 @@
           "$comment": "Dark red background, white text — critical, blocking error treatment",
           "container": {
             "background": {
-              "value": "#b42318",
+              "value": "{color.background.error.intense.0}",
               "type": "color",
               "description": "Mobile alert error high container background - secondary/error-700 - #b42318"
             }
