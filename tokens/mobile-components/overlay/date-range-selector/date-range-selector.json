@@ -21,20 +21,20 @@
       "description": "Full mobile viewport width"
     },
     "background": {
-      "value": "{color.neutral.white.base}",
+      "value": "{color.background.neutral.base}",
       "type": "color",
-      "description": "Sheet background"
+      "description": "Sheet background- gray/0 - #ffffff"
     },
     "border": {
       "width": {
-        "value": "1px",
+        "value": "{border.width.default}",
         "type": "dimension",
-        "description": "Outer sheet border"
+        "description": "Outer sheet border- default - 1px"
       },
       "color": {
-        "value": "{color.neutral.gray.100}",
+        "value": "{color.border.neutral.subtle.1}",
         "type": "color",
-        "description": "#f2f4f7 — very subtle border on the bottom sheet container"
+        "description": "Very subtle border on the bottom sheet container- gray/100 - #f2f4f7"
       }
     },
     "border-radius": {
@@ -52,14 +52,14 @@
     "header": {
       "padding": {
         "top": {
-          "value": "12px",
+          "value": "{padding.y.sm}",
           "type": "dimension",
-          "description": "Top inset above header contents"
+          "description": "Top inset above header contents- sm - 12px"
         },
         "horizontal": {
-          "value": "{size.4}",
+          "value": "{padding.x.md}",
           "type": "dimension",
-          "description": "16px left and right inset"
+          "description": "16px left and right inset- md - 16px"
         }
       },
       "title": {
@@ -69,14 +69,14 @@
           "description": "14px Semibold, 20px line-height — sheet title text"
         },
         "color": {
-          "value": "{color.neutral.gray.900}",
+          "value": "{color.text.neutral.title.1}",
           "type": "color",
-          "description": "#101828 — sheet title color"
+          "description": "Sheet title color- gray/900 - #101828"
         }
       },
       "close-button": {
         "size": {
-          "value": "{size.9}",
+          "value": "{size.sm}",
           "type": "dimension",
           "description": "36px — width and height of the close icon button"
         },
@@ -91,37 +91,37 @@
     },
     "body": {
       "background": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "Body section background"
+        "description": "Body section background- gray/0 - #ffffff"
       },
       "padding": {
-        "value": "{size.4}",
+        "value": "{padding.lg}",
         "type": "dimension",
-        "description": "16px padding around body contents"
+        "description": "16px padding around body contents- lg - 16px"
       },
       "gap": {
-        "value": "{size.4}",
+        "value": "{gap.xl}",
         "type": "dimension",
-        "description": "16px vertical gap between the Date Time Range Picker inputs and the picker menu card"
+        "description": "16px vertical gap between the Date Time Range Picker inputs and the picker menu card- xl - 16px"
       }
     },
     "picker-menu": {
       "background": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "Calendar card background"
+        "description": "Calendar card background- gray/0 - #ffffff"
       },
       "border": {
         "width": {
-          "value": "1px",
+          "value": "{border.width.default}",
           "type": "dimension",
-          "description": "Calendar card border"
+          "description": "Calendar card border- default - 1px"
         },
         "color": {
-          "value": "{color.neutral.gray.100}",
+          "value": "{color.border.neutral.subtle.1}",
           "type": "color",
-          "description": "#f2f4f7 — subtle card border"
+          "description": "Subtle card border- gray/100 - #f2f4f7"
         }
       },
       "border-radius": {
@@ -135,25 +135,25 @@
         "description": "0px 4px 8px -2px rgba(16,24,40,0.10), 0px 2px 4px -2px rgba(16,24,40,0.06) — card elevation"
       },
       "padding": {
-        "value": "{size.2}",
+        "value": "{padding.2xs}",
         "type": "dimension",
-        "description": "8px inner padding around the calendar contents"
+        "description": "8px inner padding around the calendar contents- 2xs - 8px"
       },
       "gap": {
-        "value": "{size.2}",
+        "value": "{gap.xs}",
         "type": "dimension",
-        "description": "8px vertical gap between day-header row, each month section, and between week rows"
+        "description": "8px vertical gap between day-header row, each month section, and between week rows- xs - 8px"
       },
       "day-headers": {
         "height": {
-          "value": "{size.6}",
+          "value": "{size.height.3xs}",
           "type": "dimension",
-          "description": "24px — row height for the Sun Mon Tue Wed Thu Fri Sat header"
+          "description": "24px — row height for the Sun Mon Tue Wed Thu Fri Sat header- 3xs - 24px"
         },
         "cell-width": {
-          "value": "{size.11}",
+          "value": "{size.width.lg}",
           "type": "dimension",
-          "description": "44px — matches date cell width for alignment"
+          "description": "44px — matches date cell width for alignment- lg - 44px"
         },
         "typography": {
           "value": "{font.body.semibold.lg}",
@@ -161,20 +161,20 @@
           "description": "14px Semibold, 20px line-height — day-of-week labels"
         },
         "color": {
-          "value": "{color.neutral.gray.400}",
+          "value": "{color.text.neutral.subtitle.2}",
           "type": "color",
-          "description": "#98a2b3 — muted day-of-week header text"
+          "description": "Muted day-of-week header text- gray/400 - #98a2b3"
         },
         "divider": {
           "width": {
-            "value": "1px",
+            "value": "{border.width.default}",
             "type": "dimension",
-            "description": "Bottom border separating day headers from the date grid"
+            "description": "Bottom border separating day headers from the date grid- default - 1px"
           },
           "color": {
-            "value": "{color.neutral.gray.100}",
+            "value": "{color.border.neutral.subtle.1}",
             "type": "color",
-            "description": "#f2f4f7 — subtle divider below day headers"
+            "description": "Subtle divider below day headers- gray/100 - #f2f4f7"
           }
         }
       },
@@ -185,26 +185,26 @@
           "description": "14px Semibold, 20px line-height — month name and year label (e.g., Oct 2024)"
         },
         "color": {
-          "value": "{color.neutral.gray.800}",
+          "value": "{color.text.neutral.title.2}",
           "type": "color",
-          "description": "#1d2939 — month/year label text"
+          "description": "Month/year label text- gray/800 - #1d2939"
         },
         "gap": {
-          "value": "2px",
+          "value": "{gap.4xs}",
           "type": "dimension",
-          "description": "Gap between the month name token and the year token within the label row"
+          "description": "Gap between the month name token and the year token within the label row- 4xs - 2px"
         },
         "cell-height": {
-          "value": "{size.6}",
+          "value": "{size.height.3xs}",
           "type": "dimension",
-          "description": "24px — height of each month/year label chip"
+          "description": "24px — height of each month/year label chip- 3xs - 24px"
         }
       },
       "calendar-grid": {
         "row-gap": {
-          "value": "{size.2}",
+          "value": "{gap.y.xs}",
           "type": "dimension",
-          "description": "8px vertical gap between week rows in the date grid"
+          "description": "8px vertical gap between week rows in the date grid- xs - 8px"
         }
       }
     }
