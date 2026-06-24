@@ -49,7 +49,7 @@
     "track": {
       "$comment": "The full-width background bar representing the total selectable range",
       "height": {
-        "value": "size.height.1[5]",
+        "value": "{size.height.1[5]}",
         "type": "dimension",
         "description": "Mobile slider track height - 6px (1[5] - 6px)"
       },
