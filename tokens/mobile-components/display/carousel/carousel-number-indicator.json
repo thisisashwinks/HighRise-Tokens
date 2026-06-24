@@ -13,20 +13,20 @@
       "description": "Fully pill-shaped container (36px radius on a ~28px-tall element renders as a capsule)"
     },
     "border-width": {
-      "value": "1px",
+      "value": "{border.width.default}",
       "type": "dimension",
-      "description": "Uniform border on all themes"
+      "description": "Uniform border on all themes- default - 1px"
     },
     "padding": {
       "horizontal": {
-        "value": "10px",
+        "value": "{padding.x.2xs}",
         "type": "dimension",
-        "description": "Left and right inset inside the pill"
+        "description": "Left and right inset inside the pill- 2xs - 10px"
       },
       "vertical": {
-        "value": "4px",
+        "value": "{padding.y.4xs}",
         "type": "dimension",
-        "description": "Top and bottom inset inside the pill"
+        "description": "Top and bottom inset inside the pill- 4xs - 4px"
       }
     },
     "shadow": {
@@ -42,55 +42,55 @@
     "primary": {
       "description": "Filled blue pill — highest visual prominence, used on dark or image backgrounds",
       "background": {
-        "value": "{color.primary.blue.700}",
+        "value": "{color.background.primary.intense.0}",
         "type": "color",
-        "description": "#004eeb — solid primary blue background"
+        "description": "Solid primary blue background- blue/700 - #004eeb"
       },
       "border-color": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.border.neutral.subtle.2}",
         "type": "color",
-        "description": "#eaecf0 — border matches the lighter surround rather than the fill"
+        "description": "Subtle gray border matches the lighter surround rather than the fill- gray/200 - #eaecf0"
       },
       "text-color": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.text.neutral.base}",
         "type": "color",
-        "description": "White numeral text on the blue background"
+        "description": "White numeral text on the blue background- gray/0 - #ffffff"
       }
     },
     "secondary": {
       "description": "White pill with blue border and blue text — medium prominence",
       "background": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "White background"
+        "description": "White background- gray/0 - #ffffff"
       },
       "border-color": {
-        "value": "{color.primary.blue.700}",
+        "value": "{color.background.primary.intense.0}",
         "type": "color",
-        "description": "#004eeb — primary blue outline"
+        "description": "Primary blue outline- blue/700 - #004eeb"
       },
       "text-color": {
-        "value": "{color.primary.blue.700}",
+        "value": "{color.text.primary.body.1}",
         "type": "color",
-        "description": "#004eeb — primary blue numeral matching the border"
+        "description": "Primary blue numeral matching the border- blue/700 - #004eeb"
       }
     },
     "tertiary": {
       "description": "White pill with gray border and gray text — lowest prominence, for use on light backgrounds",
       "background": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "White background"
+        "description": "White background- gray/0 - #ffffff"
       },
       "border-color": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.border.neutral.subtle.2}",
         "type": "color",
-        "description": "#eaecf0 — subtle gray outline"
+        "description": "Subtle gray outline- gray/200 - #eaecf0"
       },
       "text-color": {
-        "value": "{color.neutral.gray.700}",
+        "value": "{color.text.neutral.body.1}",
         "type": "color",
-        "description": "#344054 — dark gray numeral text"
+        "description": "Dark gray numeral text- gray/700 - #344054"
       }
     }
   }
