@@ -25,7 +25,7 @@
         "description": "13px Semibold, 18px line-height — 'Custom Slot' placeholder label"
       },
       "color": {
-        "value": "{color.text.neutral.subtitle.1}",
+        "value": "{color.text.neutral.inactive}",
         "type": "color",
         "description": "Mobile carousel empty container text color - gray/300 - #d0d5dd"
       }
