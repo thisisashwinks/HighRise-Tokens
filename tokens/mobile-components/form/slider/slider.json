@@ -49,7 +49,7 @@
     "track": {
       "$comment": "The full-width background bar representing the total selectable range",
       "height": {
-        "value": "{size.height.1[5]}",
+        "value": "{size.height.3xs}",
         "type": "dimension",
         "description": "Mobile slider track height - 6px (1[5] - 6px)"
       },
@@ -67,9 +67,9 @@
     "fill": {
       "$comment": "The colored indicator that shows the selected portion of the range. Grows from left edge to knob position (Simple) or between two knobs (Range).",
       "height": {
-        "value": "{size.height.1[5]}",
+        "value": "{size.height.3xs}",
         "type": "dimension",
-        "description": "Mobile slider fill height - 6px (1[5] - 6px)"
+        "description": "Mobile slider fill height - 6px (1[5] - 6px) Token not Avaiallable"
       },
       "border-radius": {
         "left": {
@@ -85,7 +85,7 @@
       },
       "color": {
         "default": {
-          "value": "{color.background.primary.intense.0}",
+          "value": "{color.background.primary.default}",
           "type": "color",
           "description": "Mobile slider fill color for Default/Start/End/Label states - primary/blue/700 - #004eeb"
         },
