@@ -14,54 +14,54 @@
     },
     "padding": {
       "horizontal": {
-        "value": "{size.4}",
+        "value": "{padding.x.md}",
         "type": "dimension",
-        "description": "16px left and right inset"
+        "description": "16px left and right inset- md - 16px"
       },
       "top": {
-        "value": "18px",
+        "value": "{padding.y.xl}",
         "type": "dimension",
-        "description": "Gap between the divider line and the button row"
+        "description": "Gap between the divider line and the button row- xl - 18px"
       },
       "bottom": {
-        "value": "{size.8}",
+        "value": "{padding.y.8}",
         "type": "dimension",
-        "description": "32px bottom safe-area padding"
+        "description": "32px bottom safe-area padding- 8 - 32px"
       }
     },
     "divider": {
       "width": {
-        "value": "1px",
+        "value": "{border.width.default}",
         "type": "dimension",
-        "description": "Horizontal rule height above the footer buttons"
+        "description": "Horizontal rule height above the footer buttons- 1px"
       },
       "color": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.border.neutral.subtle.2}",
         "type": "color",
-        "description": "#eaecf0 — separator between calendar body and footer"
+        "description": "Separator between calendar body and footer- gray/200 - #eaecf0"
       }
     },
     "button-gap": {
-      "value": "{size.4}",
+      "value": "{gap.xl}",
       "type": "dimension",
-      "description": "16px gap between Cancel and Done buttons"
+      "description": "16px gap between Cancel and Done buttons- xl - 16px"
     },
     "cancel-button": {
       "background": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "White ghost button background"
+        "description": "White ghost button background- gray/0 - #ffffff"
       },
       "border": {
         "width": {
-          "value": "1px",
+          "value": "{border.width.default}",
           "type": "dimension",
-          "description": "Button border width"
+          "description": "Button border width- 1px"
         },
         "color": {
-          "value": "{color.neutral.gray.300}",
+          "value": "{color.border.neutral.default}",
           "type": "color",
-          "description": "#d0d5dd — subtle border on the ghost Cancel button"
+          "description": "Subtle border on the ghost Cancel button- gray/300 - #d0d5dd"
         }
       },
       "border-radius": {
@@ -76,14 +76,14 @@
       },
       "padding": {
         "horizontal": {
-          "value": "20px",
+          "value": "{padding.x.xl}",
           "type": "dimension",
-          "description": "Left and right button padding"
+          "description": "Left and right button padding- xl - 20px"
         },
         "vertical": {
-          "value": "12px",
+          "value": "{padding.y.sm}",
           "type": "dimension",
-          "description": "Top and bottom button padding"
+          "description": "Top and bottom button padding- sm - 12px"
         }
       },
       "label": {
@@ -93,18 +93,18 @@
           "description": "16px Semibold, 24px line-height"
         },
         "color": {
-          "value": "{color.neutral.gray.700}",
+          "value": "{color.text.neutral.body.1}",
           "type": "color",
-          "description": "#344054 — Cancel button label color"
+          "description": "Cancel button label color- gray/700 - #344054"
         }
       }
     },
     "done-button": {
       "background": {
         "inactive": {
-          "value": "{color.primary.blue.200}",
+          "value": "{color.background.primary.subtle.2}",
           "type": "color",
-          "description": "#b2ccff — light blue shown when no date range is selected yet (disabled appearance)"
+          "description": "Light blue shown when no date range is selected yet (disabled appearance)- primary/blue-200 - #b2ccff"
         },
         "active": {
           "value": "{color.primary.600}",
@@ -120,7 +120,7 @@
         },
         "color": {
           "inactive": {
-            "value": "{color.primary.blue.200}",
+            "value": "{color.border.primary.subtle.1}",
             "type": "color",
             "description": "#b2ccff — matches inactive background"
           },
@@ -138,14 +138,14 @@
       },
       "padding": {
         "horizontal": {
-          "value": "20px",
+          "value": "{padding.x.xl}",
           "type": "dimension",
-          "description": "Left and right button padding"
+          "description": "Left and right button padding- xl - 20px"
         },
         "vertical": {
-          "value": "12px",
+          "value": "{padding.y.sm}",
           "type": "dimension",
-          "description": "Top and bottom button padding"
+          "description": "Top and bottom button padding- sm - 12px"
         }
       },
       "label": {
@@ -155,9 +155,9 @@
           "description": "16px Semibold, 24px line-height"
         },
         "color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White label on both inactive and active Done button"
+          "description": "White label on both inactive and active Done button- gray/0 - #ffffff"
         }
       }
     }
