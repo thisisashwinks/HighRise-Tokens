@@ -17,14 +17,14 @@
     },
     "item": {
       "padding": {
-        "value": "10px",
+        "value": "{padding.xs}",
         "type": "dimension",
-        "description": "Uniform 10px inset on all sides of each row cell"
+        "description": "Uniform 10px inset on all sides of each row cell- xs - 10px"
       },
       "background": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "White background for every row cell regardless of state"
+        "description": "White background for every row cell regardless of state- gray/0 - #ffffff"
       },
       "typography": {
         "value": "{font.body.semibold.lg}",
@@ -33,14 +33,14 @@
       },
       "text-color": {
         "far": {
-          "value": "{color.neutral.gray.300}",
+          "value": "{color.text.neutral.inactive}",
           "type": "color",
-          "description": "#d0d5dd — near-invisible text for rows 2 positions away from the selection (top and bottom rows)"
+          "description": "Near-invisible text for rows 2 positions away from the selection (top and bottom rows)- gray/300 - #d0d5dd"
         },
         "close": {
-          "value": "{color.neutral.gray.500}",
+          "value": "{color.text.neutral.subtitle.1}",
           "type": "color",
-          "description": "#667085 — dimmed text for the rows immediately adjacent to the selected row"
+          "description": "Dimmed text for the rows immediately adjacent to the selected row- gray/500 - #667085"
         },
         "selected": {
           "value": "{color.primary.600}",
@@ -52,14 +52,14 @@
     "selection-band": {
       "description": "Horizontal band that frames the selected middle row — rendered as a top and bottom border on that cell only",
       "border-width": {
-        "value": "1px",
+        "value": "{border.width.default}",
         "type": "dimension",
         "description": "Thickness of the top and bottom selection border"
       },
       "border-color": {
-        "value": "{color.neutral.gray.300}",
+        "value": "{color.border.neutral.default}",
         "type": "color",
-        "description": "#d0d5dd — subtle gray border that delineates the selected row"
+        "description": "Subtle gray border that delineates the selected row- gray/300 - #d0d5dd"
       }
     },
     "am-pm-column": {
