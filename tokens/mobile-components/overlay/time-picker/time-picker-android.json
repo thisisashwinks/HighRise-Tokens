@@ -18,21 +18,21 @@
       "description": "Fixed component width"
     },
     "gap": {
-      "value": "{size.4}",
+      "value": "{gap.xl}",
       "type": "dimension",
-      "description": "16px vertical gap between the header row, the clock face (Dial mode), and the footer row"
+      "description": "16px vertical gap between the header row, the clock face (Dial mode), and the footer row- xl - 16px"
     },
     "header": {
       "gap": {
-        "value": "{size.4}",
+        "value": "{gap.xl}",
         "type": "dimension",
-        "description": "16px horizontal gap between the inputs group (hour + colon + minute) and the AM/PM Content Switcher"
+        "description": "16px horizontal gap between the inputs group (hour + colon + minute) and the AM/PM Content Switcher- xl - 16px"
       },
       "inputs-group": {
         "gap": {
-          "value": "{size.2}",
+          "value": "{gap.xs}",
           "type": "dimension",
-          "description": "8px horizontal gap between the hour input field, the colon separator, and the minute input field"
+          "description": "8px horizontal gap between the hour input field, the colon separator, and the minute input field- xs - 8px"
         }
       },
       "colon": {
@@ -42,9 +42,9 @@
           "description": "18px Regular, 28px line-height — colon separator between hour and minute fields"
         },
         "color": {
-          "value": "{color.neutral.gray.500}",
+          "value": "{color.text.neutral.subtitle.1}",
           "type": "color",
-          "description": "#667085 — muted gray for the ':' separator"
+          "description": "Muted gray for the ':' separator- gray/500 - #667085"
         }
       }
     },
@@ -61,9 +61,9 @@
         "description": "Greater than half the size — renders as a perfect circle"
       },
       "background": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.background.neutral.subtle.2}",
         "type": "color",
-        "description": "#eaecf0 — light gray face of the clock dial"
+        "description": "Light gray face of the clock dial- neutral/gray-200 - #eaecf0"
       },
       "shadow": {
         "value": "0px 10px 7.5px 0px rgba(0,0,0,0.10), 0px 4px 3px 0px rgba(0,0,0,0.10)",
@@ -87,9 +87,9 @@
           "description": "Tight letter spacing on the clock number labels"
         },
         "color": {
-          "value": "{color.neutral.gray.800}",
+          "value": "{color.text.neutral.title.2}",
           "type": "color",
-          "description": "#1d2939 — dark text for unselected hour numbers around the dial"
+          "description": "Dark text for unselected hour numbers around the dial- gray/800 - #1d2939"
         }
       },
       "selection-bubble": {
@@ -105,14 +105,14 @@
           "description": "Fully circular selection indicator"
         },
         "background": {
-          "value": "{color.primary.blue.700}",
+          "value": "{color.background.primary.intense.0}",
           "type": "color",
-          "description": "#004eeb — deep primary blue fill on the selected hour bubble"
+          "description": "Deep primary blue fill on the selected hour bubble- primary/700 - #004eeb"
         },
         "text-color": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White numeral inside the selection bubble"
+          "description": "White numeral inside the selection bubble- gray/0 - #ffffff"
         },
         "font-size": {
           "value": "16px",
@@ -141,9 +141,9 @@
       },
       "mode-icon": {
         "size": {
-          "value": "{size.9}",
+          "value": "{size.icon.3xl}",
           "type": "dimension",
-          "description": "36px — width and height of the mode-toggle icon button"
+          "description": "36px — width and height of the mode-toggle icon button- 3xl - 36px"
         },
         "dial-mode-icon": {
           "value": "keyboard",
@@ -158,31 +158,32 @@
       },
       "button-group": {
         "gap": {
-          "value": "{size.4}",
+          "value": "{gap.xl}",
           "type": "dimension",
-          "description": "16px gap between Cancel and OK buttons"
+          "description": "16px gap between Cancel and OK buttons- xl - 16px"
         },
         "cancel": {
           "background": {
-            "value": "{color.neutral.white.base}",
+            "value": "{color.background.neutral.base}",
             "type": "color",
-            "description": "White background for the ghost Cancel button"
+            "description": "White background for the ghost Cancel button- gray/0 - #ffffff"
           },
           "border": {
             "width": {
-              "value": "1px",
-              "type": "dimension"
+              "value": "{border.width.default}",
+              "type": "dimension",
+              "description": "Button border width- 1px"
             },
             "color": {
-              "value": "{color.primary.blue.300}",
+              "value": "{color.border.primary.subtle.2}",
               "type": "color",
-              "description": "#84adff — light primary blue outline on the Cancel button"
+              "description": "Light primary blue outline on the Cancel button- primary/blue-300 - #84adff"
             }
           },
           "text-color": {
-            "value": "{color.primary.blue.700}",
+            "value": "{color.text.primary.body.1}",
             "type": "color",
-            "description": "#004eeb — primary blue label on the Cancel button"
+            "description": "Primary blue label on the Cancel button- blue/700 - #004eeb"
           },
           "border-radius": {
             "value": "{border.radius.sm}",
@@ -191,14 +192,14 @@
           },
           "padding": {
             "horizontal": {
-              "value": "20px",
+              "value": "padding.x.xl",
               "type": "dimension",
-              "description": "Left and right inset"
+              "description": "Left and right inset- xl - 20px"
             },
             "vertical": {
-              "value": "12px",
+              "value": "padding.y.sm",
               "type": "dimension",
-              "description": "Top and bottom inset"
+              "description": "Top and bottom inset- sm - 12px"
             }
           },
           "typography": {
@@ -219,8 +220,9 @@
           },
           "border": {
             "width": {
-              "value": "1px",
-              "type": "dimension"
+              "value": "{border.width.default}",
+              "type": "dimension",
+              "description": "Button border width- 1px"
             },
             "color": {
               "value": "{color.primary.600}",
@@ -229,9 +231,9 @@
             }
           },
           "text-color": {
-            "value": "{color.neutral.white.base}",
+            "value": "{color.text.neutral.base}",
             "type": "color",
-            "description": "White label on the filled OK button"
+            "description": "White label on the filled OK button- gray/0 - #ffffff"
           },
           "border-radius": {
             "value": "{border.radius.sm}",
