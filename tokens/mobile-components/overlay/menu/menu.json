@@ -17,20 +17,20 @@
       "description": "Fixed width of the menu container — all Menu Item rows fill this width"
     },
     "background": {
-      "value": "{color.neutral.white.base}",
+      "value": "{color.background.neutral.base}",
       "type": "color",
-      "description": "White background behind all stacked items"
+      "description": "Neutral background behind all stacked items- gray/0 - #ffffff"
     },
     "border": {
       "width": {
-        "value": "1px",
+        "value": "{border.width.default}",
         "type": "dimension",
-        "description": "Container border thickness"
+        "description": "Container border thickness- default - 1px"
       },
       "color": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.border.neutral.subtle.2}",
         "type": "color",
-        "description": "#eaecf0 — subtle gray border around the menu container"
+        "description": "Subtle gray border around the menu container- gray/200 - #eaecf0"
       }
     },
     "border-radius": {
@@ -49,9 +49,9 @@
       "description": "Clips item content to the container border-radius — required so first/last rows don't bleed outside the rounded corners"
     },
     "divider-inset": {
-      "value": "8px",
+      "value": "{padding.x.3xs}",
       "type": "dimension",
-      "description": "Horizontal padding applied to the divider wrapper inside the menu container — insets the 1px separator line from the left and right container edges"
+      "description": "Horizontal padding applied to the divider wrapper inside the menu container — insets the 1px separator line from the left and right container edges- 8px"
     }
   }
 }
