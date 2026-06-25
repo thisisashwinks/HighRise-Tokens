@@ -62,13 +62,13 @@
         },
         "padding": {
           "horizontal": {
-            "value": "{padding.2}",
+            "value": "{padding.2xs}",
             "type": "dimension",
             "description": "Video player media error label pill horizontal padding - 8px"
           }
         },
         "gap": {
-          "value": "{gap.0[5]}",
+          "value": "{gap.4xs}",
           "type": "dimension",
           "description": "Video player media error label pill gap between elements - 2px"
         },

@@ -43,7 +43,7 @@
       },
       "border": {
         "radius": {
-          "value": "16px",
+          "value": "{border.radius.2xl}",
           "type": "dimension",
           "description": "Video player control icon-button border radius - 16px (circular pill for 28px container)"
         }
@@ -79,24 +79,24 @@
       },
       "padding": {
         "horizontal": {
-          "value": "{padding.2}",
+          "value": "{padding.2xs}",
           "type": "dimension",
           "description": "Video player controls progress container horizontal padding - 8px"
         },
         "vertical": {
-          "value": "{padding.1}",
+          "value": "{padding.4xs}",
           "type": "dimension",
           "description": "Video player controls progress container vertical padding - 4px"
         }
       },
       "gap": {
-        "value": "{gap.1}",
+        "value": "{gap.3xs}",
         "type": "dimension",
         "description": "Video player controls progress container gap between progress bar and label - 4px"
       },
       "border": {
         "radius": {
-          "value": "16px",
+          "value": "{border.radius.2xl}",
           "type": "dimension",
           "description": "Video player controls progress container border radius - 16px"
         }
@@ -139,13 +139,13 @@
       },
       "padding": {
         "horizontal": {
-          "value": "{padding.2}",
+          "value": "{padding.2xs}",
           "type": "dimension",
           "description": "Video player controls time pill horizontal padding - 8px"
         }
       },
       "gap": {
-        "value": "{gap.0[5]}",
+        "value": "{gap.4xs}",
         "type": "dimension",
         "description": "Video player controls time pill gap between internal elements - 2px"
       },
