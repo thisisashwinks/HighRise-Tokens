@@ -14,13 +14,13 @@
   },
   "otp-input-mobile": {
     "gap": {
-      "value": "{size.1}",
+      "value": "{gap.3xs}",
       "type": "dimension",
       "description": "4px vertical gap between label, input row, and hint text row"
     },
     "label": {
       "color": {
-        "value": "{color.neutral.gray.700}",
+        "value": "{color.text.neutral.body.1}",
         "type": "color",
         "description": "#344054 — label text color for all sizes and states"
       },
@@ -45,17 +45,17 @@
     "input-row": {
       "gap": {
         "xs": {
-          "value": "{size.2}",
+          "value": "{gap.xs}",
           "type": "dimension",
           "description": "8px gap between digit cells at xs size"
         },
         "sm": {
-          "value": "{size.2}",
+          "value": "{gap.xs}",
           "type": "dimension",
           "description": "8px gap between digit cells at sm size"
         },
         "md": {
-          "value": "12px",
+          "value": "{gap.md}",
           "type": "dimension",
           "description": "12px gap between digit cells at md size — wider spacing for larger cells"
         }
@@ -81,17 +81,17 @@
       },
       "color": {
         "default": {
-          "value": "{color.neutral.gray.600}",
+          "value": "{color.text.neutral.body.2}",
           "type": "color",
           "description": "#475467 — hint text in default and loading states"
         },
         "error": {
-          "value": "{color.secondary.error.500}",
+          "value": "{color.text.error.inactive.1}",
           "type": "color",
           "description": "#f04438 — hint text in error state"
         },
         "success": {
-          "value": "{color.secondary.success.600}",
+          "value": "{color.text.success.body.2}",
           "type": "color",
           "description": "#039855 — hint text in success state"
         }
@@ -99,7 +99,7 @@
     },
     "loading-row": {
       "gap": {
-        "value": "{size.1}",
+        "value": "{gap.3xs}",
         "type": "dimension",
         "description": "4px gap between the OTP Loader spinner and the hint text in loading state"
       }
@@ -112,23 +112,23 @@
       },
       "size": {
         "xs": {
-          "value": "16px",
+          "value": "{size.5xs}",
           "type": "dimension",
           "description": "Icon size at xs size"
         },
         "sm": {
-          "value": "16px",
+          "value": "{size.5xs}",
           "type": "dimension",
           "description": "Icon size at sm size"
         },
         "md": {
-          "value": "20px",
+          "value": "{size.4xs}",
           "type": "dimension",
           "description": "Icon size at md size"
         }
       },
       "color": {
-        "value": "{color.secondary.success.600}",
+        "value": "{color.icon.success.moderate}",
         "type": "color",
         "description": "#039855 — check-circle icon color matches success hint text"
       }
