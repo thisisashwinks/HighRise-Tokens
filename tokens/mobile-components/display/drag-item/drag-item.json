@@ -130,22 +130,22 @@
       },
       "color": {
         "default": {
-          "value": "{color.background.neutral.moderate.1}",
+          "value": "{color.icon.neutral.moderate.0}",
           "type": "color",
           "description": "Mobile drag item handle default background - gray/400 - #98a2b3"
         },
         "pressed": {
-          "value": "{color.background.neutral.moderate.3}",
+          "value": "{color.icon.neutral.moderate.2}",
           "type": "color",
           "description": "Mobile drag item handle pressed background - gray/600 - #475467"
         },
         "dragging": {
-          "value": "{color.background.primary.moderate.0}",
+          "value": "{color.border.primary.moderate.0}",
           "type": "color",
           "description": "Mobile drag item handle dragging background - blue/400 - #528bff"
         },
         "disabled": {
-          "value": "{color.background.neutral.moderate.0}",
+          "value": "{color.icon.neutral.subtle.2}",
           "type": "color",
           "description": "Mobile drag item handle disabled background - gray/300 - #d0d5dd"
         },
@@ -174,7 +174,7 @@
           "description": "13px Semibold, 18px line-height — placeholder label shown when the slot has no content"
         },
         "color": {
-          "value": "{color.background.neutral.moderate.1}",
+          "value": "{color.text.neutral.subtitle.2}",
           "type": "color",
           "description": "Mobile drag item slot label color - gray/400 - #98a2b3"
         }
