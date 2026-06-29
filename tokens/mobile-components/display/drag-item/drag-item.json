@@ -8,11 +8,6 @@
     "positions": ["left", "right", "top", "bottom"]
   },
   "drag-item": {
-    "width": {
-      "value": "361px",
-      "type": "dimension",
-      "description": "Standard content width inside a 393px mobile viewport with 16px padding each side"
-    },
     "padding": {
       "value": "{padding.4xs}",
       "type": "dimension",
@@ -40,9 +35,9 @@
         "description": "Mobile drag item pressed background - neutral/200 - #eaecf0"
       },
       "dragging": {
-        "value": "{color.accent.blue-light.50}",
+        "value": "{color.border.primary.subtle.0}",
         "type": "color",
-        "description": "#f0f9ff — light blue tint applied while the item is being dragged"
+        "description": "Mobile drag item dragging border color - blue/50 - #eff4ff"
       },
       "disabled": {
         "value": "{color.background.transparent}",
@@ -169,9 +164,9 @@
       },
       "label": {
         "typography": {
-          "value": "{font.body.semibold.md}",
+          "value": "{font.body.medium.sm}",
           "type": "typography",
-          "description": "13px Semibold, 18px line-height — placeholder label shown when the slot has no content"
+          "description": "12px Medium, 17px line-height — placeholder label shown when the slot has no content"
         },
         "color": {
           "value": "{color.text.neutral.subtitle.2}",
