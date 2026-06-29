@@ -40,9 +40,9 @@
           "description": "Border width for Default, Filled, and Disabled states"
         },
         "active": {
-          "value": "3p{x}", 
+          "value": "{border.width.0[75]}", 
           "type": "dimension",
-          "description": "Thicker focus ring for Active, Success, and all Error states"
+          "description": "Thicker focus ring for Active, Success, and all Error states - 3px"
         }
       },
       "color": {
@@ -151,9 +151,9 @@
       },
       "lg": {
         "box": {
-          "value": "80px",
+          "value": "{size.5xl}",
           "type": "dimension",
-          "description": "Width and height — largest size, square"
+          "description": "Width and height — largest size, square - 80px"
         },
         "padding-vertical": {
           "value": "{padding.y.xs}",

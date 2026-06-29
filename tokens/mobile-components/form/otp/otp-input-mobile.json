@@ -26,19 +26,19 @@
       },
       "typography": {
         "xs": {
-          "value": "{font.body.medium.md}",
+          "value": "{font.body.medium.base}",
           "type": "typography",
-          "description": "13px Medium, 18px line-height — label at xs size"
+          "description": "14px Medium, 20px line-height — label at xs size"
         },
         "sm": {
-          "value": "{font.body.medium.lg}",
-          "type": "typography",
-          "description": "14px Medium, 20px line-height — label at sm size"
-        },
-        "md": {
           "value": "{font.body.medium.2xl}",
           "type": "typography",
-          "description": "16px Medium, 24px line-height — label at md size"
+          "description": "16px Medium, 24px line-height — label at sm size"
+        },
+        "md": {
+          "value": "{font.subheading.medium.lg}",
+          "type": "typography",
+          "description": "18px Medium, 28px line-height — label at md size"
         }
       }
     },
@@ -64,19 +64,19 @@
     "hint-text": {
       "typography": {
         "xs": {
-          "value": "{font.body.regular.sm}",
-          "type": "typography",
-          "description": "12px Regular, 17px line-height — hint at xs size"
-        },
-        "sm": {
           "value": "{font.body.regular.md}",
           "type": "typography",
-          "description": "13px Regular, 18px line-height — hint at sm size"
+          "description": "13px Regular, 18px line-height — hint at xs size"
+        },
+        "sm": {
+          "value": "{font.body.regular.base}",
+          "type": "typography",
+          "description": "14px Regular, 20px line-height — hint at sm size"
         },
         "md": {
-          "value": "{font.body.regular.lg}",
+          "value": "{font.body.regular.2xl}",
           "type": "typography",
-          "description": "14px Regular, 20px line-height — hint at md size"
+          "description": "16px Regular, 24px line-height — hint at md size"
         }
       },
       "color": {

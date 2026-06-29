@@ -7,22 +7,22 @@
   },
   "otp-loader": {
     "size": {
-      "value": "18px",
+      "value": "{size.4[5]}",
       "type": "dimension",
-      "description": "Width and height of the spinner — appears inline with hint text"
+      "description": "Width and height of the spinner — appears inline with hint text - 18px"
     },
     "track": {
       "color": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.background.neutral.subtle.2}",
         "type": "color",
-        "description": "#eaecf0 — static background ring of the spinner"
+        "description": "Mobile OTP loader static background ring of the spinner - gray/200 - #eaecf0"
       }
     },
     "arc": {
       "color": {
-        "value": "{color.primary.600}",
+        "value": "{color.background.primary.default}",
         "type": "color",
-        "description": "#155eef — animated foreground arc that rotates around the track"
+        "description": "Mobile OTP loader animated foreground arc that rotates around the track - primary/600 - #155eef"
       }
     }
   }
