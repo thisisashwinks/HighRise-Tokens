@@ -13,21 +13,21 @@
       "description": "Fixed gap width between adjacent date cells"
     },
     "height": {
-      "value": "{size.11}",
+      "value": "{size.height.lg}",
       "type": "dimension",
-      "description": "44px — matches the height of the Dates cell so the range band is flush"
+      "description": "44px — matches the height of the Dates cell so the range band is flush- lg - 44px"
     },
     "background": {
       "default": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "White — invisible spacer in default (no selection) mode"
+        "description": "White — invisible spacer in default (no selection) mode- gray/0 - #ffffff"
       },
       "range": {
-        "value": "{color.primary.blue.100}",
+        "value": "{color.background.primary.subtle.1}",
         "type": "color",
-        "description": "#d1e0ff — light blue fill connecting in-range date cells into a continuous highlight band"
-      }
+        "description": "Light blue fill connecting in-range date cells into a continuous highlight band- primary/blue-100 - #d1e0ff"
+      } 
     }
   }
 }

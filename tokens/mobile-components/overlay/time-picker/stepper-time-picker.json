@@ -7,15 +7,15 @@
   },
   "stepper-time-picker": {
     "gap": {
-      "value": "{size.4}",
+      "value": "{gap.xl}",
       "type": "dimension",
-      "description": "16px gap between the + button, the display text, and the − button"
+      "description": "16px gap between the + button, the display text, and the − button- xl - 16px"
     },
     "step-button": {
       "size": {
-        "value": "{size.12}",
+        "value": "{size.xl}",
         "type": "dimension",
-        "description": "48px — equal width and height; the button is a perfect circle"
+        "description": "48px — equal width and height; the button is a perfect circle- xl - 48px"
       },
       "border-radius": {
         "value": "{border.radius.full}",
@@ -23,15 +23,15 @@
         "description": "Fully circular button"
       },
       "background": {
-        "value": "{color.neutral.gray.100}",
+        "value": "{color.background.neutral.subtle.1}",
         "type": "color",
-        "description": "#f2f4f7 — muted gray background for both + and − buttons"
+        "description": "Muted gray background for both + and − buttons- gray/100 - #f2f4f7"
       },
       "icon": {
         "size": {
-          "value": "{size.8}",
+          "value": "{size.icon.2xl}",
           "type": "dimension",
-          "description": "32px icon centered within the 48px button"
+          "description": "32px icon centered within the 48px button- 2xl - 32px"
         },
         "increment": {
           "value": "plus",
@@ -52,9 +52,9 @@
         "description": "18px Semibold, 28px line-height — large readable display for the duration value (e.g. '0 h 00 m')"
       },
       "color": {
-        "value": "{color.neutral.gray.600}",
+        "value": "{color.text.neutral.body.2}",
         "type": "color",
-        "description": "#475467 — medium gray for the duration display text"
+        "description": "Medium gray for the duration display text- gray/600 - #475467"
       }
     }
   }

@@ -8,9 +8,9 @@
   },
   "dates": {
     "size": {
-      "value": "{size.11}",
+      "value": "{size.lg}",
       "type": "dimension",
-      "description": "44px — fixed width and height for every date cell"
+      "description": "44px — fixed width and height for every date cell- lg - 44px"
     },
     "border-radius": {
       "default": {
@@ -26,19 +26,19 @@
     },
     "background": {
       "default": {
-        "value": "{color.neutral.gray.100}",
+        "value": "{color.background.neutral.subtle.1}",
         "type": "color",
-        "description": "#f2f4f7 — light gray background for unselected interactive dates"
+        "description": "Light gray background for unselected interactive dates- gray/100 - #f2f4f7"
       },
       "selected": {
-        "value": "{color.primary.blue.900}",
+        "value": "{color.background.primary.intense.2}",
         "type": "color",
-        "description": "#00359e — dark primary blue fill for the selected date circle"
+        "description": "Dark primary blue fill for the selected date circle- primary/blue-900 - #00359e"
       },
       "range": {
-        "value": "{color.primary.blue.100}",
+        "value": "{color.background.primary.subtle.1}",
         "type": "color",
-        "description": "#d1e0ff — light blue fill for dates that fall within a selected range"
+        "description": "Light blue fill for dates that fall within a selected range- primary/blue-100 - #d1e0ff"
       },
       "disabled": {
         "value": "transparent",
@@ -54,24 +54,24 @@
       },
       "color": {
         "default": {
-          "value": "{color.neutral.gray.600}",
+          "value": "{color.text.neutral.body.2}",
           "type": "color",
-          "description": "#475467 — default date number color"
+          "description": "Default date number color- gray/600 - #475467"
         },
         "selected": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "White date number on the dark selected circle"
+          "description": "White date number on the dark selected circle- gray/0 - #ffffff"
         },
         "range": {
-          "value": "{color.neutral.gray.600}",
+          "value": "{color.text.neutral.body.2}",
           "type": "color",
-          "description": "#475467 — date number color for in-range dates"
+          "description": "Date number color for in-range dates- gray/600 - #475467"
         },
         "disabled": {
-          "value": "{color.neutral.gray.300}",
+          "value": "{color.text.neutral.inactive}",
           "type": "color",
-          "description": "#d0d5dd — muted color for disabled and out-of-month dates"
+          "description": "Muted color for disabled and out-of-month dates- gray/300 - #d0d5dd"
         }
       }
     },
@@ -88,9 +88,9 @@
           "description": "#155eef — blue dot shown at top-right of today's cell in default state"
         },
         "selected": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.icon.neutral.base}",
           "type": "color",
-          "description": "White dot shown above the selected circle when today is selected"
+          "description": "White dot shown above the selected circle when today is selected- gray/0 - #000000"
         }
       },
       "offset": {
@@ -101,9 +101,9 @@
     },
     "range-connector": {
       "background": {
-        "value": "{color.primary.blue.100}",
+        "value": "{color.background.primary.subtle.1}",
         "type": "color",
-        "description": "#d1e0ff — half-pill shown behind the selected circle at range start (left-open) and range end (right-open) to visually connect to the range band"
+        "description": "Half-pill shown behind the selected circle at range start (left-open) and range end (right-open) to visually connect to the range band- primary/blue-100 - #d1e0ff"
       }
     }
   }

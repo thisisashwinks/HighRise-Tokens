@@ -14,25 +14,25 @@
     },
     "input": {
       "height": {
-        "value": "{size.12}",
+        "value": "{size.height.xl}",
         "type": "dimension",
-        "description": "48px — taller than the standard 36px control height to accommodate date segments"
+        "description": "Taller than the standard 36px control height to accommodate date segments- xl - 48px"
       },
       "background": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "White input field background"
+        "description": "White input field background- gray/0 - #ffffff"
       },
       "border": {
         "width": {
-          "value": "1px",
+          "value": "{border.width.default}",
           "type": "dimension",
-          "description": "Input border width"
+          "description": "Input border width- 1px"
         },
         "color": {
-          "value": "{color.neutral.gray.300}",
+          "value": "{color.border.neutral.default}",
           "type": "color",
-          "description": "#d0d5dd — default input border color"
+          "description": "Default input border color- gray/300 - #d0d5dd"
         },
         "radius": {
           "value": "{border.radius.sm}",
@@ -47,22 +47,22 @@
       },
       "padding": {
         "horizontal": {
-          "value": "{size.3}",
+          "value": "{padding.x.xs}",
           "type": "dimension",
-          "description": "12px left and right inset — matches HighRise input/padding/x/md"
+          "description": "12px left and right inset- xs - 12px"
         }
       },
       "gap": {
-        "value": "{size.2}",
+        "value": "{gap.xs}",
         "type": "dimension",
-        "description": "8px gap between the calendar icon and the date text segments — matches HighRise input/gap"
+        "description": "8px gap between the calendar icon and the date text segments- xs - 8px"
       }
     },
     "calendar-icon": {
       "size": {
-        "value": "{size.5}",
+        "value": "{size.icon.md}",
         "type": "dimension",
-        "description": "20px — calendar icon preceding the date segments"
+        "description": "20px — calendar icon preceding the date segments- md - 20px"
       },
       "name": {
         "value": "calendar",
@@ -77,14 +77,14 @@
         "description": "16px Regular, 24px line-height — format hint text (MM / DD / YYYY)"
       },
       "color": {
-        "value": "{color.neutral.gray.500}",
+        "value": "{color.text.neutral.subtitle.1}",
         "type": "color",
-        "description": "#667085 — muted placeholder text color matching HighRise input/color/default/text/default"
+        "description": "Muted placeholder text color matching HighRise input/color/default/text/default- gray/500 - #667085"
       },
       "segment-gap": {
-        "value": "{size.1}",
+        "value": "{gap.3xs}",
         "type": "dimension",
-        "description": "4px gap between individual date segments (DD, /, MM, /, YYYY)"
+        "description": "4px gap between individual date segments (DD, /, MM, /, YYYY)- 3xs - 4px"
       }
     }
   }
