@@ -13,11 +13,6 @@
       "type": "dimension",
       "description": "56px — fixed row height, matches Filter Item height"
     },
-    "width": {
-      "value": "172px",
-      "type": "dimension",
-      "description": "Fixed column width for the sub-item (right) panel"
-    },
     "padding": {
       "horizontal": {
         "value": "{padding.md}",

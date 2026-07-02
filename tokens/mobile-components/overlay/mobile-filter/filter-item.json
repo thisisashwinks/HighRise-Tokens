@@ -43,9 +43,9 @@
     },
     "border": {
       "width": {
-        "value": "3px",
+        "value": "{border.width.0[75]}",
         "type": "dimension",
-        "description": "Right-side indicator border width, shown in selected state only"
+        "description": "Right-side indicator border width, shown in selected state only - 3px (0[75] - 3px)"
       },
       "color": {
         "selected": {

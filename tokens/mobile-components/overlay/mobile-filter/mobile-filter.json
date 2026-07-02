@@ -7,11 +7,6 @@
     "subComponents": ["Mobile Filter Base (mobile-filter-base.json)", "Button (HighRise)", "Radio (HighRise)", "Header Lite (HighRise)", "Section Footer (HighRise)"]
   },
   "mobile-filter": {
-    "width": {
-      "value": "393px",
-      "type": "dimension",
-      "description": "Full mobile viewport width"
-    },
     "background": {
       "value": "{color.background.neutral.base}",
       "type": "color",
@@ -61,14 +56,14 @@
       },
       "drag-handle": {
         "width": {
-          "value": "69px",
+          "value": "{size.width.17}",
           "type": "dimension",
-          "description": "Fixed width of the drag affordance pill"
+          "description": "Fixed width of the drag affordance pill - 68px (17 - 68px)"
         },
         "height": {
-          "value": "{size.2}",
+          "value": "{size.height.2}",
           "type": "dimension",
-          "description": "8px height of the drag affordance pill"
+          "description": "8px height of the drag affordance pill - 8px (2 - 8px)"
         },
         "border-radius": {
           "value": "{border.radius.full}",
