@@ -87,7 +87,7 @@
         "default": {
           "value": "{color.background.primary.default}",
           "type": "color",
-          "description": "Mobile slider fill color for Default/Start/End/Label states - primary/blue/700 - #004eeb"
+          "description": "Mobile slider fill color for Default/Start/End/Label states - primary/blue/600 - #155eef"
         },
         "disabled": {
           "value": "{color.background.neutral.moderate.1}",
@@ -104,23 +104,23 @@
         "description": "Mobile slider segment count for Segment type - 10 discrete equal-width segments (each represents 10% of the total range)"
       },
       "gap": {
-        "value": "2px",
+        "value": "{gap.4xs}",
         "type": "dimension",
-        "description": "Mobile slider segment gap - ~2px between each segment (calculated from Figma inset values: 0.55% of 361px reference width ≈ 2px)"
+        "description": "Mobile slider segment gap - 2px (4xs - 2px)"
       },
       "border-radius": {
-        "value": "{border.radius.sm}",
+        "value": "{border.radius.md}",
         "type": "dimension",
-        "description": "Mobile slider segment border radius - 8px applied to each discrete segment (rounded-[8px] in Figma)"
+        "description": "Mobile slider segment border radius - 8px (md - 8px)"
       },
       "color": {
         "filled": {
-          "value": "{color.primary.700}",
+          "value": "{color.background.primary.default}",
           "type": "color",
-          "description": "Mobile slider segment fill color for completed/selected segments - primary/blue/700 - #004eeb"
+          "description": "Mobile slider segment fill color for completed/selected segments - primary/700 - #155eef"
         },
         "empty": {
-          "value": "{color.neutral.gray.300}",
+          "value": "{color.background.neutral.moderate.0}",
           "type": "color",
           "description": "Mobile slider segment fill color for uncompleted/unselected segments - gray/300 - #d0d5dd"
         }

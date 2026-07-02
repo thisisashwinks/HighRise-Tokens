@@ -32,14 +32,14 @@
     },
     "border": {
       "width": {
-        "value": "1px",
+        "value": "{border.width.default}",
         "type": "dimension",
-        "description": "Mobile knob border width - 1px solid (consistent across both states for iOS)"
+        "description": "Mobile knob border width - 1px solid - 1px"
       },
       "color": {
-        "value": "{color.neutral.gray.400}",
+        "value": "{color.border.neutral.moderate.0}",
         "type": "color",
-        "description": "Mobile knob border color - gray/400 - #98a2b3 (same for both Default and Disabled states)"
+        "description": "Mobile knob border color - neutral/gray-400 - #98a2b3"
       }
     },
     "border-radius": {
@@ -57,18 +57,18 @@
     "size": {
       "ios": {
         "width": {
-          "value": "38px",
+          "value": "{size.width.sm}",
           "type": "dimension",
-          "description": "Mobile knob iOS width - 38px"
+          "description": "Mobile knob iOS width - 36px (wider than tall, creating the pill/capsule shape) - 39px"
         },
         "height": {
-          "value": "{size.6}",
+          "value": "{size.height.3xs}",
           "type": "dimension",
           "description": "Mobile knob iOS height - 24px"
         }
       },
       "android": {
-        "value": "{size.6}",
+        "value": "{size.3xs}",
         "type": "dimension",
         "description": "Mobile knob Android size - 24×24px (square bounding box)"
       }
@@ -77,14 +77,14 @@
       "$comment": "Background color keyed by state. Border color is gray/400 for both states.",
       "default": {
         "background": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.background.neutral.base}",
           "type": "color",
-          "description": "Mobile knob Default state background color - white (active/interactive handle)"
+          "description": "Mobile knob Default state background color - gray/0 - #ffffff (active/interactive handle)"
         }
       },
       "disabled": {
         "background": {
-          "value": "{color.neutral.gray.600}",
+          "value": "{color.background.neutral.moderate.3}",
           "type": "color",
           "description": "Mobile knob Disabled state background color - gray/600 - #475467 (iOS only; Android uses a separate SVG asset for the disabled state)"
         }
@@ -93,20 +93,20 @@
     "icon": {
       "$comment": "Optional placeholder icon centered inside the knob. Not shown in all Slider variants — presence controlled by the 'icon' prop.",
       "size": {
-        "value": "18px",
+        "value": "{size.icon.sm}",
         "type": "dimension",
-        "description": "Mobile knob icon size - 18px (centered inside the 24px or 38×24px knob shell)"
+        "description": "Mobile knob icon size - 18px - 18px (centered inside the 24px or 38×24px knob shell)"
       },
       "color": {
         "default": {
-          "value": "{color.neutral.gray.700}",
+          "value": "{color.icon.neutral.default}",
           "type": "color",
-          "description": "Mobile knob icon color for Default state - gray/700 - #344054 (icon shown on white background)"
+          "description": "Mobile knob icon color for Default state - neutral/gray-700 - #344054 (icon shown on white background)"
         },
         "disabled": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.icon.neutral.base}",
           "type": "color",
-          "description": "Mobile knob icon color for Disabled state - white (icon shown on gray/600 dark background)"
+          "description": "Mobile knob icon color for Disabled state - neutral/gray-0 - #ffffff (icon shown on gray/600 dark background)"
         }
       }
     }

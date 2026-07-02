@@ -17,63 +17,58 @@
     }
   },
   "knob-container": {
+    "background": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "description": "Mobile knob container iOS background color - gray/0 - #ffffff"
+    },
+    "border": {
+      "width": {
+        "value": "{border.width.default}",
+        "type": "dimension",
+        "description": "Mobile knob container iOS border width - 1px solid"
+      },
+      "color": {
+        "value": "{color.border.neutral.moderate.0}",
+        "type": "color",
+        "description": "Mobile knob container iOS border color - neutral/gray-400 - #98a2b3"
+      }
+    },
     "ios": {
       "$comment": "iOS pill-shaped knob container — CSS-rendered",
       "width": {
-        "value": "38px",
+        "value": "{size.width.sm}",
         "type": "dimension",
-        "description": "Mobile knob container iOS width - 38px (wider than tall, creating the pill/capsule shape)"
+        "description": "Mobile knob container iOS width - 36px (wider than tall, creating the pill/capsule shape) - 39px"
       },
       "height": {
-        "value": "{size.6}",
+        "value": "{size.height.3xs}",
         "type": "dimension",
-        "description": "Mobile knob container iOS height - 24px"
+        "description": "Mobile knob container iOS height - 24px - 24px"
       },
       "border-radius": {
         "value": "{border.radius.full}",
         "type": "dimension",
         "description": "Mobile knob container iOS border radius - fully rounded pill (rounded-[100px] in Figma)"
-      },
-      "background": {
-        "value": "{color.neutral.white.base}",
-        "type": "color",
-        "description": "Mobile knob container iOS background color - white"
-      },
-      "border": {
-        "width": {
-          "value": "1px",
-          "type": "dimension",
-          "description": "Mobile knob container iOS border width - 1px solid"
-        },
-        "color": {
-          "value": "{color.neutral.gray.400}",
-          "type": "color",
-          "description": "Mobile knob container iOS border color - gray/400 - #98a2b3"
-        }
-      },
-      "shadow": {
-        "value": "{shadow.md}",
-        "type": "shadow",
-        "description": "Mobile knob container iOS drop shadow - shadow/md: 0px 2px 4px -2px rgba(16,24,40,0.06), 0px 4px 8px -2px rgba(16,24,40,0.10)"
       }
     },
     "android": {
       "$comment": "Android circular knob container — SVG image asset, not CSS-rendered",
       "size": {
-        "value": "{size.6}",
+        "value": "{size.3xs}",
         "type": "dimension",
-        "description": "Mobile knob container Android size - 24×24px (square bounding box; the circular knob shape and shadow are embedded in the SVG image asset)"
+        "description": "Mobile knob container Android size - 24×24px (square bounding box; the circular knob shape and shadow are embedded in the SVG image asset) - 24px"
       },
       "border-radius": {
         "value": "{border.radius.full}",
         "type": "dimension",
         "description": "Mobile knob container Android border radius intent - full circle (rounded-[300px] in Figma; applied to the SVG container div, but the visual circle is in the image asset)"
-      },
-      "rendering": {
-        "value": "svg-asset",
-        "type": "string",
-        "description": "Mobile knob container Android rendering method - SVG image asset (the knob circle, fill color, and shadow are embedded in the platform-specific image; not implemented via CSS)"
       }
+    },
+    "shadow": {
+      "value": "{shadow.md}",
+      "type": "shadow",
+      "description": "Mobile knob container iOS drop shadow - shadow/md: 0px 2px 4px -2px rgba(16,24,40,0.06), 0px 4px 8px -2px rgba(16,24,40,0.10)"
     }
   }
 }
