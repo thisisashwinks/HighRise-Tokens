@@ -73,9 +73,9 @@
         "description": "Width and height of the lg chevron icon- icon/lg - 24px"
       },
       "border-radius": {
-        "value": "22px",
+        "value": "{border.radius.full}",
         "type": "dimension",
-        "description": "Fully circular lg button (22px on a 40px element)"
+        "description": "Fully circular lg button - full - 100%"
       }
     },
     "primary": {
@@ -85,20 +85,10 @@
         "type": "color",
         "description": "White icon color chevron on all Primary states- gray/0 - #ffffff"
       },
-      "backdrop-blur": {
-        "value": "none",
-        "type": "string",
-        "description": "Primary arrows do not apply backdrop blur"
-      },
       "default": {
         "value": "{color.background.primary.intense.0}",
         "type": "color",
         "description": "Standard primary blue background- blue/700 - #004eeb"
-      },
-      "hover": {
-        "value": "{color.background.primary.intense.1}",
-        "type": "color",
-        "description": "Darkened blue on hover- blue/800 - #0040c1"
       },
       "active": {
         "value": "{color.background.primary.intense.2}",
@@ -118,20 +108,10 @@
         "type": "color",
         "description": "White icon color chevron on all Secondary states- gray/0 - #ffffff"
       },
-      "backdrop-blur": {
-        "value": "{blur.2}",
-        "type": "blur",
-        "description": "4px backdrop blur applied to all Secondary sizes"
-      },
       "default": {
         "value": "{color.background.neutral.moderate.3}",
         "type": "color",
         "description": "Dark gray background at rest- gray/600 - #475467"
-      },
-      "hover": {
-        "value": "{color.background.neutral.intense.1}",
-        "type": "color",
-        "description": "Darker gray on hover- gray/800 - #1d2939"
       },
       "active": {
         "value": "{color.background.neutral.intense.2}",
@@ -158,27 +138,10 @@
           "description": "Faded gray chevron when the arrow is unavailable- gray/300 - #d0d5dd"
         }
       },
-      "backdrop-blur": {
-        "sm-md": {
-          "value": "{blur.2}",
-          "type": "blur",
-          "description": "4px backdrop blur on sm and md Tertiary buttons"
-        },
-        "lg": {
-          "value": "none",
-          "type": "string",
-          "description": "lg Tertiary does not apply backdrop blur per Figma source"
-        }
-      },
       "default": {
         "value": "{color.background.neutral.base}",
         "type": "color",
         "description": "White background at rest- gray/0 - #ffffff"
-      },
-      "hover": {
-        "value": "{color.background.neutral.subtle.1}",
-        "type": "color",
-        "description": "Very light gray background on hover- gray/100 - #f2f4f7"
       },
       "active": {
         "value": "{color.background.neutral.subtle.2}",

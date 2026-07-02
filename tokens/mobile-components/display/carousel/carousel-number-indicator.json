@@ -8,9 +8,9 @@
   },
   "carousel-number-indicator": {
     "border-radius": {
-      "value": "36px",
+      "value": "{border.radius.full}",
       "type": "dimension",
-      "description": "Fully pill-shaped container (36px radius on a ~28px-tall element renders as a capsule)"
+      "description": "Fully pill-shaped container - full - 100%"
     },
     "border-width": {
       "value": "{border.width.default}",

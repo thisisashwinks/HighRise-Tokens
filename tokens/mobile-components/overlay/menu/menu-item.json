@@ -54,11 +54,6 @@
         "value": "{font.body.regular.md}",
         "type": "typography",
         "description": "13px Regular, 18px line-height — optional secondary description below the label"
-      },
-      "width": {
-        "value": "58px",
-        "type": "dimension",
-        "description": "Fixed width applied to the subtext paragraph to constrain its layout within the row"
       }
     },
     "trailing-icon": {
