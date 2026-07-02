@@ -9,12 +9,12 @@
   "mobile-filter-base": {
     "border": {
       "width": {
-        "value": "1px",
+        "value": "{border.width.default}",
         "type": "dimension",
         "description": "Outer border around the two-column panel"
       },
       "color": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.border.neutral.subtle.2}",
         "type": "color",
         "description": "#eaecf0 — panel border color"
       }
