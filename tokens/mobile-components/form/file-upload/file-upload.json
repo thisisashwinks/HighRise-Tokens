@@ -26,12 +26,12 @@
       "$comment": "Root component container layout",
       "gap": {
         "with-files": {
-          "value": "{size.2}",
+          "value": "{gap.xs}",
           "type": "dimension",
           "description": "Mobile file upload container gap between Action Zone and file rows — 8px (shown in Active, In Progress, Completed, and Error states)"
         },
         "without-files": {
-          "value": "0px",
+          "value": "{gap.none}",
           "type": "dimension",
           "description": "Mobile file upload container gap when no file rows are present — 0px (Default and Disabled states show only the Action Zone)"
         }
@@ -40,12 +40,12 @@
     "action-zone": {
       "$comment": "The tap/drag-drop target area. Bordered box with a cloud-upload icon and a text label.",
       "padding": {
-        "value": "{size.2}",
+        "value": "{padding.2xs}",
         "type": "dimension",
         "description": "Mobile file upload action zone padding - 8px on all sides (p-[8px])"
       },
       "gap": {
-        "value": "{size.1}",
+        "value": "{gap.3xs}",
         "type": "dimension",
         "description": "Mobile file upload action zone gap between icon container and label text - 4px"
       },
@@ -56,31 +56,31 @@
       },
       "border": {
         "width": {
-          "value": "1px",
+          "value": "{border.width.default}",
           "type": "dimension",
           "description": "Mobile file upload action zone border width - 1px solid"
         },
         "color": {
           "default": {
-            "value": "{color.background.neutral.subtle.2}",
+            "value": "{color.border.neutral.subtle.2}",
             "type": "color",
             "description": "Mobile file upload action zone border color for Default and Completed states - gray/200 - #eaecf0"
           },
           "active": {
-            "value": "{color.primary.600}",
+            "value": "{color.border.primary.default}",
             "type": "color",
-            "description": "Mobile file upload action zone border color for Active and In Progress states - primary/600 - #155eef (highlights the drop zone while uploading)"
+            "description": "Mobile file upload action zone border color for Active and In Progress states - border/primary/default - #155eef (highlights the drop zone while uploading)"
           }
         }
       },
       "background": {
         "default": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.background.neutral.base}",
           "type": "color",
           "description": "Mobile file upload action zone background for Default, Active, In Progress, Completed states - white"
         },
         "disabled": {
-          "value": "{color.neutral.gray.50}",
+          "value": "{color.background.neutral.subtle.0}",
           "type": "color",
           "description": "Mobile file upload action zone background for Disabled state - gray/50 - #f9fafb"
         }
@@ -88,7 +88,7 @@
       "icon-container": {
         "$comment": "Circular gray background holding the upload-cloud icon",
         "size": {
-          "value": "{size.9}",
+          "value": "{size.icon.3xl}",
           "type": "dimension",
           "description": "Mobile file upload action zone icon container size - 36px (width and height)"
         },
@@ -98,7 +98,7 @@
           "description": "Mobile file upload action zone icon container border radius - full circle (rounded-[18px] = half of 36px)"
         },
         "background": {
-          "value": "{color.neutral.gray.100}",
+          "value": "{color.background.neutral.subtle.1}",
           "type": "color",
           "description": "Mobile file upload action zone icon container background - gray/100 - #f2f4f7 (consistent across all active states)"
         }
@@ -110,7 +110,7 @@
           "description": "Mobile file upload action zone icon name - upload-cloud-02 (20px, centered inside the 36px icon container)"
         },
         "size": {
-          "value": "{size.5}",
+          "value": "{size.icon.md}",
           "type": "dimension",
           "description": "Mobile file upload action zone icon size - 20px"
         }
@@ -128,7 +128,7 @@
             "description": "Mobile file upload action zone label color for Default, Active, In Progress, Completed states - gray/600 - #475467"
           },
           "disabled": {
-            "value": "{color.neutral.gray.400}",
+            "value": "{color.text.neutral.subtitle.2}",
             "type": "color",
             "description": "Mobile file upload action zone label color for Disabled state - gray/400 - #98a2b3"
           }
@@ -138,28 +138,28 @@
     "file-row": {
       "$comment": "A single file item row showing the document icon, filename, size, action buttons, and progress bar.",
       "padding": {
-        "value": "{size.2}",
+        "value": "{padding.2xs}",
         "type": "dimension",
         "description": "Mobile file upload file row padding - 8px on all sides"
       },
       "gap": {
         "icon-to-content": {
-          "value": "{size.1}",
+          "value": "{gap.3xs}",
           "type": "dimension",
           "description": "Mobile file upload file row gap between document icon and content block - 4px"
         },
         "text-to-actions": {
-          "value": "{size.2}",
+          "value": "{gap.xs}",
           "type": "dimension",
           "description": "Mobile file upload file row gap between text block (filename+size) and action button(s) - 8px"
         },
         "title-to-description": {
-          "value": "2px",
+          "value": "{gap.4xs}",
           "type": "dimension",
           "description": "Mobile file upload file row gap between filename and file size / error description - 2px"
         },
         "header-to-progress": {
-          "value": "{size.1}",
+          "value": "{gap.3xs}",
           "type": "dimension",
           "description": "Mobile file upload file row gap between the header row (text+actions) and the progress bar row - 4px (In Progress state only)"
         }
@@ -171,18 +171,18 @@
       },
       "border": {
         "width": {
-          "value": "1px",
+          "value": "{border.width.default}",
           "type": "dimension",
           "description": "Mobile file upload file row border width - 1px solid"
         },
         "color": {
           "default": {
-            "value": "{color.background.neutral.subtle.2}",
+            "value": "{color.border.neutral.subtle.2}",
             "type": "color",
             "description": "Mobile file upload file row border color for Queued, In Progress, Completed states - gray/200 - #eaecf0"
           },
           "error": {
-            "value": "{color.secondary.error.300}",
+            "value": "{color.border.error.moderate.0}",
             "type": "color",
             "description": "Mobile file upload file row border color for Error state - error/300 - #fda29b"
           }
@@ -190,12 +190,12 @@
       },
       "background": {
         "default": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.background.neutral.base}",
           "type": "color",
           "description": "Mobile file upload file row background for Queued, In Progress, Completed states - white"
         },
         "error": {
-          "value": "{color.secondary.error.25}",
+          "value": "{color.background.error.inactive}",
           "type": "color",
           "description": "Mobile file upload file row background for Error state - error/25 - #fffbfa (very light red tint)"
         }
@@ -203,7 +203,7 @@
       "file-icon": {
         "$comment": "The 32px document type icon (SVG image asset — not CSS-rendered). Varies by upload state.",
         "size": {
-          "value": "{size.8}",
+          "value": "{size.icon.2xl}",
           "type": "dimension",
           "description": "Mobile file upload document icon size - 32×32px (SVG image asset; visual appearance embedded in asset)"
         },
@@ -226,7 +226,7 @@
             "description": "Mobile file upload filename color for default/in-progress/completed states - gray/700 - #344054"
           },
           "error": {
-            "value": "{color.secondary.error.600}",
+            "value": "{color.text.error.body.2}",
             "type": "color",
             "description": "Mobile file upload filename color for Error state - error/600 - #d92d20"
           }
@@ -246,7 +246,7 @@
             "description": "Mobile file upload description color for default states (shows file size e.g. '200 KB') - gray/600 - #475467"
           },
           "error": {
-            "value": "{color.secondary.error.700}",
+            "value": "{color.text.error.body.1}",
             "type": "color",
             "description": "Mobile file upload description color for Error state (shows 'Upload failed, please try again') - error/700 - #b42318"
           }
@@ -274,14 +274,14 @@
       },
       "fill": {
         "color": {
-          "value": "{color.primary.600}",
+          "value": "{color.background.primary.default}",
           "type": "color",
-          "description": "Mobile file upload progress bar fill color - primary/600 - #155eef (filled portion showing upload progress)"
+          "description": "Mobile file upload progress bar fill color - background/primary/default - #155eef (filled portion showing upload progress)"
         }
       },
       "percent-label": {
         "width": {
-          "value": "32px",
+          "value": "{size.width.xs}",
           "type": "dimension",
           "description": "Mobile file upload progress percentage label fixed width - 32px (right-aligned; accommodates '100%' text)"
         },
@@ -305,7 +305,7 @@
     "action-button": {
       "$comment": "Circular icon buttons shown on the right side of each file row. Button type (trash/check/retry) and background color change with upload state.",
       "size": {
-        "value": "{size.9}",
+        "value": "{size.sm}",
         "type": "dimension",
         "description": "Mobile file upload action button size - 36×36px (width and height)"
       },
@@ -316,24 +316,24 @@
       },
       "icon": {
         "size": {
-          "value": "{size.5}",
+          "value": "{size.4xs}",
           "type": "dimension",
           "description": "Mobile file upload action button icon size - 20px (centered inside the 36px circular button)"
         }
       },
       "background": {
         "default": {
-          "value": "{color.neutral.gray.100}",
+          "value": "{color.background.neutral.subtle.1}",
           "type": "color",
           "description": "Mobile file upload action button background for default actions (trash/delete, retry) - gray/100 - #f2f4f7"
         },
         "success": {
-          "value": "{color.secondary.success.100}",
+          "value": "{color.background.success.subtle.1}",
           "type": "color",
           "description": "Mobile file upload action button background for the success/check action (Completed state) - success/100 - #d1fadf"
         },
         "error": {
-          "value": "{color.secondary.error.100}",
+          "value": "{color.background.error.subtle.1}",
           "type": "color",
           "description": "Mobile file upload action button background for error-state delete action - error/100 - #fee4e2"
         }
