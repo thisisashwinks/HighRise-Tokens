@@ -28,9 +28,9 @@
       "description": "Reference viewport height — the content slot and all overlaid controls fit within this height"
     },
     "overlay-padding": {
-      "value": "12px",
+      "value": "{padding.sm}",
       "type": "dimension",
-      "description": "Inset from the carousel edge at which arrows and the indicator group are placed when in a corner/edge position variant"
+      "description": "Inset from the carousel edge at which arrows and the indicator group are placed when in a corner/edge position variant - 12px"
     }
   }
 }

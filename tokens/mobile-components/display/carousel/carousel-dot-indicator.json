@@ -18,9 +18,9 @@
           "description": "Width and height of the sm dot pip"
         },
         "border-radius": {
-          "value": "4px",
+          "value": "{border.radius.xs}",
           "type": "dimension",
-          "description": "Fully rounded sm dot"
+          "description": "Fully rounded sm dot- 4px"
         }
       },
       "md": {
@@ -30,9 +30,9 @@
           "description": "Width and height of the md dot pip"
         },
         "border-radius": {
-          "value": "4px",
+          "value": "{border.radius.xs}",
           "type": "dimension",
-          "description": "Fully rounded md dot"
+          "description": "Fully rounded md dot- 4px"
         }
       },
       "lg": {
@@ -42,9 +42,9 @@
           "description": "Width and height of the lg dot pip"
         },
         "border-radius": {
-          "value": "6px",
+          "value": "{border.radius.sm}",
           "type": "dimension",
-          "description": "Fully rounded lg dot"
+          "description": "Fully rounded lg dot- 6px"
         }
       }
     },
@@ -78,9 +78,9 @@
           "description": "Height of the md line pip"
         },
         "border-radius": {
-          "value": "4px",
+          "value": "{border.radius.xs}",
           "type": "dimension",
-          "description": "Rounded ends on the md line pip"
+          "description": "Rounded ends on the md line pip- 4px"
         }
       },
       "lg": {
@@ -95,23 +95,23 @@
           "description": "Height of the lg line pip"
         },
         "border-radius": {
-          "value": "6px",
+          "value": "{border.radius.sm}",
           "type": "dimension",
-          "description": "Rounded ends on the lg line pip"
+          "description": "Rounded ends on the lg line pip- 6px"
         }
       }
     },
     "color": {
       "primary": {
         "current": {
-          "value": "{color.primary.blue.700}",
+          "value": "{color.background.primary.intense.0}",
           "type": "color",
-          "description": "#004eeb — deep primary blue fill for the active slide indicator"
+          "description": "Deep primary blue fill for the active slide indicator- blue/700 - #004eeb"
         },
         "inactive": {
-          "value": "{color.neutral.gray.100}",
+          "value": "{color.background.neutral.subtle.1}",
           "type": "color",
-          "description": "#f2f4f7 — very light gray for inactive pips; apply mix-blend-multiply so the pip blends over photographic slide backgrounds"
+          "description": "Very light gray for inactive pips; apply mix-blend-multiply so the pip blends over photographic slide backgrounds- gray/100 - #f2f4f7"
         },
         "inactive-blend-mode": {
           "value": "multiply",
@@ -121,26 +121,26 @@
       },
       "secondary": {
         "current": {
-          "value": "{color.neutral.gray.600}",
+          "value": "{color.background.neutral.moderate.3}",
           "type": "color",
-          "description": "#475467 — dark gray fill for the active indicator in Secondary theme"
+          "description": "Dark gray fill for the active indicator in Secondary theme- gray/600 - #475467"
         },
         "inactive": {
-          "value": "{color.neutral.gray.300}",
+          "value": "{color.background.neutral.moderate.0}",
           "type": "color",
-          "description": "#d0d5dd — light gray for inactive pips in Secondary theme"
+          "description": "Light gray for inactive pips in Secondary theme- gray/300 - #d0d5dd"
         }
       },
       "tertiary": {
         "current": {
-          "value": "{color.neutral.gray.400}",
+          "value": "{color.background.neutral.moderate.1}",
           "type": "color",
-          "description": "#98a2b3 — mid gray fill for the active indicator in Tertiary theme"
+          "description": "Mid gray fill for the active indicator in Tertiary theme- gray/400 - #98a2b3"
         },
         "inactive": {
-          "value": "{color.neutral.gray.100}",
+          "value": "{color.background.neutral.subtle.1}",
           "type": "color",
-          "description": "#f2f4f7 — very light gray for inactive pips in Tertiary theme (no blend-mode required)"
+          "description": "Very light gray for inactive pips in Tertiary theme (no blend-mode required)- gray/100 - #f2f4f7"
         }
       }
     }
