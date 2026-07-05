@@ -11,11 +11,6 @@
     ]
   },
   "mobile-footer": {
-    "width": {
-      "value": "393px",
-      "type": "dimension",
-      "description": "Full mobile viewport width"
-    },
     "background": {
       "value": "{color.background.neutral.base}",
       "type": "color",
@@ -43,17 +38,12 @@
         "value": "{gap.xl}",
         "type": "dimension",
         "description": "16px vertical gap between each stacked button"
-      },
-      "button-width": {
-        "value": "100%",
-        "type": "dimension",
-        "description": "Every button stretches to fill the full available width inside the footer padding"
       }
     },
     "home-indicator": {
       "description": "iOS-only safe-area bar appended below the button area. Not rendered on Android.",
       "height": {
-        "value": "34px",
+        "value": "{size.height.xs}",
         "type": "dimension",
         "description": "Standard iOS home indicator height"
       },
@@ -64,19 +54,14 @@
       },
       "grabber": {
         "width": {
-          "value": "134px",
+          "value": "{size.width.32}",
           "type": "dimension",
           "description": "Width of the home gesture grabber pill"
         },
         "height": {
-          "value": "5px",
+          "value": "{size.height.1[5]}",
           "type": "dimension",
           "description": "Height of the home gesture grabber pill"
-        },
-        "bottom-offset": {
-          "value": "8px",
-          "type": "dimension",
-          "description": "Distance from the bottom edge of the indicator area to the grabber pill"
         }
       }
     }
