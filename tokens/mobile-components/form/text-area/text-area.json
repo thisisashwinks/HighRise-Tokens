@@ -22,11 +22,6 @@
   "text-area": {
     "container": {
       "$comment": "Outer wrapper tokens — the vertical stack holding label, field, and hint text",
-      "width": {
-        "value": "361px",
-        "type": "dimension",
-        "description": "Mobile text area container width - 361px fixed"
-      },
       "gap": {
         "value": "{gap.3xs}",
         "type": "dimension",
@@ -39,11 +34,6 @@
         "value": "{size.60}",
         "type": "dimension",
         "description": "Mobile text area field height - 240px (fixed, scrollable overflow)"
-      },
-      "width": {
-        "value": "100%",
-        "type": "dimension",
-        "description": "Mobile text area field width - full width of container (361px)"
       },
       "padding": {
         "value": "{padding.2xs}",
@@ -63,22 +53,10 @@
             "description": "Mobile text area default/disabled border width - 1px"
           },
           "active": {
-            "value": "3px",
+            "value": "{border.width.0[75]}",
             "type": "dimension",
             "description": "Mobile text area focused/success border width - 3px (thicker ring to indicate active/validated state)"
           }
-        }
-      },
-      "shadow": {
-        "default": {
-          "value": "{boxShadow.outer.xs}",
-          "type": "boxShadow",
-          "description": "Mobile text area default and disabled state shadow - shadow/xs - 0px 1px 2px rgba(16,24,40,0.05)"
-        },
-        "active": {
-          "value": "none",
-          "type": "boxShadow",
-          "description": "Mobile text area focused and success state shadow - none (shadow removed when border ring is visible)"
         }
       }
     },
@@ -96,11 +74,6 @@
         "value": "{font.body.regular.base}",
         "type": "typography",
         "description": "Mobile text area character count typography - 14px Regular, 20px line-height (matches input text)"
-      },
-      "alignment": {
-        "value": "right",
-        "type": "string",
-        "description": "Mobile text area character count text alignment - right-aligned within field width"
       },
       "color": {
         "default": {
@@ -148,11 +121,6 @@
             "value": "{color.text.neutral.body.1}",
             "type": "color",
             "description": "Mobile text area label text color - neutral/gray-700 - #344054"
-          },
-          "mandatory": {
-            "value": "{color.text.error.intense}",
-            "type": "color",
-            "description": "Mobile text area mandatory asterisk (*) color - error/600 - #d92d20"
           }
         }
       },
