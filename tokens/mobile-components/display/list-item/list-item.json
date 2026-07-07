@@ -259,23 +259,6 @@
           "type": "dimension",
           "description": "Mobile list item trailing radio size - 24px"
         },
-        "avatar": {
-          "value": "{size.xs}",
-          "type": "dimension",
-          "description": "Mobile list item trailing avatar(sm) size - 32px"
-        },
-        "input-stepper": {
-          "container": {
-            "value": "{size.xs}",
-            "type": "dimension",
-            "description": "Mobile list item trailing input-stepper container size - 32px"
-          },
-          "icon": {
-            "value": "{size.icon.sm}",
-            "type": "dimension",
-            "description": "Mobile list item trailing input-stepper icon size - 18px"
-          }
-        },
         "height": {
           "button": {
             "value": "{size.height.8}",
@@ -293,14 +276,14 @@
             "description": "Mobile list item trailing toggle-android height - 28px"
           },
           "tag": {
-            "value": "{size.height.2xs}",
+            "value": "{size.height.xs}",
             "type": "dimension",
-            "description": "Mobile list item trailing tag (lg) height - 28px"
+            "description": "Mobile list item trailing tag (xs) height - 32px"
           },
           "avatar-group": {
-            "value": "{size.height.3xs}",
+            "value": "{size.height.xs}",
             "type": "dimension",
-            "description": "Mobile list item trailing avatar-group height - 24px"
+            "description": "Mobile list item trailing avatar-group height - 32px"
           },
           "tag-group": {
             "value": "{size.height.3xs}",
