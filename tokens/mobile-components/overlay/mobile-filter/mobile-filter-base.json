@@ -9,12 +9,12 @@
   "mobile-filter-base": {
     "border": {
       "width": {
-        "value": "1px",
+        "value": "{border.width.default}",
         "type": "dimension",
         "description": "Outer border around the two-column panel"
       },
       "color": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.border.neutral.subtle.2}",
         "type": "color",
         "description": "#eaecf0 — panel border color"
       }
@@ -23,20 +23,6 @@
       "value": "{border.radius.md}",
       "type": "borderRadius",
       "description": "12px — rounded corners on the filter panel container"
-    },
-    "left-column": {
-      "width": {
-        "value": "189px",
-        "type": "dimension",
-        "description": "Fixed width for the Filter Item (category) column"
-      }
-    },
-    "right-column": {
-      "width": {
-        "value": "172px",
-        "type": "dimension",
-        "description": "Fixed width for the Filter Sub Item (options) column"
-      }
     }
   }
 }

@@ -1,0 +1,74 @@
+{
+  "$comment": "Design token file for the Mobile Date Picker - Pin Wheel (wheel item) component",
+  "$description": "Component tokens for the Mobile Pin Wheel item - a single row in a scrolling wheel picker (date, hour, minute, or AM/PM value). Distance from the selection line drives its emphasis via three states: Far (dimmest), Close (mid), and Selected (highlighted). Atomic component - nested inside Pin Wheel Selector which references it rather than redefining these tokens. Figma Reference: Node ID 193-80319",
+  "$component": {
+    "name": "Pin Wheel",
+    "description": "One item/row in a scrolling wheel picker. The text emphasis (color) changes with proximity to the center selection line - far items are faint, close items are mid-tone, and the selected item is highlighted in primary.",
+    "structure": "40px tall row with centered value text and 10px padding. Background is neutral base; the selected row additionally carries the selection band border (owned by Pin Wheel Selector).",
+    "sizes": {
+      "default": "40px row height"
+    },
+    "variants": {
+      "value": {
+        "date": "Full date string (e.g. Fri Dec 25)",
+        "hour": "Hour number",
+        "minute": "Minute number",
+        "am-pm": "AM or PM"
+      },
+      "state": {
+        "far": "Furthest from selection - faintest",
+        "close": "Adjacent to selection - mid-tone",
+        "selected": "On the selection line - highlighted"
+      }
+    },
+    "usage": {
+      "contexts": "Pin Wheel Selector, Date Picker Mobile Pin Wheel view",
+      "features": "Proximity-based emphasis, date/time value rows"
+    }
+  },
+  "pin-wheel": {
+    "container": {
+      "height": {
+        "value": "{size.height.md}",
+        "type": "dimension",
+        "description": "Mobile pin wheel item row height - md - 40px"
+      },
+      "padding": {
+        "value": "{padding.xs}",
+        "type": "dimension",
+        "description": "Mobile pin wheel item padding - xs - 10px"
+      },
+      "color": {
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile pin wheel item background - neutral base - #ffffff"
+        }
+      }
+    },
+    "typography": {
+      "value": "{font.body.semibold.base}",
+      "type": "typography",
+      "description": "Mobile pin wheel item value typography - 14px semibold"
+    },
+    "color": {
+      "text": {
+        "far": {
+          "value": "{color.text.neutral.inactive}",
+          "type": "color",
+          "description": "Mobile pin wheel item text - far state - neutral inactive - #d0d5dd"
+        },
+        "close": {
+          "value": "{color.text.neutral.subtitle.1}",
+          "type": "color",
+          "description": "Mobile pin wheel item text - close state - neutral subtitle - #667085"
+        },
+        "selected": {
+          "value": "{color.text.primary.body.2}",
+          "type": "color",
+          "description": "Mobile pin wheel item text - selected state - primary - #155eef"
+        }
+      }
+    }
+  }
+}

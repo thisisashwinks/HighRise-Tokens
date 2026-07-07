@@ -1,0 +1,86 @@
+{
+  "$comment": "Design token file for the Toolbar component",
+  "$description": "Compact bar that groups a set of icon action Buttons. Comes in three types across two orientations: 'floating' (horizontal, self-contained pill with full border, rounded corners, and a drop shadow), 'default' (the vertical equivalent — same floating treatment stacked as a column), and 'docked' (horizontal full-width bar pinned to the bottom of a screen with a single top border, extra bottom padding for the home-safe area, and no shadow or corner radius). Slots 3-6 simply show/hide additional action buttons and carry no tokens. The Button sub-component (node 3029:4311, same Figma file) supplies all button-level tokens (background, icon padding, icon size, button radius/border/shadow) — this file captures only the toolbar container layout.",
+  "$component": {
+    "name": "Toolbar",
+    "figmaNodeId": "861:16647",
+    "figmaFile": "HighRise Mobile Components",
+    "variants": {
+      "orientation": ["horizontal", "vertical"],
+      "type": ["default", "docked", "floating"]
+    },
+    "subComponents": [
+      "Button (same file — mobile-components, node 3029:4311)"
+    ]
+  },
+  "toolbar": {
+    "background": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "description": "White background for the toolbar container - background neutral base - #ffffff"
+    },
+    "border": {
+      "width": {
+        "value": "{border.width.default}",
+        "type": "borderWidth",
+        "description": "Container border width - applied on all edges for the floating/vertical types and on the top edge only for the docked type - default - 1px"
+      },
+      "color": {
+        "value": "{color.border.neutral.subtle.2}",
+        "type": "borderColor",
+        "description": "Subtle gray border/separator color for the toolbar - border neutral subtle 2 - #eaecf0"
+      }
+    },
+    "gap": {
+      "value": "{gap.md}",
+      "type": "dimension",
+      "description": "Spacing between adjacent action buttons inside the toolbar - md - 12px"
+    },
+    "floating": {
+      "description": "Self-contained toolbar treatment used by the horizontal 'floating' type and the vertical 'default' type. Full border on all sides, rounded corners, drop shadow, and uniform padding.",
+      "padding": {
+        "value": "{padding.lg}",
+        "type": "dimension",
+        "description": "Uniform inset on all sides of the floating toolbar container - lg - 16px"
+      },
+      "border-radius": {
+        "value": "{border.radius.2xl}",
+        "type": "borderRadius",
+        "description": "Rounded corners of the floating toolbar container - 2xl - 16px"
+      },
+      "shadow": {
+        "value": "{shadow.sm}",
+        "type": "boxShadow",
+        "description": "Drop shadow that lifts the floating toolbar above the content - sm"
+      }
+    },
+    "docked": {
+      "description": "Horizontal full-width bar pinned to the bottom of a screen. Single top border separates it from scrollable content; no corner radius or shadow. Buttons are distributed edge-to-edge with space-between.",
+      "padding-top": {
+        "value": "{padding.top.4}",
+        "type": "dimension",
+        "description": "Top inset of the docked toolbar - 4 - 16px"
+      },
+      "padding-bottom": {
+        "value": "{padding.bottom.8}",
+        "type": "dimension",
+        "description": "Bottom inset of the docked toolbar - larger than the top to clear the home-safe area - 8 - 32px"
+      },
+      "padding-x": {
+        "value": "{padding.x.md}",
+        "type": "dimension",
+        "description": "Horizontal inset on the left and right edges of the docked toolbar - md - 16px"
+      },
+      "width": {
+        "value": "100%",
+        "type": "dimension",
+        "description": "Docked toolbar stretches to the full device width"
+      },
+      "justify": {
+        "value": "space-between",
+        "type": "string",
+        "description": "Action buttons are distributed edge-to-edge across the docked toolbar"
+      }
+    }
+  }
+}

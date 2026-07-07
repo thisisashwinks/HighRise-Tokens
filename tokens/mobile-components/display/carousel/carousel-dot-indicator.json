@@ -3,7 +3,6 @@
   "$description": "A single position indicator pip for a carousel. Comes in two styles (Dot — a square pip, Line — a wide pill), three sizes (sm/md/lg), three colour themes (Primary/Secondary/Tertiary), and two states (current = active slide, inactive = all other slides). The Primary inactive state uses mix-blend-multiply so the pip blends correctly when rendered over a photographic slide image. Used individually or composed into a Carousel Dot Group.",
   "$component": {
     "name": "Carousel Dot Indicator",
-    "figmaNodeId": "737:11231",
     "styles": ["Dot", "Line"],
     "sizes": ["sm", "md", "lg"],
     "colors": ["Primary", "Secondary", "Tertiary"],
@@ -13,105 +12,105 @@
     "dot": {
       "sm": {
         "size": {
-          "value": "4px",
+          "value": "{size.1}",
           "type": "dimension",
-          "description": "Width and height of the sm dot pip"
+          "description": "Width and height of the sm dot pip - 4px (1 - 4px)"
         },
         "border-radius": {
-          "value": "4px",
+          "value": "{border.radius.full}",
           "type": "dimension",
-          "description": "Fully rounded sm dot"
+          "description": "Fully rounded sm dot- full - 100%"
         }
       },
       "md": {
         "size": {
-          "value": "8px",
+          "value": "{size.2}",
           "type": "dimension",
-          "description": "Width and height of the md dot pip"
+          "description": "Width and height of the md dot pip - 8px (2 - 8px)"
         },
         "border-radius": {
-          "value": "4px",
+          "value": "{border.radius.full}",
           "type": "dimension",
-          "description": "Fully rounded md dot"
+          "description": "Fully rounded md dot- full - 100%"
         }
       },
       "lg": {
         "size": {
-          "value": "12px",
+          "value": "{size.3}",
           "type": "dimension",
-          "description": "Width and height of the lg dot pip"
+          "description": "Width and height of the lg dot pip - 12px (3 - 12px)"
         },
         "border-radius": {
-          "value": "6px",
+          "value": "{border.radius.full}",
           "type": "dimension",
-          "description": "Fully rounded lg dot"
+          "description": "Fully rounded lg dot- full - 100%"
         }
       }
     },
     "line": {
       "sm": {
         "width": {
-          "value": "16px",
+          "value": "{size.width.4}",
           "type": "dimension",
-          "description": "Width of the sm line pip"
+          "description": "Width of the sm line pip - 16px (4 - 16px)"
         },
         "height": {
-          "value": "4px",
+          "value": "{size.height.1}",
           "type": "dimension",
-          "description": "Height of the sm line pip"
+          "description": "Height of the sm line pip - 4px (1 - 4px)"
         },
         "border-radius": {
-          "value": "3px",
+          "value": "{border.radius.full}",
           "type": "dimension",
-          "description": "Rounded ends on the sm line pip"
+          "description": "Rounded ends on the sm line pip - full - 100%"
         }
       },
       "md": {
         "width": {
-          "value": "24px",
+          "value": "{size.width.6}",
           "type": "dimension",
-          "description": "Width of the md line pip"
+          "description": "Width of the md line pip - 24px (6 - 24px)"
         },
         "height": {
-          "value": "8px",
+          "value": "{size.height.2}",
           "type": "dimension",
-          "description": "Height of the md line pip"
+          "description": "Height of the md line pip - 8px (2 - 8px)"
         },
         "border-radius": {
-          "value": "4px",
+          "value": "{border.radius.full}",
           "type": "dimension",
-          "description": "Rounded ends on the md line pip"
+          "description": "Rounded ends on the md line pip- full - 100%"
         }
       },
       "lg": {
         "width": {
-          "value": "32px",
+          "value": "{size.width.8}",
           "type": "dimension",
-          "description": "Width of the lg line pip"
+          "description": "Width of the lg line pip - 32px (8 - 32px)"
         },
         "height": {
-          "value": "12px",
+          "value": "{size.height.3}",
           "type": "dimension",
-          "description": "Height of the lg line pip"
+          "description": "Height of the lg line pip - 12px (3 - 12px)"
         },
         "border-radius": {
-          "value": "6px",
+          "value": "{border.radius.full}",
           "type": "dimension",
-          "description": "Rounded ends on the lg line pip"
+          "description": "Rounded ends on the lg line pip- full - 100%"
         }
       }
     },
     "color": {
       "primary": {
         "current": {
-          "value": "{color.primary.blue.700}",
+          "value": "{color.background.primary.intense.0}",
           "type": "color",
-          "description": "#004eeb — deep primary blue fill for the active slide indicator"
+          "description": "Deep primary blue fill for the active slide indicator- blue/700 - #004eeb"
         },
         "inactive": {
-          "value": "{color.neutral.gray.100}",
+          "value": "{color.background.neutral.subtle.1}",
           "type": "color",
-          "description": "#f2f4f7 — very light gray for inactive pips; apply mix-blend-multiply so the pip blends over photographic slide backgrounds"
+          "description": "Very light gray for inactive pips; apply mix-blend-multiply so the pip blends over photographic slide backgrounds- gray/100 - #f2f4f7"
         },
         "inactive-blend-mode": {
           "value": "multiply",
@@ -121,26 +120,26 @@
       },
       "secondary": {
         "current": {
-          "value": "{color.neutral.gray.600}",
+          "value": "{color.background.neutral.moderate.3}",
           "type": "color",
-          "description": "#475467 — dark gray fill for the active indicator in Secondary theme"
+          "description": "Dark gray fill for the active indicator in Secondary theme- gray/600 - #475467"
         },
         "inactive": {
-          "value": "{color.neutral.gray.300}",
+          "value": "{color.background.neutral.moderate.0}",
           "type": "color",
-          "description": "#d0d5dd — light gray for inactive pips in Secondary theme"
+          "description": "Light gray for inactive pips in Secondary theme- gray/300 - #d0d5dd"
         }
       },
       "tertiary": {
         "current": {
-          "value": "{color.neutral.gray.400}",
+          "value": "{color.background.neutral.moderate.1}",
           "type": "color",
-          "description": "#98a2b3 — mid gray fill for the active indicator in Tertiary theme"
+          "description": "Mid gray fill for the active indicator in Tertiary theme- gray/400 - #98a2b3"
         },
         "inactive": {
-          "value": "{color.neutral.gray.100}",
+          "value": "{color.background.neutral.subtle.1}",
           "type": "color",
-          "description": "#f2f4f7 — very light gray for inactive pips in Tertiary theme (no blend-mode required)"
+          "description": "Very light gray for inactive pips in Tertiary theme (no blend-mode required)- gray/100 - #f2f4f7"
         }
       }
     }

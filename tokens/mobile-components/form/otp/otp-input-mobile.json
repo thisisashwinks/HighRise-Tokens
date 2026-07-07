@@ -14,48 +14,48 @@
   },
   "otp-input-mobile": {
     "gap": {
-      "value": "{size.1}",
+      "value": "{gap.3xs}",
       "type": "dimension",
       "description": "4px vertical gap between label, input row, and hint text row"
     },
     "label": {
       "color": {
-        "value": "{color.neutral.gray.700}",
+        "value": "{color.text.neutral.body.1}",
         "type": "color",
         "description": "#344054 — label text color for all sizes and states"
       },
       "typography": {
         "xs": {
-          "value": "{font.body.medium.md}",
+          "value": "{font.body.medium.base}",
           "type": "typography",
-          "description": "13px Medium, 18px line-height — label at xs size"
+          "description": "14px Medium, 20px line-height — label at xs size"
         },
         "sm": {
-          "value": "{font.body.medium.lg}",
-          "type": "typography",
-          "description": "14px Medium, 20px line-height — label at sm size"
-        },
-        "md": {
           "value": "{font.body.medium.2xl}",
           "type": "typography",
-          "description": "16px Medium, 24px line-height — label at md size"
+          "description": "16px Medium, 24px line-height — label at sm size"
+        },
+        "md": {
+          "value": "{font.subheading.medium.lg}",
+          "type": "typography",
+          "description": "18px Medium, 28px line-height — label at md size"
         }
       }
     },
     "input-row": {
       "gap": {
         "xs": {
-          "value": "{size.2}",
+          "value": "{gap.xs}",
           "type": "dimension",
           "description": "8px gap between digit cells at xs size"
         },
         "sm": {
-          "value": "{size.2}",
+          "value": "{gap.xs}",
           "type": "dimension",
           "description": "8px gap between digit cells at sm size"
         },
         "md": {
-          "value": "12px",
+          "value": "{gap.md}",
           "type": "dimension",
           "description": "12px gap between digit cells at md size — wider spacing for larger cells"
         }
@@ -64,34 +64,34 @@
     "hint-text": {
       "typography": {
         "xs": {
-          "value": "{font.body.regular.sm}",
-          "type": "typography",
-          "description": "12px Regular, 17px line-height — hint at xs size"
-        },
-        "sm": {
           "value": "{font.body.regular.md}",
           "type": "typography",
-          "description": "13px Regular, 18px line-height — hint at sm size"
+          "description": "13px Regular, 18px line-height — hint at xs size"
+        },
+        "sm": {
+          "value": "{font.body.regular.base}",
+          "type": "typography",
+          "description": "14px Regular, 20px line-height — hint at sm size"
         },
         "md": {
-          "value": "{font.body.regular.lg}",
+          "value": "{font.body.regular.2xl}",
           "type": "typography",
-          "description": "14px Regular, 20px line-height — hint at md size"
+          "description": "16px Regular, 24px line-height — hint at md size"
         }
       },
       "color": {
         "default": {
-          "value": "{color.neutral.gray.600}",
+          "value": "{color.text.neutral.body.2}",
           "type": "color",
           "description": "#475467 — hint text in default and loading states"
         },
         "error": {
-          "value": "{color.secondary.error.500}",
+          "value": "{color.text.error.inactive.1}",
           "type": "color",
           "description": "#f04438 — hint text in error state"
         },
         "success": {
-          "value": "{color.secondary.success.600}",
+          "value": "{color.text.success.body.2}",
           "type": "color",
           "description": "#039855 — hint text in success state"
         }
@@ -99,7 +99,7 @@
     },
     "loading-row": {
       "gap": {
-        "value": "{size.1}",
+        "value": "{gap.3xs}",
         "type": "dimension",
         "description": "4px gap between the OTP Loader spinner and the hint text in loading state"
       }
@@ -112,23 +112,23 @@
       },
       "size": {
         "xs": {
-          "value": "16px",
+          "value": "{size.5xs}",
           "type": "dimension",
           "description": "Icon size at xs size"
         },
         "sm": {
-          "value": "16px",
+          "value": "{size.5xs}",
           "type": "dimension",
           "description": "Icon size at sm size"
         },
         "md": {
-          "value": "20px",
+          "value": "{size.4xs}",
           "type": "dimension",
           "description": "Icon size at md size"
         }
       },
       "color": {
-        "value": "{color.secondary.success.600}",
+        "value": "{color.icon.success.moderate}",
         "type": "color",
         "description": "#039855 — check-circle icon color matches success hint text"
       }

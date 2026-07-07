@@ -1,0 +1,54 @@
+{
+  "$comment": "Design token file for the Mobile Date Picker - Pin Wheel Selector (wheel column) component",
+  "$description": "Component tokens for the Mobile Pin Wheel Selector - a single scrolling wheel column (Date, Hour, Minute, or AM/PM) that stacks Pin Wheel item rows and marks the center selection line. NESTED COMPONENT: the item rows are the Pin Wheel component and are tokenized in pin-wheel.json - this file defines only the column-level tokens (container background, row stacking gap, and the top/bottom selection band rule). Figma Reference: Node ID 193-80390",
+  "$component": {
+    "name": "Pin Wheel Selector",
+    "description": "A vertical wheel column composed of stacked Pin Wheel item rows with a highlighted center selection line delineated by a top and bottom rule. One column per unit (date, hour, minute, AM/PM).",
+    "structure": "Column of Pin Wheel rows stacked flush (no gap). The center (selected) row carries a 1px top and bottom border acting as the selection band; column width hugs its content.",
+    "sizes": {
+      "default": "200px tall (5 x 40px rows); width hugs content"
+    },
+    "variants": {
+      "type": {
+        "date": "Date wheel column",
+        "hour": "Hour wheel column",
+        "minute": "Minute wheel column",
+        "am-pm": "AM/PM wheel column"
+      }
+    },
+    "usage": {
+      "contexts": "Date Picker Mobile Pin Wheel (Date / Date+Time) view",
+      "features": "Stacked Pin Wheel rows, center selection band"
+    }
+  },
+  "pin-wheel-selector": {
+    "container": {
+      "color": {
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile pin wheel selector column background - neutral base - #ffffff"
+        }
+      },
+      "gap": {
+        "value": "{gap.none}",
+        "type": "dimension",
+        "description": "Mobile pin wheel selector gap between stacked item rows - none - 0px (rows sit flush)"
+      }
+    },
+    "selection": {
+      "border": {
+        "width": {
+          "value": "{border.width.default}",
+          "type": "borderWidth",
+          "description": "Mobile pin wheel selector selection band top/bottom rule width - default - 1px"
+        },
+        "color": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "description": "Mobile pin wheel selector selection band top/bottom rule color - neutral default - #d0d5dd"
+        }
+      }
+    }
+  }
+}

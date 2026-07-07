@@ -9,25 +9,25 @@
   },
   "otp-input-field": {
     "border-radius": {
-      "value": "{border.radius.sm}",
+      "value": "{border.radius.md}",
       "type": "borderRadius",
       "description": "8px corner radius applied to all sizes and states"
     },
     "padding": {
       "horizontal": {
-        "value": "8px",
+        "value": "{padding.x.3xs}",
         "type": "dimension",
         "description": "Left and right inset — consistent across all sizes"
       }
     },
     "background": {
       "default": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
         "description": "White background for Default, Filled, Active, Success, Error states"
       },
       "disabled": {
-        "value": "{color.neutral.gray.100}",
+        "value": "{color.background.neutral.subtle.1}",
         "type": "color",
         "description": "#f2f4f7 — muted background for Disabled state"
       }
@@ -35,39 +35,39 @@
     "border": {
       "width": {
         "idle": {
-          "value": "1px",
+          "value": "{border.width.default}",
           "type": "dimension",
           "description": "Border width for Default, Filled, and Disabled states"
         },
         "active": {
-          "value": "3px",
+          "value": "{border.width.0[75]}", 
           "type": "dimension",
-          "description": "Thicker focus ring for Active, Success, and all Error states"
+          "description": "Thicker focus ring for Active, Success, and all Error states - 3px"
         }
       },
       "color": {
         "default": {
-          "value": "{color.neutral.gray.300}",
+          "value": "{color.border.neutral.default}",
           "type": "color",
           "description": "#d0d5dd — idle border for Default and Filled states"
         },
         "active": {
-          "value": "{color.primary.600}",
+          "value": "{color.border.primary.default}",
           "type": "color",
           "description": "#155eef — focus ring color in Active state (no error)"
         },
         "success": {
-          "value": "{color.accent.green.600}",
+          "value": "{color.border.success.default}",
           "type": "color",
           "description": "#099250 — green ring when all digits are verified successfully"
         },
         "error-passive": {
-          "value": "{color.secondary.error.300}",
+          "value": "{color.border.error.moderate.0}",
           "type": "color",
           "description": "#fda29b — light red ring in Default+Error and Filled+Error states (unfocused error)"
         },
         "error-active": {
-          "value": "{color.secondary.error.600}",
+          "value": "{color.border.error.default}",
           "type": "color",
           "description": "#d92d20 — bright red ring in Active+Error state (focused with error)"
         },
@@ -86,12 +86,12 @@
     "digit": {
       "color": {
         "empty": {
-          "value": "{color.neutral.gray.300}",
+          "value": "{color.text.neutral.inactive}",
           "type": "color",
           "description": "#d0d5dd — placeholder digit color in Default and Disabled states"
         },
         "filled": {
-          "value": "{color.neutral.gray.700}",
+          "value": "{color.text.neutral.body.1}",
           "type": "color",
           "description": "#344054 — digit color when a value is entered (Filled, Active, Success states)"
         }
@@ -100,12 +100,12 @@
     "size": {
       "xs": {
         "box": {
-          "value": "48px",
+          "value": "{size.xl}",
           "type": "dimension",
           "description": "Width and height — smallest size, square"
         },
         "padding-vertical": {
-          "value": "2px",
+          "value": "{padding.y.5xs}",
           "type": "dimension",
           "description": "Top and bottom inset"
         },
@@ -117,12 +117,12 @@
       },
       "sm": {
         "box": {
-          "value": "56px",
+          "value": "{size.2xl}",
           "type": "dimension",
           "description": "Width and height — square"
         },
         "padding-vertical": {
-          "value": "2px",
+          "value": "{padding.y.5xs}",
           "type": "dimension",
           "description": "Top and bottom inset"
         },
@@ -134,12 +134,12 @@
       },
       "md": {
         "box": {
-          "value": "64px",
+          "value": "{size.3xl}",
           "type": "dimension",
           "description": "Width and height — square"
         },
         "padding-vertical": {
-          "value": "2px",
+          "value": "{padding.y.5xs}",
           "type": "dimension",
           "description": "Top and bottom inset"
         },
@@ -151,12 +151,12 @@
       },
       "lg": {
         "box": {
-          "value": "80px",
+          "value": "{size.5xl}",
           "type": "dimension",
-          "description": "Width and height — largest size, square"
+          "description": "Width and height — largest size, square - 80px"
         },
         "padding-vertical": {
-          "value": "10px",
+          "value": "{padding.y.xs}",
           "type": "dimension",
           "description": "Top and bottom inset — larger than other sizes"
         },

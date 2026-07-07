@@ -98,55 +98,6 @@
         }
       }
     },
-    "label": {
-      "$comment": "Label row above the text area field. Consistent with input-form.json md size label tokens.",
-      "height": {
-        "value": "{size.height.3xs}",
-        "type": "dimension",
-        "description": "Mobile text area label row height - 24px"
-      },
-      "gap": {
-        "value": "{gap.3xs}",
-        "type": "dimension",
-        "description": "Mobile text area label internal gap between label text, mandatory asterisk, and info icon - 4px"
-      },
-      "text": {
-        "typography": {
-          "value": "{font.body.medium.2xl}",
-          "type": "typography",
-          "description": "Mobile text area label text typography - 16px Medium, 24px line-height (font/size/2xl, font/weight/medium)"
-        },
-        "color": {
-          "default": {
-            "value": "{color.text.neutral.body.1}",
-            "type": "color",
-            "description": "Mobile text area label text color - neutral/gray-700 - #344054"
-          }
-        }
-      },
-      "info-icon": {
-        "size": {
-          "value": "{size.icon.3xs}",
-          "type": "dimension",
-          "description": "Mobile text area label info icon size - 12px"
-        }
-      }
-    },
-    "hint-text": {
-      "$comment": "Hint text below the field — provides guidance or validation feedback. Consistent with input-form-hint-text.json.",
-      "typography": {
-        "value": "{font.body.regular.base}",
-        "type": "typography",
-        "description": "Mobile text area hint text typography - 14px Regular, 20px line-height (font/size/lg, font/weight/regular)"
-      },
-      "color": {
-        "default": {
-          "value": "{color.text.neutral.body.2}",
-          "type": "color",
-          "description": "Mobile text area hint text default color - neutral/gray-600 - #475467"
-        }
-      }
-    },
     "color": {
       "$comment": "Per-state color tokens for the text area field — background, border, and input text. Mirrors the color token structure from input.json for consistency.",
       "default": {

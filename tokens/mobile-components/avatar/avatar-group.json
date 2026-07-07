@@ -1,0 +1,126 @@
+{
+  "$comment": "Mobile Avatar Group Component Tokens",
+  "$description": "Component tokens for the Mobile Avatar Group - displays multiple avatars in a horizontal row, either stacked (overlapping with a white separating ring) or non-stacked (spaced), with an optional add-more CTA. NESTED COMPONENT: the individual avatars are the Avatar component (tokenized in avatar.json) and the add-more '+' glyph is a separate CTA asset - this file defines only the group-level layout (overlap, inter-avatar spacing, add-more gap) and the stacked separating ring. Figma Reference: Node ID 5801-30658",
+  "$component": {
+    "name": "Avatar Group",
+    "description": "A composite component that displays multiple user avatars in a horizontal layout. Stacked avatars overlap with a white ring separating them; non-stacked avatars are spaced with a gap. An optional add-more CTA can follow the cluster.",
+    "structure": "Horizontal row of Avatar components. Stacked: avatars overlap via negative margin, each (except the first) carries a white ring. Non-stacked: avatars separated by a per-size gap. Optional add-more CTA sits after the cluster separated by the add-more gap.",
+    "sizes": {
+      "3xs": "12px avatars",
+      "2xs": "16px avatars",
+      "xs": "24px avatars",
+      "sm": "32px avatars",
+      "md": "40px avatars"
+    },
+    "variants": {
+      "stacked": "Avatars overlap with negative margin and a white separating ring",
+      "non-stacked": "Avatars separated by a per-size gap"
+    },
+    "usage": {
+      "contexts": "Collaborators, team members, participants, shared-access lists",
+      "features": "Stacked/non-stacked layouts, per-size overlap and spacing, optional add-more CTA"
+    }
+  },
+  "avatar-group": {
+    "container": {
+      "add-more-gap": {
+        "$comment": "Gap between the avatar cluster and the optional add-more CTA",
+        "xs": {
+          "value": "{gap.3xs}",
+          "type": "dimension",
+          "description": "Mobile avatar group add-more gap - xs size - 4px"
+        },
+        "sm": {
+          "value": "{gap.xs}",
+          "type": "dimension",
+          "description": "Mobile avatar group add-more gap - sm size - 8px"
+        },
+        "md": {
+          "value": "{gap.md}",
+          "type": "dimension",
+          "description": "Mobile avatar group add-more gap - md size - 12px"
+        }
+      }
+    },
+    "spacing": {
+      "stacked": {
+        "$comment": "Negative margin applied to overlapping avatars in the stacked variant",
+        "overlap": {
+          "3xs": {
+            "value": "{gap.-0[5]}",
+            "type": "dimension",
+            "description": "Mobile avatar group stacked overlap - 3xs size - -2px"
+          },
+          "2xs": {
+            "value": "{gap.-1}",
+            "type": "dimension",
+            "description": "Mobile avatar group stacked overlap - 2xs size - -4px"
+          },
+          "xs": {
+            "value": "{gap.-1}",
+            "type": "dimension",
+            "description": "Mobile avatar group stacked overlap - xs size - -4px"
+          },
+          "sm": {
+            "value": "{gap.-2}",
+            "type": "dimension",
+            "description": "Mobile avatar group stacked overlap - sm size - -8px"
+          },
+          "md": {
+            "value": "{gap.-2[5]}",
+            "type": "dimension",
+            "description": "Mobile avatar group stacked overlap - md size - -10px. Note: Figma specifies -12px; no -12px gap token exists (negative scale stops at -10px). Using -2[5] as nearest - flag for a token follow-up"
+          }
+        }
+      },
+      "non-stacked": {
+        "$comment": "Positive gap between avatars in the non-stacked variant",
+        "3xs": {
+          "value": "{gap.4xs}",
+          "type": "dimension",
+          "description": "Mobile avatar group non-stacked gap - 3xs size - 2px"
+        },
+        "2xs": {
+          "value": "{gap.3xs}",
+          "type": "dimension",
+          "description": "Mobile avatar group non-stacked gap - 2xs size - 4px"
+        },
+        "xs": {
+          "value": "{gap.3xs}",
+          "type": "dimension",
+          "description": "Mobile avatar group non-stacked gap - xs size - 4px"
+        },
+        "sm": {
+          "value": "{gap.xs}",
+          "type": "dimension",
+          "description": "Mobile avatar group non-stacked gap - sm size - 8px"
+        },
+        "md": {
+          "value": "{gap.md}",
+          "type": "dimension",
+          "description": "Mobile avatar group non-stacked gap - md size - 12px"
+        }
+      }
+    },
+    "ring": {
+      "$comment": "White separating ring drawn around stacked avatars",
+      "color": {
+        "value": "{color.border.neutral.base}",
+        "type": "color",
+        "description": "Mobile avatar group stacked ring color - neutral base - #ffffff"
+      },
+      "width": {
+        "default": {
+          "value": "{border.width.default}",
+          "type": "borderWidth",
+          "description": "Mobile avatar group stacked ring width for xs/sm/md sizes - default - 1px"
+        },
+        "sm": {
+          "value": "{border.width.xs}",
+          "type": "borderWidth",
+          "description": "Mobile avatar group stacked ring width for 3xs/2xs sizes - xs - 0.5px. Note: Figma renders the 2xs ring at 0.667px (no exact token); 0.5px is the nearest - flag for a token follow-up"
+        }
+      }
+    }
+  }
+}

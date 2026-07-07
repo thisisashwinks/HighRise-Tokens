@@ -8,48 +8,48 @@
   },
   "filter-item": {
     "height": {
-      "value": "{size.14}",
+      "value": "{size.height.2xl}",
       "type": "dimension",
       "description": "56px — fixed row height"
     },
     "padding": {
       "horizontal": {
-        "value": "14px",
+        "value": "{padding.md}",
         "type": "dimension",
         "description": "Left and right inset"
       },
       "vertical": {
-        "value": "{size.2}",
+        "value": "{padding.2xs}",
         "type": "dimension",
         "description": "8px top and bottom inset"
       }
     },
     "gap": {
-      "value": "{size.2}",
+      "value": "{gap.4xs}",
       "type": "dimension",
       "description": "8px gap between children"
     },
     "background": {
       "default": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
         "description": "White — unselected state background"
       },
       "selected": {
-        "value": "{color.primary.50}",
+        "value": "{color.background.primary.subtle.0}",
         "type": "color",
         "description": "#eff4ff — active filter category background"
       }
     },
     "border": {
       "width": {
-        "value": "3px",
+        "value": "{border.width.0[75]}",
         "type": "dimension",
-        "description": "Right-side indicator border width, shown in selected state only"
+        "description": "Right-side indicator border width, shown in selected state only - 3px (0[75] - 3px)"
       },
       "color": {
         "selected": {
-          "value": "{color.primary.600}",
+          "value": "{color.border.primary.default}",
           "type": "color",
           "description": "#155eef — right border color for selected state"
         }
@@ -70,12 +70,12 @@
       },
       "color": {
         "default": {
-          "value": "{color.neutral.gray.700}",
+          "value": "{color.text.neutral.body.1}",
           "type": "color",
           "description": "#344054 — unselected label color"
         },
         "selected": {
-          "value": "{color.primary.700}",
+          "value": "{color.text.primary.body.1}",
           "type": "color",
           "description": "#004eeb — selected active label color"
         }

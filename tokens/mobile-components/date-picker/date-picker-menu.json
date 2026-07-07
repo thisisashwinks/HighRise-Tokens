@@ -1,0 +1,100 @@
+{
+  "$comment": "Design token file for the Mobile Date Picker - Picker Menu (month & year menu) component",
+  "$description": "Component tokens for the Mobile Picker Menu - the month/year selection surface shown in the Date Picker 'Month & Year' view. It presents one or two scrollable columns (Month, Year) of text options with column headers, faded far items, and a highlighted current value. NESTED COMPONENTS: the confirm value buttons and the quick-select chips are the existing button and tag components (tokenized in their own files); this file defines only the menu container, column layout, header, and option text tokens. Figma Reference: Node ID 191-35500",
+  "$component": {
+    "name": "Picker Menu",
+    "description": "A month/year picker menu surface. The Default type shows a single option column; the Month & Year type shows two side-by-side columns each with a header and a scrolling list of options that fade with distance from the selection.",
+    "structure": "Rounded container with padding, holding one or two option columns. Each column has a header label and a vertical list of option rows; far options are muted and the centered option is emphasized. Confirm buttons and quick-select chips sit below (separate components).",
+    "sizes": {
+      "default": "361px wide container"
+    },
+    "variants": {
+      "type": {
+        "default": "Single option column",
+        "month-year": "Two columns - Month and Year"
+      }
+    },
+    "usage": {
+      "contexts": "Date Picker Mobile Month & Year view",
+      "features": "Scrollable option columns, column headers, muted far options, highlighted selection"
+    }
+  },
+  "picker-menu": {
+    "container": {
+      "color": {
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile picker menu container background - neutral base - #ffffff"
+        }
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.md}",
+          "type": "borderRadius",
+          "description": "Mobile picker menu container radius - md - 8px"
+        }
+      },
+      "padding": {
+        "value": "{padding.2xs}",
+        "type": "dimension",
+        "description": "Mobile picker menu container padding - 2xs - 8px"
+      }
+    },
+    "column": {
+      "gap": {
+        "value": "{gap.xs}",
+        "type": "dimension",
+        "description": "Mobile picker menu gap between Month and Year columns - xs - 8px"
+      }
+    },
+    "option": {
+      "gap": {
+        "value": "{gap.xs}",
+        "type": "dimension",
+        "description": "Mobile picker menu vertical gap between option rows - xs - 8px"
+      },
+      "padding": {
+        "y": {
+          "value": "{padding.y.2xs}",
+          "type": "dimension",
+          "description": "Mobile picker menu option row vertical padding - 2xs - 8px"
+        }
+      },
+      "typography": {
+        "value": "{font.body.medium.md}",
+        "type": "typography",
+        "description": "Mobile picker menu option text typography - 13px medium"
+      },
+      "color": {
+        "default": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Mobile picker menu option text - default/close - neutral body - #475467"
+        },
+        "muted": {
+          "value": "{color.text.neutral.subtitle.2}",
+          "type": "color",
+          "description": "Mobile picker menu option text - far/muted - neutral subtitle - #98a2b3"
+        },
+        "selected": {
+          "value": "{color.text.neutral.title.2}",
+          "type": "color",
+          "description": "Mobile picker menu option text - selected/emphasized - neutral title - #1d2939"
+        }
+      }
+    },
+    "header": {
+      "typography": {
+        "value": "{font.body.medium.md}",
+        "type": "typography",
+        "description": "Mobile picker menu column header (Month/Year) typography - 13px medium"
+      },
+      "color": {
+        "value": "{color.text.neutral.body.1}",
+        "type": "color",
+        "description": "Mobile picker menu column header color - neutral body - #344054"
+      }
+    }
+  }
+}

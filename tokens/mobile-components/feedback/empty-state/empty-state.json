@@ -1,232 +1,139 @@
 {
   "$comment": "Design token file for the Empty State component",
-  "$description": "Full-screen centered feedback state shown when no content is available. Supports two container types (illustration or icon) and three sizes (Small, Medium, Large). Composed of an illustration or icon container, a content block (title + optional sub-text), and an optional actions row (primary + secondary buttons). Width matches standard mobile viewport (393px).",
+  "$description": "Full-screen centered feedback state shown when no content is available (393px mobile viewport). Two container types (illustration or icon) and three sizes (Small, Medium, Large). Anatomy: an icon/illustration container, a content block (title + optional sub-text), and an optional actions row. Illustration-container tokens are intentionally omitted. The primary and secondary actions are nested Button (HighRise) components and carry their own tokens — only the actions-row gap is defined here.",
   "$component": {
     "name": "Empty State",
     "figmaNodeId": "526:8112",
-    "figmaFile": "Mobile Components V2 Exp 2",
+    "figmaFile": "HighRise Mobile Components",
+    "variants": {
+      "container": ["illustration", "icon"],
+      "size": ["Small", "Medium", "Large"]
+    },
+    "booleans": ["actions", "primaryAction", "secondaryAction", "subText"],
     "subComponents": ["Button (HighRise)"]
   },
   "empty-state": {
     "background": {
-      "value": "{color.neutral.white.base}",
+      "value": "{color.background.neutral.base}",
       "type": "color",
-      "description": "Container background — white screen behind all content"
+      "description": "Screen background behind all content - gray/0 - #ffffff"
     },
     "gap": {
-      "value": "12px",
+      "value": "{gap.3}",
       "type": "dimension",
-      "description": "Vertical gap between the illustration/icon, content block, and actions row"
-    },
-    "illustration": {
-      "size": {
-        "small": {
-          "value": "128px",
-          "type": "dimension",
-          "description": "Illustration container width and height for the Small size variant"
-        },
-        "medium": {
-          "value": "192px",
-          "type": "dimension",
-          "description": "Illustration container width and height for the Medium size variant"
-        },
-        "large": {
-          "value": "240px",
-          "type": "dimension",
-          "description": "Illustration container width and height for the Large size variant"
-        }
-      }
+      "description": "Vertical gap between the icon container, content block, and actions row - 3 - 12px"
     },
     "icon-container": {
       "background": {
-        "value": "{color.neutral.gray.100}",
+        "value": "{color.background.neutral.subtle.0}",
         "type": "color",
-        "description": "#f2f4f7 — muted gray background behind the placeholder icon"
+        "description": "Muted background behind the placeholder icon - gray/50 - #f9fafb"
       },
       "border-radius": {
-        "value": "{border.radius.sm}",
+        "value": "{border.radius.md}",
         "type": "borderRadius",
-        "description": "8px — rounded square shape for the icon container"
+        "description": "Rounded-square corner radius of the icon container - md - 8px"
+      },
+      "padding": {
+        "small": {
+          "value": "{padding.2}",
+          "type": "dimension",
+          "description": "Inset padding around the icon in the Small size - 2 - 8px"
+        },
+        "medium": {
+          "value": "{padding.2[5]}",
+          "type": "dimension",
+          "description": "Inset padding around the icon in the Medium size - 2[5] - 10px"
+        },
+        "large": {
+          "value": "{padding.3}",
+          "type": "dimension",
+          "description": "Inset padding around the icon in the Large size - 3 - 12px"
+        }
       },
       "size": {
         "small": {
-          "value": "48px",
+          "value": "{size.xl}",
           "type": "dimension",
-          "description": "Icon container width and height for the Small size variant"
+          "description": "Icon container width and height in the Small size - xl - 48px"
         },
         "medium": {
-          "value": "56px",
+          "value": "{size.2xl}",
           "type": "dimension",
-          "description": "Icon container width and height for the Medium size variant"
+          "description": "Icon container width and height in the Medium size - 2xl - 56px"
         },
         "large": {
-          "value": "64px",
+          "value": "{size.3xl}",
           "type": "dimension",
-          "description": "Icon container width and height for the Large size variant"
+          "description": "Icon container width and height in the Large size - 3xl - 64px"
         }
       },
       "icon": {
+        "color": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Placeholder icon stroke color - gray/600 - #475467"
+        },
         "size": {
           "small": {
-            "value": "32px",
+            "value": "{size.icon.2xl}",
             "type": "dimension",
-            "description": "Icon width and height inside the Small container"
+            "description": "Icon width and height inside the Small container - 2xl - 32px"
           },
           "medium": {
-            "value": "36px",
+            "value": "{size.icon.3xl}",
             "type": "dimension",
-            "description": "Icon width and height inside the Medium container"
+            "description": "Icon width and height inside the Medium container - 3xl - 36px"
           },
           "large": {
-            "value": "40px",
+            "value": "{size.icon.4xl}",
             "type": "dimension",
-            "description": "Icon width and height inside the Large container"
+            "description": "Icon width and height inside the Large container - 4xl - 40px"
           }
         }
       }
     },
     "content": {
       "gap": {
-        "value": "4px",
+        "value": "{gap.1}",
         "type": "dimension",
-        "description": "Vertical gap between the title and the sub-text"
+        "description": "Vertical gap between the title and the sub-text - 1 - 4px"
+      },
+      "align": {
+        "value": "center",
+        "type": "string",
+        "description": "Text alignment of the content block - center"
       },
       "title": {
         "typography": {
-          "value": "{font.heading.semibold.2xl}",
+          "value": "{font.body.semibold.2xl}",
           "type": "typography",
-          "description": "16px Semibold, 24px line-height — primary heading communicating the empty state reason"
+          "description": "Primary heading communicating the empty-state reason - body/semibold/2xl - 16px Semibold, 24px line-height"
         },
         "color": {
-          "value": "{color.neutral.gray.900}",
+          "value": "{color.text.neutral.title.1}",
           "type": "color",
-          "description": "#101828 — high-emphasis title text"
+          "description": "High-emphasis title text color - gray/900 - #101828"
         }
       },
       "sub-text": {
         "typography": {
-          "value": "{font.body.regular.lg}",
+          "value": "{font.body.regular.base}",
           "type": "typography",
-          "description": "14px Regular, 20px line-height — supporting description below the title"
+          "description": "Supporting description below the title - body/regular/base - 14px Regular, 20px line-height"
         },
         "color": {
-          "value": "{color.neutral.gray.600}",
+          "value": "{color.text.neutral.body.2}",
           "type": "color",
-          "description": "#475467 — muted secondary text"
+          "description": "Muted secondary text color - gray/600 - #475467"
         }
       }
     },
     "actions": {
       "gap": {
-        "value": "12px",
+        "value": "{gap.3}",
         "type": "dimension",
-        "description": "Horizontal gap between the secondary and primary action buttons"
-      },
-      "primary-button": {
-        "background": {
-          "value": "{color.primary.600}",
-          "type": "color",
-          "description": "#155eef — filled primary action background"
-        },
-        "border": {
-          "width": {
-            "value": "1px",
-            "type": "dimension",
-            "description": "Button border width"
-          },
-          "color": {
-            "value": "{color.primary.600}",
-            "type": "color",
-            "description": "#155eef — matches background for seamless filled appearance"
-          }
-        },
-        "border-radius": {
-          "value": "{border.radius.sm}",
-          "type": "borderRadius",
-          "description": "8px button corner radius"
-        },
-        "shadow": {
-          "value": "{shadow.xs}",
-          "type": "shadow",
-          "description": "0px 1px 2px 0px rgba(16,24,40,0.05)"
-        },
-        "padding": {
-          "horizontal": {
-            "value": "20px",
-            "type": "dimension",
-            "description": "Left and right button padding"
-          },
-          "vertical": {
-            "value": "12px",
-            "type": "dimension",
-            "description": "Top and bottom button padding"
-          }
-        },
-        "label": {
-          "typography": {
-            "value": "{font.heading.semibold.2xl}",
-            "type": "typography",
-            "description": "16px Semibold, 24px line-height"
-          },
-          "color": {
-            "value": "{color.neutral.white.base}",
-            "type": "color",
-            "description": "White label on filled primary button"
-          }
-        }
-      },
-      "secondary-button": {
-        "background": {
-          "value": "{color.neutral.white.base}",
-          "type": "color",
-          "description": "White background for the outlined secondary action"
-        },
-        "border": {
-          "width": {
-            "value": "1px",
-            "type": "dimension",
-            "description": "Button border width"
-          },
-          "color": {
-            "value": "{color.primary.300}",
-            "type": "color",
-            "description": "#84adff — light blue border distinguishing the secondary action from a ghost button"
-          }
-        },
-        "border-radius": {
-          "value": "{border.radius.sm}",
-          "type": "borderRadius",
-          "description": "8px button corner radius"
-        },
-        "shadow": {
-          "value": "{shadow.xs}",
-          "type": "shadow",
-          "description": "0px 1px 2px 0px rgba(16,24,40,0.05)"
-        },
-        "padding": {
-          "horizontal": {
-            "value": "20px",
-            "type": "dimension",
-            "description": "Left and right button padding"
-          },
-          "vertical": {
-            "value": "12px",
-            "type": "dimension",
-            "description": "Top and bottom button padding"
-          }
-        },
-        "label": {
-          "typography": {
-            "value": "{font.heading.semibold.2xl}",
-            "type": "typography",
-            "description": "16px Semibold, 24px line-height"
-          },
-          "color": {
-            "value": "{color.primary.700}",
-            "type": "color",
-            "description": "#004eeb — dark primary blue for legibility on white background"
-          }
-        }
+        "description": "Horizontal gap between the secondary and primary action buttons - 3 - 12px"
       }
     }
   }

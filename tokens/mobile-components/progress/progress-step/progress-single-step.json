@@ -1,8 +1,8 @@
 {
-  "$comment": "Mobile Single Step Component Tokens",
-  "$description": "Component tokens for Mobile Single Step — one step unit within a multi-step stepper. Each unit shows a circular step indicator dot (with a number or icon inside), a connector bar to the next step, and a text label (title + description). Supports 5 states: Next, Current, Completed, Error, Warning. Supports 2 orientations (Default horizontal / Vertical), 2 indicator modes (number / icon), and 2 container types (Default text label / List item). Figma Reference: Node ID 364-4779",
+  "$comment": "Mobile Progress Single Step Component Tokens",
+  "$description": "Component tokens for Mobile Progress Single Step — one step unit within a multi-step stepper. Each unit shows a circular step indicator dot (with a number or icon inside), a connector bar to the next step, and a text label (title + description). Supports 5 states: Next, Current, Completed, Error, Warning. Supports 2 orientations (Default horizontal / Vertical), 2 indicator modes (number / icon), and 2 container types (Default text label / List item). Figma Reference: Node ID 364-4779",
   "$component": {
-    "name": "Single Step",
+    "name": "Progress Single Step",
     "description": "One step in a multi-step progress stepper. The component consists of: (1) an indicator dot showing the step's state via color and icon/number, (2) a connector bar (ProgressStepBar sub-component) that links this step to the next, and (3) a text label block with a bold title and a smaller description line. In Default (horizontal) orientation, the indicator, bar, and label are laid out in a row. In Vertical orientation, the indicator and bar stack vertically on the left with the label text on the right. A 'List item' container variant replaces the text label with a full ListItem row component.",
     "structure": "Outer flex column (px-4px). Inner flex row: [optional vertical column: [indicator dot + connector bar]] + [label block: [title, description]] OR [List item component]. In Default orientation: [icon placeholder OR step dot] + [text label below] + [connector bar as sibling, flex-1].",
     "variants": {
@@ -34,13 +34,13 @@
       "features": "5 states, 2 orientations, number/icon modes, text or list-item container, full HighRise stepper pattern"
     }
   },
-  "single-step": {
+  "progress-single-step": {
     "indicator": {
       "$comment": "The circular dot that shows the step's state. Contains either a step number or a contextual icon.",
       "size": {
-        "value": "{size.5}",
+        "value": "{size.4xs}",
         "type": "dimension",
-        "description": "Mobile single step indicator dot size - 20px (width and height, circular via border-radius full)"
+        "description": "Mobile progress single step indicator dot size - 20px (4xs - 20px)"
       },
       "border-radius": {
         "value": "{border.radius.full}",
@@ -49,15 +49,15 @@
       },
       "border": {
         "width": {
-          "value": "1px",
+          "value": "{border.width.default}",
           "type": "dimension",
-          "description": "Mobile single step indicator dot border width - 1px (Figma shows 0.714px — a scaling artifact at mobile density; renders as 1px)"
+          "description": "Mobile single step indicator dot border width - 1px (default - 1px)"
         }
       },
       "icon-size": {
-        "value": "11.429px",
+        "value": "{size.icon.3xs}",
         "type": "dimension",
-        "description": "Mobile single step indicator icon/status image size - 11.429px (57.14% of the 20px dot; used for check-circle, info, warning icons inside the dot — does not map to a standard icon token size)"
+        "description": "Mobile single step indicator icon/status image size - 12px (xs - 12px)"
       },
       "color": {
         "$comment": "Background and border colors for the indicator dot, keyed by state",

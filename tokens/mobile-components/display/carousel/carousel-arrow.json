@@ -11,9 +11,9 @@
   },
   "carousel-arrow": {
     "padding": {
-      "value": "8px",
+      "value": "{padding.2xs}",
       "type": "dimension",
-      "description": "Uniform 8px inset on all sides — applies to all sizes and themes"
+      "description": "Uniform 8px inset on all sides — applies to all sizes and themes- 2xs - 8px"
     },
     "icon": {
       "left": {
@@ -29,166 +29,129 @@
     },
     "sm": {
       "button-size": {
-        "value": "32px",
+        "value": "{size.xs}",
         "type": "dimension",
-        "description": "Width and height of the sm circular button"
+        "description": "Width and height of the sm circular button- xs - 32px"
       },
       "icon-size": {
-        "value": "16px",
+        "value": "{size.icon.xs}",
         "type": "dimension",
-        "description": "Width and height of the sm chevron icon"
+        "description": "Width and height of the sm chevron icon- icon/xs - 16px"
       },
       "border-radius": {
-        "value": "20px",
+        "value": "{border.radius.3xl}",
         "type": "dimension",
-        "description": "Fully circular sm button (20px on a 32px element)"
+        "description": "Fully circular sm button (3xl - 20px border radius on a 32px element)"
       }
     },
     "md": {
       "button-size": {
-        "value": "36px",
+        "value": "{size.sm}",
         "type": "dimension",
-        "description": "Width and height of the md circular button"
+        "description": "Width and height of the md circular button- sm - 36px"
       },
       "icon-size": {
-        "value": "20px",
+        "value": "{size.icon.md}",
         "type": "dimension",
-        "description": "Width and height of the md chevron icon"
+        "description": "Width and height of the md chevron icon- icon/md - 20px"
       },
       "border-radius": {
-        "value": "20px",
+        "value": "{border.radius.3xl}",
         "type": "dimension",
-        "description": "Fully circular md button (20px on a 36px element)"
+        "description": "Fully circular md button (3xl - 20px border radius on a 36px element)"
       }
     },
     "lg": {
       "button-size": {
-        "value": "40px",
+        "value": "{size.md}",
         "type": "dimension",
-        "description": "Width and height of the lg circular button"
+        "description": "Width and height of the lg circular button- md - 40px"
       },
       "icon-size": {
-        "value": "24px",
+        "value": "{size.icon.lg}",
         "type": "dimension",
-        "description": "Width and height of the lg chevron icon"
+        "description": "Width and height of the lg chevron icon- icon/lg - 24px"
       },
       "border-radius": {
-        "value": "22px",
+        "value": "{border.radius.full}",
         "type": "dimension",
-        "description": "Fully circular lg button (22px on a 40px element)"
+        "description": "Fully circular lg button - full - 100%"
       }
     },
     "primary": {
       "description": "Solid filled blue button. No backdrop blur. Icon is always white.",
       "icon-color": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.icon.neutral.base}",
         "type": "color",
-        "description": "White chevron on all Primary states"
-      },
-      "backdrop-blur": {
-        "value": "none",
-        "type": "string",
-        "description": "Primary arrows do not apply backdrop blur"
+        "description": "White icon color chevron on all Primary states- gray/0 - #ffffff"
       },
       "default": {
-        "value": "{color.primary.blue.700}",
+        "value": "{color.background.primary.intense.0}",
         "type": "color",
-        "description": "#004eeb — standard primary blue background"
-      },
-      "hover": {
-        "value": "{color.primary.blue.800}",
-        "type": "color",
-        "description": "#0040c1 — darkened blue on hover"
+        "description": "Standard primary blue background- blue/700 - #004eeb"
       },
       "active": {
-        "value": "{color.primary.blue.900}",
+        "value": "{color.background.primary.intense.2}",
         "type": "color",
-        "description": "#00359e — deepest blue on press"
+        "description": "Deepest blue on press- blue/900 - #00359e"
       },
       "disabled": {
-        "value": "{color.primary.blue.300}",
+        "value": "{color.background.primary.moderate.0}",
         "type": "color",
-        "description": "#84adff — washed-out light blue when the arrow is unavailable (first/last slide)"
+        "description": "Washed-out light blue when the arrow is unavailable (first/last slide)- blue/300 - #84adff"
       }
     },
     "secondary": {
       "description": "Dark semi-opaque button designed for use over image/video content. Applies backdrop-blur 4px on all sizes.",
       "icon-color": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.icon.neutral.base}",
         "type": "color",
-        "description": "White chevron on all Secondary states"
-      },
-      "backdrop-blur": {
-        "value": "{blur.2}",
-        "type": "blur",
-        "description": "4px backdrop blur applied to all Secondary sizes"
+        "description": "White icon color chevron on all Secondary states- gray/0 - #ffffff"
       },
       "default": {
-        "value": "{color.neutral.gray.600}",
+        "value": "{color.background.neutral.moderate.3}",
         "type": "color",
-        "description": "#475467 — dark gray background at rest"
-      },
-      "hover": {
-        "value": "{color.neutral.gray.800}",
-        "type": "color",
-        "description": "#1d2939 — darker gray on hover"
+        "description": "Dark gray background at rest- gray/600 - #475467"
       },
       "active": {
-        "value": "{color.neutral.gray.900}",
+        "value": "{color.background.neutral.intense.2}",
         "type": "color",
-        "description": "#101828 — near-black on press"
+        "description": "Near-black on press- gray/900 - #101828"
       },
       "disabled": {
-        "value": "{color.neutral.gray.300}",
+        "value": "{color.background.neutral.moderate.0}",
         "type": "color",
-        "description": "#d0d5dd — light gray when the arrow is unavailable"
+        "description": "Light gray when the arrow is unavailable- gray/300 - #d0d5dd"
       }
     },
     "tertiary": {
       "description": "White glass button. Backdrop blur applies to sm and md only — lg Tertiary omits blur (Figma source inconsistency, preserved faithfully). Icon colour shifts from gray/600 to gray/300 when disabled.",
       "icon-color": {
         "default": {
-          "value": "{color.neutral.gray.600}",
+          "value": "{color.text.neutral.body.2}",
           "type": "color",
-          "description": "#475467 — dark gray chevron in Default/Hover/Active states"
+          "description": "Dark gray chevron in Default/Hover/Active states- gray/600 - #475467"
         },
         "disabled": {
-          "value": "{color.neutral.gray.300}",
+          "value": "{color.text.neutral.active}",
           "type": "color",
-          "description": "#d0d5dd — faded gray chevron when the arrow is unavailable"
-        }
-      },
-      "backdrop-blur": {
-        "sm-md": {
-          "value": "{blur.2}",
-          "type": "blur",
-          "description": "4px backdrop blur on sm and md Tertiary buttons"
-        },
-        "lg": {
-          "value": "none",
-          "type": "string",
-          "description": "lg Tertiary does not apply backdrop blur per Figma source"
+          "description": "Faded gray chevron when the arrow is unavailable- gray/300 - #d0d5dd"
         }
       },
       "default": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "White background at rest"
-      },
-      "hover": {
-        "value": "{color.neutral.gray.100}",
-        "type": "color",
-        "description": "#f2f4f7 — very light gray background on hover"
+        "description": "White background at rest- gray/0 - #ffffff"
       },
       "active": {
-        "value": "{color.neutral.gray.200}",
+        "value": "{color.background.neutral.subtle.2}",
         "type": "color",
-        "description": "#eaecf0 — light gray background on press"
+        "description": "Light gray background on press- gray/200 - #eaecf0"
       },
       "disabled": {
-        "value": "{color.neutral.white.base}",
+        "value": "{color.background.neutral.base}",
         "type": "color",
-        "description": "White background when unavailable — same as default; only the icon colour signals disabled state"
+        "description": "White background when unavailable — same as default; only the icon colour signals disabled state- gray/0 - #ffffff"
       }
     }
   }

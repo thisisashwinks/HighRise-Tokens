@@ -69,18 +69,18 @@
         "description": "Mobile progress step bar color for Upcoming (default) state - gray/200 - #eaecf0 (unfilled/pending step connector)"
       },
       "completed": {
-        "value": "{color.primary.300}",
+        "value": "{color.background.primary.moderate.0}",
         "type": "color",
         "description": "Mobile progress step bar color for Completed state - primary/blue/300 - #84adff (finished step connector, lighter blue than active)"
       },
       "current": {
         "background": {
-          "value": "{color.primary.600}",
+          "value": "{color.background.primary.default}",
           "type": "color",
           "description": "Mobile progress step bar background for Current state - primary/blue/600 - #155eef"
         },
         "border": {
-          "value": "{color.primary.600}",
+          "value": "{color.border.primary.default}",
           "type": "color",
           "description": "Mobile progress step bar border for Current state - primary/blue/600 - #155eef (same as background, creates a solid bordered pill effect)"
         }
@@ -97,7 +97,7 @@
       },
       "disabled": {
         "background": {
-          "value": "{color.neutral.white.base}",
+          "value": "{color.background.neutral.inactive}",
           "type": "color",
           "description": "Mobile progress step bar background for Disabled state - white (step connector is inactive/non-interactive)"
         },

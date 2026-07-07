@@ -17,20 +17,25 @@
     ]
   },
   "carousel": {
-    "width": {
-      "value": "361px",
-      "type": "dimension",
-      "description": "Reference viewport width used in Figma — implementations may use a fluid/percentage width instead"
-    },
-    "height": {
-      "value": "400px",
-      "type": "dimension",
-      "description": "Reference viewport height — the content slot and all overlaid controls fit within this height"
-    },
     "overlay-padding": {
-      "value": "12px",
+      "value": "{padding.sm}",
       "type": "dimension",
-      "description": "Inset from the carousel edge at which arrows and the indicator group are placed when in a corner/edge position variant"
+      "description": "Inset from the carousel edge at which arrows and the indicator group are placed when in a corner/edge position variant - 12px"
+    },
+    "border-radius": {
+      "value": "{border.radius.md}",
+      "type": "dimension",
+      "description": "Fully rounded carousel - md - 8px"
+    },
+    "gap": {
+      "value": "{gap.xs}",
+      "type": "dimension",
+      "description": "Gap between the carousel and the arrows and indicator group - 8px (xs - 8px)"
+    },
+    "background-color": {
+      "value": "{color.background.neutral.base}",
+      "type": "color",
+      "description": "Background color of the carousel - neutral/base - #ffffff"
     }
   }
 }

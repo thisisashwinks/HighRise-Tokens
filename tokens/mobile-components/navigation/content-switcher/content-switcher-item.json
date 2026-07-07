@@ -30,9 +30,9 @@
       },
       "default": {
         "background": {
-          "value": "{color.background.transparent}",
+          "value": "{color.background.neutral.subtle.1}",
           "type": "color",
-          "description": "Mobile content switcher item default background - transparent - #FFFFFF00"
+          "description": "Mobile content switcher item default background - neutral/100 - matches container rail (#f2f4f7); same visual as transparent over rail, required for smooth hover/selection color animation in Flutter"
         },
         "border": {
           "value": "{color.border.transparent}",

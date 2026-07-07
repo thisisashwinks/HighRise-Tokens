@@ -19,37 +19,19 @@
     },
     "gap": {
       "sm": {
-        "value": "2px",
+        "value": "{gap.4xs}",
         "type": "dimension",
-        "description": "2px gap between pips in the sm size"
+        "description": "2px gap between pips in the sm size- 4xs - 2px"
       },
       "md": {
-        "value": "4px",
+        "value": "{gap.3xs}",
         "type": "dimension",
-        "description": "4px gap between pips in the md size"
+        "description": "4px gap between pips in the md size- 3xs - 4px"
       },
       "lg": {
-        "value": "6px",
+        "value": "{gap.2xs}",
         "type": "dimension",
-        "description": "6px gap between pips in the lg size"
-      }
-    },
-    "line-group-width": {
-      "description": "Fixed total width applied only when style=Line, to prevent layout shift as the current pip expands. Dot-style groups have no fixed width and shrink-wrap to their pips.",
-      "sm": {
-        "value": "52px",
-        "type": "dimension",
-        "description": "Total width of a sm Line group: (16 + 4 + 4) px pips + 2+2 px gaps = 52px"
-      },
-      "md": {
-        "value": "80px",
-        "type": "dimension",
-        "description": "Total width of a md Line group: (24 + 8 + 8) px pips + 4+4 px gaps = 80px"
-      },
-      "lg": {
-        "value": "108px",
-        "type": "dimension",
-        "description": "Total width of a lg Line group: (32 + 12 + 12) px pips + 6+6 px gaps = 108px"
+        "description": "6px gap between pips in the lg size- 2xs - 6px"
       }
     }
   }
