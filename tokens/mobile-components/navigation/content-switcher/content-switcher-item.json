@@ -112,9 +112,16 @@
       }
     },
     "shadow": {
-      "value": "{boxShadow.outer.xs}",
-      "type": "shadow",
-      "description": "Mobile content switcher item shadow - outer xs - For all content switcher items"
+      "selected": {
+        "value": "{boxShadow.outer.xs}",
+        "type": "shadow",
+        "description": "Mobile content switcher item selected shadow - outer xs - elevated white chip"
+      },
+      "default": {
+        "value": "{boxShadow.none}",
+        "type": "shadow",
+        "description": "Mobile content switcher item default shadow - none - flat on rail, not elevated"
+      }
     },
     "sizing": {
       "icon": {
