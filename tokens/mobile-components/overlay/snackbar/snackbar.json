@@ -3,8 +3,8 @@
   "$description": "Component tokens for Mobile Snackbar component — a transient feedback notification displayed at the bottom of the screen. Supports 4 type variants (Default = text only, icon = with leading icon, image = with leading thumbnail, Loader = with leading spinner). Optional action button (right-aligned CTA) and optional dismiss button (X icon). Figma Reference: Node ID 531-54277",
   "$component": {
     "name": "Snackbar",
-    "description": "A mobile snackbar (toast) component used to display brief, contextual feedback messages. Appears as a dark pill-shaped card with near-white body text. Supports an optional inline action button (white bg, blue border) and an optional dismiss icon. Leading content can be an icon, thumbnail image, or loading spinner. Typically dismisses automatically after a timeout.",
-    "structure": "Dark container (gray.800 bg, 12px radius, 16px padding). Single horizontal content row with 16px gap containing: optional leading content (icon 32px | image 24px | loader 32px), flex-grow message text, optional action button (32px height, white bg, blue border), optional dismiss icon button (32px container).",
+    "description": "A mobile snackbar (toast) component used to display brief, contextual feedback messages. Appears as a dark pill-shaped card with near-white body text. Supports an optional inline action button (composed Button primary/sm) and an optional dismiss icon. Leading content can be an icon, thumbnail image, or loading spinner. Typically dismisses automatically after a timeout.",
+    "structure": "Dark container (gray.800 bg, 12px radius, 16px padding). Single horizontal content row with 16px gap containing: optional leading content (icon 32px | image 24px | loader 32px), flex-grow message text, optional action button (32px height, primary sm Button instance), optional dismiss icon button (32px container).",
     "variants": {
       "type": {
         "Default": "Text only — no leading content",
@@ -13,7 +13,7 @@
         "Loader": "Leading spinner (32px) — used to indicate an ongoing background action"
       },
       "action": {
-        "true": "Shows the inline action button (white bg, blue.300 border, blue.700 text, 32px height)",
+        "true": "Shows the inline action button (composed Button primary palette / primary variant / sm size — solid primary fill, white text, 32px height)",
         "false": "No action button — message only"
       },
       "dismiss": {
@@ -98,62 +98,62 @@
       }
     },
     "action": {
-      "$comment": "Optional inline action button — white background with blue border and text",
+      "$comment": "Optional inline action — composed HighRise Button instance (primary palette, primary variant, sm size). Values mirror button.json: color.primary.primary default state + regular sm layout/effects.",
       "height": {
-        "value": "{size.height.8}",
+        "value": "{size.height.xs}",
         "type": "dimension",
-        "description": "Mobile snackbar action button height - 32px"
+        "description": "Mobile snackbar action button height - 32px (button.regular.height.default.sm)"
       },
       "padding": {
         "horizontal": {
-          "value": "{padding.4[5]}",
+          "value": "{padding.x.lg}",
           "type": "dimension",
-          "description": "Mobile snackbar action button horizontal padding (each side) - 18px"
+          "description": "Mobile snackbar action button horizontal padding (each side) - 18px (button.regular.padding.default.x.sm)"
         },
         "vertical": {
-          "value": "{padding.2[5]}",
+          "value": "{padding.y.4xs}",
           "type": "dimension",
-          "description": "Mobile snackbar action button vertical padding (each side) - 10px"
+          "description": "Mobile snackbar action button vertical padding (each side) - 4px (button.regular.padding.default.y.sm)"
         }
       },
       "border": {
         "radius": {
           "value": "{border.radius.md}",
           "type": "dimension",
-          "description": "Mobile snackbar action button border radius - 8px"
+          "description": "Mobile snackbar action button border radius - 8px (button.border.default.radius.sm)"
         },
         "width": {
           "value": "{border.width.default}",
           "type": "dimension",
-          "description": "Mobile snackbar action button border width - 1px"
+          "description": "Mobile snackbar action button border width - 1px (button.border.default.width.default)"
         }
       },
       "color": {
         "background": {
-          "value": "{color.background.neutral.base}",
+          "value": "{color.background.primary.default}",
           "type": "color",
-          "description": "Mobile snackbar action button background - white - #ffffff"
+          "description": "Mobile snackbar action button background - primary default fill (button.color.primary.primary.background.default)"
         },
         "border": {
-          "value": "{color.border.primary.subtle.2}",
+          "value": "{color.border.primary.default}",
           "type": "color",
-          "description": "Mobile snackbar action button border color - primary/blue.300 - #84adff"
+          "description": "Mobile snackbar action button border color - primary default (button.color.primary.primary.border.default)"
         },
         "text": {
-          "value": "{color.text.primary.body.1}",
+          "value": "{color.text.neutral.base}",
           "type": "color",
-          "description": "Mobile snackbar action button label text color - primary/blue.700 - #004eeb"
+          "description": "Mobile snackbar action button label text color - white (button.color.primary.primary.text.default)"
         }
       },
       "shadow": {
         "value": "{boxShadow.outer.xs}",
         "type": "boxShadow",
-        "description": "Mobile snackbar action button shadow - shadow/xs - 0px 1px 2px rgba(16,24,40,0.05)"
+        "description": "Mobile snackbar action button shadow - shadow/xs (button.effects.shadow.default)"
       },
       "typography": {
         "value": "{font.body.semibold.2xl}",
         "type": "typography",
-        "description": "Mobile snackbar action button label typography - Inter Semi Bold 16px, 24px line-height"
+        "description": "Mobile snackbar action button label typography - Inter Semi Bold 16px, 24px line-height (button.typography.sm)"
       }
     },
     "dismiss": {
