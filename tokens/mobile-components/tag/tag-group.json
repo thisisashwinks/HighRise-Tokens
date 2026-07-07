@@ -1,0 +1,59 @@
+{
+  "$comment": "Mobile Tag Group Component Tokens",
+  "$description": "Component tokens for the Mobile Tag Group component - a layout container that arranges multiple Tag components in a horizontal row. Supports 4 sizes (xs, sm, md, lg) and a Multiple axis (single tag vs. many tags with an optional overflow '+N' counter and an optional 'add' tag). Tag Group only owns container layout tokens (direction, alignment, gap between tags); every pill inside - including the '+N' overflow counter and the 'add' tag - is a nested Tag component that carries its own tokens (see tag.json). Figma Reference: Node ID 5804-50066",
+  "$component": {
+    "name": "Tag Group",
+    "figmaNodeId": "5804-50066",
+    "figmaFile": "HighRise Mobile Components",
+    "description": "A mobile layout container that groups multiple Tag components together in a single horizontal row. The gap between tags scales with the selected size. Used to display a set of related tags such as filters, categories, or selected values, with an optional overflow counter ('+N') and an optional add-tag control - both of which are themselves Tag instances with their own tokens.",
+    "structure": "Horizontal flex container, center-aligned, with a size-dependent gap between child Tag components. Children (individual tags, the '+N' overflow counter tag, and the 'add' tag) are nested Tag components and are not styled by Tag Group.",
+    "variants": {
+      "size": ["xs", "sm", "md", "lg"],
+      "multiple": ["False", "True"]
+    },
+    "sizes": {
+      "xs": "Extra small - 2px gap between tags",
+      "sm": "Small - 4px gap between tags",
+      "md": "Medium - 6px gap between tags",
+      "lg": "Large - 8px gap between tags"
+    }
+  },
+  "tag-group": {
+    "container": {
+      "$comment": "Container layout tokens for the tag group - flex direction, alignment, and the gap between child Tag components per size",
+      "direction": {
+        "value": "row",
+        "type": "string",
+        "description": "Mobile tag group flex direction - tags laid out horizontally - row"
+      },
+      "alignment": {
+        "value": "center",
+        "type": "string",
+        "description": "Mobile tag group cross-axis alignment - tags vertically centered - items-center"
+      },
+      "gap": {
+        "$comment": "Gap between adjacent Tag components - scales with size",
+        "xs": {
+          "value": "{gap.4xs}",
+          "type": "dimension",
+          "description": "Mobile tag group gap between tags for xs size - 4xs - 2px"
+        },
+        "sm": {
+          "value": "{gap.3xs}",
+          "type": "dimension",
+          "description": "Mobile tag group gap between tags for sm size - 3xs - 4px"
+        },
+        "md": {
+          "value": "{gap.2xs}",
+          "type": "dimension",
+          "description": "Mobile tag group gap between tags for md size - 2xs - 6px"
+        },
+        "lg": {
+          "value": "{gap.xs}",
+          "type": "dimension",
+          "description": "Mobile tag group gap between tags for lg size - xs - 8px"
+        }
+      }
+    }
+  }
+}

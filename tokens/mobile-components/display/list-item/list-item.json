@@ -140,12 +140,24 @@
           "value": "{color.icon.neutral.moderate.2}",
           "type": "color",
           "description": "Mobile list item default icon color - neutral/gray-600 - #475467"
+        },
+        "background": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "description": "Mobile list item default icon background color - neutral/gray-100 - #f2f4f7"
         }
       },
       "divider": {
         "value": "{color.border.neutral.subtle.2}",
         "type": "color",
         "description": "Mobile list item divider color - neutral/gray-200 - #eaecf0"
+      },
+      "image": {
+        "border": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "description": "Mobile list item image border color - neutral/gray-300 - #d0d5dd"
+        }
       }
     },
     "typography": {
