@@ -1,0 +1,148 @@
+{
+  "$comment": "Design token file for the Mobile Date Picker - Dates (day cell) component",
+  "$description": "Component tokens for the Mobile Dates cell - the individual day cell rendered inside the Date Picker calendar grid. Covers state (Default, Selected, Disabled), range membership (Range), range endpoints (Range Start, Range End), and the optional today indicator dot. Atomic component - nested inside Date Picker Mobile which references it rather than redefining these tokens. Figma Reference: Node ID 191-35687",
+  "$component": {
+    "name": "Dates",
+    "description": "The single day cell used within the mobile date picker calendar grid. Shows a numeric day label, an optional today dot, an optional in-range highlight, and switches background/text treatment across default, selected, and disabled states.",
+    "structure": "44x44 square cell containing a centered day label. Selected state renders a filled circle. Range members render a subtle fill; range start/end render a half-capsule highlight beneath the selected circle. Optional today dot sits at the top of the cell.",
+    "sizes": {
+      "default": "44x44px - single fixed cell size"
+    },
+    "variants": {
+      "state": {
+        "default": "Rest day cell with subtle fill",
+        "selected": "Chosen day, filled circle",
+        "disabled": "Non-selectable day (out of range/month)"
+      },
+      "range": {
+        "false": "Standalone day",
+        "true": "Day inside a selected range"
+      },
+      "range-start": "First day of a selected range (leading half-capsule)",
+      "range-end": "Last day of a selected range (trailing half-capsule)",
+      "today": "Optional today indicator dot"
+    },
+    "usage": {
+      "contexts": "Date Picker Mobile calendar grid, range selection",
+      "features": "Selected circle, in-range highlight, range end caps, today dot, disabled days"
+    }
+  },
+  "dates": {
+    "container": {
+      "$comment": "Cell dimensions, radii, and internal alignment",
+      "size": {
+        "value": "{size.lg}",
+        "type": "dimension",
+        "description": "Mobile date cell width and height - lg - 44px"
+      },
+      "gap": {
+        "value": "{gap.sm}",
+        "type": "dimension",
+        "description": "Mobile date cell internal content gap - sm - 10px"
+      }
+    },
+    "border": {
+      "radius": {
+        "default": {
+          "value": "{border.radius.xs}",
+          "type": "borderRadius",
+          "description": "Mobile date cell radius for default and disabled states - xs - 4px"
+        },
+        "selected": {
+          "value": "{border.radius.full}",
+          "type": "borderRadius",
+          "description": "Mobile date cell radius for the selected circle - full - 1000px (pill/circle)"
+        },
+        "range-cap": {
+          "value": "{border.radius.full}",
+          "type": "borderRadius",
+          "description": "Mobile date range start/end capsule corner radius - full - 1000px. Note: Figma specifies 24px; no exact radius token exists (scale jumps 20px to 1000px). Using full to preserve the pill-cap intent - flag for a token follow-up"
+        }
+      }
+    },
+    "color": {
+      "background": {
+        "default": {
+          "value": "{color.background.neutral.subtle.1}",
+          "type": "color",
+          "description": "Mobile date cell default background - neutral subtle - #f2f4f7"
+        },
+        "range": {
+          "value": "{color.background.primary.subtle.1}",
+          "type": "color",
+          "description": "Mobile date cell in-range background - primary subtle - #d1e0ff"
+        },
+        "selected": {
+          "value": "{color.background.primary.intense.2}",
+          "type": "color",
+          "description": "Mobile date cell selected circle background - primary intense - #00359e"
+        },
+        "disabled": {
+          "value": "{color.background.transparent}",
+          "type": "color",
+          "description": "Mobile date cell disabled background - transparent"
+        }
+      },
+      "text": {
+        "default": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Mobile date cell default label color - neutral body - #475467"
+        },
+        "range": {
+          "value": "{color.text.neutral.body.2}",
+          "type": "color",
+          "description": "Mobile date cell in-range label color - neutral body - #475467"
+        },
+        "selected": {
+          "value": "{color.text.neutral.base}",
+          "type": "color",
+          "description": "Mobile date cell selected label color - neutral base - #ffffff"
+        },
+        "disabled": {
+          "value": "{color.text.neutral.inactive}",
+          "type": "color",
+          "description": "Mobile date cell disabled label color - neutral inactive - #d0d5dd"
+        }
+      }
+    },
+    "typography": {
+      "default": {
+        "value": "{font.body.medium.md}",
+        "type": "typography",
+        "description": "Mobile date cell default/disabled label typography - 13px medium"
+      },
+      "selected": {
+        "value": "{font.body.semibold.md}",
+        "type": "typography",
+        "description": "Mobile date cell selected label typography - 13px semibold"
+      }
+    },
+    "today-dot": {
+      "size": {
+        "value": "{size.2}",
+        "type": "dimension",
+        "description": "Mobile date cell today indicator dot size - 8px"
+      },
+      "color": {
+        "default": {
+          "value": "{color.background.primary.default}",
+          "type": "color",
+          "description": "Mobile date cell today dot on default background - primary - #155eef"
+        },
+        "on-selected": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile date cell today dot on selected background - neutral base - #ffffff"
+        }
+      }
+    },
+    "range-highlight": {
+      "color": {
+        "value": "{color.background.primary.subtle.1}",
+        "type": "color",
+        "description": "Mobile date range start/end capsule highlight behind the selected circle - primary subtle - #d1e0ff"
+      }
+    }
+  }
+}

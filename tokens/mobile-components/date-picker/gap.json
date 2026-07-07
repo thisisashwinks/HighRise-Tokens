@@ -1,0 +1,50 @@
+{
+  "$comment": "Design token file for the Mobile Date Picker - Gap (range connector) component",
+  "$description": "Component tokens for the Mobile Date Picker Gap - the thin 6px connector rendered between adjacent day cells to visually join a selected date range. When Range=False it is transparent/white filler; when Range=True it carries the in-range fill so consecutive selected days read as one continuous band. Atomic component - nested inside Date Picker Mobile which references it. Figma Reference: Node ID 191-35709",
+  "$component": {
+    "name": "Gap",
+    "description": "A 6px wide, 44px tall connector placed between day cells in the calendar grid. It bridges the horizontal gaps between cells so a selected range appears continuous.",
+    "structure": "Fixed 6x44px rectangle filling the inter-cell gap, background driven by range membership.",
+    "sizes": {
+      "default": "6x44px - single fixed connector size"
+    },
+    "variants": {
+      "range": {
+        "false": "Not part of a range - transparent/neutral filler",
+        "true": "Inside a selected range - carries the in-range fill"
+      }
+    },
+    "usage": {
+      "contexts": "Date Picker Mobile calendar grid range selection",
+      "features": "Continuous range band between adjacent day cells"
+    }
+  },
+  "gap": {
+    "size": {
+      "width": {
+        "value": "{size.1[5]}",
+        "type": "dimension",
+        "description": "Mobile date range gap connector width - 6px"
+      },
+      "height": {
+        "value": "{size.lg}",
+        "type": "dimension",
+        "description": "Mobile date range gap connector height - lg - 44px"
+      }
+    },
+    "color": {
+      "background": {
+        "default": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile date range gap background when not in range - neutral base - #ffffff"
+        },
+        "range": {
+          "value": "{color.background.primary.subtle.1}",
+          "type": "color",
+          "description": "Mobile date range gap background when in range - primary subtle - #d1e0ff"
+        }
+      }
+    }
+  }
+}

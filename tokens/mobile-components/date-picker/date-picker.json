@@ -1,0 +1,179 @@
+{
+  "$comment": "Design token file for the Mobile Date Picker (container) component",
+  "$description": "Component tokens for Date Picker Mobile - the top-level date/time selection surface. Two types: Default (calendar with day grid, month/year navigation, quick-select chips, and Clear/Confirm actions) and Pin Wheel (scrolling date/time wheels). NESTED COMPONENTS: the day cells (Dates), the range connector (Gap), the month/year menu (Picker Menu), and the wheel columns (Pin Wheel Selector) each have their own token files, as do the Clear/Confirm buttons (button) and the quick-select chips (tag). This file defines only the container chrome - surface, header, navigation, weekday labels, grid spacing, and footer/chip layout. Figma Reference: Node ID 193-80528",
+  "$component": {
+    "name": "Date Picker Mobile",
+    "description": "A mobile date/time picker surface presented in a bottom sheet or modal. The Default type shows a calendar (title, month/year navigation, weekday header, day grid, quick-select chips, and Clear/Confirm actions). The Pin Wheel type shows scrolling date/time wheels. The Month & Year view swaps the grid for the Picker Menu.",
+    "structure": "Rounded, elevated container with 16px padding. Header row (title + close icon), month/year navigation row (double/single chevrons + label), weekday label row, day grid (Dates + Gap), quick-select chip row, and footer action row (Clear + Confirm). The Pin Wheel type replaces the grid with Pin Wheel Selector columns.",
+    "sizes": {
+      "default": "393px wide surface"
+    },
+    "variants": {
+      "type": {
+        "default": "Calendar day-grid picker",
+        "pin-wheel": "Scrolling date/time wheel picker"
+      },
+      "view": {
+        "unselected": "Calendar with no day selected",
+        "selected": "Calendar with a day selected",
+        "month-year": "Month & Year picker menu view",
+        "date": "Pin Wheel date-only view",
+        "date-time": "Pin Wheel date and time view"
+      }
+    },
+    "usage": {
+      "contexts": "Mobile date/time selection, range selection, scheduling",
+      "features": "Calendar grid, month/year navigation, quick-select presets, date/time wheels, Clear/Confirm actions"
+    }
+  },
+  "date-picker": {
+    "container": {
+      "$comment": "Surface chrome - background, radius, elevation, padding, and section rhythm",
+      "color": {
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile date picker surface background - neutral base - #ffffff"
+        }
+      },
+      "border": {
+        "radius": {
+          "value": "{border.radius.md}",
+          "type": "borderRadius",
+          "description": "Mobile date picker surface radius - md - 8px"
+        }
+      },
+      "shadow": {
+        "value": "{shadow.xl}",
+        "type": "shadow",
+        "description": "Mobile date picker surface elevation - xl"
+      },
+      "padding": {
+        "value": "{padding.lg}",
+        "type": "dimension",
+        "description": "Mobile date picker surface padding - lg - 16px"
+      },
+      "gap": {
+        "section": {
+          "value": "{gap.lg}",
+          "type": "dimension",
+          "description": "Mobile date picker gap between major sections - lg - 16px"
+        }
+      }
+    },
+    "header": {
+      "$comment": "Title row - 'Select Date' label and close icon",
+      "title": {
+        "typography": {
+          "value": "{font.body.semibold.xl}",
+          "type": "typography",
+          "description": "Mobile date picker header title typography - 15px semibold"
+        },
+        "color": {
+          "value": "{color.text.neutral.title.2}",
+          "type": "color",
+          "description": "Mobile date picker header title color - neutral title - #1d2939"
+        }
+      },
+      "close": {
+        "size": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Mobile date picker header close icon size - md - 20px"
+        },
+        "color": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile date picker header close icon color - neutral moderate - #475467"
+        }
+      }
+    },
+    "navigation": {
+      "$comment": "Month/year navigation row - chevrons and the current month/year label",
+      "label": {
+        "typography": {
+          "value": "{font.body.semibold.md}",
+          "type": "typography",
+          "description": "Mobile date picker month/year label typography - 13px semibold"
+        },
+        "month": {
+          "color": {
+            "value": "{color.text.neutral.title.2}",
+            "type": "color",
+            "description": "Mobile date picker month label color - neutral title - #1d2939"
+          }
+        },
+        "year": {
+          "color": {
+            "value": "{color.text.neutral.body.2}",
+            "type": "color",
+            "description": "Mobile date picker year label color - neutral body - #475467"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "value": "{size.icon.md}",
+          "type": "dimension",
+          "description": "Mobile date picker navigation chevron icon size - md - 20px"
+        },
+        "color": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile date picker navigation chevron icon color - neutral moderate - #475467"
+        }
+      }
+    },
+    "weekday": {
+      "$comment": "Weekday label row (Sun-Sat)",
+      "typography": {
+        "value": "{font.body.medium.md}",
+        "type": "typography",
+        "description": "Mobile date picker weekday label typography - 13px medium"
+      },
+      "color": {
+        "value": "{color.text.neutral.subtitle.1}",
+        "type": "color",
+        "description": "Mobile date picker weekday label color - neutral subtitle - #667085"
+      }
+    },
+    "grid": {
+      "$comment": "Day grid spacing - individual day cells are the Dates component (see dates.json)",
+      "gap": {
+        "row": {
+          "value": "{gap.none}",
+          "type": "dimension",
+          "description": "Mobile date picker grid vertical gap between weeks - none - 0px"
+        },
+        "column": {
+          "value": "{gap.none}",
+          "type": "dimension",
+          "description": "Mobile date picker grid horizontal gap between days - none - 0px (handled by the Gap connector)"
+        }
+      }
+    },
+    "chips": {
+      "$comment": "Quick-select preset row - chips are the tag component; this is only their layout",
+      "gap": {
+        "value": "{gap.xs}",
+        "type": "dimension",
+        "description": "Mobile date picker quick-select chip gap - xs - 8px"
+      }
+    },
+    "footer": {
+      "$comment": "Action row - Clear/Confirm buttons are the button component; this is only their layout",
+      "gap": {
+        "value": "{gap.sm}",
+        "type": "dimension",
+        "description": "Mobile date picker footer gap between Clear and Confirm actions - sm - 10px"
+      },
+      "padding": {
+        "top": {
+          "value": "{padding.top.4}",
+          "type": "dimension",
+          "description": "Mobile date picker footer top padding - 16px"
+        }
+      }
+    }
+  }
+}
