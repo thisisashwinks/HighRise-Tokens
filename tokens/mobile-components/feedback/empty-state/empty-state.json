@@ -19,9 +19,9 @@
       "description": "Screen background behind all content - gray/0 - #ffffff"
     },
     "gap": {
-      "value": "{gap.3}",
+      "value": "{gap.md}",
       "type": "dimension",
-      "description": "Vertical gap between the icon container, content block, and actions row - 3 - 12px"
+      "description": "Vertical gap between the icon container, content block, and actions row - md - 12px"
     },
     "icon-container": {
       "background": {
@@ -36,19 +36,19 @@
       },
       "padding": {
         "small": {
-          "value": "{padding.2}",
+          "value": "{padding.2xs}",
           "type": "dimension",
-          "description": "Inset padding around the icon in the Small size - 2 - 8px"
+          "description": "Inset padding around the icon in the Small size - 2xs - 8px"
         },
         "medium": {
-          "value": "{padding.2[5]}",
+          "value": "{padding.xs}",
           "type": "dimension",
-          "description": "Inset padding around the icon in the Medium size - 2[5] - 10px"
+          "description": "Inset padding around the icon in the Medium size - xs - 10px"
         },
         "large": {
-          "value": "{padding.3}",
+          "value": "{padding.sm}",
           "type": "dimension",
-          "description": "Inset padding around the icon in the Large size - 3 - 12px"
+          "description": "Inset padding around the icon in the Large size - sm - 12px"
         }
       },
       "size": {
@@ -95,9 +95,9 @@
     },
     "content": {
       "gap": {
-        "value": "{gap.1}",
+        "value": "{gap.3xs}",
         "type": "dimension",
-        "description": "Vertical gap between the title and the sub-text - 1 - 4px"
+        "description": "Vertical gap between the title and the sub-text - 3xs - 4px"
       },
       "align": {
         "value": "center",
@@ -131,9 +131,9 @@
     },
     "actions": {
       "gap": {
-        "value": "{gap.3}",
+        "value": "{gap.md}",
         "type": "dimension",
-        "description": "Horizontal gap between the secondary and primary action buttons - 3 - 12px"
+        "description": "Horizontal gap between the secondary and primary action buttons - md - 12px"
       }
     }
   }
