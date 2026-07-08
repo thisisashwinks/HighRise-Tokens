@@ -40,6 +40,24 @@
           "type": "dimension",
           "description": "Mobile avatar group add-more gap - md size - 12px"
         }
+      },
+      "add-more": {
+        "$comment": "Colors for the add-more '+' CTA button (present at xs/sm/md sizes)",
+        "background": {
+          "value": "{color.background.neutral.base}",
+          "type": "color",
+          "description": "Mobile avatar group add-more CTA background - neutral base - #ffffff"
+        },
+        "border-color": {
+          "value": "{color.border.neutral.default}",
+          "type": "color",
+          "description": "Mobile avatar group add-more CTA border color - neutral default - gray/300 - #d0d5dd"
+        },
+        "icon-color": {
+          "value": "{color.icon.neutral.moderate.2}",
+          "type": "color",
+          "description": "Mobile avatar group add-more CTA '+' icon color - neutral moderate 2 - gray/600 - #475467"
+        }
       }
     },
     "spacing": {
