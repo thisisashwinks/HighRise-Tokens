@@ -1,0 +1,29 @@
+{
+  "$comment": "Design token file for the Breadcrumb container component",
+  "$description": "The Breadcrumb container arranges a trail of Breadcrumb Item components in a horizontal row separated by a fixed gap. Six types (Default, Label in first, Label in last, Only icons, Overflow Default, Overflow Expanded) differ only in which items and labels are shown; the Overflow Expanded type wraps collapsed items onto multiple lines. All per-item anatomy (icon, label, chevron, colors, and the intra-item gap) belongs to the nested Breadcrumb Item component and is tokenized in breadcrumb-item.json — not duplicated here. This file holds only the container's own layout values.",
+  "$component": {
+    "name": "Breadcrumb",
+    "figmaNodeId": "915:35493",
+    "figmaFile": "HighRise Mobile Components",
+    "variants": {
+      "type": ["Default", "Label in first", "Label in last", "Only icons", "Overflow Default", "Overflow Expanded"]
+    }
+  },
+  "breadcrumb": {
+    "gap": {
+      "value": "{gap.2}",
+      "type": "dimension",
+      "description": "Horizontal gap between adjacent breadcrumb items in the trail - gap.2 - 8px"
+    },
+    "direction": {
+      "value": "row",
+      "type": "string",
+      "description": "Items are laid out in a horizontal row"
+    },
+    "wrap": {
+      "value": "wrap",
+      "type": "string",
+      "description": "Items reflow onto additional lines when the trail exceeds the container width - used by the Overflow Expanded type; other types stay on a single line"
+    }
+  }
+}

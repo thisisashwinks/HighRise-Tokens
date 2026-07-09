@@ -63,7 +63,7 @@
     },
     "chevron": {
       "size": {
-        "value": "18px",
+        "value": "{size.icon.sm}",
         "type": "dimension",
         "description": "Width and height of the chevron-right separator icon"
       },

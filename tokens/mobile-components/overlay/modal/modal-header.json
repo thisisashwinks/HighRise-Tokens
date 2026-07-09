@@ -49,6 +49,20 @@
             "type": "color",
             "description": "Mobile modal header default background - neutral/white - #ffffff"
           }
+        },
+        "border": {
+          "default": {
+            "value": "{color.border.neutral.subtle.1}",
+            "type": "color",
+            "description": "Mobile modal header default border - neutral/gray-100 - #f2f4f7"
+          }
+        }
+      },
+      "border-width": {
+        "default": {
+          "value": "{border.width.default}",
+          "type": "dimension",
+          "description": "Mobile modal header default border width - default - 1px"
         }
       },
       "padding": {

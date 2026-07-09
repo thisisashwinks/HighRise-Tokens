@@ -119,26 +119,6 @@
           "description": "Mobile avatar group non-stacked gap - md size - 12px"
         }
       }
-    },
-    "ring": {
-      "$comment": "White separating ring drawn around stacked avatars",
-      "color": {
-        "value": "{color.border.neutral.base}",
-        "type": "color",
-        "description": "Mobile avatar group stacked ring color - neutral base - #ffffff"
-      },
-      "width": {
-        "default": {
-          "value": "{border.width.default}",
-          "type": "borderWidth",
-          "description": "Mobile avatar group stacked ring width for xs/sm/md sizes - default - 1px"
-        },
-        "sm": {
-          "value": "{border.width.xs}",
-          "type": "borderWidth",
-          "description": "Mobile avatar group stacked ring width for 3xs/2xs sizes - xs - 0.5px. Note: Figma renders the 2xs ring at 0.667px (no exact token); 0.5px is the nearest - flag for a token follow-up"
-        }
-      }
     }
   }
 }
