@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+.env
+.env*.local
+.DS_Store
+# generated at build from ../../../tokens by scripts/build-data.mjs
+src/data/
+next-env.d.ts

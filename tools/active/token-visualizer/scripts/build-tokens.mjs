@@ -14,9 +14,10 @@ const APP_ROOT = join(__dirname, '..');
 function findTokensDir() {
   const candidates = [
     process.env.TOKENS_DIR,
-    join(APP_ROOT, '..', 'tokens'),   // app lives in repo/token-visualizer → repo/tokens
+    join(APP_ROOT, '..', 'tokens'),   // legacy: app at repo/token-visualizer → repo/tokens
     join(APP_ROOT, 'tokens'),
     join(APP_ROOT, '..', '..', 'tokens'),
+    join(APP_ROOT, '..', '..', '..', 'tokens'), // app lives in repo/tools/active/token-visualizer → repo/tokens
   ].filter(Boolean);
   for (const c of candidates) {
     if (existsSync(join(c, 'Primitive.json'))) return c;

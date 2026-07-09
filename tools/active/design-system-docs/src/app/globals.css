@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 antialiased dark:bg-surface-base dark:text-gray-100;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Custom scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(152, 162, 179, 0.45) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgba(152, 162, 179, 0.45);
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Focus visibility */
+:focus-visible {
+  outline: 2px solid #155eef;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Respect reduced motion for CSS animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Soft checkered background for example previews */
+.example-canvas {
+  background-color: #fafbfc;
+  background-image:
+    linear-gradient(rgba(16, 24, 40, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 24, 40, 0.028) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+.dark .example-canvas {
+  background-color: #0e1420;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.032) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.032) 1px, transparent 1px);
+}
+
+/* Prose defaults for doc pages */
+.doc h1 {
+  @apply text-[26px] font-semibold leading-9 tracking-[-0.01em] text-gray-900 dark:text-gray-100;
+}
+.doc h2 {
+  @apply mt-10 text-[18px] font-semibold leading-7 tracking-[-0.01em] text-gray-900 dark:text-gray-100;
+}
+.doc h3 {
+  @apply mt-6 text-body font-semibold text-gray-900 dark:text-gray-100;
+}
+.doc p {
+  @apply mt-3 text-body text-gray-700 dark:text-gray-300;
+}
+.doc ul,
+.doc ol {
+  @apply mt-3 space-y-1.5 pl-5 text-body text-gray-700 dark:text-gray-300;
+}
+.doc ul {
+  @apply list-disc;
+}
+.doc ol {
+  @apply list-decimal;
+}
+.doc a {
+  @apply text-primary-600 hover:underline dark:text-primary-400;
+}
+.doc strong {
+  @apply font-semibold text-gray-900 dark:text-gray-100;
+}
+.doc code:not(pre code) {
+  @apply rounded bg-gray-100 px-1 py-0.5 font-mono text-[12.5px] text-gray-800 dark:bg-surface-overlay dark:text-gray-200;
+}
+.doc table {
+  @apply mt-4 w-full border-collapse text-sub;
+}
+.doc th {
+  @apply border-b border-gray-200 px-3 py-2 text-left font-medium text-gray-500 dark:border-surface-line dark:text-gray-400;
+}
+.doc td {
+  @apply border-b border-gray-100 px-3 py-2 align-top text-gray-700 dark:border-surface-line/60 dark:text-gray-300;
+}

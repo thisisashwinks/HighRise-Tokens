@@ -9,12 +9,12 @@ Read-only. Token data is **bundled at build** from the repo's `tokens/` folder, 
 ## Run locally
 
 ```bash
-cd token-visualizer
+cd tools/active/token-visualizer
 npm install
 npm run dev        # runs the token build step, then starts on http://localhost:3000
 ```
 
-`npm run dev` / `npm run build` first run `scripts/build-tokens.mjs`, which reads `../tokens` and writes `src/data/graph.json`. To rebuild token data only: `npm run tokens`.
+`npm run dev` / `npm run build` first run `scripts/build-tokens.mjs`, which reads the repo's `tokens/` folder (`../../../tokens` relative to this app) and writes `src/data/graph.json`. To rebuild token data only: `npm run tokens`.
 
 ---
 
@@ -33,10 +33,10 @@ References (`{color.background.primary.default}`) are resolved across all layers
 
 ## Deploy to Vercel
 
-1. Push the repo to GitHub (the app lives in `token-visualizer/`).
-2. In Vercel → **New Project** → import the repo → set **Root Directory = `token-visualizer`**.
+1. Push the repo to GitHub (the app lives in `tools/active/token-visualizer/`).
+2. In Vercel → **New Project** → import the repo → set **Root Directory = `tools/active/token-visualizer`**.
 3. Framework preset: **Next.js** (auto-detected). Build command and output are default.
-   - The build runs `prebuild` → reads `../tokens` (present because Vercel checks out the whole repo). If your tokens live elsewhere, set env `TOKENS_DIR`.
+   - The build runs `prebuild` → reads `../../../tokens` (present because Vercel checks out the whole repo). If your tokens live elsewhere, set env `TOKENS_DIR`.
 4. **Password gate** (recommended — token data is internal): add env vars
    - `VIZ_USER` = e.g. `highrise`
    - `VIZ_PASS` = a shared password
