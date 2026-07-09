@@ -45,9 +45,9 @@
       "color": {
         "background": {
           "default": {
-            "value": "{color.background.neutral.base}",
+            "value": "{color.surface.base}",
             "type": "color",
-            "description": "Mobile modal header default background - neutral/white - #ffffff"
+            "description": "Mobile modal header default background - surface/base - #ffffff light / #ffffff dark"
           }
         },
         "border": {

@@ -8,9 +8,9 @@
   },
   "mobile-filter": {
     "background": {
-      "value": "{color.background.neutral.base}",
+      "value": "{color.surface.overlay}",
       "type": "color",
-      "description": "Sheet background"
+      "description": "Sheet background - surface/overlay - #ffffff light / #344054 dark"
     },
     "border": {
       "width": {
@@ -173,9 +173,9 @@
     },
     "body": {
       "background": {
-        "value": "{color.background.neutral.base}",
+        "value": "{color.surface.overlay}",
         "type": "color",
-        "description": "Body section background"
+        "description": "Body section background - surface/overlay - #ffffff light / #344054 dark"
       },
       "padding": {
         "value": "{padding.lg}",

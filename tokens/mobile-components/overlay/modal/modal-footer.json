@@ -21,9 +21,9 @@
       "$comment": "Color tokens for mobile modal footer - background and divider colors",
       "background": {
         "default": {
-          "value": "{color.background.neutral.base}",
+          "value": "{color.surface.overlay}",
           "type": "color",
-          "description": "Mobile modal footer default background - neutral/white - #ffffff"
+          "description": "Mobile modal footer default background - surface/overlay - #ffffff light / #344054 dark"
         }
       },
       "border": {
@@ -130,9 +130,9 @@
       },
       "color": {
         "background": {
-          "value": "{color.background.neutral.base}",
+          "value": "{color.surface.overlay}",
           "type": "color",
-          "description": "Mobile modal footer home indicator background - neutral/white - #ffffff"
+          "description": "Mobile modal footer home indicator background - surface/overlay - #ffffff light / #344054 dark"
         }
       }
     }

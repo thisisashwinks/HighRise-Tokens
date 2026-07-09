@@ -1,5 +1,27 @@
 {
   "color": {
+    "surface": {
+      "base": {
+        "value": "{color.neutral.gray.0}",
+        "type": "color",
+        "description": "Color (surface base - page/app background): #ffffff"
+      },
+      "raised": {
+        "value": "{color.neutral.gray.0}",
+        "type": "color",
+        "description": "Color (surface raised - cards, list groups, tiles on the page): #ffffff"
+      },
+      "overlay": {
+        "value": "{color.neutral.gray.0}",
+        "type": "color",
+        "description": "Color (surface overlay - modals, sheets, menus, popovers, dropdowns): #ffffff"
+      },
+      "sunken": {
+        "value": "{color.neutral.gray.50}",
+        "type": "color",
+        "description": "Color (surface sunken - inset wells recessed into a surface): #f9fafb"
+      }
+    },
     "background": {
       "transparent": {
         "value": "{color.transparent}",
@@ -8,6 +30,11 @@
       },
       "neutral": {
         "base": {
+          "value": "{color.neutral.gray.0}",
+          "type": "color",
+          "description": "Color (background neutral): #ffffff"
+        },
+        "base-fixed": {
           "value": "{color.neutral.gray.0}",
           "type": "color",
           "description": "Color (background neutral): #ffffff"
@@ -281,6 +308,21 @@
           "value": "{color.neutral.gray.0}",
           "type": "color",
           "description": "Color (border neutral): #ffffff"
+        },
+        "base-fixed": {
+          "value": "{color.neutral.gray.0}",
+          "type": "color",
+          "description": "Color (border neutral): #ffffff"
+        },
+        "subtle-on-raised": {
+          "value": "{color.neutral.gray.200}",
+          "type": "color",
+          "description": "Color (border neutral subtle, tuned for raised surfaces): #eaecf0"
+        },
+        "default-on-raised": {
+          "value": "{color.neutral.gray.300}",
+          "type": "color",
+          "description": "Color (border neutral default, tuned for raised surfaces): #d0d5dd"
         },
         "intense": {
           "0": {
@@ -584,7 +626,7 @@
           "type": "color",
           "description": "Color (text neutral): #ffffff"
         },
-        "base-fixed": {
+        "on-color": {
           "value": "{color.neutral.gray.0}",
           "type": "color",
           "description": "Color (text neutral): #ffffff"
@@ -796,7 +838,7 @@
           "type": "color",
           "description": "Color (icon neutral): #ffffff"
         },
-        "base-fixed": {
+        "on-color": {
           "value": "{color.neutral.gray.0}",
           "type": "color",
           "description": "Color (icon neutral): #ffffff"

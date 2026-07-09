@@ -1,5 +1,27 @@
 {
   "color": {
+    "surface": {
+      "base": {
+        "value": "{color.neutral.gray.1000}",
+        "type": "color",
+        "description": "Color (dark theme surface base - page/app background): #000000"
+      },
+      "raised": {
+        "value": "{color.neutral.gray.800}",
+        "type": "color",
+        "description": "Color (dark theme surface raised - cards, list groups, tiles on the page): #1d2939"
+      },
+      "overlay": {
+        "value": "{color.neutral.gray.700}",
+        "type": "color",
+        "description": "Color (dark theme surface overlay - modals, sheets, menus, popovers, dropdowns): #344054"
+      },
+      "sunken": {
+        "value": "{color.neutral.gray.1000}",
+        "type": "color",
+        "description": "Color (dark theme surface sunken - inset wells recessed into a surface): #000000"
+      }
+    },
     "background": {
       "transparent": {
         "value": "{color.transparent}",
@@ -12,84 +34,89 @@
           "type": "color",
           "description": "Color (dark theme background neutral): #000000"
         },
+        "base-fixed": {
+          "value": "{color.neutral.gray.0}",
+          "type": "color",
+          "description": "Color (dark theme background neutral): #ffffff"
+        },
         "intense": {
           "0": {
-            "value": "{color.neutral.gray.100}",
-            "type": "color",
-            "description": "Color (dark theme background neutral): #344054"
-          },
-          "1": {
-            "value": "{color.neutral.gray.50}",
-            "type": "color",
-            "description": "Color (dark theme background neutral): #1d2939"
-          },
-          "2": {
-            "value": "{color.neutral.gray.25}",
-            "type": "color",
-            "description": "Color (dark theme background neutral): #fcfcfd"
-          }
-        },
-        "moderate": {
-          "0": {
-            "value": "{color.neutral.gray.500}",
-            "type": "color",
-            "description": "Color (dark theme background neutral): #d0d5dd"
-          },
-          "1": {
             "value": "{color.neutral.gray.400}",
             "type": "color",
             "description": "Color (dark theme background neutral): #98a2b3"
           },
-          "2": {
+          "1": {
             "value": "{color.neutral.gray.300}",
             "type": "color",
-            "description": "Color (dark theme background neutral): #667085"
-          },
-          "3": {
-            "value": "{color.neutral.gray.200}",
-            "type": "color",
-            "description": "Color (dark theme background neutral): #475467"
-          }
-        },
-        "subtle": {
-          "0": {
-            "value": "{color.neutral.gray.800}",
-            "type": "color",
-            "description": "Color (dark theme background neutral): #f9fafb"
-          },
-          "1": {
-            "value": "{color.neutral.gray.700}",
-            "type": "color",
-            "description": "Color (dark theme background neutral): #f2f4f7"
+            "description": "Color (dark theme background neutral): #d0d5dd"
           },
           "2": {
-            "value": "{color.neutral.gray.600}",
+            "value": "{color.neutral.gray.200}",
             "type": "color",
             "description": "Color (dark theme background neutral): #eaecf0"
           }
         },
+        "moderate": {
+          "0": {
+            "value": "{color.neutral.gray.700}",
+            "type": "color",
+            "description": "Color (dark theme background neutral): #344054"
+          },
+          "1": {
+            "value": "{color.neutral.gray.600}",
+            "type": "color",
+            "description": "Color (dark theme background neutral): #475467"
+          },
+          "2": {
+            "value": "{color.neutral.gray.500}",
+            "type": "color",
+            "description": "Color (dark theme background neutral): #667085"
+          },
+          "3": {
+            "value": "{color.neutral.gray.400}",
+            "type": "color",
+            "description": "Color (dark theme background neutral): #98a2b3"
+          }
+        },
+        "subtle": {
+          "0": {
+            "value": "{color.neutral.gray.975}",
+            "type": "color",
+            "description": "Color (dark theme background neutral): #040508"
+          },
+          "1": {
+            "value": "{color.neutral.gray.900}",
+            "type": "color",
+            "description": "Color (dark theme background neutral): #101828"
+          },
+          "2": {
+            "value": "{color.neutral.gray.800}",
+            "type": "color",
+            "description": "Color (dark theme background neutral): #1d2939"
+          }
+        },
         "inactive": {
-          "value": "{color.neutral.gray.900}",
+          "value": "{color.neutral.gray.975}",
           "type": "color",
-          "description": "Color (dark theme background neutral): #fcfcfd"
+          "description": "Color (dark theme background neutral): #040508"
         }
       },
       "primary": {
         "intense": {
           "0": {
+            "value": "{color.primary.blue.400}",
+            "type": "color",
+            "description": "Color (dark theme background primary): #528bff"
+          },
+          "1": {
             "value": "{color.primary.blue.300}",
             "type": "color",
             "description": "Color (dark theme background primary): #84adff"
           },
-          "1": {
-            "value": "{color.primary.blue.200}",
-            "type": "color",
-            "description": "Color (dark theme background primary): #b2ccff"
-          },
           "2": {
-            "value": "{color.primary.blue.100}",
+            "value": "{color.primary.blue.300}",
             "type": "color",
-            "description": "Color (dark theme background primary): #d1e0ff"
+            "description": "Color (dark theme background primary): #84adff"
           }
         },
         "default": {
@@ -104,86 +131,86 @@
             "description": "Color (dark theme background primary): #2970ff"
           },
           "0": {
-            "value": "{color.primary.blue.400}",
+            "value": "{color.primary.blue.900}",
             "type": "color",
-            "description": "Color (dark theme background primary): #528bff"
+            "description": "Color (dark theme background primary): #00359e"
           }
         },
         "subtle": {
           "0": {
-            "value": "{color.primary.blue.800}",
+            "value": "{color.primary.blue.975}",
             "type": "color",
-            "description": "Color (dark theme background primary): #0040c1"
+            "description": "Color (dark theme background primary): #002570"
           },
           "1": {
-            "value": "{color.primary.blue.700}",
+            "value": "{color.primary.blue.975}",
             "type": "color",
-            "description": "Color (dark theme background primary): #004eeb"
+            "description": "Color (dark theme background primary): #002570"
           },
           "2": {
-            "value": "{color.primary.blue.600}",
+            "value": "{color.primary.blue.975}",
             "type": "color",
-            "description": "Color (dark theme background primary): #155eef"
+            "description": "Color (dark theme background primary): #002570"
           }
         },
         "inactive": {
-          "value": "{color.primary.blue.900}",
+          "value": "{color.primary.blue.975}",
           "type": "color",
-          "description": "Color (dark theme background primary): #00359e"
+          "description": "Color (dark theme background primary): #002570"
         }
       },
       "success": {
         "intense": {
           "0": {
-            "value": "{color.secondary.success.300}",
-            "type": "color",
-            "description": "Color (dark theme background success): #6ce9a6"
-          },
-          "1": {
-            "value": "{color.secondary.success.100}",
-            "type": "color",
-            "description": "Color (dark theme background success): #d1fadf"
-          }
-        },
-        "default": {
-          "value": "{color.secondary.success.500}",
-          "type": "color",
-          "description": "Color (dark theme background success): #12b76a"
-        },
-        "subtle": {
-          "0": {
-            "value": "{color.secondary.success.800}",
-            "type": "color",
-            "description": "Color (dark theme background success): #05603a"
-          },
-          "1": {
-            "value": "{color.secondary.success.700}",
-            "type": "color",
-            "description": "Color (dark theme background success): #027a48"
-          },
-          "2": {
             "value": "{color.secondary.success.600}",
             "type": "color",
             "description": "Color (dark theme background success): #039855"
+          },
+          "1": {
+            "value": "{color.secondary.success.400}",
+            "type": "color",
+            "description": "Color (dark theme background success): #32d583"
+          }
+        },
+        "default": {
+          "value": "{color.secondary.success.700}",
+          "type": "color",
+          "description": "Color (dark theme background success): #027a48"
+        },
+        "subtle": {
+          "0": {
+            "value": "{color.secondary.success.975}",
+            "type": "color",
+            "description": "Color (dark theme background success): #02331f"
+          },
+          "1": {
+            "value": "{color.secondary.success.975}",
+            "type": "color",
+            "description": "Color (dark theme background success): #02331f"
+          },
+          "2": {
+            "value": "{color.secondary.success.975}",
+            "type": "color",
+            "description": "Color (dark theme background success): #02331f"
           }
         },
         "inactive": {
-          "value": "{color.secondary.success.900}",
+          "value": "{color.secondary.success.975}",
           "type": "color",
-          "description": "Color (dark theme background success): #054f31"
+          "description": "Color (dark theme background success): #02331f"
         }
       },
       "error": {
         "intense": {
           "0": {
+            "value": "{color.secondary.error.400}",
+            "type": "color",
+            "description": "Color (dark theme background error): #f97066"
+          },
+          "1": {
             "value": "{color.secondary.error.300}",
             "type": "color",
             "description": "Color (dark theme background error): #fda29b"
-          },
-          "1": {
-            "value": "{color.secondary.error.100}",
-            "type": "color",
-            "description": "Color (dark theme background error): #fee4e2"
           }
         },
         "default": {
@@ -193,73 +220,80 @@
         },
         "moderate": {
           "0": {
-            "value": "{color.secondary.error.500}",
-            "type": "color",
-            "description": "Color (dark theme background error): #f04438"
-          }
-        },
-        "subtle": {
-          "0": {
-            "value": "{color.secondary.error.800}",
-            "type": "color",
-            "description": "Color (dark theme background error): #912018"
-          },
-          "1": {
-            "value": "{color.secondary.error.700}",
-            "type": "color",
-            "description": "Color (dark theme background error): #b42318"
-          },
-          "2": {
             "value": "{color.secondary.error.600}",
             "type": "color",
             "description": "Color (dark theme background error): #d92d20"
           }
         },
+        "subtle": {
+          "0": {
+            "value": "{color.secondary.error.975}",
+            "type": "color",
+            "description": "Color (dark theme background error): #471109"
+          },
+          "1": {
+            "value": "{color.secondary.error.975}",
+            "type": "color",
+            "description": "Color (dark theme background error): #471109"
+          },
+          "2": {
+            "value": "{color.secondary.error.975}",
+            "type": "color",
+            "description": "Color (dark theme background error): #471109"
+          }
+        },
         "inactive": {
-          "value": "{color.secondary.error.900}",
+          "value": "{color.secondary.error.975}",
           "type": "color",
-          "description": "Color (dark theme background error): #7a271a"
+          "description": "Color (dark theme background error): #471109"
         }
       },
       "warning": {
         "intense": {
           "0": {
-            "value": "{color.secondary.warning.300}",
-            "type": "color",
-            "description": "Color (dark theme background warning): #fec84b"
-          },
-          "1": {
-            "value": "{color.secondary.warning.100}",
-            "type": "color",
-            "description": "Color (dark theme background warning): #fef0c7"
-          }
-        },
-        "default": {
-          "value": "{color.secondary.warning.500}",
-          "type": "color",
-          "description": "Color (dark theme background warning): #f79009"
-        },
-        "subtle": {
-          "0": {
-            "value": "{color.secondary.warning.800}",
-            "type": "color",
-            "description": "Color (dark theme background warning): #93370d"
-          },
-          "1": {
-            "value": "{color.secondary.warning.700}",
-            "type": "color",
-            "description": "Color (dark theme background warning): #b54708"
-          },
-          "2": {
             "value": "{color.secondary.warning.600}",
             "type": "color",
             "description": "Color (dark theme background warning): #dc6803"
+          },
+          "1": {
+            "value": "{color.secondary.warning.500}",
+            "type": "color",
+            "description": "Color (dark theme background warning): #f79009"
+          }
+        },
+        "default": {
+          "value": "{color.secondary.warning.700}",
+          "type": "color",
+          "description": "Color (dark theme background warning): #b54708"
+        },
+        "subtle": {
+          "0": {
+            "value": "{color.secondary.warning.975}",
+            "type": "color",
+            "description": "Color (dark theme background warning): #421807"
+          },
+          "1": {
+            "value": "{color.secondary.warning.975}",
+            "type": "color",
+            "description": "Color (dark theme background warning): #421807"
+          },
+          "2": {
+            "value": "{color.secondary.warning.975}",
+            "type": "color",
+            "description": "Color (dark theme background warning): #421807"
           }
         },
         "inactive": {
-          "value": "{color.secondary.warning.900}",
+          "value": "{color.secondary.warning.975}",
           "type": "color",
-          "description": "Color (dark theme background warning): #7a2e0e"
+          "description": "Color (dark theme background warning): #421807"
+        },
+        "moderate": {
+          "0": {
+            "value": "{color.secondary.warning.950}",
+            "type": "color",
+            "description": "Color (dark theme background warning): #4e1d09"
+          }
         }
       }
     },
@@ -275,74 +309,89 @@
           "type": "color",
           "description": "Color (dark theme border neutral): #000000"
         },
-        "intense": {
-          "0": {
-            "value": "{color.neutral.gray.100}",
-            "type": "color",
-            "description": "Color (dark theme border neutral): #f2f4f7"
-          },
-          "1": {
-            "value": "{color.neutral.gray.25}",
-            "type": "color",
-            "description": "Color (dark theme border neutral): #fcfcfd"
-          }
+        "base-fixed": {
+          "value": "{color.neutral.gray.0}",
+          "type": "color",
+          "description": "Color (dark theme border neutral): #ffffff"
         },
-        "moderate": {
+        "subtle-on-raised": {
+          "value": "{color.neutral.gray.900}",
+          "type": "color",
+          "description": "Color (dark theme border neutral subtle, tuned for raised surfaces): #101828"
+        },
+        "default-on-raised": {
+          "value": "{color.neutral.gray.800}",
+          "type": "color",
+          "description": "Color (dark theme border neutral default, tuned for raised surfaces): #1d2939"
+        },
+        "intense": {
           "0": {
             "value": "{color.neutral.gray.400}",
             "type": "color",
             "description": "Color (dark theme border neutral): #98a2b3"
           },
           "1": {
-            "value": "{color.neutral.gray.300}",
-            "type": "color",
-            "description": "Color (dark theme border neutral): #d0d5dd"
-          },
-          "2": {
             "value": "{color.neutral.gray.200}",
             "type": "color",
             "description": "Color (dark theme border neutral): #eaecf0"
           }
         },
-        "default": {
-          "value": "{color.neutral.gray.400}",
-          "type": "color",
-          "description": "Color (dark theme border neutral): #98a2b3"
-        },
-        "subtle": {
+        "moderate": {
           "0": {
-            "value": "{color.neutral.gray.800}",
-            "type": "color",
-            "description": "Color (dark theme border neutral): #1d2939"
-          },
-          "1": {
-            "value": "{color.neutral.gray.700}",
-            "type": "color",
-            "description": "Color (dark theme border neutral): #344054"
-          },
-          "2": {
             "value": "{color.neutral.gray.600}",
             "type": "color",
             "description": "Color (dark theme border neutral): #475467"
+          },
+          "1": {
+            "value": "{color.neutral.gray.500}",
+            "type": "color",
+            "description": "Color (dark theme border neutral): #667085"
+          },
+          "2": {
+            "value": "{color.neutral.gray.400}",
+            "type": "color",
+            "description": "Color (dark theme border neutral): #98a2b3"
+          }
+        },
+        "default": {
+          "value": "{color.neutral.gray.800}",
+          "type": "color",
+          "description": "Color (dark theme border neutral): #1d2939"
+        },
+        "subtle": {
+          "0": {
+            "value": "{color.neutral.gray.975}",
+            "type": "color",
+            "description": "Color (dark theme border neutral): #040508"
+          },
+          "1": {
+            "value": "{color.neutral.gray.900}",
+            "type": "color",
+            "description": "Color (dark theme border neutral): #101828"
+          },
+          "2": {
+            "value": "{color.neutral.gray.800}",
+            "type": "color",
+            "description": "Color (dark theme border neutral): #1d2939"
           }
         },
         "inactive": {
-          "value": "{color.neutral.gray.900}",
+          "value": "{color.neutral.gray.975}",
           "type": "color",
-          "description": "Color (dark theme border neutral): #101828"
+          "description": "Color (dark theme border neutral): #040508"
         }
       },
       "primary": {
         "intense": {
           "0": {
+            "value": "{color.primary.blue.400}",
+            "type": "color",
+            "description": "Color (dark theme border primary): #528bff"
+          },
+          "1": {
             "value": "{color.primary.blue.300}",
             "type": "color",
             "description": "Color (dark theme border primary): #84adff"
-          },
-          "1": {
-            "value": "{color.primary.blue.200}",
-            "type": "color",
-            "description": "Color (dark theme border primary): #b2ccff"
           }
         },
         "default": {
@@ -352,183 +401,161 @@
         },
         "moderate": {
           "0": {
-            "value": "{color.primary.blue.500}",
-            "type": "color",
-            "description": "Color (dark theme border primary): #2970ff"
-          },
-          "1": {
-            "value": "{color.primary.blue.400}",
-            "type": "color",
-            "description": "Color (dark theme border primary): #528bff"
-          }
-        },
-        "subtle": {
-          "0": {
-            "value": "{color.primary.blue.800}",
-            "type": "color",
-            "description": "Color (dark theme border primary): #0040c1"
-          },
-          "1": {
             "value": "{color.primary.blue.700}",
             "type": "color",
             "description": "Color (dark theme border primary): #004eeb"
           },
-          "2": {
+          "1": {
             "value": "{color.primary.blue.600}",
             "type": "color",
             "description": "Color (dark theme border primary): #155eef"
           }
         },
+        "subtle": {
+          "0": {
+            "value": "{color.primary.blue.975}",
+            "type": "color",
+            "description": "Color (dark theme border primary): #002570"
+          },
+          "1": {
+            "value": "{color.primary.blue.950}",
+            "type": "color",
+            "description": "Color (dark theme border primary): #002b82"
+          },
+          "2": {
+            "value": "{color.primary.blue.900}",
+            "type": "color",
+            "description": "Color (dark theme border primary): #00359e"
+          }
+        },
         "inactive": {
-          "value": "{color.primary.blue.900}",
+          "value": "{color.primary.blue.975}",
           "type": "color",
-          "description": "Color (dark theme border primary): #00359e"
+          "description": "Color (dark theme border primary): #002570"
         }
       },
       "success": {
         "intense": {
           "0": {
-            "value": "{color.secondary.success.300}",
+            "value": "{color.secondary.success.600}",
             "type": "color",
-            "description": "Color (dark theme border success): #6ce9a6"
+            "description": "Color (dark theme border success): #039855"
           },
           "1": {
-            "value": "{color.secondary.success.200}",
+            "value": "{color.secondary.success.500}",
             "type": "color",
-            "description": "Color (dark theme border success): #a6f4c5"
+            "description": "Color (dark theme border success): #12b76a"
           },
           "2": {
-            "value": "{color.secondary.success.100}",
+            "value": "{color.secondary.success.400}",
             "type": "color",
-            "description": "Color (dark theme border success): #d1fadf"
+            "description": "Color (dark theme border success): #32d583"
           }
         },
         "default": {
-          "value": "{color.secondary.success.500}",
+          "value": "{color.secondary.success.700}",
           "type": "color",
-          "description": "Color (dark theme border success): #12b76a"
+          "description": "Color (dark theme border success): #027a48"
         },
         "moderate": {
           "0": {
-            "value": "{color.secondary.success.400}",
+            "value": "{color.secondary.success.975}",
             "type": "color",
-            "description": "Color (dark theme border success): #32d583"
+            "description": "Color (dark theme border success): #02331f"
           },
           "1": {
-            "value": "{color.secondary.success.400}",
+            "value": "{color.secondary.success.800}",
             "type": "color",
-            "description": "Color (dark theme border success): #32d583"
+            "description": "Color (dark theme border success): #05603a"
           }
         },
         "subtle": {
           "0": {
-            "value": "{color.secondary.success.800}",
+            "value": "{color.secondary.success.975}",
             "type": "color",
-            "description": "Color (dark theme border success): #05603a"
+            "description": "Color (dark theme border success): #02331f"
           },
           "1": {
-            "value": "{color.secondary.success.700}",
+            "value": "{color.secondary.success.975}",
             "type": "color",
-            "description": "Color (dark theme border success): #027a48"
+            "description": "Color (dark theme border success): #02331f"
           },
           "2": {
-            "value": "{color.secondary.success.600}",
+            "value": "{color.secondary.success.975}",
             "type": "color",
-            "description": "Color (dark theme border success): #039855"
+            "description": "Color (dark theme border success): #02331f"
           }
         },
         "inactive": {
-          "value": "{color.secondary.success.900}",
+          "value": "{color.secondary.success.975}",
           "type": "color",
-          "description": "Color (dark theme border success): #054f31"
+          "description": "Color (dark theme border success): #02331f"
         }
       },
       "error": {
         "intense": {
           "0": {
+            "value": "{color.secondary.error.400}",
+            "type": "color",
+            "description": "Color (dark theme border error): #f97066"
+          },
+          "1": {
+            "value": "{color.secondary.error.400}",
+            "type": "color",
+            "description": "Color (dark theme border error): #f97066"
+          },
+          "2": {
             "value": "{color.secondary.error.300}",
             "type": "color",
             "description": "Color (dark theme border error): #fda29b"
-          },
-          "1": {
-            "value": "{color.secondary.error.200}",
-            "type": "color",
-            "description": "Color (dark theme border error): #fecdca"
-          },
-          "2": {
-            "value": "{color.secondary.error.100}",
-            "type": "color",
-            "description": "Color (dark theme border error): #fee4e2"
           }
         },
         "default": {
-          "value": "{color.secondary.error.500}",
+          "value": "{color.secondary.error.600}",
           "type": "color",
-          "description": "Color (dark theme border error): #f04438"
+          "description": "Color (dark theme border error): #d92d20"
         },
         "moderate": {
           "0": {
-            "value": "{color.secondary.error.400}",
+            "value": "{color.secondary.error.900}",
             "type": "color",
-            "description": "Color (dark theme border error): #f97066"
-          },
-          "1": {
-            "value": "{color.secondary.error.400}",
-            "type": "color",
-            "description": "Color (dark theme border error): #f97066"
-          }
-        },
-        "subtle": {
-          "0": {
-            "value": "{color.secondary.error.800}",
-            "type": "color",
-            "description": "Color (dark theme border error): #912018"
+            "description": "Color (dark theme border error): #7a271a"
           },
           "1": {
             "value": "{color.secondary.error.700}",
             "type": "color",
             "description": "Color (dark theme border error): #b42318"
+          }
+        },
+        "subtle": {
+          "0": {
+            "value": "{color.secondary.error.975}",
+            "type": "color",
+            "description": "Color (dark theme border error): #471109"
+          },
+          "1": {
+            "value": "{color.secondary.error.975}",
+            "type": "color",
+            "description": "Color (dark theme border error): #471109"
           },
           "2": {
-            "value": "{color.secondary.error.600}",
+            "value": "{color.secondary.error.975}",
             "type": "color",
-            "description": "Color (dark theme border error): #d92d20"
+            "description": "Color (dark theme border error): #471109"
           }
         },
         "inactive": {
-          "value": "{color.secondary.error.900}",
+          "value": "{color.secondary.error.975}",
           "type": "color",
-          "description": "Color (dark theme border error): #7a271a"
+          "description": "Color (dark theme border error): #471109"
         }
       },
       "warning": {
         "intense": {
           "0": {
-            "value": "{color.secondary.warning.300}",
+            "value": "{color.secondary.warning.600}",
             "type": "color",
-            "description": "Color (dark theme border warning): #fec84b"
-          },
-          "1": {
-            "value": "{color.secondary.warning.200}",
-            "type": "color",
-            "description": "Color (dark theme border warning): #fedf89"
-          },
-          "2": {
-            "value": "{color.secondary.warning.100}",
-            "type": "color",
-            "description": "Color (dark theme border warning): #fef0c7"
-          }
-        },
-        "default": {
-          "value": "{color.secondary.warning.500}",
-          "type": "color",
-          "description": "Color (dark theme border warning): #f79009"
-        },
-        "moderate": {
-          "0": {
-            "value": "{color.secondary.warning.400}",
-            "type": "color",
-            "description": "Color (dark theme border warning): #fdb022"
+            "description": "Color (dark theme border warning): #dc6803"
           },
           "1": {
             "value": "{color.secondary.warning.500}",
@@ -536,32 +563,54 @@
             "description": "Color (dark theme border warning): #f79009"
           },
           "2": {
-            "value": "{color.secondary.warning.400}",
+            "value": "{color.secondary.warning.500}",
             "type": "color",
-            "description": "Color (dark theme border warning): #fdb022"
+            "description": "Color (dark theme border warning): #f79009"
+          }
+        },
+        "default": {
+          "value": "{color.secondary.warning.700}",
+          "type": "color",
+          "description": "Color (dark theme border warning): #b54708"
+        },
+        "moderate": {
+          "0": {
+            "value": "{color.secondary.warning.950}",
+            "type": "color",
+            "description": "Color (dark theme border warning): #4e1d09"
+          },
+          "1": {
+            "value": "{color.secondary.warning.950}",
+            "type": "color",
+            "description": "Color (dark theme border warning): #4e1d09"
+          },
+          "2": {
+            "value": "{color.secondary.warning.900}",
+            "type": "color",
+            "description": "Color (dark theme border warning): #7a2e0e"
           }
         },
         "subtle": {
           "0": {
-            "value": "{color.secondary.warning.800}",
+            "value": "{color.secondary.warning.975}",
             "type": "color",
-            "description": "Color (dark theme border warning): #93370d"
+            "description": "Color (dark theme border warning): #421807"
           },
           "1": {
-            "value": "{color.secondary.warning.700}",
+            "value": "{color.secondary.warning.975}",
             "type": "color",
-            "description": "Color (dark theme border warning): #b54708"
+            "description": "Color (dark theme border warning): #421807"
           },
           "2": {
-            "value": "{color.secondary.warning.600}",
+            "value": "{color.secondary.warning.975}",
             "type": "color",
-            "description": "Color (dark theme border warning): #dc6803"
+            "description": "Color (dark theme border warning): #421807"
           }
         },
         "inactive": {
-          "value": "{color.secondary.warning.900}",
+          "value": "{color.secondary.warning.975}",
           "type": "color",
-          "description": "Color (dark theme border warning): #7a2e0e"
+          "description": "Color (dark theme border warning): #421807"
         }
       }
     },
@@ -577,40 +626,28 @@
           "type": "color",
           "description": "Color (dark theme text neutral): #000000"
         },
-        "base-fixed": {
+        "on-color": {
           "value": "{color.neutral.gray.0}",
           "type": "color",
           "description": "Color (dark theme text neutral): #ffffff"
         },
         "title": {
           "1": {
-            "value": "{color.neutral.gray.25}",
+            "value": "{color.neutral.gray.200}",
             "type": "color",
-            "description": "Color (dark theme text neutral): #fcfcfd"
+            "description": "Color (dark theme text neutral): #eaecf0"
           },
           "2": {
-            "value": "{color.neutral.gray.50}",
+            "value": "{color.neutral.gray.300}",
             "type": "color",
-            "description": "Color (dark theme text neutral): #f9fafb"
+            "description": "Color (dark theme text neutral): #d0d5dd"
           }
         },
         "body": {
           "1": {
-            "value": "{color.neutral.gray.100}",
+            "value": "{color.neutral.gray.400}",
             "type": "color",
-            "description": "Color (dark theme text neutral): #f2f4f7"
-          },
-          "2": {
-            "value": "{color.neutral.gray.200}",
-            "type": "color",
-            "description": "Color (dark theme text neutral): #eaecf0"
-          }
-        },
-        "subtitle": {
-          "1": {
-            "value": "{color.neutral.gray.300}",
-            "type": "color",
-            "description": "Color (dark theme text neutral): #d0d5dd"
+            "description": "Color (dark theme text neutral): #98a2b3"
           },
           "2": {
             "value": "{color.neutral.gray.400}",
@@ -618,30 +655,42 @@
             "description": "Color (dark theme text neutral): #98a2b3"
           }
         },
+        "subtitle": {
+          "1": {
+            "value": "{color.neutral.gray.500}",
+            "type": "color",
+            "description": "Color (dark theme text neutral): #667085"
+          },
+          "2": {
+            "value": "{color.neutral.gray.600}",
+            "type": "color",
+            "description": "Color (dark theme text neutral): #475467"
+          }
+        },
         "inactive": {
-          "value": "{color.neutral.gray.700}",
+          "value": "{color.neutral.gray.800}",
           "type": "color",
-          "description": "Color (dark theme text neutral): #344054"
+          "description": "Color (dark theme text neutral): #1d2939"
         }
       },
       "primary": {
         "title": {
           "1": {
-            "value": "{color.primary.blue.100}",
+            "value": "{color.primary.blue.300}",
             "type": "color",
-            "description": "Color (dark theme text primary): #d1e0ff"
+            "description": "Color (dark theme text primary): #84adff"
           },
           "2": {
-            "value": "{color.primary.blue.200}",
+            "value": "{color.primary.blue.300}",
             "type": "color",
-            "description": "Color (dark theme text primary): #b2ccff"
+            "description": "Color (dark theme text primary): #84adff"
           }
         },
         "body": {
           "1": {
-            "value": "{color.primary.blue.300}",
+            "value": "{color.primary.blue.400}",
             "type": "color",
-            "description": "Color (dark theme text primary): #84adff"
+            "description": "Color (dark theme text primary): #528bff"
           },
           "2": {
             "value": "{color.primary.blue.500}",
@@ -651,73 +700,73 @@
         },
         "inactive": {
           "1": {
-            "value": "{color.primary.blue.400}",
+            "value": "{color.primary.blue.900}",
             "type": "color",
-            "description": "Color (dark theme text primary): #528bff"
+            "description": "Color (dark theme text primary): #00359e"
           },
           "2": {
-            "value": "{color.primary.blue.600}",
+            "value": "{color.primary.blue.950}",
             "type": "color",
-            "description": "Color (dark theme text primary): #155eef"
+            "description": "Color (dark theme text primary): #002b82"
           }
         }
       },
       "success": {
         "title": {
           "1": {
-            "value": "{color.secondary.success.900}",
+            "value": "{color.secondary.success.400}",
             "type": "color",
-            "description": "Color (dark theme text success): #054f31"
+            "description": "Color (dark theme text success): #32d583"
           },
           "2": {
-            "value": "{color.secondary.success.800}",
+            "value": "{color.secondary.success.500}",
             "type": "color",
-            "description": "Color (dark theme text success): #05603a"
+            "description": "Color (dark theme text success): #12b76a"
           }
         },
         "body": {
           "1": {
-            "value": "{color.secondary.success.300}",
-            "type": "color",
-            "description": "Color (dark theme text success): #6ce9a6"
-          },
-          "2": {
             "value": "{color.secondary.success.600}",
             "type": "color",
             "description": "Color (dark theme text success): #039855"
+          },
+          "2": {
+            "value": "{color.secondary.success.700}",
+            "type": "color",
+            "description": "Color (dark theme text success): #027a48"
           }
         },
         "inactive": {
           "1": {
-            "value": "{color.secondary.success.500}",
+            "value": "{color.secondary.success.800}",
             "type": "color",
-            "description": "Color (dark theme text success): #12b76a"
+            "description": "Color (dark theme text success): #05603a"
           },
           "2": {
-            "value": "{color.secondary.success.300}",
+            "value": "{color.secondary.success.975}",
             "type": "color",
-            "description": "Color (dark theme text success): #6ce9a6"
+            "description": "Color (dark theme text success): #02331f"
           }
         }
       },
       "error": {
         "title": {
           "1": {
-            "value": "{color.secondary.error.900}",
+            "value": "{color.secondary.error.300}",
             "type": "color",
-            "description": "Color (dark theme text error): #7a271a"
+            "description": "Color (dark theme text error): #fda29b"
           },
           "2": {
-            "value": "{color.secondary.error.800}",
+            "value": "{color.secondary.error.400}",
             "type": "color",
-            "description": "Color (dark theme text error): #912018"
+            "description": "Color (dark theme text error): #f97066"
           }
         },
         "body": {
           "1": {
-            "value": "{color.secondary.error.300}",
+            "value": "{color.secondary.error.400}",
             "type": "color",
-            "description": "Color (dark theme text error): #fda29b"
+            "description": "Color (dark theme text error): #f97066"
           },
           "2": {
             "value": "{color.secondary.error.600}",
@@ -727,52 +776,52 @@
         },
         "inactive": {
           "1": {
-            "value": "{color.secondary.error.500}",
+            "value": "{color.secondary.error.700}",
             "type": "color",
-            "description": "Color (dark theme text error): #f04438"
+            "description": "Color (dark theme text error): #b42318"
           },
           "2": {
-            "value": "{color.secondary.error.300}",
+            "value": "{color.secondary.error.900}",
             "type": "color",
-            "description": "Color (dark theme text error): #fda29b"
+            "description": "Color (dark theme text error): #7a271a"
           }
         }
       },
       "warning": {
         "title": {
           "1": {
-            "value": "{color.secondary.warning.900}",
+            "value": "{color.secondary.warning.500}",
             "type": "color",
-            "description": "Color (dark theme text warning): #7a2e0e"
+            "description": "Color (dark theme text warning): #f79009"
           },
           "2": {
-            "value": "{color.secondary.warning.800}",
+            "value": "{color.secondary.warning.500}",
             "type": "color",
-            "description": "Color (dark theme text warning): #93370d"
+            "description": "Color (dark theme text warning): #f79009"
           }
         },
         "body": {
           "1": {
-            "value": "{color.secondary.warning.300}",
-            "type": "color",
-            "description": "Color (dark theme text warning): #fec84b"
-          },
-          "2": {
             "value": "{color.secondary.warning.600}",
             "type": "color",
             "description": "Color (dark theme text warning): #dc6803"
+          },
+          "2": {
+            "value": "{color.secondary.warning.700}",
+            "type": "color",
+            "description": "Color (dark theme text warning): #b54708"
           }
         },
         "inactive": {
           "1": {
-            "value": "{color.secondary.warning.400}",
+            "value": "{color.secondary.warning.950}",
             "type": "color",
-            "description": "Color (dark theme text warning): #fdb022"
+            "description": "Color (dark theme text warning): #4e1d09"
           },
           "2": {
-            "value": "{color.secondary.warning.300}",
+            "value": "{color.secondary.warning.950}",
             "type": "color",
-            "description": "Color (dark theme text warning): #fec84b"
+            "description": "Color (dark theme text warning): #4e1d09"
           }
         }
       }
@@ -789,91 +838,91 @@
           "type": "color",
           "description": "Color (dark theme icon neutral): #000000"
         },
-        "base-fixed": {
+        "on-color": {
           "value": "{color.neutral.gray.0}",
           "type": "color",
           "description": "Color (dark theme icon neutral): #ffffff"
         },
         "intense": {
           "0": {
-            "value": "{color.neutral.gray.50}",
-            "type": "color",
-            "description": "Color (dark theme icon neutral): #f2f4f7"
-          },
-          "1": {
-            "value": "{color.neutral.gray.25}",
-            "type": "color",
-            "description": "Color (dark theme icon neutral): #fcfcfd"
-          }
-        },
-        "default": {
-          "value": "{color.neutral.gray.100}",
-          "type": "color",
-          "description": "Color (dark theme icon neutral): #f9fafb"
-        },
-        "moderate": {
-          "0": {
-            "value": "{color.neutral.gray.400}",
-            "type": "color",
-            "description": "Color (dark theme icon neutral): #98a2b3"
-          },
-          "1": {
             "value": "{color.neutral.gray.300}",
             "type": "color",
             "description": "Color (dark theme icon neutral): #d0d5dd"
           },
-          "2": {
+          "1": {
             "value": "{color.neutral.gray.200}",
             "type": "color",
             "description": "Color (dark theme icon neutral): #eaecf0"
           }
         },
-        "subtle": {
+        "default": {
+          "value": "{color.neutral.gray.400}",
+          "type": "color",
+          "description": "Color (dark theme icon neutral): #98a2b3"
+        },
+        "moderate": {
           "0": {
-            "value": "{color.neutral.gray.700}",
-            "type": "color",
-            "description": "Color (dark theme icon neutral): #344054"
-          },
-          "1": {
             "value": "{color.neutral.gray.600}",
             "type": "color",
             "description": "Color (dark theme icon neutral): #475467"
           },
-          "2": {
+          "1": {
             "value": "{color.neutral.gray.500}",
             "type": "color",
             "description": "Color (dark theme icon neutral): #667085"
+          },
+          "2": {
+            "value": "{color.neutral.gray.400}",
+            "type": "color",
+            "description": "Color (dark theme icon neutral): #98a2b3"
+          }
+        },
+        "subtle": {
+          "0": {
+            "value": "{color.neutral.gray.900}",
+            "type": "color",
+            "description": "Color (dark theme icon neutral): #101828"
+          },
+          "1": {
+            "value": "{color.neutral.gray.800}",
+            "type": "color",
+            "description": "Color (dark theme icon neutral): #1d2939"
+          },
+          "2": {
+            "value": "{color.neutral.gray.700}",
+            "type": "color",
+            "description": "Color (dark theme icon neutral): #344054"
           }
         },
         "info": {
-          "value": "{color.neutral.gray.400}",
+          "value": "{color.neutral.gray.600}",
           "type": "color",
-          "description": "Color (dark theme icon neutral): #98a2b3"
+          "description": "Color (dark theme icon neutral): #475467"
         }
       },
       "primary": {
         "default": {
-          "value": "{color.primary.blue.300}",
+          "value": "{color.primary.blue.400}",
           "type": "color",
-          "description": "Color (dark theme icon primary): #84adff"
+          "description": "Color (dark theme icon primary): #528bff"
         },
         "intense": {
-          "0": {
-            "value": "{color.primary.blue.200}",
-            "type": "color",
-            "description": "Color (dark theme icon primary): #b2ccff"
-          },
-          "1": {
-            "value": "{color.primary.blue.100}",
-            "type": "color",
-            "description": "Color (dark theme icon primary): #d1e0ff"
-          }
-        },
-        "moderate": {
           "0": {
             "value": "{color.primary.blue.300}",
             "type": "color",
             "description": "Color (dark theme icon primary): #84adff"
+          },
+          "1": {
+            "value": "{color.primary.blue.300}",
+            "type": "color",
+            "description": "Color (dark theme icon primary): #84adff"
+          }
+        },
+        "moderate": {
+          "0": {
+            "value": "{color.primary.blue.600}",
+            "type": "color",
+            "description": "Color (dark theme icon primary): #155eef"
           },
           "1": {
             "value": "{color.primary.blue.500}",
@@ -883,58 +932,58 @@
         },
         "subtle": {
           "0": {
-            "value": "{color.primary.blue.600}",
+            "value": "{color.primary.blue.950}",
             "type": "color",
-            "description": "Color (dark theme icon primary): #155eef"
+            "description": "Color (dark theme icon primary): #002b82"
           }
         }
       },
       "success": {
         "intense": {
           "0": {
-            "value": "{color.secondary.success.800}",
+            "value": "{color.secondary.success.500}",
             "type": "color",
-            "description": "Color (dark theme icon success): #05603a"
+            "description": "Color (dark theme icon success): #12b76a"
           },
           "1": {
-            "value": "{color.secondary.success.900}",
+            "value": "{color.secondary.success.400}",
             "type": "color",
-            "description": "Color (dark theme icon success): #054f31"
+            "description": "Color (dark theme icon success): #32d583"
           }
         },
         "default": {
-          "value": "{color.secondary.success.700}",
-          "type": "color",
-          "description": "Color (dark theme icon success): #027a48"
-        },
-        "moderate": {
           "value": "{color.secondary.success.600}",
           "type": "color",
           "description": "Color (dark theme icon success): #039855"
         },
-        "inactive": {
-          "value": "{color.secondary.success.300}",
+        "moderate": {
+          "value": "{color.secondary.success.700}",
           "type": "color",
-          "description": "Color (dark theme icon success): #6ce9a6"
+          "description": "Color (dark theme icon success): #027a48"
+        },
+        "inactive": {
+          "value": "{color.secondary.success.975}",
+          "type": "color",
+          "description": "Color (dark theme icon success): #02331f"
         }
       },
       "error": {
         "intense": {
           "0": {
-            "value": "{color.secondary.error.800}",
+            "value": "{color.secondary.error.400}",
             "type": "color",
-            "description": "Color (dark theme icon error): #912018"
+            "description": "Color (dark theme icon error): #f97066"
           },
           "1": {
-            "value": "{color.secondary.error.900}",
+            "value": "{color.secondary.error.300}",
             "type": "color",
-            "description": "Color (dark theme icon error): #7a271a"
+            "description": "Color (dark theme icon error): #fda29b"
           }
         },
         "default": {
-          "value": "{color.secondary.error.700}",
+          "value": "{color.secondary.error.400}",
           "type": "color",
-          "description": "Color (dark theme icon error): #b42318"
+          "description": "Color (dark theme icon error): #f97066"
         },
         "moderate": {
           "value": "{color.secondary.error.600}",
@@ -942,38 +991,38 @@
           "description": "Color (dark theme icon error): #d92d20"
         },
         "inactive": {
-          "value": "{color.secondary.error.300}",
+          "value": "{color.secondary.error.900}",
           "type": "color",
-          "description": "Color (dark theme icon error): #fda29b"
+          "description": "Color (dark theme icon error): #7a271a"
         }
       },
       "warning": {
         "intense": {
           "0": {
-            "value": "{color.secondary.warning.800}",
+            "value": "{color.secondary.warning.500}",
             "type": "color",
-            "description": "Color (dark theme icon warning): #93370d"
+            "description": "Color (dark theme icon warning): #f79009"
           },
           "1": {
-            "value": "{color.secondary.warning.900}",
+            "value": "{color.secondary.warning.500}",
             "type": "color",
-            "description": "Color (dark theme icon warning): #7a2e0e"
+            "description": "Color (dark theme icon warning): #f79009"
           }
         },
         "default": {
-          "value": "{color.secondary.warning.700}",
-          "type": "color",
-          "description": "Color (dark theme icon warning): #b54708"
-        },
-        "moderate": {
           "value": "{color.secondary.warning.600}",
           "type": "color",
           "description": "Color (dark theme icon warning): #dc6803"
         },
-        "inactive": {
-          "value": "{color.secondary.warning.300}",
+        "moderate": {
+          "value": "{color.secondary.warning.700}",
           "type": "color",
-          "description": "Color (dark theme icon warning): #fec84b"
+          "description": "Color (dark theme icon warning): #b54708"
+        },
+        "inactive": {
+          "value": "{color.secondary.warning.950}",
+          "type": "color",
+          "description": "Color (dark theme icon warning): #4e1d09"
         }
       }
     }

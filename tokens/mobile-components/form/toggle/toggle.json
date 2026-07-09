@@ -70,9 +70,9 @@
           "android": {
             "unpressed": {
               "default": {
-                "value": "{color.background.neutral.subtle.1}",
+                "value": "{color.background.neutral.subtle.2}",
                 "type": "color",
-                "description": "Mobile Android unpressed toggle default background - neutral/gray-100 - #f2f4f7"
+                "description": "Mobile Android unpressed toggle default background - neutral/gray-200 - #eaecf0"
               },
               "hover": {
                 "value": "{color.background.neutral.subtle.2}",
@@ -80,17 +80,17 @@
                 "description": "Mobile Android unpressed toggle hover background - neutral/gray-200 - #eaecf0"
               },
               "focused": {
-                "value": "{color.background.neutral.subtle.0}",
-                "type": "color",
-                "description": "Mobile Android unpressed toggle focused background - neutral/gray-50 - #f9fafb"
-              },
-              "disabled": {
                 "value": "{color.background.neutral.subtle.2}",
                 "type": "color",
-                "description": "Mobile Android unpressed toggle disabled background - neutral/gray-200 - #eaecf0"
+                "description": "Mobile Android unpressed toggle focused background - neutral/gray-200 - #eaecf0"
+              },
+              "disabled": {
+                "value": "{color.background.neutral.subtle.1}",
+                "type": "color",
+                "description": "Mobile Android unpressed toggle disabled background - neutral/gray-100 - #f2f4f7"
               },
               "error": {
-                "value": "{color.background.neutral.subtle.1}",
+                "value": "{color.background.neutral.subtle.2}",
                 "type": "color",
                 "description": "Mobile Android unpressed toggle error background - neutral/gray-100 - #f2f4f7"
               }
@@ -141,9 +141,9 @@
                 "description": "Mobile iOS unpressed toggle focused background - neutral/gray-200 - #eaecf0"
               },
               "disabled": {
-                "value": "{color.background.neutral.subtle.2}",
+                "value": "{color.background.neutral.subtle.1}",
                 "type": "color",
-                "description": "Mobile iOS unpressed toggle disabled background - neutral/gray-200 - #eaecf0"
+                "description": "Mobile iOS unpressed toggle disabled background - neutral/gray-100 - #f2f4f7"
               },
               "error": {
                 "value": "{color.background.neutral.subtle.2}",
@@ -312,9 +312,9 @@
         },
         "background": {
           "default": {
-            "value": "{color.background.neutral.base}",
+            "value": "{color.surface.overlay}",
             "type": "color",
-            "description": "Mobile Android toggle thumb default background - neutral/gray-0 - #ffffff"
+            "description": "Mobile Android toggle thumb default background - surface/raised - #ffffff light / #1d2939 dark"
           },
           "disabled": {
             "value": "{color.background.neutral.moderate.0}",
@@ -370,9 +370,9 @@
         },
         "background": {
           "default": {
-            "value": "{color.background.neutral.base}",
+            "value": "{color.surface.overlay}",
             "type": "color",
-            "description": "Mobile iOS toggle knob default background - neutral/gray-0 - #ffffff"
+            "description": "Mobile iOS toggle knob default background - surface/overlay - #ffffff light / #344054 dark"
           },
           "disabled": {
             "value": "{color.background.neutral.moderate.0}",

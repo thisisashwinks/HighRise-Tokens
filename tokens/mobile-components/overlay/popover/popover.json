@@ -37,9 +37,9 @@
       },
       "background": {
         "color": {
-          "value": "{color.background.neutral.base}",
+          "value": "{color.surface.raised}",
           "type": "color",
-          "description": "Mobile popover container background - neutral/white - #ffffff"
+          "description": "Mobile popover container background - surface/raised - #ffffff light / #1d2939 dark"
         }
       },
       "border": {
@@ -90,9 +90,9 @@
         }
       },
       "color": {
-        "value": "{color.background.neutral.base}",
+        "value": "{color.surface.overlay}",
         "type": "color",
-        "description": "Mobile popover arrow fill color - white, matches container background - #ffffff"
+        "description": "Mobile popover arrow fill color - surface/overlay, matches container background - #ffffff light / #344054 dark"
       }
     },
     "content": {

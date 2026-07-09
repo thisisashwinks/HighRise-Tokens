@@ -49,7 +49,7 @@
           },
           "text": {
             "default": {
-              "value": "{color.text.neutral.base}",
+              "value": "{color.text.neutral.on-color}",
               "type": "color",
               "description": "Mobile primary button default text color"
             },
@@ -59,7 +59,7 @@
               "description": "Mobile primary button active text color"
             },
             "focused": {
-              "value": "{color.text.neutral.base}",
+              "value": "{color.text.neutral.on-color}",
               "type": "color",
               "description": "Mobile primary button focused text color"
             },
@@ -71,7 +71,7 @@
           },
           "icon": {
             "default": {
-              "value": "{color.icon.neutral.base}",
+              "value": "{color.icon.neutral.on-color}",
               "type": "color",
               "description": "Mobile primary button default icon color"
             },
@@ -81,7 +81,7 @@
               "description": "Mobile primary button active icon color"
             },
             "focused": {
-              "value": "{color.icon.neutral.base}",
+              "value": "{color.icon.neutral.on-color}",
               "type": "color",
               "description": "Mobile primary button focused icon color"
             },
@@ -501,7 +501,7 @@
           },
           "text": {
             "default": {
-              "value": "{color.text.neutral.base}",
+              "value": "{color.text.neutral.on-color}",
               "type": "color",
               "description": "Mobile error primary button default text color"
             },
@@ -511,7 +511,7 @@
               "description": "Mobile error primary button active text color"
             },
             "focused": {
-              "value": "{color.text.neutral.base}",
+              "value": "{color.text.neutral.on-color}",
               "type": "color",
               "description": "Mobile error primary button focused text color"
             },
@@ -924,7 +924,7 @@
               "description": "Mobile neutral primary button focused background"
             },
             "disabled": {
-              "value": "{color.background.neutral.subtle.1}",
+              "value": "{color.background.neutral.subtle.2}",
               "type": "color",
               "description": "Mobile neutral primary button disabled background"
             }
@@ -1333,7 +1333,7 @@
               "description": "Mobile neutral link button focused text color"
             },
             "disabled": {
-              "value": "{color.text.neutral.inactive}",
+              "value": "{color.text.neutral.subtle.2}",
               "type": "color",
               "description": "Mobile neutral link button disabled text color"
             }
@@ -1355,7 +1355,7 @@
               "description": "Mobile neutral link button focused icon color"
             },
             "disabled": {
-              "value": "{color.icon.neutral.subtle.2}",
+              "value": "{color.icon.neutral.moderate.0}",
               "type": "color",
               "description": "Mobile neutral link button disabled icon color"
             }
@@ -1410,7 +1410,7 @@
           },
           "text": {
             "default": {
-              "value": "{color.text.neutral.base}",
+              "value": "{color.text.neutral.on-color}",
               "type": "color",
               "description": "Mobile warning primary button default text color"
             },
@@ -1420,7 +1420,7 @@
               "description": "Mobile warning primary button active text color"
             },
             "focused": {
-              "value": "{color.text.neutral.base}",
+              "value": "{color.text.neutral.on-color}",
               "type": "color",
               "description": "Mobile warning primary button focused text color"
             },
@@ -1432,7 +1432,7 @@
           },
           "icon": {
             "default": {
-              "value": "{color.icon.neutral.base}",
+              "value": "{color.icon.neutral.on-color}",
               "type": "color",
               "description": "Mobile warning primary button default icon color"
             },
@@ -1442,7 +1442,7 @@
               "description": "Mobile warning primary button active icon color"
             },
             "focused": {
-              "value": "{color.icon.neutral.base}",
+              "value": "{color.icon.neutral.on-color}",
               "type": "color",
               "description": "Mobile warning primary button focused icon color"
             },
@@ -1862,7 +1862,7 @@
           },
           "text": {
             "default": {
-              "value": "{color.text.neutral.base}",
+              "value": "{color.text.neutral.on-color}",
               "type": "color",
               "description": "Mobile success primary button default text"
             },
@@ -1872,7 +1872,7 @@
               "description": "Mobile success primary button active text"
             },
             "focused": {
-              "value": "{color.text.neutral.base}",
+              "value": "{color.text.neutral.on-color}",
               "type": "color",
               "description": "Mobile success primary button focused text"
             },
@@ -1884,7 +1884,7 @@
           },
           "icon": {
             "default": {
-              "value": "{color.icon.neutral.base}",
+              "value": "{color.icon.neutral.on-color}",
               "type": "color",
               "description": "Mobile success primary button default icon"
             },
@@ -1894,7 +1894,7 @@
               "description": "Mobile success primary button active icon"
             },
             "focused": {
-              "value": "{color.icon.neutral.base}",
+              "value": "{color.icon.neutral.on-color}",
               "type": "color",
               "description": "Mobile success primary button focused icon"
             },

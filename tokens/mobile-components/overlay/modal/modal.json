@@ -43,16 +43,16 @@
       "color": {
         "background": {
           "default": {
-            "value": "{color.background.neutral.base}",
+            "value": "{color.surface.base}",
             "type": "color",
-            "description": "Mobile modal default background - neutral/white - #ffffff"
+            "description": "Mobile modal default background - surface/base - #ffffff light / #ffffff dark"
           }
         },
         "border": {
           "default": {
-            "value": "{color.border.neutral.subtle.1}",
+            "value": "{color.border.neutral.default.on-raised}",
             "type": "color",
-            "description": "Mobile modal default border color - neutral/gray-100 - #f2f4f7"
+            "description": "Mobile modal default border color - neutral/default-on-raised - #d0d5dd"
           }
         }
       },
@@ -122,9 +122,9 @@
       "color": {
         "background": {
           "default": {
-            "value": "{color.background.neutral.base}",
+            "value": "{color.surface.overlay}",
             "type": "color",
-            "description": "Mobile modal body default background - neutral/white - #ffffff"
+            "description": "Mobile modal body default background - surface/overlay - #ffffff light / #344054 dark"
           }
         }
       },

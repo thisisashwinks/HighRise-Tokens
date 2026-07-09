@@ -46,9 +46,9 @@
       },
       "color": {
         "background": {
-          "value": "{color.background.neutral.base}",
+          "value": "{color.surface.raised}",
           "type": "color",
-          "description": "Mobile message card container background - white - #ffffff"
+          "description": "Mobile message card container background - surface/raised - #ffffff light / #1d2939 dark"
         },
         "border": {
           "value": "{color.border.neutral.subtle.2}",
