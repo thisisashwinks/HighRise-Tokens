@@ -43,9 +43,9 @@
       },
       "border": {
         "radius": {
-          "value": "{border.radius.2xl}",
+          "value": "{border.radius.full}",
           "type": "dimension",
-          "description": "Video player control icon-button border radius - 16px (circular pill for 28px container)"
+          "description": "Video player control icon-button border radius - 100% (circular pill for 28px container)"
         }
       },
       "icon": {
@@ -72,11 +72,6 @@
     },
     "progress": {
       "$comment": "Progress bar container variant — wraps the ProgressBar nested component. Platform-split background and shadow.",
-      "width": {
-        "value": "320px",
-        "type": "dimension",
-        "description": "Video player controls progress container width (standalone) - 320px. Note: overridden to 345px when used inside the full Video Player component."
-      },
       "padding": {
         "horizontal": {
           "value": "{padding.2xs}",
@@ -132,9 +127,9 @@
       },
       "border": {
         "radius": {
-          "value": "11px",
+          "value": "{border.radius.2xl}",
           "type": "dimension",
-          "description": "Video player controls time pill border radius - 11px (near-full round for 24px height pill)"
+          "description": "Video player controls time pill border radius - 16px (near-full round for 24px height pill)"
         }
       },
       "padding": {

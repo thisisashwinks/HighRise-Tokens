@@ -58,14 +58,14 @@
       },
       "color": {
         "background": {
-          "value": "{color.background.neutral.intense.1}",
+          "value": "{color.background.neutral.intense.2}",
           "type": "color",
-          "description": "Mobile snackbar container background - neutral/gray.800 - #1d2939"
+          "description": "Mobile snackbar container background - neutral/gray.900 - #101828"
         },
         "border": {
-          "value": "{color.background.neutral.intense.1}",
+          "value": "{color.background.neutral.intense.2}",
           "type": "color",
-          "description": "Mobile snackbar container border color - neutral/gray.800 - #1d2939 (same as background, visually seamless)"
+          "description": "Mobile snackbar container border color - neutral/gray.900 - #101828 (same as background, visually seamless)"
         }
       },
       "shadow": {
