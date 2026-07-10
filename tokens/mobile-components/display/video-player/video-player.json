@@ -52,31 +52,31 @@
       },
       "padding": {
         "horizontal": {
-          "value": "{padding.2}",
+          "value": "{padding.2xs}",
           "type": "dimension",
           "description": "Video player progress overlay horizontal padding - 8px (matches Controls progress variant)"
         },
         "vertical": {
-          "value": "{padding.1}",
+          "value": "{padding.4xs}",
           "type": "dimension",
           "description": "Video player progress overlay vertical padding - 4px (matches Controls progress variant)"
         }
       },
       "border": {
         "radius": {
-          "value": "16px",
+          "value": "{border.radius.2xl}",
           "type": "dimension",
           "description": "Video player progress overlay border radius - 16px (matches Controls progress variant)"
         }
       },
       "position": {
         "bottom": {
-          "value": "{padding.2}",
+          "value": "{padding.2xs}",
           "type": "dimension",
           "description": "Video player progress overlay bottom inset from container edge - 8px"
         },
         "left": {
-          "value": "{padding.2}",
+          "value": "{padding.2xs}",
           "type": "dimension",
           "description": "Video player progress overlay left inset from container edge - 8px"
         }
@@ -107,7 +107,7 @@
       "$comment": "Positional layout tokens for the absolutely-positioned Control overlays within the Video Player frame. Control internal styling is defined in video-player-controls.json.",
       "inset": {
         "edge": {
-          "value": "{padding.2}",
+          "value": "{padding.2xs}",
           "type": "dimension",
           "description": "Video player controls edge inset from container top and right edges - 8px. Used for all corner-anchored control buttons (top-right setting, caption, etc.)."
         }
@@ -131,7 +131,7 @@
         "$comment": "Time display pill position in Playing/Paused states — bottom-left anchor",
         "position": {
           "left": {
-            "value": "{padding.2}",
+            "value": "{padding.2xs}",
             "type": "dimension",
             "description": "Video player time pill left inset - 8px (bottom-left corner)"
           },
