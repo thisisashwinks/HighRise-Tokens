@@ -53,6 +53,13 @@ export default function ComponentTokens() {
           rung, not the first.
         </p>
       </Callout>
+      <Callout tone="info" title="Why this layer exists at all">
+        <p>
+          For the industry case behind component tokens — 11 design systems surveyed, the W3C spec, and a direct
+          response to the &quot;too deep&quot; objection — see the{" "}
+          <Link href="/foundations/component-token-research">component token research report</Link>.
+        </p>
+      </Callout>
 
       <h2>The resolution chain</h2>
       <Reveal className="mt-4">

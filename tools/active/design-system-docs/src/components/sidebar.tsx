@@ -17,6 +17,7 @@ const FOUNDATION_LINKS = [
   { href: "/foundations/primitive-tokens", label: "Primitive tokens" },
   { href: "/foundations/semantic-tokens", label: "Semantic tokens" },
   { href: "/foundations/component-tokens", label: "Component tokens" },
+  { href: "/foundations/component-token-research", label: "Component token research" },
   { href: "/foundations/color-modes", label: "Color modes & dark mode" },
   { href: "/foundations/white-label", label: "White-label & custom colors" },
 ];
